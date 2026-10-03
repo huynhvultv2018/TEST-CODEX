@@ -1,0 +1,19 @@
+{
+  "candidate_before_sha256": "d9765ac36c954190a63ac56fa55088a8b4e3eed9c9316a87a4246ff6a705b21f",
+  "candidate_after_sha256": "d9765ac36c954190a63ac56fa55088a8b4e3eed9c9316a87a4246ff6a705b21f",
+  "candidate_mutated": false,
+  "reconciliation": "PASS",
+  "product_patch_required": false,
+  "handoff": {
+    "file": "ThiTracNghiemLAN_v2.4_UI_RC1_RECONCILIATION_HANDOFF.zip",
+    "bytes": 2244678,
+    "files": 213,
+    "sha256": "9225944a0e5c07942ca167d5efb18d082a2178e51c0b9cd0c1e67ea49a9974d9",
+    "ZIP_CRC": "PASS",
+    "member_checksums": "PASS",
+    "embedded_candidate_bytes_identical": true
+  },
+  "Windows_runtime": "NOT_RUN",
+  "physical_50_PC": "NOT_RUN",
+  "production": "NO"
+}
