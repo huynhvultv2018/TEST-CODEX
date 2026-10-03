@@ -1,0 +1,26 @@
+{
+  "baseline_sha256": "68219167829986f39d025251bf4681d7298e6c652689420d82cfe8a08d130ec2",
+  "candidate": {
+    "file": "ThiTracNghiemLAN_v2.4_UI_RC1_CANDIDATE.zip",
+    "bytes": 797434,
+    "files": 64,
+    "sha256": "d9765ac36c954190a63ac56fa55088a8b4e3eed9c9316a87a4246ff6a705b21f",
+    "zip_integrity": "PASS",
+    "backend_core_unchanged": true
+  },
+  "handoff": {
+    "file": "ThiTracNghiemLAN_v2.4_UI_RC1_HANDOFF.zip",
+    "bytes": 4242896,
+    "files": 236,
+    "sha256": "8a07260b656e96811a15fb7ef53fe495d4d099a8230202d5f89df80811ca57bd",
+    "zip_integrity": "PASS",
+    "all_member_checksums_match": true
+  },
+  "UI_IMPLEMENTATION": "PASS",
+  "REGRESSION": "BLOCKED",
+  "R4_FUNCTIONAL_LOCK": "PASS",
+  "UI_RC1_CANDIDATE": "BLOCKED",
+  "WINDOWS_RUNTIME": "NOT_RUN",
+  "PHYSICAL_50_PC": "NOT_RUN",
+  "PRODUCTION": "NO"
+}
