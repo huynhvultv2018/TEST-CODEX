@@ -1,0 +1,481 @@
+TOOLKIT RC3 INTERNAL SELF-TEST — NOT WINDOWS ACCEPTANCE
+TOOLKIT_RC3 = READY_FOR_WINDOWS_RETEST
+R4_STATUS = PENDING_WINDOWS_VALIDATION
+EXECUTION_HOST = Linux
+POWERSHELL = 7.4.13
+NATIVE_WINDOWS_CMD = NOT_RUN
+NATIVE_WINDOWS_POWERSHELL_5_1 = NOT_RUN
+PS51_COMPATIBILITY = STATIC_REVIEW_ONLY
+LICENSE_REBOOT_ACCEPTANCE = NOT_TESTED
+RUNTIME_IDENTITY_EQUIVALENCE = UNCONFIRMED
+R4_RUNTIME_CHANGED = NO
+R4_CANDIDATE_CHANGED = NO
+RESULTS_DELIVERED = EMPTY; no actual RC2 Windows evidence supplied
+SUBPROCESS_TIMEOUT_SECONDS = 45
+
+All logs below are toolkit unit/regression probes on private data/clones.
+No R4 acceptance result is inferred from these tests.
+
+SUMMARY
+{
+  "BAT_ENCODING_AND_DISPATCH": [
+    {
+      "file": "01_KIEM_TRA_TRUOC_KHI_CHAY.bat",
+      "status": "PASS",
+      "sha256": "321e25182207f65163cd0a5f84d2aad19781901c4c64feb9ea1d55419569fb04",
+      "first_3_bytes": "40 65 63",
+      "encoding": "ASCII",
+      "newline": "CRLF",
+      "unchanged": true
+    },
+    {
+      "file": "02_GHI_NHAN_LICENSE_RESTART.bat",
+      "status": "PASS",
+      "sha256": "8165e075654d4249559b8b32bf35f516442f6777ce5134c8d53292c6cd2ab517",
+      "first_3_bytes": "40 65 63",
+      "encoding": "ASCII",
+      "newline": "CRLF",
+      "unchanged": true
+    },
+    {
+      "file": "03_KIEM_TRA_SERVER_LAN.bat",
+      "status": "PASS",
+      "sha256": "4f0bacc3416d4e6ae4b53ed7171fa67f0c17f5358043fe77576c8fd54be7c36d",
+      "first_3_bytes": "40 65 63",
+      "encoding": "ASCII",
+      "newline": "CRLF",
+      "unchanged": true
+    },
+    {
+      "file": "04_KIEM_TRA_MAY_CON.bat",
+      "status": "PASS",
+      "sha256": "1b2dae088433171fcf5f9174c549d1d9562ff9e849f135db3d8a5f593170e046",
+      "first_3_bytes": "40 65 63",
+      "encoding": "ASCII",
+      "newline": "CRLF",
+      "unchanged": true
+    },
+    {
+      "file": "05_GHI_NHAN_TEST_PHONG_MAY.bat",
+      "status": "PASS",
+      "sha256": "7ed2ccbd798dff923f33dba7b647dda2a8e64f782a8d603cd68aebd4e187e8a5",
+      "first_3_bytes": "40 65 63",
+      "encoding": "ASCII",
+      "newline": "CRLF",
+      "unchanged": true
+    },
+    {
+      "file": "06_DONG_GOI_KET_QUA.bat",
+      "status": "PASS",
+      "sha256": "9d2c1498c97afc8851cdf67bd30657a8b33866e10ea88d6153a7409909754125",
+      "first_3_bytes": "40 65 63",
+      "encoding": "ASCII",
+      "newline": "CRLF",
+      "unchanged": true
+    }
+  ],
+  "IDENTITY": {
+    "status": "PASS",
+    "helper_unchanged": true,
+    "source_algorithm": "CONFIRMED_R4_SOURCE_ALGORITHM",
+    "runtime_equivalence": "UNCONFIRMED",
+    "registry_license_firewall_writes": false
+  },
+  "TASKS_01_03_04_05_06": {
+    "status": "PASS",
+    "run_statements": "BYTE_IDENTICAL",
+    "bat_files": "BYTE_IDENTICAL",
+    "native_windows_execution": "NOT_RUN"
+  },
+  "PS51_STATIC_COMPATIBILITY": {
+    "status": "PASS_STATIC_ONLY",
+    "ps1_encoding": "UTF8_BOM_CRLF",
+    "native_5_1": "NOT_RUN",
+    "language_and_framework": "new code uses PS5.1 constructs and .NET Framework-compatible APIs"
+  },
+  "LABEL_VALIDATION": {
+    "status": "PASS",
+    "exit_code": 0,
+    "assertion_count": 96,
+    "timeout_seconds": 45
+  },
+  "ROOT_CAUSE_AND_REGRESSION": {
+    "status": "PASS",
+    "exit_code": 0,
+    "assertion_count": 43,
+    "timeout_seconds": 45
+  },
+  "RC2_CORE_SELF_TEST": {
+    "status": "PASS",
+    "exit_code": 0,
+    "assertion_count": 0,
+    "timeout_seconds": 45,
+    "runtime_report_assertion_count": 28
+  },
+  "RC3_CORE_SELF_TEST": {
+    "status": "PASS",
+    "exit_code": 0,
+    "assertion_count": 0,
+    "timeout_seconds": 45,
+    "runtime_report_assertion_count": 140
+  },
+  "NON_WINDOWS_GUARD": {
+    "status": "PASS",
+    "exit_code": 1,
+    "assertion_count": 0,
+    "timeout_seconds": 45
+  },
+  "R4_PROTECTION": {
+    "status": "PASS",
+    "existing_files_checked": 2276,
+    "candidate_sha256": "68219167829986f39d025251bf4681d7298e6c652689420d82cfe8a08d130ec2",
+    "runtime_changed": false,
+    "candidate_changed": false,
+    "previous_test_patch_changed": false
+  }
+}
+
+===== LABEL_VALIDATION.txt =====
+PASS: ACCEPT BEFORE
+PASS: ACCEPT SERVER_REOPEN
+PASS: ACCEPT APP_REOPEN
+PASS: ACCEPT WINDOWS_REBOOT1
+PASS: ACCEPT trimmed WINDOWS_REBOOT1
+PASS: REJECT [WINDOWS_REBOOT]
+PASS: REJECT [REBOOT1]
+PASS: REJECT [ABC]
+PASS: REJECT []
+PASS: uppercase normalization
+PASS: REJECT extra invalid [   ]
+PASS: REJECT extra invalid [	]
+PASS: REJECT extra invalid [WINDOWS_ REBOOT1]
+PASS: REJECT extra invalid [WINDOWS_REBOOT11]
+PASS: prompt returns BEFORE immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns SERVER_REOPEN immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns APP_REOPEN immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns WINDOWS_REBOOT1 immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns WINDOWS_REBOOT1 immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns BEFORE immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: retry limit ends after 20 invalid inputs
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+LABEL_VALIDATION_SELF_TEST = PASS; LICENSE_REBOOT_ACCEPTANCE = NOT_TESTED
+
+===== ROOT_CAUSE_AND_REGRESSION.txt =====
+PASS: parser Common.ps1
+PASS: parser Run.ps1
+PASS: parser SelfTest.ps1
+PASS: parser Common.ps1
+PASS: parser LabelValidationSelfTest.ps1
+PASS: parser Run.ps1
+PASS: parser SelfTest.ps1
+PASS: unchanged function Initialize-Results
+PASS: unchanged function Read-Choice
+PASS: unchanged function Read-Number
+PASS: unchanged function Get-Baseline
+PASS: unchanged function Require-Baseline
+PASS: unchanged function Write-Report
+PASS: unchanged function Get-LanAddresses
+PASS: unchanged function Get-HttpResult
+PASS: unchanged function Get-Identity
+PASS: unchanged function Save-LicenseRow
+PASS: unchanged function Get-RoomVerdict
+PASS: unchanged function Package-Results
+PASS: RC2 accepts BEFORE
+PASS: RC2 accepts SERVER_REOPEN
+PASS: RC2 accepts APP_REOPEN
+PASS: RC2 rejects WINDOWS_REBOOT1 and repeats prompt
+PASS: canonical RC2 prompt actually displays WINDOWS_REBOOT, not reported WINDOWS_REBOOT1
+PASS: R4 guard unchanged
+PASS: R4 exact candidate hash accepted
+PASS: HTTP 200 classification
+PASS: HTTP 302 classification
+PASS: HTTP 404 classification
+PASS: HTTP 500 classification
+PASS: empty RESULTS rejected without fake evidence
+PASS: actual 11-column CSV historical BEFORE/APP_REOPEN bytes preserved
+PASS: append stores label only; no invented license PASS/runtime identity equivalence
+TIMESTAMP = 2026-10-03T10:24:57.1347160+00:00
+COMPUTER_NAME = 630a91db0354
+Nghiệm thu RC3 — thử Unicode
+PASS: packaging includes hidden/nested evidence outside RESULTS
+PASS: evidence ZIP SHA matches
+PASS: hidden, nested and CSV evidence in ZIP
+PASS: evidence package contains no recursive ZIP
+PASS: packaging preserved input evidence bytes
+PASS: packaging preserved input evidence bytes
+PASS: packaging preserved input evidence bytes
+PASS: packaging preserved input evidence bytes
+PASS: login count failure retained
+PASS: submit count failure retained
+INTERNAL_REGRESSION = PASS; NATIVE_WINDOWS_5_1 = NOT_RUN
+
+===== RC2_CORE_SELF_TEST_runtime_report.txt =====
+FILE = 01_KIEM_TRA_TRUOC_KHI_CHAY.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+PASS: relative BAT target 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+FILE = 02_GHI_NHAN_LICENSE_RESTART.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 02_GHI_NHAN_LICENSE_RESTART.bat
+PASS: relative BAT target 02_GHI_NHAN_LICENSE_RESTART.bat
+FILE = 03_KIEM_TRA_SERVER_LAN.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 03_KIEM_TRA_SERVER_LAN.bat
+PASS: relative BAT target 03_KIEM_TRA_SERVER_LAN.bat
+FILE = 04_KIEM_TRA_MAY_CON.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 04_KIEM_TRA_MAY_CON.bat
+PASS: relative BAT target 04_KIEM_TRA_MAY_CON.bat
+FILE = 05_GHI_NHAN_TEST_PHONG_MAY.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 05_GHI_NHAN_TEST_PHONG_MAY.bat
+PASS: relative BAT target 05_GHI_NHAN_TEST_PHONG_MAY.bat
+FILE = 06_DONG_GOI_KET_QUA.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 06_DONG_GOI_KET_QUA.bat
+PASS: relative BAT target 06_DONG_GOI_KET_QUA.bat
+PASS: PowerShell parse Common.ps1
+PASS: PowerShell parse Run.ps1
+PASS: PowerShell parse SelfTest.ps1
+PASS: wrong candidate rejected
+PASS: missing candidate rejected
+PASS: real R4 SHA verified
+PASS: UTF8 logging
+PASS: CSV append
+PASS: 49 PCs NOT_TESTED
+PASS: 50 PCs no automatic PASS
+PASS: room error 0 fails
+PASS: room error 1 fails
+PASS: room error 2 fails
+PASS: room error 3 fails
+PASS: ZIP SHA256
+PASS: ZIP evidence contents
+CORE_RUNTIME_SELF_TEST = PASS
+WINDOWS_LAN_LICENSE_PHYSICAL_TEST = NOT_PERFORMED_BY_SELF_TEST
+BAT_NATIVE_DISPATCH = NOT_TESTED_BY_THIS_SCRIPT (bước 01 gọi thành công script không chứng minh các BAT còn lại đã chạy)
+RUNTIME = 7.4.13; OS = Unix
+
+===== RC3_CORE_SELF_TEST_runtime_report.txt =====
+FILE = 01_KIEM_TRA_TRUOC_KHI_CHAY.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+PASS: BAT ASCII 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+PASS: BAT CRLF only 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+PASS: relative BAT target 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+FILE = 02_GHI_NHAN_LICENSE_RESTART.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 02_GHI_NHAN_LICENSE_RESTART.bat
+PASS: BAT ASCII 02_GHI_NHAN_LICENSE_RESTART.bat
+PASS: BAT CRLF only 02_GHI_NHAN_LICENSE_RESTART.bat
+PASS: relative BAT target 02_GHI_NHAN_LICENSE_RESTART.bat
+FILE = 03_KIEM_TRA_SERVER_LAN.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 03_KIEM_TRA_SERVER_LAN.bat
+PASS: BAT ASCII 03_KIEM_TRA_SERVER_LAN.bat
+PASS: BAT CRLF only 03_KIEM_TRA_SERVER_LAN.bat
+PASS: relative BAT target 03_KIEM_TRA_SERVER_LAN.bat
+FILE = 04_KIEM_TRA_MAY_CON.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 04_KIEM_TRA_MAY_CON.bat
+PASS: BAT ASCII 04_KIEM_TRA_MAY_CON.bat
+PASS: BAT CRLF only 04_KIEM_TRA_MAY_CON.bat
+PASS: relative BAT target 04_KIEM_TRA_MAY_CON.bat
+FILE = 05_GHI_NHAN_TEST_PHONG_MAY.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 05_GHI_NHAN_TEST_PHONG_MAY.bat
+PASS: BAT ASCII 05_GHI_NHAN_TEST_PHONG_MAY.bat
+PASS: BAT CRLF only 05_GHI_NHAN_TEST_PHONG_MAY.bat
+PASS: relative BAT target 05_GHI_NHAN_TEST_PHONG_MAY.bat
+FILE = 06_DONG_GOI_KET_QUA.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 06_DONG_GOI_KET_QUA.bat
+PASS: BAT ASCII 06_DONG_GOI_KET_QUA.bat
+PASS: BAT CRLF only 06_DONG_GOI_KET_QUA.bat
+PASS: relative BAT target 06_DONG_GOI_KET_QUA.bat
+PASS: PowerShell parse Common.ps1
+PASS: PowerShell parse LabelValidationSelfTest.ps1
+PASS: PowerShell parse Run.ps1
+PASS: PowerShell parse SelfTest.ps1
+PASS: ACCEPT BEFORE
+PASS: ACCEPT SERVER_REOPEN
+PASS: ACCEPT APP_REOPEN
+PASS: ACCEPT WINDOWS_REBOOT1
+PASS: ACCEPT trimmed WINDOWS_REBOOT1
+PASS: REJECT [WINDOWS_REBOOT]
+PASS: REJECT [REBOOT1]
+PASS: REJECT [ABC]
+PASS: REJECT []
+PASS: uppercase normalization
+PASS: REJECT extra invalid [   ]
+PASS: REJECT extra invalid [	]
+PASS: REJECT extra invalid [WINDOWS_ REBOOT1]
+PASS: REJECT extra invalid [WINDOWS_REBOOT11]
+PASS: prompt returns BEFORE immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns SERVER_REOPEN immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns APP_REOPEN immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns WINDOWS_REBOOT1 immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns WINDOWS_REBOOT1 immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns BEFORE immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: retry limit ends after 20 invalid inputs
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+LABEL_VALIDATION_SELF_TEST = PASS; LICENSE_REBOOT_ACCEPTANCE = NOT_TESTED
+PASS: bounded non-interactive observation label tests
+PASS: wrong candidate rejected
+PASS: missing candidate rejected
+PASS: real R4 SHA verified
+PASS: UTF8 logging
+PASS: CSV append
+PASS: CSV existing bytes preserved on append
+PASS: CSV new label appended without rewriting historical labels or claiming license PASS
+PASS: 49 PCs NOT_TESTED
+PASS: 50 PCs no automatic PASS
+PASS: room error 0 fails
+PASS: room error 1 fails
+PASS: room error 2 fails
+PASS: room error 3 fails
+PASS: ZIP SHA256
+PASS: ZIP evidence contents
+CORE_RUNTIME_SELF_TEST = PASS
+WINDOWS_LAN_LICENSE_PHYSICAL_TEST = NOT_PERFORMED_BY_SELF_TEST
+BAT_NATIVE_DISPATCH = NOT_TESTED_BY_THIS_SCRIPT (bước 01 gọi thành công script không chứng minh các BAT còn lại đã chạy)
+RUNTIME = 7.4.13; OS = Unix
+
+===== NON_WINDOWS_GUARD.txt =====
+[FAIL] Không hoàn tất tác vụ. Không tiếp tục nếu precheck chưa PASS.
+Toolkit này cần Windows và Windows PowerShell 5.1.
