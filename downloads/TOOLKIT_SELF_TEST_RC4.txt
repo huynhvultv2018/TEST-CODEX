@@ -1,0 +1,1155 @@
+TOOLKIT RC4 INTERNAL SELF-TEST — NOT NATIVE WINDOWS ACCEPTANCE
+TOOLKIT_RC4_STATUS = READY_FOR_WINDOWS_RETEST
+R4_STATUS = PENDING_WINDOWS_VALIDATION
+R4_LAN_STATUS = NOT_YET_DETERMINED
+WINDOWS_POWERSHELL_5_1_EXECUTION = NOT_RUN
+HOST = Linux / PowerShell 7.4.13
+R4_RUNTIME_CHANGED = NO
+R4_CANDIDATE_SHA256 = 68219167829986f39d025251bf4681d7298e6c652689420d82cfe8a08d130ec2
+NATIVE_CMD_BAT_DISPATCH = NOT_RUN
+RUNTIME_IDENTITY_EQUIVALENCE = UNCONFIRMED
+LICENSE_REBOOT_ACCEPTANCE = NOT_TESTED
+DELIVERED_RESULTS = EMPTY
+SUBPROCESS_TIMEOUT_SECONDS = 60
+
+SUMMARY
+{
+  "BAT_ENCODING": [
+    {
+      "file": "01_KIEM_TRA_TRUOC_KHI_CHAY.bat",
+      "status": "PASS",
+      "sha256": "321e25182207f65163cd0a5f84d2aad19781901c4c64feb9ea1d55419569fb04",
+      "first_3_bytes": "40 65 63",
+      "encoding": "ASCII",
+      "newline": "CRLF",
+      "unchanged": true
+    },
+    {
+      "file": "02_GHI_NHAN_LICENSE_RESTART.bat",
+      "status": "PASS",
+      "sha256": "8165e075654d4249559b8b32bf35f516442f6777ce5134c8d53292c6cd2ab517",
+      "first_3_bytes": "40 65 63",
+      "encoding": "ASCII",
+      "newline": "CRLF",
+      "unchanged": true
+    },
+    {
+      "file": "03_KIEM_TRA_SERVER_LAN.bat",
+      "status": "PASS",
+      "sha256": "4f0bacc3416d4e6ae4b53ed7171fa67f0c17f5358043fe77576c8fd54be7c36d",
+      "first_3_bytes": "40 65 63",
+      "encoding": "ASCII",
+      "newline": "CRLF",
+      "unchanged": true
+    },
+    {
+      "file": "04_KIEM_TRA_MAY_CON.bat",
+      "status": "PASS",
+      "sha256": "1b2dae088433171fcf5f9174c549d1d9562ff9e849f135db3d8a5f593170e046",
+      "first_3_bytes": "40 65 63",
+      "encoding": "ASCII",
+      "newline": "CRLF",
+      "unchanged": true
+    },
+    {
+      "file": "05_GHI_NHAN_TEST_PHONG_MAY.bat",
+      "status": "PASS",
+      "sha256": "7ed2ccbd798dff923f33dba7b647dda2a8e64f782a8d603cd68aebd4e187e8a5",
+      "first_3_bytes": "40 65 63",
+      "encoding": "ASCII",
+      "newline": "CRLF",
+      "unchanged": true
+    },
+    {
+      "file": "06_DONG_GOI_KET_QUA.bat",
+      "status": "PASS",
+      "sha256": "9d2c1498c97afc8851cdf67bd30657a8b33866e10ea88d6153a7409909754125",
+      "first_3_bytes": "40 65 63",
+      "encoding": "ASCII",
+      "newline": "CRLF",
+      "unchanged": true
+    }
+  ],
+  "POWERSHELL51_COMPATIBILITY": {
+    "static": "PASS",
+    "native_execution": "NOT_RUN",
+    "target": "Windows PowerShell 5.1",
+    "internal_execution": "PowerShell 7.4.13/Linux"
+  },
+  "COLLECTION_AND_STEP03": {
+    "status": "PASS",
+    "exit_code": 0,
+    "assertions": 268,
+    "timeout_seconds": 60
+  },
+  "LABEL": {
+    "status": "PASS",
+    "exit_code": 0,
+    "assertions": 96,
+    "timeout_seconds": 60
+  },
+  "REGRESSION_AND_ROOT_CAUSE": {
+    "status": "PASS",
+    "exit_code": 0,
+    "assertions": 73,
+    "timeout_seconds": 60
+  },
+  "RC3_CORE_SELF_TEST": {
+    "status": "PASS",
+    "exit_code": 0,
+    "assertions": 0,
+    "timeout_seconds": 60,
+    "core_assertions": 140
+  },
+  "RC4_CORE_SELF_TEST": {
+    "status": "PASS",
+    "exit_code": 0,
+    "assertions": 0,
+    "timeout_seconds": 60,
+    "core_assertions": 411
+  },
+  "NATIVE_OS_GUARD": {
+    "status": "PASS",
+    "exit_code": 1,
+    "assertions": 0,
+    "timeout_seconds": 60
+  },
+  "PROTECTED_FILES": {
+    "status": "PASS",
+    "count": 2392,
+    "candidate_sha256": "68219167829986f39d025251bf4681d7298e6c652689420d82cfe8a08d130ec2",
+    "r4_runtime_changed": false,
+    "rc3_original_changed": false
+  }
+}
+
+===== COLLECTION_AND_STEP03.txt =====
+PASS: CASE01_NULL normalized array
+PASS: CASE01_NULL count
+PASS: CASE01_NULL Get-NetIPAddress collection
+PASS: CASE01_NULL Get-NetIPAddress status
+PASS: CASE01_NULL Get-NetTCPConnection collection
+PASS: CASE01_NULL Get-NetTCPConnection status
+PASS: CASE01_NULL Get-NetFirewallRule collection
+PASS: CASE01_NULL Get-NetFirewallRule status
+PASS: CASE01_NULL Get-NetFirewallPortFilter collection
+PASS: CASE01_NULL Get-NetFirewallPortFilter status
+PASS: CASE01_NULL Get-NetFirewallProfile collection
+PASS: CASE01_NULL Get-NetFirewallProfile status
+PASS: CASE01_NULL Get-NetConnectionProfile collection
+PASS: CASE01_NULL Get-NetConnectionProfile status
+PASS: CASE01_NULL IP discovery and array return boundary
+PASS: CASE01_NULL HTTP unexpected or absent results handled
+PASS: CASE01_NULL CSV result collection
+PASS: CASE01_NULL evidence-file collection
+PASS: CASE01_NULL step03 completes without collection exception
+PASS: CASE01_NULL step03 listener count semantics
+PASS: CASE01_NULL loopback probe still performed
+PASS: CASE02_ZERO normalized array
+PASS: CASE02_ZERO count
+PASS: CASE02_ZERO Get-NetIPAddress collection
+PASS: CASE02_ZERO Get-NetIPAddress status
+PASS: CASE02_ZERO Get-NetTCPConnection collection
+PASS: CASE02_ZERO Get-NetTCPConnection status
+PASS: CASE02_ZERO Get-NetFirewallRule collection
+PASS: CASE02_ZERO Get-NetFirewallRule status
+PASS: CASE02_ZERO Get-NetFirewallPortFilter collection
+PASS: CASE02_ZERO Get-NetFirewallPortFilter status
+PASS: CASE02_ZERO Get-NetFirewallProfile collection
+PASS: CASE02_ZERO Get-NetFirewallProfile status
+PASS: CASE02_ZERO Get-NetConnectionProfile collection
+PASS: CASE02_ZERO Get-NetConnectionProfile status
+PASS: CASE02_ZERO IP discovery and array return boundary
+PASS: CASE02_ZERO HTTP unexpected or absent results handled
+PASS: CASE02_ZERO CSV result collection
+PASS: CASE02_ZERO evidence-file collection
+PASS: CASE02_ZERO step03 completes without collection exception
+PASS: CASE02_ZERO step03 listener count semantics
+PASS: CASE02_ZERO loopback probe still performed
+PASS: CASE03_ONE_OBJECT normalized array
+PASS: CASE03_ONE_OBJECT count
+PASS: CASE03_ONE_OBJECT Get-NetIPAddress collection
+PASS: CASE03_ONE_OBJECT Get-NetIPAddress status
+PASS: CASE03_ONE_OBJECT Get-NetTCPConnection collection
+PASS: CASE03_ONE_OBJECT Get-NetTCPConnection status
+PASS: CASE03_ONE_OBJECT Get-NetFirewallRule collection
+PASS: CASE03_ONE_OBJECT Get-NetFirewallRule status
+PASS: CASE03_ONE_OBJECT Get-NetFirewallPortFilter collection
+PASS: CASE03_ONE_OBJECT Get-NetFirewallPortFilter status
+PASS: CASE03_ONE_OBJECT Get-NetFirewallProfile collection
+PASS: CASE03_ONE_OBJECT Get-NetFirewallProfile status
+PASS: CASE03_ONE_OBJECT Get-NetConnectionProfile collection
+PASS: CASE03_ONE_OBJECT Get-NetConnectionProfile status
+PASS: CASE03_ONE_OBJECT IP discovery and array return boundary
+PASS: CASE03_ONE_OBJECT HTTP unexpected or absent results handled
+PASS: CASE03_ONE_OBJECT CSV result collection
+PASS: CASE03_ONE_OBJECT evidence-file collection
+PASS: CASE03_ONE_OBJECT step03 completes without collection exception
+PASS: CASE03_ONE_OBJECT step03 listener count semantics
+PASS: CASE03_ONE_OBJECT loopback probe still performed
+PASS: CASE04_TWO normalized array
+PASS: CASE04_TWO count
+PASS: CASE04_TWO Get-NetIPAddress collection
+PASS: CASE04_TWO Get-NetIPAddress status
+PASS: CASE04_TWO Get-NetTCPConnection collection
+PASS: CASE04_TWO Get-NetTCPConnection status
+PASS: CASE04_TWO Get-NetFirewallRule collection
+PASS: CASE04_TWO Get-NetFirewallRule status
+PASS: CASE04_TWO Get-NetFirewallPortFilter collection
+PASS: CASE04_TWO Get-NetFirewallPortFilter status
+PASS: CASE04_TWO Get-NetFirewallProfile collection
+PASS: CASE04_TWO Get-NetFirewallProfile status
+PASS: CASE04_TWO Get-NetConnectionProfile collection
+PASS: CASE04_TWO Get-NetConnectionProfile status
+PASS: CASE04_TWO IP discovery and array return boundary
+PASS: CASE04_TWO HTTP unexpected or absent results handled
+PASS: CASE04_TWO CSV result collection
+PASS: CASE04_TWO evidence-file collection
+PASS: CASE04_TWO step03 completes without collection exception
+PASS: CASE04_TWO step03 listener count semantics
+PASS: CASE04_TWO loopback probe still performed
+PASS: CASE05_MANY normalized array
+PASS: CASE05_MANY count
+PASS: CASE05_MANY Get-NetIPAddress collection
+PASS: CASE05_MANY Get-NetIPAddress status
+PASS: CASE05_MANY Get-NetTCPConnection collection
+PASS: CASE05_MANY Get-NetTCPConnection status
+PASS: CASE05_MANY Get-NetFirewallRule collection
+PASS: CASE05_MANY Get-NetFirewallRule status
+PASS: CASE05_MANY Get-NetFirewallPortFilter collection
+PASS: CASE05_MANY Get-NetFirewallPortFilter status
+PASS: CASE05_MANY Get-NetFirewallProfile collection
+PASS: CASE05_MANY Get-NetFirewallProfile status
+PASS: CASE05_MANY Get-NetConnectionProfile collection
+PASS: CASE05_MANY Get-NetConnectionProfile status
+PASS: CASE05_MANY IP discovery and array return boundary
+PASS: CASE05_MANY HTTP unexpected or absent results handled
+PASS: CASE05_MANY CSV result collection
+PASS: CASE05_MANY evidence-file collection
+PASS: CASE05_MANY step03 completes without collection exception
+PASS: CASE05_MANY step03 listener count semantics
+PASS: CASE05_MANY loopback probe still performed
+PASS: CASE06_SCALAR_STRING normalized array
+PASS: CASE06_SCALAR_STRING count
+PASS: CASE06_SCALAR_STRING Get-NetIPAddress collection
+PASS: CASE06_SCALAR_STRING Get-NetIPAddress status
+PASS: CASE06_SCALAR_STRING Get-NetTCPConnection collection
+PASS: CASE06_SCALAR_STRING Get-NetTCPConnection status
+PASS: CASE06_SCALAR_STRING Get-NetFirewallRule collection
+PASS: CASE06_SCALAR_STRING Get-NetFirewallRule status
+PASS: CASE06_SCALAR_STRING Get-NetFirewallPortFilter collection
+PASS: CASE06_SCALAR_STRING Get-NetFirewallPortFilter status
+PASS: CASE06_SCALAR_STRING Get-NetFirewallProfile collection
+PASS: CASE06_SCALAR_STRING Get-NetFirewallProfile status
+PASS: CASE06_SCALAR_STRING Get-NetConnectionProfile collection
+PASS: CASE06_SCALAR_STRING Get-NetConnectionProfile status
+PASS: CASE06_SCALAR_STRING IP discovery and array return boundary
+PASS: CASE06_SCALAR_STRING HTTP unexpected or absent results handled
+PASS: CASE06_SCALAR_STRING CSV result collection
+PASS: CASE06_SCALAR_STRING evidence-file collection
+PASS: CASE06_SCALAR_STRING step03 completes without collection exception
+PASS: CASE06_SCALAR_STRING step03 listener count semantics
+PASS: CASE06_SCALAR_STRING loopback probe still performed
+PASS: CASE07_PSCUSTOMOBJECT normalized array
+PASS: CASE07_PSCUSTOMOBJECT count
+PASS: CASE07_PSCUSTOMOBJECT Get-NetIPAddress collection
+PASS: CASE07_PSCUSTOMOBJECT Get-NetIPAddress status
+PASS: CASE07_PSCUSTOMOBJECT Get-NetTCPConnection collection
+PASS: CASE07_PSCUSTOMOBJECT Get-NetTCPConnection status
+PASS: CASE07_PSCUSTOMOBJECT Get-NetFirewallRule collection
+PASS: CASE07_PSCUSTOMOBJECT Get-NetFirewallRule status
+PASS: CASE07_PSCUSTOMOBJECT Get-NetFirewallPortFilter collection
+PASS: CASE07_PSCUSTOMOBJECT Get-NetFirewallPortFilter status
+PASS: CASE07_PSCUSTOMOBJECT Get-NetFirewallProfile collection
+PASS: CASE07_PSCUSTOMOBJECT Get-NetFirewallProfile status
+PASS: CASE07_PSCUSTOMOBJECT Get-NetConnectionProfile collection
+PASS: CASE07_PSCUSTOMOBJECT Get-NetConnectionProfile status
+PASS: CASE07_PSCUSTOMOBJECT IP discovery and array return boundary
+PASS: CASE07_PSCUSTOMOBJECT HTTP unexpected or absent results handled
+PASS: CASE07_PSCUSTOMOBJECT CSV result collection
+PASS: CASE07_PSCUSTOMOBJECT evidence-file collection
+PASS: CASE07_PSCUSTOMOBJECT step03 completes without collection exception
+PASS: CASE07_PSCUSTOMOBJECT step03 listener count semantics
+PASS: CASE07_PSCUSTOMOBJECT loopback probe still performed
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY normalized array
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY count
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetIPAddress collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetIPAddress status
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetTCPConnection collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetTCPConnection status
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetFirewallRule collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetFirewallRule status
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetFirewallPortFilter collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetFirewallPortFilter status
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetFirewallProfile collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetFirewallProfile status
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetConnectionProfile collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetConnectionProfile status
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY IP discovery and array return boundary
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY HTTP unexpected or absent results handled
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY CSV result collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY evidence-file collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY step03 completes without collection exception
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY step03 listener count semantics
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY loopback probe still performed
+PASS: null entries excluded; one real record retained
+PASS: false boolean is a record, not absent data
+PASS: true quiet TCP result retained
+PASS: object Count property cannot masquerade as record count
+PASS: DENIED Get-NetIPAddress degrades to ACCESS_DENIED
+PASS: DENIED Get-NetTCPConnection degrades to ACCESS_DENIED
+PASS: DENIED Get-NetFirewallProfile degrades to ACCESS_DENIED
+PASS: DENIED Get-NetFirewallRule degrades to ACCESS_DENIED
+PASS: DENIED Get-NetFirewallPortFilter degrades to ACCESS_DENIED
+PASS: DENIED Get-NetConnectionProfile degrades to ACCESS_DENIED
+PASS: DENIED Get-CimInstance degrades to ACCESS_DENIED
+PASS: DENIED Get-Process degrades to ACCESS_DENIED
+PASS: DENIED step03 WINDOWS_INFORMATION
+PASS: DENIED step03 LISTENING_PORT
+PASS: DENIED step03 IPv4_LAN
+PASS: DENIED step03 FIREWALL_STATE
+PASS: DENIED step03 FIREWALL_INBOUND_RULES
+PASS: DENIED step03 FIREWALL_PORT_FILTERS
+PASS: DENIED step03 ACTIVE_NETWORK
+PASS: DENIED no invented R4 LAN verdict
+PASS: UNAVAILABLE Get-NetIPAddress degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-NetTCPConnection degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-NetFirewallProfile degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-NetFirewallRule degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-NetFirewallPortFilter degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-NetConnectionProfile degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-CimInstance degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-Process degrades to UNAVAILABLE
+PASS: UNAVAILABLE step03 WINDOWS_INFORMATION
+PASS: UNAVAILABLE step03 LISTENING_PORT
+PASS: UNAVAILABLE step03 IPv4_LAN
+PASS: UNAVAILABLE step03 FIREWALL_STATE
+PASS: UNAVAILABLE step03 FIREWALL_INBOUND_RULES
+PASS: UNAVAILABLE step03 FIREWALL_PORT_FILTERS
+PASS: UNAVAILABLE step03 ACTIVE_NETWORK
+PASS: UNAVAILABLE no invented R4 LAN verdict
+PASS: MISSING Get-NetIPAddress degrades to NOT_APPLICABLE
+PASS: MISSING Get-NetTCPConnection degrades to NOT_APPLICABLE
+PASS: MISSING Get-NetFirewallProfile degrades to NOT_APPLICABLE
+PASS: MISSING Get-NetFirewallRule degrades to NOT_APPLICABLE
+PASS: MISSING Get-NetFirewallPortFilter degrades to NOT_APPLICABLE
+PASS: MISSING Get-NetConnectionProfile degrades to NOT_APPLICABLE
+PASS: MISSING Get-CimInstance degrades to NOT_APPLICABLE
+PASS: MISSING Get-Process degrades to NOT_APPLICABLE
+PASS: MISSING step03 WINDOWS_INFORMATION
+PASS: MISSING step03 LISTENING_PORT
+PASS: MISSING step03 IPv4_LAN
+PASS: MISSING step03 FIREWALL_STATE
+PASS: MISSING step03 FIREWALL_INBOUND_RULES
+PASS: MISSING step03 FIREWALL_PORT_FILTERS
+PASS: MISSING step03 ACTIVE_NETWORK
+PASS: MISSING no invented R4 LAN verdict
+PASS: NOT_FOUND Get-NetIPAddress degrades to NOT_FOUND
+PASS: NOT_FOUND Get-NetTCPConnection degrades to NOT_FOUND
+PASS: NOT_FOUND Get-NetFirewallProfile degrades to NOT_FOUND
+PASS: NOT_FOUND Get-NetFirewallRule degrades to NOT_FOUND
+PASS: NOT_FOUND Get-NetFirewallPortFilter degrades to NOT_FOUND
+PASS: NOT_FOUND Get-NetConnectionProfile degrades to NOT_FOUND
+PASS: NOT_FOUND Get-CimInstance degrades to NOT_FOUND
+PASS: NOT_FOUND Get-Process degrades to NOT_FOUND
+PASS: NOT_FOUND step03 WINDOWS_INFORMATION
+PASS: NOT_FOUND step03 LISTENING_PORT
+PASS: NOT_FOUND step03 IPv4_LAN
+PASS: NOT_FOUND step03 FIREWALL_STATE
+PASS: NOT_FOUND step03 FIREWALL_INBOUND_RULES
+PASS: NOT_FOUND step03 FIREWALL_PORT_FILTERS
+PASS: NOT_FOUND step03 ACTIVE_NETWORK
+PASS: NOT_FOUND no invented R4 LAN verdict
+PASS: loopback excluded from LAN IP list
+PASS: link-local excluded from LAN IP list
+PASS: malformed IP schema unavailable, no HTTP target constructed
+PASS: matching TCP port filter retained
+PASS: matching TCP port filter retained
+PASS: matching TCP port filter retained
+PASS: matching TCP port filter retained
+PASS: matching TCP port filter retained
+PASS: UDP filter is not TCP
+PASS: other port filter is not port 5000
+PASS: null port filter handled
+PASS: malformed range never throws overflow
+PASS: step03 synthetic complete contract: PORT = 5000
+PASS: step03 synthetic complete contract: WINDOWS = WINDOWS_TEST_ONLY; VERSION = 10_TEST_ONLY
+PASS: step03 synthetic complete contract: POWERSHELL =
+PASS: step03 synthetic complete contract: IPv4_LAN = FOUND; RECORD_COUNT = 1
+PASS: step03 synthetic complete contract: LISTENING_PORT = FOUND; RECORD_COUNT = 1
+PASS: step03 synthetic complete contract: LISTENER_PROCESS = FOUND; PID = 1234
+PASS: step03 synthetic complete contract: PROCESS_NAME = PROCESS_TEST_ONLY
+PASS: step03 synthetic complete contract: LAN_BINDING = PRESENT; REMOTE_ACCESS_NOT_YET_CONFIRMED
+PASS: step03 synthetic complete contract: LOOPBACK : HTTP_STATUS = 200; HTTP_ACCESS = PASS
+PASS: step03 synthetic complete contract: http://192.0.2.51:5000/ : HTTP_STATUS = 200; HTTP_ACCESS = PASS
+PASS: step03 synthetic complete contract: FIREWALL_STATE = FOUND
+PASS: step03 synthetic complete contract: FIREWALL_INBOUND_RULES = FOUND
+PASS: step03 synthetic complete contract: FIREWALL_PORT_FILTERS = FOUND
+PASS: step03 synthetic complete contract: FIREWALL_PORT_FILTERS_MATCHING = 1
+PASS: step03 synthetic complete contract: ACTIVE_NETWORK = FOUND
+PASS: step03 synthetic complete contract: R4_LAN_STATUS = NOT_YET_DETERMINED
+PASS: step03 probes correct local and validated LAN-IP URLs
+PASS: boot timestamp format unchanged for valid data
+PASS: missing boot timestamp does not crash license observation
+PASS: unapproved write command rejected before invocation
+COLLECTION_SAFETY_SELF_TEST = PASS; WINDOWS_NATIVE_EXECUTION = NOT_RUN_BY_UNIT_TEST
+
+===== LABEL.txt =====
+PASS: ACCEPT BEFORE
+PASS: ACCEPT SERVER_REOPEN
+PASS: ACCEPT APP_REOPEN
+PASS: ACCEPT WINDOWS_REBOOT1
+PASS: ACCEPT trimmed WINDOWS_REBOOT1
+PASS: REJECT [WINDOWS_REBOOT]
+PASS: REJECT [REBOOT1]
+PASS: REJECT [ABC]
+PASS: REJECT []
+PASS: uppercase normalization
+PASS: REJECT extra invalid [   ]
+PASS: REJECT extra invalid [	]
+PASS: REJECT extra invalid [WINDOWS_ REBOOT1]
+PASS: REJECT extra invalid [WINDOWS_REBOOT11]
+PASS: prompt returns BEFORE immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns SERVER_REOPEN immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns APP_REOPEN immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns WINDOWS_REBOOT1 immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns WINDOWS_REBOOT1 immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns BEFORE immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: retry limit ends after 20 invalid inputs
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+LABEL_VALIDATION_SELF_TEST = PASS; LICENSE_REBOOT_ACCEPTANCE = NOT_TESTED
+
+===== REGRESSION_AND_ROOT_CAUSE.txt =====
+PASS: parser Common.ps1
+PASS: parser LabelValidationSelfTest.ps1
+PASS: parser Run.ps1
+PASS: parser SelfTest.ps1
+PASS: parser CollectionSafetySelfTest.ps1
+PASS: parser Common.ps1
+PASS: parser LabelValidationSelfTest.ps1
+PASS: parser NetworkInspection.ps1
+PASS: parser Run.ps1
+PASS: parser SelfTest.ps1
+PASS: existing function retained Initialize-Results
+PASS: unchanged RC3 function Initialize-Results
+PASS: existing function retained Read-Choice
+PASS: unchanged RC3 function Read-Choice
+PASS: existing function retained Convert-LicenseObservationLabel
+PASS: unchanged RC3 function Convert-LicenseObservationLabel
+PASS: existing function retained Read-LicenseObservation
+PASS: unchanged RC3 function Read-LicenseObservation
+PASS: existing function retained Read-Number
+PASS: unchanged RC3 function Read-Number
+PASS: existing function retained Get-Baseline
+PASS: unchanged RC3 function Get-Baseline
+PASS: existing function retained Require-Baseline
+PASS: unchanged RC3 function Require-Baseline
+PASS: existing function retained Write-Report
+PASS: unchanged RC3 function Write-Report
+PASS: existing function retained Get-LanAddresses
+PASS: existing function retained Get-HttpResult
+PASS: unchanged RC3 function Get-HttpResult
+PASS: existing function retained Get-Identity
+PASS: unchanged RC3 function Get-Identity
+PASS: existing function retained Save-LicenseRow
+PASS: unchanged RC3 function Save-LicenseRow
+PASS: existing function retained Get-RoomVerdict
+PASS: unchanged RC3 function Get-RoomVerdict
+PASS: existing function retained Package-Results
+PASS: packaging changed only collection boundary
+PASS: Run task 5 unchanged
+PASS: Run task 6 unchanged
+PASS: native OS guard preserved
+PASS: RC3 label reader remains in Task 2
+PASS: Task 3 SHA failure stops before all discovery
+PASS: exact RC3 zero-result Count exception reproduced under StrictMode
+PASS: real frozen R4 SHA accepted
+PASS: missing R4 rejected
+PASS: real HTTP 200 RC3 verdict unchanged
+PASS: HTTP 200 safe report handling
+PASS: real HTTP 302 RC3 verdict unchanged
+PASS: HTTP 302 safe report handling
+PASS: real HTTP 404 RC3 verdict unchanged
+PASS: HTTP 404 safe report handling
+PASS: real HTTP 500 RC3 verdict unchanged
+PASS: HTTP 500 safe report handling
+PASS: absent Windows listener cmdlet does not crash real helper
+PASS: absent Windows IP cmdlet does not crash real helper
+PASS: real local HTTP report probe succeeds independently of missing Windows APIs
+PASS: real Linux helper execution is not Windows LAN certification
+PASS: wrong R4 rejected
+PASS: empty evidence cannot be packaged
+PASS: real single-row CSV is an array
+PASS: BEFORE/APP_REOPEN historical CSV bytes preserved
+PASS: new phase stored without inventing acceptance
+TIMESTAMP = 2026-10-03T11:44:38.3526350+00:00
+COMPUTER_NAME = 630a91db0354
+Kiểm tra RC4 — Unicode
+PASS: real hidden/nested file discovery counts four records
+PASS: real evidence ZIP count and SHA unchanged
+PASS: hidden, nested, CSV entries included
+PASS: packaging preserves original evidence bytes
+PASS: packaging preserves original evidence bytes
+PASS: packaging preserves original evidence bytes
+PASS: packaging preserves original evidence bytes
+PASS: 49-PC status unchanged
+PASS: no automatic 50-PC PASS
+PASS: login failure unchanged
+PASS: submit failure unchanged
+INTERNAL_REGRESSION = PASS; WINDOWS_POWERSHELL_5_1_EXECUTION = NOT_RUN
+
+===== RC3_CORE_SELF_TEST_runtime_report.txt =====
+FILE = 01_KIEM_TRA_TRUOC_KHI_CHAY.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+PASS: BAT ASCII 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+PASS: BAT CRLF only 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+PASS: relative BAT target 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+FILE = 02_GHI_NHAN_LICENSE_RESTART.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 02_GHI_NHAN_LICENSE_RESTART.bat
+PASS: BAT ASCII 02_GHI_NHAN_LICENSE_RESTART.bat
+PASS: BAT CRLF only 02_GHI_NHAN_LICENSE_RESTART.bat
+PASS: relative BAT target 02_GHI_NHAN_LICENSE_RESTART.bat
+FILE = 03_KIEM_TRA_SERVER_LAN.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 03_KIEM_TRA_SERVER_LAN.bat
+PASS: BAT ASCII 03_KIEM_TRA_SERVER_LAN.bat
+PASS: BAT CRLF only 03_KIEM_TRA_SERVER_LAN.bat
+PASS: relative BAT target 03_KIEM_TRA_SERVER_LAN.bat
+FILE = 04_KIEM_TRA_MAY_CON.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 04_KIEM_TRA_MAY_CON.bat
+PASS: BAT ASCII 04_KIEM_TRA_MAY_CON.bat
+PASS: BAT CRLF only 04_KIEM_TRA_MAY_CON.bat
+PASS: relative BAT target 04_KIEM_TRA_MAY_CON.bat
+FILE = 05_GHI_NHAN_TEST_PHONG_MAY.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 05_GHI_NHAN_TEST_PHONG_MAY.bat
+PASS: BAT ASCII 05_GHI_NHAN_TEST_PHONG_MAY.bat
+PASS: BAT CRLF only 05_GHI_NHAN_TEST_PHONG_MAY.bat
+PASS: relative BAT target 05_GHI_NHAN_TEST_PHONG_MAY.bat
+FILE = 06_DONG_GOI_KET_QUA.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 06_DONG_GOI_KET_QUA.bat
+PASS: BAT ASCII 06_DONG_GOI_KET_QUA.bat
+PASS: BAT CRLF only 06_DONG_GOI_KET_QUA.bat
+PASS: relative BAT target 06_DONG_GOI_KET_QUA.bat
+PASS: PowerShell parse Common.ps1
+PASS: PowerShell parse LabelValidationSelfTest.ps1
+PASS: PowerShell parse Run.ps1
+PASS: PowerShell parse SelfTest.ps1
+PASS: ACCEPT BEFORE
+PASS: ACCEPT SERVER_REOPEN
+PASS: ACCEPT APP_REOPEN
+PASS: ACCEPT WINDOWS_REBOOT1
+PASS: ACCEPT trimmed WINDOWS_REBOOT1
+PASS: REJECT [WINDOWS_REBOOT]
+PASS: REJECT [REBOOT1]
+PASS: REJECT [ABC]
+PASS: REJECT []
+PASS: uppercase normalization
+PASS: REJECT extra invalid [   ]
+PASS: REJECT extra invalid [	]
+PASS: REJECT extra invalid [WINDOWS_ REBOOT1]
+PASS: REJECT extra invalid [WINDOWS_REBOOT11]
+PASS: prompt returns BEFORE immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns SERVER_REOPEN immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns APP_REOPEN immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns WINDOWS_REBOOT1 immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns WINDOWS_REBOOT1 immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns BEFORE immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: retry limit ends after 20 invalid inputs
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+LABEL_VALIDATION_SELF_TEST = PASS; LICENSE_REBOOT_ACCEPTANCE = NOT_TESTED
+PASS: bounded non-interactive observation label tests
+PASS: wrong candidate rejected
+PASS: missing candidate rejected
+PASS: real R4 SHA verified
+PASS: UTF8 logging
+PASS: CSV append
+PASS: CSV existing bytes preserved on append
+PASS: CSV new label appended without rewriting historical labels or claiming license PASS
+PASS: 49 PCs NOT_TESTED
+PASS: 50 PCs no automatic PASS
+PASS: room error 0 fails
+PASS: room error 1 fails
+PASS: room error 2 fails
+PASS: room error 3 fails
+PASS: ZIP SHA256
+PASS: ZIP evidence contents
+CORE_RUNTIME_SELF_TEST = PASS
+WINDOWS_LAN_LICENSE_PHYSICAL_TEST = NOT_PERFORMED_BY_SELF_TEST
+BAT_NATIVE_DISPATCH = NOT_TESTED_BY_THIS_SCRIPT (bước 01 gọi thành công script không chứng minh các BAT còn lại đã chạy)
+RUNTIME = 7.4.13; OS = Unix
+
+===== RC4_CORE_SELF_TEST_runtime_report.txt =====
+FILE = 01_KIEM_TRA_TRUOC_KHI_CHAY.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+PASS: BAT ASCII 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+PASS: BAT CRLF only 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+PASS: relative BAT target 01_KIEM_TRA_TRUOC_KHI_CHAY.bat
+FILE = 02_GHI_NHAN_LICENSE_RESTART.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 02_GHI_NHAN_LICENSE_RESTART.bat
+PASS: BAT ASCII 02_GHI_NHAN_LICENSE_RESTART.bat
+PASS: BAT CRLF only 02_GHI_NHAN_LICENSE_RESTART.bat
+PASS: relative BAT target 02_GHI_NHAN_LICENSE_RESTART.bat
+FILE = 03_KIEM_TRA_SERVER_LAN.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 03_KIEM_TRA_SERVER_LAN.bat
+PASS: BAT ASCII 03_KIEM_TRA_SERVER_LAN.bat
+PASS: BAT CRLF only 03_KIEM_TRA_SERVER_LAN.bat
+PASS: relative BAT target 03_KIEM_TRA_SERVER_LAN.bat
+FILE = 04_KIEM_TRA_MAY_CON.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 04_KIEM_TRA_MAY_CON.bat
+PASS: BAT ASCII 04_KIEM_TRA_MAY_CON.bat
+PASS: BAT CRLF only 04_KIEM_TRA_MAY_CON.bat
+PASS: relative BAT target 04_KIEM_TRA_MAY_CON.bat
+FILE = 05_GHI_NHAN_TEST_PHONG_MAY.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 05_GHI_NHAN_TEST_PHONG_MAY.bat
+PASS: BAT ASCII 05_GHI_NHAN_TEST_PHONG_MAY.bat
+PASS: BAT CRLF only 05_GHI_NHAN_TEST_PHONG_MAY.bat
+PASS: relative BAT target 05_GHI_NHAN_TEST_PHONG_MAY.bat
+FILE = 06_DONG_GOI_KET_QUA.bat; FIRST_3_BYTES = 40-65-63; HAS_UTF8_BOM = FALSE; FIRST_LINE = @echo off
+PASS: BAT bytes 06_DONG_GOI_KET_QUA.bat
+PASS: BAT ASCII 06_DONG_GOI_KET_QUA.bat
+PASS: BAT CRLF only 06_DONG_GOI_KET_QUA.bat
+PASS: relative BAT target 06_DONG_GOI_KET_QUA.bat
+PASS: PowerShell parse CollectionSafetySelfTest.ps1
+PASS: PowerShell parse Common.ps1
+PASS: PowerShell parse LabelValidationSelfTest.ps1
+PASS: PowerShell parse NetworkInspection.ps1
+PASS: PowerShell parse Run.ps1
+PASS: PowerShell parse SelfTest.ps1
+PASS: ACCEPT BEFORE
+PASS: ACCEPT SERVER_REOPEN
+PASS: ACCEPT APP_REOPEN
+PASS: ACCEPT WINDOWS_REBOOT1
+PASS: ACCEPT trimmed WINDOWS_REBOOT1
+PASS: REJECT [WINDOWS_REBOOT]
+PASS: REJECT [REBOOT1]
+PASS: REJECT [ABC]
+PASS: REJECT []
+PASS: uppercase normalization
+PASS: REJECT extra invalid [   ]
+PASS: REJECT extra invalid [	]
+PASS: REJECT extra invalid [WINDOWS_ REBOOT1]
+PASS: REJECT extra invalid [WINDOWS_REBOOT11]
+PASS: prompt returns BEFORE immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns SERVER_REOPEN immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns APP_REOPEN immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns WINDOWS_REBOOT1 immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns WINDOWS_REBOOT1 immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt returns BEFORE immediately
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: retry limit ends after 20 invalid inputs
+PASS: exact input consumption
+PASS: no extra prompt after valid input
+PASS: every invalid input has a clear message
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: prompt and allowed-values agree
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+PASS: invalid input explains valid choices and retry
+LABEL_VALIDATION_SELF_TEST = PASS; LICENSE_REBOOT_ACCEPTANCE = NOT_TESTED
+PASS: bounded non-interactive observation label tests
+PASS: CASE01_NULL normalized array
+PASS: CASE01_NULL count
+PASS: CASE01_NULL Get-NetIPAddress collection
+PASS: CASE01_NULL Get-NetIPAddress status
+PASS: CASE01_NULL Get-NetTCPConnection collection
+PASS: CASE01_NULL Get-NetTCPConnection status
+PASS: CASE01_NULL Get-NetFirewallRule collection
+PASS: CASE01_NULL Get-NetFirewallRule status
+PASS: CASE01_NULL Get-NetFirewallPortFilter collection
+PASS: CASE01_NULL Get-NetFirewallPortFilter status
+PASS: CASE01_NULL Get-NetFirewallProfile collection
+PASS: CASE01_NULL Get-NetFirewallProfile status
+PASS: CASE01_NULL Get-NetConnectionProfile collection
+PASS: CASE01_NULL Get-NetConnectionProfile status
+PASS: CASE01_NULL IP discovery and array return boundary
+PASS: CASE01_NULL HTTP unexpected or absent results handled
+PASS: CASE01_NULL CSV result collection
+PASS: CASE01_NULL evidence-file collection
+PASS: CASE01_NULL step03 completes without collection exception
+PASS: CASE01_NULL step03 listener count semantics
+PASS: CASE01_NULL loopback probe still performed
+PASS: CASE02_ZERO normalized array
+PASS: CASE02_ZERO count
+PASS: CASE02_ZERO Get-NetIPAddress collection
+PASS: CASE02_ZERO Get-NetIPAddress status
+PASS: CASE02_ZERO Get-NetTCPConnection collection
+PASS: CASE02_ZERO Get-NetTCPConnection status
+PASS: CASE02_ZERO Get-NetFirewallRule collection
+PASS: CASE02_ZERO Get-NetFirewallRule status
+PASS: CASE02_ZERO Get-NetFirewallPortFilter collection
+PASS: CASE02_ZERO Get-NetFirewallPortFilter status
+PASS: CASE02_ZERO Get-NetFirewallProfile collection
+PASS: CASE02_ZERO Get-NetFirewallProfile status
+PASS: CASE02_ZERO Get-NetConnectionProfile collection
+PASS: CASE02_ZERO Get-NetConnectionProfile status
+PASS: CASE02_ZERO IP discovery and array return boundary
+PASS: CASE02_ZERO HTTP unexpected or absent results handled
+PASS: CASE02_ZERO CSV result collection
+PASS: CASE02_ZERO evidence-file collection
+PASS: CASE02_ZERO step03 completes without collection exception
+PASS: CASE02_ZERO step03 listener count semantics
+PASS: CASE02_ZERO loopback probe still performed
+PASS: CASE03_ONE_OBJECT normalized array
+PASS: CASE03_ONE_OBJECT count
+PASS: CASE03_ONE_OBJECT Get-NetIPAddress collection
+PASS: CASE03_ONE_OBJECT Get-NetIPAddress status
+PASS: CASE03_ONE_OBJECT Get-NetTCPConnection collection
+PASS: CASE03_ONE_OBJECT Get-NetTCPConnection status
+PASS: CASE03_ONE_OBJECT Get-NetFirewallRule collection
+PASS: CASE03_ONE_OBJECT Get-NetFirewallRule status
+PASS: CASE03_ONE_OBJECT Get-NetFirewallPortFilter collection
+PASS: CASE03_ONE_OBJECT Get-NetFirewallPortFilter status
+PASS: CASE03_ONE_OBJECT Get-NetFirewallProfile collection
+PASS: CASE03_ONE_OBJECT Get-NetFirewallProfile status
+PASS: CASE03_ONE_OBJECT Get-NetConnectionProfile collection
+PASS: CASE03_ONE_OBJECT Get-NetConnectionProfile status
+PASS: CASE03_ONE_OBJECT IP discovery and array return boundary
+PASS: CASE03_ONE_OBJECT HTTP unexpected or absent results handled
+PASS: CASE03_ONE_OBJECT CSV result collection
+PASS: CASE03_ONE_OBJECT evidence-file collection
+PASS: CASE03_ONE_OBJECT step03 completes without collection exception
+PASS: CASE03_ONE_OBJECT step03 listener count semantics
+PASS: CASE03_ONE_OBJECT loopback probe still performed
+PASS: CASE04_TWO normalized array
+PASS: CASE04_TWO count
+PASS: CASE04_TWO Get-NetIPAddress collection
+PASS: CASE04_TWO Get-NetIPAddress status
+PASS: CASE04_TWO Get-NetTCPConnection collection
+PASS: CASE04_TWO Get-NetTCPConnection status
+PASS: CASE04_TWO Get-NetFirewallRule collection
+PASS: CASE04_TWO Get-NetFirewallRule status
+PASS: CASE04_TWO Get-NetFirewallPortFilter collection
+PASS: CASE04_TWO Get-NetFirewallPortFilter status
+PASS: CASE04_TWO Get-NetFirewallProfile collection
+PASS: CASE04_TWO Get-NetFirewallProfile status
+PASS: CASE04_TWO Get-NetConnectionProfile collection
+PASS: CASE04_TWO Get-NetConnectionProfile status
+PASS: CASE04_TWO IP discovery and array return boundary
+PASS: CASE04_TWO HTTP unexpected or absent results handled
+PASS: CASE04_TWO CSV result collection
+PASS: CASE04_TWO evidence-file collection
+PASS: CASE04_TWO step03 completes without collection exception
+PASS: CASE04_TWO step03 listener count semantics
+PASS: CASE04_TWO loopback probe still performed
+PASS: CASE05_MANY normalized array
+PASS: CASE05_MANY count
+PASS: CASE05_MANY Get-NetIPAddress collection
+PASS: CASE05_MANY Get-NetIPAddress status
+PASS: CASE05_MANY Get-NetTCPConnection collection
+PASS: CASE05_MANY Get-NetTCPConnection status
+PASS: CASE05_MANY Get-NetFirewallRule collection
+PASS: CASE05_MANY Get-NetFirewallRule status
+PASS: CASE05_MANY Get-NetFirewallPortFilter collection
+PASS: CASE05_MANY Get-NetFirewallPortFilter status
+PASS: CASE05_MANY Get-NetFirewallProfile collection
+PASS: CASE05_MANY Get-NetFirewallProfile status
+PASS: CASE05_MANY Get-NetConnectionProfile collection
+PASS: CASE05_MANY Get-NetConnectionProfile status
+PASS: CASE05_MANY IP discovery and array return boundary
+PASS: CASE05_MANY HTTP unexpected or absent results handled
+PASS: CASE05_MANY CSV result collection
+PASS: CASE05_MANY evidence-file collection
+PASS: CASE05_MANY step03 completes without collection exception
+PASS: CASE05_MANY step03 listener count semantics
+PASS: CASE05_MANY loopback probe still performed
+PASS: CASE06_SCALAR_STRING normalized array
+PASS: CASE06_SCALAR_STRING count
+PASS: CASE06_SCALAR_STRING Get-NetIPAddress collection
+PASS: CASE06_SCALAR_STRING Get-NetIPAddress status
+PASS: CASE06_SCALAR_STRING Get-NetTCPConnection collection
+PASS: CASE06_SCALAR_STRING Get-NetTCPConnection status
+PASS: CASE06_SCALAR_STRING Get-NetFirewallRule collection
+PASS: CASE06_SCALAR_STRING Get-NetFirewallRule status
+PASS: CASE06_SCALAR_STRING Get-NetFirewallPortFilter collection
+PASS: CASE06_SCALAR_STRING Get-NetFirewallPortFilter status
+PASS: CASE06_SCALAR_STRING Get-NetFirewallProfile collection
+PASS: CASE06_SCALAR_STRING Get-NetFirewallProfile status
+PASS: CASE06_SCALAR_STRING Get-NetConnectionProfile collection
+PASS: CASE06_SCALAR_STRING Get-NetConnectionProfile status
+PASS: CASE06_SCALAR_STRING IP discovery and array return boundary
+PASS: CASE06_SCALAR_STRING HTTP unexpected or absent results handled
+PASS: CASE06_SCALAR_STRING CSV result collection
+PASS: CASE06_SCALAR_STRING evidence-file collection
+PASS: CASE06_SCALAR_STRING step03 completes without collection exception
+PASS: CASE06_SCALAR_STRING step03 listener count semantics
+PASS: CASE06_SCALAR_STRING loopback probe still performed
+PASS: CASE07_PSCUSTOMOBJECT normalized array
+PASS: CASE07_PSCUSTOMOBJECT count
+PASS: CASE07_PSCUSTOMOBJECT Get-NetIPAddress collection
+PASS: CASE07_PSCUSTOMOBJECT Get-NetIPAddress status
+PASS: CASE07_PSCUSTOMOBJECT Get-NetTCPConnection collection
+PASS: CASE07_PSCUSTOMOBJECT Get-NetTCPConnection status
+PASS: CASE07_PSCUSTOMOBJECT Get-NetFirewallRule collection
+PASS: CASE07_PSCUSTOMOBJECT Get-NetFirewallRule status
+PASS: CASE07_PSCUSTOMOBJECT Get-NetFirewallPortFilter collection
+PASS: CASE07_PSCUSTOMOBJECT Get-NetFirewallPortFilter status
+PASS: CASE07_PSCUSTOMOBJECT Get-NetFirewallProfile collection
+PASS: CASE07_PSCUSTOMOBJECT Get-NetFirewallProfile status
+PASS: CASE07_PSCUSTOMOBJECT Get-NetConnectionProfile collection
+PASS: CASE07_PSCUSTOMOBJECT Get-NetConnectionProfile status
+PASS: CASE07_PSCUSTOMOBJECT IP discovery and array return boundary
+PASS: CASE07_PSCUSTOMOBJECT HTTP unexpected or absent results handled
+PASS: CASE07_PSCUSTOMOBJECT CSV result collection
+PASS: CASE07_PSCUSTOMOBJECT evidence-file collection
+PASS: CASE07_PSCUSTOMOBJECT step03 completes without collection exception
+PASS: CASE07_PSCUSTOMOBJECT step03 listener count semantics
+PASS: CASE07_PSCUSTOMOBJECT loopback probe still performed
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY normalized array
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY count
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetIPAddress collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetIPAddress status
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetTCPConnection collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetTCPConnection status
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetFirewallRule collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetFirewallRule status
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetFirewallPortFilter collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetFirewallPortFilter status
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetFirewallProfile collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetFirewallProfile status
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetConnectionProfile collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY Get-NetConnectionProfile status
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY IP discovery and array return boundary
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY HTTP unexpected or absent results handled
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY CSV result collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY evidence-file collection
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY step03 completes without collection exception
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY step03 listener count semantics
+PASS: CASE08_PSCUSTOMOBJECT_ARRAY loopback probe still performed
+PASS: null entries excluded; one real record retained
+PASS: false boolean is a record, not absent data
+PASS: true quiet TCP result retained
+PASS: object Count property cannot masquerade as record count
+PASS: DENIED Get-NetIPAddress degrades to ACCESS_DENIED
+PASS: DENIED Get-NetTCPConnection degrades to ACCESS_DENIED
+PASS: DENIED Get-NetFirewallProfile degrades to ACCESS_DENIED
+PASS: DENIED Get-NetFirewallRule degrades to ACCESS_DENIED
+PASS: DENIED Get-NetFirewallPortFilter degrades to ACCESS_DENIED
+PASS: DENIED Get-NetConnectionProfile degrades to ACCESS_DENIED
+PASS: DENIED Get-CimInstance degrades to ACCESS_DENIED
+PASS: DENIED Get-Process degrades to ACCESS_DENIED
+PASS: DENIED step03 WINDOWS_INFORMATION
+PASS: DENIED step03 LISTENING_PORT
+PASS: DENIED step03 IPv4_LAN
+PASS: DENIED step03 FIREWALL_STATE
+PASS: DENIED step03 FIREWALL_INBOUND_RULES
+PASS: DENIED step03 FIREWALL_PORT_FILTERS
+PASS: DENIED step03 ACTIVE_NETWORK
+PASS: DENIED no invented R4 LAN verdict
+PASS: UNAVAILABLE Get-NetIPAddress degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-NetTCPConnection degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-NetFirewallProfile degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-NetFirewallRule degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-NetFirewallPortFilter degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-NetConnectionProfile degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-CimInstance degrades to UNAVAILABLE
+PASS: UNAVAILABLE Get-Process degrades to UNAVAILABLE
+PASS: UNAVAILABLE step03 WINDOWS_INFORMATION
+PASS: UNAVAILABLE step03 LISTENING_PORT
+PASS: UNAVAILABLE step03 IPv4_LAN
+PASS: UNAVAILABLE step03 FIREWALL_STATE
+PASS: UNAVAILABLE step03 FIREWALL_INBOUND_RULES
+PASS: UNAVAILABLE step03 FIREWALL_PORT_FILTERS
+PASS: UNAVAILABLE step03 ACTIVE_NETWORK
+PASS: UNAVAILABLE no invented R4 LAN verdict
+PASS: MISSING Get-NetIPAddress degrades to NOT_APPLICABLE
+PASS: MISSING Get-NetTCPConnection degrades to NOT_APPLICABLE
+PASS: MISSING Get-NetFirewallProfile degrades to NOT_APPLICABLE
+PASS: MISSING Get-NetFirewallRule degrades to NOT_APPLICABLE
+PASS: MISSING Get-NetFirewallPortFilter degrades to NOT_APPLICABLE
+PASS: MISSING Get-NetConnectionProfile degrades to NOT_APPLICABLE
+PASS: MISSING Get-CimInstance degrades to NOT_APPLICABLE
+PASS: MISSING Get-Process degrades to NOT_APPLICABLE
+PASS: MISSING step03 WINDOWS_INFORMATION
+PASS: MISSING step03 LISTENING_PORT
+PASS: MISSING step03 IPv4_LAN
+PASS: MISSING step03 FIREWALL_STATE
+PASS: MISSING step03 FIREWALL_INBOUND_RULES
+PASS: MISSING step03 FIREWALL_PORT_FILTERS
+PASS: MISSING step03 ACTIVE_NETWORK
+PASS: MISSING no invented R4 LAN verdict
+PASS: NOT_FOUND Get-NetIPAddress degrades to NOT_FOUND
+PASS: NOT_FOUND Get-NetTCPConnection degrades to NOT_FOUND
+PASS: NOT_FOUND Get-NetFirewallProfile degrades to NOT_FOUND
+PASS: NOT_FOUND Get-NetFirewallRule degrades to NOT_FOUND
+PASS: NOT_FOUND Get-NetFirewallPortFilter degrades to NOT_FOUND
+PASS: NOT_FOUND Get-NetConnectionProfile degrades to NOT_FOUND
+PASS: NOT_FOUND Get-CimInstance degrades to NOT_FOUND
+PASS: NOT_FOUND Get-Process degrades to NOT_FOUND
+PASS: NOT_FOUND step03 WINDOWS_INFORMATION
+PASS: NOT_FOUND step03 LISTENING_PORT
+PASS: NOT_FOUND step03 IPv4_LAN
+PASS: NOT_FOUND step03 FIREWALL_STATE
+PASS: NOT_FOUND step03 FIREWALL_INBOUND_RULES
+PASS: NOT_FOUND step03 FIREWALL_PORT_FILTERS
+PASS: NOT_FOUND step03 ACTIVE_NETWORK
+PASS: NOT_FOUND no invented R4 LAN verdict
+PASS: loopback excluded from LAN IP list
+PASS: link-local excluded from LAN IP list
+PASS: malformed IP schema unavailable, no HTTP target constructed
+PASS: matching TCP port filter retained
+PASS: matching TCP port filter retained
+PASS: matching TCP port filter retained
+PASS: matching TCP port filter retained
+PASS: matching TCP port filter retained
+PASS: UDP filter is not TCP
+PASS: other port filter is not port 5000
+PASS: null port filter handled
+PASS: malformed range never throws overflow
+PASS: step03 synthetic complete contract: PORT = 5000
+PASS: step03 synthetic complete contract: WINDOWS = WINDOWS_TEST_ONLY; VERSION = 10_TEST_ONLY
+PASS: step03 synthetic complete contract: POWERSHELL =
+PASS: step03 synthetic complete contract: IPv4_LAN = FOUND; RECORD_COUNT = 1
+PASS: step03 synthetic complete contract: LISTENING_PORT = FOUND; RECORD_COUNT = 1
+PASS: step03 synthetic complete contract: LISTENER_PROCESS = FOUND; PID = 1234
+PASS: step03 synthetic complete contract: PROCESS_NAME = PROCESS_TEST_ONLY
+PASS: step03 synthetic complete contract: LAN_BINDING = PRESENT; REMOTE_ACCESS_NOT_YET_CONFIRMED
+PASS: step03 synthetic complete contract: LOOPBACK : HTTP_STATUS = 200; HTTP_ACCESS = PASS
+PASS: step03 synthetic complete contract: http://192.0.2.51:5000/ : HTTP_STATUS = 200; HTTP_ACCESS = PASS
+PASS: step03 synthetic complete contract: FIREWALL_STATE = FOUND
+PASS: step03 synthetic complete contract: FIREWALL_INBOUND_RULES = FOUND
+PASS: step03 synthetic complete contract: FIREWALL_PORT_FILTERS = FOUND
+PASS: step03 synthetic complete contract: FIREWALL_PORT_FILTERS_MATCHING = 1
+PASS: step03 synthetic complete contract: ACTIVE_NETWORK = FOUND
+PASS: step03 synthetic complete contract: R4_LAN_STATUS = NOT_YET_DETERMINED
+PASS: step03 probes correct local and validated LAN-IP URLs
+PASS: boot timestamp format unchanged for valid data
+PASS: missing boot timestamp does not crash license observation
+PASS: unapproved write command rejected before invocation
+COLLECTION_SAFETY_SELF_TEST = PASS; WINDOWS_NATIVE_EXECUTION = NOT_RUN_BY_UNIT_TEST
+PASS: collection safety and read-only step 03 tests
+PASS: wrong candidate rejected
+PASS: missing candidate rejected
+PASS: real R4 SHA verified
+PASS: UTF8 logging
+PASS: CSV append
+PASS: CSV existing bytes preserved on append
+PASS: CSV new label appended without rewriting historical labels or claiming license PASS
+PASS: 49 PCs NOT_TESTED
+PASS: 50 PCs no automatic PASS
+PASS: room error 0 fails
+PASS: room error 1 fails
+PASS: room error 2 fails
+PASS: room error 3 fails
+PASS: ZIP SHA256
+PASS: ZIP evidence contents
+CORE_RUNTIME_SELF_TEST = PASS
+WINDOWS_LAN_LICENSE_PHYSICAL_TEST = NOT_PERFORMED_BY_SELF_TEST
+BAT_NATIVE_DISPATCH = NOT_TESTED_BY_THIS_SCRIPT (bước 01 gọi thành công script không chứng minh các BAT còn lại đã chạy)
+RUNTIME = 7.4.13; OS = Unix
+
+===== NATIVE_OS_GUARD.txt =====
+[FAIL] Không hoàn tất tác vụ. Không tiếp tục nếu precheck chưa PASS.
+Toolkit này cần Windows và Windows PowerShell 5.1.

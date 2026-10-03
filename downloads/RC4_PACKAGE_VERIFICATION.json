@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "zip": "ThiTracNghiemLAN_v2.3.1_WINDOWS_ACCEPTANCE_TOOLKIT_RC4.zip",
+  "bytes": 57268,
+  "sha256": "15774863999e9b019838c135ab80527ee2f96e338bad059bc7df146ad2cff643",
+  "crc": "PASS",
+  "readability": "PASS",
+  "entries": 23,
+  "files": 22,
+  "internal_manifest_hashes_verified": 21,
+  "manifest_complete": true,
+  "bat_encoding": "PASS_6_OF_6",
+  "final_zip_tests": {
+    "CollectionSafetySelfTest.ps1": {
+      "status": "PASS",
+      "assertions": 268
+    },
+    "LabelValidationSelfTest.ps1": {
+      "status": "PASS",
+      "assertions": 96
+    },
+    "SelfTest.ps1": {
+      "status": "PASS",
+      "assertions": 411
+    }
+  },
+  "results": "EMPTY",
+  "protected_files_unchanged": 2392,
+  "r4_candidate_sha256": "68219167829986f39d025251bf4681d7298e6c652689420d82cfe8a08d130ec2",
+  "r4_runtime_changed": false,
+  "windows_powershell_5_1_execution": "NOT_RUN",
+  "toolkit_rc4_status": "READY_FOR_WINDOWS_RETEST",
+  "r4_status": "PENDING_WINDOWS_VALIDATION",
+  "r4_lan_status": "NOT_YET_DETERMINED"
+}
