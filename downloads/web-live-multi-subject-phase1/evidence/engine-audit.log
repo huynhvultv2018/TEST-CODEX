@@ -1,0 +1,66 @@
+Import RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip
+Import RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip
+Import RC3_PED1_TEST_PACKAGES/TIN6_W05_LIVE_RC3_PED1.zip
+Import RC3_PED1_TEST_PACKAGES/TIN8_W04_LIVE_RC3_PED1.zip
+Import WEB_LIVE/HINH_HOC_8_T04_T07_LIVE_TEST.zip
+Import WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip
+Import WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip
+Import RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip
+Import WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip
+Import WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip
+Import RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip
+Import WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip
+Import WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip
+Import RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip
+Import WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip
+Import WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip
+Import RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip
+Import WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip
+Import WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip
+Import RC3_PED1_TEST_PACKAGES/TIN8_W04_LIVE_RC3_PED1.zip
+{
+  "realScreens": 171,
+  "screenshots": 44,
+  "errors": [],
+  "external": [],
+  "overflow": [],
+  "realOverflow": [
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip",
+      "overflow": []
+    },
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN6_W05_LIVE_RC3_PED1.zip",
+      "overflow": []
+    },
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN8_W04_LIVE_RC3_PED1.zip",
+      "overflow": []
+    },
+    {
+      "package": "WEB_LIVE/HINH_HOC_8_T04_T07_LIVE_TEST.zip",
+      "overflow": []
+    },
+    {
+      "package": "WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip",
+      "overflow": []
+    }
+  ],
+  "assertions": [
+    "Real TIN6 MCQ: four option cards",
+    "Knowledge disclosure retained",
+    "Geometry scene retained across progressive analysis",
+    "Proof reveal and previousStep hide",
+    "Pointer and zoom state received",
+    "Overlay order unchanged",
+    "Draw Board, Cover, Smart Geometry, Highlight and Focus render real runtime records",
+    "Timer sync",
+    "Whiteboard open/close",
+    "70/30 preset and TV double-click Teacher round-trip",
+    "Algebra future steps absent from DOM",
+    "Tree branching and future-node disclosure",
+    "Router explicit priority and ambiguous generic; malformed MCQ fallback",
+    "Whole equation atomic",
+    "Offline Teacher→TV navigation after local asset load"
+  ]
+}

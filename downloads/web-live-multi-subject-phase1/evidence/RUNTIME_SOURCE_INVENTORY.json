@@ -1,0 +1,320 @@
+[
+  {
+    "path": "LAUNCHER/BUILD_WINDOWS_EXE.bat",
+    "sha256": "a40f2821bc09b3043d310c6a035e4d5b3eba7c15aa4d2d82540f83ec119d6f2b",
+    "lines": 6,
+    "bytes": 300
+  },
+  {
+    "path": "LAUNCHER/START_LAUNCHER.bat",
+    "sha256": "5f1f80d692fd544b606b99c0bc7ecc6e9ad877d1dfd5dc75d32354b952d576d7",
+    "lines": 18,
+    "bytes": 418
+  },
+  {
+    "path": "LAUNCHER/WebLiveLauncher.py",
+    "sha256": "34f0e126a8486220a1bf8f20bfa89a95ae19d96643a3fa8bcc2315332c20792f",
+    "lines": 588,
+    "bytes": 27904
+  },
+  {
+    "path": "LAUNCHER/start_web_live.py",
+    "sha256": "b0ffc5931e418286da7797a12007faab5df36ef1a982a3f3861f9151d5645573",
+    "lines": 202,
+    "bytes": 8083
+  },
+  {
+    "path": "LAUNCHER/web_live_http.py",
+    "sha256": "007c5e44b5f6e57624db3fed1b404021200fb1682d52cb2d13de65fb3abdc950",
+    "lines": 129,
+    "bytes": 4994
+  },
+  {
+    "path": "LAUNCHER/windows_handoff.py",
+    "sha256": "4c13304dba9546c02592dd3392da73feb93eb2cc0cb849e21f6249b36c3f7b29",
+    "lines": 254,
+    "bytes": 12292
+  },
+  {
+    "path": "START_WEB_LIVE.bat",
+    "sha256": "7d9e28b48456af77895507d35260f154ab890b4e3aa8ddde6ed74a2aa0bd29ad",
+    "lines": 34,
+    "bytes": 789
+  },
+  {
+    "path": "WEB_LIVE/classroom-teacher.js",
+    "sha256": "e7051ecea88d985060a592d4a424f7d3dd59625301bf6d8d17653a05cf66d1c6",
+    "lines": 81,
+    "bytes": 6827
+  },
+  {
+    "path": "WEB_LIVE/classroom.css",
+    "sha256": "92d2c01acda2433c71c4cef1cb6a35f09fa1eb43c22f80626f16d1bcbbcd932b",
+    "lines": 13,
+    "bytes": 1311
+  },
+  {
+    "path": "WEB_LIVE/classroom.js",
+    "sha256": "8c0f7697c637bc68ba4a750db8167244f99265f68e859f8c0991b1cee1853616",
+    "lines": 68,
+    "bytes": 4257
+  },
+  {
+    "path": "WEB_LIVE/cockpit.css",
+    "sha256": "a091924aa4370ba7c718759b0ea5761fed12dee371a0301684f4775eff63ff62",
+    "lines": 42,
+    "bytes": 4201
+  },
+  {
+    "path": "WEB_LIVE/cockpit.js",
+    "sha256": "28066c75e0308ec38904f5ad2c00404e7da1f733f7c954f1ac7554d932dce66d",
+    "lines": 73,
+    "bytes": 6306
+  },
+  {
+    "path": "WEB_LIVE/cognitive-tv.css",
+    "sha256": "37a2b46e6b1562da4d7d72c434201ce1ada056a1eb81f748c1b193525e1fbd6c",
+    "lines": 32,
+    "bytes": 3553
+  },
+  {
+    "path": "WEB_LIVE/common.js",
+    "sha256": "0aed617c8e2813ab725cbb75a2de927ff72ef5b4481ec20d11e2759cbba6a3f7",
+    "lines": 135,
+    "bytes": 8587
+  },
+  {
+    "path": "WEB_LIVE/cover-layer.js",
+    "sha256": "0f4aed78e4381067ca88d1afa221cc663f0f09d9d5ea9ab3bc72f6b098de7a86",
+    "lines": 67,
+    "bytes": 4476
+  },
+  {
+    "path": "WEB_LIVE/cover-teacher.js",
+    "sha256": "7329cf77827ac24a5896abf680495cba20c4000fddbdf2f4b7736196bc1f7195",
+    "lines": 120,
+    "bytes": 6171
+  },
+  {
+    "path": "WEB_LIVE/cover-tv.js",
+    "sha256": "766b7db84833ba14a9343e76b174ebc8679ae932ef5be52596f43c091c090286",
+    "lines": 32,
+    "bytes": 1478
+  },
+  {
+    "path": "WEB_LIVE/demo-teacher.js",
+    "sha256": "9afa9c9a1e5f848f9f8ec1ea3d48c44e200e994d1fc307566ff4669de9d95554",
+    "lines": 198,
+    "bytes": 13005
+  },
+  {
+    "path": "WEB_LIVE/draw-board-teacher.js",
+    "sha256": "aa957978dfa209b87320038742f7b96fa79b150a7669f687389f86eb86fdb65d",
+    "lines": 250,
+    "bytes": 14354
+  },
+  {
+    "path": "WEB_LIVE/draw-board-tv.js",
+    "sha256": "6a8245d603f54aa6aaa23c9ea69b4dd7d53e07a0188a5a758ca11e5a5268c662",
+    "lines": 69,
+    "bytes": 3369
+  },
+  {
+    "path": "WEB_LIVE/draw-board.css",
+    "sha256": "1e38eef84c8e37a09103af56a1aef00a1eee1ddce46c20a74df281baa72f89a5",
+    "lines": 17,
+    "bytes": 1127
+  },
+  {
+    "path": "WEB_LIVE/draw-board.js",
+    "sha256": "4e9c0415d8e77c53de0f68bd305516182ff4b08d3caeeb4b0855f9dcd595f1f8",
+    "lines": 186,
+    "bytes": 10275
+  },
+  {
+    "path": "WEB_LIVE/index.html",
+    "sha256": "8df0265dfd82796f237bfa4efa80a1f994880e0bfe3f09e6303088c40c05777f",
+    "lines": 1,
+    "bytes": 272
+  },
+  {
+    "path": "WEB_LIVE/math-atomic.js",
+    "sha256": "489797cf6186f912f4cf2f14b21062bb6b352eb3ee18bc997afd2428512343bf",
+    "lines": 29,
+    "bytes": 1780
+  },
+  {
+    "path": "WEB_LIVE/math-speech.js",
+    "sha256": "11c9d049285130746d828df3bec6b1f49f0e972126a5a79e691d05dc8f9649f9",
+    "lines": 102,
+    "bytes": 7130
+  },
+  {
+    "path": "WEB_LIVE/pedagogy-teacher.js",
+    "sha256": "d3cb0f7d844a8750c589491aad99b8e21c535c0ed6053ea48a01e34a80ff0ad3",
+    "lines": 58,
+    "bytes": 4215
+  },
+  {
+    "path": "WEB_LIVE/pedagogy.js",
+    "sha256": "981b89636c3fc85943c70016996d486311450dab1b8277998529c271f5dbb3d8",
+    "lines": 26,
+    "bytes": 2997
+  },
+  {
+    "path": "WEB_LIVE/runtime-config.js",
+    "sha256": "80df818cd17106dc0cc53ed583021377104988e81bdbb15d29a308ee5570a70c",
+    "lines": 2,
+    "bytes": 246
+  },
+  {
+    "path": "WEB_LIVE/smart-geometry-teacher.js",
+    "sha256": "c63bb2788382242cf2c0388908661c858c997adfe97b436099687de07e303dfb",
+    "lines": 180,
+    "bytes": 10379
+  },
+  {
+    "path": "WEB_LIVE/smart-geometry-tv.js",
+    "sha256": "293ff6624edc91a00bb84a4d9f3926d18f5f9259577f574e89803248d7af3ff7",
+    "lines": 45,
+    "bytes": 2187
+  },
+  {
+    "path": "WEB_LIVE/smart-geometry.css",
+    "sha256": "77fd0b09c2c2bd6863ee067f89b38fb75f4c237f635fc4cfb41d05e394cd8a15",
+    "lines": 8,
+    "bytes": 569
+  },
+  {
+    "path": "WEB_LIVE/smart-geometry.js",
+    "sha256": "515f712f7a9ddedb21b651b80482b58418bda410ab92fa51195c581a863c1861",
+    "lines": 190,
+    "bytes": 11879
+  },
+  {
+    "path": "WEB_LIVE/style.css",
+    "sha256": "aad788f2852c953b01865bd8fe913303ef2d7848b0ad0ad6358f3f773e568212",
+    "lines": 8,
+    "bytes": 1281
+  },
+  {
+    "path": "WEB_LIVE/teacher-ui.css",
+    "sha256": "6c0197e9f455d64f75711625995fc836c8174cb1daaf34355863673058a6e7bf",
+    "lines": 98,
+    "bytes": 12712
+  },
+  {
+    "path": "WEB_LIVE/teacher.html",
+    "sha256": "9baf244fc33501fdab52923754d867c767b2638f37e768d38a49be5ba4084f9b",
+    "lines": 240,
+    "bytes": 25655
+  },
+  {
+    "path": "WEB_LIVE/teacher.js",
+    "sha256": "f305c8847fcce5b11efb20c11689590686e320be0f076514d64ea9ed4b27e452",
+    "lines": 58,
+    "bytes": 15848
+  },
+  {
+    "path": "WEB_LIVE/tts-controller.js",
+    "sha256": "e9872faba0f7d43dfa391e5c8e03fc9ea35a78f4caea2c67cc5c32a013313c94",
+    "lines": 137,
+    "bytes": 11924
+  },
+  {
+    "path": "WEB_LIVE/tts-highlight.css",
+    "sha256": "cc88328c8c9ac3a21abe48947a1f19effaa93f7a591454e9333307699be5d821",
+    "lines": 2,
+    "bytes": 201
+  },
+  {
+    "path": "WEB_LIVE/tts-presentation.js",
+    "sha256": "146727a9ebd669005d8d416e837a0ad9b3ed536f4495f812fbdf440be649254b",
+    "lines": 22,
+    "bytes": 1682
+  },
+  {
+    "path": "WEB_LIVE/tts-teacher.js",
+    "sha256": "a8a5dc928cfe538c1d5a0819fb0dd18feceb39d6318addfbfb17c2daa5abf7aa",
+    "lines": 134,
+    "bytes": 10735
+  },
+  {
+    "path": "WEB_LIVE/tts-tv.js",
+    "sha256": "62a53feabb5b48e681829c363bd93dbb8297367ba843bfa29469439200ffbe75",
+    "lines": 39,
+    "bytes": 2888
+  },
+  {
+    "path": "WEB_LIVE/tts-ui.css",
+    "sha256": "1010fb8fd3f0d8ebd311e8f8a70b8cd319aa43c201363c36cca8811da1d792e7",
+    "lines": 42,
+    "bytes": 3030
+  },
+  {
+    "path": "WEB_LIVE/tv-content.js",
+    "sha256": "23f097f30b3fc585670b34cdf02ce9cc46758f0a2c3943b9858ab30d15d8aa4a",
+    "lines": 194,
+    "bytes": 11966
+  },
+  {
+    "path": "WEB_LIVE/tv-layout-algebra.js",
+    "sha256": "2705a86ec6b1d6303943b222df02c7d3b8983985983962c4052363eaf35eaee7",
+    "lines": 54,
+    "bytes": 3629
+  },
+  {
+    "path": "WEB_LIVE/tv-layout-computer.js",
+    "sha256": "257cbca880f03f5bdde92ad453ca8c5c84e1474a6d76e3b1c91c99bb587ff011",
+    "lines": 8,
+    "bytes": 538
+  },
+  {
+    "path": "WEB_LIVE/tv-layout-geometry.js",
+    "sha256": "8f20cab87b7812e5cf8fe8203827d21b08ada686b154b3872ad8680d30655202",
+    "lines": 17,
+    "bytes": 1330
+  },
+  {
+    "path": "WEB_LIVE/tv-layout-model.js",
+    "sha256": "855c3d181e323cf0de755bde539e6b25aa491f74f20e3bafe22918c724255a80",
+    "lines": 88,
+    "bytes": 7336
+  },
+  {
+    "path": "WEB_LIVE/tv-layout.js",
+    "sha256": "87058f4f06ca825642d881bd56fc426917f4021e7716567ac35140ccb9765437",
+    "lines": 157,
+    "bytes": 11559
+  },
+  {
+    "path": "WEB_LIVE/tv-ui.css",
+    "sha256": "815fbe93c550a0f9ebcad42b92a062db7a8e55c1218aea1449c25e2d35a0330b",
+    "lines": 268,
+    "bytes": 28689
+  },
+  {
+    "path": "WEB_LIVE/tv.html",
+    "sha256": "424e2866dc68367ff82a479cac9dd88b22aeb060ee42bc90dfc3087b6ce4bc23",
+    "lines": 55,
+    "bytes": 4138
+  },
+  {
+    "path": "WEB_LIVE/tv.js",
+    "sha256": "3f3ceefcd0d71405001cef7bc34e6337f62b492e444fa7482a3599484d5d5497",
+    "lines": 158,
+    "bytes": 13285
+  },
+  {
+    "path": "WEB_LIVE/ui-teacher.js",
+    "sha256": "80aaa2052d686acb036d05a95530239f6c81165c757cf580774411bc6424c597",
+    "lines": 26,
+    "bytes": 1415
+  },
+  {
+    "path": "WEB_LIVE/zip.js",
+    "sha256": "c245171335f4ceea9f523df89ee58d7930b22fcc3c70ffef3135a7bf16608fa8",
+    "lines": 75,
+    "bytes": 5617
+  }
+]

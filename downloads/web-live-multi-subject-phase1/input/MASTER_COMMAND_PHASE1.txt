@@ -1,0 +1,785 @@
+# MASTER COMMAND — WEB LIVE MULTI-SUBJECT ARCHITECTURE
+## PHASE 1 — FREEZE BASELINE + AUDIT + DESIGN
+
+Tôi cung cấp **phiên bản WEB LIVE hiện tại đang hoạt động ổn định** làm nguồn duy nhất để phân tích.
+
+Mục tiêu dài hạn:
+
+> Kế thừa WEB LIVE hiện tại và phát triển thành hệ thống LIVE chuyên biệt cho:
+>
+> 1. TIN HỌC THCS  
+> 2. ĐẠI SỐ THCS  
+> 3. HÌNH HỌC THCS
+
+Kiến trúc mục tiêu:
+
+```text
+WEB_LIVE_BASELINE_FROZEN
+        │
+        ▼
+   WEB_LIVE_CORE
+        │
+        ├── INFORMATICS_PROFILE
+        │
+        ├── ALGEBRA_PROFILE
+        │
+        └── GEOMETRY_PROFILE
+```
+
+NGUYÊN TẮC QUAN TRỌNG:
+
+**KHÔNG tạo 3 WEB LIVE độc lập.**
+
+Phải ưu tiên kiến trúc:
+
+```text
+ONE CORE
++
+SUBJECT PROFILES / MODULES
+```
+
+để các chức năng chung chỉ tồn tại và được bảo trì tại một nơi.
+
+---
+
+# 1. PHẠM VI PHASE 1
+
+Phase 1 chỉ thực hiện:
+
+```text
+FREEZE
+→ AUDIT
+→ CLASSIFY
+→ DESIGN
+→ REPORT
+```
+
+TUYỆT ĐỐI KHÔNG:
+
+- sửa source;
+- refactor;
+- đổi cấu trúc thư mục hiện tại;
+- đổi schema;
+- đổi runtime;
+- đổi UI;
+- đổi dữ liệu bài học;
+- nâng version;
+- tạo Production;
+- thay thế WEB LIVE hiện tại.
+
+Nếu phát hiện vấn đề:
+
+```text
+PHÁT HIỆN
+→ GHI NHẬN
+→ PHÂN LOẠI
+→ ĐƯA BẰNG CHỨNG
+→ ĐỀ XUẤT
+```
+
+KHÔNG tự sửa.
+
+---
+
+# 2. FREEZE BASELINE
+
+Xác định chính xác source WEB LIVE được cung cấp.
+
+Tạo:
+
+```text
+WEB_LIVE_BASELINE_FROZEN
+```
+
+Ghi nhận tối thiểu:
+
+```text
+BASELINE_NAME =
+BASELINE_VERSION =
+BASELINE_SHA256 =
+BASELINE_STATUS = FROZEN
+SOURCE_MUTATED = NO
+```
+
+Nếu source là ZIP:
+
+1. tính SHA256 ZIP gốc;
+2. giải nén sang vùng làm việc;
+3. không thay đổi ZIP gốc;
+4. ghi nhận cấu trúc source;
+5. tính fingerprint/hash phù hợp cho source đã giải nén.
+
+Mọi phân tích tiếp theo phải truy ngược được về baseline này.
+
+---
+
+# 3. AUDIT KIẾN TRÚC HIỆN TẠI
+
+Đọc toàn bộ source liên quan đến WEB LIVE.
+
+Xác định:
+
+- entry point;
+- runtime;
+- controller;
+- router;
+- state;
+- lesson loader;
+- schema;
+- renderer;
+- TV/student screen;
+- teacher screen;
+- navigation;
+- answer/hint;
+- focus mode;
+- zoom;
+- drawing;
+- MathJax;
+- media;
+- animation;
+- storage;
+- packaging;
+- lesson data;
+- các module liên quan.
+
+Không được giả định theo tên file.
+
+Phải xác minh bằng source/runtime thực tế.
+
+---
+
+# 4. PHÂN LOẠI COMPONENT
+
+Phân loại các thành phần hiện tại thành:
+
+```text
+A. CORE_SHARED
+B. SUBJECT_SPECIFIC
+C. LEGACY
+D. UNKNOWN
+```
+
+## A — CORE_SHARED
+
+Các chức năng có thể dùng chung cho cả ba môn, ví dụ:
+
+- lesson loading;
+- navigation;
+- teacher control;
+- TV rendering;
+- focus;
+- answer/hint;
+- fullscreen;
+- keyboard control;
+- media;
+- animation;
+- state management;
+- packaging;
+- common UI.
+
+Chỉ kết luận sau khi audit source.
+
+## B — SUBJECT_SPECIFIC
+
+Chức năng có logic gắn với:
+
+```text
+informatics
+algebra
+geometry
+```
+
+Phải chỉ rõ dependency.
+
+## C — LEGACY
+
+Code còn tồn tại nhưng không còn tham gia runtime chính.
+
+Không xóa.
+
+## D — UNKNOWN
+
+Không đủ bằng chứng để phân loại.
+
+Không suy đoán.
+
+---
+
+# 5. KIẾN TRÚC MỤC TIÊU
+
+Thiết kế kiến trúc:
+
+```text
+WEB_LIVE_CORE
+        │
+        ├── INFORMATICS_PROFILE
+        ├── ALGEBRA_PROFILE
+        └── GEOMETRY_PROFILE
+```
+
+Ưu tiên cơ chế khai báo kiểu:
+
+```text
+subject_engine = informatics
+subject_engine = algebra
+subject_engine = geometry
+```
+
+hoặc giải pháp tương đương phù hợp với source hiện tại.
+
+Không ép kiến trúc mới nếu làm phá compatibility.
+
+Phải ưu tiên:
+
+```text
+BACKWARD_COMPATIBILITY
+```
+
+Các gói LIVE hiện có phải có chiến lược tiếp tục chạy được.
+
+---
+
+# 6. WEB_LIVE_CORE
+
+Thiết kế CORE chịu trách nhiệm cho những chức năng chung như:
+
+```text
+lesson lifecycle
+state
+navigation
+teacher control
+TV rendering
+focus
+fullscreen
+answer/hint
+common media
+common animation
+common keyboard
+common packaging
+```
+
+CORE không được chứa logic sư phạm đặc thù môn nếu logic đó có thể đặt trong profile.
+
+Mục tiêu:
+
+```text
+FIX COMMON BUG ONCE
+→ ALL SUBJECTS BENEFIT
+```
+
+---
+
+# 7. GEOMETRY_PROFILE
+
+Đây là profile ưu tiên phát triển đầu tiên.
+
+Thiết kế khả năng chuyên biệt cho Hình học:
+
+```text
+persistent_geometry
+GT_KL
+analysis_diagram
+proof_flow
+geometry_highlight
+geometry_focus
+geometry_zoom
+geometry_annotations
+```
+
+Đặc biệt:
+
+### Hình phải có khả năng tồn tại xuyên suốt quá trình giải.
+
+Không được mặc định:
+
+```text
+STEP CHANGE
+→ DESTROY GEOMETRY
+```
+
+Mà ưu tiên:
+
+```text
+BASE FIGURE
+→ GT/KL
+→ ANALYSIS
+→ PROOF
+→ CONCLUSION
+```
+
+trên cùng ngữ cảnh hình học khi bài học yêu cầu.
+
+Cần xem xét các chế độ TV:
+
+```text
+70/30
+60/40
+GEOMETRY FULLSCREEN
+```
+
+và khả năng highlight:
+
+- điểm;
+- đoạn thẳng;
+- đường thẳng;
+- góc;
+- cạnh;
+- tam giác;
+- đối tượng liên quan đến bước chứng minh.
+
+PHASE 1 CHỈ THIẾT KẾ.
+
+KHÔNG IMPLEMENT.
+
+---
+
+# 8. ALGEBRA_PROFILE
+
+Thiết kế profile phục vụ Đại số.
+
+Ưu tiên:
+
+```text
+math_step_flow
+expression_transform
+equation_transform
+system_transform
+step_highlight
+math_focus
+error_compare
+MathJax
+```
+
+Màn hình TV phải phù hợp với việc trình bày:
+
+```text
+BÀI TOÁN
+↓
+PHÂN TÍCH
+↓
+BIỂU THỨC / PHƯƠNG TRÌNH
+↓
+BIẾN ĐỔI TỪNG BƯỚC
+↓
+KẾT LUẬN
+```
+
+Không để toàn bộ lời giải xuất hiện cùng lúc nếu lesson data yêu cầu reveal từng bước.
+
+PHASE 1 CHỈ THIẾT KẾ.
+
+---
+
+# 9. INFORMATICS_PROFILE
+
+Thiết kế profile phục vụ Tin học.
+
+Ưu tiên:
+
+```text
+instruction_flow
+demo
+practice
+code
+algorithm
+table
+media
+task
+student_product
+sample_product
+comparison
+```
+
+Phải phù hợp với tiến trình:
+
+```text
+Tò mò
+→ Quan sát
+→ Suy nghĩ
+→ Dự đoán
+→ Trao đổi
+→ Phát hiện
+→ GV chuẩn hóa
+→ Kiểm tra hiểu
+→ Vận dụng
+```
+
+Cần tính đến:
+
+```text
+DEMO
+APPLICATION
+FILE
+CODE
+ALGORITHM
+PRACTICE TASK
+SAMPLE PRODUCT
+```
+
+nhưng không được tự ý thay đổi cơ chế mở ứng dụng hiện tại trong Phase 1.
+
+---
+
+# 10. TÁCH SOẠN_TRƯỚC VÀ WEB LIVE
+
+Khóa nguyên tắc:
+
+```text
+SOẠN_TRƯỚC
+≠
+WEB LIVE
+```
+
+Workflow chính thức:
+
+```text
+SOẠN_TRƯỚC
+→ KIỂM TRA
+→ ĐÓNG GÓI
+→ NẠP VÀO WEB LIVE
+```
+
+WEB LIVE không chịu trách nhiệm tạo nội dung bài học.
+
+WEB LIVE chịu trách nhiệm:
+
+```text
+LOAD
+→ PRESENT
+→ CONTROL
+→ INTERACT
+```
+
+Không đưa logic SOẠN_TRƯỚC ngược vào LIVE.
+
+---
+
+# 11. BACKWARD COMPATIBILITY
+
+Audit các gói LIVE hiện có.
+
+Xác định cách để:
+
+```text
+OLD LIVE PACKAGE
+→ WEB_LIVE_CORE
+→ STILL RUN
+```
+
+Nếu cần migration:
+
+Chỉ thiết kế migration strategy.
+
+KHÔNG migration trong Phase 1.
+
+Không được yêu cầu đóng gói lại toàn bộ bài cũ nếu có thể duy trì compatibility bằng adapter/default profile.
+
+---
+
+# 12. SUBJECT DETECTION
+
+Thiết kế cách xác định môn.
+
+Ưu tiên explicit metadata:
+
+```text
+subject_engine
+```
+
+Không ưu tiên đoán môn từ nội dung.
+
+Ví dụ:
+
+```text
+subject_engine = geometry
+```
+
+WEB LIVE tự kích hoạt:
+
+```text
+CORE
++
+GEOMETRY_PROFILE
+```
+
+Nếu lesson cũ không có metadata:
+
+Thiết kế fallback an toàn, ví dụ:
+
+```text
+subject_engine = legacy/default
+```
+
+Không được làm lesson cũ crash chỉ vì thiếu subject_engine.
+
+---
+
+# 13. PROFILE ISOLATION
+
+Kiểm tra kiến trúc đề xuất phải bảo đảm:
+
+```text
+GEOMETRY_PROFILE
+```
+
+không làm thay đổi runtime của:
+
+```text
+ALGEBRA_PROFILE
+INFORMATICS_PROFILE
+LEGACY
+```
+
+Tương tự cho các profile khác.
+
+Mục tiêu:
+
+```text
+SUBJECT FEATURE
+→ SUBJECT PROFILE ONLY
+
+COMMON FEATURE
+→ CORE
+```
+
+---
+
+# 14. KHÔNG DUPLICATE ENGINE
+
+Không được đề xuất kiểu:
+
+```text
+web_live_geometry/
+web_live_algebra/
+web_live_informatics/
+```
+
+với ba bản sao engine gần giống nhau nếu source hiện tại cho phép module hóa.
+
+Nếu vì giới hạn kiến trúc hiện tại bắt buộc phải duplicate:
+
+Phải ghi:
+
+```text
+ARCHITECTURE_EXCEPTION
+```
+
+và cung cấp bằng chứng kỹ thuật.
+
+---
+
+# 15. LỘ TRÌNH IMPLEMENT SAU PHASE 1
+
+Thiết kế roadmap:
+
+```text
+PHASE 1
+FREEZE + AUDIT + DESIGN
+
+PHASE 2
+CORE BOUNDARY / PROFILE INTERFACE
+
+PHASE 3
+GEOMETRY_PROFILE
+
+PHASE 4
+GEOMETRY RUNTIME + REGRESSION
+
+PHASE 5
+ALGEBRA_PROFILE
+
+PHASE 6
+ALGEBRA RUNTIME + REGRESSION
+
+PHASE 7
+INFORMATICS_PROFILE
+
+PHASE 8
+INFORMATICS RUNTIME + REGRESSION
+
+PHASE 9
+MULTI-SUBJECT INTEGRATION
+
+PHASE 10
+OPTIONAL LAUNCHER
+```
+
+Launcher tương lai:
+
+```text
+┌─────────────────────────────┐
+│          WEB LIVE           │
+├─────────┬─────────┬─────────┤
+│ TIN HỌC │ ĐẠI SỐ  │ HÌNH HỌC│
+└─────────┴─────────┴─────────┘
+```
+
+Launcher không phải mục tiêu Phase 1.
+
+---
+
+# 16. REGRESSION STRATEGY
+
+Thiết kế regression matrix tối thiểu:
+
+```text
+LEGACY
+GEOMETRY
+ALGEBRA
+INFORMATICS
+```
+
+Các chức năng CORE phải được kiểm tra chéo.
+
+Ví dụ:
+
+```text
+lesson load
+navigation
+TV rendering
+teacher control
+answer
+hint
+focus
+fullscreen
+media
+animation
+state
+```
+
+Mục tiêu:
+
+```text
+NEW SUBJECT FEATURE
+≠
+BREAK EXISTING LIVE
+```
+
+---
+
+# 17. OUTPUT BẮT BUỘC
+
+Tạo các báo cáo:
+
+```text
+WEB_LIVE_BASELINE_FREEZE_REPORT.md
+
+WEB_LIVE_ARCHITECTURE_AUDIT.md
+
+WEB_LIVE_COMPONENT_CLASSIFICATION.md
+
+WEB_LIVE_MULTI_SUBJECT_DESIGN.md
+
+WEB_LIVE_BACKWARD_COMPATIBILITY_PLAN.md
+
+WEB_LIVE_REGRESSION_PLAN.md
+
+WEB_LIVE_PHASE2_IMPLEMENTATION_PLAN.md
+```
+
+Có thể tạo thêm sơ đồ kiến trúc nếu cần.
+
+---
+
+# 18. BÁO CÁO CUỐI
+
+Kết thúc Phase 1 phải trả về:
+
+```text
+BASELINE_VERSION =
+BASELINE_SHA256 =
+BASELINE_MUTATED = YES/NO
+
+CORE_EXTRACTION_FEASIBLE = YES/NO/PARTIAL
+
+GEOMETRY_PROFILE_FEASIBLE = YES/NO
+ALGEBRA_PROFILE_FEASIBLE = YES/NO
+INFORMATICS_PROFILE_FEASIBLE = YES/NO
+
+BACKWARD_COMPATIBILITY =
+PASS / RISK / BLOCKED
+
+SOURCE_MODIFIED = NO
+
+PRODUCTION_MODIFIED = NO
+
+RECOMMENDED_NEXT_PHASE =
+```
+
+Nếu có blocker:
+
+```text
+BLOCKER_ID
+CLASSIFICATION
+EVIDENCE
+IMPACT
+RECOMMENDATION
+```
+
+---
+
+# 19. ĐIỀU KIỆN DỪNG
+
+Sau khi hoàn thành:
+
+```text
+FREEZE
++
+AUDIT
++
+DESIGN
++
+REPORT
+```
+
+DỪNG.
+
+KHÔNG tự chuyển sang Phase 2.
+
+KHÔNG IMPLEMENT.
+
+KHÔNG PATCH.
+
+KHÔNG PROMOTE.
+
+Chờ GV kiểm tra báo cáo và ra lệnh:
+
+```text
+APPROVE PHASE 2
+```
+
+---
+
+# NGUYÊN TẮC CUỐI
+
+Phiên bản WEB LIVE hiện tại là tài sản ổn định.
+
+Mục tiêu của dự án là:
+
+```text
+KẾ THỪA
++
+CHUYÊN MÔN HÓA
++
+MODULE HÓA
+```
+
+không phải:
+
+```text
+VIẾT LẠI
++
+CHIA 3 CODEBASE
++
+PHÁ BASELINE
+```
+
+Ưu tiên cao nhất:
+
+```text
+KEEP BASELINE SAFE
+KEEP CURRENT LIVE WORKING
+ONE CORE
+THREE SUBJECT PROFILES
+NO REGRESSION
+```

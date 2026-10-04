@@ -1,0 +1,167 @@
+[
+  {
+    "file": "classroom-teacher.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "classroom.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "cockpit.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "common.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "cover-layer.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "cover-teacher.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "cover-tv.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "demo-teacher.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "draw-board-teacher.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "draw-board-tv.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "draw-board.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "math-atomic.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "math-speech.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "pedagogy-teacher.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "pedagogy.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "runtime-config.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "smart-geometry-teacher.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "smart-geometry-tv.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "smart-geometry.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "teacher.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "tts-controller.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "tts-presentation.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "tts-teacher.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "tts-tv.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "tv-content.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "tv-layout-algebra.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "tv-layout-computer.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "tv-layout-geometry.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "tv-layout-model.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "tv-layout.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "tv.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "ui-teacher.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "zip.js",
+    "exit_code": 0,
+    "output": ""
+  }
+]

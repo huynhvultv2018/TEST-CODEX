@@ -1,0 +1,3268 @@
+{
+  "browser": "151.0.7922.173",
+  "real": [
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip",
+      "screens": 41,
+      "states": [
+        {
+          "index": 0,
+          "type": "SETTLE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 0,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 1,
+          "type": "OLD_LESSON_CHECK",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 1,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 2,
+          "type": "LESSON_TRANSITION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 2,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 3,
+          "type": "CONTEXT",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 3,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 4,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 4,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 5,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 5,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 6,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 6,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 7,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 7,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 8,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 8,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 9,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 9,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 10,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 10,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 11,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 11,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 12,
+          "type": "OBSERVE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 12,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 13,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 13,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 14,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 14,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 15,
+          "type": "CONTEXT",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 15,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 16,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 16,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 17,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 17,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 18,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 18,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 19,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 19,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 20,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 20,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 21,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 21,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 22,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 22,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 23,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 23,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 24,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 24,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 25,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 25,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 26,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 26,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 27,
+          "type": "CLOSE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 27,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 28,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 28,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 29,
+          "type": "PRACTICE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 29,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 30,
+          "type": "PRACTICE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 30,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 31,
+          "type": "PRACTICE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 31,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 32,
+          "type": "PRACTICE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 32,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 33,
+          "type": "PRACTICE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 33,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 34,
+          "type": "APPLICATION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 34,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 35,
+          "type": "APPLICATION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 35,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 36,
+          "type": "APPLICATION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 36,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 37,
+          "type": "APPLICATION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 37,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 38,
+          "type": "APPLICATION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 38,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 39,
+          "type": "APPLICATION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 39,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 40,
+          "type": "END",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 40,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        }
+      ],
+      "lessonUnchanged": true
+    },
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN6_W05_LIVE_RC3_PED1.zip",
+      "screens": 32,
+      "states": [
+        {
+          "index": 0,
+          "type": "SETTLE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 0,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 1,
+          "type": "OLD_LESSON_CHECK",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 1,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 2,
+          "type": "LESSON_TRANSITION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 2,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 3,
+          "type": "OBSERVE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 3,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 4,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 4,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 5,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 5,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 6,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 6,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 7,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 7,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 8,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 8,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 9,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 9,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 10,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 10,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 11,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 11,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 12,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 12,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 13,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 13,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 14,
+          "type": "OBSERVE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 14,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 15,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 15,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 16,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 16,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 17,
+          "type": "OBSERVE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 17,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 18,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 18,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 19,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 19,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 20,
+          "type": "OBSERVE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 20,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 21,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 21,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 22,
+          "type": "CLOSE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 22,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 23,
+          "type": "OBSERVE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 23,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 24,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 24,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 25,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 25,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 26,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 26,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 27,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 27,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 28,
+          "type": "PRACTICE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 28,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 29,
+          "type": "PRACTICE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 29,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 30,
+          "type": "APPLICATION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 30,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 31,
+          "type": "END",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 31,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        }
+      ],
+      "lessonUnchanged": true
+    },
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN8_W04_LIVE_RC3_PED1.zip",
+      "screens": 29,
+      "states": [
+        {
+          "index": 0,
+          "type": "SETTLE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 0,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 1,
+          "type": "OLD_LESSON_CHECK",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 1,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 2,
+          "type": "LESSON_TRANSITION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 2,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 3,
+          "type": "OBSERVE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 3,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 4,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 4,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 5,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 5,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 6,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 6,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 7,
+          "type": "DISCOVER",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 7,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 8,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 8,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 9,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 9,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 10,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 10,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 11,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 11,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 12,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 12,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 13,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 13,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 14,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 14,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 15,
+          "type": "QUESTION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 15,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 16,
+          "type": "KNOWLEDGE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 16,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 17,
+          "type": "CLOSE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 17,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 18,
+          "type": "PRACTICE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 18,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 19,
+          "type": "PRACTICE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 19,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 20,
+          "type": "PRACTICE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 20,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 21,
+          "type": "PRACTICE",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 21,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 22,
+          "type": "APPLICATION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 22,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 23,
+          "type": "APPLICATION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 23,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 24,
+          "type": "APPLICATION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 24,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 25,
+          "type": "APPLICATION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 25,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 26,
+          "type": "APPLICATION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 26,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 27,
+          "type": "APPLICATION",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 27,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 28,
+          "type": "END",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 28,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        }
+      ],
+      "lessonUnchanged": true
+    },
+    {
+      "package": "WEB_LIVE/HINH_HOC_8_T04_T07_LIVE_TEST.zip",
+      "screens": 34,
+      "states": [
+        {
+          "index": 0,
+          "type": "Kiểm tra",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 0,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 1,
+          "type": "Kiểm tra",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 1,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 2,
+          "type": "Bài mới",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 2,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 3,
+          "type": "Định lí 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 3,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 4,
+          "type": "Định lí 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 4,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 5,
+          "type": "Ví dụ 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 5,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 6,
+          "type": "Ví dụ 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 6,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 7,
+          "type": "Ví dụ 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 7,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 8,
+          "type": "Ví dụ 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 8,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 9,
+          "type": "Ví dụ 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 9,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 10,
+          "type": "Luyện tập 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 10,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 11,
+          "type": "Luyện tập 2a",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 11,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 12,
+          "type": "Luyện tập 2a",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 12,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 13,
+          "type": "Luyện tập 2a",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 13,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 14,
+          "type": "Luyện tập 2a",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 14,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 15,
+          "type": "Luyện tập 2b",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 15,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 16,
+          "type": "Luyện tập 2b",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 16,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 17,
+          "type": "Luyện tập 2b",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 17,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 18,
+          "type": "Luyện tập 2b",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 18,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 19,
+          "type": "Thực hành 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 19,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 20,
+          "type": "Định lí 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 20,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 21,
+          "type": "Định lí 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 21,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 22,
+          "type": "Ví dụ 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 22,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 23,
+          "type": "Ví dụ 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 23,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 24,
+          "type": "Ví dụ 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 24,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 25,
+          "type": "Luyện tập 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 25,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 26,
+          "type": "Luyện tập 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 26,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 27,
+          "type": "Luyện tập 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 27,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 28,
+          "type": "Vận dụng",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 28,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 29,
+          "type": "Vận dụng",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 29,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 30,
+          "type": "Vận dụng",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 30,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 31,
+          "type": "Vận dụng",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 31,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 32,
+          "type": "Củng cố",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 32,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 33,
+          "type": "Bài về nhà",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 33,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        }
+      ],
+      "lessonUnchanged": true
+    },
+    {
+      "package": "WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip",
+      "screens": 35,
+      "states": [
+        {
+          "index": 0,
+          "type": "Kiểm tra",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 0,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 1,
+          "type": "Kiểm tra",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 1,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 2,
+          "type": "Bài mới",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 2,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 3,
+          "type": "Định lí 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 3,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 4,
+          "type": "Định lí 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 4,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 5,
+          "type": "Ví dụ 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 5,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 6,
+          "type": "Ví dụ 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 6,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 7,
+          "type": "analysisDiagram",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 7,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 8,
+          "type": "Ví dụ 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 8,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 9,
+          "type": "Ví dụ 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 9,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 10,
+          "type": "Ví dụ 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 10,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 11,
+          "type": "Luyện tập 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 11,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 12,
+          "type": "Luyện tập 2a",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 12,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 13,
+          "type": "Luyện tập 2a",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 13,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 14,
+          "type": "Luyện tập 2a",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 14,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 15,
+          "type": "Luyện tập 2a",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 15,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 16,
+          "type": "Luyện tập 2b",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 16,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 17,
+          "type": "Luyện tập 2b",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 17,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 18,
+          "type": "Luyện tập 2b",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 18,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 19,
+          "type": "Luyện tập 2b",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 19,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 20,
+          "type": "Thực hành 2",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 20,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 21,
+          "type": "Định lí 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 21,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 22,
+          "type": "Định lí 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 22,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 23,
+          "type": "Ví dụ 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 23,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 24,
+          "type": "Ví dụ 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 24,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 25,
+          "type": "Ví dụ 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 25,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 26,
+          "type": "Luyện tập 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 26,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 27,
+          "type": "Luyện tập 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 27,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 28,
+          "type": "Luyện tập 3",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 28,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 29,
+          "type": "Vận dụng",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 29,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 30,
+          "type": "Vận dụng",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 30,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 31,
+          "type": "Vận dụng",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 31,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 32,
+          "type": "Vận dụng",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 32,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 33,
+          "type": "Củng cố",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 33,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 34,
+          "type": "Bài về nhà",
+          "stage": "question",
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 34,
+          "stage": "full",
+          "overflow": false,
+          "horizontal": false
+        }
+      ],
+      "lessonUnchanged": true
+    }
+  ],
+  "visual": [
+    {
+      "name": "TIN_01_REVIEW",
+      "source": "TIN6_W04 real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "COMPUTER_SCIENCE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "Em ghi thời khóa biểu vào vở để xem lại.\nViệc ghi này thuộc bước nào của xử lí thông tin?",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "TIN_02_INTRO",
+      "source": "TIN6_W04 real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "COMPUTER_SCIENCE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "Con người đã thực hiện các bước xử lí thông tin.\nMáy tính thực hiện các bước ấy như thế nào?\nMở Bài 2, Mục 2 để tìm hiểu.",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "TIN_03_MCQ",
+      "source": "TIN6_W04 real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "COMPUTER_SCIENCE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "Câu 2 SGK trang 11: Chức năng của bộ nhớ máy tính là gì?\nChọn\nA.\nThu nhận\nB.\nHiển thị\nC.\nLưu trữ\nD.\nBiến đổi thông tin",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 4,
+      "imageSha256": null
+    },
+    {
+      "name": "TIN_04_OBSERVE",
+      "source": "TIN6_W04 real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "COMPUTER_SCIENCE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 763.234375,
+      "text": 508.828125,
+      "content": "Quan sát Hình 1.2 sau bốn gạch đầu dòng: mô tả đường đi của thông tin theo các mũi tên.",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": "cc98d1ef901e3f2ec1c92fe542a6396e764efeb6c0326f3fc42d6278208676a8"
+    },
+    {
+      "name": "TIN_05_KNOWLEDGE",
+      "source": "TIN6_W04 real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "COMPUTER_SCIENCE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "Thiết bị vào để thu nhận thông tin: bàn phím, chuột, máy quét,…",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "TIN_06_PRACTICE",
+      "source": "TIN6_W04 real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "COMPUTER_SCIENCE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "Luyện tập 2a SGK trang 12: “Quan sát đường đi của một chiếc tàu biển” thuộc bước nào?\nNêu một lí do ngắn.",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "TIN_07_APPLICATION",
+      "source": "TIN6_W04 real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "COMPUTER_SCIENCE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "Vận dụng 1 — bước thu nhận: Em sẽ tìm/nhận những thông tin nào trước chuyến đi xa nhà?",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "GEO_01_STATEMENT",
+      "source": "HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 763.234375,
+      "text": 508.828125,
+      "content": "ABCD là hình bình hành.\nAH, CK ⟂ BD.\nChứng minh AHCK là hình bình hành.",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "GEO_02_OBSERVE",
+      "source": "HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 763.234375,
+      "text": 508.828125,
+      "content": "Cần chứng minh hai điều gì về AH và CK?",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "GEO_03_ANALYSIS",
+      "source": "HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 763.234375,
+      "text": 508.828125,
+      "content": "Tìm hướng chứng minh AHCK là hình bình hành.",
+      "answer": "",
+      "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "steps": 0,
+      "analysisSteps": 2,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "GEO_05_PROOF_STEP_1",
+      "source": "HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 763.234375,
+      "text": 508.828125,
+      "content": "Vì sao AH ∥ CK?",
+      "answer": "AH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "analysis": "",
+      "steps": 1,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "GEO_06_PROOF_STEP_2",
+      "source": "HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 763.234375,
+      "text": 508.828125,
+      "content": "Vì sao AH ∥ CK?",
+      "answer": "AH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "analysis": "",
+      "steps": 1,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "GEO_07_CONCLUSION",
+      "source": "HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 763.234375,
+      "text": 508.828125,
+      "content": "Từ AH ∥ CK và AH = CK, kết luận?",
+      "answer": "AHCK là hình bình hành.",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "TIN_08_PRACTICAL",
+      "source": "Presentation fixture; not a real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "COMPUTER_SCIENCE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "Tạo thư mục và lưu tệp vào thư mục đã chọn.",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "TIN_09_DEMO",
+      "source": "Presentation fixture; not a real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "COMPUTER_SCIENCE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "Quan sát thao tác và thực hiện trên máy.",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_01_EXPRESSION",
+      "source": "Presentation fixture; not a real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "ALGEBRA",
+      "kind": "EXPRESSION",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "A = 3x(x − 2) − 2x(x + 1)",
+      "answer": "3x(x − 2) = 3x² − 6x\n−2x(x + 1) = −2x² − 2x",
+      "analysis": "",
+      "steps": 2,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_02_EQUATION",
+      "source": "Presentation fixture; not a real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "ALGEBRA",
+      "kind": "EQUATION",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "2x − 5 = 9",
+      "answer": "2x − 5 = 9\n2x = 14",
+      "analysis": "",
+      "steps": 2,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_03_SYSTEM",
+      "source": "Presentation fixture; not a real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "ALGEBRA",
+      "kind": "SYSTEM",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "2x + y = 5\nx − y = 1",
+      "answer": "3x = 6\nx = 2",
+      "analysis": "",
+      "steps": 2,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_04_WORD_PROBLEM",
+      "source": "Presentation fixture; not a real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "ALGEBRA",
+      "kind": "WORD_PROBLEM",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "Đặt ẩn: x = chiều rộng\nĐiều kiện: x > 0\nBiểu diễn: chiều dài = x + 4\nPhương trình: x(x + 4) = 60",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_05_IDENTITY",
+      "source": "Presentation fixture; not a real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "ALGEBRA",
+      "kind": "IDENTITY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "(x + 1)² − x² = 2x + 1",
+      "answer": "(x + 1)² − x²\nx² + 2x + 1 − x²",
+      "analysis": "",
+      "steps": 2,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_06_TABLE",
+      "source": "Presentation fixture; not a real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "ALGEBRA",
+      "kind": "TABLE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "Điểm\t6\t7\t8\nSố học sinh\t4\t6\t10\nCó bao nhiêu học sinh được điểm 8?",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_07_GRAPH",
+      "source": "Presentation fixture; not a real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "ALGEBRA",
+      "kind": "GRAPH",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 826.828125,
+      "text": 445.234375,
+      "content": "Đọc giá trị y khi x = 2.",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": "7aee9d2d65bceb70cf2b1abd1e9ca9d3b4d9e91470da7dc59c67109e85f6e781"
+    },
+    {
+      "name": "ALG_08_PRACTICE",
+      "source": "Presentation fixture; not a real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "ALGEBRA",
+      "kind": "EXPRESSION",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "Rút gọn biểu thức:\nB = 2x(x + 3) − x²",
+      "answer": "B = 2x² + 6x − x²\nB = x² + 6x",
+      "analysis": "",
+      "steps": 2,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "GEO_04_DEPENDENCY_TREE",
+      "source": "Presentation fixture; not a real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 788.671875,
+      "text": 483.390625,
+      "content": "Cần chứng minh: AHCK là hình bình hành.",
+      "answer": "",
+      "analysis": "AHCK là hình bình hành\n↓\nAH ∥ CK\n+\nAH = CK\n↓\nAH ⟂ BD\n+\nCK ⟂ BD",
+      "steps": 0,
+      "analysisSteps": 3,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "TIN_MCQ_1920x1080",
+      "source": "Real package",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "mode": "COMPUTER_SCIENCE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 945,
+      "scroll": 945,
+      "figure": 0,
+      "text": 1804.8125,
+      "content": "Câu 2 SGK trang 11: Chức năng của bộ nhớ máy tính là gì?\nChọn\nA.\nThu nhận\nB.\nHiển thị\nC.\nLưu trữ\nD.\nBiến đổi thông tin",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 4,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_EQUATION_1920x1080",
+      "source": "Presentation fixture",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "mode": "ALGEBRA",
+      "kind": "EQUATION",
+      "overflow": false,
+      "horizontal": false,
+      "height": 945,
+      "scroll": 945,
+      "figure": 0,
+      "text": 1450,
+      "content": "2x − 5 = 9",
+      "answer": "2x − 5 = 9\n2x = 14",
+      "analysis": "",
+      "steps": 2,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_WORD_PROBLEM_1920x1080",
+      "source": "Presentation fixture",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "mode": "ALGEBRA",
+      "kind": "WORD_PROBLEM",
+      "overflow": false,
+      "horizontal": false,
+      "height": 945,
+      "scroll": 945,
+      "figure": 0,
+      "text": 1450,
+      "content": "Đặt ẩn: x = chiều rộng\nĐiều kiện: x > 0\nBiểu diễn: chiều dài = x + 4\nPhương trình: x(x + 4) = 60",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "GEO_PROOF_1920x1080",
+      "source": "Real package",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 945,
+      "scroll": 945,
+      "figure": 1073.171875,
+      "text": 715.4375,
+      "content": "Vì sao AH ∥ CK?",
+      "answer": "AH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "analysis": "",
+      "steps": 1,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "GEO_ANALYSIS_1920x1080",
+      "source": "Real package",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 945,
+      "scroll": 945,
+      "figure": 1073.171875,
+      "text": 715.4375,
+      "content": "Tìm hướng chứng minh AHCK là hình bình hành.",
+      "answer": "",
+      "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "steps": 0,
+      "analysisSteps": 2,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "TIN_MCQ_1600x900",
+      "source": "Real package",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "mode": "COMPUTER_SCIENCE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 783,
+      "scroll": 783,
+      "figure": 0,
+      "text": 1504,
+      "content": "Câu 2 SGK trang 11: Chức năng của bộ nhớ máy tính là gì?\nChọn\nA.\nThu nhận\nB.\nHiển thị\nC.\nLưu trữ\nD.\nBiến đổi thông tin",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 4,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_EQUATION_1600x900",
+      "source": "Presentation fixture",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "mode": "ALGEBRA",
+      "kind": "EQUATION",
+      "overflow": false,
+      "horizontal": false,
+      "height": 783,
+      "scroll": 783,
+      "figure": 0,
+      "text": 1450,
+      "content": "2x − 5 = 9",
+      "answer": "2x − 5 = 9\n2x = 14",
+      "analysis": "",
+      "steps": 2,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_WORD_PROBLEM_1600x900",
+      "source": "Presentation fixture",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "mode": "ALGEBRA",
+      "kind": "WORD_PROBLEM",
+      "overflow": false,
+      "horizontal": false,
+      "height": 783,
+      "scroll": 783,
+      "figure": 0,
+      "text": 1450,
+      "content": "Đặt ẩn: x = chiều rộng\nĐiều kiện: x > 0\nBiểu diễn: chiều dài = x + 4\nPhương trình: x(x + 4) = 60",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "GEO_PROOF_1600x900",
+      "source": "Real package",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 783,
+      "scroll": 783,
+      "figure": 894.296875,
+      "text": 596.203125,
+      "content": "Vì sao AH ∥ CK?",
+      "answer": "AH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "analysis": "",
+      "steps": 1,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "GEO_ANALYSIS_1600x900",
+      "source": "Real package",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 783,
+      "scroll": 783,
+      "figure": 894.296875,
+      "text": 596.203125,
+      "content": "Tìm hướng chứng minh AHCK là hình bình hành.",
+      "answer": "",
+      "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "steps": 0,
+      "analysisSteps": 2,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "TIN_MCQ_1366x768",
+      "source": "Real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "COMPUTER_SCIENCE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "Câu 2 SGK trang 11: Chức năng của bộ nhớ máy tính là gì?\nChọn\nA.\nThu nhận\nB.\nHiển thị\nC.\nLưu trữ\nD.\nBiến đổi thông tin",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 4,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_EQUATION_1366x768",
+      "source": "Presentation fixture",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "ALGEBRA",
+      "kind": "EQUATION",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "2x − 5 = 9",
+      "answer": "2x − 5 = 9\n2x = 14",
+      "analysis": "",
+      "steps": 2,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_WORD_PROBLEM_1366x768",
+      "source": "Presentation fixture",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "ALGEBRA",
+      "kind": "WORD_PROBLEM",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 0,
+      "text": 1284.0625,
+      "content": "Đặt ẩn: x = chiều rộng\nĐiều kiện: x > 0\nBiểu diễn: chiều dài = x + 4\nPhương trình: x(x + 4) = 60",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "GEO_PROOF_1366x768",
+      "source": "Real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 763.234375,
+      "text": 508.828125,
+      "content": "Vì sao AH ∥ CK?",
+      "answer": "AH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "analysis": "",
+      "steps": 1,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "GEO_ANALYSIS_1366x768",
+      "source": "Real package",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 664,
+      "scroll": 664,
+      "figure": 763.234375,
+      "text": 508.828125,
+      "content": "Tìm hướng chứng minh AHCK là hình bình hành.",
+      "answer": "",
+      "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "steps": 0,
+      "analysisSteps": 2,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "TIN_MCQ_1280x720",
+      "source": "Real package",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "mode": "COMPUTER_SCIENCE",
+      "overflow": false,
+      "horizontal": false,
+      "height": 621,
+      "scroll": 621,
+      "figure": 0,
+      "text": 1203.21875,
+      "content": "Câu 2 SGK trang 11: Chức năng của bộ nhớ máy tính là gì?\nChọn\nA.\nThu nhận\nB.\nHiển thị\nC.\nLưu trữ\nD.\nBiến đổi thông tin",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 4,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_EQUATION_1280x720",
+      "source": "Presentation fixture",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "mode": "ALGEBRA",
+      "kind": "EQUATION",
+      "overflow": false,
+      "horizontal": false,
+      "height": 621,
+      "scroll": 621,
+      "figure": 0,
+      "text": 1203.21875,
+      "content": "2x − 5 = 9",
+      "answer": "2x − 5 = 9\n2x = 14",
+      "analysis": "",
+      "steps": 2,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "ALG_WORD_PROBLEM_1280x720",
+      "source": "Presentation fixture",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "mode": "ALGEBRA",
+      "kind": "WORD_PROBLEM",
+      "overflow": false,
+      "horizontal": false,
+      "height": 621,
+      "scroll": 621,
+      "figure": 0,
+      "text": 1203.21875,
+      "content": "Đặt ẩn: x = chiều rộng\nĐiều kiện: x > 0\nBiểu diễn: chiều dài = x + 4\nPhương trình: x(x + 4) = 60",
+      "answer": "",
+      "analysis": "",
+      "steps": 0,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": null
+    },
+    {
+      "name": "GEO_PROOF_1280x720",
+      "source": "Real package",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 621,
+      "scroll": 621,
+      "figure": 714.71875,
+      "text": 476.5,
+      "content": "Vì sao AH ∥ CK?",
+      "answer": "AH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "analysis": "",
+      "steps": 1,
+      "analysisSteps": 0,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    },
+    {
+      "name": "GEO_ANALYSIS_1280x720",
+      "source": "Real package",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "mode": "GEOMETRY",
+      "overflow": false,
+      "horizontal": false,
+      "height": 621,
+      "scroll": 621,
+      "figure": 714.71875,
+      "text": 476.5,
+      "content": "Tìm hướng chứng minh AHCK là hình bình hành.",
+      "answer": "",
+      "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "steps": 0,
+      "analysisSteps": 2,
+      "options": 0,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+    }
+  ],
+  "assertions": [
+    "Real TIN6 MCQ: four option cards",
+    "Knowledge disclosure retained",
+    "Geometry scene retained across progressive analysis",
+    "Proof reveal and previousStep hide",
+    "Pointer and zoom state received",
+    "Overlay order unchanged",
+    "Draw Board, Cover, Smart Geometry, Highlight and Focus render real runtime records",
+    "Timer sync",
+    "Whiteboard open/close",
+    "70/30 preset and TV double-click Teacher round-trip",
+    "Algebra future steps absent from DOM",
+    "Tree branching and future-node disclosure",
+    "Router explicit priority and ambiguous generic; malformed MCQ fallback",
+    "Whole equation atomic",
+    "Offline Teacher→TV navigation after local asset load"
+  ],
+  "errors": [],
+  "external": []
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "path": "LAUNCHER/demos/demo_word.docx",
+    "sha256": "a7807241e1f7f94122a3f8a7f87f396e56ecf3b720b6ab5d5468b33ba656849b",
+    "crc_pass": true,
+    "entries": [
+      "[Content_Types].xml",
+      "_rels/.rels",
+      "docProps/core.xml",
+      "docProps/app.xml",
+      "word/document.xml",
+      "word/_rels/document.xml.rels",
+      "word/styles.xml",
+      "word/stylesWithEffects.xml",
+      "word/settings.xml",
+      "word/webSettings.xml",
+      "word/fontTable.xml",
+      "word/theme/theme1.xml",
+      "customXml/item1.xml",
+      "customXml/_rels/item1.xml.rels",
+      "customXml/itemProps1.xml",
+      "word/numbering.xml",
+      "docProps/thumbnail.jpeg"
+    ]
+  },
+  {
+    "path": "LAUNCHER/demos/demo.ggb",
+    "sha256": "436b452f7e4e5cf25ab48d2482bbb6794493c83ed9ad3500b1ad82ad8e428ddd",
+    "crc_pass": true,
+    "entries": [
+      "geogebra.xml",
+      "geogebra_thumbnail.png"
+    ]
+  }
+]

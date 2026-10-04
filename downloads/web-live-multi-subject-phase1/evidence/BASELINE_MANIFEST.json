@@ -1,0 +1,3861 @@
+{
+  "baseline_name": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE",
+  "baseline_version": "TV_VERTICAL_MCQ_CANDIDATE (no canonical semver established)",
+  "baseline_status": "FROZEN",
+  "baseline_zip_sha256": "1ccce4f35bf807e498bdf13ca3275e660faa7b50842298ffdeb825e8a3ed917f",
+  "source_fingerprint_sha256": "f3236843911aa48b5bbd515ea9d7e51b6a51aae12b12edb3a7898b84c2c7bd0a",
+  "file_count": 770,
+  "source_mutated": false,
+  "files": [
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/ACCEPTANCE_REPORT.md",
+      "bytes": 4740,
+      "sha256": "b170b9b670552404c10a97e8c9bcd16e739559d9c378140301386c83ae7b06d7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHANGED_FILES.md",
+      "bytes": 3936,
+      "sha256": "2f5522cd4146438b3702146e601e3af326a35dff6d501ca7817a79529e5692be"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHANGELOG.md",
+      "bytes": 2065,
+      "sha256": "7aa23a37bbdc2c11b5c41acb341b5070fc5c337c40b885aa08a2e997fe4fc594"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHECKSUMS.sha256",
+      "bytes": 14670,
+      "sha256": "aa0f2644c0ee21ae493727f709b6af2ee7670c0786c4b5ba483acf7f76e55e3b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHECKSUMS_SHA256.txt",
+      "bytes": 85213,
+      "sha256": "7d58944960ea82af236846fac1ed6c4fad577dd7711684b18aac580d9d9b3e7c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_EVIDENCE/HTTP_RUNTIME/TEACHER_HTTP_127.0.0.1.png",
+      "bytes": 115278,
+      "sha256": "9ecace0ad34e992a69832b42009f1d749e3446b8214eef30488042a162d38de9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_EVIDENCE/HTTP_RUNTIME/TEACHER_HTTP_localhost.png",
+      "bytes": 115348,
+      "sha256": "488cf6f27ddd86ab86dc08b338f9c6f700f19642e6fde384dc7be8214ae61680"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_EVIDENCE/HTTP_RUNTIME/TV_HTTP_127.0.0.1.png",
+      "bytes": 23553,
+      "sha256": "0b9e1b8f91e3d2a9932f55539a68763dae61ef38db9ff86bf46c80ad9771b389"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_EVIDENCE/HTTP_RUNTIME/TV_HTTP_localhost.png",
+      "bytes": 23553,
+      "sha256": "0b9e1b8f91e3d2a9932f55539a68763dae61ef38db9ff86bf46c80ad9771b389"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_EVIDENCE/HTTP_RUNTIME/browser-runtime.json",
+      "bytes": 15932,
+      "sha256": "6d60b9c8463a9fa02e550e202b5e6eb409f8b93c6582b2e31b57a05e19f39f00"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_EVIDENCE/HTTP_RUNTIME/http-api-checks.json",
+      "bytes": 2826,
+      "sha256": "6c80127cf4475ff6773569d6653645438fff04309da668f284b37d4c8a73d2ef"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_EVIDENCE/browser-dispatch-tests.json",
+      "bytes": 233,
+      "sha256": "36555bb84ac1645346585150b90f01732cef05b8d0b22d23a43082477c868e32"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_EVIDENCE/preservation-checks.json",
+      "bytes": 295,
+      "sha256": "703d6ecf367fe89294e1fb071e34901d742eaba1a703d523e5c587bc69b3e68f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_EVIDENCE/start_web_live.patch",
+      "bytes": 4322,
+      "sha256": "744b9502b7f75961a0066b3d828ca95698273e22e8022545c6acb962269479a0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_REPORT.md",
+      "bytes": 5803,
+      "sha256": "639eb09854cdd359169b2d794cac29e5acdeb5a26e18f54266697528fbfc9ba9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_SHA256SUMS.txt",
+      "bytes": 29796,
+      "sha256": "b5dd82539529c95dd993fc4b6c1dd114c9f6ef37829a33cfdd89bc96498452ca"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_TESTS/browser.cjs",
+      "bytes": 4598,
+      "sha256": "deead4ff9fc48e4a792c5afa0bc88fe039dde11d50872a999cd16c764750ed04"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_TESTS/run_http.py",
+      "bytes": 9358,
+      "sha256": "fcdd427338e39bf140065f0ca88ff5558b7211bece187d662efd66a5dfc9b6b3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CHROME_START_TESTS/test_browser_start.py",
+      "bytes": 8093,
+      "sha256": "1a8592a682a09f7b7666ce432092029a219d94002f9ff0de040496e952adebe8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/CONTROL_PANEL_UI_REPORT.md",
+      "bytes": 4632,
+      "sha256": "e9cf62a66629f309f040937e23f3981563bb3489dd5a6f113482e6adec9c1a86"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/DESIGN_MAP.md",
+      "bytes": 2960,
+      "sha256": "0f75928c5b6dfdc53f91466f30e3e67a4239f7ad1b2d261fa373133c58a45e2f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/ANSWER.png",
+      "bytes": 30795,
+      "sha256": "e45a30594bd989e3991ca2f1dcff59fbcf7cc5c33a1974e8a1a9a0ac1d546650"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/DEMO.png",
+      "bytes": 54695,
+      "sha256": "4bb8fb62d0eb69c4fe3da531e727b8dd4719f6904428a501700ed843201935db"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/HINT_1.png",
+      "bytes": 88285,
+      "sha256": "244e594e30670323262f8a20354447328a697803cbea04f0d2161fe78a0460e3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/HINT_2.png",
+      "bytes": 91397,
+      "sha256": "6fee4802d3f7302caca031caeee34cd12cef2f82bfed26902b23246ce13a7b1a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/KNOWLEDGE_CLOSE.png",
+      "bytes": 47115,
+      "sha256": "d531b4c43b6f61bd18d0f122b84e888fcaf2ca35f654f4d2a19852c9230259a4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/TEACHER_1366x768.png",
+      "bytes": 109710,
+      "sha256": "9a2f9cedc6b699d8865e89dd1077d8a7c52a44cff6b905fa88e7713f26504270"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/TEACHER_1920x1080.png",
+      "bytes": 143000,
+      "sha256": "51e857eb962a3dff6b7b8f198228392fd75765b82d2b3c9ad3b8b99319db6faf"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/TEACHER_FULLSCREEN.png",
+      "bytes": 109861,
+      "sha256": "201ad745d879d997521a801654d0179a33d772f798e39c709422235ef341c3ff"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/TEACHER_TIN_1920x1080.png",
+      "bytes": 121361,
+      "sha256": "c7049a4f682933aa2bd08ca6968271f8fe91075dfeb4c086cc9f487309375537"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/TV_ALGEBRA.png",
+      "bytes": 30898,
+      "sha256": "2d772c28c08643d5860db65f53e61955856e12287581f4e4454b2e24ca42fc85"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/TV_FULLSCREEN.png",
+      "bytes": 106374,
+      "sha256": "1a1bcb1fc6622885dc720efb427cfd2f6fafea9521b1a165bddab1d6bea339f4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/TV_GEOMETRY.png",
+      "bytes": 105713,
+      "sha256": "c1e4f27160d6c068a20720482d6b1397cc580b6a73696849b5900ebc70704afd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/TV_LONG_CONTENT.png",
+      "bytes": 103242,
+      "sha256": "09044041fdf0d4aad88d4294b19c34f09a563040232fd28efb6ea5f63c87d97f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/TV_LONG_FORMULA.png",
+      "bytes": 39320,
+      "sha256": "db67a41bdc44d1f20dd8d37738827b8a9314f57d3416635aa1f60f105d4afc1d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/TV_TIN.png",
+      "bytes": 56156,
+      "sha256": "b2235ebc4832dc3e6ee046f86c0434079a32e1c3ecc299d5037fa26644dca509"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/TV_TIN_REAL_RESOURCE.png",
+      "bytes": 212400,
+      "sha256": "2ac1cae9bf0c7bc99cc61a9fe4adb8d4026baa89fcc1ffd0a560cfaba181cc35"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/baseline-integrity.json",
+      "bytes": 1653,
+      "sha256": "d65305302d990286aabcfb21d4242167f6176530fa3c7af223d58209f773954b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/cockpit-results.json",
+      "bytes": 8742,
+      "sha256": "1adf1cd75a1323afd066e7e93a2a6e05f043cb59e1d161f7046590f1b0446897"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/logs/chrome-start.log",
+      "bytes": 2279,
+      "sha256": "5ce083d1dfb43d0aa302caeff75a092ec20ece9efe65fe227874112ef168bed3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/logs/cockpit.log",
+      "bytes": 1849,
+      "sha256": "7ad11a985faa578a29f23f45e17595bd1a2ac09e3189eeb995a805ab3f0fcf55"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/logs/engine-extra.log",
+      "bytes": 729,
+      "sha256": "33b76bd10c871822bd9659c2712b2d2d0e931b081b20c51ca54b05a528bc6804"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/logs/http-launcher.log",
+      "bytes": 1677,
+      "sha256": "f982098513a5bfbe493dff0b4c94dd5fcd775a3b536aab7fbfed1d422e76f94a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/logs/math-speech.log",
+      "bytes": 31,
+      "sha256": "39a1e1592e97ccfc0f5aff52a3594559c62625d5ebe8ab67284b253203b5936b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/logs/multi-engine.log",
+      "bytes": 2483,
+      "sha256": "1b6b908536904ed10e0bf72b7db420b51d870e0ed7ebcf9872f9889844632399"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/logs/native-probe.log",
+      "bytes": 2894,
+      "sha256": "73bb4decd4550b6fb66438aeba00652d56563b590fb0011de7268afd78db80c7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/logs/tts-edge.log",
+      "bytes": 976,
+      "sha256": "d65d29e689e923ccd68ef2caa06397630a3be29cca1e39015c713f214810a51b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/logs/tts-presentation-extra.log",
+      "bytes": 729,
+      "sha256": "33b76bd10c871822bd9659c2712b2d2d0e931b081b20c51ca54b05a528bc6804"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/logs/tts-presentation-regression.log",
+      "bytes": 2483,
+      "sha256": "1b6b908536904ed10e0bf72b7db420b51d870e0ed7ebcf9872f9889844632399"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/EVIDENCE/logs/tts-runtime.log",
+      "bytes": 1558,
+      "sha256": "09bccda6d3448a666edf789c8d3021970c9ad2d8fc2a966c62a7063b1009e728"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HISTORICAL_INHERITED_CHECKSUMS_SHA256.txt",
+      "bytes": 34066,
+      "sha256": "3d725cdc900e76b37cf472a20c283e5429e9a20517c59e5f4fe629a1a8ed428e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HISTORICAL_MATH_PARENT_CHECKSUMS_SHA256.txt",
+      "bytes": 66779,
+      "sha256": "d5b81d4f99dcc67503115956d91e0a0ca8734f072f6e028e0a96bb76a42990d0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HISTORICAL_MATH_PARENT_REPORTS/README_TV_MATH_HOTFIX_CANDIDATE.md",
+      "bytes": 1692,
+      "sha256": "6e67e2dfcce53373a84263aa7fef48e6e2cb3e4612783528a49b3e43115ea804"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HISTORICAL_MATH_PARENT_REPORTS/TV_CONTENT_NORMALIZATION_REPORT.md",
+      "bytes": 3485,
+      "sha256": "ed70c6fe380fb026402cf7a39861331da7927d1d50e1b0927ee9d4a5f621d691"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HISTORICAL_MATH_PARENT_REPORTS/TV_HOTFIX_CHANGELOG.md",
+      "bytes": 1711,
+      "sha256": "eba8f9228a8392b7a757bf93899416ae7353f3a6d26507fa1c972134af186a08"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HISTORICAL_MATH_PARENT_REPORTS/TV_LAYOUT_REGRESSION_REPORT.md",
+      "bytes": 2431,
+      "sha256": "1b547ea90091ae97cbb138021db33da6fa6d65ec504e83a799a221b6397ceb91"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HISTORICAL_MATH_PARENT_REPORTS/TV_MATH_TYPOGRAPHY_ROOT_CAUSE.md",
+      "bytes": 2495,
+      "sha256": "0cd0e231f269fe261085e8d9e8ea2644466de720b446e49c8b8fafc6cd23d078"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HISTORICAL_MATH_PARENT_REPORTS/TV_VISUAL_ACCEPTANCE_REPORT.md",
+      "bytes": 3328,
+      "sha256": "3895afcb315770c1be32a3bf6232452a414c6ee9ee1abfee5810a9d70b5c7c08"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_ACCEPTANCE_REPORT.md",
+      "bytes": 2753,
+      "sha256": "3d82a56e037574f7d9f4c13c8ffb98d0af17174b47ad421610f83edb34fa05ce"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_CHANGELOG.md",
+      "bytes": 1212,
+      "sha256": "981a2120618d96508d193f64517dc5bd2e53915b0fb9cbcc3649c72cb2d623b8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_CHECKSUMS_SHA256.txt",
+      "bytes": 46666,
+      "sha256": "185811aa1b475ba8bfeb06d35215573b30e6f6664900335a0676c3fd4e69ab99"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/ANSWER.png",
+      "bytes": 30795,
+      "sha256": "e45a30594bd989e3991ca2f1dcff59fbcf7cc5c33a1974e8a1a9a0ac1d546650"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/AUTO_PAIR.png",
+      "bytes": 116156,
+      "sha256": "e1d0f7a2214c1f3ed13dafe08dcc01c35169d293facc89cb7b8177bfb5fa9f86"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/DEMO.png",
+      "bytes": 54695,
+      "sha256": "4bb8fb62d0eb69c4fe3da531e727b8dd4719f6904428a501700ed843201935db"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/DEMO_CONFIRM.log",
+      "bytes": 153,
+      "sha256": "eb1b9fc0210ffaa06a376ebbe0b85a6c8c51b23bbde73d486a9c604fd66d10d4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/DEMO_LAUNCH.log",
+      "bytes": 319,
+      "sha256": "b5846dd038b06712de585b92afe57a7588ca8905f7f53d972cdbc265c27706a3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/DEMO_METADATA.png",
+      "bytes": 116154,
+      "sha256": "f657d95a19ac0b544c1180f6b9623c7c077b7600f2dda33849fc362f3752ce81"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/DEMO_TV_FAILSAFE.png",
+      "bytes": 21572,
+      "sha256": "731d065631e1c1ede45c3dea425ce12d9b9ca32aaa7b240bb2bcbe1d4fcfc6f0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_01_EXPRESSION.png",
+      "bytes": 25331,
+      "sha256": "3c6b6eb2d2044441bb61465b94aa90a91a6463aebd20d28262f0dd5ad186064d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_02_EQUATION.png",
+      "bytes": 20494,
+      "sha256": "a3dff548c8fe3c23bc2e96c19956de6f3108a64c8ac68fe4a7e071cf0d9dbfaa"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_03_SYSTEM.png",
+      "bytes": 23384,
+      "sha256": "08ab3c998b678b7e09ee657170d79b51d998956b64d39c30138e9c8f10ad36a5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_04_WORD_PROBLEM.png",
+      "bytes": 35675,
+      "sha256": "04d9b44743e725b250767127f8fa09c7fe30868922dc26d87ff6430f54578031"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_05_IDENTITY.png",
+      "bytes": 22577,
+      "sha256": "3d43abb3eca6b0bc52016ed61dd5d1445736ccff20f2df6f9dea61c5bcab2a01"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_06_TABLE.png",
+      "bytes": 37748,
+      "sha256": "9308dc5755a8e4b432a39983f862e55f5094bcccbb580906bbabc6b33934146c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_07_GRAPH.png",
+      "bytes": 33723,
+      "sha256": "618cf243b60305b923cded59ec44afa033cd3090bb1439ae01962f1fb6a7a016"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_08_PRACTICE.png",
+      "bytes": 21546,
+      "sha256": "92d6730f28016351a029cf41dd91797148606196c7a50792dde060cd3a17a555"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_EQUATION_1280x720.png",
+      "bytes": 19499,
+      "sha256": "9131b6a7c857d8f8b925858f5cb1ed42026e509a10b743b092b1a9e9a5419e45"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_EQUATION_1366x768.png",
+      "bytes": 20488,
+      "sha256": "bf7f9fcb85dc6afb11fdf1de7389a08b088c11e179573ac3c38b2b84ced133f1"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_EQUATION_1600x900.png",
+      "bytes": 23669,
+      "sha256": "c68e4982e98c976d94838daeaed9e1174b0dbc41b4aaf43aa1f2053e18ed1d8f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_EQUATION_1920x1080.png",
+      "bytes": 29661,
+      "sha256": "a4fbf834cab0f69372023a4ea39df57597d7951490e95c98d2562cd0d85ab9d9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_WORD_PROBLEM_1280x720.png",
+      "bytes": 35233,
+      "sha256": "dba8a0a6c58f29d957086f4a7a14e0a4c97051cb92f8d0020dfab5c8524fea67"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_WORD_PROBLEM_1366x768.png",
+      "bytes": 38816,
+      "sha256": "98d0ab53340a3df81b3db00819603608211e6e54afb8fc1fd3268c8a26334262"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_WORD_PROBLEM_1600x900.png",
+      "bytes": 46394,
+      "sha256": "689bef56223d753d86d03b7bb6e1d3620165a501722c5c33837038482bda1897"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/ALG_WORD_PROBLEM_1920x1080.png",
+      "bytes": 55667,
+      "sha256": "681055aff745dafe98d064b1ca45c1651a2189397b4a7e191cd547094b7c3aa0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_01_STATEMENT.png",
+      "bytes": 72016,
+      "sha256": "7b71dc40fa8b1a2f1d35336645a7b0382efb09b128fcba6504db08a0b453270c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_02_OBSERVE.png",
+      "bytes": 65689,
+      "sha256": "a6a733ee077f0b7b2a34c50831105874a052844f6520c38f622fc34e1fcd439d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_03_ANALYSIS.png",
+      "bytes": 78391,
+      "sha256": "9a562f3042bb928970e4cd8c2551eda2712bee347bc9273cba3213375dc9537a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_04_DEPENDENCY_TREE.png",
+      "bytes": 75744,
+      "sha256": "5139bf95218841120f8e50eca13082dba1010025bd0e16f3bc0e0a2d98dfc608"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_05_PROOF_STEP_1.png",
+      "bytes": 63664,
+      "sha256": "f0aa0d54e5d767caf48401d1a4a2e138cab85222de449245dd4e89f6091e8ba3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_06_PROOF_STEP_2.png",
+      "bytes": 63670,
+      "sha256": "2ce1c96062a74758a97a5bf28c23b0665ea30edee79a72c2123b100e015eac1b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_07_CONCLUSION.png",
+      "bytes": 59139,
+      "sha256": "180eb18f41346b7552a44ec4d820eec9c017dde40ed46fbecc5d3bdf4295bc4c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_ANALYSIS_1280x720.png",
+      "bytes": 74738,
+      "sha256": "8d5a8ba07690f268fa5b7847f0fcd72cee27d70609297212c0deabc3b4837386"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_ANALYSIS_1366x768.png",
+      "bytes": 80229,
+      "sha256": "0a37e23ec78208164b3e775e09e12d13f9dd69a31581feb19f44758bed4f3aec"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_ANALYSIS_1600x900.png",
+      "bytes": 86006,
+      "sha256": "545021dc4bda4819dd61d67cd2d452f9c0b52f9df098bb12c58105091607d227"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_ANALYSIS_1920x1080.png",
+      "bytes": 108433,
+      "sha256": "19dc43ddf3dbef73127e95ddc9f13611e2c661c7ad507b1e6ac4d91780111619"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_PROOF_1280x720.png",
+      "bytes": 60115,
+      "sha256": "84dc21f844eb44e35dd8ab5e0db1192504eeb7bb7fb98735bfc86e3738d7901b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_PROOF_1366x768.png",
+      "bytes": 65529,
+      "sha256": "2247e6995144698eaf994b9e92a436ece0918eb6f59cb67ca200ab85ea5f4c8e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_PROOF_1600x900.png",
+      "bytes": 68326,
+      "sha256": "609a154949f9a48f2fd83f523623f506b084952dc15dfdffe691b598e4ff5ff6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/GEO_PROOF_1920x1080.png",
+      "bytes": 84943,
+      "sha256": "781eebd469869e084f9acdd233eb06771461ae8557adbaa60fdfd459f93e9413"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/TIN_01_REVIEW.png",
+      "bytes": 40198,
+      "sha256": "653b918b079d1126782c5b3715188df3c794e20bb6a9e6d36021b03c34c96b86"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/TIN_02_INTRO.png",
+      "bytes": 44383,
+      "sha256": "e5514f4b25f0ce5560af826eb4a9036b8d291f09b090bd71f394361cffee8b4f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/TIN_03_MCQ.png",
+      "bytes": 47489,
+      "sha256": "ca67c77e20170d07c3f97317efe48a66a17f767748d98d62bafb801254eb6316"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/TIN_04_OBSERVE.png",
+      "bytes": 134360,
+      "sha256": "464a0f1604f7c6d8f207f4bcb23a2a1dd161854a3956c3bbbafbf495e456e72f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/TIN_05_KNOWLEDGE.png",
+      "bytes": 32050,
+      "sha256": "d08359d6d445af7c2ab470665f28c1095e42231a080303674a553c5124062263"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/TIN_06_PRACTICE.png",
+      "bytes": 48217,
+      "sha256": "1e8ab10e38888721394799e6006aa70d33a27b49d29b769312c36187ccece12f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/TIN_07_APPLICATION.png",
+      "bytes": 37779,
+      "sha256": "21c51f3f5cc9ed25e8e8bb3f304d3621d2e421b4b00abe515a3d605a8fd705a9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/TIN_08_PRACTICAL.png",
+      "bytes": 24646,
+      "sha256": "13c805497d78603fb41bc2fb5948aa976ee2393b662657053ac7279b4e047070"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/TIN_09_DEMO.png",
+      "bytes": 25099,
+      "sha256": "3710f96db54e31a6db8be8d3269107ed30f322520e730052452b38310b38f7cc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/TIN_MCQ_1280x720.png",
+      "bytes": 43327,
+      "sha256": "de586f11d038ff0cb85bd7e5c9a8c8cda6849fa18d16e3453463302349f8d60b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/TIN_MCQ_1366x768.png",
+      "bytes": 49373,
+      "sha256": "bcef72418ff3110f1292ae60c429a7f0e1da87a9eeb3c8e9ed239f412a619a40"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/TIN_MCQ_1600x900.png",
+      "bytes": 57659,
+      "sha256": "e3a053b976224a75c7b9f4cba03f5e05b0258bc9b008476c9d38dde7bc4d1dc8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/TIN_MCQ_1920x1080.png",
+      "bytes": 71805,
+      "sha256": "d07664190ea6f61dab9cab61885848f610a419b07be4624e98e18a9950197483"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/math-speech.json",
+      "bytes": 2773,
+      "sha256": "9ef2186e023be04dc1185bfb7c41869caa352ee89e4608f45440befc03f23e97"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/multi-engine-results.json",
+      "bytes": 79425,
+      "sha256": "2bf14bfb877191c801a1491b557e0e9e1dca2eee9a7676497c3802104644fe24"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/FULL_REGRESSION/presentation-results.json",
+      "bytes": 79549,
+      "sha256": "d93c7112fa141212f6c93de444192b2a2202bf397db880ff2e6a561824f237ee"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/HINT_1.png",
+      "bytes": 88285,
+      "sha256": "244e594e30670323262f8a20354447328a697803cbea04f0d2161fe78a0460e3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/HINT_2.png",
+      "bytes": 91415,
+      "sha256": "d9a39504ac4e01d7f6b1fdefc7ff24e93ee5065c1e68c5732ca3158fdee3b438"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/KNOWLEDGE_CLOSE.png",
+      "bytes": 47115,
+      "sha256": "d531b4c43b6f61bd18d0f122b84e888fcaf2ca35f654f4d2a19852c9230259a4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/LAUNCHER_CONNECTED.png",
+      "bytes": 116156,
+      "sha256": "e1d0f7a2214c1f3ed13dafe08dcc01c35169d293facc89cb7b8177bfb5fa9f86"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/PRE_PATCH_AUDIT/RC2_default.png",
+      "bytes": 139929,
+      "sha256": "e13e0670679d5cade8de40f4c45d6b2d71992598d8c4aa99bf48d4fc25a3ea7e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/PRE_PATCH_AUDIT/RC2_without-BroadcastChannel.png",
+      "bytes": 139925,
+      "sha256": "a92564e4c9bd16d0736747334d3b351c1788766101c06a29b891605b0f2798b9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/PRE_PATCH_AUDIT/rc2-manifest.json",
+      "bytes": 36465,
+      "sha256": "9a6cb3e4e3316100114cbe846399e08750e9a1dac24f2f52146b753478126e72"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/PRE_PATCH_AUDIT/reproduce.cjs",
+      "bytes": 2443,
+      "sha256": "0090edf19c36630abe09798685866842f44ac581cc1b7e61f3e62a41dfada6e3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/PRE_PATCH_AUDIT/reproduction.json",
+      "bytes": 4834,
+      "sha256": "51cc24957cecaf4b816263b1e9cdbde01aa123de9da55841a0e01768e87e28c2"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/README.md",
+      "bytes": 744,
+      "sha256": "c6dc90d9e815898d9a363271cf41003d053a6d740aad3cfae47aa7a59da22249"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/RUN_INDEX.json",
+      "bytes": 1283,
+      "sha256": "adb4959ff10bcb4bd066cb0fe869560b1100b40db337c72c75c763a801f4deb6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/START_WEB_LIVE.log",
+      "bytes": 119,
+      "sha256": "47ae3bc254c85cb7effbdbca20825eec78281ac0fe0279a46699db284523cedf"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TEACHER_1366x768.png",
+      "bytes": 109710,
+      "sha256": "9a2f9cedc6b699d8865e89dd1077d8a7c52a44cff6b905fa88e7713f26504270"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TEACHER_1920x1080.png",
+      "bytes": 143000,
+      "sha256": "9ba90ad49a6c156a7de25d6db84170baa09276f28fbaa14553a9490778664cd3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TEACHER_FINAL_1920x1080.png",
+      "bytes": 124262,
+      "sha256": "72fde8a5980225f4f76b424408091813396bd90f160239435f10db99dee309d0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TEACHER_FULLSCREEN.png",
+      "bytes": 109861,
+      "sha256": "201ad745d879d997521a801654d0179a33d772f798e39c709422235ef341c3ff"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TEACHER_HTTP.png",
+      "bytes": 96315,
+      "sha256": "a0279bc686657501c40cf53e720b3b844c141120625df75d9721a301bd0553b5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TTS_ADAPTER_PATCH.diff",
+      "bytes": 3092,
+      "sha256": "3424e4cef93dbb2acee7cb7f10f7383f208f73c1efc27b6f42aa495a2110c504"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TTS_ENGINE.png",
+      "bytes": 139718,
+      "sha256": "f2bab3afae4678dd9c2de8ea48beb7da7ecc5cc6267a73b1032751b9ad1e5a4b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TTS_NEXT_SCREEN.png",
+      "bytes": 42778,
+      "sha256": "687a644b04087df0cc382d059c0c5f8cf99ffa898c5c64c7841f4f745bd47de2"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TTS_PLAY.log",
+      "bytes": 152,
+      "sha256": "71cae414274e3d8bd154599160c197139409cf14b7732ca0d0142486798acbd3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TTS_STOP.log",
+      "bytes": 133,
+      "sha256": "d41d9b5d56322af859ccab4432430f5ef9c808654d8ea949e72f7b37544552fc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TTS_STOP.png",
+      "bytes": 139733,
+      "sha256": "ce475fe449b87993873bc93a1152af881a0da80ed929ca859d583f380cb6cdb4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TV_ALGEBRA.png",
+      "bytes": 30900,
+      "sha256": "aea54425d25562d95d080607d32ef3813bc484da73be9effc4d98145bc5c27d4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TV_FULLSCREEN.png",
+      "bytes": 106374,
+      "sha256": "1a1bcb1fc6622885dc720efb427cfd2f6fafea9521b1a165bddab1d6bea339f4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TV_GEOMETRY.png",
+      "bytes": 105713,
+      "sha256": "c1e4f27160d6c068a20720482d6b1397cc580b6a73696849b5900ebc70704afd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TV_LONG_CONTENT.png",
+      "bytes": 103242,
+      "sha256": "09044041fdf0d4aad88d4294b19c34f09a563040232fd28efb6ea5f63c87d97f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TV_LONG_FORMULA.png",
+      "bytes": 39321,
+      "sha256": "aabe57acdeb55befdbb02ac75f28f94f5bed1518e4b565151583ed9c5d349257"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/TV_TIN.png",
+      "bytes": 56156,
+      "sha256": "b2235ebc4832dc3e6ee046f86c0434079a32e1c3ecc299d5037fa26644dca509"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/cockpit-native.json",
+      "bytes": 8490,
+      "sha256": "5d212ab8ae0839e0c4b4b4f1637015243c5e4de7abed1124359b58ac4839f045"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/cockpit-native.log",
+      "bytes": 1672,
+      "sha256": "a84e11b675c77f7d9f29531abd321f9099865ce8122ff7ac93a8a0b86dbf31a1"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/context-native.json",
+      "bytes": 803,
+      "sha256": "1070472cb21009cebe2694d36d09f305c44f269d20c6daf348d3d2204d96af04"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/context-native.log",
+      "bytes": 1302,
+      "sha256": "de9f48238bc95b5c05aad7a33d7fb8af7bb7b25211f53a425b9abe34ad5204e1"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/demo-native.json",
+      "bytes": 3965,
+      "sha256": "7d69980d9a2f8cdad70fbb6962011d8aed73b9801bdf907c2d67e015106c1312"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/demo-native.log",
+      "bytes": 695,
+      "sha256": "d8fb6e18b2f950bd78576d2f70bd3b495f2be79e8466028cf0d10449ee8118f0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/freeze-integrity.json",
+      "bytes": 463,
+      "sha256": "27493fb14a1f9cdb0a4603e5c274a8bd4f247d5bba89380186460ebefee59945"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/full-engine.log",
+      "bytes": 2483,
+      "sha256": "1b6b908536904ed10e0bf72b7db420b51d870e0ed7ebcf9872f9889844632399"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/http-native.log",
+      "bytes": 81,
+      "sha256": "dc99f9c1314b70345168bea1d13166d485025a9bd4dd690c5bdc1c808151233e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/launcher-native-app-errors.log",
+      "bytes": 224,
+      "sha256": "f52846ed2ed60c5231f76ee4bea95190d05da911fee9567d07fd279dced9b73a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/launcher-native.json",
+      "bytes": 1117,
+      "sha256": "cd49a660d9658144f4600926f453bc3efc5e14bbc54d8bcc117353aa74743b87"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/math-speech.log",
+      "bytes": 31,
+      "sha256": "39a1e1592e97ccfc0f5aff52a3594559c62625d5ebe8ab67284b253203b5936b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/native-tts.json",
+      "bytes": 12490,
+      "sha256": "e50edf8b42e3246624ef71a1c7c2722f735ac815af87725bf962ac84e85e3610"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/native-tts.log",
+      "bytes": 1680,
+      "sha256": "aeb6f72fa81c063fd2c688ed68c1718aebbca7d0e89dc725d92657d531230a04"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/package-preflight.json",
+      "bytes": 349,
+      "sha256": "94d261f8ad02d47f030310aa8985ddbdd866e4e4b7476dedfcdfc6770c9315dc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/presentation-regression.log",
+      "bytes": 2483,
+      "sha256": "1b6b908536904ed10e0bf72b7db420b51d870e0ed7ebcf9872f9889844632399"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_EVIDENCE/syntax-check.log",
+      "bytes": 57,
+      "sha256": "1773fc1ce4b4ec8d027f95008562fa2d621f4cafec2aeb269d4e7530f05e4ac6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_REGRESSION_REPORT.md",
+      "bytes": 5303,
+      "sha256": "c71cffca0b7b2bb06a253deb30d2313938fbe1f318f032885e09b7e8a2b8d9fc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_ROOT_CAUSE_REPORT.md",
+      "bytes": 6863,
+      "sha256": "058b3d3f475f9d3ec824bd8d4fc8fa500d37d1b9b77876abc6ff49c71a309655"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_TESTS/cockpit-native.cjs",
+      "bytes": 17670,
+      "sha256": "2e1d7a5a31ff1b88c7ed47a05360f6a307678627ead6698a233be6281e544a98"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_TESTS/context-native.cjs",
+      "bytes": 3419,
+      "sha256": "9fc2a89f62d98c629920e61833f81da0a8518a710949366f986b46d3faee51fc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_TESTS/demo-native.cjs",
+      "bytes": 6935,
+      "sha256": "5bcec46089a66018b4bd4838ce4508eb255e195b8095d23c3c2e00d158fdd800"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_TESTS/http-relocation.py",
+      "bytes": 5353,
+      "sha256": "0d176f5fcb504def5ae86160a7f840f59560a9adb4e7c2b73eaea7b4cd09d8c8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R1_TESTS/native-tts.cjs",
+      "bytes": 8409,
+      "sha256": "0fb4542704ff55dfb8c7f1b1097d8bf0a87825270103d06041a142838e50a8e2"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_ACCEPTANCE_REPORT.md",
+      "bytes": 2565,
+      "sha256": "3b69c8c70526f05798e587db71a902e645da88a44c982d419c75e79b4273a282"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_CHANGELOG.md",
+      "bytes": 824,
+      "sha256": "9c9c22aa6d6cfb4cdcfd0473ef914bc57cada8e65adbaa24c38e7f82659947c8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_CHECKSUMS_SHA256.txt",
+      "bytes": 51842,
+      "sha256": "23002d445c4cb6e870ef4bfc8710ee0e7f56a00660a4c0fae57afb2da6691918"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/ANSWER.png",
+      "bytes": 30795,
+      "sha256": "e45a30594bd989e3991ca2f1dcff59fbcf7cc5c33a1974e8a1a9a0ac1d546650"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/DEMO.png",
+      "bytes": 54695,
+      "sha256": "4bb8fb62d0eb69c4fe3da531e727b8dd4719f6904428a501700ed843201935db"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/HINT_1.png",
+      "bytes": 88285,
+      "sha256": "244e594e30670323262f8a20354447328a697803cbea04f0d2161fe78a0460e3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/HINT_2.png",
+      "bytes": 91415,
+      "sha256": "31a1d4a8640ed28fee0287b98f66d6bd89dcf25a791b8ddfa66d697f272f16fd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/KNOWLEDGE_CLOSE.png",
+      "bytes": 47115,
+      "sha256": "d531b4c43b6f61bd18d0f122b84e888fcaf2ca35f654f4d2a19852c9230259a4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/TEACHER_1366x768.png",
+      "bytes": 109710,
+      "sha256": "9a2f9cedc6b699d8865e89dd1077d8a7c52a44cff6b905fa88e7713f26504270"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/TEACHER_1920x1080.png",
+      "bytes": 142998,
+      "sha256": "eee14b2cdc608ebeac6d6aa48c2347fc21e3b132b0ed865f0bace824c341f4f2"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/TEACHER_FINAL_1920x1080.png",
+      "bytes": 124262,
+      "sha256": "72fde8a5980225f4f76b424408091813396bd90f160239435f10db99dee309d0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/TEACHER_FULLSCREEN.png",
+      "bytes": 109861,
+      "sha256": "201ad745d879d997521a801654d0179a33d772f798e39c709422235ef341c3ff"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/TV_ALGEBRA.png",
+      "bytes": 30900,
+      "sha256": "aea54425d25562d95d080607d32ef3813bc484da73be9effc4d98145bc5c27d4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/TV_FULLSCREEN.png",
+      "bytes": 106374,
+      "sha256": "1a1bcb1fc6622885dc720efb427cfd2f6fafea9521b1a165bddab1d6bea339f4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/TV_GEOMETRY.png",
+      "bytes": 105713,
+      "sha256": "c1e4f27160d6c068a20720482d6b1397cc580b6a73696849b5900ebc70704afd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/TV_LONG_CONTENT.png",
+      "bytes": 103242,
+      "sha256": "09044041fdf0d4aad88d4294b19c34f09a563040232fd28efb6ea5f63c87d97f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/TV_LONG_FORMULA.png",
+      "bytes": 39321,
+      "sha256": "aabe57acdeb55befdbb02ac75f28f94f5bed1518e4b565151583ed9c5d349257"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/TV_TIN.png",
+      "bytes": 56156,
+      "sha256": "b2235ebc4832dc3e6ee046f86c0434079a32e1c3ecc299d5037fa26644dca509"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/COCKPIT_REGRESSION/cockpit-native.json",
+      "bytes": 8490,
+      "sha256": "5d212ab8ae0839e0c4b4b4f1637015243c5e4de7abed1124359b58ac4839f045"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/CONSOLE_REPORT.md",
+      "bytes": 1021,
+      "sha256": "a751057fc4712a927e9e85000a4b611a307811b70a0a21831caeceb03fded859"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/M1_INITIAL_1366.png",
+      "bytes": 67070,
+      "sha256": "9a11ee1302252ee17f2faae03c61ddb7941842c5e45eaab80cc159ffedac5d80"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/M1_INITIAL_1920.png",
+      "bytes": 82619,
+      "sha256": "fb07fdf719238b5a196cc5e36272601d52076ede55c806f7acb4837a5a5e6ff5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/M2_CLOSED_1366.png",
+      "bytes": 65931,
+      "sha256": "27fd4f810bf14a739c7a6c4e492ec27d770e3d2e8404633141c7e8ee6bada5dd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/M2_CLOSED_1920.png",
+      "bytes": 82846,
+      "sha256": "dae1ec12849864b0ff4acb592ff2dfefc34b81734a33e60b41db9a717b2e5c04"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/MODAL_PATCH.diff",
+      "bytes": 2775,
+      "sha256": "d69544999b3546fe3819f6103c71d8e7a02afa955885bcb741c61c068949dc6a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/POST_IMPORT_1366.png",
+      "bytes": 93419,
+      "sha256": "72aced192695eb3f405e39cd31055e9228a5ac57cc27b7742d4e9e546ce850a1"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/POST_IMPORT_1920.png",
+      "bytes": 126411,
+      "sha256": "b7a86873eee7d23e9398ce1cf871f63bcf82c17396ebc16a32577b4026b016c3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/PRE_PATCH_AUDIT/R1_CLOSE_FAIL.png",
+      "bytes": 67723,
+      "sha256": "2cd53b866386c2d42c535aed9405cfa6e5e4177097eec9c5f53526d1b9b5d311"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/PRE_PATCH_AUDIT/R1_LOADED_ESCAPE.png",
+      "bytes": 83224,
+      "sha256": "de98fa6a77708d991d7bb711c2a4d1c85a33ab9e2fa02ef2d3df9a9a659bc256"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/PRE_PATCH_AUDIT/r1-manifest.json",
+      "bytes": 49764,
+      "sha256": "23be9bb88b4d667b2974c0b776087755aa573203c461cf10229d57eda165bbd0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/PRE_PATCH_AUDIT/reproduce.cjs",
+      "bytes": 4282,
+      "sha256": "a87e5cf4380ed4c0cbcb88970519d804e8bf2a9e1fc9ca434e216109ba878cd4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/PRE_PATCH_AUDIT/reproduction.json",
+      "bytes": 10238,
+      "sha256": "c7d8a3f4c224df68b0a3f737d1cee94664199a8ba2605a9330c6df9e5fcbc131"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/PRE_PATCH_AUDIT/reproduction.log",
+      "bytes": 613,
+      "sha256": "8e96f2140bb7e6418680973cc62401c6db9ed5358057b9404e3a07bbef939b08"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/README.md",
+      "bytes": 743,
+      "sha256": "3364f6c94f2de845c8f101c465e7dccf6163e695e34fc1c65923d3998b3b6661"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/RUN_INDEX.json",
+      "bytes": 841,
+      "sha256": "18d4f85fd472f7bb4eb569f3ec7a6084e33705eacb70a2d7d95ea3df9c8019b7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/cockpit-native.log",
+      "bytes": 1672,
+      "sha256": "a84e11b675c77f7d9f29531abd321f9099865ce8122ff7ac93a8a0b86dbf31a1"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/modal-native.json",
+      "bytes": 4581,
+      "sha256": "71fa8ffa8da96fd71006bf653723e9c41c19e611275739c9660e31efb54cecb6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/modal-native.log",
+      "bytes": 2136,
+      "sha256": "0c5c550c62b969c25c7a10627c630ffd1fcc638bc8b0739449ec3b5481debd67"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/package-preflight.json",
+      "bytes": 280,
+      "sha256": "80e46a2de5a32320e3ed9ab17fd5cc1e8a16ede17779c626895bbd736fa8e855"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/package-smoke.log",
+      "bytes": 80,
+      "sha256": "b43388c7a0dcc56d8f8fbaa383b60521b7a7d8cbd5ff718da6ff9377998d9c1d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/scope-audit.json",
+      "bytes": 2947,
+      "sha256": "00d252a181522cf6301d31c21f6b67d4fc43deaee18f642ce5719978e882f4ec"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_EVIDENCE/syntax-check.log",
+      "bytes": 46,
+      "sha256": "c86a976bc82a735973a10b10f495625a528e652a19e8848f0e1a79eaadf604fd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_REGRESSION_REPORT.md",
+      "bytes": 3430,
+      "sha256": "f23752b3a958692455af5894fc0a7c23307531f5e8cf969e0487235c7dea8b1e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_ROOT_CAUSE_REPORT.md",
+      "bytes": 4636,
+      "sha256": "168a968712c38cbfbb60d938be777c7d89d6fb98defbe242ed2d8984eff7ea92"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_TESTS/cockpit-native.cjs",
+      "bytes": 17689,
+      "sha256": "922e916388009b868bcd9aed454bf4049f28ffba70549517e1f377b021487687"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/HOTFIX_R2_TESTS/modal-native.cjs",
+      "bytes": 8585,
+      "sha256": "e18689c74eef8939e4ad4a4f7982b1093675e505f1df1ac4a31c53f52361c7a5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/KNOWN_LIMITATIONS.md",
+      "bytes": 6199,
+      "sha256": "fb9b3e5ab465513c14b2c897aba7139c6bb263decfd065392ab861c1b5bd6b9e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LAUNCHER/BUILD_WINDOWS_EXE.bat",
+      "bytes": 300,
+      "sha256": "a40f2821bc09b3043d310c6a035e4d5b3eba7c15aa4d2d82540f83ec119d6f2b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LAUNCHER/README_WINDOWS.txt",
+      "bytes": 3295,
+      "sha256": "8fbc2a5969dbf307fee137befd631d966f2a4e74ff8aca6189a91cddcec486d9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LAUNCHER/START_LAUNCHER.bat",
+      "bytes": 418,
+      "sha256": "5f1f80d692fd544b606b99c0bc7ecc6e9ad877d1dfd5dc75d32354b952d576d7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LAUNCHER/WebLiveLauncher.py",
+      "bytes": 27904,
+      "sha256": "34f0e126a8486220a1bf8f20bfa89a95ae19d96643a3fa8bcc2315332c20792f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LAUNCHER/demos/demo.ggb",
+      "bytes": 1721,
+      "sha256": "436b452f7e4e5cf25ab48d2482bbb6794493c83ed9ad3500b1ad82ad8e428ddd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LAUNCHER/demos/demo_word.docx",
+      "bytes": 36783,
+      "sha256": "a7807241e1f7f94122a3f8a7f87f396e56ecf3b720b6ab5d5468b33ba656849b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LAUNCHER/launcher-config.json",
+      "bytes": 140,
+      "sha256": "50b81a0d9de2be50281b62a0078a6b4c6634068a4627f7efa6265355a571770b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LAUNCHER/launcher-display.json",
+      "bytes": 29,
+      "sha256": "773f1aeb95cf272b74cd5a114c135265c93f2fdb8bc2f05c2f28878970b9d324"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LAUNCHER/launcher_apps.json",
+      "bytes": 53,
+      "sha256": "95623c012b3453b025934b84482ef4125ca92ddc8250907dfe9dcfe606d15cc5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LAUNCHER/start_web_live.py",
+      "bytes": 8083,
+      "sha256": "b0ffc5931e418286da7797a12007faab5df36ef1a982a3f3861f9151d5645573"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LAUNCHER/web_live_http.py",
+      "bytes": 4994,
+      "sha256": "007c5e44b5f6e57624db3fed1b404021200fb1682d52cb2d13de65fb3abdc950"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LAUNCHER/windows_handoff.py",
+      "bytes": 12292,
+      "sha256": "4c13304dba9546c02592dd3392da73feb93eb2cc0cb849e21f6249b36c3f7b29"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_EVIDENCE/TEACHER_HTTP_127.0.0.1.png",
+      "bytes": 118429,
+      "sha256": "e5846a741263c4bf63a8c2211df80bfa8e98986ca8a9987f48fe073b2ef23b32"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_EVIDENCE/TEACHER_HTTP_localhost.png",
+      "bytes": 118439,
+      "sha256": "5068f11ff1849f43aa0ead526e4330522f158cf6f758599069355f44a1f2ff67"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_EVIDENCE/TV_HTTP_127.0.0.1.png",
+      "bytes": 38020,
+      "sha256": "1e4d22e6fc7bcde89defe1851d59e2fafb99782a3d9899caeaa46e990c4bc39f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_EVIDENCE/TV_HTTP_localhost.png",
+      "bytes": 38023,
+      "sha256": "4c1b984c41436cc522a6ab526d1be8b181bb16702e8c3ff06ac82d97afd8daf3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_EVIDENCE/baseline-api-reproduction.json",
+      "bytes": 905,
+      "sha256": "946b2e091d62188d7d7a0d61d8fce7fbdbcd72e2f95ab2da7a37e6c480a07d9d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_EVIDENCE/browser-runtime.json",
+      "bytes": 9346,
+      "sha256": "1671f39183e47eec20f7909ecd360c272fc1ee6524867f724d279e0170867ee0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_EVIDENCE/http-api-checks.json",
+      "bytes": 2826,
+      "sha256": "6c80127cf4475ff6773569d6653645438fff04309da668f284b37d4c8a73d2ef"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_EVIDENCE/index.html",
+      "bytes": 1580,
+      "sha256": "389dc6de04860ba186e1ef3054982f4194d04bace52ba332e849d86d87f46a2e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_EVIDENCE/integrity.json",
+      "bytes": 1343,
+      "sha256": "32a0c6730a9a97a158a64faad3dc056dbdcaffe8f81ab9386af925618ad1b4ad"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_EVIDENCE/runtime.log",
+      "bytes": 1677,
+      "sha256": "f982098513a5bfbe493dff0b4c94dd5fcd775a3b536aab7fbfed1d422e76f94a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_LAUNCHER_REPORT.md",
+      "bytes": 11354,
+      "sha256": "3f9bf218007e5b1a7f0fc656d568642da5f1f85d8be59eb1061c97ca4e2e9899"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_SHA256SUMS.txt",
+      "bytes": 28230,
+      "sha256": "9cc292f164df35eed04ed983e19f25caf7eae889e35fea9ba359ba476e0c8098"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_TESTS/README.md",
+      "bytes": 1324,
+      "sha256": "0d8ecbe9bc1bec8b5fcbc79cb01393225fd489e7892fce80b86c30bc46e3c12a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_TESTS/browser.cjs",
+      "bytes": 4583,
+      "sha256": "04b70c594c2c12b715467124f627a02e246ee9c4c1011cae379af81ab6518346"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/LOCAL_HTTP_TESTS/run.py",
+      "bytes": 9328,
+      "sha256": "dd68b71a9f46d3e478d9aa0970355ddcbc9b7e4e9686113485cf8e9946fc5754"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC2_TESTS/README.md",
+      "bytes": 2220,
+      "sha256": "ebeba6096188aaa3a5c1544be6b78931e725ddaeb780bf1d5d88414c2d5a5ca6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC2_TESTS/chrome-http/browser.cjs",
+      "bytes": 4678,
+      "sha256": "504298edb58a389209a960aa73041608f31c26f20faaf7230aad1b0c4ad84fd0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC2_TESTS/chrome-http/run_http.py",
+      "bytes": 9358,
+      "sha256": "fcdd427338e39bf140065f0ca88ff5558b7211bece187d662efd66a5dfc9b6b3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC2_TESTS/cockpit.cjs",
+      "bytes": 19815,
+      "sha256": "345f64108d3d7939fe6bc9ba87d4103251bfaabb9d615eb7a5ea2c500b61f4c9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC2_TESTS/native-probe.cjs",
+      "bytes": 4186,
+      "sha256": "69b77e1e32302b505078f474f2613f0b33e30a10647e774c0e64c2a3bd2a8afd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC2_TESTS/tts-edge.cjs",
+      "bytes": 7832,
+      "sha256": "ef88fbd3d7dadd8ea292eae68c6141a124c26781a00e7d79bd36cefcb6536145"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC2_TESTS/tts-runtime.cjs",
+      "bytes": 18514,
+      "sha256": "12b07788e2d47aec3d9c4d90d7198857e54a90eb0c3632336fdbe50e28e62720"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip",
+      "bytes": 291676,
+      "sha256": "edd4e374b812f109194c06100b36c0090dd81818aa995f6656cc02d5acb24cdf"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC3_PED1_TEST_PACKAGES/TIN6_W05_LIVE_RC3_PED1.zip",
+      "bytes": 496796,
+      "sha256": "f46afb4ddeb51c764b4d88ad409802c1bac6bc3b66c96878edd5e388799dc31d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC3_PED1_TEST_PACKAGES/TIN8_W04_LIVE_RC3_PED1.zip",
+      "bytes": 111827,
+      "sha256": "aa2ddc25a4123f77740e24c97e0ed2db8dbc14e297d1b030c3c8a78d1771b884"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC3_REPORTS/WEB_LIVE_RC3_CHANGELOG.md",
+      "bytes": 1532,
+      "sha256": "daf3a52dfb4020a7bff070e3386b5ed07d5e8c78b0b9854205ec390c8d78724f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC3_REPORTS/WEB_LIVE_RC3_GAPS.md",
+      "bytes": 1685,
+      "sha256": "38f79fcf35008eaa26b81e5772646ecfe8ae69d9d0fdeec8b70522ed8c157f73"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC3_REPORTS/WEB_LIVE_RC3_INPUT_LOCK_REPORT.md",
+      "bytes": 2553,
+      "sha256": "ef1284f313854e8cbfb454d2cbe33cf61f405376e18a2a0377f6c4689c8c141d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC3_REPORTS/WEB_LIVE_RC3_REGRESSION_REPORT.md",
+      "bytes": 3511,
+      "sha256": "4d05adc5d3e1077e522c44ec7f57a9983d35ae023045b2cfbd71670efb0c5c8a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC3_REPORTS/WEB_LIVE_RC3_RUNTIME_REPORT.md",
+      "bytes": 11011,
+      "sha256": "f471caae554d29419b2ff05d16b93f9995ba6e89dc7f180e0fd3522da8bbe386"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC3_REPORTS/WEB_LIVE_RC3_UPGRADE_REPORT.md",
+      "bytes": 7242,
+      "sha256": "daa974e8f7af394fb7d513f83b9b6ce6423f9037fe0f851c9e0bd3399bceff8f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC4_REPORTS/TV_LAYOUT_RC4_AUDIT_REPORT.md",
+      "bytes": 3238,
+      "sha256": "4ada6e25786c1db90b20fc09e6c79ba6a7dfa167f71c0ce510885b51fbcc7389"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC4_REPORTS/TV_LAYOUT_RC4_CHANGELOG.md",
+      "bytes": 1288,
+      "sha256": "3a5d0322acb216dda17b1b34db92dd8925356d3be417d1d5338efe72f648203a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC4_REPORTS/TV_LAYOUT_RC4_DESIGN_REPORT.md",
+      "bytes": 4222,
+      "sha256": "a495d5c406280cb553609e5e0665fd8353d3d90e28247c9049b561d010b7ec2f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC4_REPORTS/TV_LAYOUT_RC4_REGRESSION_REPORT.md",
+      "bytes": 5563,
+      "sha256": "1bf6e4dee0ffa23ebf46059f0fb9a7fe40280327af759b4341ffad20904d882c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RC4_REPORTS/TV_LAYOUT_RC4_VISUAL_REPORT.md",
+      "bytes": 3938,
+      "sha256": "f4a79d0405a711104854bed972b834c1e577a015d3c058cb1e770d4cac88ca93"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/README.txt",
+      "bytes": 2210,
+      "sha256": "d83eebd48a5d3873edfc26a9465ce7a4b669f55dd2abdfcc46b7f4e95f9a27bb"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/README_HOTFIX_R1_CANDIDATE.md",
+      "bytes": 996,
+      "sha256": "0d842ca8889c0974a05cca05f3797447ec8deb986c1e3987ba72378a01af8729"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/README_HOTFIX_R2_CANDIDATE.md",
+      "bytes": 1105,
+      "sha256": "4a96a38f089f915842644cf84f6d9b214bb428d30cc5cd35cd5c0991b51e3e45"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/README_LOCAL_HTTP_PATCH.md",
+      "bytes": 1653,
+      "sha256": "16ce57e591a9d9b7e0c79a401a143233b04ebca2d6300aa6d300f70e9ff3ef47"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/README_MULTI_ENGINE_RC1_CANDIDATE.md",
+      "bytes": 1701,
+      "sha256": "604d32e61009f0c8e9e7b93dbca5509e439b18c85e2266a838541cbcaf2710c4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/README_RC2_CANDIDATE.md",
+      "bytes": 1003,
+      "sha256": "1128d49cf66faa34323edbb3a1e03ff8aa81c24a165b5357036afee610fd83a7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/README_RC3_CANDIDATE.md",
+      "bytes": 1151,
+      "sha256": "e2210efa58a146e3cdcab46d9b019159bcadcb0499f230e80672bf64c6c01fc9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/README_RC4_CANDIDATE.md",
+      "bytes": 731,
+      "sha256": "2f5bcd6d28eb91fc34ac9d6072b0156125f9dc064a85d00ae96348b7e5a679d6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/README_TTS_UI_RC1_CANDIDATE.md",
+      "bytes": 2989,
+      "sha256": "c38fc870a48a3cf2cf63a73629a3788c07c47543149c3374efc9eb56302db3f0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/README_TV_LAYOUT_RC3.md",
+      "bytes": 1390,
+      "sha256": "f46b32fc09eb2dd1e58df0131d8c8995948f39b060d3dfdc5b89b8f4220f1bad"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/README_TV_MATH_HOTFIX_CANDIDATE.md",
+      "bytes": 183,
+      "sha256": "e4b235d54ba4c28c279b007326e6db61acd9f9c2d02e807dd1f477de99da47c9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/README_TV_VERTICAL_MCQ_CANDIDATE.md",
+      "bytes": 1495,
+      "sha256": "f56189a11d03202b6b6ca0656c8287dde2ebd35fc2b804a274a0a6dbfd1a7503"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/REGRESSION_REPORT.md",
+      "bytes": 4758,
+      "sha256": "8fcea9de0589db35b574adfb26a8426ce5263bdda3f51e490c0730488a352b94"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/REGRESSION_TEST_REPORT.md",
+      "bytes": 5089,
+      "sha256": "bd12bae462586e2e8cc0ccf85c6273d9be8b693a0fefb9ddf3bf10f53d20c99a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/RUNTIME_TEST_REPORT.md",
+      "bytes": 6265,
+      "sha256": "b1197b22db1cc18b5abd7cabc2f9bce23584a40ec65167c18e1ecf030c77a598"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/SHA256SUMS.txt",
+      "bytes": 26428,
+      "sha256": "8462b8de3137448931b25e1b47a1c99ac6462c948782a87ba7af4da05b95b9b0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/START_WEB_LIVE.bat",
+      "bytes": 789,
+      "sha256": "7d9e28b48456af77895507d35260f154ab890b4e3aa8ddde6ed74a2aa0bd29ad"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/MOCK_TEACHER_PAUSED.png",
+      "bytes": 180904,
+      "sha256": "32a71387309b392e6a9c200a11d52c829edecaeab4687f7a6cfb5c8b34c92991"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/MOCK_TEACHER_SPEAKING.png",
+      "bytes": 181082,
+      "sha256": "53010b8545693b062458efc6773928f44060361995af789e26a4a2b7e35dc457"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/MOCK_TV_READING_HIGHLIGHT.png",
+      "bytes": 93791,
+      "sha256": "d1e6e3f379237bb3e4638dfe42e4ef6d75925c1f04ea16c66a76aeb4ab0007e3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/MOCK_UI_1280x720_COMPACT.png",
+      "bytes": 86968,
+      "sha256": "c3a6efcae659f520fb131a746e7adabd048dc2589109a0e6040c9bff47c9f7e8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/MOCK_UI_1280x720_EXPANDED.png",
+      "bytes": 86196,
+      "sha256": "499170e61e8a4c34d55e052bdda8ada74abbc768d9e7906ad05e5628a553da1a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/MOCK_UI_1366x768_COMPACT.png",
+      "bytes": 93860,
+      "sha256": "3caa7f6a5a24734e28204ed3ee87795511c0ebf72304c355e627727d3bd944dc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/MOCK_UI_1366x768_EXPANDED.png",
+      "bytes": 94041,
+      "sha256": "5715340e875cb81298edd1712f786d078c482972b0ffd31faf411efb555bb929"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/MOCK_UI_1600x900_COMPACT.png",
+      "bytes": 105102,
+      "sha256": "c66859e77a05590fbf010f6280d04d38e3e58cbe19889204b13f7d11753019bd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/MOCK_UI_1600x900_EXPANDED.png",
+      "bytes": 102207,
+      "sha256": "42c58a0e7ed5f56bae92e0540ba42f0cf2fe7b9e7ee1a1a5b75ff42cde6e0cda"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/MOCK_UI_1920x1080_COMPACT.png",
+      "bytes": 123433,
+      "sha256": "6cac6b0aa7ce98dc7702cd4cee89f31de6dfcb960a8ef692e52fc052b501fda8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/MOCK_UI_1920x1080_EXPANDED.png",
+      "bytes": 121391,
+      "sha256": "dcdc9303cb1ce6ecd37f455af2d3f86100d540ae6b9ef25a93e11809502fd83a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/MOCK_UI_FULLSCREEN.png",
+      "bytes": 121559,
+      "sha256": "18d2b37ed165fb3bd23fe89185580591935fec0b0c2e78c58f7bf8d8e33fb81e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/REAL_UI_1024x768_COMPACT.png",
+      "bytes": 78485,
+      "sha256": "68d3fe7313585dd7a1111047fe6e0e7d69ee4f9a9102e228b0ef1884d92dd18b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/REAL_UI_1024x768_EXPANDED.png",
+      "bytes": 79037,
+      "sha256": "6891a575d94e3bd98559c55a167eb9d368858406d48d798f387d50b3d2713d14"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/REAL_UI_1280x720_COMPACT.png",
+      "bytes": 84866,
+      "sha256": "5bd8ee2702e843b06e7805235c852962d7ee3531fa41884b73c59e0cd1cb510e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/REAL_UI_1280x720_EXPANDED.png",
+      "bytes": 86733,
+      "sha256": "0f78b203cba8eb746f4f32f65ad3a2222a1d3f43f6747674d0bfb6022efd3997"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/REAL_UI_1366x768_COMPACT.png",
+      "bytes": 89240,
+      "sha256": "bf85c90bfdd59521592ffaedcee8e18471ccc34a6be6b46c16e48ed6bfe088f2"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/REAL_UI_1366x768_EXPANDED.png",
+      "bytes": 89810,
+      "sha256": "d688ec533103d933ae05570f10104c169e80fb122b032ef5a08cefbbd3c5d3b8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/REAL_UI_1920x1080_COMPACT.png",
+      "bytes": 125631,
+      "sha256": "195e4b411faf601844b05883d7276937e3893fdd7ddc4a5169e8f27cdaef9a9c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/REAL_UI_1920x1080_EXPANDED.png",
+      "bytes": 127290,
+      "sha256": "728cd896a6474bf8e82185d77bb6055e4f078a93948d0816580c8b8f10b54b6d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/REAL_UI_1920x1080_VOICE_PROBE.png",
+      "bytes": 111050,
+      "sha256": "4929422104aea94dcd4f076ec265d56709f6610f64d3022587de9745722d2ddd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/REAL_UI_COMPACT_1920x1080.png",
+      "bytes": 122135,
+      "sha256": "4b4aa4779f4694fbea75b2ea6a983988b0fdf6635bdb1f1eeba94b273d8feee6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/REAL_UI_KNOWLEDGE_1920x1080.png",
+      "bytes": 121507,
+      "sha256": "1dc1ba6f44f79e8ad95ed96a72d752e8604b7a532c9bf5fbf4420bf0288a0ad6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/REAL_UI_TOOLS_1920x1080.png",
+      "bytes": 128686,
+      "sha256": "509b0402c032343c1d12850c793273b3af490d98b753ceb1c49616dd0d82d927"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/baseline-integrity.json",
+      "bytes": 2647,
+      "sha256": "6ac9f28f47d734fbfeb9b454e19fd483c6fa57fee03a58a65210d3d1cbdc8c99"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/edge-cases.json",
+      "bytes": 1073,
+      "sha256": "89842ab14f14539a55771aaec43c1516c64f385f7339dc292466104cdb5f8b57"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/edge-cases.log",
+      "bytes": 976,
+      "sha256": "d65d29e689e923ccd68ef2caa06397630a3be29cca1e39015c713f214810a51b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/index.html",
+      "bytes": 17675,
+      "sha256": "5b8dddb1d2f4279b89c846c248ffac470a91b08598a3a0d22ae84e922700db29"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/math-speech.json",
+      "bytes": 2773,
+      "sha256": "9ef2186e023be04dc1185bfb7c41869caa352ee89e4608f45440befc03f23e97"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/native-probe.json",
+      "bytes": 3036,
+      "sha256": "dfa4f4e11c9a140fe2b8426fba47779c87433335ffc97478ce325aacfaa96b78"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/native-probe.log",
+      "bytes": 2883,
+      "sha256": "31f84e2b044ed7d0092f6f25577ba1e629af4755760c587296871577c3a83175"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_01_EXPRESSION.png",
+      "bytes": 25331,
+      "sha256": "3c6b6eb2d2044441bb61465b94aa90a91a6463aebd20d28262f0dd5ad186064d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_02_EQUATION.png",
+      "bytes": 20494,
+      "sha256": "a3dff548c8fe3c23bc2e96c19956de6f3108a64c8ac68fe4a7e071cf0d9dbfaa"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_03_SYSTEM.png",
+      "bytes": 23384,
+      "sha256": "08ab3c998b678b7e09ee657170d79b51d998956b64d39c30138e9c8f10ad36a5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_04_WORD_PROBLEM.png",
+      "bytes": 35675,
+      "sha256": "04d9b44743e725b250767127f8fa09c7fe30868922dc26d87ff6430f54578031"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_05_IDENTITY.png",
+      "bytes": 22577,
+      "sha256": "3d43abb3eca6b0bc52016ed61dd5d1445736ccff20f2df6f9dea61c5bcab2a01"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_06_TABLE.png",
+      "bytes": 37748,
+      "sha256": "9308dc5755a8e4b432a39983f862e55f5094bcccbb580906bbabc6b33934146c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_07_GRAPH.png",
+      "bytes": 33723,
+      "sha256": "618cf243b60305b923cded59ec44afa033cd3090bb1439ae01962f1fb6a7a016"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_08_PRACTICE.png",
+      "bytes": 21546,
+      "sha256": "92d6730f28016351a029cf41dd91797148606196c7a50792dde060cd3a17a555"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_EQUATION_1280x720.png",
+      "bytes": 19499,
+      "sha256": "9131b6a7c857d8f8b925858f5cb1ed42026e509a10b743b092b1a9e9a5419e45"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_EQUATION_1366x768.png",
+      "bytes": 20488,
+      "sha256": "bf7f9fcb85dc6afb11fdf1de7389a08b088c11e179573ac3c38b2b84ced133f1"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_EQUATION_1600x900.png",
+      "bytes": 23669,
+      "sha256": "c68e4982e98c976d94838daeaed9e1174b0dbc41b4aaf43aa1f2053e18ed1d8f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_EQUATION_1920x1080.png",
+      "bytes": 29661,
+      "sha256": "a4fbf834cab0f69372023a4ea39df57597d7951490e95c98d2562cd0d85ab9d9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_WORD_PROBLEM_1280x720.png",
+      "bytes": 35233,
+      "sha256": "dba8a0a6c58f29d957086f4a7a14e0a4c97051cb92f8d0020dfab5c8524fea67"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_WORD_PROBLEM_1366x768.png",
+      "bytes": 38816,
+      "sha256": "98d0ab53340a3df81b3db00819603608211e6e54afb8fc1fd3268c8a26334262"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_WORD_PROBLEM_1600x900.png",
+      "bytes": 46394,
+      "sha256": "689bef56223d753d86d03b7bb6e1d3620165a501722c5c33837038482bda1897"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/ALG_WORD_PROBLEM_1920x1080.png",
+      "bytes": 55667,
+      "sha256": "681055aff745dafe98d064b1ca45c1651a2189397b4a7e191cd547094b7c3aa0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_01_STATEMENT.png",
+      "bytes": 72016,
+      "sha256": "7b71dc40fa8b1a2f1d35336645a7b0382efb09b128fcba6504db08a0b453270c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_02_OBSERVE.png",
+      "bytes": 65689,
+      "sha256": "a6a733ee077f0b7b2a34c50831105874a052844f6520c38f622fc34e1fcd439d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_03_ANALYSIS.png",
+      "bytes": 78391,
+      "sha256": "9a562f3042bb928970e4cd8c2551eda2712bee347bc9273cba3213375dc9537a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_04_DEPENDENCY_TREE.png",
+      "bytes": 75744,
+      "sha256": "5139bf95218841120f8e50eca13082dba1010025bd0e16f3bc0e0a2d98dfc608"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_05_PROOF_STEP_1.png",
+      "bytes": 64181,
+      "sha256": "4db4a7612b5634e58d5e15902a3e7167779d0c3325a865e36fb75c486e7aa0b9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_06_PROOF_STEP_2.png",
+      "bytes": 68849,
+      "sha256": "de214de1016c59eb486f39d1f003413cd521e1bf89bf68f714620fcc9229b889"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_07_CONCLUSION.png",
+      "bytes": 59139,
+      "sha256": "180eb18f41346b7552a44ec4d820eec9c017dde40ed46fbecc5d3bdf4295bc4c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_ANALYSIS_1280x720.png",
+      "bytes": 74738,
+      "sha256": "8d5a8ba07690f268fa5b7847f0fcd72cee27d70609297212c0deabc3b4837386"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_ANALYSIS_1366x768.png",
+      "bytes": 80226,
+      "sha256": "6b18d548d88acbc7f40ed548d71e6c2c12e71b40640902dfe39d45edaaf34530"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_ANALYSIS_1600x900.png",
+      "bytes": 86006,
+      "sha256": "545021dc4bda4819dd61d67cd2d452f9c0b52f9df098bb12c58105091607d227"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_ANALYSIS_1920x1080.png",
+      "bytes": 108436,
+      "sha256": "81e97714911d5eb8f2c864392e36d0d8c8cad5756d5ca5b0ea110b21709ad293"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_ANALYSIS_FULL_1280x720.png",
+      "bytes": 56504,
+      "sha256": "18aeb06b81f5c4f9f9b298e7ddcecb4b179e67796ea606a13fb7a8f8bb6afba3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_ANALYSIS_FULL_1366x768.png",
+      "bytes": 61473,
+      "sha256": "ea21ec167141896c218e89d6e1345601eee03c2b939df5e53931adafcc204ba8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_ANALYSIS_FULL_1600x900.png",
+      "bytes": 64997,
+      "sha256": "20817b06aafc8c1c29669cc16820b1ec6c2426156a2d12d524ce20f2c505927b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_ANALYSIS_FULL_1920x1080.png",
+      "bytes": 81806,
+      "sha256": "076a0a8c2937c4aa17222a847da11b900037fbb0818c1c51face9fb1c978c7db"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_PROOF_1280x720.png",
+      "bytes": 64776,
+      "sha256": "66624b838d2912f0dca049b72d87384bfac79c66998ebb8902083e3a86d24666"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_PROOF_1366x768.png",
+      "bytes": 70478,
+      "sha256": "c3357aa0e4ab6e2ed207360f425ff3d2934cbaefa0a4df48ef1185abe8868e6a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_PROOF_1600x900.png",
+      "bytes": 74601,
+      "sha256": "a0e17a05c7eb764ff7356ef5f7db7f51a41ef7550fb3b33a433e96d53d593195"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/GEO_PROOF_1920x1080.png",
+      "bytes": 93491,
+      "sha256": "f570d750719c65be4517d96faf1539ef8ff5124e77a2010d319c56f23ed87c7e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/TIN_01_REVIEW.png",
+      "bytes": 40197,
+      "sha256": "e2e96c75869ce5d487418a707fcc84ee1342489724f116ecc84cf1a24e62d898"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/TIN_02_INTRO.png",
+      "bytes": 44383,
+      "sha256": "e5514f4b25f0ce5560af826eb4a9036b8d291f09b090bd71f394361cffee8b4f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/TIN_03_MCQ.png",
+      "bytes": 47489,
+      "sha256": "ca67c77e20170d07c3f97317efe48a66a17f767748d98d62bafb801254eb6316"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/TIN_04_OBSERVE.png",
+      "bytes": 134360,
+      "sha256": "464a0f1604f7c6d8f207f4bcb23a2a1dd161854a3956c3bbbafbf495e456e72f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/TIN_05_KNOWLEDGE.png",
+      "bytes": 32050,
+      "sha256": "d08359d6d445af7c2ab470665f28c1095e42231a080303674a553c5124062263"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/TIN_06_PRACTICE.png",
+      "bytes": 48217,
+      "sha256": "1e8ab10e38888721394799e6006aa70d33a27b49d29b769312c36187ccece12f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/TIN_07_APPLICATION.png",
+      "bytes": 37779,
+      "sha256": "21c51f3f5cc9ed25e8e8bb3f304d3621d2e421b4b00abe515a3d605a8fd705a9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/TIN_08_PRACTICAL.png",
+      "bytes": 24646,
+      "sha256": "13c805497d78603fb41bc2fb5948aa976ee2393b662657053ac7279b4e047070"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/TIN_09_DEMO.png",
+      "bytes": 25099,
+      "sha256": "3710f96db54e31a6db8be8d3269107ed30f322520e730052452b38310b38f7cc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/TIN_MCQ_1280x720.png",
+      "bytes": 43327,
+      "sha256": "de586f11d038ff0cb85bd7e5c9a8c8cda6849fa18d16e3453463302349f8d60b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/TIN_MCQ_1366x768.png",
+      "bytes": 49541,
+      "sha256": "0fe6d95d9902bcc52d4d2242b1cd8c235d6e60cf4fa35c3e093b9ed3315f7ed4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/TIN_MCQ_1600x900.png",
+      "bytes": 57659,
+      "sha256": "e3a053b976224a75c7b9f4cba03f5e05b0258bc9b008476c9d38dde7bc4d1dc8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/TIN_MCQ_1920x1080.png",
+      "bytes": 72260,
+      "sha256": "0002dc2823dbbaebbe86ea0c47ed4e26c3d55c02dd6825f11cb3215f12156e17"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/extra-results.json",
+      "bytes": 1321,
+      "sha256": "31c0dd6454e54cf9ae88fa11e071be35b913ccbd913f9f069fd7a0cd666cd5a7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression/results.json",
+      "bytes": 79549,
+      "sha256": "d93c7112fa141212f6c93de444192b2a2202bf397db880ff2e6a561824f237ee"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression-extra.log",
+      "bytes": 729,
+      "sha256": "33b76bd10c871822bd9659c2712b2d2d0e931b081b20c51ca54b05a528bc6804"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/regression.log",
+      "bytes": 2483,
+      "sha256": "1b6b908536904ed10e0bf72b7db420b51d870e0ed7ebcf9872f9889844632399"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/runtime.json",
+      "bytes": 8058,
+      "sha256": "b71126c5cb3dcf768c70c1de26c8b696dbb89d2ccb03fa8370847b081d485be0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_EVIDENCE/runtime.log",
+      "bytes": 1558,
+      "sha256": "09bccda6d3448a666edf789c8d3021970c9ad2d8fc2a966c62a7063b1009e728"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_TESTS/README.md",
+      "bytes": 1652,
+      "sha256": "35f097bdcbd823982be718082553e5601d124e42df0f2c52755f144f91c96977"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_TESTS/edge-cases.cjs",
+      "bytes": 7454,
+      "sha256": "2dfaf6b3fc338b2ec0a19a41eb6f616335fd9847f01a07ba0009094c1853a450"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_TESTS/math-speech.cjs",
+      "bytes": 1904,
+      "sha256": "3068d77f85a8b4e466db563f1a56f14cf57ca151c9fb50a1f396183dcfc511e6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_TESTS/native-probe.cjs",
+      "bytes": 4026,
+      "sha256": "7e30e302b6a5b142061fb4574eeb175b5d3f8b89c71333f35f1ba68578e82fba"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_TESTS/regression-extra.cjs",
+      "bytes": 7167,
+      "sha256": "e44dcdbbb67f3ea56ba0df2ac6ea58f58a9ca8e4df276cb7494431488bf8b334"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_TESTS/regression.cjs",
+      "bytes": 14733,
+      "sha256": "8fe9ed4b7d4af22b33c2acba6485025e1f5addb8e8a2231143beba8e8305e9fc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_TESTS/runtime.cjs",
+      "bytes": 18278,
+      "sha256": "d670d3e3813ce2719c5fbf5509022d5112e114f41c5aea84304f50db3da32621"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UI_TESTS/test-speech-provider.js",
+      "bytes": 2054,
+      "sha256": "7fa59e18443928a84deaa6b3d0fae4d1df86601574aece89166e0e591a20aa95"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TTS_UPGRADE_REPORT.md",
+      "bytes": 7808,
+      "sha256": "bcd2c5227ccad91cb7f9f89620b80fc9105edb37cb074787d8775256797a3a77"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_CONTENT_NORMALIZATION_REPORT.md",
+      "bytes": 1551,
+      "sha256": "5a298ada522bfd5f440792fc783abb5a89e40d6be1ff91e0c7838d629e610b50"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_HOTFIX_CHANGELOG.md",
+      "bytes": 1273,
+      "sha256": "6f06f514ee3880c52b40aea4715280f28039309834d2f3da79b58760aa09f722"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_LAYOUT_REGRESSION_REPORT.md",
+      "bytes": 3568,
+      "sha256": "1bd7ee3ce7130e918a880f52374e01c28c6dfa74dbd3f6bdfa9a6fea38d45951"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_LAYOUT_REPORTS/MODEL4_TIN8_THINK_1366x768.png",
+      "bytes": 682890,
+      "sha256": "cf91b62083ad22f4541088376a10aef8dfe2b5e6ca85b9c1e791b20ba621a175"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_LAYOUT_REPORTS/MODEL4_TIN8_THINK_1366x768.svg",
+      "bytes": 43675,
+      "sha256": "b391bd4d105be85e1830179e37756bf82e17b61544ce1ae2d5a06547c6e42da2"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_LAYOUT_REPORTS/WEB_LIVE_TV_LAYOUT_RC3_REGRESSION.md",
+      "bytes": 4747,
+      "sha256": "5d23813a3869932aa639b53691d4ac0750302efc6089bbbf8574ed3aa59fd68c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_LAYOUT_REPORTS/WEB_LIVE_TV_LAYOUT_RC3_REPORT.md",
+      "bytes": 8036,
+      "sha256": "f2f2bafff740d849b8bc0cef92a8d1fd8a192c0c27e4abf255d40ed7be146563"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/ANSWER_1_1280x720.png",
+      "bytes": 15951,
+      "sha256": "ceea6d6bf4fe2e70f623744c6d5c9d42b02c64658a67a0cc4dc1e57e4c8884a4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/ANSWER_1_1366x768.png",
+      "bytes": 16624,
+      "sha256": "5fbe99b4d22f63892bb317970f01631f034bb506cc0c39ed0449a9b364801da7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/ANSWER_1_1600x900.png",
+      "bytes": 19153,
+      "sha256": "159c7e7f6a74eb9f9176aef531f5b8645fa5a8865cd8a539e2f2ec42f5995c24"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/ANSWER_1_1920x1080.png",
+      "bytes": 24759,
+      "sha256": "be52f07a287e89e9bf12e0dd321ac443eb0a620b6fb51dd5010ae0d258ae4335"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/FOUR_EXPLICIT_OPTIONS_1280x720.png",
+      "bytes": 23797,
+      "sha256": "da062b3cd48ae0df9e86e9b9f15423afcf82b9e82446914ed31273be50802596"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/GEOMETRY_REGRESSION_1280x720.png",
+      "bytes": 73750,
+      "sha256": "3d40d58bea904fe9f0c4022900ec7fe1bab963cef05a64f08ba491da7ef73521"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/KNOWLEDGE_CLOSE_1280x720.png",
+      "bytes": 98613,
+      "sha256": "45cbad1daa83ad6caf31c06d7b5cfe6e952f181d6abb068f3f81e7745e3a3090"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/KNOWLEDGE_CLOSE_1366x768.png",
+      "bytes": 100795,
+      "sha256": "3a7666c77b979a4fd5e583b8079d419b6e1070d6aa53d62a5fd523a31c8adeef"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/KNOWLEDGE_CLOSE_1600x900.png",
+      "bytes": 121203,
+      "sha256": "4409408c3bd79760fdf34eea102e91a0afd41cdee47d453a2a73d48abc181cd1"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/KNOWLEDGE_CLOSE_1920x1080.png",
+      "bytes": 151511,
+      "sha256": "640456186ce543625c5691046a65d16be1218b5029aad5697277ec57407f49ef"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/MULTIPLE_KNOWLEDGE_PAGES_1280x720.png",
+      "bytes": 21076,
+      "sha256": "08f272ed8623b3f82f3774ec120b7548e0fa5c4647787e6a55daf8e4f0f4e0fb"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/QUESTION_14_1280x720.png",
+      "bytes": 17646,
+      "sha256": "e8104e06775c1223b950e7e8ef08d1f43acd0505f609b3fc3eec2d73876a2730"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/QUESTION_14_1366x768.png",
+      "bytes": 18647,
+      "sha256": "ed61960ab6f6b4438992e612272e345568acaadb8637fdb597c091685043ecea"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/QUESTION_14_1600x900.png",
+      "bytes": 22996,
+      "sha256": "194a6c45b6f008e8ab9e0eb1a09202a1378f13f8097931f5130fd9f312de5dbe"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/QUESTION_14_1920x1080.png",
+      "bytes": 26439,
+      "sha256": "ce22a9720a1fa8b35049c52010a4a0d81a0aa8a337f2275b86e10f6442fb34ee"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/QUICK_CHECK_1_1280x720.png",
+      "bytes": 25943,
+      "sha256": "b263734eea746937750f409c0d9d51ad281d65db2371569352bd914a227ee0c6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/QUICK_CHECK_1_1366x768.png",
+      "bytes": 28553,
+      "sha256": "9ed495d00670bc52c3ebe4a96a64af3865f13dae0c166306b0659b11acea139a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/QUICK_CHECK_1_1600x900.png",
+      "bytes": 31981,
+      "sha256": "431f2c0efca30ede7b84eb9be5b288967875f8e071c3d43769b00e86f8d197cf"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/QUICK_CHECK_1_1920x1080.png",
+      "bytes": 41776,
+      "sha256": "1d12bf8e0245382bf15edf22f7940cd94731c68716abe6f4dfa3830592fe6645"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/QUICK_CHECK_2_1280x720.png",
+      "bytes": 25027,
+      "sha256": "be7488218f7433c2295b90cede68a637d0422f27d4a171c7b1575cf2b5dd4ca5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/QUICK_CHECK_2_1366x768.png",
+      "bytes": 28588,
+      "sha256": "32ceba79d13dd6fae955c6fd7b692f610fe9efe82c82e6180efe44f2920be46a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/QUICK_CHECK_2_1600x900.png",
+      "bytes": 32077,
+      "sha256": "977e46548950210ddaa7875db7bc45beabb8b4d85366add5737bd37a7b66099f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/QUICK_CHECK_2_1920x1080.png",
+      "bytes": 41636,
+      "sha256": "e9a15b6457f238509907a2c188dce0ddfbd1f8fc3a278f7f03b1f665020ca221"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/TIN_REGRESSION_1280x720.png",
+      "bytes": 44783,
+      "sha256": "c49576be018aeb0ad821e388d9081a8ad6c30655ca652d8b96c86145412e64c8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/acceptance-results.json",
+      "bytes": 31805,
+      "sha256": "42a0b36bb611a1adfe26a1219ccacb5c49c96872f7a1fd8b49a8792fe4a55157"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/AFTER/run.log",
+      "bytes": 1847,
+      "sha256": "3a697dd755ae0d325bcc4c6bac0026ac8ca10f7dfd031d11943ddd1addd5d25e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/BEFORE/KNOWLEDGE_CLOSE.png",
+      "bytes": 68831,
+      "sha256": "bc618a8d0846f074d4aa5556bfe22ffc273af03af04f1274b216b5a4db990d0b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/BEFORE/QC1.png",
+      "bytes": 26542,
+      "sha256": "155d3f1c81778c28d860f2bb4fa40315a7472bbffe6e908d6892ea0d48ea0019"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/BEFORE/QC2.png",
+      "bytes": 25960,
+      "sha256": "88d6dc5efc96820a03f40120cbdec7b4cdacc4ccaf56970b21cc45bab3f79b99"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/BEFORE/QUESTION_14.png",
+      "bytes": 17797,
+      "sha256": "5cd706d3870d546d131cde2fe449d3e1ea076258d36d0aa321ba8a7fc0eba2e9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/BEFORE/results.json",
+      "bytes": 2757,
+      "sha256": "3950bde70e5eba7c47357bef409d1b91d2f7fa7ee44326534c5fafa7a898bea0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/BEFORE/run.log",
+      "bytes": 2520,
+      "sha256": "2b828f9a315947c21ea22de77d9d262902d922a77babfbb7a656c2a79a9f97de"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/ANSWER.png",
+      "bytes": 30795,
+      "sha256": "e45a30594bd989e3991ca2f1dcff59fbcf7cc5c33a1974e8a1a9a0ac1d546650"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/DEMO.png",
+      "bytes": 54695,
+      "sha256": "4bb8fb62d0eb69c4fe3da531e727b8dd4719f6904428a501700ed843201935db"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/HINT_1.png",
+      "bytes": 90173,
+      "sha256": "2c6994d8f10eeeff4e7d06731a66b190579a78dcf6014f20facaeae028b39b72"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/HINT_2.png",
+      "bytes": 91685,
+      "sha256": "44c401d1fda35460dd379268d9db43bbd3b548ef55d247a2845105b359e2dd47"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/KNOWLEDGE_CLOSE.png",
+      "bytes": 47159,
+      "sha256": "68526bfd8723f318c3666fc5d82efd39602964b388e01623a53b83185811eb5b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/TEACHER_1366x768.png",
+      "bytes": 109710,
+      "sha256": "9a2f9cedc6b699d8865e89dd1077d8a7c52a44cff6b905fa88e7713f26504270"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/TEACHER_1920x1080.png",
+      "bytes": 142998,
+      "sha256": "eee14b2cdc608ebeac6d6aa48c2347fc21e3b132b0ed865f0bace824c341f4f2"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/TEACHER_FINAL_1920x1080.png",
+      "bytes": 124262,
+      "sha256": "72fde8a5980225f4f76b424408091813396bd90f160239435f10db99dee309d0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/TEACHER_FULLSCREEN.png",
+      "bytes": 109861,
+      "sha256": "201ad745d879d997521a801654d0179a33d772f798e39c709422235ef341c3ff"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/TV_ALGEBRA.png",
+      "bytes": 30900,
+      "sha256": "aea54425d25562d95d080607d32ef3813bc484da73be9effc4d98145bc5c27d4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/TV_FULLSCREEN.png",
+      "bytes": 106374,
+      "sha256": "1a1bcb1fc6622885dc720efb427cfd2f6fafea9521b1a165bddab1d6bea339f4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/TV_GEOMETRY.png",
+      "bytes": 105713,
+      "sha256": "c1e4f27160d6c068a20720482d6b1397cc580b6a73696849b5900ebc70704afd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/TV_LONG_CONTENT.png",
+      "bytes": 103242,
+      "sha256": "09044041fdf0d4aad88d4294b19c34f09a563040232fd28efb6ea5f63c87d97f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/TV_LONG_FORMULA.png",
+      "bytes": 42716,
+      "sha256": "119cd88bc67e59a48fc025246855e695aaee22c52c5ebec9c688b868d7548bc9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/TV_TIN.png",
+      "bytes": 56154,
+      "sha256": "608b88391058a678724e24a4e0325265f22024e1efd4c354a8b7e82ffb93669c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/cockpit-native.json",
+      "bytes": 8490,
+      "sha256": "5d212ab8ae0839e0c4b4b4f1637015243c5e4de7abed1124359b58ac4839f045"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/COCKPIT/run.log",
+      "bytes": 1672,
+      "sha256": "a84e11b675c77f7d9f29531abd321f9099865ce8122ff7ac93a8a0b86dbf31a1"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_01_EXPRESSION.png",
+      "bytes": 25409,
+      "sha256": "f8ec7ec104626bf8ffc95ea8397a0cfd035c0db483e425e26fbaf5fe3a931b91"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_02_EQUATION.png",
+      "bytes": 20480,
+      "sha256": "ecc938768c09d715bdfd9683f56d75eb03c064ead43f2075038f0c61d219d493"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_03_SYSTEM.png",
+      "bytes": 23384,
+      "sha256": "08ab3c998b678b7e09ee657170d79b51d998956b64d39c30138e9c8f10ad36a5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_04_WORD_PROBLEM.png",
+      "bytes": 35675,
+      "sha256": "04d9b44743e725b250767127f8fa09c7fe30868922dc26d87ff6430f54578031"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_05_IDENTITY.png",
+      "bytes": 22540,
+      "sha256": "e68b8e3c625696601860e6beb2be11b285c2720deeb07fa482edc0185529978c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_06_TABLE.png",
+      "bytes": 37748,
+      "sha256": "9308dc5755a8e4b432a39983f862e55f5094bcccbb580906bbabc6b33934146c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_07_GRAPH.png",
+      "bytes": 33723,
+      "sha256": "618cf243b60305b923cded59ec44afa033cd3090bb1439ae01962f1fb6a7a016"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_08_PRACTICE.png",
+      "bytes": 21534,
+      "sha256": "c48a2e9a7021ecb7414e96d3e0ad614b749772c8b5fd01b3f98dd83694cc1850"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_EQUATION_1280x720.png",
+      "bytes": 19524,
+      "sha256": "b14e92b9dfd655ae76f16c7d95166a129617559890d83d19f93683590371fc24"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_EQUATION_1366x768.png",
+      "bytes": 20475,
+      "sha256": "cd05f1b516b5f199ebeb4faa05d5010eb0489dd90bb2826e36a87d384e1ae3a0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_EQUATION_1600x900.png",
+      "bytes": 23690,
+      "sha256": "3795ab6b726c53bb3fef69a878e1254c820cf3762d13173ed67b92531fc8f963"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_EQUATION_1920x1080.png",
+      "bytes": 29743,
+      "sha256": "76f8db1235990d9cc0507182533a9fc4673681e714fd798c51f190840c5eb36e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_WORD_PROBLEM_1280x720.png",
+      "bytes": 35233,
+      "sha256": "dba8a0a6c58f29d957086f4a7a14e0a4c97051cb92f8d0020dfab5c8524fea67"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_WORD_PROBLEM_1366x768.png",
+      "bytes": 38816,
+      "sha256": "98d0ab53340a3df81b3db00819603608211e6e54afb8fc1fd3268c8a26334262"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_WORD_PROBLEM_1600x900.png",
+      "bytes": 46394,
+      "sha256": "689bef56223d753d86d03b7bb6e1d3620165a501722c5c33837038482bda1897"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/ALG_WORD_PROBLEM_1920x1080.png",
+      "bytes": 55667,
+      "sha256": "681055aff745dafe98d064b1ca45c1651a2189397b4a7e191cd547094b7c3aa0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_01_STATEMENT.png",
+      "bytes": 72016,
+      "sha256": "7b71dc40fa8b1a2f1d35336645a7b0382efb09b128fcba6504db08a0b453270c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_02_OBSERVE.png",
+      "bytes": 65689,
+      "sha256": "a6a733ee077f0b7b2a34c50831105874a052844f6520c38f622fc34e1fcd439d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_03_ANALYSIS.png",
+      "bytes": 78391,
+      "sha256": "9a562f3042bb928970e4cd8c2551eda2712bee347bc9273cba3213375dc9537a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_04_DEPENDENCY_TREE.png",
+      "bytes": 75744,
+      "sha256": "5139bf95218841120f8e50eca13082dba1010025bd0e16f3bc0e0a2d98dfc608"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_05_PROOF_STEP_1.png",
+      "bytes": 63662,
+      "sha256": "5b35a887f237aa3adfad29981b6db29b9d57cc2dab235fd08ad45281c7a72f03"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_06_PROOF_STEP_2.png",
+      "bytes": 63664,
+      "sha256": "f0aa0d54e5d767caf48401d1a4a2e138cab85222de449245dd4e89f6091e8ba3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_07_CONCLUSION.png",
+      "bytes": 59146,
+      "sha256": "e3cabcdefb8f95f7f19112ac882a134ccdce9216930afa1d1df204561f9ca5fb"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_ANALYSIS_1280x720.png",
+      "bytes": 74738,
+      "sha256": "8d5a8ba07690f268fa5b7847f0fcd72cee27d70609297212c0deabc3b4837386"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_ANALYSIS_1366x768.png",
+      "bytes": 80225,
+      "sha256": "332940a1cde9aa21508f9cd1339df0969107eeb8145fa26215fca4e31adaf6de"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_ANALYSIS_1600x900.png",
+      "bytes": 86052,
+      "sha256": "fafb9ba332e3bcfa4e4fe14f541324d5761aab73642ce1e7b6e72146b7bd3e6c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_ANALYSIS_1920x1080.png",
+      "bytes": 108433,
+      "sha256": "19dc43ddf3dbef73127e95ddc9f13611e2c661c7ad507b1e6ac4d91780111619"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_PROOF_1280x720.png",
+      "bytes": 60118,
+      "sha256": "f8940fd3a4a1f5d7286841ed743102479da0699175494a0c2468d9582597146b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_PROOF_1366x768.png",
+      "bytes": 65527,
+      "sha256": "e24394afe3693ac5ffeae8562573a2c07f0195c38c88c21304e623a347737d4c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_PROOF_1600x900.png",
+      "bytes": 68325,
+      "sha256": "750aca3b1f48448b917eacd44125382de179723725772ae2e1493ac3855bb1e2"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/GEO_PROOF_1920x1080.png",
+      "bytes": 84943,
+      "sha256": "781eebd469869e084f9acdd233eb06771461ae8557adbaa60fdfd459f93e9413"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/TIN_01_REVIEW.png",
+      "bytes": 40197,
+      "sha256": "e2e96c75869ce5d487418a707fcc84ee1342489724f116ecc84cf1a24e62d898"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/TIN_02_INTRO.png",
+      "bytes": 44383,
+      "sha256": "e5514f4b25f0ce5560af826eb4a9036b8d291f09b090bd71f394361cffee8b4f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/TIN_03_MCQ.png",
+      "bytes": 49533,
+      "sha256": "7c46e058e3f56f921a523f0510c6ff7ca07ced475e85e1386064e01fbcff225b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/TIN_04_OBSERVE.png",
+      "bytes": 134360,
+      "sha256": "464a0f1604f7c6d8f207f4bcb23a2a1dd161854a3956c3bbbafbf495e456e72f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/TIN_05_KNOWLEDGE.png",
+      "bytes": 32332,
+      "sha256": "ac6a5ad56f3cd331505130ff28cb995a5c0edd82a34f3b303810b325c9cc53f1"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/TIN_06_PRACTICE.png",
+      "bytes": 48224,
+      "sha256": "6e83283cfe966f97dc46878f675b7afe247b97ed3a7d3fcfacc3a2478fe05d87"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/TIN_07_APPLICATION.png",
+      "bytes": 37779,
+      "sha256": "21c51f3f5cc9ed25e8e8bb3f304d3621d2e421b4b00abe515a3d605a8fd705a9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/TIN_08_PRACTICAL.png",
+      "bytes": 24646,
+      "sha256": "13c805497d78603fb41bc2fb5948aa976ee2393b662657053ac7279b4e047070"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/TIN_09_DEMO.png",
+      "bytes": 25099,
+      "sha256": "3710f96db54e31a6db8be8d3269107ed30f322520e730052452b38310b38f7cc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/TIN_MCQ_1280x720.png",
+      "bytes": 45353,
+      "sha256": "10225191aa0fb163df287e0b29fb7c92db461d63b83c2e4eb3616f067ca82520"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/TIN_MCQ_1366x768.png",
+      "bytes": 51551,
+      "sha256": "31550a83d9ee02073645f0fec65cd2ba2c34b18bb05f1085b7bf426b036d36e9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/TIN_MCQ_1600x900.png",
+      "bytes": 59149,
+      "sha256": "c82146880b9e8d331ff65f8b989170e9f501ec1f7432bba3bd402633847a97dc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/TIN_MCQ_1920x1080.png",
+      "bytes": 73863,
+      "sha256": "d3518ecf4bbf45d578593aa6e0a743b997bf94e46617b34b58446c025f19b12f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/results.json",
+      "bytes": 79451,
+      "sha256": "3cc49d4d2436d868f4e8f605c720e5408f2cd8dc2c08d8c10993921aa038b053"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/ENGINES/run.log",
+      "bytes": 2483,
+      "sha256": "1b6b908536904ed10e0bf72b7db420b51d870e0ed7ebcf9872f9889844632399"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/PRESENTATION_PATCH.diff",
+      "bytes": 25225,
+      "sha256": "a50e7dec5dc12475936966f80cdf4b9fe86b7239ed8017962513f7c5e4f87daf"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/RUN_INDEX.json",
+      "bytes": 6511,
+      "sha256": "3c71f6bda7048d607505e8a3beccb914d3c14d666bc79994052abed0e8fd74c3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/TTS/TEACHER_1366x768.png",
+      "bytes": 103104,
+      "sha256": "d441a20a662e87f5dd275b034057f85b54525a8c88900a784dcccf1cdb8f94e0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/TTS/TEACHER_1920x1080.png",
+      "bytes": 141520,
+      "sha256": "641ca34bb4abc9acbb51dd439fda9ed003a4eafc7204d946759c3d04af788007"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/TTS/TTS_ENGINE.png",
+      "bytes": 141534,
+      "sha256": "f8ff0b49424401e1742dbfe36fdf69f8685ff88b885a5d3c6c246c15814cda8f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/TTS/TTS_NEXT_SCREEN.png",
+      "bytes": 44715,
+      "sha256": "ed70f958228d0a43f88262c7b28ea9bf0ff7a1ed90fe74b7a86f19aad247d90c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/TTS/TTS_PLAY.log",
+      "bytes": 152,
+      "sha256": "71cae414274e3d8bd154599160c197139409cf14b7732ca0d0142486798acbd3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/TTS/TTS_STOP.log",
+      "bytes": 133,
+      "sha256": "d41d9b5d56322af859ccab4432430f5ef9c808654d8ea949e72f7b37544552fc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/TTS/TTS_STOP.png",
+      "bytes": 141534,
+      "sha256": "f8ff0b49424401e1742dbfe36fdf69f8685ff88b885a5d3c6c246c15814cda8f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/TTS/native-tts.json",
+      "bytes": 12458,
+      "sha256": "d51ab86996c7112dbe10f363f6fa4ac7301286469cfff1c3f24b2bcf77d534e7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/TTS/run.log",
+      "bytes": 1680,
+      "sha256": "aeb6f72fa81c063fd2c688ed68c1718aebbca7d0e89dc725d92657d531230a04"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/package-preflight.json",
+      "bytes": 158,
+      "sha256": "f630c6d46cbeb01927f3206f2346025ed7e4c2fef2f1d4e6f409b566f6b488a4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/package-smoke.log",
+      "bytes": 177,
+      "sha256": "c383f97a779b6a390b409476af8886e0d69d25ec7e7a15de99651e99d0be2cd2"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/scope-audit.json",
+      "bytes": 3894,
+      "sha256": "033955f639f9d418a457b0dd8411ee19823c731128803ba9ff64d178bcad97d4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_EVIDENCE/syntax-check.json",
+      "bytes": 1107,
+      "sha256": "e514003225b1266465e31d684e257d31abfba082d3b74acaf6817f7dd6a0c1ad"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_ROOT_CAUSE.md",
+      "bytes": 1596,
+      "sha256": "128bd744638ede86dfce8553709bea75e1e43651833656f2bb5cd65cfab8fa64"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_TESTS/acceptance.cjs",
+      "bytes": 12331,
+      "sha256": "9e950efe6e810f18c243ee14a8d91de4a876108aa249383b9935d469e0d519bd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_TESTS/before.cjs",
+      "bytes": 1800,
+      "sha256": "88514b42d543a96d9b00aa865d66fb6e086bcdd3d564cd4cf1532d8a1539abee"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_TESTS/cockpit.cjs",
+      "bytes": 17687,
+      "sha256": "bb0149a96ce550f700114702b62540a5c1852aceb5c3dc3c899cb9a3d46453fe"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_TESTS/engines.cjs",
+      "bytes": 14742,
+      "sha256": "a1e14b3bf5b43457c361c5c5da298962232dedbba533916eef0453d4b64177e6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_TESTS/fixtures.json",
+      "bytes": 1404,
+      "sha256": "644bef3b9de70de2b839a06755b22d5bd4ddb37e53561f0927590fb9b6ecae12"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_TESTS/native-tts.cjs",
+      "bytes": 8422,
+      "sha256": "fb85529f6459bc0405699a3b590190efe1f38c25317cfba906ded1815a067e4e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MATH_TYPOGRAPHY_TESTS/package-smoke.cjs",
+      "bytes": 2458,
+      "sha256": "34d34e13cfdf13754455577c1857b8fae62c4704b42fe131ee959e98ab04011a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_ALGEBRA_REPORT.md",
+      "bytes": 1481,
+      "sha256": "4d5e01042ea98354d978c5bdb566f6b253813f2111461f07a7cae88c21ecbf0d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_ARCHITECTURE.md",
+      "bytes": 3705,
+      "sha256": "fd11e60084fb2c9294a25fa3322bda2894b9f9362cc7e85e3cd948e36eaf6380"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_AUDIT.md",
+      "bytes": 2670,
+      "sha256": "9d7ed9354e70c2f3d3cebc94f8553227f2cdd2ef69409b56197abe58d41c928b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_CHANGELOG.md",
+      "bytes": 1194,
+      "sha256": "acafe13626bcfa6b1901bdf457d606dae960a437d6e75c9a784cb7024ac21fa8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_CHECKSUMS.sha256",
+      "bytes": 14670,
+      "sha256": "aa0f2644c0ee21ae493727f709b6af2ee7670c0786c4b5ba483acf7f76e55e3b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_01_EXPRESSION.png",
+      "bytes": 25331,
+      "sha256": "3c6b6eb2d2044441bb61465b94aa90a91a6463aebd20d28262f0dd5ad186064d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_02_EQUATION.png",
+      "bytes": 20494,
+      "sha256": "a3dff548c8fe3c23bc2e96c19956de6f3108a64c8ac68fe4a7e071cf0d9dbfaa"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_03_SYSTEM.png",
+      "bytes": 23384,
+      "sha256": "08ab3c998b678b7e09ee657170d79b51d998956b64d39c30138e9c8f10ad36a5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_04_WORD_PROBLEM.png",
+      "bytes": 35675,
+      "sha256": "04d9b44743e725b250767127f8fa09c7fe30868922dc26d87ff6430f54578031"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_05_IDENTITY.png",
+      "bytes": 22577,
+      "sha256": "3d43abb3eca6b0bc52016ed61dd5d1445736ccff20f2df6f9dea61c5bcab2a01"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_06_TABLE.png",
+      "bytes": 37748,
+      "sha256": "9308dc5755a8e4b432a39983f862e55f5094bcccbb580906bbabc6b33934146c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_07_GRAPH.png",
+      "bytes": 33723,
+      "sha256": "618cf243b60305b923cded59ec44afa033cd3090bb1439ae01962f1fb6a7a016"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_08_PRACTICE.png",
+      "bytes": 21546,
+      "sha256": "92d6730f28016351a029cf41dd91797148606196c7a50792dde060cd3a17a555"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_EQUATION_1280x720.png",
+      "bytes": 19499,
+      "sha256": "9131b6a7c857d8f8b925858f5cb1ed42026e509a10b743b092b1a9e9a5419e45"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_EQUATION_1366x768.png",
+      "bytes": 20488,
+      "sha256": "bf7f9fcb85dc6afb11fdf1de7389a08b088c11e179573ac3c38b2b84ced133f1"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_EQUATION_1600x900.png",
+      "bytes": 23669,
+      "sha256": "c68e4982e98c976d94838daeaed9e1174b0dbc41b4aaf43aa1f2053e18ed1d8f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_EQUATION_1920x1080.png",
+      "bytes": 29661,
+      "sha256": "a4fbf834cab0f69372023a4ea39df57597d7951490e95c98d2562cd0d85ab9d9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_WORD_PROBLEM_1280x720.png",
+      "bytes": 35233,
+      "sha256": "dba8a0a6c58f29d957086f4a7a14e0a4c97051cb92f8d0020dfab5c8524fea67"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_WORD_PROBLEM_1366x768.png",
+      "bytes": 38816,
+      "sha256": "98d0ab53340a3df81b3db00819603608211e6e54afb8fc1fd3268c8a26334262"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_WORD_PROBLEM_1600x900.png",
+      "bytes": 46394,
+      "sha256": "689bef56223d753d86d03b7bb6e1d3620165a501722c5c33837038482bda1897"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/ALG_WORD_PROBLEM_1920x1080.png",
+      "bytes": 55667,
+      "sha256": "681055aff745dafe98d064b1ca45c1651a2189397b4a7e191cd547094b7c3aa0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_01_STATEMENT.png",
+      "bytes": 72016,
+      "sha256": "7b71dc40fa8b1a2f1d35336645a7b0382efb09b128fcba6504db08a0b453270c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_02_OBSERVE.png",
+      "bytes": 65689,
+      "sha256": "a6a733ee077f0b7b2a34c50831105874a052844f6520c38f622fc34e1fcd439d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_03_ANALYSIS.png",
+      "bytes": 78391,
+      "sha256": "9a562f3042bb928970e4cd8c2551eda2712bee347bc9273cba3213375dc9537a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_04_DEPENDENCY_TREE.png",
+      "bytes": 75744,
+      "sha256": "5139bf95218841120f8e50eca13082dba1010025bd0e16f3bc0e0a2d98dfc608"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_05_PROOF_STEP_1.png",
+      "bytes": 63664,
+      "sha256": "f0aa0d54e5d767caf48401d1a4a2e138cab85222de449245dd4e89f6091e8ba3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_06_PROOF_STEP_2.png",
+      "bytes": 63670,
+      "sha256": "2ce1c96062a74758a97a5bf28c23b0665ea30edee79a72c2123b100e015eac1b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_07_CONCLUSION.png",
+      "bytes": 59139,
+      "sha256": "180eb18f41346b7552a44ec4d820eec9c017dde40ed46fbecc5d3bdf4295bc4c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_ANALYSIS_1280x720.png",
+      "bytes": 74738,
+      "sha256": "8d5a8ba07690f268fa5b7847f0fcd72cee27d70609297212c0deabc3b4837386"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_ANALYSIS_1366x768.png",
+      "bytes": 80229,
+      "sha256": "0a37e23ec78208164b3e775e09e12d13f9dd69a31581feb19f44758bed4f3aec"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_ANALYSIS_1600x900.png",
+      "bytes": 86006,
+      "sha256": "545021dc4bda4819dd61d67cd2d452f9c0b52f9df098bb12c58105091607d227"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_ANALYSIS_1920x1080.png",
+      "bytes": 108433,
+      "sha256": "19dc43ddf3dbef73127e95ddc9f13611e2c661c7ad507b1e6ac4d91780111619"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_ANALYSIS_FULL_1280x720.png",
+      "bytes": 56504,
+      "sha256": "18aeb06b81f5c4f9f9b298e7ddcecb4b179e67796ea606a13fb7a8f8bb6afba3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_ANALYSIS_FULL_1366x768.png",
+      "bytes": 61473,
+      "sha256": "ea21ec167141896c218e89d6e1345601eee03c2b939df5e53931adafcc204ba8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_ANALYSIS_FULL_1600x900.png",
+      "bytes": 64997,
+      "sha256": "20817b06aafc8c1c29669cc16820b1ec6c2426156a2d12d524ce20f2c505927b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_ANALYSIS_FULL_1920x1080.png",
+      "bytes": 81806,
+      "sha256": "076a0a8c2937c4aa17222a847da11b900037fbb0818c1c51face9fb1c978c7db"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_PROOF_1280x720.png",
+      "bytes": 60115,
+      "sha256": "84dc21f844eb44e35dd8ab5e0db1192504eeb7bb7fb98735bfc86e3738d7901b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_PROOF_1366x768.png",
+      "bytes": 65529,
+      "sha256": "2247e6995144698eaf994b9e92a436ece0918eb6f59cb67ca200ab85ea5f4c8e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_PROOF_1600x900.png",
+      "bytes": 68326,
+      "sha256": "609a154949f9a48f2fd83f523623f506b084952dc15dfdffe691b598e4ff5ff6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/GEO_PROOF_1920x1080.png",
+      "bytes": 84943,
+      "sha256": "781eebd469869e084f9acdd233eb06771461ae8557adbaa60fdfd459f93e9413"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/TIN_01_REVIEW.png",
+      "bytes": 40198,
+      "sha256": "653b918b079d1126782c5b3715188df3c794e20bb6a9e6d36021b03c34c96b86"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/TIN_02_INTRO.png",
+      "bytes": 44383,
+      "sha256": "e5514f4b25f0ce5560af826eb4a9036b8d291f09b090bd71f394361cffee8b4f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/TIN_03_MCQ.png",
+      "bytes": 47489,
+      "sha256": "ca67c77e20170d07c3f97317efe48a66a17f767748d98d62bafb801254eb6316"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/TIN_04_OBSERVE.png",
+      "bytes": 134360,
+      "sha256": "464a0f1604f7c6d8f207f4bcb23a2a1dd161854a3956c3bbbafbf495e456e72f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/TIN_05_KNOWLEDGE.png",
+      "bytes": 32050,
+      "sha256": "d08359d6d445af7c2ab470665f28c1095e42231a080303674a553c5124062263"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/TIN_06_PRACTICE.png",
+      "bytes": 48217,
+      "sha256": "1e8ab10e38888721394799e6006aa70d33a27b49d29b769312c36187ccece12f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/TIN_07_APPLICATION.png",
+      "bytes": 37779,
+      "sha256": "21c51f3f5cc9ed25e8e8bb3f304d3621d2e421b4b00abe515a3d605a8fd705a9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/TIN_08_PRACTICAL.png",
+      "bytes": 24646,
+      "sha256": "13c805497d78603fb41bc2fb5948aa976ee2393b662657053ac7279b4e047070"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/TIN_09_DEMO.png",
+      "bytes": 25099,
+      "sha256": "3710f96db54e31a6db8be8d3269107ed30f322520e730052452b38310b38f7cc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/TIN_MCQ_1280x720.png",
+      "bytes": 43327,
+      "sha256": "de586f11d038ff0cb85bd7e5c9a8c8cda6849fa18d16e3453463302349f8d60b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/TIN_MCQ_1366x768.png",
+      "bytes": 49373,
+      "sha256": "bcef72418ff3110f1292ae60c429a7f0e1da87a9eeb3c8e9ed239f412a619a40"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/TIN_MCQ_1600x900.png",
+      "bytes": 57659,
+      "sha256": "e3a053b976224a75c7b9f4cba03f5e05b0258bc9b008476c9d38dde7bc4d1dc8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/TIN_MCQ_1920x1080.png",
+      "bytes": 71805,
+      "sha256": "d07664190ea6f61dab9cab61885848f610a419b07be4624e98e18a9950197483"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/extra-results.json",
+      "bytes": 1321,
+      "sha256": "31c0dd6454e54cf9ae88fa11e071be35b913ccbd913f9f069fd7a0cd666cd5a7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/index.html",
+      "bytes": 10398,
+      "sha256": "0f5617a51b205520ab435059e751c2adb677d860836660363ee29d5f264851d9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_EVIDENCE/results.json",
+      "bytes": 79425,
+      "sha256": "2bf14bfb877191c801a1491b557e0e9e1dca2eee9a7676497c3802104644fe24"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_GEOMETRY_REPORT.md",
+      "bytes": 1612,
+      "sha256": "83da514d0b249b6bcab6c3fbf2eb5f5e9c891c2ac83f631256ed9c7d96def79f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_REGRESSION_REPORT.md",
+      "bytes": 3285,
+      "sha256": "74caa1fd29ac9d231bbb0655fd91d756fe1c0fcf2abb3b0e5ab5994b82170584"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_TESTS/README.md",
+      "bytes": 1262,
+      "sha256": "0cce1072f0d23cfc46736ae541863ea4cf3a95681311ad8d5d6985e1b2e81795"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_TESTS/extra.cjs",
+      "bytes": 7163,
+      "sha256": "2e357f8d983f790c2f36d03e52b0e98b9c0e434b93098388122bd3da58bd110d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_TESTS/run.cjs",
+      "bytes": 14731,
+      "sha256": "0585370000e65bcd854ca98fe2e24db3b2c79a2ddcd93869bd95e75b8c4a9b01"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_TIN_REPORT.md",
+      "bytes": 1439,
+      "sha256": "b052a861b426fc0ca2eefaa26f5b270585f78b64ec4b8c6761312bf9e8df6011"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_MULTI_ENGINE_VISUAL_REPORT.md",
+      "bytes": 4833,
+      "sha256": "736c25e61bf140dfb8ef24838678ea6ac9ece24fee2ff80c29c17b433c359e0e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/2_OPTIONS_GEOMETRY.png",
+      "bytes": 28573,
+      "sha256": "e84fea84d0ff2a4a7c834e47da012dbb4d6bd8d990fdfa4d1abba105a2952345"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/5_OPTIONS_GENERIC.png",
+      "bytes": 44021,
+      "sha256": "75682515d1ef6a6a828cfcb22ced511580eeb9de91f011e546db2373923bbe6e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/ANSWER_1_1280x720.png",
+      "bytes": 15949,
+      "sha256": "ee452492179d41ae6499c8cfbbef9ae331a173c5bca105ac1fb5bdc0c67b2a95"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/ANSWER_1_1366x768.png",
+      "bytes": 16623,
+      "sha256": "a4aa3dbf15735c7e92805679a316293b56d7114014bb3035990a42c022b6984a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/ANSWER_1_1600x900.png",
+      "bytes": 19148,
+      "sha256": "f525328ffe2a4eeaee7359e7fa52223d07b7234814630140661cad12be5d8d41"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/ANSWER_1_1920x1080.png",
+      "bytes": 24759,
+      "sha256": "f972bced525309d9cf138056649ee8779ce119b679795fb7db8b7257f7a00e2b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/FOUR_EXPLICIT_OPTIONS_1280x720.png",
+      "bytes": 24667,
+      "sha256": "21062ef9598a3f93cfa0b37b3299a1212cfc36c7cd79fae45fdd0e896f978d64"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/GEOMETRY_REGRESSION_1280x720.png",
+      "bytes": 73750,
+      "sha256": "3d40d58bea904fe9f0c4022900ec7fe1bab963cef05a64f08ba491da7ef73521"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/KNOWLEDGE_CLOSE_1280x720.png",
+      "bytes": 98611,
+      "sha256": "ca908a27936faf882a9e3bdf9bf7cbf7caed7ff63f02d005ce2bcf11490acae7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/KNOWLEDGE_CLOSE_1366x768.png",
+      "bytes": 100801,
+      "sha256": "6c84ce6bd91f4477dab25a22bcf4a2049f3bd7149f06fc122977fb4d6f6b01b9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/KNOWLEDGE_CLOSE_1600x900.png",
+      "bytes": 121210,
+      "sha256": "ced39cbec75ea835f3a77a6b84af2cac93f4fe75b77b7c6bdb0c7c1ba91c5c0e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/KNOWLEDGE_CLOSE_1920x1080.png",
+      "bytes": 151519,
+      "sha256": "3c0fd7b6edc352d39992e466ca93eaeb932a3c1a93acaea06045d6f0842376d1"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/MULTIPLE_KNOWLEDGE_PAGES_1280x720.png",
+      "bytes": 21076,
+      "sha256": "08f272ed8623b3f82f3774ec120b7548e0fa5c4647787e6a55daf8e4f0f4e0fb"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/QUESTION_14_1280x720.png",
+      "bytes": 17646,
+      "sha256": "e8104e06775c1223b950e7e8ef08d1f43acd0505f609b3fc3eec2d73876a2730"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/QUESTION_14_1366x768.png",
+      "bytes": 18647,
+      "sha256": "ed61960ab6f6b4438992e612272e345568acaadb8637fdb597c091685043ecea"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/QUESTION_14_1600x900.png",
+      "bytes": 22996,
+      "sha256": "194a6c45b6f008e8ab9e0eb1a09202a1378f13f8097931f5130fd9f312de5dbe"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/QUESTION_14_1920x1080.png",
+      "bytes": 26439,
+      "sha256": "ce22a9720a1fa8b35049c52010a4a0d81a0aa8a337f2275b86e10f6442fb34ee"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/QUICK_CHECK_1_1280x720.png",
+      "bytes": 27523,
+      "sha256": "0f7bbac0eb156caa58e03bee94b9648a7fda89f24dc173289b6156942290fe61"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/QUICK_CHECK_1_1366x768.png",
+      "bytes": 30109,
+      "sha256": "6f3d298353f163653db3648b7c8bb8b1188ed6ed54352ba7e6160dcfad417e56"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/QUICK_CHECK_1_1600x900.png",
+      "bytes": 33931,
+      "sha256": "50ea818d83f0a767f2b18b1aee0383d5b3f4862af675b09449036bd57d168e59"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/QUICK_CHECK_1_1920x1080.png",
+      "bytes": 42725,
+      "sha256": "7de59246a9e0c2ab3960f2ff17c6056278d5d83095f6343203df0d62cf48ec07"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/QUICK_CHECK_2_1280x720.png",
+      "bytes": 27236,
+      "sha256": "12e8219b7628c6b822e623d162593a68091749dd5cf5f87747bf0e980299e621"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/QUICK_CHECK_2_1366x768.png",
+      "bytes": 29914,
+      "sha256": "c07f93167e868674db2ca8f3b7db465176422c52fcec81e860c67114d61f562d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/QUICK_CHECK_2_1600x900.png",
+      "bytes": 33374,
+      "sha256": "661627d677ffbbf0adb86779420969312415ea0c125174982fcb600caf37732d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/QUICK_CHECK_2_1920x1080.png",
+      "bytes": 42591,
+      "sha256": "e8a74e715d6fb8c2a2326df365645fa29dfd464f317ec9f7eeb4a876345ce965"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/TIN_REGRESSION_1280x720.png",
+      "bytes": 46181,
+      "sha256": "ae86d6b539fe388fd09e5ba9f07c46f68e074590a401e6d982ce21a578bd973d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/acceptance-results.json",
+      "bytes": 31747,
+      "sha256": "90afaf84d68cf90c1249a8b2f89a6899b5da5e7655a04d60881e4f2fb2dcc8bd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/AFTER/run.log",
+      "bytes": 1859,
+      "sha256": "ce6726b7ee14152248275e362a4082ca964561561e47c5ce94664566abc24efb"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/BEFORE/FOUR_EXPLICIT_OPTIONS_1280x720.png",
+      "bytes": 23797,
+      "sha256": "da062b3cd48ae0df9e86e9b9f15423afcf82b9e82446914ed31273be50802596"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/BEFORE/QUICK_CHECK_1_1280x720.png",
+      "bytes": 25943,
+      "sha256": "b263734eea746937750f409c0d9d51ad281d65db2371569352bd914a227ee0c6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/BEFORE/QUICK_CHECK_2_1280x720.png",
+      "bytes": 25027,
+      "sha256": "be7488218f7433c2295b90cede68a637d0422f27d4a171c7b1575cf2b5dd4ca5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/CHOICE_STARTING_CHON.png",
+      "bytes": 30448,
+      "sha256": "b6377ab8a3eea4463d7b1c9d79061d75d45254a26e1aef622d12d3f29f0c7d84"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/ANSWER.png",
+      "bytes": 30788,
+      "sha256": "524cf23518446bc15c5411eaae31d383e69cca8e8bb24351d2b4dbf702319c78"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/DEMO.png",
+      "bytes": 54695,
+      "sha256": "4bb8fb62d0eb69c4fe3da531e727b8dd4719f6904428a501700ed843201935db"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/HINT_1.png",
+      "bytes": 89624,
+      "sha256": "d9975b0a429ec6b12dde3a7554db5f0378afbe37e8387e0f06edcca540163853"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/HINT_2.png",
+      "bytes": 84667,
+      "sha256": "84bebf1a6737b8cef045622d7c2b41691a61f9d7f7f72fafca792c4ddbbe1898"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/KNOWLEDGE_CLOSE.png",
+      "bytes": 47159,
+      "sha256": "a63f4f8746d15fd1b8ac8243f6e35a7df4104fe60a195e7df92a839b2aa24a8f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/TEACHER_1366x768.png",
+      "bytes": 109707,
+      "sha256": "5aabf034e4ceb43dc6aa24bd6995cdcbe882d7ec7e71f429e73e79182f3d0b12"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/TEACHER_1920x1080.png",
+      "bytes": 143003,
+      "sha256": "c3093e30831d1937c0384d665284c318c6363e5fdf97e791ad43cbeae17761f0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/TEACHER_FINAL_1920x1080.png",
+      "bytes": 124262,
+      "sha256": "72fde8a5980225f4f76b424408091813396bd90f160239435f10db99dee309d0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/TEACHER_FULLSCREEN.png",
+      "bytes": 109861,
+      "sha256": "201ad745d879d997521a801654d0179a33d772f798e39c709422235ef341c3ff"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/TV_ALGEBRA.png",
+      "bytes": 30899,
+      "sha256": "e072a6e2ef325f4057f8d567f6bd7fe3837a721e4e2286deb2afd1f5a75553a3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/TV_FULLSCREEN.png",
+      "bytes": 106374,
+      "sha256": "1a1bcb1fc6622885dc720efb427cfd2f6fafea9521b1a165bddab1d6bea339f4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/TV_GEOMETRY.png",
+      "bytes": 105713,
+      "sha256": "c1e4f27160d6c068a20720482d6b1397cc580b6a73696849b5900ebc70704afd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/TV_LONG_CONTENT.png",
+      "bytes": 103242,
+      "sha256": "09044041fdf0d4aad88d4294b19c34f09a563040232fd28efb6ea5f63c87d97f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/TV_LONG_FORMULA.png",
+      "bytes": 42715,
+      "sha256": "263034300462857a0053a91988061fe4b9abd8051fff7ff581a3dbd4f31ff13b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/TV_TIN.png",
+      "bytes": 56154,
+      "sha256": "608b88391058a678724e24a4e0325265f22024e1efd4c354a8b7e82ffb93669c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/cockpit-native.json",
+      "bytes": 8490,
+      "sha256": "5d212ab8ae0839e0c4b4b4f1637015243c5e4de7abed1124359b58ac4839f045"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COCKPIT/run.log",
+      "bytes": 1672,
+      "sha256": "a84e11b675c77f7d9f29531abd321f9099865ce8122ff7ac93a8a0b86dbf31a1"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COGNITIVE_PANEL_WITH_FIGURE_1280x720.png",
+      "bytes": 35639,
+      "sha256": "226e0a0fe12a661b7ff12c3ecb8b8091062face53837064949d53623960c9caa"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COGNITIVE_PANEL_WITH_FIGURE_1366x768.png",
+      "bytes": 39099,
+      "sha256": "4d49dff6a2aa65b36806aa7526246eb5a9ba256b289c189f880007a3d006dcd5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COGNITIVE_PANEL_WITH_FIGURE_1600x900.png",
+      "bytes": 44259,
+      "sha256": "af28b3de8f96bb31b24c1469cba31b7d56b8540f97932bd268b2e4da608b393f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/COGNITIVE_PANEL_WITH_FIGURE_1920x1080.png",
+      "bytes": 56568,
+      "sha256": "81ef1ac9e48a75be158206a1c8949651b5ecec359ae59b2873877a9f3185d4eb"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_01_EXPRESSION.png",
+      "bytes": 25409,
+      "sha256": "f8ec7ec104626bf8ffc95ea8397a0cfd035c0db483e425e26fbaf5fe3a931b91"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_02_EQUATION.png",
+      "bytes": 20480,
+      "sha256": "ecc938768c09d715bdfd9683f56d75eb03c064ead43f2075038f0c61d219d493"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_03_SYSTEM.png",
+      "bytes": 23384,
+      "sha256": "08ab3c998b678b7e09ee657170d79b51d998956b64d39c30138e9c8f10ad36a5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_04_WORD_PROBLEM.png",
+      "bytes": 35675,
+      "sha256": "04d9b44743e725b250767127f8fa09c7fe30868922dc26d87ff6430f54578031"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_05_IDENTITY.png",
+      "bytes": 22540,
+      "sha256": "e68b8e3c625696601860e6beb2be11b285c2720deeb07fa482edc0185529978c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_06_TABLE.png",
+      "bytes": 37748,
+      "sha256": "9308dc5755a8e4b432a39983f862e55f5094bcccbb580906bbabc6b33934146c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_07_GRAPH.png",
+      "bytes": 33723,
+      "sha256": "618cf243b60305b923cded59ec44afa033cd3090bb1439ae01962f1fb6a7a016"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_08_PRACTICE.png",
+      "bytes": 21534,
+      "sha256": "c48a2e9a7021ecb7414e96d3e0ad614b749772c8b5fd01b3f98dd83694cc1850"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_EQUATION_1280x720.png",
+      "bytes": 19524,
+      "sha256": "a534a21f9fada98e7582f87bede18e316c715535ecc7feeb0f26bc8d7e89cc92"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_EQUATION_1366x768.png",
+      "bytes": 20475,
+      "sha256": "cd05f1b516b5f199ebeb4faa05d5010eb0489dd90bb2826e36a87d384e1ae3a0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_EQUATION_1600x900.png",
+      "bytes": 23690,
+      "sha256": "3795ab6b726c53bb3fef69a878e1254c820cf3762d13173ed67b92531fc8f963"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_EQUATION_1920x1080.png",
+      "bytes": 29743,
+      "sha256": "76f8db1235990d9cc0507182533a9fc4673681e714fd798c51f190840c5eb36e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_WORD_PROBLEM_1280x720.png",
+      "bytes": 35234,
+      "sha256": "22cc8adf22d4ed3758ab374da2656eeb1f6161fc753a6cf68c6aaf9152ebac04"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_WORD_PROBLEM_1366x768.png",
+      "bytes": 38816,
+      "sha256": "98d0ab53340a3df81b3db00819603608211e6e54afb8fc1fd3268c8a26334262"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_WORD_PROBLEM_1600x900.png",
+      "bytes": 46394,
+      "sha256": "689bef56223d753d86d03b7bb6e1d3620165a501722c5c33837038482bda1897"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/ALG_WORD_PROBLEM_1920x1080.png",
+      "bytes": 55667,
+      "sha256": "681055aff745dafe98d064b1ca45c1651a2189397b4a7e191cd547094b7c3aa0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_01_STATEMENT.png",
+      "bytes": 72016,
+      "sha256": "7b71dc40fa8b1a2f1d35336645a7b0382efb09b128fcba6504db08a0b453270c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_02_OBSERVE.png",
+      "bytes": 65689,
+      "sha256": "a6a733ee077f0b7b2a34c50831105874a052844f6520c38f622fc34e1fcd439d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_03_ANALYSIS.png",
+      "bytes": 78388,
+      "sha256": "db1fe24faf651fbf174b2ee20b749035c94ed24234372042c9fcf2596591de8d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_04_DEPENDENCY_TREE.png",
+      "bytes": 75744,
+      "sha256": "5139bf95218841120f8e50eca13082dba1010025bd0e16f3bc0e0a2d98dfc608"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_05_PROOF_STEP_1.png",
+      "bytes": 63664,
+      "sha256": "f0aa0d54e5d767caf48401d1a4a2e138cab85222de449245dd4e89f6091e8ba3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_06_PROOF_STEP_2.png",
+      "bytes": 63670,
+      "sha256": "2ce1c96062a74758a97a5bf28c23b0665ea30edee79a72c2123b100e015eac1b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_07_CONCLUSION.png",
+      "bytes": 59139,
+      "sha256": "180eb18f41346b7552a44ec4d820eec9c017dde40ed46fbecc5d3bdf4295bc4c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_ANALYSIS_1280x720.png",
+      "bytes": 74738,
+      "sha256": "1f9a0fd05778aa6099064c556675ba002dd649173cac45330a650855629455b5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_ANALYSIS_1366x768.png",
+      "bytes": 80229,
+      "sha256": "0a37e23ec78208164b3e775e09e12d13f9dd69a31581feb19f44758bed4f3aec"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_ANALYSIS_1600x900.png",
+      "bytes": 86006,
+      "sha256": "545021dc4bda4819dd61d67cd2d452f9c0b52f9df098bb12c58105091607d227"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_ANALYSIS_1920x1080.png",
+      "bytes": 108433,
+      "sha256": "19dc43ddf3dbef73127e95ddc9f13611e2c661c7ad507b1e6ac4d91780111619"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_PROOF_1280x720.png",
+      "bytes": 60114,
+      "sha256": "02e27f69a23f0228884e3bce444f3078054101f0bcdb8e8d08d5215e33c1cba8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_PROOF_1366x768.png",
+      "bytes": 65527,
+      "sha256": "e24394afe3693ac5ffeae8562573a2c07f0195c38c88c21304e623a347737d4c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_PROOF_1600x900.png",
+      "bytes": 68326,
+      "sha256": "609a154949f9a48f2fd83f523623f506b084952dc15dfdffe691b598e4ff5ff6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/GEO_PROOF_1920x1080.png",
+      "bytes": 84943,
+      "sha256": "781eebd469869e084f9acdd233eb06771461ae8557adbaa60fdfd459f93e9413"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/TIN_01_REVIEW.png",
+      "bytes": 40198,
+      "sha256": "653b918b079d1126782c5b3715188df3c794e20bb6a9e6d36021b03c34c96b86"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/TIN_02_INTRO.png",
+      "bytes": 44383,
+      "sha256": "e5514f4b25f0ce5560af826eb4a9036b8d291f09b090bd71f394361cffee8b4f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/TIN_03_MCQ.png",
+      "bytes": 50951,
+      "sha256": "02490967e0d491b1549a66e674d75e6555cc6ee2e76e18a6c86fc83c5aa939cc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/TIN_04_OBSERVE.png",
+      "bytes": 134360,
+      "sha256": "464a0f1604f7c6d8f207f4bcb23a2a1dd161854a3956c3bbbafbf495e456e72f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/TIN_05_KNOWLEDGE.png",
+      "bytes": 32332,
+      "sha256": "ac6a5ad56f3cd331505130ff28cb995a5c0edd82a34f3b303810b325c9cc53f1"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/TIN_06_PRACTICE.png",
+      "bytes": 48217,
+      "sha256": "1e8ab10e38888721394799e6006aa70d33a27b49d29b769312c36187ccece12f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/TIN_07_APPLICATION.png",
+      "bytes": 37778,
+      "sha256": "cd443c2592584504b10df721b83655e8dbe76e211a70024b38fc94d1fd6611c7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/TIN_08_PRACTICAL.png",
+      "bytes": 24646,
+      "sha256": "13c805497d78603fb41bc2fb5948aa976ee2393b662657053ac7279b4e047070"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/TIN_09_DEMO.png",
+      "bytes": 25099,
+      "sha256": "3710f96db54e31a6db8be8d3269107ed30f322520e730052452b38310b38f7cc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/TIN_MCQ_1280x720.png",
+      "bytes": 46694,
+      "sha256": "2f012346f6572502020af8baaa479f1ba6a4a0706125b3614983bfde524e7a8a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/TIN_MCQ_1366x768.png",
+      "bytes": 52750,
+      "sha256": "138e8885ad032bcb4a906297bae96938c470b7ec6cff4e0e7a24b9c36a2a670c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/TIN_MCQ_1600x900.png",
+      "bytes": 60450,
+      "sha256": "1bb8c67cb5a974051edd9578a329ae826f72143d6414083d931bba5d7e0cbee0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/TIN_MCQ_1920x1080.png",
+      "bytes": 74995,
+      "sha256": "bc111a8c369c59f95995ce5c0ed6d74a574d8fd0c82f5b69a8eb01aa1a3dc355"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/results.json",
+      "bytes": 79451,
+      "sha256": "3cc49d4d2436d868f4e8f605c720e5408f2cd8dc2c08d8c10993921aa038b053"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/ENGINES/run.log",
+      "bytes": 2483,
+      "sha256": "1b6b908536904ed10e0bf72b7db420b51d870e0ed7ebcf9872f9889844632399"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/EXPLICIT_INSTRUCTION.png",
+      "bytes": 31604,
+      "sha256": "080f6e36c7b2fae05931b53f9eb09462d007e0f1bca3592fc4a3baa959d2b217"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/FOUR_OPTIONS_1280x720.png",
+      "bytes": 31907,
+      "sha256": "47199ba6be058a5da71525857b23a0a2d30531904043ffc70187cdc031013875"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/FOUR_OPTIONS_1366x768.png",
+      "bytes": 34864,
+      "sha256": "be57f6308d77ee4620eebd66aac5fa47021a1338c50c00e34bc7036d60ffc9b3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/FOUR_OPTIONS_1600x900.png",
+      "bytes": 39047,
+      "sha256": "24838c4b7a9ae93bead7ec9c44b0dfdeb5dcd36ed754da27dbc58c250010f929"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/FOUR_OPTIONS_1920x1080.png",
+      "bytes": 49223,
+      "sha256": "fbf7917bd9fa4e3612a5844122c02ef1f28131a3532936612f3c6969d525f7cf"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/INLINE_DIRECTIVE_24.png",
+      "bytes": 25306,
+      "sha256": "301c54014798326e75ef681974b22d63e81d05dd2a3f35944339b8bcbed6c741"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/INLINE_DIRECTIVE_25.png",
+      "bytes": 29004,
+      "sha256": "96f292a09a000fc36c91f23fef3e9f29c8f3f010569ef988a914a38bf7a58615"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/INLINE_DIRECTIVE_26.png",
+      "bytes": 27199,
+      "sha256": "6871cbf377cfc51b95c0299baee6937d92597b640d905efe4cec709e18f1be18"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/LONG_MATH_1280x720.png",
+      "bytes": 51705,
+      "sha256": "3d21e0971b052432757b10621c5c15af29a4c38754d760d641ee2b64fd291fcf"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/LONG_MATH_1366x768.png",
+      "bytes": 58075,
+      "sha256": "9d2b06be9b140bc8860add9cce44931ad29205cd6256132baeaae9a7f91fa9be"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/LONG_MATH_1600x900.png",
+      "bytes": 68953,
+      "sha256": "82553c5faedaa21130faa1afdfd124437e1b2f4c8476b113a5f511bac417b8ab"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/LONG_MATH_1920x1080.png",
+      "bytes": 82501,
+      "sha256": "fc8981f88f9f6bf4543fbe5a505742be517a5e27ea969972192be26d64e6f9d7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/LONG_QUESTION_WITH_FIGURE_1280x720.png",
+      "bytes": 37953,
+      "sha256": "0e0d8ba513c66b3a4049cb31304da210c867e5caa8a650533d6b487cf71520cb"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/LONG_QUESTION_WITH_FIGURE_1366x768.png",
+      "bytes": 41271,
+      "sha256": "092c7916c27588d2208328d1aaa090e767b005203818458f998df47a93b10fed"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/LONG_QUESTION_WITH_FIGURE_1600x900.png",
+      "bytes": 48038,
+      "sha256": "6a437cdd463a46d45b743e7a22dc9c9289e1e7917e38b45ee375601afa47cd19"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/LONG_QUESTION_WITH_FIGURE_1920x1080.png",
+      "bytes": 59431,
+      "sha256": "ef95fb4d4bdd47a2f884109cf62435e333dc94fab61d2df565742b7a16a4c5cc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/QC1_1280x720.png",
+      "bytes": 30190,
+      "sha256": "5e607eca5cb87d970f0162dfe8198eca961536cd120ef311e0a08ba8c16259b0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/QC1_1366x768.png",
+      "bytes": 33190,
+      "sha256": "a256955bb3fd8ac8236e3516290f6a3d1cb427efe7450883a3c4d87164670e9b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/QC1_1600x900.png",
+      "bytes": 37546,
+      "sha256": "60c3f1b692cef50124fe7f2ee65d11439052a3b04476e1bf477c05b35a75946c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/QC1_1920x1080.png",
+      "bytes": 46323,
+      "sha256": "44e4f527de04ddfa0c228605233c86c50acb6c634c973afdb019c37586c34de6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/QC2_1280x720.png",
+      "bytes": 29840,
+      "sha256": "a78f2141013ecdc21e646118e09f56f7e0a48a9409b37bcb0f8e9a4f397d0ee7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/QC2_1366x768.png",
+      "bytes": 32970,
+      "sha256": "6c9abd3cef55dd101a03827e43e3b324c033c83ee7a8fed27b93c4939610c40c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/QC2_1600x900.png",
+      "bytes": 37142,
+      "sha256": "c27b1943553f47fdd32105878fc49516b78e6810b49cc82af3397e0abf698463"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/QC2_1920x1080.png",
+      "bytes": 46190,
+      "sha256": "4a1533fc851a937e9adc81cc100ea12a4936d467b073cabfa5d761feab8c76c5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/RUN_INDEX.json",
+      "bytes": 5720,
+      "sha256": "797cee601ff5a66df8fb02f180fa2ac45d575b2855ce9d8301bdfb3f1a300b7f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/TTS/TEACHER_1366x768.png",
+      "bytes": 103604,
+      "sha256": "7cb4f917e9d3d2d3fe24a300a957e7e9b1dde23d9007fcfbc94d828085b1c001"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/TTS/TEACHER_1920x1080.png",
+      "bytes": 142625,
+      "sha256": "ccb7d52def63ee00e55687303f42b039eb7c2b4a3673db5da31478ae95b47f1e"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/TTS/TTS_ENGINE.png",
+      "bytes": 142672,
+      "sha256": "25681dbf7397188ed3fcd5b1267dbd546afd4b2e3d94da943d79d4a30b5676fb"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/TTS/TTS_NEXT_SCREEN.png",
+      "bytes": 46181,
+      "sha256": "d3265beb99e9cbd504db2a6a1f0a127db97ab504e09726c98da89ae804bbe4bb"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/TTS/TTS_PLAY.log",
+      "bytes": 152,
+      "sha256": "71cae414274e3d8bd154599160c197139409cf14b7732ca0d0142486798acbd3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/TTS/TTS_STOP.log",
+      "bytes": 133,
+      "sha256": "d41d9b5d56322af859ccab4432430f5ef9c808654d8ea949e72f7b37544552fc"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/TTS/TTS_STOP.png",
+      "bytes": 142672,
+      "sha256": "ecfdc50d23aecdf8a239430795ed8e4721fcb7fe7adb60c694aee97755f690d7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/TTS/native-tts.json",
+      "bytes": 12458,
+      "sha256": "d51ab86996c7112dbe10f363f6fa4ac7301286469cfff1c3f24b2bcf77d534e7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/TTS/run.log",
+      "bytes": 1680,
+      "sha256": "aeb6f72fa81c063fd2c688ed68c1718aebbca7d0e89dc725d92657d531230a04"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/VERTICAL_MCQ_PATCH.diff",
+      "bytes": 12532,
+      "sha256": "80d8cb4581a469a5eb6d9ce4d27b6c114af662fa208a57b00e25db7d916bfe0f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/package-preflight.json",
+      "bytes": 158,
+      "sha256": "f630c6d46cbeb01927f3206f2346025ed7e4c2fef2f1d4e6f409b566f6b488a4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/package-smoke.log",
+      "bytes": 232,
+      "sha256": "9146e695f47b26cdf44b040b87fbc42b857cdbf20f745621c5ef4827a15775bf"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/scope-audit.json",
+      "bytes": 4215,
+      "sha256": "a3ee4c92baf6d814e4aa972481bb0ac7a70b5460de56573bddb3ba019fc1fc19"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/syntax-check.json",
+      "bytes": 1107,
+      "sha256": "e514003225b1266465e31d684e257d31abfba082d3b74acaf6817f7dd6a0c1ad"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/vertical-results.json",
+      "bytes": 64647,
+      "sha256": "e2c4ae17b28005ebfc8b629474c6e503d2e712cb23b92a8566c6a7fc55860dd9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_EVIDENCE/vertical-run.log",
+      "bytes": 1344,
+      "sha256": "dfb1560f6b1254d0efc2fd5b69ae99bfff7db69c902ad3ab111cc08d5eb4646b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_REPORT.md",
+      "bytes": 3569,
+      "sha256": "bebd3679510cd21a0d692a38a1735cc9b49d4e519908a448ff77039fee12e056"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_TESTS/acceptance.cjs",
+      "bytes": 12467,
+      "sha256": "dd7741335a7313a7e9834dbdc68bd4214ac59f462615fe11904432b1f2f5b964"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_TESTS/cockpit.cjs",
+      "bytes": 17684,
+      "sha256": "892f2d5a4e7d6c8c99c978cfc2b32b41a26482be92f9fadcc702dfaecbaae2f0"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_TESTS/engines.cjs",
+      "bytes": 14739,
+      "sha256": "d6fe601397f5e9c3fa92d9fa8a3bbcfb9a5f58abeda33c984956159238676bf7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_TESTS/fixtures.json",
+      "bytes": 1404,
+      "sha256": "644bef3b9de70de2b839a06755b22d5bd4ddb37e53561f0927590fb9b6ecae12"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_TESTS/native-tts.cjs",
+      "bytes": 8419,
+      "sha256": "9595a1434deb128314b2941f522f3766c031ad23131cfe38c72d6956fffb4f47"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_TESTS/package-smoke.cjs",
+      "bytes": 3031,
+      "sha256": "c1014b68872138950a5c83800c4d4a226657c3737cdfa68a47ce6ad76b726fdd"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VERTICAL_MCQ_TESTS/vertical.cjs",
+      "bytes": 8344,
+      "sha256": "3110306ef98e876b947efba14c75091feb995ba64afee37cdda4250cc4a85832"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/TV_VISUAL_ACCEPTANCE_REPORT.md",
+      "bytes": 3568,
+      "sha256": "7b5765be7995acf44e0aa9474b953afcfe5f9281e9215a479753d4ddef3d4090"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/UPGRADE_REPORT.md",
+      "bytes": 4786,
+      "sha256": "5c7009350b941e36831916f47d6bd5b9821abd5c68b0b8a0a4b513cf83141ac2"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/CHUAN_DONG_GOI_HINH_HOC_V0.4.txt",
+      "bytes": 1099,
+      "sha256": "c39a6671b52d4b3ff711548091086ba8aa26cb112302df7f9b85ff7481ec84ec"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/CLASSROOM_TV_SPEC_V0.6.2.md",
+      "bytes": 4556,
+      "sha256": "086175f9db2d4ecfeb1ee1cd03f14bb9211a408cbed4232eadb226bc8d0284ba"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/COVER_LAYER_SPEC_V0.5.0.3.md",
+      "bytes": 3076,
+      "sha256": "9a58217563f93a4ee41361d73a2338e42bb050ab9c49b098fba3fff2685aa8f4"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/DEMO_TRUC_TIEP_SAMPLE_LIVE.zip",
+      "bytes": 902,
+      "sha256": "d30fb21ffab8b2481b27d2cc25f981cb7255c35491af91d6690ec85c260b23ad"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/DRAW_BOARD_SPEC_V0.5.0.2.md",
+      "bytes": 6827,
+      "sha256": "687d735726ca3baf82a4dcf7b53be8c2b1e3b04c90a4ca356cfdbe15ffe8efd5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip",
+      "bytes": 717920,
+      "sha256": "86f95e57641647c3441f615cd6f5e3437c0e509afc2d13e030781ce9a23cf033"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/HINH_HOC_8_T04_T07_LIVE_TEST.zip",
+      "bytes": 717876,
+      "sha256": "8e51fd9719039af0f4f0e4547668a9343cd6c6db022dbb6c2047a51d1de61ddb"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/HOTFIX_NOTE.txt",
+      "bytes": 731,
+      "sha256": "7764668bd15ed2c165e8ca8ff6e76a84ec1a87af6b22b648dad328f700f05246"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/HUONG_DAN.txt",
+      "bytes": 8530,
+      "sha256": "b999e60813bf5ed4c83139db6f1ec81c7c2d31d1b2ec7adb7edd7b60c254d90c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/LIVE_GEOMETRY_PACKAGE_SPEC_V0.4.5.md",
+      "bytes": 7903,
+      "sha256": "b94fd85d91d22a018f7c6e728bf7ef9e1c7535ff448f258ac950f820d214b214"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/SMART_GEOMETRY_SPEC_V0.5.1.md",
+      "bytes": 4247,
+      "sha256": "b7e86513992653f7fb361d04a18218505fa03df29a513be9496edaa1f07056fe"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/classroom-teacher.js",
+      "bytes": 6827,
+      "sha256": "e7051ecea88d985060a592d4a424f7d3dd59625301bf6d8d17653a05cf66d1c6"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/classroom.css",
+      "bytes": 1311,
+      "sha256": "92d2c01acda2433c71c4cef1cb6a35f09fa1eb43c22f80626f16d1bcbbcd932b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/classroom.js",
+      "bytes": 4257,
+      "sha256": "8c0f7697c637bc68ba4a750db8167244f99265f68e859f8c0991b1cee1853616"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/cockpit.css",
+      "bytes": 4201,
+      "sha256": "a091924aa4370ba7c718759b0ea5761fed12dee371a0301684f4775eff63ff62"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/cockpit.js",
+      "bytes": 6306,
+      "sha256": "28066c75e0308ec38904f5ad2c00404e7da1f733f7c954f1ac7554d932dce66d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/cognitive-tv.css",
+      "bytes": 3553,
+      "sha256": "37a2b46e6b1562da4d7d72c434201ce1ada056a1eb81f748c1b193525e1fbd6c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/common.js",
+      "bytes": 8587,
+      "sha256": "0aed617c8e2813ab725cbb75a2de927ff72ef5b4481ec20d11e2759cbba6a3f7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/cover-layer.js",
+      "bytes": 4476,
+      "sha256": "0f4aed78e4381067ca88d1afa221cc663f0f09d9d5ea9ab3bc72f6b098de7a86"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/cover-teacher.js",
+      "bytes": 6171,
+      "sha256": "7329cf77827ac24a5896abf680495cba20c4000fddbdf2f4b7736196bc1f7195"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/cover-tv.js",
+      "bytes": 1478,
+      "sha256": "766b7db84833ba14a9343e76b174ebc8679ae932ef5be52596f43c091c090286"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/demo-teacher.js",
+      "bytes": 13005,
+      "sha256": "9afa9c9a1e5f848f9f8ec1ea3d48c44e200e994d1fc307566ff4669de9d95554"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/draw-board-teacher.js",
+      "bytes": 14354,
+      "sha256": "aa957978dfa209b87320038742f7b96fa79b150a7669f687389f86eb86fdb65d"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/draw-board-tv.js",
+      "bytes": 3369,
+      "sha256": "6a8245d603f54aa6aaa23c9ea69b4dd7d53e07a0188a5a758ca11e5a5268c662"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/draw-board.css",
+      "bytes": 1127,
+      "sha256": "1e38eef84c8e37a09103af56a1aef00a1eee1ddce46c20a74df281baa72f89a5"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/draw-board.js",
+      "bytes": 10275,
+      "sha256": "4e9c0415d8e77c53de0f68bd305516182ff4b08d3caeeb4b0855f9dcd595f1f8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/index.html",
+      "bytes": 272,
+      "sha256": "8df0265dfd82796f237bfa4efa80a1f994880e0bfe3f09e6303088c40c05777f"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/math-atomic.js",
+      "bytes": 1780,
+      "sha256": "489797cf6186f912f4cf2f14b21062bb6b352eb3ee18bc997afd2428512343bf"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/math-speech.js",
+      "bytes": 7130,
+      "sha256": "11c9d049285130746d828df3bec6b1f49f0e972126a5a79e691d05dc8f9649f9"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/pedagogy-teacher.js",
+      "bytes": 4215,
+      "sha256": "d3cb0f7d844a8750c589491aad99b8e21c535c0ed6053ea48a01e34a80ff0ad3"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/pedagogy.js",
+      "bytes": 2997,
+      "sha256": "981b89636c3fc85943c70016996d486311450dab1b8277998529c271f5dbb3d8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/runtime-config.js",
+      "bytes": 246,
+      "sha256": "80df818cd17106dc0cc53ed583021377104988e81bdbb15d29a308ee5570a70c"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/smart-geometry-teacher.js",
+      "bytes": 10379,
+      "sha256": "c63bb2788382242cf2c0388908661c858c997adfe97b436099687de07e303dfb"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/smart-geometry-tv.js",
+      "bytes": 2187,
+      "sha256": "293ff6624edc91a00bb84a4d9f3926d18f5f9259577f574e89803248d7af3ff7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/smart-geometry.css",
+      "bytes": 569,
+      "sha256": "77fd0b09c2c2bd6863ee067f89b38fb75f4c237f635fc4cfb41d05e394cd8a15"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/smart-geometry.js",
+      "bytes": 11879,
+      "sha256": "515f712f7a9ddedb21b651b80482b58418bda410ab92fa51195c581a863c1861"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/style.css",
+      "bytes": 1281,
+      "sha256": "aad788f2852c953b01865bd8fe913303ef2d7848b0ad0ad6358f3f773e568212"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/teacher-ui.css",
+      "bytes": 12712,
+      "sha256": "6c0197e9f455d64f75711625995fc836c8174cb1daaf34355863673058a6e7bf"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/teacher.html",
+      "bytes": 25655,
+      "sha256": "9baf244fc33501fdab52923754d867c767b2638f37e768d38a49be5ba4084f9b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/teacher.js",
+      "bytes": 15848,
+      "sha256": "f305c8847fcce5b11efb20c11689590686e320be0f076514d64ea9ed4b27e452"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tts-controller.js",
+      "bytes": 11924,
+      "sha256": "e9872faba0f7d43dfa391e5c8e03fc9ea35a78f4caea2c67cc5c32a013313c94"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tts-highlight.css",
+      "bytes": 201,
+      "sha256": "cc88328c8c9ac3a21abe48947a1f19effaa93f7a591454e9333307699be5d821"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tts-presentation.js",
+      "bytes": 1682,
+      "sha256": "146727a9ebd669005d8d416e837a0ad9b3ed536f4495f812fbdf440be649254b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tts-teacher.js",
+      "bytes": 10735,
+      "sha256": "a8a5dc928cfe538c1d5a0819fb0dd18feceb39d6318addfbfb17c2daa5abf7aa"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tts-tv.js",
+      "bytes": 2888,
+      "sha256": "62a53feabb5b48e681829c363bd93dbb8297367ba843bfa29469439200ffbe75"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tts-ui.css",
+      "bytes": 3030,
+      "sha256": "1010fb8fd3f0d8ebd311e8f8a70b8cd319aa43c201363c36cca8811da1d792e7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tv-content.js",
+      "bytes": 11966,
+      "sha256": "23f097f30b3fc585670b34cdf02ce9cc46758f0a2c3943b9858ab30d15d8aa4a"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tv-layout-algebra.js",
+      "bytes": 3629,
+      "sha256": "2705a86ec6b1d6303943b222df02c7d3b8983985983962c4052363eaf35eaee7"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tv-layout-computer.js",
+      "bytes": 538,
+      "sha256": "257cbca880f03f5bdde92ad453ca8c5c84e1474a6d76e3b1c91c99bb587ff011"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tv-layout-geometry.js",
+      "bytes": 1330,
+      "sha256": "8f20cab87b7812e5cf8fe8203827d21b08ada686b154b3872ad8680d30655202"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tv-layout-model.js",
+      "bytes": 7336,
+      "sha256": "855c3d181e323cf0de755bde539e6b25aa491f74f20e3bafe22918c724255a80"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tv-layout.js",
+      "bytes": 11559,
+      "sha256": "87058f4f06ca825642d881bd56fc426917f4021e7716567ac35140ccb9765437"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tv-ui.css",
+      "bytes": 28689,
+      "sha256": "815fbe93c550a0f9ebcad42b92a062db7a8e55c1218aea1449c25e2d35a0330b"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tv.html",
+      "bytes": 4138,
+      "sha256": "424e2866dc68367ff82a479cac9dd88b22aeb060ee42bc90dfc3087b6ce4bc23"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/tv.js",
+      "bytes": 13285,
+      "sha256": "3f3ceefcd0d71405001cef7bc34e6337f62b492e444fa7482a3599484d5d5497"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/ui-teacher.js",
+      "bytes": 1415,
+      "sha256": "80aaa2052d686acb036d05a95530239f6c81165c757cf580774411bc6424c597"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WEB_LIVE/zip.js",
+      "bytes": 5617,
+      "sha256": "c245171335f4ceea9f523df89ee58d7930b22fcc3c70ffef3135a7bf16608fa8"
+    },
+    {
+      "path": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE/WINDOWS_RUNTIME_CHECKLIST.md",
+      "bytes": 2616,
+      "sha256": "38a48692e34aa941829207a84bcde50f45f171834b527e9daa4ffcbf30c657f7"
+    }
+  ]
+}
