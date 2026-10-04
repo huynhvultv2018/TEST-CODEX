@@ -1,0 +1,22 @@
+{
+  "artifact": "WEB_LIVE_MULTI_SUBJECT_PHASE1_AUDIT_DESIGN.zip",
+  "bytes": 31434135,
+  "sha256": "64b01950a047a564f8da139d3de3ee5c8705d8ccc8255022047d8e4c00968e37",
+  "zip_crc_pass": true,
+  "entries": 74,
+  "required_reports": [
+    "WEB_LIVE_BASELINE_FREEZE_REPORT.md",
+    "WEB_LIVE_ARCHITECTURE_AUDIT.md",
+    "WEB_LIVE_COMPONENT_CLASSIFICATION.md",
+    "WEB_LIVE_MULTI_SUBJECT_DESIGN.md",
+    "WEB_LIVE_BACKWARD_COMPATIBILITY_PLAN.md",
+    "WEB_LIVE_REGRESSION_PLAN.md",
+    "WEB_LIVE_PHASE2_IMPLEMENTATION_PLAN.md"
+  ],
+  "original_baseline_zip_sha256": "1ccce4f35bf807e498bdf13ca3275e660faa7b50842298ffdeb825e8a3ed917f",
+  "source_fingerprint_sha256": "f3236843911aa48b5bbd515ea9d7e51b6a51aae12b12edb3a7898b84c2c7bd0a",
+  "baseline_mutated": false,
+  "source_modified": false,
+  "production_modified": false,
+  "phase2_implemented": false
+}

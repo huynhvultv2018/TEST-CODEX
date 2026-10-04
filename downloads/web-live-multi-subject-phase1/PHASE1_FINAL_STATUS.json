@@ -1,0 +1,36 @@
+{
+  "PHASE": "PHASE 1 — FREEZE + AUDIT + DESIGN",
+  "STATUS": "COMPLETE",
+  "BASELINE_NAME": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE",
+  "BASELINE_VERSION": "TV_VERTICAL_MCQ_CANDIDATE (delivery identity; no canonical semver established)",
+  "BASELINE_SHA256": "1ccce4f35bf807e498bdf13ca3275e660faa7b50842298ffdeb825e8a3ed917f",
+  "BASELINE_SOURCE_FINGERPRINT_SHA256": "f3236843911aa48b5bbd515ea9d7e51b6a51aae12b12edb3a7898b84c2c7bd0a",
+  "BASELINE_STATUS": "FROZEN",
+  "BASELINE_MUTATED": "NO",
+  "CORE_EXTRACTION_FEASIBLE": "PARTIAL",
+  "GEOMETRY_PROFILE_FEASIBLE": "YES",
+  "ALGEBRA_PROFILE_FEASIBLE": "YES",
+  "INFORMATICS_PROFILE_FEASIBLE": "YES",
+  "BACKWARD_COMPATIBILITY": "RISK",
+  "SOURCE_MODIFIED": "NO",
+  "PRODUCTION_MODIFIED": "NO",
+  "PHASE2_IMPLEMENTED": "NO",
+  "RECOMMENDED_NEXT_PHASE": "PHASE 2 — CORE BOUNDARY / PROFILE INTERFACE, only after APPROVE PHASE 2",
+  "NATIVE_WINDOWS_TV_AUDIO_APPS": "UNRUN",
+  "BLOCKERS": [
+    {
+      "BLOCKER_ID": "B04",
+      "CLASSIFICATION": "ACCEPTANCE_DATA_GAP",
+      "EVIDENCE": "LESSON_PACKAGE_INVENTORY.json: six packages, no real Algebra package",
+      "IMPACT": "Blocks certification of real Algebra package acceptance; does not block Phase 1 design",
+      "RECOMMENDATION": "Use a teacher-supplied real Algebra package during approved Algebra implementation/acceptance phase"
+    },
+    {
+      "BLOCKER_ID": "B05",
+      "CLASSIFICATION": "PLATFORM_UNRUN",
+      "EVIDENCE": "ARCHITECTURE_RUNTIME_PROBES.json: Linux Chromium, zero voices, native TV/apps/audio UNRUN",
+      "IMPACT": "Blocks native release acceptance; does not block Phase 1 design",
+      "RECOMMENDATION": "Validate candidate on actual Windows teacher computer plus TV/installed apps/voice output before release"
+    }
+  ]
+}
