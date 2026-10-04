@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "candidate_zip": "WEB_LIVE_MULTI_CORE_PHASE2_CANDIDATE.zip",
+  "candidate_sha256": "6e83a63792fff16d890b5f12bc3b990dc43bdfec3e360b7a8bbe3a10e813f38c",
+  "bytes": 38133789,
+  "entries": 985,
+  "crc": "PASS",
+  "all_archive_file_bytes_equal_candidate": true,
+  "packaged_runtime_smoke": "PASS",
+  "baseline_sha256_after": "1ccce4f35bf807e498bdf13ca3275e660faa7b50842298ffdeb825e8a3ed917f",
+  "baseline_files_unchanged": 770,
+  "phase3_started": false,
+  "production_modified": false
+}

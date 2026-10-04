@@ -1,0 +1,1443 @@
+{
+  "browser": "151.0.7922.173",
+  "checks": [
+    "R2 modal cold close/reopen; fallback same as baseline; metadata precedence; Teacher/TV/preview profile and disclosure parity; load/step/repaint isolation; TV refresh; stale state; private note absent",
+    "Old state shape preserved; profile resolved from full cached lesson rather than lightweight TV packet",
+    "Demo existing package: baseline/candidate 4 screens × 2 states identical"
+  ],
+  "cases": [
+    {
+      "name": "missing",
+      "input": "MISSING",
+      "expectedProfile": "legacy",
+      "actual": {
+        "mode": "ALGEBRA",
+        "stage": "ANSWER",
+        "index": 0,
+        "text": [
+          {
+            "text": "Chọn hệ số.A. −6B. 6C. 5Chọn một.",
+            "visible": false
+          },
+          {
+            "text": "Bước 1",
+            "visible": true
+          },
+          {
+            "text": "Gợi ý",
+            "visible": false
+          }
+        ],
+        "tts": [
+          {
+            "region": "answer",
+            "text": "Bước 1"
+          }
+        ],
+        "stateKeys": [
+          "analysisStep",
+          "answerMode",
+          "answerStep",
+          "board",
+          "classroom",
+          "cover",
+          "index",
+          "lesson",
+          "lessonActivation",
+          "lessonId",
+          "lessonSourceKey",
+          "pan",
+          "pedagogy",
+          "pointer",
+          "sceneId",
+          "screenLite",
+          "showHint",
+          "smart",
+          "stateVersion",
+          "total",
+          "type",
+          "viewMode",
+          "zoom"
+        ]
+      },
+      "teacherEvents": [
+        {
+          "id": "legacy",
+          "name": "onLessonLoad",
+          "index": 0
+        },
+        {
+          "id": "legacy",
+          "name": "onStepChange",
+          "index": 1
+        }
+      ],
+      "tvSelectedProfileOnly": true,
+      "rendererModes": [
+        "ALGEBRA"
+      ],
+      "reload": true,
+      "staleStateIgnored": true,
+      "result": "PASS"
+    },
+    {
+      "name": "empty",
+      "input": "",
+      "expectedProfile": "legacy",
+      "actual": {
+        "mode": "ALGEBRA",
+        "stage": "ANSWER",
+        "index": 0,
+        "text": [
+          {
+            "text": "Chọn hệ số.A. −6B. 6C. 5Chọn một.",
+            "visible": false
+          },
+          {
+            "text": "Bước 1",
+            "visible": true
+          },
+          {
+            "text": "Gợi ý",
+            "visible": false
+          }
+        ],
+        "tts": [
+          {
+            "region": "answer",
+            "text": "Bước 1"
+          }
+        ],
+        "stateKeys": [
+          "analysisStep",
+          "answerMode",
+          "answerStep",
+          "board",
+          "classroom",
+          "cover",
+          "index",
+          "lesson",
+          "lessonActivation",
+          "lessonId",
+          "lessonSourceKey",
+          "pan",
+          "pedagogy",
+          "pointer",
+          "sceneId",
+          "screenLite",
+          "showHint",
+          "smart",
+          "stateVersion",
+          "total",
+          "type",
+          "viewMode",
+          "zoom"
+        ]
+      },
+      "teacherEvents": [
+        {
+          "id": "legacy",
+          "name": "onLessonLoad",
+          "index": 0
+        },
+        {
+          "id": "legacy",
+          "name": "onStepChange",
+          "index": 1
+        }
+      ],
+      "tvSelectedProfileOnly": true,
+      "rendererModes": [
+        "ALGEBRA"
+      ],
+      "reload": true,
+      "staleStateIgnored": true,
+      "result": "PASS"
+    },
+    {
+      "name": "unknown",
+      "input": "unknown",
+      "expectedProfile": "legacy",
+      "actual": {
+        "mode": "ALGEBRA",
+        "stage": "ANSWER",
+        "index": 0,
+        "text": [
+          {
+            "text": "Chọn hệ số.A. −6B. 6C. 5Chọn một.",
+            "visible": false
+          },
+          {
+            "text": "Bước 1",
+            "visible": true
+          },
+          {
+            "text": "Gợi ý",
+            "visible": false
+          }
+        ],
+        "tts": [
+          {
+            "region": "answer",
+            "text": "Bước 1"
+          }
+        ],
+        "stateKeys": [
+          "analysisStep",
+          "answerMode",
+          "answerStep",
+          "board",
+          "classroom",
+          "cover",
+          "index",
+          "lesson",
+          "lessonActivation",
+          "lessonId",
+          "lessonSourceKey",
+          "pan",
+          "pedagogy",
+          "pointer",
+          "sceneId",
+          "screenLite",
+          "showHint",
+          "smart",
+          "stateVersion",
+          "total",
+          "type",
+          "viewMode",
+          "zoom"
+        ]
+      },
+      "teacherEvents": [
+        {
+          "id": "legacy",
+          "name": "onLessonLoad",
+          "index": 0
+        },
+        {
+          "id": "legacy",
+          "name": "onStepChange",
+          "index": 1
+        }
+      ],
+      "tvSelectedProfileOnly": true,
+      "rendererModes": [
+        "ALGEBRA"
+      ],
+      "reload": true,
+      "staleStateIgnored": true,
+      "result": "PASS"
+    },
+    {
+      "name": "invalid",
+      "input": {},
+      "expectedProfile": "legacy",
+      "actual": {
+        "mode": "ALGEBRA",
+        "stage": "ANSWER",
+        "index": 0,
+        "text": [
+          {
+            "text": "Chọn hệ số.A. −6B. 6C. 5Chọn một.",
+            "visible": false
+          },
+          {
+            "text": "Bước 1",
+            "visible": true
+          },
+          {
+            "text": "Gợi ý",
+            "visible": false
+          }
+        ],
+        "tts": [
+          {
+            "region": "answer",
+            "text": "Bước 1"
+          }
+        ],
+        "stateKeys": [
+          "analysisStep",
+          "answerMode",
+          "answerStep",
+          "board",
+          "classroom",
+          "cover",
+          "index",
+          "lesson",
+          "lessonActivation",
+          "lessonId",
+          "lessonSourceKey",
+          "pan",
+          "pedagogy",
+          "pointer",
+          "sceneId",
+          "screenLite",
+          "showHint",
+          "smart",
+          "stateVersion",
+          "total",
+          "type",
+          "viewMode",
+          "zoom"
+        ]
+      },
+      "teacherEvents": [
+        {
+          "id": "legacy",
+          "name": "onLessonLoad",
+          "index": 0
+        },
+        {
+          "id": "legacy",
+          "name": "onStepChange",
+          "index": 1
+        }
+      ],
+      "tvSelectedProfileOnly": true,
+      "rendererModes": [
+        "ALGEBRA"
+      ],
+      "reload": true,
+      "staleStateIgnored": true,
+      "result": "PASS"
+    },
+    {
+      "name": "legacy",
+      "input": "legacy",
+      "expectedProfile": "legacy",
+      "actual": {
+        "mode": "ALGEBRA",
+        "stage": "ANSWER",
+        "index": 0,
+        "text": [
+          {
+            "text": "Chọn hệ số.A. −6B. 6C. 5Chọn một.",
+            "visible": false
+          },
+          {
+            "text": "Bước 1",
+            "visible": true
+          },
+          {
+            "text": "Gợi ý",
+            "visible": false
+          }
+        ],
+        "tts": [
+          {
+            "region": "answer",
+            "text": "Bước 1"
+          }
+        ],
+        "stateKeys": [
+          "analysisStep",
+          "answerMode",
+          "answerStep",
+          "board",
+          "classroom",
+          "cover",
+          "index",
+          "lesson",
+          "lessonActivation",
+          "lessonId",
+          "lessonSourceKey",
+          "pan",
+          "pedagogy",
+          "pointer",
+          "sceneId",
+          "screenLite",
+          "showHint",
+          "smart",
+          "stateVersion",
+          "total",
+          "type",
+          "viewMode",
+          "zoom"
+        ]
+      },
+      "teacherEvents": [
+        {
+          "id": "legacy",
+          "name": "onLessonLoad",
+          "index": 0
+        },
+        {
+          "id": "legacy",
+          "name": "onStepChange",
+          "index": 1
+        }
+      ],
+      "tvSelectedProfileOnly": true,
+      "rendererModes": [
+        "ALGEBRA"
+      ],
+      "reload": true,
+      "staleStateIgnored": true,
+      "result": "PASS"
+    },
+    {
+      "name": "geometry",
+      "input": "geometry",
+      "expectedProfile": "geometry",
+      "actual": {
+        "mode": "GEOMETRY",
+        "stage": "PROOF",
+        "index": 0,
+        "text": [
+          {
+            "text": "Chọn hệ số.A. −6B. 6C. 5Chọn một.",
+            "visible": false
+          },
+          {
+            "text": "Bước 1",
+            "visible": true
+          },
+          {
+            "text": "Gợi ý",
+            "visible": false
+          }
+        ],
+        "tts": [
+          {
+            "region": "answer",
+            "text": "Bước 1"
+          }
+        ],
+        "stateKeys": [
+          "analysisStep",
+          "answerMode",
+          "answerStep",
+          "board",
+          "classroom",
+          "cover",
+          "index",
+          "lesson",
+          "lessonActivation",
+          "lessonId",
+          "lessonSourceKey",
+          "pan",
+          "pedagogy",
+          "pointer",
+          "sceneId",
+          "screenLite",
+          "showHint",
+          "smart",
+          "stateVersion",
+          "total",
+          "type",
+          "viewMode",
+          "zoom"
+        ]
+      },
+      "teacherEvents": [
+        {
+          "id": "geometry",
+          "name": "onLessonLoad",
+          "index": 0
+        },
+        {
+          "id": "geometry",
+          "name": "onStepChange",
+          "index": 1
+        }
+      ],
+      "tvSelectedProfileOnly": true,
+      "rendererModes": [
+        "GEOMETRY"
+      ],
+      "reload": true,
+      "staleStateIgnored": true,
+      "result": "PASS"
+    },
+    {
+      "name": "algebra",
+      "input": "algebra",
+      "expectedProfile": "algebra",
+      "actual": {
+        "mode": "ALGEBRA",
+        "stage": "ANSWER",
+        "index": 0,
+        "text": [
+          {
+            "text": "Chọn hệ số.A. −6B. 6C. 5Chọn một.",
+            "visible": false
+          },
+          {
+            "text": "Bước 1",
+            "visible": true
+          },
+          {
+            "text": "Gợi ý",
+            "visible": false
+          }
+        ],
+        "tts": [
+          {
+            "region": "answer",
+            "text": "Bước 1"
+          }
+        ],
+        "stateKeys": [
+          "analysisStep",
+          "answerMode",
+          "answerStep",
+          "board",
+          "classroom",
+          "cover",
+          "index",
+          "lesson",
+          "lessonActivation",
+          "lessonId",
+          "lessonSourceKey",
+          "pan",
+          "pedagogy",
+          "pointer",
+          "sceneId",
+          "screenLite",
+          "showHint",
+          "smart",
+          "stateVersion",
+          "total",
+          "type",
+          "viewMode",
+          "zoom"
+        ]
+      },
+      "teacherEvents": [
+        {
+          "id": "algebra",
+          "name": "onLessonLoad",
+          "index": 0
+        },
+        {
+          "id": "algebra",
+          "name": "onStepChange",
+          "index": 1
+        }
+      ],
+      "tvSelectedProfileOnly": true,
+      "rendererModes": [
+        "ALGEBRA"
+      ],
+      "reload": true,
+      "staleStateIgnored": true,
+      "result": "PASS"
+    },
+    {
+      "name": "informatics",
+      "input": "informatics",
+      "expectedProfile": "informatics",
+      "actual": {
+        "mode": "COMPUTER_SCIENCE",
+        "stage": "ANSWER",
+        "index": 0,
+        "text": [
+          {
+            "text": "Chọn hệ số.A. −6B. 6C. 5Chọn một.",
+            "visible": false
+          },
+          {
+            "text": "Bước 1",
+            "visible": true
+          },
+          {
+            "text": "Gợi ý",
+            "visible": false
+          }
+        ],
+        "tts": [
+          {
+            "region": "answer",
+            "text": "Bước 1"
+          }
+        ],
+        "stateKeys": [
+          "analysisStep",
+          "answerMode",
+          "answerStep",
+          "board",
+          "classroom",
+          "cover",
+          "index",
+          "lesson",
+          "lessonActivation",
+          "lessonId",
+          "lessonSourceKey",
+          "pan",
+          "pedagogy",
+          "pointer",
+          "sceneId",
+          "screenLite",
+          "showHint",
+          "smart",
+          "stateVersion",
+          "total",
+          "type",
+          "viewMode",
+          "zoom"
+        ]
+      },
+      "teacherEvents": [
+        {
+          "id": "informatics",
+          "name": "onLessonLoad",
+          "index": 0
+        },
+        {
+          "id": "informatics",
+          "name": "onStepChange",
+          "index": 1
+        }
+      ],
+      "tvSelectedProfileOnly": true,
+      "rendererModes": [
+        "COMPUTER_SCIENCE"
+      ],
+      "reload": true,
+      "staleStateIgnored": true,
+      "result": "PASS"
+    }
+  ],
+  "demo": [
+    {
+      "port": 8770,
+      "states": [
+        {
+          "index": 0,
+          "question": {
+            "mode": "GENERIC",
+            "stage": "QUESTION",
+            "index": 0,
+            "text": [
+              {
+                "text": "Chuyển màn không tự mở ứng dụng. Mã kết nối chỉ điền trên máy giáo viên.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Chuyển màn không tự mở ứng dụng. Mã kết nối chỉ điền trên máy giáo viên."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          },
+          "full": {
+            "mode": "GENERIC",
+            "stage": "ANSWER",
+            "index": 0,
+            "text": [
+              {
+                "text": "Chuyển màn không tự mở ứng dụng. Mã kết nối chỉ điền trên máy giáo viên.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Chuyển màn không tự mở ứng dụng. Mã kết nối chỉ điền trên máy giáo viên."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          }
+        },
+        {
+          "index": 1,
+          "question": {
+            "mode": "GENERIC",
+            "stage": "DEMO",
+            "index": 1,
+            "text": [
+              {
+                "text": "Quan sát tệp Word mẫu và quay lại bài học.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Quan sát tệp Word mẫu và quay lại bài học."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          },
+          "full": {
+            "mode": "GENERIC",
+            "stage": "ANSWER",
+            "index": 1,
+            "text": [
+              {
+                "text": "Quan sát tệp Word mẫu và quay lại bài học.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Quan sát tệp Word mẫu và quay lại bài học."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "question": {
+            "mode": "GENERIC",
+            "stage": "DEMO",
+            "index": 2,
+            "text": [
+              {
+                "text": "Quan sát các điểm A, B, C, D trên hình.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Quan sát các điểm A, B, C, D trên hình."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          },
+          "full": {
+            "mode": "GENERIC",
+            "stage": "ANSWER",
+            "index": 2,
+            "text": [
+              {
+                "text": "Quan sát các điểm A, B, C, D trên hình.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Quan sát các điểm A, B, C, D trên hình."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "question": {
+            "mode": "GENERIC",
+            "stage": "QUESTION",
+            "index": 3,
+            "text": [
+              {
+                "text": "Tiếp tục bài học tại đúng màn đã chọn.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Tiếp tục bài học tại đúng màn đã chọn."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          },
+          "full": {
+            "mode": "GENERIC",
+            "stage": "ANSWER",
+            "index": 3,
+            "text": [
+              {
+                "text": "Tiếp tục bài học tại đúng màn đã chọn.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Tiếp tục bài học tại đúng màn đã chọn."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          }
+        }
+      ],
+      "lessonUnchanged": true,
+      "nativeApplications": "UNRUN: Linux cloud, no Win32 Word/GeoGebra"
+    },
+    {
+      "port": 8771,
+      "states": [
+        {
+          "index": 0,
+          "question": {
+            "mode": "GENERIC",
+            "stage": "QUESTION",
+            "index": 0,
+            "text": [
+              {
+                "text": "Chuyển màn không tự mở ứng dụng. Mã kết nối chỉ điền trên máy giáo viên.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Chuyển màn không tự mở ứng dụng. Mã kết nối chỉ điền trên máy giáo viên."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          },
+          "full": {
+            "mode": "GENERIC",
+            "stage": "ANSWER",
+            "index": 0,
+            "text": [
+              {
+                "text": "Chuyển màn không tự mở ứng dụng. Mã kết nối chỉ điền trên máy giáo viên.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Chuyển màn không tự mở ứng dụng. Mã kết nối chỉ điền trên máy giáo viên."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          }
+        },
+        {
+          "index": 1,
+          "question": {
+            "mode": "GENERIC",
+            "stage": "DEMO",
+            "index": 1,
+            "text": [
+              {
+                "text": "Quan sát tệp Word mẫu và quay lại bài học.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Quan sát tệp Word mẫu và quay lại bài học."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          },
+          "full": {
+            "mode": "GENERIC",
+            "stage": "ANSWER",
+            "index": 1,
+            "text": [
+              {
+                "text": "Quan sát tệp Word mẫu và quay lại bài học.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Quan sát tệp Word mẫu và quay lại bài học."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "question": {
+            "mode": "GENERIC",
+            "stage": "DEMO",
+            "index": 2,
+            "text": [
+              {
+                "text": "Quan sát các điểm A, B, C, D trên hình.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Quan sát các điểm A, B, C, D trên hình."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          },
+          "full": {
+            "mode": "GENERIC",
+            "stage": "ANSWER",
+            "index": 2,
+            "text": [
+              {
+                "text": "Quan sát các điểm A, B, C, D trên hình.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Quan sát các điểm A, B, C, D trên hình."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "question": {
+            "mode": "GENERIC",
+            "stage": "QUESTION",
+            "index": 3,
+            "text": [
+              {
+                "text": "Tiếp tục bài học tại đúng màn đã chọn.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Tiếp tục bài học tại đúng màn đã chọn."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          },
+          "full": {
+            "mode": "GENERIC",
+            "stage": "ANSWER",
+            "index": 3,
+            "text": [
+              {
+                "text": "Tiếp tục bài học tại đúng màn đã chọn.",
+                "visible": true
+              },
+              {
+                "text": "",
+                "visible": false
+              },
+              {
+                "text": "",
+                "visible": false
+              }
+            ],
+            "tts": [
+              {
+                "region": "content",
+                "text": "Tiếp tục bài học tại đúng màn đã chọn."
+              }
+            ],
+            "stateKeys": [
+              "analysisStep",
+              "answerMode",
+              "answerStep",
+              "board",
+              "classroom",
+              "cover",
+              "index",
+              "lesson",
+              "lessonActivation",
+              "lessonId",
+              "lessonSourceKey",
+              "pan",
+              "pedagogy",
+              "pointer",
+              "sceneId",
+              "screenLite",
+              "showHint",
+              "smart",
+              "stateVersion",
+              "total",
+              "type",
+              "viewMode",
+              "zoom"
+            ]
+          }
+        }
+      ],
+      "lessonUnchanged": true,
+      "nativeApplications": "UNRUN: Linux cloud, no Win32 Word/GeoGebra"
+    }
+  ],
+  "errors": []
+}

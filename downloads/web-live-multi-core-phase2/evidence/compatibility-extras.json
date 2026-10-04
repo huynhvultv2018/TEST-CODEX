@@ -1,0 +1,70 @@
+{
+  "browser": "151.0.7922.173",
+  "runs": [
+    {
+      "port": 8770,
+      "checks": [
+        "real keyboard Next/Previous/step/zoom",
+        "zoom pan pointer/disclosure reset on navigation",
+        "native progress CSS transitionend",
+        "clock advances",
+        "old TV packet without new metadata/activation/source/version (existing overlay contract retained)",
+        "pre-existing generic-label stage divergence unchanged"
+      ],
+      "animation": {
+        "duration": "0.15s",
+        "width": "60%",
+        "completed": true
+      },
+      "oldPacket": {
+        "mode": "GEOMETRY",
+        "index": 5,
+        "content": "ABCD là hình bình hành.\nAH, CK ⟂ BD.\nChứng minh AHCK là hình bình hành.",
+        "stage": "QUESTION",
+        "figure": true
+      },
+      "malformedState": {
+        "message": "Cannot read properties of null (reading 'baseRevision')",
+        "baselineLimit": "Synthetic packet missing the pre-existing board contract"
+      },
+      "stageDivergence": {
+        "teacher": "ANSWER",
+        "tv": "PROOF"
+      },
+      "errors": []
+    },
+    {
+      "port": 8771,
+      "checks": [
+        "real keyboard Next/Previous/step/zoom",
+        "zoom pan pointer/disclosure reset on navigation",
+        "native progress CSS transitionend",
+        "clock advances",
+        "old TV packet without new metadata/activation/source/version (existing overlay contract retained)",
+        "pre-existing generic-label stage divergence unchanged"
+      ],
+      "animation": {
+        "duration": "0.15s",
+        "width": "60%",
+        "completed": true
+      },
+      "oldPacket": {
+        "mode": "GEOMETRY",
+        "index": 5,
+        "content": "ABCD là hình bình hành.\nAH, CK ⟂ BD.\nChứng minh AHCK là hình bình hành.",
+        "stage": "QUESTION",
+        "figure": true
+      },
+      "malformedState": {
+        "message": "Cannot read properties of null (reading 'baseRevision')",
+        "baselineLimit": "Synthetic packet missing the pre-existing board contract"
+      },
+      "stageDivergence": {
+        "teacher": "ANSWER",
+        "tv": "PROOF"
+      },
+      "errors": []
+    }
+  ],
+  "result": "PASS"
+}

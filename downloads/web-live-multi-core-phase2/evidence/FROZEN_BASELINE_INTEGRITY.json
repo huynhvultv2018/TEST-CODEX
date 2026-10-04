@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "zip_crc": true,
+  "zip_sha256": "1ccce4f35bf807e498bdf13ca3275e660faa7b50842298ffdeb825e8a3ed917f",
+  "source_fingerprint_sha256": "f3236843911aa48b5bbd515ea9d7e51b6a51aae12b12edb3a7898b84c2c7bd0a",
+  "files_checked": 770,
+  "added": [],
+  "removed": [],
+  "changed": [],
+  "baseline_mutated": false,
+  "source_modified": false,
+  "production_modified": false
+}

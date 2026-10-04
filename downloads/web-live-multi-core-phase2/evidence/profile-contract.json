@@ -1,0 +1,31 @@
+{
+  "runtime": "v24.19.0",
+  "checks": [
+    {
+      "name": "Metadata only, deterministic fallback and normalized explicit IDs",
+      "result": "PASS"
+    },
+    {
+      "name": "Immutable descriptors; three registered stubs without subject features",
+      "result": "PASS"
+    },
+    {
+      "name": "Selected profile lifecycle only; repaint does not repeat load/step; dispose on switch",
+      "result": "PASS"
+    },
+    {
+      "name": "Stale queued TV renders cannot dispatch to current profile",
+      "result": "PASS"
+    },
+    {
+      "name": "Unknown hooks rejected, unsubscribe effective, extension errors contained",
+      "result": "PASS"
+    },
+    {
+      "name": "Fallback diagnostics bounded and invalid metadata does not alter input/state",
+      "result": "PASS"
+    }
+  ],
+  "eventCount": 318,
+  "diagnosticLimit": 100
+}
