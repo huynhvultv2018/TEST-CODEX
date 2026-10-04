@@ -1,0 +1,12 @@
+--- original/lesson.json
++++ patched/lesson.json
+@@ -320,7 +320,8 @@
+       "answer": "DEBF là hình bình hành.",
+       "teacherNote": "Áp dụng Định lí 2b cho cùng cặp EB,DF.",
+       "note": "Áp dụng Định lí 2b cho cùng cặp EB,DF.",
+-      "image": ""
++      "image": "",
++      "sceneEnd": true
+     },
+     {
+       "id": 20,

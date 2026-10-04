@@ -1,0 +1,53 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "port": 8773,
+      "path": "WEB_LIVE/teacher.html",
+      "sha256": "7dc3a5cbaaa5634c2dba758300a551f2d53daef6c8ebf00d45228b520bd94160",
+      "servedBytesMatchSource": true
+    },
+    {
+      "port": 8773,
+      "path": "WEB_LIVE/tv.html",
+      "sha256": "45f119d0161c08fd7c7711ed7ac6886e948bf91a188a3221850bd81c7b89582f",
+      "servedBytesMatchSource": true
+    },
+    {
+      "port": 8773,
+      "path": "WEB_LIVE/core-profiles.js",
+      "sha256": "ba77af2743bd4a811f2e6a95934f57a6fd8eb9b9a2e49197bf969c03a8554584",
+      "servedBytesMatchSource": true
+    },
+    {
+      "port": 8773,
+      "path": "WEB_LIVE/common.js",
+      "sha256": "24b7ca82671df3e1d887b1bec0f4787c08ea759ea106590ab943844ea1ffab03",
+      "servedBytesMatchSource": true
+    },
+    {
+      "port": 8771,
+      "path": "WEB_LIVE/teacher.html",
+      "sha256": "81444e890d7626cfd2e56269977da42fd9393e780c3d4e13564a8df45edb7968",
+      "servedBytesMatchSource": true
+    },
+    {
+      "port": 8771,
+      "path": "WEB_LIVE/tv.html",
+      "sha256": "bdf940d5e0beff2d8997c79a9177bcc4874867f05775e9194cef970589e04522",
+      "servedBytesMatchSource": true
+    },
+    {
+      "port": 8771,
+      "path": "WEB_LIVE/core-profiles.js",
+      "sha256": "b162f6b9599d17849b909c0203c1afc8b2443ad55d656fd7b6f6088c7059fb75",
+      "servedBytesMatchSource": true
+    },
+    {
+      "port": 8771,
+      "path": "WEB_LIVE/common.js",
+      "sha256": "0aed617c8e2813ab725cbb75a2de927ff72ef5b4481ec20d11e2759cbba6a3f7",
+      "servedBytesMatchSource": true
+    }
+  ]
+}

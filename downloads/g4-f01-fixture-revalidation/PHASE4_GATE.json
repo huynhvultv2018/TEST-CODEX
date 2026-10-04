@@ -1,0 +1,11 @@
+{
+  "result": "NOT_PASS",
+  "exitCode": 1,
+  "targeted": "PASS",
+  "closureAllowed": false,
+  "failedNativeChecks": [
+    "Focus retains all previously disclosed proof context",
+    "Same-figure navigation preserves zoom"
+  ],
+  "acceptanceGaps": "SOẠN_TRƯỚC/full authoring, Windows/physical TV/last-row/audible TTS/actual GV class UNRUN or partial."
+}

@@ -1,0 +1,66 @@
+{
+  "result": "PASS",
+  "groups": [
+    {
+      "name": "VD2",
+      "startIndex": 5,
+      "endIndex": 10,
+      "expectedImage": "VD2_H331.png",
+      "expectedSHA256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+      "screens": 6,
+      "checkedStates": 18,
+      "baseImageAndScopePersist": "PASS"
+    },
+    {
+      "name": "LT2",
+      "startIndex": 11,
+      "endIndex": 19,
+      "expectedImage": "LT2_H332.png",
+      "expectedSHA256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+      "screens": 9,
+      "checkedStates": 22,
+      "baseImageAndScopePersist": "PASS"
+    },
+    {
+      "name": "TT2",
+      "startIndex": 20,
+      "endIndex": 20,
+      "expectedImage": "TT2_H333.png",
+      "expectedSHA256": "b59beaa64e5521a2d5fa46a15c6caf9172e0e52beadd5831f645a4e613cb5cb7",
+      "screens": 1,
+      "checkedStates": 3,
+      "baseImageAndScopePersist": "PASS"
+    },
+    {
+      "name": "VD3",
+      "startIndex": 23,
+      "endIndex": 25,
+      "expectedImage": "VD3_H334.png",
+      "expectedSHA256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62",
+      "screens": 3,
+      "checkedStates": 6,
+      "baseImageAndScopePersist": "PASS"
+    },
+    {
+      "name": "LT3",
+      "startIndex": 26,
+      "endIndex": 28,
+      "expectedImage": "LT3_Hinh.png",
+      "expectedSHA256": "df741e56c51d49a3055189d4342a97e60cb753baf211a34b52d4f41c89bd5740",
+      "screens": 3,
+      "checkedStates": 7,
+      "baseImageAndScopePersist": "PASS"
+    },
+    {
+      "name": "VDU",
+      "startIndex": 29,
+      "endIndex": 32,
+      "expectedImage": "VDU_H327.png",
+      "expectedSHA256": "12e1f76365535da45ecebf10ad3306b499b7e008f10b411faafa0d57ecbfd81d",
+      "screens": 4,
+      "checkedStates": 9,
+      "baseImageAndScopePersist": "PASS"
+    }
+  ],
+  "scope": "Persistent base and scope within each exercise, including all disclosed analysis/answer states. New exercise boundaries separately tested by TARGETED_G4F01.json. No new missing scene boundary observed."
+}

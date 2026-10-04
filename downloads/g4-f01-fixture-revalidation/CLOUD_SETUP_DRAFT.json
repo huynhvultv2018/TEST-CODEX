@@ -1,0 +1,13 @@
+{
+  "status": "saved",
+  "draft_id": "98edf5de-aa28-4915-b97d-7068d482f30d~cecfgdraft_6ac2077d0e68819888a7efb4851101fc",
+  "updatedFields": [
+    "start_skill"
+  ],
+  "requires_publish": true,
+  "runtimeAlreadyTested": true,
+  "publishedThisTurn": false,
+  "newTaskRestorationTested": false,
+  "installScriptChanged": false,
+  "networkOrSecretsChanged": false
+}

@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "verifiedAtUTC": "2026-10-04T13:58:27.540685+00:00",
+  "candidateSHA256Before": "8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c",
+  "candidateSHA256After": "8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c",
+  "candidateMutated": false,
+  "sourceFileCount": 1227,
+  "sourceManifestBeforeEqualsAfter": true,
+  "sourceMatchesApprovedZIP": true,
+  "originalFixtureSHA256": "b502802ab694aa4ee2cc57bb7e053a06fd534580d8d7285f8a55d91428945bd7",
+  "originalFixturePreserved": true,
+  "sourceScopeViolation": false,
+  "productionModified": false
+}

@@ -1,0 +1,63 @@
+{
+  "result": "NOT_PASS",
+  "targetedResult": "PASS",
+  "closureAllowed": false,
+  "nativeChecks": {
+    "executed": 15,
+    "pass": 13,
+    "fail": 2
+  },
+  "failedChecks": [
+    {
+      "name": "Focus retains all previously disclosed proof context",
+      "result": "FAIL",
+      "evidence": [
+        {
+          "text": "AD = CB, góc D₁ = góc B₁.",
+          "display": "block",
+          "opacity": "1",
+          "focused": true
+        },
+        {
+          "text": "∆AHD ≅ ∆CKB ⇒ AH = CK.",
+          "display": "none",
+          "opacity": "0.52",
+          "focused": false
+        }
+      ]
+    },
+    {
+      "name": "Same-figure navigation preserves zoom",
+      "result": "FAIL",
+      "evidence": {
+        "before": 1.15,
+        "after": 1,
+        "from": 9,
+        "to": 10
+      }
+    }
+  ],
+  "all35ScreensWalked": true,
+  "revealedAnswerProofBlocks": 49,
+  "authoredProofLinkBlocks": 4,
+  "wholeLessonTVStates": 140,
+  "layoutViewportCases": 24,
+  "remainingAcceptance": "SOẠN_TRƯỚC/full authoring, Windows/physical TV/last-row/audible TTS/actual GV class UNRUN or partial.",
+  "evaluatedAtUTC": "2026-10-04T14:03:23.158357+00:00",
+  "gateStatuses": {
+    "REAL_LESSON_LOAD": "PASS",
+    "PREP_TO_LIVE_FLOW": "PARTIAL — authored ZIP import PASS; SOẠN_TRƯỚC producer UNRUN",
+    "PERSISTENT_GEOMETRY_REAL_LESSON": "PASS",
+    "PROOF_FIGURE_LINK": "PARTIAL — authored VD2 links PASS; full-lesson authoring not certified",
+    "GT_KL_READABILITY": "PASS — tested equivalent viewports/contrast",
+    "LAYOUT_70_30": "PASS",
+    "LAYOUT_60_40": "PASS",
+    "FIGURE_FULLSCREEN": "PASS",
+    "GEOMETRY_FOCUS_REAL_LESSON": "FAIL — G4-F03",
+    "FIGURE_ZOOM_REAL_LESSON": "FAIL — G4-F02 navigation; zoom/return PASS",
+    "ANNOTATION_REAL_LESSON": "PASS",
+    "TV_READABILITY": "PARTIAL — viewport fit PASS; physical/last-row acceptance UNRUN",
+    "TEACHER_OPERABILITY": "PARTIAL — native controls PASS; G4-F02/F03 remain",
+    "CLASSROOM_FLOW": "PARTIAL — 35-screen software flow PASS; actual class UNRUN"
+  }
+}

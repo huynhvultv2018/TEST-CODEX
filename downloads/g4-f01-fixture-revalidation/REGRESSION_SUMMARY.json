@@ -1,0 +1,47 @@
+{
+  "result": "PASS",
+  "freshRun": true,
+  "browser": "151.0.7922.173",
+  "legacyRuntimeRegression": "PASS",
+  "algebraProfileIsolation": "PASS",
+  "informaticsProfileIsolation": "PASS",
+  "pairedRealPackages": [
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip",
+      "screens": 41,
+      "states": 82
+    },
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN6_W05_LIVE_RC3_PED1.zip",
+      "screens": 32,
+      "states": 64
+    },
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN8_W04_LIVE_RC3_PED1.zip",
+      "screens": 29,
+      "states": 58
+    },
+    {
+      "package": "WEB_LIVE/HINH_HOC_8_T04_T07_LIVE_TEST.zip",
+      "screens": 34,
+      "states": 68
+    },
+    {
+      "package": "WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip",
+      "screens": 35,
+      "states": 70
+    }
+  ],
+  "realScreensPerRuntime": 171,
+  "realStatesPerRuntime": 342,
+  "demoScreens": 4,
+  "demoStates": 8,
+  "pairedMetricsPerRuntime": 44,
+  "assertionsPerRuntime": 15,
+  "isolationAndNegativeCases": 14,
+  "zeroOverflow": true,
+  "zeroExceptions": true,
+  "zeroExternalRequests": true,
+  "lessonSourcesUnchanged": true,
+  "scope": "Real original packages + Demo are paired with Phase2; interface/negative isolation fixtures are regression probes, not real pedagogical lesson evidence. Windows/audio acceptance UNRUN."
+}

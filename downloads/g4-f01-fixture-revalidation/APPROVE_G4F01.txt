@@ -1,0 +1,503 @@
+# APPROVE G4-F01 — FIXTURE-ONLY PATCH
+## THEN RE-RUN PHASE 4 VALIDATION
+
+Căn cứ blocking finding:
+
+```text id="rtv87e"
+BLOCKING_FINDING_ID = G4-F01
+CLASSIFICATION = P1
+
+ROOT_CAUSE_CONFIRMED = YES
+
+CORE_OR_GEOMETRY_PROFILE = LESSON_PACKAGE
+
+LEGACY_AFFECTED = NO
+ALGEBRA_AFFECTED = NO
+INFORMATICS_AFFECTED = NO
+
+MINIMAL_PATCH_POSSIBLE = YES
+```
+
+Tôi phê duyệt:
+
+```text id="l3fh74"
+PATCH G4-F01 — FIXTURE ONLY
+```
+
+Sau đó:
+
+```text id="4jiv8i"
+RE-RUN PHASE 4
+```
+
+==================================================
+1. SOURCE CANDIDATE — KHÓA
+==================================================
+
+Giữ nguyên:
+
+```text id="07qu91"
+WEB_LIVE_GEOMETRY_PHASE3_CANDIDATE
+```
+
+SHA256:
+
+```text id="w3nup3"
+8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c
+```
+
+KHÔNG sửa candidate.
+
+Trước và sau validation phải chứng minh:
+
+```text id="pr2mtm"
+PHASE3_CANDIDATE_SHA256_BEFORE
+=
+PHASE3_CANDIDATE_SHA256_AFTER
+```
+
+==================================================
+2. FIXTURE ĐƯỢC PHÉP PATCH
+==================================================
+
+Chỉ được patch:
+
+```text id="jswxnx"
+GEOMETRY_PHASE3_TEST_PACKAGES/
+HINH8_VD2_GEOMETRY_PROFILE_TEST.zip
+```
+
+Original SHA256:
+
+```text id="3v9x22"
+b502802ab694aa4ee2cc57bb7e053a06fd534580d8d7285f8a55d91428945bd7
+```
+
+Không ghi đè fixture gốc.
+
+Giữ fixture gốc làm evidence.
+
+==================================================
+3. ROOT CAUSE ĐÃ CHỐT
+==================================================
+
+Fixture kích hoạt:
+
+```text id="bgc7pm"
+figureId = LT2
+```
+
+nhưng không kết thúc geometry context khi LT2 kết thúc.
+
+Do đó:
+
+```text id="b7h9p2"
+current figure context = LT2
+```
+
+tiếp tục tồn tại sang các exercise sau.
+
+Engine thực hiện đúng contract hiện hữu.
+
+Vì vậy:
+
+```text id="mr6g79"
+DO NOT PATCH CORE
+DO NOT PATCH GEOMETRY_PROFILE
+DO NOT CHANGE VISUAL RESOLUTION LOGIC
+```
+
+==================================================
+4. PATCH DUY NHẤT ĐƯỢC PHÉP
+==================================================
+
+Patch metadata của:
+
+```text id="80lxuw"
+lesson.json
+```
+
+trong test fixture.
+
+Tại màn:
+
+```text id="tf8ao5"
+“Chốt ý b”
+index = 19
+```
+
+thêm boundary phù hợp với contract hiện hữu:
+
+```text id="4u7t0f"
+sceneEnd
+```
+
+để kết thúc scope:
+
+```text id="xkjfgp"
+LT2
+```
+
+Không tự phát minh schema mới.
+
+Phải sử dụng đúng `sceneEnd` mà Geometry engine hiện đã hỗ trợ.
+
+==================================================
+5. KHÔNG SỬA NỘI DUNG
+==================================================
+
+Không được sửa:
+
+```text id="kcbvsh"
+QUESTION
+ANSWER
+HINT
+PROOF
+GT/KL
+PEDAGOGICAL CONTENT
+TEXT
+ASSETS
+IMAGE FILES
+```
+
+Không thay:
+
+```text id="vt50cs"
+TT2_H333.png
+VD3_H334.png
+LT3_Hinh.png
+VDU_H327.png
+LT2_H332.png
+```
+
+Chỉ sửa metadata boundary cần thiết.
+
+==================================================
+6. TẠO FIXTURE MỚI
+==================================================
+
+Không ghi đè fixture gốc.
+
+Tạo:
+
+```text id="w0dr4f"
+HINH8_VD2_GEOMETRY_PROFILE_TEST_G4F01_PATCHED.zip
+```
+
+Tính SHA256 mới.
+
+Báo:
+
+```text id="v0g5a6"
+FIXTURE_SHA256_BEFORE =
+FIXTURE_SHA256_AFTER =
+```
+
+==================================================
+7. KIỂM TRA TRỰC TIẾP G4-F01
+==================================================
+
+Sau patch, chạy lại đúng reproduction path.
+
+Kiểm tra:
+
+```text id="4jwbzi"
+Màn 21 — index 20
+Bốn đoạn xích
+
+Màn 24 — index 23
+Hình 3.34a
+
+Màn 27 — index 26
+Dựng hình
+
+Màn 30 — index 29
+Điểm O và hai đường
+```
+
+Yêu cầu:
+
+Các màn này KHÔNG còn kế thừa sai:
+
+```text id="uw7zso"
+figureId = LT2
+```
+
+và KHÔNG tiếp tục render:
+
+```text id="l35xuj"
+LT2_H332.png
+```
+
+==================================================
+8. XÁC MINH ẢNH
+==================================================
+
+Đối chiếu ảnh mong đợi:
+
+```text id="p9m03w"
+TT2_H333.png
+VD3_H334.png
+LT3_Hinh.png
+VDU_H327.png
+```
+
+Không chỉ kiểm tra tên/path.
+
+Nếu hệ thống test hiện hỗ trợ hash/screenshot:
+
+phải tiếp tục dùng evidence đó.
+
+Mục tiêu:
+
+```text id="mknsnf"
+EXPECTED IMAGE
+=
+ACTUAL RENDERED IMAGE
+```
+
+cho từng màn tương ứng.
+
+==================================================
+9. KIỂM TRA SCENE BOUNDARY
+==================================================
+
+Không chỉ kiểm tra 4 màn lỗi.
+
+Kiểm tra cả:
+
+```text id="oz66z5"
+BEFORE sceneEnd
+AT sceneEnd
+AFTER sceneEnd
+NEXT EXERCISE
+```
+
+Xác minh:
+
+```text id="iw7x69"
+LT2 CONTEXT
+→ sceneEnd
+→ CLEARED
+```
+
+và không xảy ra:
+
+```text id="wuzc84"
+STATE LEAK
+```
+
+==================================================
+10. KHÔNG AUTO-PATCH CÁC SCENE KHÁC
+==================================================
+
+Nếu phát hiện scene/figure khác cũng thiếu boundary:
+
+KHÔNG tự sửa hàng loạt.
+
+Ghi finding mới:
+
+```text id="znqksp"
+FINDING_ID
+SCREEN
+INDEX
+FIGURE_CONTEXT
+EXPECTED
+ACTUAL
+SEVERITY
+```
+
+Sau đó đánh giá trong Phase 4.
+
+==================================================
+11. RE-RUN FULL PHASE 4
+==================================================
+
+Sau khi G4-F01 targeted test PASS:
+
+chạy lại toàn bộ Phase 4.
+
+Không chỉ đổi:
+
+```text id="h7umvx"
+G4-F01 = PASS
+```
+
+rồi kết luận Phase 4 PASS.
+
+Phải chạy lại:
+
+```text id="gnrzlb"
+REAL_LESSON_LOAD
+PREP_TO_LIVE_FLOW
+
+PERSISTENT_GEOMETRY_REAL_LESSON
+PROOF_FIGURE_LINK
+GT_KL_READABILITY
+
+LAYOUT_70_30
+LAYOUT_60_40
+FIGURE_FULLSCREEN
+
+GEOMETRY_FOCUS_REAL_LESSON
+FIGURE_ZOOM_REAL_LESSON
+ANNOTATION_REAL_LESSON
+
+TV_READABILITY
+TEACHER_OPERABILITY
+CLASSROOM_FLOW
+```
+
+==================================================
+12. REGRESSION
+==================================================
+
+Chạy lại:
+
+```text id="uhobxz"
+LEGACY_RUNTIME_REGRESSION
+
+ALGEBRA_PROFILE_ISOLATION
+
+INFORMATICS_PROFILE_ISOLATION
+```
+
+Yêu cầu:
+
+```text id="49cfm3"
+PASS
+```
+
+==================================================
+13. PHASE 3 CANDIDATE IMMUTABILITY
+==================================================
+
+Đặc biệt xác minh:
+
+```text id="xkmd9f"
+PHASE3_CANDIDATE_MUTATED = NO
+```
+
+G4-F01 không phải lý do tạo:
+
+```text id="bc64qi"
+PHASE3 RC2
+PHASE3 PATCH
+ENGINE HOTFIX
+CORE HOTFIX
+```
+
+Không tạo các bản đó.
+
+==================================================
+14. RISK RECLASSIFICATION
+==================================================
+
+Sau revalidation, G4-F01 có thể được đóng chỉ khi:
+
+```text id="s15b1s"
+ROOT CAUSE = FIXTURE METADATA
+
+FIXTURE PATCH = PASS
+
+TARGETED TEST = PASS
+
+FULL PHASE4 REVALIDATION = PASS
+```
+
+Khi đó ghi:
+
+```text id="4grh0p"
+G4-F01_STATUS = CLOSED
+```
+
+Không xóa finding khỏi audit history.
+
+==================================================
+15. FINAL REPORT
+==================================================
+
+Trả:
+
+```text id="umqod6"
+PHASE3_CANDIDATE_SHA256_BEFORE =
+PHASE3_CANDIDATE_SHA256_AFTER =
+PHASE3_CANDIDATE_MUTATED =
+
+FIXTURE_ORIGINAL_SHA256 =
+FIXTURE_PATCHED_SHA256 =
+
+G4_F01_PATCH_SCOPE =
+G4_F01_TARGETED_TEST =
+G4_F01_STATUS =
+
+SCREEN_20_IMAGE =
+SCREEN_23_IMAGE =
+SCREEN_26_IMAGE =
+SCREEN_29_IMAGE =
+
+REAL_LESSON_LOAD =
+PREP_TO_LIVE_FLOW =
+
+PERSISTENT_GEOMETRY_REAL_LESSON =
+PROOF_FIGURE_LINK =
+GT_KL_READABILITY =
+
+LAYOUT_70_30 =
+LAYOUT_60_40 =
+FIGURE_FULLSCREEN =
+
+GEOMETRY_FOCUS_REAL_LESSON =
+FIGURE_ZOOM_REAL_LESSON =
+ANNOTATION_REAL_LESSON =
+
+TV_READABILITY =
+TEACHER_OPERABILITY =
+CLASSROOM_FLOW =
+
+P0_COUNT =
+P1_COUNT =
+P2_COUNT =
+P3_COUNT =
+
+REMAINING_RISK_COUNT =
+BLOCKING_RISK_COUNT =
+
+LEGACY_RUNTIME_REGRESSION =
+ALGEBRA_PROFILE_ISOLATION =
+INFORMATICS_PROFILE_ISOLATION =
+
+SOURCE_SCOPE_VIOLATION =
+PRODUCTION_MODIFIED =
+
+PHASE4_STATUS =
+RECOMMENDED_NEXT_ACTION =
+```
+
+==================================================
+16. STOP CONDITION
+==================================================
+
+Sau:
+
+```text id="1bdeuk"
+FIXTURE PATCH
+→ TARGETED TEST
+→ FULL PHASE4 REVALIDATION
+→ REGRESSION
+→ REPORT
+```
+
+DỪNG.
+
+KHÔNG sửa Geometry engine.
+
+KHÔNG sửa Core.
+
+KHÔNG phát triển Algebra.
+
+KHÔNG phát triển Informatics.
+
+KHÔNG Production.
+
+Chờ GV phê duyệt.

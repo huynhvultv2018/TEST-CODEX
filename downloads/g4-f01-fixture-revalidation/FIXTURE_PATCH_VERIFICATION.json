@@ -1,0 +1,36 @@
+{
+  "result": "PASS",
+  "original_fixture": "HINH8_VD2_GEOMETRY_PROFILE_TEST.zip",
+  "original_sha256": "b502802ab694aa4ee2cc57bb7e053a06fd534580d8d7285f8a55d91428945bd7",
+  "patched_fixture": "HINH8_VD2_GEOMETRY_PROFILE_TEST_G4F01_PATCHED.zip",
+  "patched_sha256": "4488b1997e416fa634a577900af76fff1dbf17de1eb4bd62eee3a772df7bcab8",
+  "json_change_count": 1,
+  "json_patch": {
+    "path": "/screens/19/sceneEnd",
+    "before": "ABSENT",
+    "after": true
+  },
+  "original_preserved": true,
+  "unchanged_entry_paths": [
+    "manifest.json",
+    "images/LT2A_bang_nhau.png",
+    "images/LT2A_can.png",
+    "images/LT2B_bang_nhau.png",
+    "images/LT2B_song_song.png",
+    "images/LT2_H332.png",
+    "images/LT3_Hinh.png",
+    "images/LT3_duong_cheo.png",
+    "images/TT2_H333.png",
+    "images/VD2_H331.png",
+    "images/VD2_bang_nhau.png",
+    "images/VD2_song_song.png",
+    "images/VD3_H334.png",
+    "images/VDU_H327.png",
+    "images/VDU_dung.png",
+    "images/VDU_ket_luan.png"
+  ],
+  "question_answer_hint_proof_gt_kl_text_unchanged": true,
+  "images_assets_unchanged": true,
+  "engine_core_modified": false,
+  "crc": "PASS"
+}
