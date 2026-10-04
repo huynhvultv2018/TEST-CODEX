@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "archive": "WEB_LIVE_TEACHER_TV_PEDAGOGY_UI_HOTFIX_R2_CANDIDATE.zip",
+  "sha256": "33eb6fa41a339ff134c2e2d4d11e7a759db021e9f91049948d74d91a1b7ce37d",
+  "bytes": 18339282,
+  "entries": 489,
+  "CRC": "PASS",
+  "extractionAndInternalSHA256": "PASS",
+  "extractedNativeModalSmoke": "PASS",
+  "productionReady": "NO",
+  "windowsRetestRequired": true
+}
