@@ -1,0 +1,85 @@
+# Geometry Phase 4 findings
+
+Một BLOCKING, hai DISRUPTIVE và hai MINOR; không sửa candidate. JSON indexes 0-based, screens trong văn bản 1-based.
+
+## G4-F01 — BLOCKING
+
+**component**: Geometry package timeline / profile visual adapter
+
+**trigger**: Nhập package Geometry Phase 3, đi LT2 → Thực hành 2/VD3/LT3/Vận dụng
+
+**expected**: Hình đúng với bài/ảnh gốc mới được cung cấp
+
+**actual**: figureId LT2 và ảnh LT2 giữ đến cuối bài; TT2/VD3/LT3/VDU bị thay bởi ảnh LT2
+
+**evidence**: CLASSROOM_VALIDATION.json#/checks/1 · CAPTURES/WHOLE_LESSON_21.png · CAPTURES/WHOLE_LESSON_24.png · CAPTURES/WHOLE_LESSON_27.png · CAPTURES/WHOLE_LESSON_30.png
+
+**cause**: Registry chỉ có VD2 và LT2; sau screen index 12 không có geometry reset/new figure/scene boundary. geometry-profile.js compile giữ current; visuals override ảnh của screen mới. Đây là lỗi tích hợp package/scope, chưa kết luận cần refactor Core.
+
+**recommendation**: Sau phê duyệt riêng: review ranh giới figure/scene và metadata cho toàn bài, chọn correction nhỏ nhất tại package/contract; retest mọi chuyển exercise. Không patch trong Phase 4.
+
+## G4-F02 — MINOR
+
+**component**: Existing Teacher navigation / zoom
+
+**trigger**: Zoom 1.15 trên screen 10, sang screen 11 cùng VD2
+
+**expected**: Giữ zoom khi cùng geometry context, hoặc GV được biết reset là chủ ý
+
+**actual**: zoom 1.15 → 1; base figure và annotation vẫn giữ
+
+**evidence**: CLASSROOM_VALIDATION.json#/stateTests/5
+
+**cause**: teacher.js go() gọi resetView(), đặt zoom=1, pan=0 cho mọi screen.
+
+**recommendation**: GV quyết định policy zoom theo cùng hình; chỉ thực hiện nếu phê duyệt remediation. Hiện chưa sửa.
+
+## G4-F03 — DISRUPTIVE
+
+**component**: Geometry Focus / proof context
+
+**trigger**: Mở hai proof steps rồi Focus bước 1
+
+**expected**: Bước đang xét rõ; các bước khác đã mở giảm nhấn mạnh và giữ ngữ cảnh
+
+**actual**: Bước 2 có opacity 0.52 nhưng display:none; chỉ bước được Focus còn thấy. answerStep=2 vẫn giữ, không mất dữ liệu.
+
+**evidence**: CLASSROOM_VALIDATION.json#/focus · CAPTURES/FOCUS_PROOF_1.png
+
+**cause**: Geometry scoped CSS ẩn .focusBlock:not(.isFocused) và previous proof step.
+
+**recommendation**: Review cách giữ ngữ cảnh đã reveal trong một correction riêng. Không tự redesign hoặc đổi CSS.
+
+## G4-F04 — MINOR
+
+**component**: TV typography at 4K DPR 1
+
+**trigger**: TV-equivalent viewport 3840×2160, DPR 1, GT/analysis/proof
+
+**expected**: Kích thước chữ tương đối với chiều cao màn hình phù hợp đọc từ xa
+
+**actual**: Chữ nội dung bị cap 42–52 CSS px, tương đương 21–26 px ở chiều cao 1080; không overflow nhưng nhỏ tương đối so với FHD.
+
+**evidence**: CLASSROOM_VALIDATION.json#/readability · CAPTURES/TV_3840x2160_S10_60.png
+
+**cause**: Các giới hạn typography hiện hữu; chưa đo TV thật hoặc Windows display scaling.
+
+**recommendation**: Đánh giá trên TV đích với độ phân giải/scaling/khoảng cách thật; chưa chốt readability cuối lớp PASS.
+
+## G4-F05 — DISRUPTIVE
+
+**component**: SOẠN_TRƯỚC → packet → Geometry authoring coverage
+
+**trigger**: Nhập gói source Hình học thực tế nguyên bản
+
+**expected**: Workflow Geometry từ packet đã kiểm tra, không phải tự sửa nhiều sau đóng gói
+
+**actual**: Bản source không có subject_engine nên resolver là Legacy. Bản Phase 3 thêm 10 metadata blocks (2 top-level, 8 screens), 23 objects, 8 link rows và 2 figure definitions; chưa phủ toàn bài. Không có producer/packet SOẠN_TRƯỚC được xác minh end-to-end ở nguồn này.
+
+**evidence**: PACKAGE_PROVENANCE.json · CLASSROOM_VALIDATION.json#/originalImport · LESSON_SOURCE_INVENTORY.json
+
+**cause**: Phase 3 là enrichment đại diện; authoring/export full lesson chưa được nghiệm thu.
+
+**recommendation**: Cần một packet Geometry đầy đủ đã được GV kiểm tra và provenance SOẠN_TRƯỚC; không sinh bài giả để bù coverage trong Phase 4.
+
+Root causes là source observation và verified metadata, không tự kết luận phải redesign Core. Mọi recommendation cần yêu cầu remediation riêng.

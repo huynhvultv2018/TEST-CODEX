@@ -1,0 +1,19 @@
+{
+  "browser": "151.0.7922.173",
+  "actualTV": true,
+  "rows": [
+    {
+      "text": "ABCD là hình bình hành.\nAH, CK ⟂ BD.",
+      "foreground": "rgb(22, 43, 68)",
+      "background": "rgb(255, 248, 231)",
+      "contrast": 13.555034633509424
+    },
+    {
+      "text": "AHCK là hình bình hành.",
+      "foreground": "rgb(22, 43, 68)",
+      "background": "rgb(255, 248, 231)",
+      "contrast": 13.555034633509424
+    }
+  ],
+  "gtKlContrastPass": true
+}

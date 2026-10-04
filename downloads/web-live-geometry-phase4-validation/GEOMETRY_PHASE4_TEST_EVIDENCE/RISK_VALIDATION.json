@@ -1,0 +1,32 @@
+[
+  {
+    "RISK_ID": "G3-R01",
+    "TRIGGER": "Metadata coordinates/IDs/links hoặc scope do tác giả khai báo không đầy đủ/sai ngữ cảnh",
+    "OBSERVATION": "Các anchor/links VD2 đã khai báo render khớp hình; đối chiếu proof 1/2 và ảnh native đúng. Tuy nhiên scope LT2 không kết thúc, gây hình sai ở bài sau. Full lesson chỉ 4/49 answer/proof blocks có authored link; 4 đó là VD2, không phải 49 proof đều cần highlight.",
+    "VALIDATION_STATUS": "FAIL — BLOCKING for whole lesson",
+    "EVIDENCE": "G4-F01; G4-F05; CLASSROOM_VALIDATION.json; PACKAGE_PROVENANCE.json; captures",
+    "IMPACT": "HS nhìn hình khác với bài đang xét; không thể dùng nguyên lesson candidate cho trọn tiết",
+    "MITIGATION": "Review scope/figure metadata toàn bài ở remediation được phê duyệt riêng; không suy luận hoặc sửa dữ liệu bằng engine trong validation",
+    "BLOCKING": "YES"
+  },
+  {
+    "RISK_ID": "G3-R02",
+    "TRIGGER": "Bài cần kéo điểm gốc hoặc cập nhật quan hệ/constraint động",
+    "OBSERVATION": "Các hoạt động trong lesson đã chọn là đọc/đánh dấu hình tĩnh; annotation MARK/DRAW/LABEL/ERASE/UNDO/REDO/CLEAR hoạt động native. Profile base image/object model vẫn tĩnh; không test/công nhận constraint solver. Movable annotation đã được xác minh ở Phase 3, evidence lịch sử không được trình bày là test mới Phase 4.",
+    "VALIDATION_STATUS": "DEFERRED — not triggered by this lesson",
+    "EVIDENCE": "CLASSROOM_VALIDATION.json annotation check; object registry; Phase 3 annotation-move.json (historical)",
+    "IMPACT": "Không dùng candidate để chứng nhận lesson khám phá động/GeoGebra-style construction",
+    "MITIGATION": "Giữ bài tĩnh trong phạm vi; chọn lesson/app đã nghiệm thu nếu cần dynamic geometry, không phát triển solver trong Phase 4",
+    "BLOCKING": "NO for selected static lesson"
+  },
+  {
+    "RISK_ID": "G3-R03",
+    "TRIGGER": "GT/KL/proof dài hoặc màn hình/scaling khác mẫu đại diện",
+    "OBSERVATION": "140 whole-lesson TV states và 24 VD2 layout/viewport cases không overflow; 4K DPR1 có cap font làm chữ nhỏ tương đối. Chỉ dùng nội dung thật, không chèn stress lesson giả. Chưa đo HS cuối lớp/TV vật lý/Windows scaling.",
+    "VALIDATION_STATUS": "CONTROLLED_RISK — physical acceptance pending",
+    "EVIDENCE": "WHOLE_LESSON_TV.json; CLASSROOM_VALIDATION.json/readability; GT_KL_CONTRAST.json; G4-F04",
+    "IMPACT": "Không thể suy rộng readability tới mọi packet hoặc TV/lớp học",
+    "MITIGATION": "Acceptance đúng TV/PC/scaling/khoảng cách, dùng proof chunks từ packet đã kiểm tra; không âm thầm crop/thu nhỏ hay sửa bài trong validation",
+    "BLOCKING": "NO additional technical blocker; classroom certification pending"
+  }
+]

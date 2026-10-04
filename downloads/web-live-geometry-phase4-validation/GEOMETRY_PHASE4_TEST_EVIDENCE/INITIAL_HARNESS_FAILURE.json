@@ -1,0 +1,32 @@
+{
+  "browser": "151.0.7922.173",
+  "platform": "Linux",
+  "source": "/workspace/TEST-CODEX/WEB_LIVE_GEOMETRY_PHASE3_CANDIDATE",
+  "errors": [],
+  "checks": [],
+  "continuousFlow": [],
+  "actions": [
+    {
+      "category": "continuous",
+      "kind": "click",
+      "description": "Focus Teacher page for existing keyboard commands"
+    }
+  ],
+  "stateTests": [],
+  "readability": [],
+  "nativeWindows": "UNRUN",
+  "physicalTV": "UNRUN",
+  "backOfClassroom": "UNRUN",
+  "audibleTTS": "UNRUN",
+  "originalImport": {
+    "profile": "legacy",
+    "geometryState": null,
+    "title": "Bài 12. Hình bình hành — Dấu hiệu nhận biết",
+    "subject": "Hình học 8",
+    "subject_engine": null
+  },
+  "harnessError": {
+    "message": "page.evaluate: ReferenceError: lesson is not defined\n    at eval (eval at evaluate (:311:30), <anonymous>:3:50)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+    "stack": "page.evaluate: ReferenceError: lesson is not defined\n    at eval (eval at evaluate (:311:30), <anonymous>:3:50)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at snap (/workspace/phase4-geometry-validation/classroom-validation.cjs:19:56)\n    at async /workspace/phase4-geometry-validation/classroom-validation.cjs:32:16"
+  }
+}

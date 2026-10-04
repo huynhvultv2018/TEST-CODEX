@@ -1,0 +1,190 @@
+﻿category,count,description,elapsedMs,key,kind,selector
+continuous,,Focus Teacher page for existing keyboard commands,,,click,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal analysis step,188,,click,#analysisBtn
+continuous,,Reveal analysis step,181,,click,#analysisBtn
+continuous,,Reveal analysis step,196,,click,#analysisBtn
+continuous,,Reveal analysis step,200,,click,#analysisBtn
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Màn tiếp theo,,ArrowRight,keypress,
+continuous,,Reveal proof step,,s,keypress,
+continuous,,Reveal proof step,,s,keypress,
+diagnostic,,Proof 1,168,,click,"button[onclick=""revealStep()""]"
+diagnostic,,Proof 2,182,,click,"button[onclick=""revealStep()""]"
+mode,,Presentation layout70,180,,click,#layout70
+mode,,Presentation layout60,163,,click,#layout60
+mode,,Presentation layoutFull,165,,click,#layoutFull
+mode,,Presentation layoutFull,181,,click,#layoutFull
+mode,,Enable Focus,165,,click,#focusMode
+mode,,Focus earlier disclosed step,166,,click,#previewAnswer .focusBlock:first-child
+diagnostic,,Clear Focus,178,,click,"button[onclick=""classroomController.clearFocus()""]"
+mode,,Disable Focus,184,,click,#focusMode
+mode,,Zoom figure,249,,click,"button[onclick=""zoomBy(.15)""]"
+mode,,Return normal figure,188,,click,"button[onclick=""resetZoom()""]"
+annotation,,Open drawing controls,299,,click,#drawOpenBtn
+annotation,,Point tool,132,,click,"[data-board-tool=""point""]"
+annotation,,Place teacher point,,,click,
+annotation,,Label tool,135,,click,"[data-board-tool=""label""]"
+annotation,,Choose point and enter annotation label P,,,click,
+annotation,,Segment tool,135,,click,"[data-board-tool=""segment""]"
+annotation,2,Draw segment on figure,,,click,
+annotation,,Marker tool,133,,click,"[data-board-tool=""marker""]"
+annotation,,Mark figure,,,drag,
+annotation,,Eraser tool,114,,click,"[data-board-tool=""eraser""]"
+annotation,,Undo erase,183,,click,#drawUndo
+annotation,,Redo erase,163,,click,#drawRedo
+annotation,,Add persistence marker,116,,click,"[data-board-tool=""point""]"
+mode,,Zoom before same-figure navigation,199,,click,"button[onclick=""zoomBy(.15)""]"
+annotation,,Point on LT2 for leakage test,127,,click,"[data-board-tool=""point""]"
+annotation,,Clear annotation,182,,click,#geometryTeacherControls button:last-child
+annotation,,Close drawing controls,178,,click,#drawOpenBtn
+readability,,Readability layout 70,233,,click,#layout70
+readability,,Readability layout 60,185,,click,#layout60
+readability,,Readability layout 70,215,,click,#layout70
+readability,,Reveal real analysis,178,,click,#analysisBtn
+readability,,Reveal real analysis,217,,click,#analysisBtn
+readability,,Reveal real analysis,199,,click,#analysisBtn
+readability,,Reveal real analysis,219,,click,#analysisBtn
+readability,,Readability layout 60,169,,click,#layout60
+readability,,Reveal real analysis,181,,click,#analysisBtn
+readability,,Reveal real analysis,184,,click,#analysisBtn
+readability,,Reveal real analysis,182,,click,#analysisBtn
+readability,,Reveal real analysis,200,,click,#analysisBtn
+readability,,Readability layout 70,183,,click,#layout70
+readability,,Reveal real proof,183,,click,"button[onclick=""revealStep()""]"
+readability,,Reveal real proof,181,,click,"button[onclick=""revealStep()""]"
+readability,,Readability layout 60,166,,click,#layout60
+readability,,Reveal real proof,182,,click,"button[onclick=""revealStep()""]"
+readability,,Reveal real proof,184,,click,"button[onclick=""revealStep()""]"
+readability,,Readability layout 70,215,,click,#layout70
+readability,,Readability layout 60,170,,click,#layout60
+readability,,Readability layout 70,181,,click,#layout70
+readability,,Reveal real analysis,202,,click,#analysisBtn
+readability,,Reveal real analysis,298,,click,#analysisBtn
+readability,,Reveal real analysis,202,,click,#analysisBtn
+readability,,Reveal real analysis,317,,click,#analysisBtn
+readability,,Readability layout 60,201,,click,#layout60
+readability,,Reveal real analysis,182,,click,#analysisBtn
+readability,,Reveal real analysis,218,,click,#analysisBtn
+readability,,Reveal real analysis,181,,click,#analysisBtn
+readability,,Reveal real analysis,218,,click,#analysisBtn
+readability,,Readability layout 70,214,,click,#layout70
+readability,,Reveal real proof,183,,click,"button[onclick=""revealStep()""]"
+readability,,Reveal real proof,200,,click,"button[onclick=""revealStep()""]"
+readability,,Readability layout 60,202,,click,#layout60
+readability,,Reveal real proof,181,,click,"button[onclick=""revealStep()""]"
+readability,,Reveal real proof,185,,click,"button[onclick=""revealStep()""]"
+readability,,Readability layout 70,183,,click,#layout70
+readability,,Readability layout 60,168,,click,#layout60
+readability,,Readability layout 70,182,,click,#layout70
+readability,,Reveal real analysis,224,,click,#analysisBtn
+readability,,Reveal real analysis,194,,click,#analysisBtn
+readability,,Reveal real analysis,199,,click,#analysisBtn
+readability,,Reveal real analysis,234,,click,#analysisBtn
+readability,,Readability layout 60,168,,click,#layout60
+readability,,Reveal real analysis,199,,click,#analysisBtn
+readability,,Reveal real analysis,200,,click,#analysisBtn
+readability,,Reveal real analysis,183,,click,#analysisBtn
+readability,,Reveal real analysis,217,,click,#analysisBtn
+readability,,Readability layout 70,200,,click,#layout70
+readability,,Reveal real proof,198,,click,"button[onclick=""revealStep()""]"
+readability,,Reveal real proof,201,,click,"button[onclick=""revealStep()""]"
+readability,,Readability layout 60,183,,click,#layout60
+readability,,Reveal real proof,199,,click,"button[onclick=""revealStep()""]"
+readability,,Reveal real proof,201,,click,"button[onclick=""revealStep()""]"
+readability,,Readability layout 70,239,,click,#layout70
+readability,,Readability layout 60,192,,click,#layout60
+readability,,Readability layout 70,188,,click,#layout70
+readability,,Reveal real analysis,206,,click,#analysisBtn
+readability,,Reveal real analysis,188,,click,#analysisBtn
+readability,,Reveal real analysis,195,,click,#analysisBtn
+readability,,Reveal real analysis,210,,click,#analysisBtn
+readability,,Readability layout 60,175,,click,#layout60
+readability,,Reveal real analysis,236,,click,#analysisBtn
+readability,,Reveal real analysis,216,,click,#analysisBtn
+readability,,Reveal real analysis,369,,click,#analysisBtn
+readability,,Reveal real analysis,222,,click,#analysisBtn
+readability,,Readability layout 70,214,,click,#layout70
+readability,,Reveal real proof,182,,click,"button[onclick=""revealStep()""]"
+readability,,Reveal real proof,180,,click,"button[onclick=""revealStep()""]"
+readability,,Readability layout 60,182,,click,#layout60
+readability,,Reveal real proof,189,,click,"button[onclick=""revealStep()""]"
+readability,,Reveal real proof,182,,click,"button[onclick=""revealStep()""]"

@@ -1,0 +1,6615 @@
+{
+  "browser": "151.0.7922.173",
+  "platform": "Linux",
+  "source": "/workspace/TEST-CODEX/WEB_LIVE_GEOMETRY_PHASE3_CANDIDATE",
+  "errors": [],
+  "checks": [
+    {
+      "name": "All 35 real-content screens walked with native UI/keyboard",
+      "result": "PASS",
+      "evidence": {
+        "screens": 35
+      }
+    },
+    {
+      "name": "New exercises show their supplied figure instead of LT2",
+      "result": "FAIL",
+      "evidence": [
+        {
+          "index": 20,
+          "title": "Bốn đoạn xích",
+          "type": "Thực hành 2",
+          "figureId": "LT2",
+          "ownImagePath": "images/TT2_H333.png",
+          "scope": "overlay:legacy:thực hành:2:20",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "hidden",
+          "answerStep": 0,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Hai đoạn dài bằng nhau;\nhai đoạn ngắn bằng nhau;\nxếp dài–ngắn xen kẽ.\nTứ giác tạo thành là hình gì?",
+          "answer": "",
+          "analysis": "",
+          "answerVisible": false,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": null,
+            "step": -1,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "b59beaa64e5521a2d5fa46a15c6caf9172e0e52beadd5831f645a4e613cb5cb7"
+        },
+        {
+          "index": 23,
+          "title": "Hình 3.34a",
+          "type": "Ví dụ 3",
+          "figureId": "LT2",
+          "ownImagePath": "images/VD3_H334.png",
+          "scope": "overlay:legacy:ví dụ:3:23",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "hidden",
+          "answerStep": 0,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Hai cặp cạnh đối được đánh dấu bằng nhau.\nKết luận?",
+          "answer": "",
+          "analysis": "",
+          "answerVisible": false,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": null,
+            "step": -1,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62"
+        },
+        {
+          "index": 26,
+          "title": "Dựng hình",
+          "type": "Luyện tập 3",
+          "figureId": "LT2",
+          "ownImagePath": "images/LT3_Hinh.png",
+          "scope": "overlay:legacy:luyện tập:3:26",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "hidden",
+          "answerStep": 0,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "O là trung điểm AA′ và BB′.\nCần chứng minh A′B′ = AB, A′B′ ∥ AB.",
+          "answer": "",
+          "analysis": "",
+          "answerVisible": false,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": null,
+            "step": -1,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "df741e56c51d49a3055189d4342a97e60cb753baf211a34b52d4f41c89bd5740"
+        },
+        {
+          "index": 29,
+          "title": "Điểm O và hai đường",
+          "type": "Vận dụng",
+          "figureId": "LT2",
+          "ownImagePath": "images/VDU_H327.png",
+          "scope": "overlay:legacy:vận dụng:29",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "hidden",
+          "answerStep": 0,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "a, b cắt tại P; O ở trong góc.\nChọn A trên a, B trên b để A, O, B thẳng hàng và OA = OB.",
+          "answer": "",
+          "analysis": "",
+          "answerVisible": false,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": null,
+            "step": -1,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "12e1f76365535da45ecebf10ad3306b499b7e008f10b411faafa0d57ecbfd81d"
+        }
+      ]
+    },
+    {
+      "name": "VD2 base figure and annotation scope persist across six stages",
+      "result": "PASS",
+      "evidence": [
+        {
+          "index": 5,
+          "figureId": "VD2",
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "scope": "overlay:scene:VD2:5"
+        },
+        {
+          "index": 6,
+          "figureId": "VD2",
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "scope": "overlay:scene:VD2:5"
+        },
+        {
+          "index": 7,
+          "figureId": "VD2",
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "scope": "overlay:scene:VD2:5"
+        },
+        {
+          "index": 8,
+          "figureId": "VD2",
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "scope": "overlay:scene:VD2:5"
+        },
+        {
+          "index": 9,
+          "figureId": "VD2",
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "scope": "overlay:scene:VD2:5"
+        },
+        {
+          "index": 10,
+          "figureId": "VD2",
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "scope": "overlay:scene:VD2:5"
+        }
+      ]
+    },
+    {
+      "name": "VD2 proof 1/2 linked objects change correctly",
+      "result": "PASS",
+      "evidence": [
+        {
+          "ordinal": 1,
+          "ids": [
+            "AD",
+            "CB",
+            "angle_ADH",
+            "angle_CBK"
+          ],
+          "answer": "AD = CB, góc D₁ = góc B₁."
+        },
+        {
+          "ordinal": 2,
+          "ids": [
+            "AH",
+            "CK",
+            "triangle_AHD",
+            "triangle_CKB"
+          ],
+          "answer": "∆AHD ≅ ∆CKB ⇒ AH = CK."
+        }
+      ]
+    }
+  ],
+  "continuousFlow": [
+    {
+      "index": 0,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 0,
+        "title": "Hình bình hành",
+        "type": "Kiểm tra",
+        "figureId": "",
+        "ownImagePath": null,
+        "scope": "overlay:screen:1:0",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Hình bình hành là tứ giác như thế nào?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1804.8125,
+          "height": 946.9375
+        },
+        "figurePane": null,
+        "picture": null,
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": null
+        },
+        "imageSha256": null,
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 0,
+          "title": "Hình bình hành",
+          "type": "Kiểm tra",
+          "figureId": "",
+          "ownImagePath": null,
+          "scope": "overlay:screen:1:0",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Hình bình hành là tứ giác như thế nào?",
+          "answer": "Có hai cặp cạnh đối song song.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1804.8125,
+            "height": 946.9375
+          },
+          "figurePane": null,
+          "picture": null,
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": null
+          },
+          "imageSha256": null,
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "definition": {
+        "proofCount": 2,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 1,
+        "title": "Tính chất đã học",
+        "type": "Kiểm tra",
+        "figureId": "",
+        "ownImagePath": null,
+        "scope": "overlay:screen:2:1",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Nêu tính chất về cạnh đối và đường chéo.",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1804.8125,
+          "height": 946.9375
+        },
+        "figurePane": null,
+        "picture": null,
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": null
+        },
+        "imageSha256": null,
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 1,
+          "title": "Tính chất đã học",
+          "type": "Kiểm tra",
+          "figureId": "",
+          "ownImagePath": null,
+          "scope": "overlay:screen:2:1",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Nêu tính chất về cạnh đối và đường chéo.",
+          "answer": "Cạnh đối bằng nhau.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1804.8125,
+            "height": 946.9375
+          },
+          "figurePane": null,
+          "picture": null,
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": null
+          },
+          "imageSha256": null,
+          "ownImageSha256": null
+        },
+        {
+          "kind": "proof",
+          "ordinal": 2,
+          "index": 1,
+          "title": "Tính chất đã học",
+          "type": "Kiểm tra",
+          "figureId": "",
+          "ownImagePath": null,
+          "scope": "overlay:screen:2:1",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 2,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Nêu tính chất về cạnh đối và đường chéo.",
+          "answer": "Hai đường chéo chia đôi nhau.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1804.8125,
+            "height": 946.9375
+          },
+          "figurePane": null,
+          "picture": null,
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "",
+            "region": "answer",
+            "step": 1,
+            "highlightIds": [],
+            "sceneId": null
+          },
+          "imageSha256": null,
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 2,
+        "title": "Nhận biết hình bình hành",
+        "type": "Bài mới",
+        "figureId": "",
+        "ownImagePath": null,
+        "scope": "overlay:screen:3:2",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Các tính chất ấy có dùng để nhận biết hình bình hành không?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1804.8125,
+          "height": 946.9375
+        },
+        "figurePane": null,
+        "picture": null,
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": null
+        },
+        "imageSha256": null,
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 2,
+          "title": "Nhận biết hình bình hành",
+          "type": "Bài mới",
+          "figureId": "",
+          "ownImagePath": null,
+          "scope": "overlay:screen:3:2",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Các tính chất ấy có dùng để nhận biết hình bình hành không?",
+          "answer": "Có thể dùng các dấu hiệu ở Định lí 2 và 3.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1804.8125,
+            "height": 946.9375
+          },
+          "figurePane": null,
+          "picture": null,
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": null
+          },
+          "imageSha256": null,
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 3,
+        "title": "Hai cặp cạnh đối",
+        "type": "Định lí 2",
+        "figureId": "",
+        "ownImagePath": null,
+        "scope": "overlay:screen:4:3",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "AB = CD, AD = BC.\nKết luận về ABCD?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1804.8125,
+          "height": 946.9375
+        },
+        "figurePane": null,
+        "picture": null,
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": null
+        },
+        "imageSha256": null,
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 3,
+          "title": "Hai cặp cạnh đối",
+          "type": "Định lí 2",
+          "figureId": "",
+          "ownImagePath": null,
+          "scope": "overlay:screen:4:3",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "AB = CD, AD = BC.\nKết luận về ABCD?",
+          "answer": "ABCD là hình bình hành.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1804.8125,
+            "height": 946.9375
+          },
+          "figurePane": null,
+          "picture": null,
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": null
+          },
+          "imageSha256": null,
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 4,
+        "title": "Một cặp cạnh đối",
+        "type": "Định lí 2",
+        "figureId": "",
+        "ownImagePath": null,
+        "scope": "overlay:screen:5:4",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "AB ∥ CD và AB = CD.\nKết luận về ABCD?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1804.8125,
+          "height": 946.9375
+        },
+        "figurePane": null,
+        "picture": null,
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": null
+        },
+        "imageSha256": null,
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 4,
+          "title": "Một cặp cạnh đối",
+          "type": "Định lí 2",
+          "figureId": "",
+          "ownImagePath": null,
+          "scope": "overlay:screen:5:4",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "AB ∥ CD và AB = CD.\nKết luận về ABCD?",
+          "answer": "ABCD là hình bình hành.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1804.8125,
+            "height": 946.9375
+          },
+          "figurePane": null,
+          "picture": null,
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": null
+          },
+          "imageSha256": null,
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "definition": {
+        "proofCount": 2,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 5,
+        "title": "Đọc hình 3.31",
+        "type": "Ví dụ 2",
+        "figureId": "VD2",
+        "ownImagePath": "images/VD2_H331.png",
+        "scope": "overlay:scene:VD2:5",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "GIẢ THIẾT\nABCD là hình bình hành.\nAH, CK ⟂ BD.\nKẾT LUẬN\nAHCK là hình bình hành.",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "VD2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:VD2"
+        },
+        "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+        "ownImageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 5,
+          "title": "Đọc hình 3.31",
+          "type": "Ví dụ 2",
+          "figureId": "VD2",
+          "ownImagePath": "images/VD2_H331.png",
+          "scope": "overlay:scene:VD2:5",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "GIẢ THIẾTABCD là hình bình hành.\nAH, CK ⟂ BD.KẾT LUẬNAHCK là hình bình hành.",
+          "answer": "GT: ABCD hình bình hành; AH, CK ⟂ BD.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "VD2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:VD2"
+          },
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "ownImageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd"
+        },
+        {
+          "kind": "proof",
+          "ordinal": 2,
+          "index": 5,
+          "title": "Đọc hình 3.31",
+          "type": "Ví dụ 2",
+          "figureId": "VD2",
+          "ownImagePath": "images/VD2_H331.png",
+          "scope": "overlay:scene:VD2:5",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 2,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "GIẢ THIẾTABCD là hình bình hành.\nAH, CK ⟂ BD.KẾT LUẬNAHCK là hình bình hành.",
+          "answer": "KL: AHCK hình bình hành.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "VD2",
+            "region": "answer",
+            "step": 1,
+            "highlightIds": [],
+            "sceneId": "geometry:VD2"
+          },
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "ownImageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 6,
+        "title": "Chọn dấu hiệu",
+        "type": "Ví dụ 2",
+        "figureId": "VD2",
+        "ownImagePath": null,
+        "scope": "overlay:scene:VD2:5",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Cần chứng minh hai điều gì về AH và CK?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "VD2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:VD2"
+        },
+        "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 6,
+          "title": "Chọn dấu hiệu",
+          "type": "Ví dụ 2",
+          "figureId": "VD2",
+          "ownImagePath": null,
+          "scope": "overlay:scene:VD2:5",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Cần chứng minh hai điều gì về AH và CK?",
+          "answer": "AH ∥ CK và AH = CK.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "VD2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:VD2"
+          },
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 4,
+        "links": [],
+        "analysisLinks": [
+          [
+            "AH",
+            "CK"
+          ],
+          [
+            "AH",
+            "CK",
+            "BD"
+          ],
+          [
+            "triangle_AHD",
+            "triangle_CKB"
+          ],
+          [
+            "pair_AH_CK"
+          ]
+        ]
+      },
+      "hidden": {
+        "index": 7,
+        "title": "Sơ đồ phân tích Ví dụ 2",
+        "type": "analysisDiagram",
+        "figureId": "VD2",
+        "ownImagePath": null,
+        "scope": "overlay:scene:VD2:5",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Tìm hướng chứng minh AHCK là hình bình hành.",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "VD2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:VD2"
+        },
+        "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "analysis",
+          "ordinal": 1,
+          "index": 7,
+          "title": "Sơ đồ phân tích Ví dụ 2",
+          "type": "analysisDiagram",
+          "figureId": "VD2",
+          "ownImagePath": null,
+          "scope": "overlay:scene:VD2:5",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "hidden",
+          "answerStep": 0,
+          "analysisStep": 1,
+          "layout": "60",
+          "focus": null,
+          "ids": [
+            "AH",
+            "CK"
+          ],
+          "annotationIds": [],
+          "content": "Tìm hướng chứng minh AHCK là hình bình hành.",
+          "answer": "",
+          "analysis": "Cần chứng minh AH ∥ CK và AH = CK.",
+          "answerVisible": false,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "VD2",
+            "region": "analysis",
+            "step": 0,
+            "highlightIds": [
+              "AH",
+              "CK"
+            ],
+            "sceneId": "geometry:VD2"
+          },
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "ownImageSha256": null
+        },
+        {
+          "kind": "analysis",
+          "ordinal": 2,
+          "index": 7,
+          "title": "Sơ đồ phân tích Ví dụ 2",
+          "type": "analysisDiagram",
+          "figureId": "VD2",
+          "ownImagePath": null,
+          "scope": "overlay:scene:VD2:5",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "hidden",
+          "answerStep": 0,
+          "analysisStep": 2,
+          "layout": "60",
+          "focus": null,
+          "ids": [
+            "AH",
+            "BD",
+            "CK"
+          ],
+          "annotationIds": [],
+          "content": "Tìm hướng chứng minh AHCK là hình bình hành.",
+          "answer": "",
+          "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+          "answerVisible": false,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "VD2",
+            "region": "analysis",
+            "step": 1,
+            "highlightIds": [
+              "AH",
+              "CK",
+              "BD"
+            ],
+            "sceneId": "geometry:VD2"
+          },
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "ownImageSha256": null
+        },
+        {
+          "kind": "analysis",
+          "ordinal": 3,
+          "index": 7,
+          "title": "Sơ đồ phân tích Ví dụ 2",
+          "type": "analysisDiagram",
+          "figureId": "VD2",
+          "ownImagePath": null,
+          "scope": "overlay:scene:VD2:5",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "hidden",
+          "answerStep": 0,
+          "analysisStep": 3,
+          "layout": "60",
+          "focus": null,
+          "ids": [
+            "triangle_AHD",
+            "triangle_CKB"
+          ],
+          "annotationIds": [],
+          "content": "Tìm hướng chứng minh AHCK là hình bình hành.",
+          "answer": "",
+          "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.\n↓\n∆AHD ≅ ∆CKB ⇒ AH = CK.",
+          "answerVisible": false,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "VD2",
+            "region": "analysis",
+            "step": 2,
+            "highlightIds": [
+              "triangle_AHD",
+              "triangle_CKB"
+            ],
+            "sceneId": "geometry:VD2"
+          },
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "ownImageSha256": null
+        },
+        {
+          "kind": "analysis",
+          "ordinal": 4,
+          "index": 7,
+          "title": "Sơ đồ phân tích Ví dụ 2",
+          "type": "analysisDiagram",
+          "figureId": "VD2",
+          "ownImagePath": null,
+          "scope": "overlay:scene:VD2:5",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "hidden",
+          "answerStep": 0,
+          "analysisStep": 4,
+          "layout": "60",
+          "focus": null,
+          "ids": [
+            "AH",
+            "CK"
+          ],
+          "annotationIds": [],
+          "content": "Tìm hướng chứng minh AHCK là hình bình hành.",
+          "answer": "",
+          "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.\n↓\n∆AHD ≅ ∆CKB ⇒ AH = CK.\n↓\nAH ∥ CK và AH = CK ⇒ AHCK là hình bình hành.",
+          "answerVisible": false,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "VD2",
+            "region": "analysis",
+            "step": 3,
+            "highlightIds": [
+              "pair_AH_CK"
+            ],
+            "sceneId": "geometry:VD2"
+          },
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "ownImageSha256": null
+        },
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 7,
+          "title": "Sơ đồ phân tích Ví dụ 2",
+          "type": "analysisDiagram",
+          "figureId": "VD2",
+          "ownImagePath": null,
+          "scope": "overlay:scene:VD2:5",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 4,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Tìm hướng chứng minh AHCK là hình bình hành.",
+          "answer": "AHCK là hình bình hành.",
+          "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.\n↓\n∆AHD ≅ ∆CKB ⇒ AH = CK.\n↓\nAH ∥ CK và AH = CK ⇒ AHCK là hình bình hành.",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "VD2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:VD2"
+          },
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [
+          [
+            "AH",
+            "CK",
+            "BD"
+          ]
+        ],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 8,
+        "title": "Chứng minh song song",
+        "type": "Ví dụ 2",
+        "figureId": "VD2",
+        "ownImagePath": null,
+        "scope": "overlay:scene:VD2:5",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Vì sao AH ∥ CK?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "VD2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:VD2"
+        },
+        "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 8,
+          "title": "Chứng minh song song",
+          "type": "Ví dụ 2",
+          "figureId": "VD2",
+          "ownImagePath": null,
+          "scope": "overlay:scene:VD2:5",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [
+            "AH",
+            "BD",
+            "CK"
+          ],
+          "annotationIds": [],
+          "content": "Vì sao AH ∥ CK?",
+          "answer": "AH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "VD2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [
+              "AH",
+              "CK",
+              "BD"
+            ],
+            "sceneId": "geometry:VD2"
+          },
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "definition": {
+        "proofCount": 2,
+        "analysisCount": 0,
+        "links": [
+          [
+            "AD",
+            "CB",
+            "angle_ADH",
+            "angle_CBK"
+          ],
+          [
+            "triangle_AHD",
+            "triangle_CKB",
+            "AH",
+            "CK"
+          ]
+        ],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 9,
+        "title": "Chứng minh bằng nhau",
+        "type": "Ví dụ 2",
+        "figureId": "VD2",
+        "ownImagePath": null,
+        "scope": "overlay:scene:VD2:5",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Vì sao AH = CK?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "VD2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:VD2"
+        },
+        "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 9,
+          "title": "Chứng minh bằng nhau",
+          "type": "Ví dụ 2",
+          "figureId": "VD2",
+          "ownImagePath": null,
+          "scope": "overlay:scene:VD2:5",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [
+            "AD",
+            "CB",
+            "angle_ADH",
+            "angle_CBK"
+          ],
+          "annotationIds": [],
+          "content": "Vì sao AH = CK?",
+          "answer": "AD = CB, góc D₁ = góc B₁.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "VD2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [
+              "AD",
+              "CB",
+              "angle_ADH",
+              "angle_CBK"
+            ],
+            "sceneId": "geometry:VD2"
+          },
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "ownImageSha256": null
+        },
+        {
+          "kind": "proof",
+          "ordinal": 2,
+          "index": 9,
+          "title": "Chứng minh bằng nhau",
+          "type": "Ví dụ 2",
+          "figureId": "VD2",
+          "ownImagePath": null,
+          "scope": "overlay:scene:VD2:5",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 2,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [
+            "AH",
+            "CK",
+            "triangle_AHD",
+            "triangle_CKB"
+          ],
+          "annotationIds": [],
+          "content": "Vì sao AH = CK?",
+          "answer": "∆AHD ≅ ∆CKB ⇒ AH = CK.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "VD2",
+            "region": "answer",
+            "step": 1,
+            "highlightIds": [
+              "triangle_AHD",
+              "triangle_CKB",
+              "AH",
+              "CK"
+            ],
+            "sceneId": "geometry:VD2"
+          },
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [
+          [
+            "AH",
+            "CK",
+            "HC",
+            "AK"
+          ]
+        ],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 10,
+        "title": "Chốt Ví dụ 2",
+        "type": "Ví dụ 2",
+        "figureId": "VD2",
+        "ownImagePath": null,
+        "scope": "overlay:scene:VD2:5",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Từ AH ∥ CK và AH = CK, kết luận?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "VD2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:VD2"
+        },
+        "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 10,
+          "title": "Chốt Ví dụ 2",
+          "type": "Ví dụ 2",
+          "figureId": "VD2",
+          "ownImagePath": null,
+          "scope": "overlay:scene:VD2:5",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [
+            "AH",
+            "AK",
+            "CK",
+            "HC"
+          ],
+          "annotationIds": [],
+          "content": "Từ AH ∥ CK và AH = CK, kết luận?",
+          "answer": "AHCK là hình bình hành.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "VD2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [
+              "AH",
+              "CK",
+              "HC",
+              "AK"
+            ],
+            "sceneId": "geometry:VD2"
+          },
+          "imageSha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 11,
+        "title": "Đọc hình 3.32",
+        "type": "Luyện tập 2",
+        "figureId": "LT2",
+        "ownImagePath": "images/LT2_H332.png",
+        "scope": "overlay:legacy:luyện tập:2:11",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "ABCD là hình bình hành, AB > BC.\nDE, BF là các tia phân giác.\nXét ∆ADE và ∆CBF.",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 11,
+          "title": "Đọc hình 3.32",
+          "type": "Luyện tập 2",
+          "figureId": "LT2",
+          "ownImagePath": "images/LT2_H332.png",
+          "scope": "overlay:legacy:luyện tập:2:11",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "ABCD là hình bình hành, AB > BC.\nDE, BF là các tia phân giác.\nXét ∆ADE và ∆CBF.",
+          "answer": "Cần chứng minh hai tam giác cân và bằng nhau.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 12,
+        "title": "Tam giác ADE cân",
+        "type": "Luyện tập 2a",
+        "figureId": "LT2",
+        "ownImagePath": "images/LT2A_can.png",
+        "scope": "overlay:legacy:luyện tập:2:11",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Vì sao ∆ADE cân?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "cd2c05cff16a181e5e35fc1750914f2e63d0dbe9c2d9ebcfe774e414a5d26cbb"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 12,
+          "title": "Tam giác ADE cân",
+          "type": "Luyện tập 2a",
+          "figureId": "LT2",
+          "ownImagePath": "images/LT2A_can.png",
+          "scope": "overlay:legacy:luyện tập:2:11",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Vì sao ∆ADE cân?",
+          "answer": "Góc ADE = góc DEA ⇒ AD = AE.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "cd2c05cff16a181e5e35fc1750914f2e63d0dbe9c2d9ebcfe774e414a5d26cbb"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 13,
+        "title": "Tam giác CBF cân",
+        "type": "Luyện tập 2a",
+        "figureId": "LT2",
+        "ownImagePath": null,
+        "scope": "overlay:legacy:luyện tập:2:11",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Vì sao ∆CBF cân?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 13,
+          "title": "Tam giác CBF cân",
+          "type": "Luyện tập 2a",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:legacy:luyện tập:2:11",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Vì sao ∆CBF cân?",
+          "answer": "BC = CF; ∆CBF cân tại C.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "definition": {
+        "proofCount": 3,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 14,
+        "title": "Hai tam giác bằng nhau",
+        "type": "Luyện tập 2a",
+        "figureId": "LT2",
+        "ownImagePath": "images/LT2A_bang_nhau.png",
+        "scope": "overlay:legacy:luyện tập:2:11",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Chứng minh ∆ADE ≅ ∆CBF.",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "39f6ec26e7571be1b813e651db60132eafd8cc90ba288b59ebf2e094521a97df"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 14,
+          "title": "Hai tam giác bằng nhau",
+          "type": "Luyện tập 2a",
+          "figureId": "LT2",
+          "ownImagePath": "images/LT2A_bang_nhau.png",
+          "scope": "overlay:legacy:luyện tập:2:11",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Chứng minh ∆ADE ≅ ∆CBF.",
+          "answer": "AD=CB; góc DAE=BCF;",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "39f6ec26e7571be1b813e651db60132eafd8cc90ba288b59ebf2e094521a97df"
+        },
+        {
+          "kind": "proof",
+          "ordinal": 2,
+          "index": 14,
+          "title": "Hai tam giác bằng nhau",
+          "type": "Luyện tập 2a",
+          "figureId": "LT2",
+          "ownImagePath": "images/LT2A_bang_nhau.png",
+          "scope": "overlay:legacy:luyện tập:2:11",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 2,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Chứng minh ∆ADE ≅ ∆CBF.",
+          "answer": "góc ADE=CBF.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 1,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "39f6ec26e7571be1b813e651db60132eafd8cc90ba288b59ebf2e094521a97df"
+        },
+        {
+          "kind": "proof",
+          "ordinal": 3,
+          "index": 14,
+          "title": "Hai tam giác bằng nhau",
+          "type": "Luyện tập 2a",
+          "figureId": "LT2",
+          "ownImagePath": "images/LT2A_bang_nhau.png",
+          "scope": "overlay:legacy:luyện tập:2:11",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 3,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Chứng minh ∆ADE ≅ ∆CBF.",
+          "answer": "Suy ra bằng nhau (góc–cạnh–góc).",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 2,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "39f6ec26e7571be1b813e651db60132eafd8cc90ba288b59ebf2e094521a97df"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "definition": {
+        "proofCount": 2,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 15,
+        "title": "Chốt ý a",
+        "type": "Luyện tập 2a",
+        "figureId": "LT2",
+        "ownImagePath": null,
+        "scope": "overlay:legacy:luyện tập:2:11",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Kết quả của ý a là gì?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 15,
+          "title": "Chốt ý a",
+          "type": "Luyện tập 2a",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:legacy:luyện tập:2:11",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Kết quả của ý a là gì?",
+          "answer": "∆ADE, ∆CBF đều cân",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        },
+        {
+          "kind": "proof",
+          "ordinal": 2,
+          "index": 15,
+          "title": "Chốt ý a",
+          "type": "Luyện tập 2a",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:legacy:luyện tập:2:11",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 2,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Kết quả của ý a là gì?",
+          "answer": "và ∆ADE ≅ ∆CBF.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 1,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 16,
+        "title": "Chọn cặp cạnh",
+        "type": "Luyện tập 2b",
+        "figureId": "LT2",
+        "ownImagePath": "images/LT2_H332.png",
+        "scope": "overlay:legacy:luyện tập:2:11",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Xét tứ giác DEBF.\nChọn cặp cạnh đối để dùng Định lí 2b.",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 16,
+          "title": "Chọn cặp cạnh",
+          "type": "Luyện tập 2b",
+          "figureId": "LT2",
+          "ownImagePath": "images/LT2_H332.png",
+          "scope": "overlay:legacy:luyện tập:2:11",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Xét tứ giác DEBF.\nChọn cặp cạnh đối để dùng Định lí 2b.",
+          "answer": "Chọn EB và DF.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 17,
+        "title": "Chứng minh song song",
+        "type": "Luyện tập 2b",
+        "figureId": "LT2",
+        "ownImagePath": "images/LT2B_song_song.png",
+        "scope": "overlay:legacy:luyện tập:2:11",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Vì sao EB ∥ DF?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "1030152fedb18dd9786c3dae07d81550d7487e81386348d5bee8420c9673494f"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 17,
+          "title": "Chứng minh song song",
+          "type": "Luyện tập 2b",
+          "figureId": "LT2",
+          "ownImagePath": "images/LT2B_song_song.png",
+          "scope": "overlay:legacy:luyện tập:2:11",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Vì sao EB ∥ DF?",
+          "answer": "AB ∥ DC ⇒ EB ∥ DF.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "1030152fedb18dd9786c3dae07d81550d7487e81386348d5bee8420c9673494f"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "definition": {
+        "proofCount": 2,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 18,
+        "title": "Chứng minh bằng nhau",
+        "type": "Luyện tập 2b",
+        "figureId": "LT2",
+        "ownImagePath": "images/LT2B_bang_nhau.png",
+        "scope": "overlay:legacy:luyện tập:2:11",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Vì sao EB = DF?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "d04ca4afeaacd75cdafae181d91483881d398fa2dfa4dc5411d5eea8693e92b3"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 18,
+          "title": "Chứng minh bằng nhau",
+          "type": "Luyện tập 2b",
+          "figureId": "LT2",
+          "ownImagePath": "images/LT2B_bang_nhau.png",
+          "scope": "overlay:legacy:luyện tập:2:11",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Vì sao EB = DF?",
+          "answer": "EB=AB−AE; DF=DC−CF.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "d04ca4afeaacd75cdafae181d91483881d398fa2dfa4dc5411d5eea8693e92b3"
+        },
+        {
+          "kind": "proof",
+          "ordinal": 2,
+          "index": 18,
+          "title": "Chứng minh bằng nhau",
+          "type": "Luyện tập 2b",
+          "figureId": "LT2",
+          "ownImagePath": "images/LT2B_bang_nhau.png",
+          "scope": "overlay:legacy:luyện tập:2:11",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 2,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Vì sao EB = DF?",
+          "answer": "AB=DC; AE=CF ⇒ EB=DF.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 1,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "d04ca4afeaacd75cdafae181d91483881d398fa2dfa4dc5411d5eea8693e92b3"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 19,
+        "title": "Chốt ý b",
+        "type": "Luyện tập 2b",
+        "figureId": "LT2",
+        "ownImagePath": null,
+        "scope": "overlay:legacy:luyện tập:2:11",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Tứ giác DEBF là hình gì?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 19,
+          "title": "Chốt ý b",
+          "type": "Luyện tập 2b",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:legacy:luyện tập:2:11",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Tứ giác DEBF là hình gì?",
+          "answer": "DEBF là hình bình hành.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "definition": {
+        "proofCount": 2,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 20,
+        "title": "Bốn đoạn xích",
+        "type": "Thực hành 2",
+        "figureId": "LT2",
+        "ownImagePath": "images/TT2_H333.png",
+        "scope": "overlay:legacy:thực hành:2:20",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Hai đoạn dài bằng nhau;\nhai đoạn ngắn bằng nhau;\nxếp dài–ngắn xen kẽ.\nTứ giác tạo thành là hình gì?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "b59beaa64e5521a2d5fa46a15c6caf9172e0e52beadd5831f645a4e613cb5cb7"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 20,
+          "title": "Bốn đoạn xích",
+          "type": "Thực hành 2",
+          "figureId": "LT2",
+          "ownImagePath": "images/TT2_H333.png",
+          "scope": "overlay:legacy:thực hành:2:20",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Hai đoạn dài bằng nhau;\nhai đoạn ngắn bằng nhau;\nxếp dài–ngắn xen kẽ.\nTứ giác tạo thành là hình gì?",
+          "answer": "Hai cặp cạnh đối bằng nhau",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "b59beaa64e5521a2d5fa46a15c6caf9172e0e52beadd5831f645a4e613cb5cb7"
+        },
+        {
+          "kind": "proof",
+          "ordinal": 2,
+          "index": 20,
+          "title": "Bốn đoạn xích",
+          "type": "Thực hành 2",
+          "figureId": "LT2",
+          "ownImagePath": "images/TT2_H333.png",
+          "scope": "overlay:legacy:thực hành:2:20",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 2,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Hai đoạn dài bằng nhau;\nhai đoạn ngắn bằng nhau;\nxếp dài–ngắn xen kẽ.\nTứ giác tạo thành là hình gì?",
+          "answer": "⇒ hình bình hành.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 1,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "b59beaa64e5521a2d5fa46a15c6caf9172e0e52beadd5831f645a4e613cb5cb7"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 21,
+        "title": "Dấu hiệu theo góc",
+        "type": "Định lí 3",
+        "figureId": "LT2",
+        "ownImagePath": null,
+        "scope": "overlay:screen:21:21",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Góc A = góc C; góc B = góc D.\nABCD là hình gì?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 21,
+          "title": "Dấu hiệu theo góc",
+          "type": "Định lí 3",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:screen:21:21",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Góc A = góc C; góc B = góc D.\nABCD là hình gì?",
+          "answer": "ABCD là hình bình hành.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 22,
+        "title": "Dấu hiệu đường chéo",
+        "type": "Định lí 3",
+        "figureId": "LT2",
+        "ownImagePath": null,
+        "scope": "overlay:screen:22:22",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "AC, BD cắt tại O.\nOA=OC, OB=OD.\nABCD là hình gì?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 22,
+          "title": "Dấu hiệu đường chéo",
+          "type": "Định lí 3",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:screen:22:22",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "AC, BD cắt tại O.\nOA=OC, OB=OD.\nABCD là hình gì?",
+          "answer": "ABCD là hình bình hành.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 23,
+        "title": "Hình 3.34a",
+        "type": "Ví dụ 3",
+        "figureId": "LT2",
+        "ownImagePath": "images/VD3_H334.png",
+        "scope": "overlay:legacy:ví dụ:3:23",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Hai cặp cạnh đối được đánh dấu bằng nhau.\nKết luận?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 23,
+          "title": "Hình 3.34a",
+          "type": "Ví dụ 3",
+          "figureId": "LT2",
+          "ownImagePath": "images/VD3_H334.png",
+          "scope": "overlay:legacy:ví dụ:3:23",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Hai cặp cạnh đối được đánh dấu bằng nhau.\nKết luận?",
+          "answer": "Là hình bình hành (Định lí 2a).",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 24,
+        "title": "Hình 3.34b",
+        "type": "Ví dụ 3",
+        "figureId": "LT2",
+        "ownImagePath": "images/VD3_H334.png",
+        "scope": "overlay:legacy:ví dụ:3:23",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Góc A = 110°, góc C = 100°.\nCó là hình bình hành không?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 24,
+          "title": "Hình 3.34b",
+          "type": "Ví dụ 3",
+          "figureId": "LT2",
+          "ownImagePath": "images/VD3_H334.png",
+          "scope": "overlay:legacy:ví dụ:3:23",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Góc A = 110°, góc C = 100°.\nCó là hình bình hành không?",
+          "answer": "Không. Góc A và góc C không bằng nhau.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 25,
+        "title": "Hình 3.34c",
+        "type": "Ví dụ 3",
+        "figureId": "LT2",
+        "ownImagePath": "images/VD3_H334.png",
+        "scope": "overlay:legacy:ví dụ:3:23",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Hai đường chéo chia đôi nhau.\nKết luận?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 25,
+          "title": "Hình 3.34c",
+          "type": "Ví dụ 3",
+          "figureId": "LT2",
+          "ownImagePath": "images/VD3_H334.png",
+          "scope": "overlay:legacy:ví dụ:3:23",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Hai đường chéo chia đôi nhau.\nKết luận?",
+          "answer": "Là hình bình hành (Định lí 3b).",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "definition": {
+        "proofCount": 2,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 26,
+        "title": "Dựng hình",
+        "type": "Luyện tập 3",
+        "figureId": "LT2",
+        "ownImagePath": "images/LT3_Hinh.png",
+        "scope": "overlay:legacy:luyện tập:3:26",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "O là trung điểm AA′ và BB′.\nCần chứng minh A′B′ = AB, A′B′ ∥ AB.",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "df741e56c51d49a3055189d4342a97e60cb753baf211a34b52d4f41c89bd5740"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 26,
+          "title": "Dựng hình",
+          "type": "Luyện tập 3",
+          "figureId": "LT2",
+          "ownImagePath": "images/LT3_Hinh.png",
+          "scope": "overlay:legacy:luyện tập:3:26",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "O là trung điểm AA′ và BB′.\nCần chứng minh A′B′ = AB, A′B′ ∥ AB.",
+          "answer": "GT: OA=OA′, OB=OB′.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "df741e56c51d49a3055189d4342a97e60cb753baf211a34b52d4f41c89bd5740"
+        },
+        {
+          "kind": "proof",
+          "ordinal": 2,
+          "index": 26,
+          "title": "Dựng hình",
+          "type": "Luyện tập 3",
+          "figureId": "LT2",
+          "ownImagePath": "images/LT3_Hinh.png",
+          "scope": "overlay:legacy:luyện tập:3:26",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 2,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "O là trung điểm AA′ và BB′.\nCần chứng minh A′B′ = AB, A′B′ ∥ AB.",
+          "answer": "KL: A′B′=AB, A′B′ ∥ AB.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 1,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "df741e56c51d49a3055189d4342a97e60cb753baf211a34b52d4f41c89bd5740"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 27,
+        "title": "Nhận biết tứ giác",
+        "type": "Luyện tập 3",
+        "figureId": "LT2",
+        "ownImagePath": "images/LT3_duong_cheo.png",
+        "scope": "overlay:legacy:luyện tập:3:26",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "AA′ và BB′ là gì của tứ giác ABA′B′?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "61ad82678b701849a8f7e34c91a6fed5a59fe214462445492b5a7f78a49834fc"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 27,
+          "title": "Nhận biết tứ giác",
+          "type": "Luyện tập 3",
+          "figureId": "LT2",
+          "ownImagePath": "images/LT3_duong_cheo.png",
+          "scope": "overlay:legacy:luyện tập:3:26",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "AA′ và BB′ là gì của tứ giác ABA′B′?",
+          "answer": "Là hai đường chéo, cùng bị chia đôi tại O.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "61ad82678b701849a8f7e34c91a6fed5a59fe214462445492b5a7f78a49834fc"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 28,
+        "title": "Chốt kết luận",
+        "type": "Luyện tập 3",
+        "figureId": "LT2",
+        "ownImagePath": null,
+        "scope": "overlay:legacy:luyện tập:3:26",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Từ ABA′B′ là hình bình hành, suy ra?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 28,
+          "title": "Chốt kết luận",
+          "type": "Luyện tập 3",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:legacy:luyện tập:3:26",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Từ ABA′B′ là hình bình hành, suy ra?",
+          "answer": "A′B′ = AB và A′B′ ∥ AB.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 29,
+        "title": "Điểm O và hai đường",
+        "type": "Vận dụng",
+        "figureId": "LT2",
+        "ownImagePath": "images/VDU_H327.png",
+        "scope": "overlay:legacy:vận dụng:29",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "a, b cắt tại P; O ở trong góc.\nChọn A trên a, B trên b để A, O, B thẳng hàng và OA = OB.",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "12e1f76365535da45ecebf10ad3306b499b7e008f10b411faafa0d57ecbfd81d"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 29,
+          "title": "Điểm O và hai đường",
+          "type": "Vận dụng",
+          "figureId": "LT2",
+          "ownImagePath": "images/VDU_H327.png",
+          "scope": "overlay:legacy:vận dụng:29",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "a, b cắt tại P; O ở trong góc.\nChọn A trên a, B trên b để A, O, B thẳng hàng và OA = OB.",
+          "answer": "Dựng PAQB là hình bình hành, O là giao điểm hai đường chéo.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "12e1f76365535da45ecebf10ad3306b499b7e008f10b411faafa0d57ecbfd81d"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 30,
+        "title": "Dựng điểm Q",
+        "type": "Vận dụng",
+        "figureId": "LT2",
+        "ownImagePath": "images/VDU_dung.png",
+        "scope": "overlay:legacy:vận dụng:29",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Lấy Q đối xứng với P qua O.\nO là trung điểm đoạn nào?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "ae6fdb5745b9df8408868ee7817952dd9cca9e35d6ffb4e2df5c1faa5b31087a"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 30,
+          "title": "Dựng điểm Q",
+          "type": "Vận dụng",
+          "figureId": "LT2",
+          "ownImagePath": "images/VDU_dung.png",
+          "scope": "overlay:legacy:vận dụng:29",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Lấy Q đối xứng với P qua O.\nO là trung điểm đoạn nào?",
+          "answer": "O là trung điểm PQ.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "ae6fdb5745b9df8408868ee7817952dd9cca9e35d6ffb4e2df5c1faa5b31087a"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "definition": {
+        "proofCount": 1,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 31,
+        "title": "Dựng A và B",
+        "type": "Vận dụng",
+        "figureId": "LT2",
+        "ownImagePath": null,
+        "scope": "overlay:legacy:vận dụng:29",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Qua Q kẻ QA ∥ b, QB ∥ a.\nA thuộc a, B thuộc b.\nPAQB là hình gì?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 31,
+          "title": "Dựng A và B",
+          "type": "Vận dụng",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:legacy:vận dụng:29",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Qua Q kẻ QA ∥ b, QB ∥ a.\nA thuộc a, B thuộc b.\nPAQB là hình gì?",
+          "answer": "PAQB là hình bình hành.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "definition": {
+        "proofCount": 2,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 32,
+        "title": "Con đường AB",
+        "type": "Vận dụng",
+        "figureId": "LT2",
+        "ownImagePath": "images/VDU_ket_luan.png",
+        "scope": "overlay:legacy:vận dụng:29",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Vì sao AB đi qua O và OA = OB?",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": "4e63e045edfb19c4b44d58f70a5d4d815233c5d969bc079fc677de7de8403e64"
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 32,
+          "title": "Con đường AB",
+          "type": "Vận dụng",
+          "figureId": "LT2",
+          "ownImagePath": "images/VDU_ket_luan.png",
+          "scope": "overlay:legacy:vận dụng:29",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Vì sao AB đi qua O và OA = OB?",
+          "answer": "O là trung điểm AB.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "4e63e045edfb19c4b44d58f70a5d4d815233c5d969bc079fc677de7de8403e64"
+        },
+        {
+          "kind": "proof",
+          "ordinal": 2,
+          "index": 32,
+          "title": "Con đường AB",
+          "type": "Vận dụng",
+          "figureId": "LT2",
+          "ownImagePath": "images/VDU_ket_luan.png",
+          "scope": "overlay:legacy:vận dụng:29",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 2,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Vì sao AB đi qua O và OA = OB?",
+          "answer": "Vậy A, O, B thẳng hàng và OA=OB.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 1,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": "4e63e045edfb19c4b44d58f70a5d4d815233c5d969bc079fc677de7de8403e64"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "definition": {
+        "proofCount": 4,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 33,
+        "title": "Bốn dấu hiệu",
+        "type": "Củng cố",
+        "figureId": "LT2",
+        "ownImagePath": null,
+        "scope": "overlay:screen:33:33",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Nêu bốn dấu hiệu nhận biết hình bình hành.",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 33,
+          "title": "Bốn dấu hiệu",
+          "type": "Củng cố",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:screen:33:33",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Nêu bốn dấu hiệu nhận biết hình bình hành.",
+          "answer": "2 cặp cạnh đối bằng nhau;",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        },
+        {
+          "kind": "proof",
+          "ordinal": 2,
+          "index": 33,
+          "title": "Bốn dấu hiệu",
+          "type": "Củng cố",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:screen:33:33",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 2,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Nêu bốn dấu hiệu nhận biết hình bình hành.",
+          "answer": "1 cặp đối ∥ và bằng nhau;",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 1,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        },
+        {
+          "kind": "proof",
+          "ordinal": 3,
+          "index": 33,
+          "title": "Bốn dấu hiệu",
+          "type": "Củng cố",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:screen:33:33",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 3,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Nêu bốn dấu hiệu nhận biết hình bình hành.",
+          "answer": "2 cặp góc đối bằng nhau;",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 2,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        },
+        {
+          "kind": "proof",
+          "ordinal": 4,
+          "index": 33,
+          "title": "Bốn dấu hiệu",
+          "type": "Củng cố",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:screen:33:33",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 4,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Nêu bốn dấu hiệu nhận biết hình bình hành.",
+          "answer": "2 đường chéo chia đôi nhau.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 3,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "definition": {
+        "proofCount": 2,
+        "analysisCount": 0,
+        "links": [],
+        "analysisLinks": []
+      },
+      "hidden": {
+        "index": 34,
+        "title": "SGK trang 61",
+        "type": "Bài về nhà",
+        "figureId": "LT2",
+        "ownImagePath": null,
+        "scope": "overlay:screen:34:34",
+        "zoom": 1,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "answerMode": "hidden",
+        "answerStep": 0,
+        "analysisStep": 0,
+        "layout": "60",
+        "focus": null,
+        "ids": [],
+        "annotationIds": [],
+        "content": "Bài 3.13 và 3.16.",
+        "answer": "",
+        "analysis": "",
+        "answerVisible": false,
+        "textPane": {
+          "x": 1146.953125,
+          "y": 89.625,
+          "width": 715.4375,
+          "height": 946.9375
+        },
+        "figurePane": {
+          "x": 57.59375,
+          "y": 89.625,
+          "width": 1073.171875,
+          "height": 946.9375
+        },
+        "picture": {
+          "x": 71.671875,
+          "y": 345.390625,
+          "width": 1045,
+          "height": 435.40625
+        },
+        "overflow": false,
+        "horizontalOverflow": false,
+        "studentControlCount": 0,
+        "geometry": {
+          "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+          "figureId": "LT2",
+          "region": null,
+          "step": -1,
+          "highlightIds": [],
+          "sceneId": "geometry:LT2:reset:1"
+        },
+        "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "ownImageSha256": null
+      },
+      "revealed": [
+        {
+          "kind": "proof",
+          "ordinal": 1,
+          "index": 34,
+          "title": "SGK trang 61",
+          "type": "Bài về nhà",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:screen:34:34",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 1,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Bài 3.13 và 3.16.",
+          "answer": "3.13: a đúng, b sai, c đúng.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 0,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        },
+        {
+          "kind": "proof",
+          "ordinal": 2,
+          "index": 34,
+          "title": "SGK trang 61",
+          "type": "Bài về nhà",
+          "figureId": "LT2",
+          "ownImagePath": null,
+          "scope": "overlay:screen:34:34",
+          "zoom": 1,
+          "pan": {
+            "x": 0,
+            "y": 0
+          },
+          "answerMode": "steps",
+          "answerStep": 2,
+          "analysisStep": 0,
+          "layout": "60",
+          "focus": null,
+          "ids": [],
+          "annotationIds": [],
+          "content": "Bài 3.13 và 3.16.",
+          "answer": "3.16: a,c là hình bình hành; b không.",
+          "analysis": "",
+          "answerVisible": true,
+          "textPane": {
+            "x": 1146.953125,
+            "y": 89.625,
+            "width": 715.4375,
+            "height": 946.9375
+          },
+          "figurePane": {
+            "x": 57.59375,
+            "y": 89.625,
+            "width": 1073.171875,
+            "height": 946.9375
+          },
+          "picture": {
+            "x": 71.671875,
+            "y": 345.390625,
+            "width": 1045,
+            "height": 435.40625
+          },
+          "overflow": false,
+          "horizontalOverflow": false,
+          "studentControlCount": 0,
+          "geometry": {
+            "lessonActivation": "14217d08-5956-451a-88ca-77c904fa96c1",
+            "figureId": "LT2",
+            "region": "answer",
+            "step": 1,
+            "highlightIds": [],
+            "sceneId": "geometry:LT2:reset:1"
+          },
+          "imageSha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+          "ownImageSha256": null
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "category": "continuous",
+      "kind": "click",
+      "description": "Focus Teacher page for existing keyboard commands"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "click",
+      "selector": "#analysisBtn",
+      "description": "Reveal analysis step",
+      "elapsedMs": 175
+    },
+    {
+      "category": "continuous",
+      "kind": "click",
+      "selector": "#analysisBtn",
+      "description": "Reveal analysis step",
+      "elapsedMs": 211
+    },
+    {
+      "category": "continuous",
+      "kind": "click",
+      "selector": "#analysisBtn",
+      "description": "Reveal analysis step",
+      "elapsedMs": 243
+    },
+    {
+      "category": "continuous",
+      "kind": "click",
+      "selector": "#analysisBtn",
+      "description": "Reveal analysis step",
+      "elapsedMs": 193
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "ArrowRight",
+      "description": "Màn tiếp theo"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "continuous",
+      "kind": "keypress",
+      "key": "s",
+      "description": "Reveal proof step"
+    },
+    {
+      "category": "diagnostic",
+      "kind": "click",
+      "selector": "button[onclick=\"revealStep()\"]",
+      "description": "Proof 1",
+      "elapsedMs": 167
+    },
+    {
+      "category": "diagnostic",
+      "kind": "click",
+      "selector": "button[onclick=\"revealStep()\"]",
+      "description": "Proof 2",
+      "elapsedMs": 182
+    }
+  ],
+  "stateTests": [],
+  "readability": [],
+  "nativeWindows": "UNRUN",
+  "physicalTV": "UNRUN",
+  "backOfClassroom": "UNRUN",
+  "audibleTTS": "UNRUN",
+  "originalImport": {
+    "profile": "legacy",
+    "geometryState": null,
+    "title": "Bài 12. Hình bình hành — Dấu hiệu nhận biết",
+    "subject": "Hình học 8",
+    "subject_engine": null
+  },
+  "proofCoverage": [
+    {
+      "index": 0,
+      "title": "Hình bình hành",
+      "step": 1,
+      "figureId": "",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 1,
+      "title": "Tính chất đã học",
+      "step": 1,
+      "figureId": "",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 1,
+      "title": "Tính chất đã học",
+      "step": 2,
+      "figureId": "",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 2,
+      "title": "Nhận biết hình bình hành",
+      "step": 1,
+      "figureId": "",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 3,
+      "title": "Hai cặp cạnh đối",
+      "step": 1,
+      "figureId": "",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 4,
+      "title": "Một cặp cạnh đối",
+      "step": 1,
+      "figureId": "",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 5,
+      "title": "Đọc hình 3.31",
+      "step": 1,
+      "figureId": "VD2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 5,
+      "title": "Đọc hình 3.31",
+      "step": 2,
+      "figureId": "VD2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 6,
+      "title": "Chọn dấu hiệu",
+      "step": 1,
+      "figureId": "VD2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 7,
+      "title": "Sơ đồ phân tích Ví dụ 2",
+      "step": 1,
+      "figureId": "VD2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 8,
+      "title": "Chứng minh song song",
+      "step": 1,
+      "figureId": "VD2",
+      "ids": [
+        "AH",
+        "BD",
+        "CK"
+      ],
+      "hasAuthoredLink": true
+    },
+    {
+      "index": 9,
+      "title": "Chứng minh bằng nhau",
+      "step": 1,
+      "figureId": "VD2",
+      "ids": [
+        "AD",
+        "CB",
+        "angle_ADH",
+        "angle_CBK"
+      ],
+      "hasAuthoredLink": true
+    },
+    {
+      "index": 9,
+      "title": "Chứng minh bằng nhau",
+      "step": 2,
+      "figureId": "VD2",
+      "ids": [
+        "AH",
+        "CK",
+        "triangle_AHD",
+        "triangle_CKB"
+      ],
+      "hasAuthoredLink": true
+    },
+    {
+      "index": 10,
+      "title": "Chốt Ví dụ 2",
+      "step": 1,
+      "figureId": "VD2",
+      "ids": [
+        "AH",
+        "AK",
+        "CK",
+        "HC"
+      ],
+      "hasAuthoredLink": true
+    },
+    {
+      "index": 11,
+      "title": "Đọc hình 3.32",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 12,
+      "title": "Tam giác ADE cân",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 13,
+      "title": "Tam giác CBF cân",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 14,
+      "title": "Hai tam giác bằng nhau",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 14,
+      "title": "Hai tam giác bằng nhau",
+      "step": 2,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 14,
+      "title": "Hai tam giác bằng nhau",
+      "step": 3,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 15,
+      "title": "Chốt ý a",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 15,
+      "title": "Chốt ý a",
+      "step": 2,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 16,
+      "title": "Chọn cặp cạnh",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 17,
+      "title": "Chứng minh song song",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 18,
+      "title": "Chứng minh bằng nhau",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 18,
+      "title": "Chứng minh bằng nhau",
+      "step": 2,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 19,
+      "title": "Chốt ý b",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 20,
+      "title": "Bốn đoạn xích",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 20,
+      "title": "Bốn đoạn xích",
+      "step": 2,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 21,
+      "title": "Dấu hiệu theo góc",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 22,
+      "title": "Dấu hiệu đường chéo",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 23,
+      "title": "Hình 3.34a",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 24,
+      "title": "Hình 3.34b",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 25,
+      "title": "Hình 3.34c",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 26,
+      "title": "Dựng hình",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 26,
+      "title": "Dựng hình",
+      "step": 2,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 27,
+      "title": "Nhận biết tứ giác",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 28,
+      "title": "Chốt kết luận",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 29,
+      "title": "Điểm O và hai đường",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 30,
+      "title": "Dựng điểm Q",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 31,
+      "title": "Dựng A và B",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 32,
+      "title": "Con đường AB",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 32,
+      "title": "Con đường AB",
+      "step": 2,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 33,
+      "title": "Bốn dấu hiệu",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 33,
+      "title": "Bốn dấu hiệu",
+      "step": 2,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 33,
+      "title": "Bốn dấu hiệu",
+      "step": 3,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 33,
+      "title": "Bốn dấu hiệu",
+      "step": 4,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 34,
+      "title": "SGK trang 61",
+      "step": 1,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    },
+    {
+      "index": 34,
+      "title": "SGK trang 61",
+      "step": 2,
+      "figureId": "LT2",
+      "ids": [],
+      "hasAuthoredLink": false
+    }
+  ],
+  "harnessError": {
+    "message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#displayToolsGroup > summary')\u001b[22m\n\u001b[2m    - locator resolved to <summary>Chỉ điểm · Focus · Vẽ · Che · Zoom</summary>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+    "stack": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#displayToolsGroup > summary')\u001b[22m\n\u001b[2m    - locator resolved to <summary>Chỉ điểm · Focus · Vẽ · Che · Zoom</summary>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at /workspace/phase4-geometry-validation/classroom-validation.cjs:54:50"
+  }
+}

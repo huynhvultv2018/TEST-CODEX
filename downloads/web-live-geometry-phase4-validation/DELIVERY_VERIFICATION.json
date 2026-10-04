@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "artifact": "WEB_LIVE_GEOMETRY_PHASE4_VALIDATION.zip",
+  "sha256": "4252c5939b82fa880c29d798ec3f7419989adb5027d48295f461d62cd05d6474",
+  "bytes": 4276857,
+  "entries": 83,
+  "crc": "PASS",
+  "all_archive_entries_match_bundle": true,
+  "source_candidate_included": false,
+  "product_validation_status": "NOT_PASS"
+}

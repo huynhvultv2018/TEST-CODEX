@@ -1,0 +1,456 @@
+# APPROVE PHASE 4
+## WEB LIVE GEOMETRY — REAL LESSON / CLASSROOM VALIDATION
+
+Tôi xác nhận kết quả Phase 3:
+
+```text id="x53eoq"
+PHASE2_CANDIDATE_SHA256 =
+6e83a63792fff16d890b5f12bc3b990dc43bdfec3e360b7a8bbe3a10e813f38c
+
+PHASE3_CANDIDATE =
+WEB_LIVE_GEOMETRY_PHASE3_CANDIDATE
+
+PHASE3_CANDIDATE_SHA256 =
+8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c
+
+PHASE2_CANDIDATE_MUTATED = NO
+
+CONTROLLED_RISK_COUNT_BEFORE = 6
+PHASE3_BLOCKING_RISK_COUNT = 0
+
+GEOMETRY_PROFILE = PASS
+GEOMETRY_RUNTIME = PASS
+
+PERSISTENT_GEOMETRY = PASS
+GT_KL = PASS
+ANALYSIS_DIAGRAM = PASS
+PROOF_FLOW = PASS
+OBJECT_HIGHLIGHT = PASS
+GEOMETRY_FOCUS = PASS
+FIGURE_ZOOM = PASS
+ANNOTATION = PASS
+
+LEGACY_RUNTIME_REGRESSION = PASS
+ALGEBRA_PROFILE_ISOLATION = PASS
+INFORMATICS_PROFILE_ISOLATION = PASS
+
+NEW_RISK_COUNT = 3
+SOURCE_SCOPE_VIOLATION = NO
+PRODUCTION_MODIFIED = NO
+
+PHASE3_STATUS = PASS
+```
+
+Tôi phê duyệt:
+
+```text id="8bf74p"
+APPROVE PHASE 4
+```
+
+Nhưng Phase 4 là:
+
+```text id="2n1g35"
+GEOMETRY REAL-LESSON VALIDATION
++
+TV/PC CLASSROOM VALIDATION
++
+RISK VALIDATION
+```
+
+KHÔNG phải phát triển feature mới.
+
+==================================================
+1. SOURCE OF TRUTH
+==================================================
+
+Sử dụng duy nhất:
+
+```text id="yk3ug6"
+WEB_LIVE_GEOMETRY_PHASE3_CANDIDATE
+```
+
+SHA256:
+
+```text id="6rmrpy"
+8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c
+```
+
+Trước validation phải xác minh hash.
+
+Nếu không khớp:
+
+```text id="8eoc0o"
+STOP
+```
+
+Không sửa candidate trong quá trình validation.
+
+==================================================
+2. MỤC TIÊU
+==================================================
+
+Phase 4 phải trả lời câu hỏi:
+
+> WEB LIVE Geometry hiện tại có thực sự phù hợp để GV sử dụng trong một tiết Hình học THCS thực tế hay không?
+
+Không chỉ kiểm tra code.
+
+Phải kiểm tra:
+
+```text id="quwtsc"
+TECHNICAL CORRECTNESS
++
+PEDAGOGICAL USABILITY
++
+TV READABILITY
++
+TEACHER OPERABILITY
+```
+
+==================================================
+3. KHÔNG IMPLEMENT FEATURE
+==================================================
+
+Trong Phase 4:
+
+```text id="e5e8fy"
+NO NEW FEATURE
+NO REFACTOR
+NO UI REDESIGN
+NO SCHEMA REDESIGN
+NO CORE REFACTOR
+NO PRODUCTION
+```
+
+Nếu phát hiện vấn đề:
+
+```text id="s3mp8v"
+OBSERVE
+→ RECORD
+→ CLASSIFY
+→ EVIDENCE
+→ RECOMMEND
+```
+
+KHÔNG tự patch.
+
+==================================================
+4. REAL GEOMETRY LESSON
+==================================================
+
+Ưu tiên sử dụng một gói SOẠN_TRƯỚC Hình học thực tế đã có.
+
+Không tạo bài giả đơn giản chỉ để test PASS.
+
+Lesson validation nên có đủ:
+
+```text id="76w8q1"
+KIỂM TRA BÀI CŨ
+
+DẪN VÀO BÀI
+
+HÌNH GỐC
+
+GT/KL
+
+QUAN SÁT / PHÂN TÍCH
+
+SƠ ĐỒ PHÂN TÍCH
+
+CHỨNG MINH NHIỀU BƯỚC
+
+HIGHLIGHT ĐỐI TƯỢNG
+
+KẾT LUẬN
+
+LUYỆN TẬP / VẬN DỤNG
+```
+
+Nếu lesson thực tế không cần một thành phần nào đó, không được thêm nội dung giả để ép sử dụng.
+
+==================================================
+5. SOẠN_TRƯỚC → WEB LIVE
+==================================================
+
+Kiểm tra workflow thực tế:
+
+```text id="z1m5ya"
+SOẠN_TRƯỚC
+      ↓
+KIỂM TRA
+      ↓
+WEB_LIVE_PREP_PACKET
+      ↓
+WEB LIVE GEOMETRY
+```
+
+Xác minh Geometry Profile không buộc GV phải chỉnh thủ công quá nhiều dữ liệu sau khi SOẠN_TRƯỚC đã đóng gói.
+
+Ghi nhận:
+
+```text id="5gr5hr"
+MANUAL_INTERVENTION_COUNT =
+```
+
+và mô tả từng thao tác nếu có.
+
+==================================================
+6. PERSISTENT FIGURE VALIDATION
+==================================================
+
+Chạy toàn bộ bài.
+
+Kiểm tra:
+
+```text id="i9tspm"
+HÌNH GỐC
+→ GT/KL
+→ PHÂN TÍCH
+→ CHỨNG MINH
+→ KẾT LUẬN
+```
+
+Hình phải tiếp tục tồn tại khi pedagogically appropriate.
+
+Kiểm tra:
+
+```text id="t4hn04"
+unexpected figure reset
+unexpected zoom reset
+unexpected highlight loss
+unexpected annotation loss
+state leakage between exercises
+```
+
+==================================================
+7. PROOF ↔ FIGURE
+==================================================
+
+Đây là gate quan trọng.
+
+Mỗi bước chứng minh cần kiểm tra khả năng liên hệ với hình.
+
+Ví dụ:
+
+```text id="z4ofze"
+PROOF STEP
+       ↕
+RELATED OBJECT HIGHLIGHT
+       ↕
+FIGURE
+```
+
+GV phải có thể nhìn nhanh và biết:
+
+```text id="rtp5la"
+ĐANG CHỨNG MINH GÌ?
+ĐANG XÉT ĐỐI TƯỢNG NÀO?
+HÌNH ĐANG NHẤN MẠNH Ở ĐÂU?
+```
+
+==================================================
+8. GT/KL READABILITY
+==================================================
+
+Kiểm tra trên màn hình TV thực tế hoặc viewport tương đương.
+
+Đánh giá:
+
+```text id="my6wzm"
+GT dễ đọc?
+KL dễ đọc?
+Có chiếm quá nhiều diện tích hình?
+HS cuối lớp có thể theo dõi?
+GV có phải zoom trình duyệt thủ công?
+```
+
+==================================================
+9. 70/30 — 60/40 — FULL FIGURE
+==================================================
+
+Kiểm tra cả ba mode:
+
+```text id="4xik8f"
+70/30
+60/40
+FIGURE FULLSCREEN
+```
+
+Xác minh chuyển mode:
+
+```text id="my6hp3"
+FAST
+STABLE
+NO STATE LOSS
+NO FIGURE RESET
+NO PROOF RESET
+```
+
+Ghi nhận mode phù hợp nhất cho:
+
+```text id="myo5fe"
+QUAN SÁT HÌNH
+GT/KL
+PHÂN TÍCH
+CHỨNG MINH
+CHỐT KIẾN THỨC
+```
+
+==================================================
+10. FOCUS VALIDATION
+==================================================
+
+Kiểm tra Focus trong lúc chứng minh.
+
+Yêu cầu:
+
+```text id="msj3y0"
+CURRENT STEP = CLEAR
+
+OTHER STEPS = REDUCED EMPHASIS
+
+RELATED FIGURE OBJECT =
+CLEARLY HIGHLIGHTED
+```
+
+Không để Focus làm mất ngữ cảnh chứng minh.
+
+==================================================
+11. ZOOM VALIDATION
+==================================================
+
+Kiểm tra:
+
+```text id="owh37r"
+NORMAL
+→ ZOOM
+→ TEACH
+→ RETURN
+```
+
+Sau khi quay lại phải giữ đúng:
+
+```text id="h2g4nc"
+CURRENT STEP
+CURRENT HIGHLIGHT
+GEOMETRY STATE
+ANNOTATION STATE
+```
+
+==================================================
+12. ANNOTATION VALIDATION
+==================================================
+
+Trong bài thực tế, thử:
+
+```text id="wz2tq2"
+MARK
+DRAW
+LABEL
+ERASE
+UNDO
+REDO
+CLEAR ANNOTATION
+```
+
+Xác minh:
+
+```text id="iuyllb"
+CLEAR ANNOTATION
+≠
+DELETE BASE FIGURE
+```
+
+==================================================
+13. TEACHER OPERABILITY
+==================================================
+
+Đánh giá số thao tác GV cần thực hiện.
+
+Mục tiêu:
+
+GV không phải liên tục:
+
+```text id="ubtsmm"
+MOVE MOUSE
+OPEN MENU
+CHANGE MODE
+SCROLL
+SEARCH CONTROL
+```
+
+trong lúc đang giảng.
+
+Ghi nhận:
+
+```text id="okvsl6"
+CLICK_COUNT
+MODE_CHANGE_COUNT
+UNNECESSARY_ACTION_COUNT
+```
+
+cho một flow dạy đại diện.
+
+==================================================
+14. TV READABILITY
+==================================================
+
+Đánh giá riêng màn hình HS/TV:
+
+```text id="mrf37w"
+FIGURE SIZE
+TEXT SIZE
+LINE BREAK
+GT/KL
+PROOF STEP
+HIGHLIGHT VISIBILITY
+CONTRAST
+DISTRACTION
+```
+
+Không đánh giá chỉ trên màn hình developer.
+
+==================================================
+15. CLASSROOM FLOW
+==================================================
+
+Giả lập GV dạy liên tục:
+
+```text id="nhdf6k"
+BẮT ĐẦU TIẾT
+→ KIỂM TRA BÀI CŨ
+→ DẪN BÀI
+→ HÌNH
+→ GT/KL
+→ PHÂN TÍCH
+→ CHỨNG MINH
+→ CHỐT
+→ LUYỆN TẬP
+```
+
+Ghi lại mọi điểm mà GV phải dừng luồng dạy để thao tác kỹ thuật.
+
+Phân loại:
+
+```text id="rjvs5v"
+NONE
+MINOR
+DISRUPTIVE
+BLOCKING
+```
+
+==================================================
+16. 3 NEW RISKS
+==================================================
+
+Audit riêng:
+
+```text id="t9vpka"
+NEW_RISK_COUNT = 3
+```
+
+Đối với từng risk trả:
+
+```text id="bx9rnp"
+RISK_ID =
+TR

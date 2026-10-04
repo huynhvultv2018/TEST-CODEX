@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "phase3_zip_sha256_before": "8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c",
+  "phase3_zip_sha256_after": "8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c",
+  "candidate_mutated": "NO",
+  "source_file_count": 1227,
+  "all_source_files_identical": true,
+  "served_assets_byte_match": 49,
+  "source_scope_violation": "NO",
+  "new_feature_implemented": "NO",
+  "production_modified": "NO"
+}

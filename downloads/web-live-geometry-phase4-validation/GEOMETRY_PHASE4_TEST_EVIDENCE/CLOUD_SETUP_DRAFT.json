@@ -1,0 +1,10 @@
+{
+  "status": "saved",
+  "draft_id": "98edf5de-aa28-4915-b97d-7068d482f30d~cecfgdraft_6ac2077d0e68819888a7efb4851101fc",
+  "requires_publish": true,
+  "changed_fields": [
+    "start_skill"
+  ],
+  "scope": "Read-only Phase 4 validation; external evidence paths; stop before remediation; repositories/network/install_script/secrets preserved",
+  "fresh_task_restoration": "UNRUN"
+}

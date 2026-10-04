@@ -1,0 +1,36 @@
+﻿screen,title,type,rendered_figure_id,own_image_path,own_image_sha256,rendered_image_sha256,annotation_scope,observed_status
+1,Hình bình hành,Kiểm tra,,,,,overlay:screen:1:0,SOURCE_STAGE
+2,Tính chất đã học,Kiểm tra,,,,,overlay:screen:2:1,SOURCE_STAGE
+3,Nhận biết hình bình hành,Bài mới,,,,,overlay:screen:3:2,SOURCE_STAGE
+4,Hai cặp cạnh đối,Định lí 2,,,,,overlay:screen:4:3,SOURCE_STAGE
+5,Một cặp cạnh đối,Định lí 2,,,,,overlay:screen:5:4,SOURCE_STAGE
+6,Đọc hình 3.31,Ví dụ 2,VD2,images/VD2_H331.png,916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd,916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd,overlay:scene:VD2:5,VD2_BASE_PERSISTENCE
+7,Chọn dấu hiệu,Ví dụ 2,VD2,,,916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd,overlay:scene:VD2:5,VD2_BASE_PERSISTENCE
+8,Sơ đồ phân tích Ví dụ 2,analysisDiagram,VD2,,,916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd,overlay:scene:VD2:5,VD2_BASE_PERSISTENCE
+9,Chứng minh song song,Ví dụ 2,VD2,,,916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd,overlay:scene:VD2:5,VD2_BASE_PERSISTENCE
+10,Chứng minh bằng nhau,Ví dụ 2,VD2,,,916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd,overlay:scene:VD2:5,VD2_BASE_PERSISTENCE
+11,Chốt Ví dụ 2,Ví dụ 2,VD2,,,916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd,overlay:scene:VD2:5,VD2_BASE_PERSISTENCE
+12,Đọc hình 3.32,Luyện tập 2,LT2,images/LT2_H332.png,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:luyện tập:2:11,SOURCE_STAGE
+13,Tam giác ADE cân,Luyện tập 2a,LT2,images/LT2A_can.png,cd2c05cff16a181e5e35fc1750914f2e63d0dbe9c2d9ebcfe774e414a5d26cbb,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:luyện tập:2:11,SOURCE_STAGE
+14,Tam giác CBF cân,Luyện tập 2a,LT2,,,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:luyện tập:2:11,REVIEW_SCOPE
+15,Hai tam giác bằng nhau,Luyện tập 2a,LT2,images/LT2A_bang_nhau.png,39f6ec26e7571be1b813e651db60132eafd8cc90ba288b59ebf2e094521a97df,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:luyện tập:2:11,REVIEW_SCOPE
+16,Chốt ý a,Luyện tập 2a,LT2,,,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:luyện tập:2:11,REVIEW_SCOPE
+17,Chọn cặp cạnh,Luyện tập 2b,LT2,images/LT2_H332.png,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:luyện tập:2:11,REVIEW_SCOPE
+18,Chứng minh song song,Luyện tập 2b,LT2,images/LT2B_song_song.png,1030152fedb18dd9786c3dae07d81550d7487e81386348d5bee8420c9673494f,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:luyện tập:2:11,REVIEW_SCOPE
+19,Chứng minh bằng nhau,Luyện tập 2b,LT2,images/LT2B_bang_nhau.png,d04ca4afeaacd75cdafae181d91483881d398fa2dfa4dc5411d5eea8693e92b3,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:luyện tập:2:11,REVIEW_SCOPE
+20,Chốt ý b,Luyện tập 2b,LT2,,,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:luyện tập:2:11,REVIEW_SCOPE
+21,Bốn đoạn xích,Thực hành 2,LT2,images/TT2_H333.png,b59beaa64e5521a2d5fa46a15c6caf9172e0e52beadd5831f645a4e613cb5cb7,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:thực hành:2:20,BLOCKING_WRONG_EXERCISE_FIGURE
+22,Dấu hiệu theo góc,Định lí 3,LT2,,,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:screen:21:21,REVIEW_SCOPE
+23,Dấu hiệu đường chéo,Định lí 3,LT2,,,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:screen:22:22,REVIEW_SCOPE
+24,Hình 3.34a,Ví dụ 3,LT2,images/VD3_H334.png,56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:ví dụ:3:23,BLOCKING_WRONG_EXERCISE_FIGURE
+25,Hình 3.34b,Ví dụ 3,LT2,images/VD3_H334.png,56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:ví dụ:3:23,BLOCKING_WRONG_EXERCISE_FIGURE
+26,Hình 3.34c,Ví dụ 3,LT2,images/VD3_H334.png,56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:ví dụ:3:23,BLOCKING_WRONG_EXERCISE_FIGURE
+27,Dựng hình,Luyện tập 3,LT2,images/LT3_Hinh.png,df741e56c51d49a3055189d4342a97e60cb753baf211a34b52d4f41c89bd5740,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:luyện tập:3:26,BLOCKING_WRONG_EXERCISE_FIGURE
+28,Nhận biết tứ giác,Luyện tập 3,LT2,images/LT3_duong_cheo.png,61ad82678b701849a8f7e34c91a6fed5a59fe214462445492b5a7f78a49834fc,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:luyện tập:3:26,BLOCKING_WRONG_EXERCISE_FIGURE
+29,Chốt kết luận,Luyện tập 3,LT2,,,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:luyện tập:3:26,REVIEW_SCOPE
+30,Điểm O và hai đường,Vận dụng,LT2,images/VDU_H327.png,12e1f76365535da45ecebf10ad3306b499b7e008f10b411faafa0d57ecbfd81d,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:vận dụng:29,BLOCKING_WRONG_EXERCISE_FIGURE
+31,Dựng điểm Q,Vận dụng,LT2,images/VDU_dung.png,ae6fdb5745b9df8408868ee7817952dd9cca9e35d6ffb4e2df5c1faa5b31087a,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:vận dụng:29,BLOCKING_WRONG_EXERCISE_FIGURE
+32,Dựng A và B,Vận dụng,LT2,,,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:vận dụng:29,REVIEW_SCOPE
+33,Con đường AB,Vận dụng,LT2,images/VDU_ket_luan.png,4e63e045edfb19c4b44d58f70a5d4d815233c5d969bc079fc677de7de8403e64,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:legacy:vận dụng:29,BLOCKING_WRONG_EXERCISE_FIGURE
+34,Bốn dấu hiệu,Củng cố,LT2,,,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:screen:33:33,REVIEW_SCOPE
+35,SGK trang 61,Bài về nhà,LT2,,,f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4,overlay:screen:34:34,REVIEW_SCOPE

@@ -1,0 +1,544 @@
+[
+  {
+    "index": 0,
+    "screen_id": 1,
+    "title": "Hình bình hành",
+    "type": "Kiểm tra",
+    "content": "Hình bình hành là tứ giác như thế\nnào?",
+    "answer": "Có hai cặp cạnh đối song song.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 1,
+    "screen_id": 2,
+    "title": "Tính chất đã học",
+    "type": "Kiểm tra",
+    "content": "Nêu tính chất về cạnh đối và đường\nchéo.",
+    "answer": "Cạnh đối bằng nhau.\nHai đường chéo chia đôi nhau.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 2,
+    "screen_id": 3,
+    "title": "Nhận biết hình bình hành",
+    "type": "Bài mới",
+    "content": "Các tính chất ấy có dùng để nhận\nbiết hình bình hành không?",
+    "answer": "Có thể dùng các dấu hiệu ở Định lí 2 và 3.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 3,
+    "screen_id": 4,
+    "title": "Hai cặp cạnh đối",
+    "type": "Định lí 2",
+    "content": "AB = CD, AD = BC.\nKết luận về ABCD?",
+    "answer": "ABCD là hình bình hành.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 4,
+    "screen_id": 5,
+    "title": "Một cặp cạnh đối",
+    "type": "Định lí 2",
+    "content": "AB ∥ CD và AB = CD.\nKết luận về ABCD?",
+    "answer": "ABCD là hình bình hành.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 5,
+    "screen_id": 6,
+    "title": "Đọc hình 3.31",
+    "type": "Ví dụ 2",
+    "content": "ABCD là hình bình hành.\nAH, CK ⟂ BD.\nChứng minh AHCK là hình bình hành.",
+    "answer": "GT: ABCD hình bình hành; AH, CK ⟂ BD.\nKL: AHCK hình bình hành.",
+    "image": "images/VD2_H331.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": {
+      "figureId": "VD2",
+      "givens": [
+        "ABCD là hình bình hành.",
+        "AH, CK ⟂ BD."
+      ],
+      "goals": [
+        "AHCK là hình bình hành."
+      ]
+    },
+    "changed_fields": [
+      "geometry"
+    ]
+  },
+  {
+    "index": 6,
+    "screen_id": 7,
+    "title": "Chọn dấu hiệu",
+    "type": "Ví dụ 2",
+    "content": "Cần chứng minh hai điều gì về AH\nvà CK?",
+    "answer": "AH ∥ CK và AH = CK.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": {
+      "figureId": "VD2"
+    },
+    "changed_fields": [
+      "geometry"
+    ]
+  },
+  {
+    "index": 7,
+    "screen_id": "7A",
+    "title": "Sơ đồ phân tích Ví dụ 2",
+    "type": "analysisDiagram",
+    "content": "Tìm hướng chứng minh AHCK là hình bình hành.",
+    "answer": "AHCK là hình bình hành.",
+    "image": null,
+    "analysisDiagram": null,
+    "imageMode": "inherit",
+    "metadata": {
+      "figureId": "VD2",
+      "analysisLinks": [
+        [
+          "AH",
+          "CK"
+        ],
+        [
+          "AH",
+          "CK",
+          "BD"
+        ],
+        [
+          "triangle_AHD",
+          "triangle_CKB"
+        ],
+        [
+          "pair_AH_CK"
+        ]
+      ]
+    },
+    "changed_fields": [
+      "geometry"
+    ]
+  },
+  {
+    "index": 8,
+    "screen_id": 8,
+    "title": "Chứng minh song song",
+    "type": "Ví dụ 2",
+    "content": "Vì sao AH ∥ CK?",
+    "answer": "AH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+    "image": null,
+    "analysisDiagram": "images/VD2_song_song.png",
+    "imageMode": "inherit",
+    "metadata": {
+      "figureId": "VD2",
+      "proofLinks": [
+        [
+          "AH",
+          "CK",
+          "BD"
+        ]
+      ]
+    },
+    "changed_fields": [
+      "geometry"
+    ]
+  },
+  {
+    "index": 9,
+    "screen_id": 9,
+    "title": "Chứng minh bằng nhau",
+    "type": "Ví dụ 2",
+    "content": "Vì sao AH = CK?",
+    "answer": "AD = CB, góc D₁ = góc B₁.\n∆AHD ≅ ∆CKB ⇒ AH = CK.",
+    "image": null,
+    "analysisDiagram": "images/VD2_bang_nhau.png",
+    "imageMode": "inherit",
+    "metadata": {
+      "figureId": "VD2",
+      "proofLinks": [
+        [
+          "AD",
+          "CB",
+          "angle_ADH",
+          "angle_CBK"
+        ],
+        [
+          "triangle_AHD",
+          "triangle_CKB",
+          "AH",
+          "CK"
+        ]
+      ]
+    },
+    "changed_fields": [
+      "geometry"
+    ]
+  },
+  {
+    "index": 10,
+    "screen_id": 10,
+    "title": "Chốt Ví dụ 2",
+    "type": "Ví dụ 2",
+    "content": "Từ AH ∥ CK và AH = CK, kết luận?",
+    "answer": "AHCK là hình bình hành.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": {
+      "figureId": "VD2",
+      "proofLinks": [
+        [
+          "AH",
+          "CK",
+          "HC",
+          "AK"
+        ]
+      ]
+    },
+    "changed_fields": [
+      "geometry"
+    ]
+  },
+  {
+    "index": 11,
+    "screen_id": 11,
+    "title": "Đọc hình 3.32",
+    "type": "Luyện tập 2",
+    "content": "ABCD là hình bình hành, AB > BC.\nDE, BF là các tia phân giác.\nXét ∆ADE và ∆CBF.",
+    "answer": "Cần chứng minh hai tam giác cân và bằng\nnhau.",
+    "image": "images/LT2_H332.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": {
+      "figureId": "LT2",
+      "reset": true
+    },
+    "changed_fields": [
+      "geometry"
+    ]
+  },
+  {
+    "index": 12,
+    "screen_id": 12,
+    "title": "Tam giác ADE cân",
+    "type": "Luyện tập 2a",
+    "content": "Vì sao ∆ADE cân?",
+    "answer": "Góc ADE = góc DEA ⇒ AD = AE.",
+    "image": "images/LT2A_can.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": {
+      "figureId": "LT2"
+    },
+    "changed_fields": [
+      "geometry"
+    ]
+  },
+  {
+    "index": 13,
+    "screen_id": 13,
+    "title": "Tam giác CBF cân",
+    "type": "Luyện tập 2a",
+    "content": "Vì sao ∆CBF cân?",
+    "answer": "BC = CF; ∆CBF cân tại C.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 14,
+    "screen_id": 14,
+    "title": "Hai tam giác bằng nhau",
+    "type": "Luyện tập 2a",
+    "content": "Chứng minh ∆ADE ≅ ∆CBF.",
+    "answer": "AD=CB; góc DAE=BCF;\ngóc ADE=CBF.\nSuy ra bằng nhau (góc–cạnh–góc).",
+    "image": "images/LT2A_bang_nhau.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 15,
+    "screen_id": 15,
+    "title": "Chốt ý a",
+    "type": "Luyện tập 2a",
+    "content": "Kết quả của ý a là gì?",
+    "answer": "∆ADE, ∆CBF đều cân\nvà ∆ADE ≅ ∆CBF.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 16,
+    "screen_id": 16,
+    "title": "Chọn cặp cạnh",
+    "type": "Luyện tập 2b",
+    "content": "Xét tứ giác DEBF.\nChọn cặp cạnh đối để dùng Định lí\n2b.",
+    "answer": "Chọn EB và DF.",
+    "image": "images/LT2_H332.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 17,
+    "screen_id": 17,
+    "title": "Chứng minh song song",
+    "type": "Luyện tập 2b",
+    "content": "Vì sao EB ∥ DF?",
+    "answer": "AB ∥ DC ⇒ EB ∥ DF.",
+    "image": "images/LT2B_song_song.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 18,
+    "screen_id": 18,
+    "title": "Chứng minh bằng nhau",
+    "type": "Luyện tập 2b",
+    "content": "Vì sao EB = DF?",
+    "answer": "EB=AB−AE; DF=DC−CF.\nAB=DC; AE=CF ⇒ EB=DF.",
+    "image": "images/LT2B_bang_nhau.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 19,
+    "screen_id": 19,
+    "title": "Chốt ý b",
+    "type": "Luyện tập 2b",
+    "content": "Tứ giác DEBF là hình gì?",
+    "answer": "DEBF là hình bình hành.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 20,
+    "screen_id": 20,
+    "title": "Bốn đoạn xích",
+    "type": "Thực hành 2",
+    "content": "Hai đoạn dài bằng nhau;\nhai đoạn ngắn bằng nhau;\nxếp dài–ngắn xen kẽ.\nTứ giác tạo thành là hình gì?",
+    "answer": "Hai cặp cạnh đối bằng nhau\n⇒ hình bình hành.",
+    "image": "images/TT2_H333.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 21,
+    "screen_id": 21,
+    "title": "Dấu hiệu theo góc",
+    "type": "Định lí 3",
+    "content": "Góc A = góc C; góc B = góc D.\nABCD là hình gì?",
+    "answer": "ABCD là hình bình hành.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 22,
+    "screen_id": 22,
+    "title": "Dấu hiệu đường chéo",
+    "type": "Định lí 3",
+    "content": "AC, BD cắt tại O.\nOA=OC, OB=OD.\nABCD là hình gì?",
+    "answer": "ABCD là hình bình hành.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 23,
+    "screen_id": 23,
+    "title": "Hình 3.34a",
+    "type": "Ví dụ 3",
+    "content": "Hai cặp cạnh đối được đánh dấu\nbằng nhau.\nKết luận?",
+    "answer": "Là hình bình hành (Định lí 2a).",
+    "image": "images/VD3_H334.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 24,
+    "screen_id": 24,
+    "title": "Hình 3.34b",
+    "type": "Ví dụ 3",
+    "content": "Góc A = 110°, góc C = 100°.\nCó là hình bình hành không?",
+    "answer": "Không. Góc A và góc C không bằng nhau.",
+    "image": "images/VD3_H334.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 25,
+    "screen_id": 25,
+    "title": "Hình 3.34c",
+    "type": "Ví dụ 3",
+    "content": "Hai đường chéo chia đôi nhau.\nKết luận?",
+    "answer": "Là hình bình hành (Định lí 3b).",
+    "image": "images/VD3_H334.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 26,
+    "screen_id": 26,
+    "title": "Dựng hình",
+    "type": "Luyện tập 3",
+    "content": "O là trung điểm AA′ và BB′.\nCần chứng minh A′B′ = AB, A′B′ ∥\nAB.",
+    "answer": "GT: OA=OA′, OB=OB′.\nKL: A′B′=AB, A′B′ ∥ AB.",
+    "image": "images/LT3_Hinh.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 27,
+    "screen_id": 27,
+    "title": "Nhận biết tứ giác",
+    "type": "Luyện tập 3",
+    "content": "AA′ và BB′ là gì của tứ giác\nABA′B′?",
+    "answer": "Là hai đường chéo, cùng bị chia đôi tại O.",
+    "image": "images/LT3_duong_cheo.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 28,
+    "screen_id": 28,
+    "title": "Chốt kết luận",
+    "type": "Luyện tập 3",
+    "content": "Từ ABA′B′ là hình bình hành, suy\nra?",
+    "answer": "A′B′ = AB và A′B′ ∥ AB.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 29,
+    "screen_id": 29,
+    "title": "Điểm O và hai đường",
+    "type": "Vận dụng",
+    "content": "a, b cắt tại P; O ở trong góc.\nChọn A trên a, B trên b để\nA, O, B thẳng hàng và OA = OB.",
+    "answer": "Dựng PAQB là hình bình hành, O là giao\nđiểm hai đường chéo.",
+    "image": "images/VDU_H327.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 30,
+    "screen_id": 30,
+    "title": "Dựng điểm Q",
+    "type": "Vận dụng",
+    "content": "Lấy Q đối xứng với P qua O.\nO là trung điểm đoạn nào?",
+    "answer": "O là trung điểm PQ.",
+    "image": "images/VDU_dung.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 31,
+    "screen_id": 31,
+    "title": "Dựng A và B",
+    "type": "Vận dụng",
+    "content": "Qua Q kẻ QA ∥ b, QB ∥ a.\nA thuộc a, B thuộc b.\nPAQB là hình gì?",
+    "answer": "PAQB là hình bình hành.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 32,
+    "screen_id": 32,
+    "title": "Con đường AB",
+    "type": "Vận dụng",
+    "content": "Vì sao AB đi qua O và OA = OB?",
+    "answer": "O là trung điểm AB.\nVậy A, O, B thẳng hàng và OA=OB.",
+    "image": "images/VDU_ket_luan.png",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 33,
+    "screen_id": 33,
+    "title": "Bốn dấu hiệu",
+    "type": "Củng cố",
+    "content": "Nêu bốn dấu hiệu nhận biết hình\nbình hành.",
+    "answer": "2 cặp cạnh đối bằng nhau;\n1 cặp đối ∥ và bằng nhau;\n2 cặp góc đối bằng nhau;\n2 đường chéo chia đôi nhau.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  },
+  {
+    "index": 34,
+    "screen_id": 34,
+    "title": "SGK trang 61",
+    "type": "Bài về nhà",
+    "content": "Bài 3.13 và 3.16.",
+    "answer": "3.13: a đúng, b sai, c đúng.\n3.16: a,c là hình bình hành; b không.",
+    "image": "",
+    "analysisDiagram": null,
+    "imageMode": null,
+    "metadata": null,
+    "changed_fields": []
+  }
+]

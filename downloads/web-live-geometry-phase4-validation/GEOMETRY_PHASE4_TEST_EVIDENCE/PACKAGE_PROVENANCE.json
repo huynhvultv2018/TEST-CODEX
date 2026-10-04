@@ -1,0 +1,26 @@
+{
+  "original_package": "/workspace/TEST-CODEX/WEB_LIVE_GEOMETRY_PHASE3_CANDIDATE/WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip",
+  "original_sha256": "86f95e57641647c3441f615cd6f5e3437c0e509afc2d13e030781ce9a23cf033",
+  "profile_package": "/workspace/TEST-CODEX/WEB_LIVE_GEOMETRY_PHASE3_CANDIDATE/GEOMETRY_PHASE3_TEST_PACKAGES/HINH8_VD2_GEOMETRY_PROFILE_TEST.zip",
+  "profile_sha256": "b502802ab694aa4ee2cc57bb7e053a06fd534580d8d7285f8a55d91428945bd7",
+  "unchanged_asset_paths": [
+    "manifest.json",
+    "images/LT2A_bang_nhau.png",
+    "images/LT2A_can.png",
+    "images/LT2B_bang_nhau.png",
+    "images/LT2B_song_song.png",
+    "images/LT2_H332.png",
+    "images/LT3_Hinh.png",
+    "images/LT3_duong_cheo.png",
+    "images/TT2_H333.png",
+    "images/VD2_H331.png",
+    "images/VD2_bang_nhau.png",
+    "images/VD2_song_song.png",
+    "images/VD3_H334.png",
+    "images/VDU_H327.png",
+    "images/VDU_dung.png",
+    "images/VDU_ket_luan.png"
+  ],
+  "source_content_unchanged": true,
+  "metadata_block_count": 10
+}
