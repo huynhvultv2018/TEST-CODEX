@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "servedAssets": 49,
+  "checks": [
+    "Fresh ZIP payload assets match source",
+    "R2 modal close/reopen",
+    "Real Geometry ZIP import and decoded base figure",
+    "GT/KL from metadata",
+    "Proof 1/2 authored object highlights",
+    "Teacher controls absent from TV",
+    "Zero native browser runtime errors"
+  ],
+  "errors": []
+}

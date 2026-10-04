@@ -1,0 +1,115 @@
+{
+  "browser": "151.0.7922.173",
+  "cases": [
+    {
+      "input": "geometry",
+      "profile": "geometry",
+      "comparedWithPhase2": false,
+      "geometryActivated": true,
+      "selectedHooksOnly": true,
+      "result": "PASS"
+    },
+    {
+      "input": "MISSING",
+      "profile": "legacy",
+      "comparedWithPhase2": true,
+      "geometryActivated": false,
+      "selectedHooksOnly": true,
+      "result": "PASS"
+    },
+    {
+      "input": "",
+      "profile": "legacy",
+      "comparedWithPhase2": true,
+      "geometryActivated": false,
+      "selectedHooksOnly": true,
+      "result": "PASS"
+    },
+    {
+      "input": "unknown",
+      "profile": "legacy",
+      "comparedWithPhase2": true,
+      "geometryActivated": false,
+      "selectedHooksOnly": true,
+      "result": "PASS"
+    },
+    {
+      "input": "legacy",
+      "profile": "legacy",
+      "comparedWithPhase2": true,
+      "geometryActivated": false,
+      "selectedHooksOnly": true,
+      "result": "PASS"
+    },
+    {
+      "input": "algebra",
+      "profile": "algebra",
+      "comparedWithPhase2": true,
+      "geometryActivated": false,
+      "selectedHooksOnly": true,
+      "result": "PASS"
+    },
+    {
+      "input": "geometry",
+      "profile": "geometry",
+      "comparedWithPhase2": false,
+      "geometryActivated": true,
+      "selectedHooksOnly": true,
+      "result": "PASS"
+    },
+    {
+      "input": "informatics",
+      "profile": "informatics",
+      "comparedWithPhase2": true,
+      "geometryActivated": false,
+      "selectedHooksOnly": true,
+      "result": "PASS"
+    },
+    {
+      "input": "legacy",
+      "profile": "legacy",
+      "comparedWithPhase2": true,
+      "geometryActivated": false,
+      "selectedHooksOnly": true,
+      "result": "PASS"
+    },
+    {
+      "input": "unknown-figure",
+      "result": "PASS",
+      "futureProofAbsent": true,
+      "noCrash": true
+    },
+    {
+      "input": "missing-source",
+      "result": "PASS",
+      "futureProofAbsent": true,
+      "noCrash": true
+    },
+    {
+      "input": "bad-coordinate",
+      "result": "PASS",
+      "futureProofAbsent": true,
+      "noCrash": true
+    },
+    {
+      "input": "unknown-object",
+      "result": "PASS",
+      "futureProofAbsent": true,
+      "noCrash": true
+    },
+    {
+      "input": "future-focus",
+      "result": "PASS",
+      "futureProofAbsent": true,
+      "noCrash": true
+    }
+  ],
+  "errors": [],
+  "algebraProfileIsolation": "PASS",
+  "informaticsProfileIsolation": "PASS",
+  "legacyOptionalMetadata": "PASS",
+  "demoScreens": 4,
+  "demoStates": 8,
+  "demoMatch": true,
+  "nativeWindowsAudio": "UNRUN"
+}

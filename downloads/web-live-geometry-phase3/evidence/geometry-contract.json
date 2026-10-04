@@ -1,0 +1,59 @@
+{
+  "runtime": "v24.19.0",
+  "checks": [
+    {
+      "name": "Geometry-only persistent figure survives generic step changes without legacy scene hints",
+      "result": "PASS"
+    },
+    {
+      "name": "Explicit reset of the same figure separates annotation context without deleting its base image",
+      "result": "PASS"
+    },
+    {
+      "name": "Legacy and other profiles never resolve Geometry figure metadata",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid figure IDs/sources fall back safely without selecting hidden future figures",
+      "result": "PASS"
+    },
+    {
+      "name": "A missing sourceScreenId never guesses an unnamed source screen",
+      "result": "PASS"
+    },
+    {
+      "name": "Optional Geometry metadata does not require lesson migration",
+      "result": "PASS"
+    },
+    {
+      "name": "Geometry registered feature; Algebra/Informatics/Legacy descriptors preserved",
+      "result": "PASS"
+    },
+    {
+      "name": "Unregistered presentation adapters remain no-ops; duplicate/invalid adapters rejected",
+      "result": "PASS"
+    }
+  ],
+  "diagnostics": [
+    {
+      "code": "UNKNOWN_FIGURE",
+      "figureId": "unknown"
+    },
+    {
+      "code": "FIGURE_SOURCE_MISSING",
+      "figureId": "one"
+    },
+    {
+      "code": "UNKNOWN_FIGURE",
+      "figureId": "one"
+    },
+    {
+      "code": "INVALID_FIGURE",
+      "figureId": ""
+    },
+    {
+      "code": "UNKNOWN_FIGURE",
+      "figureId": "one"
+    }
+  ]
+}

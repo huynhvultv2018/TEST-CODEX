@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "pairedPackages": 5,
+  "pairedScreens": 171,
+  "pairedStates": 342,
+  "teacherTVContractHashMatch": true,
+  "previewVisibleDOMParity": true,
+  "stateFieldShapeMatch": true,
+  "lessonDataUnchanged": true,
+  "pairedVisualMetrics": 44,
+  "additionalDemoScreens": 4,
+  "additionalDemoStates": 8,
+  "cockpitChecksPerRuntime": 30,
+  "ttsChecksPerRuntime": 20,
+  "browserErrors": 0,
+  "overflowStates": 0,
+  "excludedFromStateComparison": [
+    "random lessonActivation",
+    "stateVersion counter (separately tested)",
+    "wall clock timestamp",
+    "hidden offscreen iframe TTS registry during broad screen walk (native TTS suite separately asserts registry parity)"
+  ],
+  "nativeAcceptance": {
+    "windows": "UNRUN",
+    "physicalTV": "UNRUN",
+    "audibleTTS": "UNRUN_NO_VIETNAMESE_VOICE",
+    "wordGeoGebra": "UNRUN_NO_WIN32"
+  }
+}

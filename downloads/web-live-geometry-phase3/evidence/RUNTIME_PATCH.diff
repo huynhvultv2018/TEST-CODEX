@@ -1,0 +1,277 @@
+--- phase2/WEB_LIVE/common.js
++++ phase3/WEB_LIVE/common.js
+@@ -91,7 +91,8 @@
+ function resolveScreenVisuals(lesson,index){
+  if(!Array.isArray(lesson?.screens)||index<0||index>=lesson.screens.length)return null;
+  const cache=visualIndexes.get(lesson);
+- return (cache&&cache.lessonId===String(lesson.id||lesson.packageId||'')?cache:rebuildSceneIndex(lesson)).screens[index];
++ const fallback=(cache&&cache.lessonId===String(lesson.id||lesson.packageId||'')?cache:rebuildSceneIndex(lesson)).screens[index];
++ return globalThis.WebLiveProfiles?.adaptVisuals(lesson,index,fallback)??fallback;
+ }
+ function resolveScreenImage(lesson,index){return resolveScreenVisuals(lesson,index)?.geometry||null}
+ function resolveAnalysisDiagram(lesson,index){return resolveScreenVisuals(lesson,index)?.analysis||null}
+--- phase2/WEB_LIVE/core-profiles.js
++++ phase3/WEB_LIVE/core-profiles.js
+@@ -5,8 +5,9 @@
+  const hookNames=Object.freeze(['onLessonLoad','onStepChange','onTVRender','onDispose']);
+  const profiles=Object.freeze(Object.fromEntries([
+   ['legacy',null],['geometry','GEOMETRY'],['algebra','ALGEBRA'],['informatics','COMPUTER_SCIENCE']
+- ].map(([id,mode])=>[id,Object.freeze({id,status:id==='legacy'?'COMPATIBILITY_PROFILE':'REGISTERED_STUB',featuresImplemented:false,existingLayoutMode:mode,adapter:'existing-runtime'})])));
++ ].map(([id,mode])=>[id,Object.freeze({id,status:id==='legacy'?'COMPATIBILITY_PROFILE':id==='geometry'?'IMPLEMENTED':'REGISTERED_STUB',featuresImplemented:id==='geometry',existingLayoutMode:mode,adapter:'existing-runtime'})])));
+  const subscribers=new Map(Object.keys(profiles).map(id=>[id,new Set()]));
++ const adapters=new Map();
+  let current=null,currentStateSourceKey='';
+  const diagnostics=[];
+  function resolve(lesson){
+@@ -68,7 +69,26 @@
+   Object.freeze(copy);subscribers.get(profileId).add(copy);
+   return ()=>subscribers.get(profileId).delete(copy);
+  }
+- return Object.freeze({version:1,profiles,hookNames,resolve,subscribe,observe,tvRendered,
++ // Trusted profile adapters run at the existing visual/presentation boundaries.
++ // Lifecycle hook contexts remain immutable scalars. Unregistered profiles are no-ops.
++ function registerAdapter(profileId,adapter){
++  if(!Object.prototype.hasOwnProperty.call(profiles,profileId)||adapters.has(profileId))throw new TypeError('Unknown or duplicate adapter');
++  const copy={};
++  for(const [name,fn] of Object.entries(adapter||{})){
++   if(!['visuals','presentation'].includes(name)||typeof fn!=='function')throw new TypeError('Unknown adapter operation');
++   copy[name]=fn;
++  }
++  Object.freeze(copy);adapters.set(profileId,copy);
++ }
++ function adaptVisuals(lesson,index,fallback){
++  const adapter=adapters.get(resolve(lesson).profileId);
++  try{return adapter?.visuals?.(lesson,index,fallback)??fallback;}catch(_){diagnostic('ADAPTER_ERROR',current,'warning','visuals');return fallback;}
++ }
++ function present(role,lesson,state,root){
++  const adapter=adapters.get(resolve(lesson).profileId);
++  try{adapter?.presentation?.(role,lesson,state,root);}catch(_){diagnostic('ADAPTER_ERROR',current,'warning','presentation');}
++ }
++ return Object.freeze({version:2,profiles,hookNames,resolve,subscribe,observe,tvRendered,registerAdapter,adaptVisuals,present,
+   layoutMode:lesson=>resolve(lesson).profile.existingLayoutMode,
+   getContext:()=>current,getDiagnostics:()=>Object.freeze(diagnostics.slice())});
+ })();
+--- phase2/WEB_LIVE/teacher.html
++++ phase3/WEB_LIVE/teacher.html
+@@ -12,6 +12,7 @@
+   <link rel="stylesheet" href="teacher-ui.css">
+   <link rel="stylesheet" href="tts-ui.css">
+   <link rel="stylesheet" href="cockpit.css">
++  <link rel="stylesheet" href="geometry-profile.css">
+ </head>
+ <body>
+   <header class="top teacherTop">
+@@ -233,7 +234,7 @@
+       <p id="error" role="alert"></p><div class="library"><h2>📚 Thư viện tiết dạy</h2><div id="library"></div></div>
+     </div>
+   </div>
+-  <script src="common.js"></script><script src="core-profiles.js"></script><script src="pedagogy.js"></script><script src="math-atomic.js"></script><script src="classroom.js"></script><script src="zip.js"></script><script src="draw-board.js"></script><script src="cover-layer.js"></script><script src="smart-geometry.js"></script><script src="draw-board-teacher.js"></script><script src="cover-teacher.js"></script><script src="smart-geometry-teacher.js"></script><script src="teacher.js"></script><script src="classroom-teacher.js"></script><script src="ui-teacher.js"></script><script src="demo-teacher.js"></script><script src="pedagogy-teacher.js"></script>
++  <script src="common.js"></script><script src="core-profiles.js"></script><script src="geometry-profile.js"></script><script src="pedagogy.js"></script><script src="math-atomic.js"></script><script src="classroom.js"></script><script src="zip.js"></script><script src="draw-board.js"></script><script src="cover-layer.js"></script><script src="smart-geometry.js"></script><script src="draw-board-teacher.js"></script><script src="cover-teacher.js"></script><script src="smart-geometry-teacher.js"></script><script src="teacher.js"></script><script src="classroom-teacher.js"></script><script src="ui-teacher.js"></script><script src="demo-teacher.js"></script><script src="pedagogy-teacher.js"></script>
+   <script src="math-speech.js"></script><script src="tts-controller.js"></script><script src="tts-presentation.js"></script><script src="tts-teacher.js"></script>
+   <script src="cockpit.js"></script>
+ </body>
+--- phase2/WEB_LIVE/teacher.js
++++ phase3/WEB_LIVE/teacher.js
+@@ -35,7 +35,7 @@
+ $('figurePane').addEventListener('pointermove',e=>{if((boardController?.editingOverlay()||coverController?.editing()||smartController?.editing())||!drag||zoom<=1)return;let dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>4)drag.moved=true;if(!drag.moved)return;let p=$('pic'),pane=$('figurePane'),rx=Math.max(0,(p.clientWidth*zoom-(pane.clientWidth-20))/2),ry=Math.max(0,(p.clientHeight*zoom-(pane.clientHeight-20))/2);pan={x:rx?Math.max(-1,Math.min(1,drag.start.x+dx/rx)):0,y:ry?Math.max(-1,Math.min(1,drag.start.y+dy/ry)):0};pane.classList.add('dragging');applyZoom();sync()});
+ $('figurePane').addEventListener('pointerup',e=>{if((boardController?.editingOverlay()||coverController?.editing()||smartController?.editing())||!drag)return;let moved=drag.moved;drag=null;$('figurePane').classList.remove('dragging');if(moved||!e.shiftKey)return;let img=$('pic'),r=img.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)return;pointer={x:Math.max(0,Math.min(1,(e.clientX-r.left)/r.width)),y:Math.max(0,Math.min(1,(e.clientY-r.top)/r.height))};renderPointer();sync()});
+ function state(){let s=lesson.screens[i];return{type:'state',lessonId:currentLessonId,lessonSourceKey:lesson._runtimeSourceKey||'',lessonActivation,stateVersion:++stateVersion,sceneId:resolveScreenVisuals(lesson,i)?.sceneId||'',lesson:{subject:lesson.subject,week:lesson.week,period:lesson.period,title:lesson.title},index:i,total:lesson.screens.length,pedagogy:livePedagogyState(lesson,hintLevel,knowledgeCloseVisible),showHint,answerMode,answerStep,analysisStep,viewMode,zoom,pan,pointer,board:boardController?.summary()||null,cover:coverController?.summary()||null,smart:smartController?.summary()||null,classroom:classroomController?.state()||null,screenLite:{title:s?.title||''}}}
+-function sync(){if(!lesson)return;const st=state();storeState(st);send(st);try{if(tvWindow&&!tvWindow.closed)tvWindow.postMessage(st,'*');document.getElementById('studentPreview')?.contentWindow?.postMessage(st,location.origin==='null'?'*':location.origin)}catch(_){}window.cockpit?.refresh()}
++function sync(){if(!lesson)return;const st=state();globalThis.WebLiveProfiles?.present('teacher',lesson,st,$('screen'));storeState(st);send(st);try{if(tvWindow&&!tvWindow.closed)tvWindow.postMessage(st,'*');document.getElementById('studentPreview')?.contentWindow?.postMessage(st,location.origin==='null'?'*':location.origin)}catch(_){}window.cockpit?.refresh()}
+ function go(n){if(!lesson)return;window.ttsUI?.cancel();i=Math.max(0,Math.min(lesson.screens.length-1,n));resetView();boardController?.screenChanged();coverController?.screenChanged();smartController?.screenChanged();classroomController?.screenChanged();render();sync()}
+ function next(){if(lesson&&i<lesson.screens.length-1)go(i+1)}function prev(){if(lesson&&i>0)go(i-1)}function jumpTo(v){go(Number(v)||0)}
+ function toggleHint(){if(!lesson)return;if(livePedagogyEnabled(lesson)){hintLevel=hintLevel?0:1;showHint=hintLevel>0}else showHint=!showHint;render();sync()}
+--- phase2/WEB_LIVE/tv.html
++++ phase3/WEB_LIVE/tv.html
+@@ -11,6 +11,7 @@
+   <link rel="stylesheet" href="tv-ui.css">
+   <link rel="stylesheet" href="tts-highlight.css">
+   <link rel="stylesheet" href="cognitive-tv.css">
++  <link rel="stylesheet" href="geometry-profile.css">
+ </head>
+ <body>
+   <div class="tv" id="tvRoot">
+@@ -50,6 +51,6 @@
+     </main>
+     <div class="foot"><span id="progress"></span><div id="bar" class="bar"></div></div>
+   </div>
+-  <script src="common.js"></script><script src="core-profiles.js"></script><script src="pedagogy.js"></script><script src="math-atomic.js"></script><script src="classroom.js"></script><script src="draw-board.js"></script><script src="cover-layer.js"></script><script src="smart-geometry.js"></script><script src="draw-board-tv.js"></script><script src="cover-tv.js"></script><script src="smart-geometry-tv.js"></script><script src="tv-layout.js"></script><script src="tv-layout-computer.js"></script><script src="tv-layout-algebra.js"></script><script src="tv-layout-geometry.js"></script><script src="tv-content.js"></script><script src="tv-layout-model.js"></script><script src="tts-presentation.js"></script><script src="tts-tv.js"></script><script src="tv.js"></script>
++  <script src="common.js"></script><script src="core-profiles.js"></script><script src="geometry-profile.js"></script><script src="pedagogy.js"></script><script src="math-atomic.js"></script><script src="classroom.js"></script><script src="draw-board.js"></script><script src="cover-layer.js"></script><script src="smart-geometry.js"></script><script src="draw-board-tv.js"></script><script src="cover-tv.js"></script><script src="smart-geometry-tv.js"></script><script src="tv-layout.js"></script><script src="tv-layout-computer.js"></script><script src="tv-layout-algebra.js"></script><script src="tv-layout-geometry.js"></script><script src="tv-content.js"></script><script src="tv-layout-model.js"></script><script src="tts-presentation.js"></script><script src="tts-tv.js"></script><script src="tv.js"></script>
+ </body>
+ </html>
+--- phase2/WEB_LIVE/tv.js
++++ phase3/WEB_LIVE/tv.js
+@@ -132,6 +132,7 @@
+  progress.textContent=`${d.index+1} / ${d.total}`;bar.style.width=`${((d.index+1)/d.total)*100}%`;
+  boardViewer?.apply(d,geometry);coverViewer?.apply(d,geometry);smartViewer?.apply(d,geometry);
+  Classroom.draw($('classroomHighlight'),geometry?classroom.highlights||[]:[]);updateClassroomClock();
++ globalThis.WebLiveProfiles?.present(embeddedPreview?'preview':'tv',active,d,screenEl);
+  requestAnimationFrame(()=>{fitText();TTSTVPresentation.refresh(d);globalThis.WebLiveProfiles?.tvRendered(d);});
+ }
+ function receive(d){if(d?.type==='smartGeometry'){smartViewer?.refresh(d);return}if(d?.type==='smartSnapshot'){smartViewer?.snapshot(d);return}if(d?.type==='coverLayer'){coverViewer?.refresh(d);return}if(d?.type==='coverSnapshot'){coverViewer?.snapshot(d);return}if(d?.type==='drawBoardPreview'){boardViewer?.transient(d);smartViewer?.fit();return}if(d?.type==='drawBoardPreviewEnd'){boardViewer?.endTransient(d);smartViewer?.fit();return}if(d?.type==='drawBoard'){boardViewer?.refresh(d);smartViewer?.fit();return}if(d?.type==='drawBoardSnapshot'){boardViewer?.snapshot(d);smartViewer?.fit();return}if(d?.type==='lesson'&&d.lesson){if(!lastState||d.lesson.id!==lastState.lessonId||d.lessonActivation!==lastState.lessonActivation||lastState.lessonSourceKey&&d.lesson._runtimeSourceKey!==lastState.lessonSourceKey)return;cachedLesson=d.lesson;cachedActivation=d.lessonActivation||'';rebuildSceneIndex(d.lesson);try{localStorage.setItem('lesson:'+d.lesson.id,JSON.stringify(d.lesson))}catch(_){}applyState(lastState)}else applyState(d)}
+--- /dev/null
++++ phase3/WEB_LIVE/geometry-profile.css
+@@ -0,0 +1,12 @@
++/* Only the explicitly selected Geometry profile receives these styles. */
++.geometryObjectHighlight{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
++.geometryProfile .geometryStatement{display:grid;gap:.45em}
++.geometryProfile .geometryStatement section{border-left:5px solid #b34b03;padding:.15em .35em;background:#fff8e7;border-radius:5px}
++.geometryProfile .geometryStatementLabel{font-size:.62em;line-height:1.2;font-weight:800;color:#743500;margin-bottom:.16em}
++.geometryProfile .geometryStatementText{color:#162b44;font-weight:650;white-space:pre-wrap;overflow-wrap:normal;word-break:normal}
++.geometryProfile[data-geometry-answer-mode="steps"] #answer .proofStep.previous:not(.isFocused){display:none}
++.geometryProfile[data-geometry-focus-region="answer"] #answer .focusBlock:not(.isFocused){display:none}
++.geometryProfile #analysis .analysisStep{border-left:4px solid #b34b03;padding-left:.3em}
++.geometryProfile #analysis .analysisStep.previous{opacity:.75}
++.geometryTeacherControls{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
++.geometryTeacherControls button{font-size:12px}
+--- /dev/null
++++ phase3/WEB_LIVE/geometry-profile.js
+@@ -0,0 +1,148 @@
++/* Geometry profile: authored figures and object links only. No figure recognition,
++ * proof generation, navigation command or mutation of the supplied lesson. */
++globalThis.WebLiveGeometry=(()=>{
++ 'use strict';
++ const indexes=new WeakMap(),diagnostics=[],observedImages=new WeakSet();
++ const objectTypes=Object.freeze(['point','segment','line','ray','angle','triangle','circle','label','mark','highlight']);
++ let lastView=null,context=null;
++ const selected=lesson=>WebLiveProfiles.resolve(lesson).profileId==='geometry';
++ const id=value=>typeof value==='string'&&value.trim()&&value.length<=80?value:null;
++ const unit=value=>typeof value==='number'&&Number.isFinite(value)&&value>=0&&value<=1;
++ function warn(code,figureId=''){diagnostics.push(Object.freeze({code,figureId}));if(diagnostics.length>100)diagnostics.shift();}
++ function compile(lesson){
++  if(indexes.has(lesson))return indexes.get(lesson);
++  const definitions=new Map(),figures=lesson.geometry?.figures;
++  if(Array.isArray(figures))for(const raw of figures.slice(0,100)){
++   if(!raw||!id(raw.id)||definitions.has(raw.id)||!(typeof raw.sourceScreenId==='string'&&raw.sourceScreenId.trim()||typeof raw.sourceScreenId==='number'&&Number.isFinite(raw.sourceScreenId))){warn('INVALID_FIGURE');continue;}
++   const sourceIndex=lesson.screens.findIndex(s=>String(s.id)===String(raw.sourceScreenId));
++   const source=lesson.screens[sourceIndex],image=source&&(visualSource(source,'geometryImage','geometryImageData')||visualSource(source,'image','imageData'));
++   if(!image){warn('FIGURE_SOURCE_MISSING',raw.id);continue;}
++   const objects=new Map();
++   if(Array.isArray(raw.objects))for(const o of raw.objects.slice(0,500)){
++    if(!o||!id(o.id)||!objectTypes.includes(o.type)||objects.has(o.id)){warn('INVALID_OBJECT',raw.id);continue;}
++    // Clone optional author metadata; never freeze or rewrite lesson objects.
++    objects.set(o.id,JSON.parse(JSON.stringify(o)));
++   }
++   definitions.set(raw.id,{id:raw.id,image:{...image,sourceIndex},objects});
++  }
++  const timeline=[];let current=null,managed=false,resetEpoch=0;
++  for(let n=0;n<lesson.screens.length;n++){
++   const s=lesson.screens[n],g=s.geometry;
++   if(g?.reset===true)resetEpoch++;
++   if(g?.reset===true||s.sceneStart===true||lesson.screens[n-1]?.sceneEnd===true){current=null;managed=g?.reset===true;}
++   if(g&&Object.prototype.hasOwnProperty.call(g,'figureId')){
++    managed=true;current=definitions.get(g.figureId)||null;if(!current)warn('UNKNOWN_FIGURE',String(g.figureId||'').slice(0,80));
++   }
++   timeline.push({figure:current,managed,sceneId:current?'geometry:'+current.id+(resetEpoch?':reset:'+resetEpoch:''):null});
++  }
++  for(let n=0;n<timeline.length;n++){
++   const figure=timeline[n].figure,g=lesson.screens[n].geometry;if(!figure||!g)continue;
++   for(const links of [g.proofLinks,g.analysisLinks])if(Array.isArray(links))for(const row of links)if(Array.isArray(row))for(const target of row)if(typeof target==='string'&&!figure.objects.has(target))warn('UNKNOWN_OBJECT',figure.id);
++  }
++  const result={definitions,timeline};indexes.set(lesson,result);return result;
++ }
++ function visuals(lesson,index,fallback){
++  const entry=compile(lesson).timeline[index];if(!entry?.managed)return fallback;
++  const figure=entry.figure,sceneId=entry.sceneId;
++  return {...fallback,geometry:figure?figure.image:null,sceneId,cacheKey:String(lesson.id||lesson.packageId||'')+'::'+(sceneId||'screen:'+index)};
++ }
++ function point(figure,value){
++  if(typeof value==='string'){const o=figure.objects.get(value);return o?.type==='point'&&unit(o.x)&&unit(o.y)?{x:o.x,y:o.y}:null;}
++  if(Array.isArray(value)&&unit(value[0])&&unit(value[1]))return{x:value[0],y:value[1]};
++  return null;
++ }
++ function linkedIds(screen,state){
++  const g=screen.geometry||{},proof=liveSteps(screen),analysis=liveAnalysisSteps(screen);
++  const answered=state.answerMode==='full'||state.answerMode==='steps'&&state.answerStep>0;
++  const region=answered?'answer':state.analysisStep>0?'analysis':null;
++  const count=region==='answer'?(state.answerMode==='full'?proof.length:Math.min(proof.length,state.answerStep||0)):region==='analysis'?Math.min(analysis.length,state.analysisStep||0):0;
++  let index=count-1;
++  const focus=state.classroom?.focus;
++  if(focus?.region===region&&Number.isInteger(focus.index)&&focus.index>=0&&focus.index<count)index=focus.index;
++  const links=region==='answer'?g.proofLinks:region==='analysis'?g.analysisLinks:null;
++  const source=index>=0&&Array.isArray(links)?links[index]:!region?g.highlights:[];
++  return {ids:Array.isArray(source)?source.filter(id).slice(0,80):[],region,index,count,total:region==='answer'?proof.length:region==='analysis'?analysis.length:0};
++ }
++ function element(tag,attributes={}){const node=document.createElementNS('http://www.w3.org/2000/svg',tag);for(const [key,value] of Object.entries(attributes))node.setAttribute(key,String(value));return node;}
++ function draw(svg,figure,ids,width,height){
++  svg.setAttribute('viewBox',`0 0 ${width} ${height}`);svg.setAttribute('preserveAspectRatio','none');
++  const scale=Math.min(width,height),stroke=Math.max(8,scale*.015),nodes=[],visited=new Set();
++  const position=p=>({x:p.x*width,y:p.y*height});
++  function shape(objectId,depth=0){
++   if(depth>8||visited.has(objectId))return;visited.add(objectId);
++   const o=figure.objects.get(objectId);if(!o)return;
++   if(o.type==='highlight'){if(Array.isArray(o.targets))o.targets.slice(0,80).forEach(target=>shape(target,depth+1));return;}
++   const attrs={stroke:'#b34b03','stroke-width':stroke,fill:'none','stroke-linecap':'round','stroke-linejoin':'round'};let node;
++   if(o.type==='point'||o.type==='mark'){
++    const p=point(figure,o.type==='point'?objectId:o.at);if(p){const q=position(p);node=element('circle',{...attrs,cx:q.x,cy:q.y,r:scale*.025,fill:'#ffd65b','fill-opacity':'.55'});}
++   }else if(['segment','line','ray'].includes(o.type)){
++    const a=point(figure,o.from),b=point(figure,o.to);
++    if(a&&b){let first=a,last=b;
++     if(o.type!=='segment'){
++      const dx=b.x-a.x,dy=b.y-a.y;let low=-Infinity,high=Infinity;
++      for(const [p,d] of [[a.x,dx],[a.y,dy]]){if(Math.abs(d)<1e-9)continue;const t0=-p/d,t1=(1-p)/d;low=Math.max(low,Math.min(t0,t1));high=Math.min(high,Math.max(t0,t1));}
++      if(Number.isFinite(low)&&Number.isFinite(high)&&low<=high){if(o.type==='ray')low=Math.max(0,low);first={x:a.x+low*dx,y:a.y+low*dy};last={x:a.x+high*dx,y:a.y+high*dy};}
++     }
++     const p=position(first),q=position(last);node=element('line',{...attrs,x1:p.x,y1:p.y,x2:q.x,y2:q.y});
++    }
++   }else if(o.type==='triangle'){
++    const ps=Array.isArray(o.points)?o.points.slice(0,3).map(v=>point(figure,v)):[];
++    if(ps.length===3&&ps.every(Boolean))node=element('polygon',{...attrs,points:ps.map(p=>`${p.x*width},${p.y*height}`).join(' '),fill:'#ffd65b','fill-opacity':'.22'});
++   }else if(o.type==='circle'){
++    const p=point(figure,o.center);if(p&&unit(o.radius)&&o.radius>0){const q=position(p);node=element('circle',{...attrs,cx:q.x,cy:q.y,r:o.radius*scale});}
++   }else if(o.type==='angle'){
++    const ps=Array.isArray(o.points)?o.points.slice(0,3).map(v=>point(figure,v)):[];
++    if(ps.length===3&&ps.every(Boolean)){
++     const [a,b,c]=ps.map(position),r=(unit(o.radius)&&o.radius>0?o.radius:.08)*scale,u={x:a.x-b.x,y:a.y-b.y},v={x:c.x-b.x,y:c.y-b.y},ul=Math.hypot(u.x,u.y),vl=Math.hypot(v.x,v.y);
++     if(ul&&vl){const p={x:b.x+u.x/ul*r,y:b.y+u.y/ul*r},q={x:b.x+v.x/vl*r,y:b.y+v.y/vl*r};node=element('path',{...attrs,d:`M ${p.x} ${p.y} A ${r} ${r} 0 0 ${u.x*v.y-u.y*v.x>=0?1:0} ${q.x} ${q.y}`});}
++    }
++   }else if(o.type==='label'){
++    const p=point(figure,o.at);if(p&&typeof o.text==='string'){const q=position(p);node=element('text',{x:q.x,y:q.y,fill:'#923800','font-size':Math.max(28,scale*.055),'font-weight':'700'});node.textContent=o.text.slice(0,120);}
++   }
++   if(node){node.dataset.geometryObjectId=objectId;node.dataset.geometryKind=o.type;nodes.push(node);}
++  }
++  ids.forEach(objectId=>shape(objectId));svg.replaceChildren(...nodes);
++ }
++ function statement(node,screen){
++  // Keep complete MCQ questions/options/instructions in their existing renderer.
++  if(Array.isArray(screen.options)||String(screen.type||'').toUpperCase()==='QUICK_CHECK'||node.querySelector('.tvOptionGrid'))return;
++  const g=screen.geometry||{},groups=[['GIẢ THIẾT',g.givens],['KẾT LUẬN',g.goals]].filter(([,values])=>Array.isArray(values)&&values.some(x=>typeof x==='string'&&x.trim()));
++  if(!groups.length||node.hidden)return;
++  const box=document.createElement('div');box.className='geometryStatement';
++  for(const [label,values] of groups){const group=document.createElement('section'),heading=document.createElement('div'),text=document.createElement('div');heading.className='geometryStatementLabel';heading.textContent=label;text.className='geometryStatementText';renderMathAtomic(text,values.filter(x=>typeof x==='string').join('\n'));group.append(heading,text);box.append(group);}
++  node.replaceChildren(box);
++ }
++ function cleanup(){
++  for(const name of ['geometryObjectHighlight','geometryTeacherControls'])document.getElementById(name)?.remove();
++  const root=document.getElementById('screen');root?.classList.remove('geometryProfile');if(root){delete root.dataset.geometryFigure;delete root.dataset.geometryAnswerMode;delete root.dataset.geometryFocusStep;delete root.dataset.geometryFocusRegion;}
++  lastView=null;context=null;
++ }
++ function teacherControls(){
++  const host=document.getElementById('geometryTools');if(!host||document.getElementById('geometryTeacherControls'))return;
++  const panel=document.createElement('div');panel.id='geometryTeacherControls';panel.className='geometryTeacherControls';
++  const reset=document.createElement('button');reset.type='button';reset.textContent='↺ VỀ HÌNH GỐC';reset.title='Đặt lại zoom, vị trí và Focus; giữ hình, bước chứng minh và chú thích';
++  reset.onclick=()=>{resetZoom();clearPointer();classroomController?.clearFocus();};
++  const clear=document.createElement('button');clear.type='button';clear.textContent='XÓA CHÚ THÍCH';clear.title='Xóa nét vẽ của giáo viên trên hình hiện tại; giữ hình gốc';
++  clear.onclick=()=>{const model=boardController?.model(boardController.overlayKey());if(model?.objects.length&&confirm('Xóa chú thích của giáo viên trên hình hiện tại?')){model.clear();render();sync();}};
++  panel.append(reset,clear);host.append(panel);
++ }
++ function presentation(role,lesson,state,root){
++  const screen=lesson.screens[state.index];if(!screen||!root)return;
++  const entry=compile(lesson).timeline[state.index],figure=entry?.figure,links=linkedIds(screen,state);
++  root.classList.add('geometryProfile');root.dataset.geometryFigure=figure?.id||'';root.dataset.geometryAnswerMode=state.answerMode||'hidden';root.dataset.geometryFocusStep=String(links.index);
++  const focus=state.classroom?.focus;root.dataset.geometryFocusRegion=focus?.region===links.region&&Number.isInteger(focus.index)&&focus.index>=0&&focus.index<links.count?links.region:'';
++  statement(document.getElementById('content'),screen);
++  if(role==='teacher')teacherControls();
++  let svg=document.getElementById('geometryObjectHighlight');
++  if(figure){
++   if(!svg){svg=element('svg',{id:'geometryObjectHighlight','aria-label':'Đối tượng liên quan đến bước hiện tại'});svg.classList.add('geometryObjectHighlight');const before=document.getElementById('classroomHighlight');before.parentElement.insertBefore(svg,before);}
++   const pic=document.getElementById('pic');draw(svg,figure,links.ids,pic.naturalWidth||1000,pic.naturalHeight||1000);
++   if(!observedImages.has(pic)){observedImages.add(pic);pic.addEventListener('load',()=>{if(lastView)presentation(...lastView);});}
++  }else svg?.remove();
++  context=Object.freeze({lessonActivation:state.lessonActivation||'',figureId:figure?.id||'',region:links.region,step:links.index,highlightIds:Object.freeze(links.ids.slice()),sceneId:entry?.sceneId||null});
++  lastView=[role,lesson,state,root];
++ }
++ WebLiveProfiles.registerAdapter('geometry',{visuals,presentation});
++ WebLiveProfiles.subscribe('geometry',{onDispose:cleanup});
++ return Object.freeze({version:1,objectTypes,getState:()=>context,getDiagnostics:()=>Object.freeze(diagnostics.slice())});
++})();

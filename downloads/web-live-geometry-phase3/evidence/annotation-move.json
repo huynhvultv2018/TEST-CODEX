@@ -1,0 +1,25 @@
+{
+  "result": "PASS",
+  "browser": "151.0.7922.173",
+  "before": {
+    "id": "1fa1d26e-403b-4a9e-9b20-ed1333ab6bc7",
+    "x": 0.3,
+    "y": 0.4499999466941867
+  },
+  "after": {
+    "id": "1fa1d26e-403b-4a9e-9b20-ed1333ab6bc7",
+    "x": 0.381878662109375,
+    "y": 0.5591702523710426
+  },
+  "undo": {
+    "x": 0.3,
+    "y": 0.4499999466941867
+  },
+  "redo": {
+    "x": 0.381878662109375,
+    "y": 0.5591702523710426
+  },
+  "errors": [],
+  "baseFigureUnchanged": true,
+  "scope": "Native pointer drag of existing teacher annotation point; authored raster/object model remains static"
+}

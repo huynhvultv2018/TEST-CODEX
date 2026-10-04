@@ -1,0 +1,15 @@
+{
+  "source": "WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip",
+  "source_sha256": "86f95e57641647c3441f615cd6f5e3437c0e509afc2d13e030781ce9a23cf033",
+  "test_package": "GEOMETRY_PHASE3_TEST_PACKAGES/HINH8_VD2_GEOMETRY_PROFILE_TEST.zip",
+  "test_package_sha256": "b502802ab694aa4ee2cc57bb7e053a06fd534580d8d7285f8a55d91428945bd7",
+  "screens": 35,
+  "original_fields_content_order_assets_unchanged": true,
+  "added_only": [
+    "lesson.subject_engine",
+    "lesson.geometry",
+    "screen.geometry"
+  ],
+  "anchors": "Manually authored normalized positions in original 1620×675 VD2 raster; not runtime figure recognition",
+  "circle_line_ray_label_mark": "Rendering fixtures only, not added theorem facts"
+}

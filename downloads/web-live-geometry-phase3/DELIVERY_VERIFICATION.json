@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "candidate_zip": "WEB_LIVE_GEOMETRY_PHASE3_CANDIDATE.zip",
+  "sha256": "8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c",
+  "bytes": 49338555,
+  "entries": 1227,
+  "crc": "PASS",
+  "all_archive_bytes_equal_source": true,
+  "fresh_extraction_geometry_smoke": "PASS",
+  "phase2_sha256_after": "6e83a63792fff16d890b5f12bc3b990dc43bdfec3e360b7a8bbe3a10e813f38c",
+  "phase2_files_unchanged": 985,
+  "production_modified": false,
+  "phase4_started": false
+}
