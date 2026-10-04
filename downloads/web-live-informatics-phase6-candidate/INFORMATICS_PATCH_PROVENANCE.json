@@ -1,0 +1,20 @@
+{
+  "sourceCandidate": "WEB_LIVE_ALGEBRA_PHASE5_CANDIDATE",
+  "sourceSHA256": "575b466dc839d54c6ad91327bc5a7454ece42cbacfd69ae916eca4aa1bcaf01d",
+  "existingFileChange": "Append Informatics adapter after exact538byte TVComputerEngine prefix",
+  "newFiles": [
+    "INFORMATICS_PHASE6_TEST_PACKAGES/INFORMATICS_PROFILE_REPRESENTATIVE_TEST.json",
+    "INFORMATICS_PHASE6_TEST_PACKAGES/README.md",
+    "WEB_LIVE/informatics-profile.css",
+    "WEB_LIVE/informatics-test-media/demo.gif",
+    "WEB_LIVE/informatics-test-media/demo.svg",
+    "WEB_LIVE/informatics-test-media/demo.webm"
+  ],
+  "fixturePurpose": "Synthetic interface data only; not SGK",
+  "fixtureScreens": 21,
+  "fixtureBytes": 16785,
+  "testMedia": "Owned generated SVG, ffmpeg testsrc2 320x180@10fps1s WebM VP9,160x90@5fps1s GIF; no external runtime dependencies",
+  "sourceTruth": "Source authored metadata only, no generation in runtime",
+  "coreChanges": false,
+  "productionChanges": false
+}

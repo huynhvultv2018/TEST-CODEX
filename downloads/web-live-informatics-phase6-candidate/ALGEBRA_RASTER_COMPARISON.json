@@ -1,0 +1,107 @@
+{
+  "result": "PASS",
+  "method": "Final captures wait all native finite animations/fonts and finish finite screenshot animations; exact functional/DOM/layout checks plus bounded raster comparison. Cause of any residual tiny low-amplitude pixel differences not independently confirmed.",
+  "maxChannelDifferenceAllowed": 8,
+  "changedPixelRatioAllowed": 0.001,
+  "captures": [
+    {
+      "name": "EQUATION_STEP1.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "changedPixels": 0,
+      "changedPixelRatio": 0.0,
+      "maxChannelDifference": 0,
+      "exactPixels": true,
+      "boundedRasterComparison": "PASS"
+    },
+    {
+      "name": "ERROR_COMPARISON.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "changedPixels": 22,
+      "changedPixelRatio": 1.0609567901234568e-05,
+      "maxChannelDifference": 1,
+      "exactPixels": false,
+      "boundedRasterComparison": "PASS"
+    },
+    {
+      "name": "EXPRESSION_POWERS_ROOT.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "changedPixels": 0,
+      "changedPixelRatio": 0.0,
+      "maxChannelDifference": 0,
+      "exactPixels": true,
+      "boundedRasterComparison": "PASS"
+    },
+    {
+      "name": "FOCUS_STEP3_PREVIOUS_VISIBLE.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "changedPixels": 0,
+      "changedPixelRatio": 0.0,
+      "maxChannelDifference": 0,
+      "exactPixels": true,
+      "boundedRasterComparison": "PASS"
+    },
+    {
+      "name": "FRACTION_STACKED.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "changedPixels": 0,
+      "changedPixelRatio": 0.0,
+      "maxChannelDifference": 0,
+      "exactPixels": true,
+      "boundedRasterComparison": "PASS"
+    },
+    {
+      "name": "INEQUALITY.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "changedPixels": 184,
+      "changedPixelRatio": 8.873456790123456e-05,
+      "maxChannelDifference": 6,
+      "exactPixels": false,
+      "boundedRasterComparison": "PASS"
+    },
+    {
+      "name": "MCQ_VERTICAL_MATHJAX.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "changedPixels": 0,
+      "changedPixelRatio": 0.0,
+      "maxChannelDifference": 0,
+      "exactPixels": true,
+      "boundedRasterComparison": "PASS"
+    },
+    {
+      "name": "SYSTEM_TWO_ROWS.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "changedPixels": 0,
+      "changedPixelRatio": 0.0,
+      "maxChannelDifference": 0,
+      "exactPixels": true,
+      "boundedRasterComparison": "PASS"
+    }
+  ],
+  "observedMaxChannelDifference": 6,
+  "observedMaxChangedPixelRatio": 8.873456790123456e-05,
+  "exactCaptureCount": 6
+}

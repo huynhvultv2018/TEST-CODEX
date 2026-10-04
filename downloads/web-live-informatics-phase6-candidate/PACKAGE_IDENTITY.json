@@ -1,0 +1,12 @@
+{
+  "candidate": "WEB_LIVE_INFORMATICS_PHASE6_CANDIDATE",
+  "zip": "WEB_LIVE_INFORMATICS_PHASE6_CANDIDATE.zip",
+  "sha256": "d67c062b5bd7b431e92918698c3c47b04e71c783cfeeaa8a20f20e909e12ea5e",
+  "bytes": 50116564,
+  "payloadFiles": 1239,
+  "zipCRC": "PASS",
+  "testedPayloadMatch": true,
+  "geometryReferenceSHA256": "9974d9fb4d4e4db023846c0ee42258b3fd193acfe37bd63b8fe6c7d2ee5f9b8e",
+  "algebraReferenceSHA256": "575b466dc839d54c6ad91327bc5a7454ece42cbacfd69ae916eca4aa1bcaf01d",
+  "productionModified": false
+}

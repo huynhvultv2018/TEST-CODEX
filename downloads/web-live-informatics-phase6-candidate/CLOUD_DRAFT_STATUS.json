@@ -1,0 +1,8 @@
+{
+  "status": "SAVED",
+  "requiresPublish": true,
+  "onlyStartInstructionsUpdated": true,
+  "installScriptNetworkSecretsRepositoriesPreserved": true,
+  "configurationApplied": false,
+  "freshTaskRestorationVerified": false
+}

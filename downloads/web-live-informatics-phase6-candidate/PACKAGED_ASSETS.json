@@ -1,0 +1,303 @@
+{
+  "result": "PASS",
+  "assets": [
+    {
+      "relative": "WEB_LIVE/algebra-profile.css",
+      "bytes": 2953,
+      "sha256": "bebe668b55428eddb0e3743e32ff1f48d61d74a3f537e6d989d7d46ca26478a3"
+    },
+    {
+      "relative": "WEB_LIVE/classroom-teacher.js",
+      "bytes": 6827,
+      "sha256": "e7051ecea88d985060a592d4a424f7d3dd59625301bf6d8d17653a05cf66d1c6"
+    },
+    {
+      "relative": "WEB_LIVE/classroom.css",
+      "bytes": 1311,
+      "sha256": "92d2c01acda2433c71c4cef1cb6a35f09fa1eb43c22f80626f16d1bcbbcd932b"
+    },
+    {
+      "relative": "WEB_LIVE/classroom.js",
+      "bytes": 4257,
+      "sha256": "8c0f7697c637bc68ba4a750db8167244f99265f68e859f8c0991b1cee1853616"
+    },
+    {
+      "relative": "WEB_LIVE/cockpit.css",
+      "bytes": 4201,
+      "sha256": "a091924aa4370ba7c718759b0ea5761fed12dee371a0301684f4775eff63ff62"
+    },
+    {
+      "relative": "WEB_LIVE/cockpit.js",
+      "bytes": 6306,
+      "sha256": "28066c75e0308ec38904f5ad2c00404e7da1f733f7c954f1ac7554d932dce66d"
+    },
+    {
+      "relative": "WEB_LIVE/cognitive-tv.css",
+      "bytes": 3553,
+      "sha256": "37a2b46e6b1562da4d7d72c434201ce1ada056a1eb81f748c1b193525e1fbd6c"
+    },
+    {
+      "relative": "WEB_LIVE/common.js",
+      "bytes": 8678,
+      "sha256": "24b7ca82671df3e1d887b1bec0f4787c08ea759ea106590ab943844ea1ffab03"
+    },
+    {
+      "relative": "WEB_LIVE/core-profiles.js",
+      "bytes": 5740,
+      "sha256": "ba77af2743bd4a811f2e6a95934f57a6fd8eb9b9a2e49197bf969c03a8554584"
+    },
+    {
+      "relative": "WEB_LIVE/cover-layer.js",
+      "bytes": 4476,
+      "sha256": "0f4aed78e4381067ca88d1afa221cc663f0f09d9d5ea9ab3bc72f6b098de7a86"
+    },
+    {
+      "relative": "WEB_LIVE/cover-teacher.js",
+      "bytes": 6171,
+      "sha256": "7329cf77827ac24a5896abf680495cba20c4000fddbdf2f4b7736196bc1f7195"
+    },
+    {
+      "relative": "WEB_LIVE/cover-tv.js",
+      "bytes": 1478,
+      "sha256": "766b7db84833ba14a9343e76b174ebc8679ae932ef5be52596f43c091c090286"
+    },
+    {
+      "relative": "WEB_LIVE/demo-teacher.js",
+      "bytes": 13005,
+      "sha256": "9afa9c9a1e5f848f9f8ec1ea3d48c44e200e994d1fc307566ff4669de9d95554"
+    },
+    {
+      "relative": "WEB_LIVE/draw-board-teacher.js",
+      "bytes": 14354,
+      "sha256": "aa957978dfa209b87320038742f7b96fa79b150a7669f687389f86eb86fdb65d"
+    },
+    {
+      "relative": "WEB_LIVE/draw-board-tv.js",
+      "bytes": 3369,
+      "sha256": "6a8245d603f54aa6aaa23c9ea69b4dd7d53e07a0188a5a758ca11e5a5268c662"
+    },
+    {
+      "relative": "WEB_LIVE/draw-board.css",
+      "bytes": 1127,
+      "sha256": "1e38eef84c8e37a09103af56a1aef00a1eee1ddce46c20a74df281baa72f89a5"
+    },
+    {
+      "relative": "WEB_LIVE/draw-board.js",
+      "bytes": 10275,
+      "sha256": "4e9c0415d8e77c53de0f68bd305516182ff4b08d3caeeb4b0855f9dcd595f1f8"
+    },
+    {
+      "relative": "WEB_LIVE/geometry-profile.css",
+      "bytes": 1124,
+      "sha256": "5fd49bdbc3fd36ac98651de920eae1ec346ccc4fe867db56643ff143d04b839c"
+    },
+    {
+      "relative": "WEB_LIVE/geometry-profile.js",
+      "bytes": 12258,
+      "sha256": "e705d85027880f0d29448c3c11adc6ed805306d746266a777988ff33cbe854d9"
+    },
+    {
+      "relative": "WEB_LIVE/index.html",
+      "bytes": 272,
+      "sha256": "8df0265dfd82796f237bfa4efa80a1f994880e0bfe3f09e6303088c40c05777f"
+    },
+    {
+      "relative": "WEB_LIVE/informatics-profile.css",
+      "bytes": 4888,
+      "sha256": "a6bf0c3ed7e5f78a7376719f2bd3d108925c4190055db1e930577f03fba25f1c"
+    },
+    {
+      "relative": "WEB_LIVE/math-atomic.js",
+      "bytes": 1780,
+      "sha256": "489797cf6186f912f4cf2f14b21062bb6b352eb3ee18bc997afd2428512343bf"
+    },
+    {
+      "relative": "WEB_LIVE/math-speech.js",
+      "bytes": 7130,
+      "sha256": "11c9d049285130746d828df3bec6b1f49f0e972126a5a79e691d05dc8f9649f9"
+    },
+    {
+      "relative": "WEB_LIVE/pedagogy-teacher.js",
+      "bytes": 4215,
+      "sha256": "d3cb0f7d844a8750c589491aad99b8e21c535c0ed6053ea48a01e34a80ff0ad3"
+    },
+    {
+      "relative": "WEB_LIVE/pedagogy.js",
+      "bytes": 3042,
+      "sha256": "60609c3907017ff7ee17fbef9451ce33170d1eae7f08837cb2b63741bae59a2b"
+    },
+    {
+      "relative": "WEB_LIVE/runtime-config.js",
+      "bytes": 246,
+      "sha256": "80df818cd17106dc0cc53ed583021377104988e81bdbb15d29a308ee5570a70c"
+    },
+    {
+      "relative": "WEB_LIVE/smart-geometry-teacher.js",
+      "bytes": 10379,
+      "sha256": "c63bb2788382242cf2c0388908661c858c997adfe97b436099687de07e303dfb"
+    },
+    {
+      "relative": "WEB_LIVE/smart-geometry-tv.js",
+      "bytes": 2187,
+      "sha256": "293ff6624edc91a00bb84a4d9f3926d18f5f9259577f574e89803248d7af3ff7"
+    },
+    {
+      "relative": "WEB_LIVE/smart-geometry.css",
+      "bytes": 569,
+      "sha256": "77fd0b09c2c2bd6863ee067f89b38fb75f4c237f635fc4cfb41d05e394cd8a15"
+    },
+    {
+      "relative": "WEB_LIVE/smart-geometry.js",
+      "bytes": 11879,
+      "sha256": "515f712f7a9ddedb21b651b80482b58418bda410ab92fa51195c581a863c1861"
+    },
+    {
+      "relative": "WEB_LIVE/style.css",
+      "bytes": 1281,
+      "sha256": "aad788f2852c953b01865bd8fe913303ef2d7848b0ad0ad6358f3f773e568212"
+    },
+    {
+      "relative": "WEB_LIVE/teacher-ui.css",
+      "bytes": 12712,
+      "sha256": "6c0197e9f455d64f75711625995fc836c8174cb1daaf34355863673058a6e7bf"
+    },
+    {
+      "relative": "WEB_LIVE/teacher.html",
+      "bytes": 25792,
+      "sha256": "7dc3a5cbaaa5634c2dba758300a551f2d53daef6c8ebf00d45228b520bd94160"
+    },
+    {
+      "relative": "WEB_LIVE/teacher.js",
+      "bytes": 16081,
+      "sha256": "1cb5d0e50daf359c70907389fa598a24aa70457e13fe398c8a7d71c5ad5301a1"
+    },
+    {
+      "relative": "WEB_LIVE/tts-controller.js",
+      "bytes": 11924,
+      "sha256": "e9872faba0f7d43dfa391e5c8e03fc9ea35a78f4caea2c67cc5c32a013313c94"
+    },
+    {
+      "relative": "WEB_LIVE/tts-highlight.css",
+      "bytes": 201,
+      "sha256": "cc88328c8c9ac3a21abe48947a1f19effaa93f7a591454e9333307699be5d821"
+    },
+    {
+      "relative": "WEB_LIVE/tts-presentation.js",
+      "bytes": 1682,
+      "sha256": "146727a9ebd669005d8d416e837a0ad9b3ed536f4495f812fbdf440be649254b"
+    },
+    {
+      "relative": "WEB_LIVE/tts-teacher.js",
+      "bytes": 10735,
+      "sha256": "a8a5dc928cfe538c1d5a0819fb0dd18feceb39d6318addfbfb17c2daa5abf7aa"
+    },
+    {
+      "relative": "WEB_LIVE/tts-tv.js",
+      "bytes": 2888,
+      "sha256": "62a53feabb5b48e681829c363bd93dbb8297367ba843bfa29469439200ffbe75"
+    },
+    {
+      "relative": "WEB_LIVE/tts-ui.css",
+      "bytes": 3030,
+      "sha256": "1010fb8fd3f0d8ebd311e8f8a70b8cd319aa43c201363c36cca8811da1d792e7"
+    },
+    {
+      "relative": "WEB_LIVE/tv-content.js",
+      "bytes": 11966,
+      "sha256": "23f097f30b3fc585670b34cdf02ce9cc46758f0a2c3943b9858ab30d15d8aa4a"
+    },
+    {
+      "relative": "WEB_LIVE/tv-layout-algebra.js",
+      "bytes": 13854,
+      "sha256": "0ec7fb660ef31ff7540ba258495ee5da7cb373f668b7e2ecfd44e9175c2ab146"
+    },
+    {
+      "relative": "WEB_LIVE/tv-layout-computer.js",
+      "bytes": 15615,
+      "sha256": "4914a55b955e5b4cc78979abef3fd79d89e5bdc566b62f77e63d2fe59eefee28"
+    },
+    {
+      "relative": "WEB_LIVE/tv-layout-geometry.js",
+      "bytes": 1330,
+      "sha256": "8f20cab87b7812e5cf8fe8203827d21b08ada686b154b3872ad8680d30655202"
+    },
+    {
+      "relative": "WEB_LIVE/tv-layout-model.js",
+      "bytes": 7437,
+      "sha256": "a0dcfcc703e52317cdd64a13e3bfbe2c448efcb11871764a45cec2b9d5f29fd8"
+    },
+    {
+      "relative": "WEB_LIVE/tv-layout.js",
+      "bytes": 11559,
+      "sha256": "87058f4f06ca825642d881bd56fc426917f4021e7716567ac35140ccb9765437"
+    },
+    {
+      "relative": "WEB_LIVE/tv-ui.css",
+      "bytes": 28689,
+      "sha256": "815fbe93c550a0f9ebcad42b92a062db7a8e55c1218aea1449c25e2d35a0330b"
+    },
+    {
+      "relative": "WEB_LIVE/tv.html",
+      "bytes": 4275,
+      "sha256": "45f119d0161c08fd7c7711ed7ac6886e948bf91a188a3221850bd81c7b89582f"
+    },
+    {
+      "relative": "WEB_LIVE/tv.js",
+      "bytes": 13494,
+      "sha256": "3f4db123ba25f3c73c4f9d239040252870eadc84d5ca57d649bff0ee2e69c987"
+    },
+    {
+      "relative": "WEB_LIVE/ui-teacher.js",
+      "bytes": 1415,
+      "sha256": "80aaa2052d686acb036d05a95530239f6c81165c757cf580774411bc6424c597"
+    },
+    {
+      "relative": "WEB_LIVE/zip.js",
+      "bytes": 5617,
+      "sha256": "c245171335f4ceea9f523df89ee58d7930b22fcc3c70ffef3135a7bf16608fa8"
+    },
+    {
+      "relative": "WEB_LIVE/vendor/mathjax-3.2.2/tex-svg-full.js",
+      "bytes": 2275113,
+      "sha256": "a4354ff94fd868aea0cc6eaaa79a57fda0588646fc46ee3700a349ee0a11cbe6"
+    },
+    {
+      "relative": "WEB_LIVE/vendor/mathjax-3.2.2/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "relative": "WEB_LIVE/vendor/mathjax-3.2.2/package.json",
+      "bytes": 2772,
+      "sha256": "ed0d39986b7fe0653b75dfa97caa57f57fc6bc2f32d26318543927cf53aaca92"
+    },
+    {
+      "relative": "WEB_LIVE/informatics-test-media/demo.gif",
+      "bytes": 14158,
+      "sha256": "10a2622d6090406db0c6ef0dffd558d2faae0de2fcfafde028e48b3d7ff88365"
+    },
+    {
+      "relative": "WEB_LIVE/informatics-test-media/demo.svg",
+      "bytes": 470,
+      "sha256": "a9109ed46e0d4cf48d521c63c34cbf518ba53d7353ba27c1b957ae1c0c7c4494"
+    },
+    {
+      "relative": "WEB_LIVE/informatics-test-media/demo.webm",
+      "bytes": 16488,
+      "sha256": "d47014304ba8e737b6bdfa1b00cd2a9d65c2eec2941c1f5e7ec258cbe756094f"
+    },
+    {
+      "relative": "INFORMATICS_PHASE6_TEST_PACKAGES/INFORMATICS_PROFILE_REPRESENTATIVE_TEST.json",
+      "bytes": 16785,
+      "sha256": "1cea2a731505a0114e8759247bfb78e19d0e2cfc9416d2a8bedbd0c14bb24cb0"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Native import modal closes/reopens/closes on fresh package",
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "browser": "151.0.7922.173"
+}

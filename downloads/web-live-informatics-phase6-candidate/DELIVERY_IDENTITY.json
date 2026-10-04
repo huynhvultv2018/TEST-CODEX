@@ -1,0 +1,7 @@
+{
+  "candidateSHA256": "d67c062b5bd7b431e92918698c3c47b04e71c783cfeeaa8a20f20e909e12ea5e",
+  "evidenceSHA256": "fb706db150e9206bf2a4cc47fd186d5565b7b3a432c3c55ec262ae0d58b152ba",
+  "evidenceBytes": 11033580,
+  "evidenceFiles": 288,
+  "deliveryFilesBeforeChecksums": 24
+}

@@ -1,0 +1,213 @@
+{
+  "result": "PASS",
+  "freshRun": true,
+  "browser": "151.0.7922.173",
+  "legacyRuntimeRegression": "PASS",
+  "geometryProfileRegression": "PASS",
+  "algebraProfileRegression": "PASS",
+  "pairedRealPackages": [
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip",
+      "screens": 41,
+      "states": 82
+    },
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN6_W05_LIVE_RC3_PED1.zip",
+      "screens": 32,
+      "states": 64
+    },
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN8_W04_LIVE_RC3_PED1.zip",
+      "screens": 29,
+      "states": 58
+    },
+    {
+      "package": "WEB_LIVE/HINH_HOC_8_T04_T07_LIVE_TEST.zip",
+      "screens": 34,
+      "states": 68
+    },
+    {
+      "package": "WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip",
+      "screens": 35,
+      "states": 70
+    }
+  ],
+  "realScreensPerRuntime": 171,
+  "realStatesPerRuntime": 342,
+  "legacyMetricsPerRuntime": 44,
+  "legacyAssertionsPerRuntime": 15,
+  "geometryChecksPerRuntime": 14,
+  "geometryVisualsPerRuntime": 23,
+  "geometryScreensPerRuntime": 35,
+  "geometryStatesPerRuntime": 70,
+  "algebraChecksPerRuntime": 20,
+  "algebraScreensPerRuntime": 10,
+  "algebraQuestionViewportCasesPerRuntime": 30,
+  "algebraFullAnswerViewportCasesPerRuntime": 12,
+  "algebraCaptureComparisons": [
+    {
+      "name": "EXPRESSION_POWERS_ROOT.png",
+      "frozenSHA256": "0a40d6723e991b0382c1791b0b068702b511d51560ef4dcb8c9e7892a96ca694",
+      "phase6SHA256": "0a40d6723e991b0382c1791b0b068702b511d51560ef4dcb8c9e7892a96ca694"
+    },
+    {
+      "name": "FRACTION_STACKED.png",
+      "frozenSHA256": "9baa289c4295841416dcd4a3d6c80da010e45e64c8f510ac9e4fc24d1a44035f",
+      "phase6SHA256": "9baa289c4295841416dcd4a3d6c80da010e45e64c8f510ac9e4fc24d1a44035f"
+    },
+    {
+      "name": "FOCUS_STEP3_PREVIOUS_VISIBLE.png",
+      "frozenSHA256": "2e1a36f37de6774955c3a85323c2bc04263e37c1f7a613f26c3fd3847d42abb1",
+      "phase6SHA256": "2e1a36f37de6774955c3a85323c2bc04263e37c1f7a613f26c3fd3847d42abb1"
+    },
+    {
+      "name": "EQUATION_STEP1.png",
+      "frozenSHA256": "7d0b23f5858d19d4dd6ffb376a472e975817394e8b8c5c463f1bb8c1100a9cab",
+      "phase6SHA256": "7d0b23f5858d19d4dd6ffb376a472e975817394e8b8c5c463f1bb8c1100a9cab"
+    },
+    {
+      "name": "INEQUALITY.png",
+      "frozenSHA256": "156443a99dbd336111743621c11712a8643685d803c160517757641a3ce12907",
+      "phase6SHA256": "c0a4c7f17ce236a2873e17607f51a35cf29f7cde4a028713df6db878aa78bb72"
+    },
+    {
+      "name": "SYSTEM_TWO_ROWS.png",
+      "frozenSHA256": "140927e04f906b6b6beeb88e22031c058678db74168b2b7a6cb474d85ee284b8",
+      "phase6SHA256": "140927e04f906b6b6beeb88e22031c058678db74168b2b7a6cb474d85ee284b8"
+    },
+    {
+      "name": "ERROR_COMPARISON.png",
+      "frozenSHA256": "2f19c0d5619babe26d8403e676e3f1836357d32fe909b2b230f6a3f33b484867",
+      "phase6SHA256": "6b42de649fd654af999d82ec7a873611b49160e610c741890e42b41007848b85"
+    },
+    {
+      "name": "MCQ_VERTICAL_MATHJAX.png",
+      "frozenSHA256": "daf3d0a59c388872d3bc3af49baad746aa72bff79de6f29d6013efa27ca6f8d0",
+      "phase6SHA256": "daf3d0a59c388872d3bc3af49baad746aa72bff79de6f29d6013efa27ca6f8d0"
+    }
+  ],
+  "algebraRasterComparison": {
+    "result": "PASS",
+    "method": "Final captures wait all native finite animations/fonts and finish finite screenshot animations; exact functional/DOM/layout checks plus bounded raster comparison. Cause of any residual tiny low-amplitude pixel differences not independently confirmed.",
+    "maxChannelDifferenceAllowed": 8,
+    "changedPixelRatioAllowed": 0.001,
+    "captures": [
+      {
+        "name": "EQUATION_STEP1.png",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "changedPixels": 0,
+        "changedPixelRatio": 0,
+        "maxChannelDifference": 0,
+        "exactPixels": true,
+        "boundedRasterComparison": "PASS"
+      },
+      {
+        "name": "ERROR_COMPARISON.png",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "changedPixels": 22,
+        "changedPixelRatio": 0.000010609567901234568,
+        "maxChannelDifference": 1,
+        "exactPixels": false,
+        "boundedRasterComparison": "PASS"
+      },
+      {
+        "name": "EXPRESSION_POWERS_ROOT.png",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "changedPixels": 0,
+        "changedPixelRatio": 0,
+        "maxChannelDifference": 0,
+        "exactPixels": true,
+        "boundedRasterComparison": "PASS"
+      },
+      {
+        "name": "FOCUS_STEP3_PREVIOUS_VISIBLE.png",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "changedPixels": 0,
+        "changedPixelRatio": 0,
+        "maxChannelDifference": 0,
+        "exactPixels": true,
+        "boundedRasterComparison": "PASS"
+      },
+      {
+        "name": "FRACTION_STACKED.png",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "changedPixels": 0,
+        "changedPixelRatio": 0,
+        "maxChannelDifference": 0,
+        "exactPixels": true,
+        "boundedRasterComparison": "PASS"
+      },
+      {
+        "name": "INEQUALITY.png",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "changedPixels": 184,
+        "changedPixelRatio": 0.00008873456790123456,
+        "maxChannelDifference": 6,
+        "exactPixels": false,
+        "boundedRasterComparison": "PASS"
+      },
+      {
+        "name": "MCQ_VERTICAL_MATHJAX.png",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "changedPixels": 0,
+        "changedPixelRatio": 0,
+        "maxChannelDifference": 0,
+        "exactPixels": true,
+        "boundedRasterComparison": "PASS"
+      },
+      {
+        "name": "SYSTEM_TWO_ROWS.png",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "changedPixels": 0,
+        "changedPixelRatio": 0,
+        "maxChannelDifference": 0,
+        "exactPixels": true,
+        "boundedRasterComparison": "PASS"
+      }
+    ],
+    "observedMaxChannelDifference": 6,
+    "observedMaxChangedPixelRatio": 0.00008873456790123456,
+    "exactCaptureCount": 6
+  },
+  "activationNormalization": "Only independently generated lessonActivation IDs normalized in cross-run Geometry visual snapshots; native intra-run Teacher/Preview/TV parity remains exact",
+  "isolationGroups": 14,
+  "demoScreens": 4,
+  "demoStates": 8,
+  "profileBoundaryNegativeCases": 19,
+  "zeroOverflow": true,
+  "zeroExceptions": true,
+  "zeroExternalRequests": true,
+  "lessonSourcesUnchanged": true,
+  "knownGeometryFindingsUnchanged": [
+    "G4-F02 OPEN_DEFERRED P3",
+    "G4-F03 FIXED",
+    "G4-F04 OPEN_DEFERRED P3",
+    "G4-F05 VALIDATION_PENDING"
+  ],
+  "realFileValidation": "NOT_RUN_BY_GV_DECISION",
+  "realClassroomTrial": "UNRUN"
+}

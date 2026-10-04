@@ -1,0 +1,24 @@
+[
+  {
+    "id": "I6-F01",
+    "severity": "P2",
+    "classification": "INFORMATICS_PROFILE",
+    "status": "FIXED",
+    "rootCauseConfirmed": true,
+    "rootCause": "Inherited cognitive-tv.css hides #content when disclosure=answer. Informatics metadata was mounted inside that hidden host; disclosed instructions/sample were in DOM but not visible alongside native steps.",
+    "patch": "Profile-scoped CSS displays authored activity flow during answer disclosure; shared CSS/Core unchanged.",
+    "evidence": "HARNESS_HISTORY/ATTEMPT1",
+    "retest": "INFORMATICS_TARGETED.json:26checks PASS,126 native hidden/full viewport cases + 3 sample/comparison viewport cases; preserved prior disclosed items visible."
+  },
+  {
+    "id": "I6-F02",
+    "severity": "P2",
+    "classification": "INFORMATICS_PROFILE",
+    "status": "FIXED",
+    "rootCauseConfirmed": true,
+    "rootCause": "After keeping authored activity visible, stacked labels/media plus inherited answer spacing overflow representative full-reveal Demo/Practice/Algorithm/Instruction at TV viewports. Probe measured Demo 1050/945,759/664,721/621 scroll/client heights.",
+    "patch": "Profile-scoped inline labels, compact step spacing and bounded media height during disclosure; preserve every revealed source item and aspect ratio. No font floor reduction/shared CSS changes.",
+    "evidence": "HARNESS_HISTORY/ATTEMPT2/LAYOUT_PROBE.json",
+    "retest": "INFORMATICS_TARGETED.json:26checks PASS,126 native hidden/full viewport cases + 3 sample/comparison viewport cases; preserved prior disclosed items visible."
+  }
+]

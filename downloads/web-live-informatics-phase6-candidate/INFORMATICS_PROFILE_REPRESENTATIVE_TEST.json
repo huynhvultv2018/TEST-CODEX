@@ -1,0 +1,604 @@
+{
+  "id": "INFORMATICS_PHASE6_REPRESENTATIVE_TEST",
+  "title": "Informatics Phase6 — TEST ONLY / NOT SGK",
+  "subject": "Tin học — dữ liệu kiểm thử",
+  "subject_engine": "informatics",
+  "fixturePurpose": "Synthetic interface fixture only; not textbook or real classroom validation",
+  "screens": [
+    {
+      "id": "FLOW_0",
+      "title": "Điều gì xảy ra khi nhấn Save?",
+      "type": "PRACTICE",
+      "content": "Điều gì xảy ra khi nhấn Save?",
+      "steps": [
+        "REVEAL_ONLY_STAGE_0"
+      ],
+      "hint": "HINT_ONLY_I6_FLOW_0",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_FLOW_0",
+      "informatics": {
+        "stage": "CURIOSITY",
+        "blocks": [
+          {
+            "kind": "STUDENT_RESPONSE",
+            "text": "Phản hồi fixture được cung cấp.",
+            "afterStep": 1
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_FLOW_0"
+      }
+    },
+    {
+      "id": "FLOW_1",
+      "title": "Quan sát nút Save trong ảnh.",
+      "type": "PRACTICE",
+      "content": "Quan sát nút Save trong ảnh.",
+      "steps": [
+        "REVEAL_ONLY_STAGE_1"
+      ],
+      "hint": "HINT_ONLY_I6_FLOW_1",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_FLOW_1",
+      "informatics": {
+        "stage": "OBSERVE",
+        "blocks": [
+          {
+            "kind": "STUDENT_RESPONSE",
+            "text": "Phản hồi fixture được cung cấp.",
+            "afterStep": 1
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_FLOW_1"
+      }
+    },
+    {
+      "id": "FLOW_2",
+      "title": "Chọn thao tác lưu sản phẩm.",
+      "type": "PRACTICE",
+      "content": "Chọn thao tác lưu sản phẩm.",
+      "steps": [
+        "REVEAL_ONLY_STAGE_2"
+      ],
+      "hint": "HINT_ONLY_I6_FLOW_2",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_FLOW_2",
+      "informatics": {
+        "stage": "THINK",
+        "blocks": [
+          {
+            "kind": "STUDENT_RESPONSE",
+            "text": "Phản hồi fixture được cung cấp.",
+            "afterStep": 1
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_FLOW_2"
+      }
+    },
+    {
+      "id": "FLOW_3",
+      "title": "Dự đoán tên tệp sau khi lưu.",
+      "type": "PRACTICE",
+      "content": "Dự đoán tên tệp sau khi lưu.",
+      "steps": [
+        "REVEAL_ONLY_STAGE_3"
+      ],
+      "hint": "HINT_ONLY_I6_FLOW_3",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_FLOW_3",
+      "informatics": {
+        "stage": "PREDICT",
+        "blocks": [
+          {
+            "kind": "STUDENT_RESPONSE",
+            "text": "Phản hồi fixture được cung cấp.",
+            "afterStep": 1
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_FLOW_3"
+      }
+    },
+    {
+      "id": "FLOW_4",
+      "title": "Trao đổi cách kiểm tra tệp.",
+      "type": "PRACTICE",
+      "content": "Trao đổi cách kiểm tra tệp.",
+      "steps": [
+        "REVEAL_ONLY_STAGE_4"
+      ],
+      "hint": "HINT_ONLY_I6_FLOW_4",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_FLOW_4",
+      "informatics": {
+        "stage": "DISCUSS",
+        "blocks": [
+          {
+            "kind": "STUDENT_RESPONSE",
+            "text": "Phản hồi fixture được cung cấp.",
+            "afterStep": 1
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_FLOW_4"
+      }
+    },
+    {
+      "id": "FLOW_5",
+      "title": "Phát hiện thao tác còn thiếu.",
+      "type": "PRACTICE",
+      "content": "Phát hiện thao tác còn thiếu.",
+      "steps": [
+        "REVEAL_ONLY_STAGE_5"
+      ],
+      "hint": "HINT_ONLY_I6_FLOW_5",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_FLOW_5",
+      "informatics": {
+        "stage": "DISCOVER",
+        "blocks": [
+          {
+            "kind": "STUDENT_RESPONSE",
+            "text": "Phản hồi fixture được cung cấp.",
+            "afterStep": 1
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_FLOW_5"
+      }
+    },
+    {
+      "id": "FLOW_6",
+      "title": "Đối chiếu quy trình được cung cấp.",
+      "type": "PRACTICE",
+      "content": "Đối chiếu quy trình được cung cấp.",
+      "steps": [
+        "REVEAL_ONLY_STAGE_6"
+      ],
+      "hint": "HINT_ONLY_I6_FLOW_6",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_FLOW_6",
+      "informatics": {
+        "stage": "STANDARDIZE",
+        "blocks": [
+          {
+            "kind": "CONCLUSION",
+            "text": "STANDARDIZE_ONLY_AFTER_CHECKPOINT",
+            "afterStep": 1
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_FLOW_6"
+      }
+    },
+    {
+      "id": "FLOW_7",
+      "title": "Nêu một cách tự kiểm tra.",
+      "type": "PRACTICE",
+      "content": "Nêu một cách tự kiểm tra.",
+      "steps": [
+        "REVEAL_ONLY_STAGE_7"
+      ],
+      "hint": "HINT_ONLY_I6_FLOW_7",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_FLOW_7",
+      "informatics": {
+        "stage": "CHECK",
+        "blocks": [
+          {
+            "kind": "STUDENT_RESPONSE",
+            "text": "Phản hồi fixture được cung cấp.",
+            "afterStep": 1
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_FLOW_7"
+      }
+    },
+    {
+      "id": "FLOW_8",
+      "title": "Lưu sản phẩm theo yêu cầu.",
+      "type": "PRACTICE",
+      "content": "Lưu sản phẩm theo yêu cầu.",
+      "steps": [
+        "REVEAL_ONLY_STAGE_8"
+      ],
+      "hint": "HINT_ONLY_I6_FLOW_8",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_FLOW_8",
+      "informatics": {
+        "stage": "APPLY",
+        "blocks": [
+          {
+            "kind": "STUDENT_RESPONSE",
+            "text": "Phản hồi fixture được cung cấp.",
+            "afterStep": 1
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_FLOW_8"
+      }
+    },
+    {
+      "id": "DEMO",
+      "title": "Làm mẫu thao tác lưu",
+      "type": "PRACTICE",
+      "content": "Quan sát hướng dẫn thao tác.",
+      "steps": [
+        "Mở menu File.",
+        "Chọn Save.",
+        "Kiểm tra tên tệp."
+      ],
+      "hint": "HINT_ONLY_I6_DEMO",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_DEMO",
+      "informatics": {
+        "stage": "OBSERVE",
+        "blocks": [
+          {
+            "kind": "DEMO",
+            "text": "GV trình bày thao tác từ dữ liệu nguồn.",
+            "afterStep": 0
+          },
+          {
+            "kind": "MEDIA",
+            "text": "",
+            "afterStep": 0,
+            "type": "IMAGE",
+            "src": "informatics-test-media/demo.svg",
+            "alt": "Ảnh giao diện kiểm thử 640x360"
+          },
+          {
+            "kind": "SCREEN_REFERENCE",
+            "text": "Menu File → Save.",
+            "afterStep": 1
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_DEMO",
+        "demoNote": "PRIVATE_DEMO_NOTE",
+        "teacherControl": "PRIVATE_TEACHER_CONTROL"
+      }
+    },
+    {
+      "id": "PRACTICE",
+      "title": "Thực hành lưu sản phẩm",
+      "type": "PRACTICE",
+      "content": "Tạo và lưu tệp theo yêu cầu.",
+      "steps": [
+        "Đặt tên tệp.",
+        "Kiểm tra trước khi xem mẫu.",
+        "Đối chiếu và chỉnh sửa."
+      ],
+      "hint": "HINT_ONLY_I6_PRACTICE",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_PRACTICE",
+      "informatics": {
+        "stage": "APPLY",
+        "blocks": [
+          {
+            "kind": "EXPECTED_PRODUCT",
+            "text": "Một tệp có tên được yêu cầu.",
+            "afterStep": 0
+          },
+          {
+            "kind": "STUDENT_PRODUCT",
+            "text": "STUDENT_PRODUCT_ONLY: bai_lam.txt",
+            "afterStep": 1
+          },
+          {
+            "kind": "CHECKPOINT",
+            "text": "CHECKPOINT_ONLY: kiểm tra tệp.",
+            "afterStep": 2,
+            "focusStep": 2
+          },
+          {
+            "kind": "PRODUCT_COMPARISON",
+            "text": "COMPARE_ONLY: đối chiếu tên tệp.",
+            "afterStep": 3
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_PRACTICE",
+        "sampleProduct": {
+          "text": "SAMPLE_SECRET_I6: bai_lam.txt",
+          "checkpointStep": 2
+        }
+      }
+    },
+    {
+      "id": "CODE",
+      "title": "Mã nguồn theo từng bước",
+      "type": "PRACTICE",
+      "content": "Quan sát mã do lesson cung cấp.",
+      "steps": [
+        "Gán giá trị đầu vào.",
+        "Kiểm tra điều kiện.",
+        "Hiển thị kết quả."
+      ],
+      "hint": "HINT_ONLY_I6_CODE",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_CODE",
+      "informatics": {
+        "stage": "THINK",
+        "blocks": [
+          {
+            "kind": "CODE",
+            "text": "",
+            "afterStep": 0,
+            "lines": [
+              {
+                "text": "value = 3",
+                "afterStep": 1
+              },
+              {
+                "text": "if value > 0:",
+                "afterStep": 2
+              },
+              {
+                "text": "    print(\"CODE_FUTURE_ONLY\")",
+                "afterStep": 3
+              }
+            ],
+            "highlightLinesByStep": {
+              "1": [
+                1
+              ],
+              "2": [
+                2
+              ],
+              "3": [
+                3
+              ]
+            }
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_CODE"
+      }
+    },
+    {
+      "id": "ALGORITHM",
+      "title": "Thuật toán theo checkpoint",
+      "type": "PRACTICE",
+      "content": "Theo dõi thuật toán đã cho.",
+      "steps": [
+        "Xác định đầu vào.",
+        "Thực hiện xử lý.",
+        "Đọc đầu ra."
+      ],
+      "hint": "HINT_ONLY_I6_ALGORITHM",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_ALGORITHM",
+      "informatics": {
+        "stage": "PREDICT",
+        "blocks": [
+          {
+            "kind": "ALGORITHM",
+            "text": "",
+            "afterStep": 0,
+            "items": [
+              {
+                "kind": "INPUT",
+                "text": "Một số nguyên n.",
+                "afterStep": 0
+              },
+              {
+                "kind": "SEQUENCE",
+                "text": "Đọc giá trị n.",
+                "afterStep": 1,
+                "focusStep": 1
+              },
+              {
+                "kind": "BRANCH",
+                "text": "Nếu n > 0, chuyển bước tiếp.",
+                "afterStep": 2,
+                "focusStep": 2
+              },
+              {
+                "kind": "LOOP",
+                "text": "Lặp kiểm tra theo dữ liệu nguồn.",
+                "afterStep": 2,
+                "focusStep": 2
+              },
+              {
+                "kind": "PROCESS",
+                "text": "Xử lý n theo yêu cầu.",
+                "afterStep": 2,
+                "focusStep": 2
+              },
+              {
+                "kind": "OUTPUT",
+                "text": "ALGORITHM_FUTURE_ONLY: kết quả.",
+                "afterStep": 3,
+                "focusStep": 3
+              }
+            ]
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_ALGORITHM"
+      }
+    },
+    {
+      "id": "TABLE",
+      "title": "Bảng thao tác và kết quả",
+      "type": "PRACTICE",
+      "content": "Đọc quan hệ từng hàng.",
+      "steps": [
+        "Đối chiếu hàng thứ nhất."
+      ],
+      "hint": "HINT_ONLY_I6_TABLE",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_TABLE",
+      "informatics": {
+        "stage": "CHECK",
+        "blocks": [
+          {
+            "kind": "TABLE",
+            "text": "",
+            "afterStep": 0,
+            "headers": [
+              "Thao tác",
+              "Kết quả"
+            ],
+            "rows": [
+              [
+                "Save",
+                "Lưu tệp"
+              ],
+              [
+                "Open",
+                "Mở tệp"
+              ]
+            ]
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_TABLE"
+      }
+    },
+    {
+      "id": "MEDIA_VIDEO",
+      "title": "Tư liệu VIDEO",
+      "type": "PRACTICE",
+      "content": "Quan sát tư liệu của fixture.",
+      "steps": [
+        "MEDIA_ANSWER_ONLY_VIDEO"
+      ],
+      "hint": "HINT_ONLY_I6_MEDIA_VIDEO",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_MEDIA_VIDEO",
+      "informatics": {
+        "stage": "OBSERVE",
+        "blocks": [
+          {
+            "kind": "MEDIA",
+            "text": "",
+            "afterStep": 0,
+            "type": "VIDEO",
+            "src": "informatics-test-media/demo.webm",
+            "alt": "TEST ONLY VIDEO"
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_MEDIA_VIDEO"
+      }
+    },
+    {
+      "id": "MEDIA_ANIMATION",
+      "title": "Tư liệu ANIMATION",
+      "type": "PRACTICE",
+      "content": "Quan sát tư liệu của fixture.",
+      "steps": [
+        "MEDIA_ANSWER_ONLY_ANIMATION"
+      ],
+      "hint": "HINT_ONLY_I6_MEDIA_ANIMATION",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_MEDIA_ANIMATION",
+      "informatics": {
+        "stage": "OBSERVE",
+        "blocks": [
+          {
+            "kind": "MEDIA",
+            "text": "",
+            "afterStep": 0,
+            "type": "ANIMATION",
+            "src": "informatics-test-media/demo.gif",
+            "alt": "TEST ONLY ANIMATION"
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_MEDIA_ANIMATION"
+      }
+    },
+    {
+      "id": "MEDIA_SCREENSHOT",
+      "title": "Tư liệu SCREENSHOT",
+      "type": "PRACTICE",
+      "content": "Quan sát tư liệu của fixture.",
+      "steps": [
+        "MEDIA_ANSWER_ONLY_SCREENSHOT"
+      ],
+      "hint": "HINT_ONLY_I6_MEDIA_SCREENSHOT",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_MEDIA_SCREENSHOT",
+      "informatics": {
+        "stage": "OBSERVE",
+        "blocks": [
+          {
+            "kind": "MEDIA",
+            "text": "",
+            "afterStep": 0,
+            "type": "SCREENSHOT",
+            "src": "informatics-test-media/demo.svg",
+            "alt": "TEST ONLY SCREENSHOT"
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_MEDIA_SCREENSHOT"
+      }
+    },
+    {
+      "id": "MEDIA_DIAGRAM",
+      "title": "Tư liệu DIAGRAM",
+      "type": "PRACTICE",
+      "content": "Quan sát tư liệu của fixture.",
+      "steps": [
+        "MEDIA_ANSWER_ONLY_DIAGRAM"
+      ],
+      "hint": "HINT_ONLY_I6_MEDIA_DIAGRAM",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_MEDIA_DIAGRAM",
+      "informatics": {
+        "stage": "OBSERVE",
+        "blocks": [
+          {
+            "kind": "MEDIA",
+            "text": "",
+            "afterStep": 0,
+            "type": "DIAGRAM",
+            "src": "informatics-test-media/demo.svg",
+            "alt": "TEST ONLY DIAGRAM"
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_MEDIA_DIAGRAM"
+      }
+    },
+    {
+      "id": "INSTRUCTION",
+      "title": "Hướng dẫn và tự kiểm tra",
+      "type": "PRACTICE",
+      "content": "Thực hiện đúng nhiệm vụ đã cho.",
+      "steps": [
+        "Mở tệp.",
+        "Kiểm tra nội dung.",
+        "Tự kiểm tra kết quả."
+      ],
+      "hint": "HINT_ONLY_I6_INSTRUCTION",
+      "teacherNote": "PRIVATE_NATIVE_NOTE_INSTRUCTION",
+      "informatics": {
+        "stage": "APPLY",
+        "blocks": [
+          {
+            "kind": "TASK",
+            "text": "Mở sản phẩm của em.",
+            "afterStep": 0,
+            "focusStep": 1
+          },
+          {
+            "kind": "INSTRUCTION",
+            "text": "Chọn File → Open.",
+            "afterStep": 1,
+            "focusStep": 1
+          },
+          {
+            "kind": "STUDENT_ACTION",
+            "text": "Chọn tệp cần mở.",
+            "afterStep": 2,
+            "focusStep": 2
+          },
+          {
+            "kind": "SELF_CHECK",
+            "text": "SELF_CHECK_ONLY: nội dung đầy đủ.",
+            "afterStep": 3,
+            "focusStep": 3
+          }
+        ],
+        "teacherNote": "PRIVATE_PROFILE_NOTE_INSTRUCTION"
+      }
+    },
+    {
+      "id": "NO_METADATA",
+      "title": "Metadata tùy chọn",
+      "type": "PRACTICE",
+      "content": "Không tạo activity thiếu trong lesson.",
+      "steps": [
+        "Chỉ bước đã được cung cấp."
+      ]
+    },
+    {
+      "id": "MCQ",
+      "title": "MCQ Tin học dọc",
+      "type": "QUICK_CHECK",
+      "content": "Chọn thao tác lưu tệp.",
+      "options": [
+        "Save",
+        "Open",
+        "Close",
+        "Print"
+      ],
+      "instruction": "Chọn một phương án.",
+      "steps": [
+        "Đáp án fixture: Save."
+      ]
+    }
+  ]
+}

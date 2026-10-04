@@ -1,0 +1,18 @@
+{
+  "ALGEBRA": {
+    "candidate": "WEB_LIVE_ALGEBRA_PHASE5_CANDIDATE.zip",
+    "sha256": "575b466dc839d54c6ad91327bc5a7454ece42cbacfd69ae916eca4aa1bcaf01d",
+    "files": 1233,
+    "status": "FROZEN",
+    "root": "/workspace/phase5-algebra-profile/packaged-smoke/WEB_LIVE_ALGEBRA_PHASE5_CANDIDATE",
+    "zip": "/workspace/output/web-live-algebra-phase5-candidate/WEB_LIVE_ALGEBRA_PHASE5_CANDIDATE.zip"
+  },
+  "GEOMETRY": {
+    "candidate": "WEB_LIVE_GEOMETRY_PHASE4_CANDIDATE.zip",
+    "sha256": "9974d9fb4d4e4db023846c0ee42258b3fd193acfe37bd63b8fe6c7d2ee5f9b8e",
+    "files": 1227,
+    "status": "FROZEN",
+    "root": "/workspace/phase4-g4f03-patch/packaged-smoke/WEB_LIVE_GEOMETRY_PHASE4_CANDIDATE",
+    "zip": "/workspace/output/web-live-geometry-phase4-candidate/WEB_LIVE_GEOMETRY_PHASE4_CANDIDATE.zip"
+  }
+}

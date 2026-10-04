@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "targetedChecks": 26,
+  "globalRegression": "PASS",
+  "profileBoundaryNegativeChecks": 19,
+  "sourceScope": "PASS",
+  "P0_COUNT": 0,
+  "P1_COUNT": 0,
+  "P2_COUNT": 0,
+  "P3_COUNT": 0,
+  "countsMeaning": "Open Phase6 engine/profile findings only. Two P2 fixed and re-tested. Accepted Geometry deferred/pending unchanged.",
+  "coreChangeRequired": false,
+  "geometryProfileMutated": false,
+  "algebraProfileMutated": false,
+  "legacyBehaviorMutated": false,
+  "productionModified": false,
+  "packagingAuthorizedByGate": true
+}

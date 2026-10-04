@@ -1,0 +1,141 @@
+--- a/WEB_LIVE/tv-layout-computer.js
++++ b/WEB_LIVE/tv-layout-computer.js
+@@ -6,3 +6,138 @@
+  }
+  if(vm.instruction&&!vm.source.includes(vm.instruction)&&!content.hidden)content.appendChild(ui.block(vm.instruction,vm,'tvInstruction'));
+ }};
++
++/* Phase 6: Informatics presentation adapter. The existing TVComputerEngine above
++ * is preserved byte-for-byte. Core owns lessons, navigation and native reveal. */
++globalThis.WebLiveInformatics=(()=>{
++ 'use strict';
++ const stages=Object.freeze({CURIOSITY:'TÒ MÒ',OBSERVE:'QUAN SÁT',THINK:'SUY NGHĨ',PREDICT:'DỰ ĐOÁN',DISCUSS:'TRAO ĐỔI',DISCOVER:'PHÁT HIỆN',STANDARDIZE:'GV CHUẨN HÓA',CHECK:'KIỂM TRA HIỂU',APPLY:'VẬN DỤNG'});
++ const labels=Object.freeze({TASK:'Nhiệm vụ',INSTRUCTION:'Hướng dẫn',STUDENT_ACTION:'Thao tác học sinh',STUDENT_RESPONSE:'Phản hồi học sinh',EXPECTED_PRODUCT:'Sản phẩm cần đạt',STUDENT_PRODUCT:'Sản phẩm học sinh',CHECKPOINT:'Điểm kiểm tra',RESULT:'Kết quả',SELF_CHECK:'Tự kiểm tra',DEMO:'Làm mẫu',SCREEN_REFERENCE:'Tham chiếu giao diện',RESOURCE:'Tài nguyên',CONCLUSION:'Kết luận',CODE:'Mã nguồn',ALGORITHM:'Thuật toán',TABLE:'Bảng',MEDIA:'Tư liệu',PRODUCT_COMPARISON:'Đối chiếu sản phẩm'});
++ const algorithmLabels=Object.freeze({INPUT:'Đầu vào',PROCESS:'Xử lý',OUTPUT:'Đầu ra',SEQUENCE:'Tuần tự',BRANCH:'Rẽ nhánh',LOOP:'Lặp'});
++ const baseURL=new URL('.',document.currentScript.src),diagnostics=[];
++ let active=null,context=null,teacherPanel=null,teacherKey=null;
++ const channel=typeof BroadcastChannel==='function'?new BroadcastChannel('webLiveInformaticsProfileV1'):null;
++ const authored=x=>typeof x==='string'?x:'';
++ function warn(code){diagnostics.push(Object.freeze({code}));if(diagnostics.length>100)diagnostics.shift();}
++ function node(tag,cls,text,doc=document){const n=doc.createElement(tag);n.className=cls;if(text!==undefined)n.textContent=text;return n;}
++ function style(doc=document){if(doc.getElementById('informaticsProfileStyle'))return;const link=doc.createElement('link');link.id='informaticsProfileStyle';link.rel='stylesheet';link.href=new URL('informatics-profile.css',baseURL).href;doc.head.append(link);}
++ function keyFor(state){return 'webLive:informatics:v1:'+JSON.stringify([state.lessonActivation||'',state.lessonSourceKey||'',state.index]);}
++ function read(key){try{const x=JSON.parse(localStorage.getItem(key)||'{}');return{checkpoint:x.checkpoint===true,sample:x.sample===true};}catch(_){return{checkpoint:false,sample:false};}}
++ function write(key,value){try{localStorage.setItem(key,JSON.stringify(value));}catch(_){warn('PROFILE_STORAGE_UNAVAILABLE');return false;}channel?.postMessage({key});refresh(key);return true;}
++ function refresh(key){if(active?.key===key&&typeof applyState==='function')applyState(lastState);}
++ if(channel)channel.onmessage=e=>{if(typeof e.data?.key==='string')refresh(e.data.key);};
++ addEventListener('storage',e=>{if(e.key?.startsWith('webLive:informatics:v1:'))refresh(e.key);});
++ function gate(value,total){return Number.isInteger(value)&&value>=0&&value<=total;}
++ function currentStep(count,focus){return focus?.region==='answer'&&Number.isInteger(focus.index)&&focus.index>=0&&focus.index<count?focus.index+1:count;}
++ function countFor(screen,state){const total=liveSteps(screen).length;return state.answerMode==='full'?total:state.answerMode==='steps'?Math.min(total,Math.max(0,Math.trunc(state.answerStep||0))):0;}
++ function samplePolicy(screen,total){const p=screen.informatics?.sampleProduct;return p&&gate(p.checkpointStep,total)&&p.checkpointStep>0&&authored(p.text).trim()?p:null;}
++ function media(parent,item){
++  const type=authored(item.type).toUpperCase(),source=authored(item.src);let url;
++  if(!['IMAGE','VIDEO','ANIMATION','SCREENSHOT','DIAGRAM'].includes(type)||!source)return;
++  try{url=new URL(source,baseURL);}catch(_){warn('INVALID_MEDIA');return;}
++  const image=type!=='VIDEO';
++  const dataImage=image&&/^data:image\/(?:png|jpeg|gif|webp|svg\+xml);/iu.test(source);
++  const local=url.origin===baseURL.origin&&url.protocol===baseURL.protocol&&!url.username&&!url.password;
++  const supported=image?/\.(?:png|jpe?g|gif|svg|webp)$/iu.test(url.pathname):/\.(?:webm|mp4)$/iu.test(url.pathname);
++  if(!dataImage&&!(local&&supported)){warn('UNSUPPORTED_OR_REMOTE_MEDIA');return;}
++  const n=node(image?'img':'video','infMedia');n.src=url.href;
++  if(image)n.alt=authored(item.alt);else{n.controls=true;n.preload='metadata';n.playsInline=true;n.autoplay=false;}
++  parent.append(n);if(authored(item.caption))parent.append(node('div','infMediaCaption',item.caption));
++ }
++ function code(parent,block,count,focus){
++  if(!Array.isArray(block.lines))return;
++  const pre=node('pre','infCode'),body=node('code','infCodeBody');pre.setAttribute('aria-label',labels.CODE);
++  const selected=currentStep(count,focus);
++  const highlights=block.highlightLinesByStep?.[String(selected)];let visibleLines=0;
++  for(let i=0;i<block.lines.length;i++){
++   const line=block.lines[i];if(!gate(line?.afterStep,liveSteps(active.screen).length)||line.afterStep>count||typeof line.text!=='string')continue;
++   if(visibleLines)body.append(document.createTextNode('\n'));
++   const n=node('span','infCodeLine',line.text);n.dataset.lineNumber=String(i+1);
++   n.classList.toggle('infCodeCurrent',Array.isArray(highlights)&&highlights.includes(i+1));n.classList.toggle('infCodePrevious',!n.classList.contains('infCodeCurrent'));
++   body.append(n);visibleLines++;
++  }
++  pre.classList.toggle('infCodeFocused',focus?.region==='answer'&&Number.isInteger(focus.index)&&focus.index>=0&&focus.index<count);pre.append(body);parent.append(pre);
++ }
++ function table(parent,block){
++  if(!Array.isArray(block.headers)||!Array.isArray(block.rows)||!block.headers.every(x=>typeof x==='string')||!block.rows.every(row=>Array.isArray(row)&&row.length===block.headers.length&&row.every(x=>typeof x==='string'))){warn('INVALID_TABLE');return;}
++  const wrap=node('div','infTableWrap'),t=node('table','infTable'),head=node('thead',''),hr=node('tr','');
++  for(const value of block.headers){const cell=node('th','',value);cell.scope='col';hr.append(cell);}head.append(hr);t.append(head);
++  const body=node('tbody','');for(const values of block.rows){const row=node('tr','');for(const value of values)row.append(node('td','',value));body.append(row);}t.append(body);wrap.append(t);parent.append(wrap);
++ }
++ function renderBlock(block,count,focus,total,local,sampleAllowed){
++  if(!Object.hasOwn(labels,block?.kind)||!gate(block.afterStep,total)){warn('INVALID_OR_UNGATED_BLOCK');return null;}
++  if(block.afterStep>count||block.kind==='PRODUCT_COMPARISON'&&!sampleAllowed)return null;
++  const box=node('section','infBlock infBlock-'+block.kind);box.dataset.kind=block.kind;box.dataset.afterStep=String(block.afterStep);box.append(node('div','infLabel',labels[block.kind]));
++  if(block.kind==='CODE')code(box,block,count,focus);
++  else if(block.kind==='TABLE')table(box,block);
++  else if(block.kind==='ALGORITHM'){
++   if(Array.isArray(block.items))for(const item of block.items){if(!Object.hasOwn(algorithmLabels,item?.kind)||!gate(item.afterStep,total)||item.afterStep>count)continue;const row=node('div','infAlgorithmItem');row.dataset.algorithmKind=item.kind;if(gate(item.focusStep,total)&&item.focusStep>0){const selected=currentStep(count,focus);row.classList.toggle('infEmphasized',item.focusStep===selected);row.classList.toggle('infDeemphasized',item.focusStep!==selected);}row.append(node('span','infAlgorithmLabel',algorithmLabels[item.kind]),node('span','infAlgorithmText',authored(item.text)));box.append(row);}
++  }else if(block.kind==='MEDIA')media(box,block);
++  else box.append(node('div','infBlockText',authored(block.text)));
++  if(block.kind==='CHECKPOINT')box.dataset.confirmed=String(local.checkpoint);
++  if(block.focusStep!==undefined){if(!gate(block.focusStep,total)||block.focusStep<1){warn('INVALID_FOCUS_STEP');}else{const current=currentStep(count,focus);box.classList.toggle('infEmphasized',block.focusStep===current);box.classList.toggle('infDeemphasized',block.focusStep!==current);}}
++  return box;
++ }
++ function proof(screen,state,root,count){
++  const host=document.getElementById('answer'),steps=liveSteps(screen),focus=state.classroom?.focus,valid=focus?.region==='answer'&&Number.isInteger(focus.index)&&focus.index>=0&&focus.index<count;
++  host.replaceChildren();host.hidden=count===0&&!liveAnswerText(screen,state.answerMode,state.answerStep||0);host.classList.add('infProofFlow');host.classList.toggle('hasFocus',valid);
++  const states=steps.map((_,index)=>({index,disclosure:index<count?'REVEALED':'UNREVEALED',progress:index>=count?'UNREVEALED':state.answerMode==='full'||index<count-1?'COMPLETED':'CURRENT',focused:valid&&index===focus.index}));
++  for(let index=0;index<count;index++){const step=node('div','proofStep infProofStep '+(index===count-1?'current':'previous'),steps[index]);step.dataset.stepState=states[index].progress;Classroom.step(step,'answer',index,valid?focus:null);host.append(step);}
++  const visible=liveAnswerText(screen,state.answerMode,state.answerStep||0),conclusion=normalizeLiveText(screen.conclusion||'','answer');
++  if(state.answerMode==='full'&&authored(screen.answer).trim()&&normalizeLiveText(screen.answer,'answer')!==steps.join('\n'))host.append(node('div','infConclusion',normalizeLiveText(screen.answer,'answer')));
++  if(conclusion&&visible.includes(conclusion)&&!steps.slice(0,count).join('\n').includes(conclusion))host.append(node('div','infConclusion',conclusion));
++  return states;
++ }
++ function teacherControls(role,screen,state,count,local,policy){
++  if(role!=='preview'||parent===window)return;
++  let doc;try{doc=parent.document;}catch(_){warn('TEACHER_CONTROLS_UNAVAILABLE');return;}
++  style(doc);const key=keyFor(state);
++  // Controls are mounted by the existing native student-preview iframe. They
++  // never write Core/lesson state and are removed by profile lifecycle disposal.
++  if(!teacherPanel||!teacherPanel.isConnected){teacherPanel=node('section','informaticsTeacherControls',undefined,doc);teacherPanel.id='informaticsTeacherControls';const anchor=doc.getElementById('annotationEditor');if(anchor)anchor.before(teacherPanel);else (doc.querySelector('main')||doc.body).append(teacherPanel);}
++  teacherKey=key;teacherPanel.replaceChildren(node('strong','','Tin học — điều khiển sản phẩm',doc));
++  if(policy){
++   const ready=count>=policy.checkpointStep;
++   const checkpoint=node('button','','XÁC NHẬN CHECKPOINT',doc);checkpoint.type='button';checkpoint.id='informaticsCheckpointBtn';checkpoint.disabled=!ready;
++   checkpoint.addEventListener('click',()=>{if(teacherKey!==key||!active||active.key!==key||countFor(active.screen,active.state)<policy.checkpointStep)return;write(key,{checkpoint:true,sample:false});});
++   const sample=node('button','',local.sample?'ẨN SẢN PHẨM MẪU':'HIỆN SẢN PHẨM MẪU',doc);sample.type='button';sample.id='informaticsSampleBtn';sample.disabled=!ready||!local.checkpoint;
++   sample.addEventListener('click',()=>{const current=read(key);if(teacherKey!==key||!active||active.key!==key||countFor(active.screen,active.state)<policy.checkpointStep||!current.checkpoint)return;write(key,{checkpoint:true,sample:!current.sample});});
++   teacherPanel.append(checkpoint,sample,node('div','',ready?(local.checkpoint?'Checkpoint đã xác nhận.':'Chờ GV xác nhận checkpoint.'):'Checkpoint chưa được reveal.',doc));
++  }
++  const note=authored(screen.informatics?.teacherNote)||authored(screen.teacherNote)||authored(screen.note);if(note){const n=node('div','informaticsTeacherNote',note,doc);n.id='informaticsTeacherNote';teacherPanel.append(n);}
++  for(const field of ['demoNote','teacherControl'])if(authored(screen.informatics?.[field]))teacherPanel.append(node('div','informaticsTeacherNote',screen.informatics[field],doc));
++ }
++ function presentation(role,lesson,state,root){
++  if(!['tv','preview'].includes(role)||!root)return;
++  const screen=lesson.screens[state.index];if(!screen)return;
++  style();const total=liveSteps(screen).length,count=countFor(screen,state),key=keyFor(state);active={role,lesson,state,root,screen,key};
++  root.classList.add('informaticsProfile');const stage=screen.informatics?.stage;root.dataset.informaticsStage=Object.hasOwn(stages,stage)?stage:'';
++  const badge=document.getElementById('activityBadge');if(badge&&root.dataset.informaticsStage){badge.textContent=stages[root.dataset.informaticsStage];badge.hidden=false;badge.dataset.informaticsLabel='true';}
++  const policy=samplePolicy(screen,total);let local=read(key);
++  if(!policy||count<policy.checkpointStep){if(local.checkpoint||local.sample){try{localStorage.removeItem(key);}catch(_){warn('PROFILE_STORAGE_UNAVAILABLE');}}local={checkpoint:false,sample:false};}
++  const sampleAllowed=!!policy&&count>=policy.checkpointStep&&local.checkpoint&&local.sample;
++  const stepStates=proof(screen,state,root,count);
++  const hint=document.getElementById('hint');if(hint.hidden)hint.replaceChildren();
++  // Optional metadata enhances only authored, explicitly gated activity blocks.
++  // Screens without it retain native content/MCQ presentation.
++  const metadata=screen.informatics,content=document.getElementById('content');
++  if(metadata&&(Array.isArray(metadata.blocks)||policy)&&!content.hidden){
++   const flow=node('div','infActivityFlow');
++   if(authored(screen.content)){const task=node('div','infSourceTask',normalizeLiveText(screen.content,'prose'));Classroom.step(task,'content',0,state.classroom?.focus);flow.append(task);}
++   for(const block of metadata.blocks||[]){const rendered=renderBlock(block,count,state.classroom?.focus,total,local,sampleAllowed);if(rendered)flow.append(rendered);}
++   if(sampleAllowed){const box=node('section','infBlock infSampleProduct');box.dataset.kind='SAMPLE_PRODUCT';box.append(node('div','infLabel','Sản phẩm mẫu'),node('div','infBlockText',policy.text));flow.append(box);}
++   // Core owns MCQ options. A metadata body must not discard that native grid.
++   if(Array.isArray(screen.options)&&screen.options.length){const grid=content.querySelector('.tvOptionGrid');if(grid)flow.append(grid);}
++   content.replaceChildren(flow);
++  }
++  teacherControls(role,screen,state,count,local,policy);
++  context=Object.freeze({status:'IMPLEMENTED',profileId:'informatics',role,index:state.index,lessonActivation:state.lessonActivation||'',stateVersion:state.stateVersion||0,stage:root.dataset.informaticsStage,count,total,checkpointConfirmed:local.checkpoint,sampleRevealed:sampleAllowed,stepStates:Object.freeze(stepStates.map(s=>Object.freeze(s)))});
++ }
++ function cleanup(){
++  active=null;context=null;teacherKey=null;teacherPanel?.remove();teacherPanel=null;
++  document.getElementById('answer')?.classList.remove('infProofFlow');const root=document.getElementById('screen');root?.classList.remove('informaticsProfile');if(root)delete root.dataset.informaticsStage;
++  const badge=document.getElementById('activityBadge');if(badge)delete badge.dataset.informaticsLabel;
++ }
++ WebLiveProfiles.registerAdapter('informatics',{presentation});WebLiveProfiles.subscribe('informatics',{onDispose:cleanup});
++ return Object.freeze({version:1,status:'IMPLEMENTED',stages,getState:()=>context,getDiagnostics:()=>Object.freeze(diagnostics.slice())});
++})();

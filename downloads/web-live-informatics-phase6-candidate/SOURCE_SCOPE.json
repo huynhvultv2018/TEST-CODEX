@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "existingFilesChanged": [
+    "WEB_LIVE/tv-layout-computer.js"
+  ],
+  "addedFiles": [
+    "INFORMATICS_PHASE6_TEST_PACKAGES/INFORMATICS_PROFILE_REPRESENTATIVE_TEST.json",
+    "INFORMATICS_PHASE6_TEST_PACKAGES/README.md",
+    "WEB_LIVE/informatics-profile.css",
+    "WEB_LIVE/informatics-test-media/demo.gif",
+    "WEB_LIVE/informatics-test-media/demo.svg",
+    "WEB_LIVE/informatics-test-media/demo.webm"
+  ],
+  "oldFilesUnchanged": 1232,
+  "payloadFiles": 1239,
+  "oldTVComputerEnginePrefixBytes": 538,
+  "oldTVComputerEnginePrefixByteIdentical": true,
+  "coreChangeRequired": false,
+  "webLiveCoreMutated": false,
+  "geometryProfileMutated": false,
+  "algebraProfileMutated": false,
+  "legacyBehaviorMutated": false,
+  "frozenAlgebraMutated": false,
+  "frozenGeometryMutated": false,
+  "sourceScopeViolation": false,
+  "productionModified": false
+}
