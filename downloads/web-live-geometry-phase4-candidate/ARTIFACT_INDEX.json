@@ -1,0 +1,70 @@
+{
+  "result": "PASS",
+  "files": [
+    {
+      "name": "CLOUD_DRAFT_STATUS.json",
+      "sha256": "e8a6a7fe6445cd31216a8581ef588c4b333ab63de737ff5e9ff02f9da50e12f3",
+      "bytes": 225
+    },
+    {
+      "name": "FINAL_STATUS.txt",
+      "sha256": "4d1675a0abf701001750c44f8f7f585702f4ccd414b0a5e2acf3743d9ecc6a0d",
+      "bytes": 1424
+    },
+    {
+      "name": "G4_F03_ONLY.patch",
+      "sha256": "373f2eb884021de72c1c590da738ef9a2895801e8ea40c26a0b107fa9a78f6c0",
+      "bytes": 1151
+    },
+    {
+      "name": "G4_F03_PATCH_VALIDATION_EVIDENCE.zip",
+      "sha256": "b6e14c88c234c2aa874238aca47600762bbf8b5e8745861cdb307497ee2bbd8c",
+      "bytes": 11532182
+    },
+    {
+      "name": "GEOMETRY_PHASE4_G4F03_REPORT.md",
+      "sha256": "665d9e3c81ee7c7effaaa9b9a096bdf12a3375fcd66ecca4e3d27fd1b31294b5",
+      "bytes": 9957
+    },
+    {
+      "name": "HINH8_VD2_GEOMETRY_PROFILE_TEST_G4F01_PATCHED.zip",
+      "sha256": "4488b1997e416fa634a577900af76fff1dbf17de1eb4bd62eee3a772df7bcab8",
+      "bytes": 718815
+    },
+    {
+      "name": "PACKAGED_RUNTIME_SMOKE.json",
+      "sha256": "74d527fd4b3544333567df4e98682a8dc2aff86e8f492c051169ad5d7a831b85",
+      "bytes": 484
+    },
+    {
+      "name": "PACKAGE_IDENTITY.json",
+      "sha256": "cc94d1fbdcfd18bbf5c2898d2c98b6d919442692c392b6beadb159b62000f58a",
+      "bytes": 431
+    },
+    {
+      "name": "PHASE4_PAYLOAD_MANIFEST.json",
+      "sha256": "6423eef1ef00668832f57847919f744b4dd3ad23932104a1158cb6d38d93bc14",
+      "bytes": 150413
+    },
+    {
+      "name": "PREPACKAGE_GATE.json",
+      "sha256": "9b30165ed56567d7fc4f7db36f8d266bfe86d6355aadf5fe7fb0607005f6f3f9",
+      "bytes": 1457
+    },
+    {
+      "name": "README.md",
+      "sha256": "736d77d7b4f9b9b28bdad0d4e0f392f9c89be721a7b882dc89df205616493f42",
+      "bytes": 2135
+    },
+    {
+      "name": "REGRESSION_SUMMARY.json",
+      "sha256": "c48604a5d9e84ee74172c56db97890c9e7af2e0009e9028c37cca5fdd7e025d7",
+      "bytes": 1340
+    },
+    {
+      "name": "WEB_LIVE_GEOMETRY_PHASE4_CANDIDATE.zip",
+      "sha256": "9974d9fb4d4e4db023846c0ee42258b3fd193acfe37bd63b8fe6c7d2ee5f9b8e",
+      "bytes": 49338557
+    }
+  ]
+}

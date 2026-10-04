@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "gateBeforePackaging": "PREPACKAGE_GATE.json PASS",
+  "name": "WEB_LIVE_GEOMETRY_PHASE4_CANDIDATE",
+  "sha256": "9974d9fb4d4e4db023846c0ee42258b3fd193acfe37bd63b8fe6c7d2ee5f9b8e",
+  "bytes": 49338557,
+  "payloadFiles": 1227,
+  "payloadMatchesWorkingCopy": true,
+  "crc": "PASS",
+  "addedTestOnlyFixtures": false,
+  "root": "/workspace/phase4-g4f03-patch/packaged-smoke/WEB_LIVE_GEOMETRY_PHASE4_CANDIDATE"
+}

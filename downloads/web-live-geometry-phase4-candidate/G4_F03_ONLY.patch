@@ -1,0 +1,13 @@
+--- PHASE3/WEB_LIVE/geometry-profile.css
++++ PHASE4/WEB_LIVE/geometry-profile.css
+@@ -4,8 +4,8 @@
+ .geometryProfile .geometryStatement section{border-left:5px solid #b34b03;padding:.15em .35em;background:#fff8e7;border-radius:5px}
+ .geometryProfile .geometryStatementLabel{font-size:.62em;line-height:1.2;font-weight:800;color:#743500;margin-bottom:.16em}
+ .geometryProfile .geometryStatementText{color:#162b44;font-weight:650;white-space:pre-wrap;overflow-wrap:normal;word-break:normal}
+-.geometryProfile[data-geometry-answer-mode="steps"] #answer .proofStep.previous:not(.isFocused){display:none}
+-.geometryProfile[data-geometry-focus-region="answer"] #answer .focusBlock:not(.isFocused){display:none}
++.geometryProfile[data-geometry-answer-mode="steps"] #answer .proofStep.previous:not(.isFocused){opacity:.75}
++.geometryProfile[data-geometry-focus-region="answer"] #answer .focusBlock:not(.isFocused){opacity:.52}
+ .geometryProfile #analysis .analysisStep{border-left:4px solid #b34b03;padding-left:.3em}
+ .geometryProfile #analysis .analysisStep.previous{opacity:.75}
+ .geometryTeacherControls{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}

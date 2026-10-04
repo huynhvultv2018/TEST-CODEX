@@ -1,0 +1,47 @@
+{
+  "result": "PASS",
+  "gate": "Approved G4-F03-only technical scope, not real classroom acceptance",
+  "phase3SHA256Before": "8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c",
+  "phase3SHA256After": "8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c",
+  "phase3CandidateMutated": false,
+  "sourceFiles": 1227,
+  "unchangedWorkingFiles": 1226,
+  "changedFiles": [
+    "WEB_LIVE/geometry-profile.css"
+  ],
+  "webLiveCoreModified": false,
+  "sourceScopeViolation": false,
+  "productionModified": false,
+  "targetedG4F03": "PASS",
+  "geometryFocus": "PASS",
+  "geometryRuntimeChecksPass": 14,
+  "classroomAuxiliaryChecksPass": 15,
+  "classroomAuxiliaryRawFailures": [
+    {
+      "name": "Same-figure navigation preserves zoom",
+      "result": "FAIL",
+      "evidence": {
+        "before": 1.15,
+        "after": 1,
+        "from": 9,
+        "to": 10
+      }
+    }
+  ],
+  "acceptedExistingDeferral": "G4-F02 identical prior zoom reset; Core unchanged; figure/annotation retained",
+  "wholeLessonTVStates": 140,
+  "wholeLessonTVOverflow": 0,
+  "legacyRuntimeRegression": "PASS",
+  "algebraProfileIsolation": "PASS",
+  "informaticsProfileIsolation": "PASS",
+  "g4F01SupplementalRegression": "PASS (no further fixture patch)",
+  "realFileValidation": "NOT_RUN_BY_GV_DECISION",
+  "realClassroomTrial": "UNRUN",
+  "remainingDeferredFindings": [
+    "G4-F02",
+    "G4-F04"
+  ],
+  "remainingValidationPending": [
+    "G4-F05"
+  ]
+}
