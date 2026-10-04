@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "preparedUTC": "2026-10-04T06:44:17.762924+00:00",
+  "candidateFilename": "WEB_LIVE_TEACHER_TV_PEDAGOGY_UI_HOTFIX_R1_CANDIDATE.zip",
+  "candidateSHA256": "96eb673ef1293b99281bca100fca9f5f8a4b2f601558d3e124cb4b1dbd34a2d7",
+  "operator": "",
+  "windowsVersion": "",
+  "chromeVersion": "",
+  "pythonVersion": "",
+  "audioDevice": "",
+  "displayMode": "",
+  "configuredAppsScopeApproved": false,
+  "zipPreserved": true,
+  "candidateSourceChanged": false,
+  "tests": [
+    {
+      "id": "A1",
+      "gate": "TTS REAL AUDIO",
+      "result": "UNRUN",
+      "expected": "Có tiếng đúng nội dung hiện hành; không đọc màn trước/phần đã đóng.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "A2",
+      "gate": "TTS REAL AUDIO",
+      "result": "UNRUN",
+      "expected": "Tiếng dừng ngay, không tự phát lại.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "A3",
+      "gate": "TTS REAL AUDIO",
+      "result": "UNRUN",
+      "expected": "Speech cũ dừng; index mới đúng; replay đọc màn mới; không chồng tiếng.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "A4",
+      "gate": "TTS REAL AUDIO",
+      "result": "UNRUN",
+      "expected": "Không còn tiếng màn cũ; đúng screen; không chồng tiếng.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "A5",
+      "gate": "TTS CLOSE/REOPEN TV",
+      "result": "UNRUN",
+      "expected": "Mỗi lần luôn đọc đúng phần hiện hành; MCQ index14 giữ 5 block; disclosure không lộ sớm.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "A6",
+      "gate": "TTS REAL AUDIO",
+      "result": "UNRUN",
+      "expected": "Web Speech hoạt động; engine khác không có trong R1 ghi N/A; engine/voice host không có ghi ENVIRONMENT UNAVAILABLE.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "B1",
+      "gate": "TV DEMO FAIL-SAFE",
+      "result": "UNRUN",
+      "expected": "Đúng appId/file và button binding; TV không tự launch.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "B2",
+      "gate": "DEMO CONFIRM",
+      "result": "UNRUN",
+      "expected": "Confirmation đúng thiết kế; Cancel không /launch; ứng dụng chỉ mở sau Confirm.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "B3",
+      "gate": "DEMO WORD",
+      "result": "UNRUN",
+      "expected": "Word đúng file, không lệnh shell ngoài whitelist, không duplicate launch và WEB LIVE không crash.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "B4",
+      "gate": "DEMO GEOGEBRA",
+      "result": "UNRUN",
+      "expected": "GeoGebra đúng file, không lệnh shell ngoài whitelist, không duplicate launch và WEB LIVE không crash.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "B5",
+      "gate": "TV DEMO FAIL-SAFE",
+      "result": "UNRUN",
+      "expected": "0 TV /launch; không tự mở Word/GeoGebra bởi điều hướng/refresh/reconnect.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "C1",
+      "gate": "LAUNCHER/CHROME START",
+      "result": "UNRUN",
+      "expected": "Launcher47381, HTTP47382, Chrome đúng Teacher, không404/blank; không phiên cũ xung đột.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "C2",
+      "gate": "AUTO PAIR",
+      "result": "UNRUN",
+      "expected": "Teacher/Launcher pair tự động theo metadata trigger của baseline; ready và session thật.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "C3",
+      "gate": "RELATIVE PATH",
+      "result": "UNRUN",
+      "expected": "HTTP root đúng bản đang thử, Chrome/Teacher/pair vẫn hoạt động; source/config bytes không đổi.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "C4",
+      "gate": "CHROME ALREADY OPEN",
+      "result": "UNRUN",
+      "expected": "Giữ phiên Chrome, Teacher đúng, pair đạt; không thêm server/launcher trùng; không lỗi nghiêm trọng.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    },
+    {
+      "id": "C5",
+      "gate": "FULL CHAIN",
+      "result": "UNRUN",
+      "expected": "Toàn chuỗi vật lý hoạt động, đúng screen, không crash; không cần sửa source.",
+      "actual": "",
+      "stepsToReproduce": "",
+      "evidenceFiles": [],
+      "executedUTC": "",
+      "unavailableReason": "No attached Windows/audio desktop"
+    }
+  ],
+  "allowedResultValues": [
+    "PASS",
+    "FAIL",
+    "UNRUN",
+    "ENVIRONMENT UNAVAILABLE"
+  ],
+  "windowsRuntimeAcceptance": "UNRUN",
+  "productionReady": "NO"
+}

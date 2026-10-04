@@ -1,0 +1,25 @@
+{
+  "observedUTC": "2026-10-04T06:40:50.224276+00:00",
+  "executor": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "system": "Linux",
+  "availableCommands": {
+    "ssh": true,
+    "pwsh": false,
+    "powershell": false,
+    "wine": false,
+    "qemu-system-x86_64": false,
+    "tailscale": false,
+    "chromium": true
+  },
+  "managedEnvironment": "connected Linux; capabilities=[], outbound_identities=[], secrets=[]; observations_current=true",
+  "attachedWindows": "NONE",
+  "remoteDesktopOrAudioTool": "NONE",
+  "WindowsNativeTestsExecuted": 0,
+  "candidateSHA256": "96eb673ef1293b99281bca100fca9f5f8a4b2f601558d3e124cb4b1dbd34a2d7",
+  "candidateZIPIntegrity": "PASS",
+  "internalManifestFilesVerified": 441,
+  "wordExeConfigured": false,
+  "geogebraExeConfigured": false,
+  "candidateFilesChanged": 0,
+  "classification": "ENVIRONMENT UNAVAILABLE; runtime results UNRUN"
+}

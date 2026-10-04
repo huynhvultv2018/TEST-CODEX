@@ -1,0 +1,10 @@
+{
+  "observedUTC": "2026-10-04T06:45:26.833350+00:00",
+  "status": "PASS",
+  "candidateFiles": 442,
+  "filesChanged": [],
+  "filesAdded": [],
+  "filesDeleted": [],
+  "candidateZIPUnchanged": true,
+  "WindowsRuntimeAcceptance": "UNRUN"
+}
