@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "archive": "WEB_LIVE_TV_VERTICAL_MCQ_CANDIDATE.zip",
+  "sha256": "1ccce4f35bf807e498bdf13ca3275e660faa7b50842298ffdeb825e8a3ed917f",
+  "bytes": 29200221,
+  "entries": 770,
+  "CRC": "PASS",
+  "extractionAndInternalSHA256": "PASS",
+  "extractedNativeSmoke": "PASS",
+  "productionReady": "NO",
+  "windowsActualLessonRetestRequired": true
+}
