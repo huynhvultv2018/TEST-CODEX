@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "name": "WEB_LIVE_ALGEBRA_PHASE5_CANDIDATE",
+  "sha256": "575b466dc839d54c6ad91327bc5a7454ece42cbacfd69ae916eca4aa1bcaf01d",
+  "bytes": 50064903,
+  "files": 1233,
+  "payloadMatchesTestedWorkingCopy": true,
+  "crc": "PASS",
+  "geometryReferenceSHA256": "9974d9fb4d4e4db023846c0ee42258b3fd193acfe37bd63b8fe6c7d2ee5f9b8e",
+  "gateBeforePackaging": "PASS",
+  "root": "/workspace/phase5-algebra-profile/packaged-smoke/WEB_LIVE_ALGEBRA_PHASE5_CANDIDATE",
+  "testFixture": "Small synthetic test-only JSON, not SGK or classroom validation"
+}

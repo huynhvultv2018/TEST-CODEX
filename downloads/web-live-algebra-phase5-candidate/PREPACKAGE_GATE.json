@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "algebraTargeted": "PASS",
+  "checks": 20,
+  "coreChangeRequired": false,
+  "coreMutated": false,
+  "geometryPhase4CandidateMutated": false,
+  "geometryProfileMutated": false,
+  "informaticsProfileMutated": false,
+  "legacyBehaviorMutated": false,
+  "legacyRuntimeRegression": "PASS",
+  "geometryProfileRegression": "PASS",
+  "informaticsProfileIsolation": "PASS",
+  "sourceScopeViolation": false,
+  "productionModified": false,
+  "openPhase5P0": 0,
+  "openPhase5P1": 0,
+  "openPhase5P2": 0,
+  "openPhase5P3": 0,
+  "remainingGeometryFindingsUnchanged": [
+    "G4-F02 OPEN_DEFERRED P3",
+    "G4-F04 OPEN_DEFERRED P3",
+    "G4-F05 VALIDATION_PENDING"
+  ],
+  "realFileValidation": "NOT_RUN_BY_GV_DECISION",
+  "realClassroomTrial": "UNRUN"
+}

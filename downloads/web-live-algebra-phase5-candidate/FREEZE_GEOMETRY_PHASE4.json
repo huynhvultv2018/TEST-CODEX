@@ -1,0 +1,18 @@
+{
+  "candidate": "WEB_LIVE_GEOMETRY_PHASE4_CANDIDATE",
+  "sha256": "9974d9fb4d4e4db023846c0ee42258b3fd193acfe37bd63b8fe6c7d2ee5f9b8e",
+  "technicalStatus": "PASS",
+  "status": "FROZEN",
+  "files": 1227,
+  "zipCRC": "PASS",
+  "fileManifestMatchesZIP": true,
+  "candidateMutated": false,
+  "G4-F01": "TARGETED_PASS",
+  "G4-F02": "OPEN_DEFERRED",
+  "G4-F03": "FIXED",
+  "G4-F04": "OPEN_DEFERRED",
+  "G4-F05": "VALIDATION_PENDING",
+  "realFileValidation": "NOT_RUN_BY_GV_DECISION",
+  "realClassroomTrial": "UNRUN",
+  "productionModified": false
+}

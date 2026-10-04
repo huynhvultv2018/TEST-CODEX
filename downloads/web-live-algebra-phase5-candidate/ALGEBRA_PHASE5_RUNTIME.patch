@@ -1,0 +1,138 @@
+--- FROZEN_PHASE4/WEB_LIVE/tv-layout-algebra.js
++++ PHASE5/WEB_LIVE/tv-layout-algebra.js
+@@ -52,3 +52,135 @@
+  }
+  return {kind,table,render};
+ })();
++
++/* Phase 5 Algebra Profile: uses the existing Core presentation/lifecycle hooks.
++ * Source-authored strings and native disclosure state are the only content inputs.
++ * The pre-existing TVAlgebraEngine above remains the Legacy layout adapter. */
++globalThis.WebLiveAlgebra=(()=>{
++ 'use strict';
++ const stages=Object.freeze({PROBLEM:'BÀI TOÁN / VẤN ĐỀ',OBSERVE:'QUAN SÁT',REMARK:'NHẬN XÉT',TRANSFORM:'BIẾN ĐỔI',EXPLAIN:'GIẢI THÍCH',CONCLUDE:'KẾT LUẬN',PRACTICE:'LUYỆN TẬP',APPLY:'VẬN DỤNG'});
++ const kinds=Object.freeze(['EXPRESSION','FRACTION','TRANSFORMATION','EQUATION','INEQUALITY','SYSTEM','ERROR_COMPARISON']);
++ const diagnostics=[];
++ let context=null,epoch=0,mathReady=null,queue=Promise.resolve(),currentJob=Promise.resolve();
++ const baseURL=new URL('.',document.currentScript.src);
++ const authored=value=>typeof value==='string'?value:'';
++ function warn(code){diagnostics.push(Object.freeze({code}));if(diagnostics.length>100)diagnostics.shift();}
++ function style(){
++  if(document.getElementById('algebraProfileStyle'))return;
++  const link=document.createElement('link');link.id='algebraProfileStyle';link.rel='stylesheet';link.href=new URL('algebra-profile.css',baseURL).href;document.head.append(link);
++ }
++ function loadMath(){
++  if(mathReady)return mathReady;
++  mathReady=new Promise((resolve,reject)=>{
++   globalThis.MathJax={startup:{typeset:false},options:{enableMenu:false,enableAssistiveMml:false},tex:{packages:['base','ams','newcommand','noundefined']},svg:{fontCache:'local'}};
++   const script=document.createElement('script');script.src=new URL('vendor/mathjax-3.2.2/tex-svg-full.js',baseURL).href;
++   script.onload=()=>globalThis.MathJax.startup.promise.then(()=>{
++    // The full bundle's accessibility/menu defaults can replace the startup
++    // flag. This conversion-only renderer supplies its own authored aria-label.
++    globalThis.MathJax.startup.document.options.enableAssistiveMml=false;
++    resolve(globalThis.MathJax);
++   },reject);
++   script.onerror=()=>reject(new Error('Local MathJax asset unavailable'));
++   document.head.append(script);
++  });
++  return mathReady;
++ }
++ function node(tag,className,text){const n=document.createElement(tag);n.className=className;if(text!==undefined)n.textContent=text;return n;}
++ function text(n,value,tasks){
++  const source=authored(value),parts=[],pattern=/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\$\$([\s\S]*?)\$\$/gu;let from=0;
++  for(const match of source.matchAll(pattern)){
++   if(match.index>from)parts.push(document.createTextNode(source.slice(from,match.index)));
++   const tex=match[1]??match[2]??match[3],display=match[1]===undefined;
++   const math=node('span','algebraMath');math.dataset.display=String(display);math.setAttribute('role','math');math.setAttribute('aria-label',tex);
++   const original=node('span','algebraMathSource',match[0]);original.setAttribute('aria-hidden','true');math.append(original);parts.push(math);tasks.push({math,original,tex,display});from=match.index+match[0].length;
++  }
++  if(from<source.length)parts.push(document.createTextNode(source.slice(from)));
++  n.replaceChildren(...parts);
++ }
++ function field(parent,label,value,tasks,role='detail'){
++  if(!authored(value).trim())return;
++  const row=node('div','algebraField algebraField-'+role),heading=node('span','algebraFieldLabel',label),body=node('div','algebraFieldBody');text(body,value,tasks);row.append(heading,body);parent.append(row);
++ }
++ function compare(parent,record,tasks){
++  if(!record||!authored(record.student).trim()||!authored(record.correct).trim()){if(record)warn('INVALID_ERROR_COMPARISON');return;}
++  const box=node('div','algebraErrorComparison');field(box,'Bài làm học sinh',record.student,tasks);field(box,'Lời giải đúng',record.correct,tasks);field(box,'Giải thích',record.explanation,tasks);parent.append(box);
++ }
++ function proof(screen,state,answer,tasks){
++  const steps=liveSteps(screen),mode=state.answerMode;
++  const count=mode==='full'?steps.length:mode==='steps'?Math.min(steps.length,Math.max(0,Math.trunc(state.answerStep||0))):0;
++  const visible=liveAnswerText(screen,mode,state.answerStep||0);
++  if(!visible){answer.replaceChildren();answer.hidden=true;return{count:0,total:steps.length,states:steps.map((_,index)=>Object.freeze({index,disclosure:'UNREVEALED',progress:'UNREVEALED',focused:false}))};}
++  answer.hidden=false;answer.classList.add('hasSteps','algebraProofFlow');
++  const focus=state.classroom?.focus,valid=focus?.region==='answer'&&Number.isInteger(focus.index)&&focus.index>=0&&focus.index<count;
++  answer.classList.toggle('hasFocus',valid);const children=[],states=[];
++  for(let index=0;index<steps.length;index++){
++   const progress=index>=count?'UNREVEALED':mode==='full'||index<count-1?'COMPLETED':'CURRENT';
++   states.push(Object.freeze({index,disclosure:index<count?'REVEALED':'UNREVEALED',progress,focused:valid&&focus.index===index}));
++   if(index>=count)continue;
++   const block=node('div','proofStep algebraProofStep '+(index===count-1?'current':'previous'));
++   block.dataset.stepState=progress;block.dataset.disclosure='REVEALED';block.dataset.stepIndex=String(index);Classroom.step(block,'answer',index,valid?focus:null);
++   const info=screen.algebra?.transformations?.[index];
++   field(block,'Biểu thức gốc',info?.original,tasks,'original');
++   const expression=node('div','algebraStepExpression');text(expression,steps[index],tasks);block.append(expression);
++   field(block,'Quy tắc / Giải thích',info?.reason,tasks,'reason');field(block,'Kết quả',info?.result,tasks,'result');
++   compare(block,screen.algebra?.errorComparisons?.[index],tasks);children.push(block);
++  }
++  // An explicit answer/conclusion is included only when the native Core answer
++  // string includes it. Metadata cannot force a final answer into an early reveal.
++  if(mode==='full'&&authored(screen.answer).trim()&&normalizeLiveText(screen.answer,'answer')!==steps.join('\n')){
++   const final=node('div','algebraFinalAnswer');text(final,normalizeLiveText(screen.answer,'answer'),tasks);children.push(final);
++  }
++  const conclusion=normalizeLiveText(screen.conclusion||'','answer');
++  if(conclusion&&visible.includes(conclusion)&&!steps.slice(0,count).join('\n').includes(conclusion)){
++   const final=node('div','algebraConclusion');text(final,conclusion,tasks);children.push(final);
++  }
++  answer.replaceChildren(...children);return{count,total:steps.length,states};
++ }
++ function alive(lesson,state,root,version){
++  const active=WebLiveProfiles.getContext();return version===epoch&&root.isConnected&&active?.profileId==='algebra'&&active.lessonActivation===String(state.lessonActivation||'')&&active.lessonSourceKey===String(state.lessonSourceKey||lesson._runtimeSourceKey||'')&&active.index===state.index&&active.stateVersion===(state.stateVersion||0);
++ }
++ function presentation(role,lesson,state,root){
++  if(!['tv','preview'].includes(role)||!root)return;
++  const screen=lesson.screens[state.index];if(!screen)return;
++  style();const version=++epoch,tasks=[];root.classList.add('algebraProfile');root.dataset.algebraMathReady='false';
++  const stage=screen.algebra?.stage;root.dataset.algebraStage=Object.prototype.hasOwnProperty.call(stages,stage)?stage:'';
++  const badge=document.getElementById('activityBadge');
++  if(badge&&root.dataset.algebraStage){badge.textContent=stages[root.dataset.algebraStage];badge.hidden=false;badge.dataset.algebraLabel='true';}
++  const answer=document.getElementById('answer'),revealed=proof(screen,state,answer,tasks);
++  // Existing Core owns content, MCQ structure, task selection and hint policy.
++  // Convert only visible leaves; never mount the source of a concealed hint.
++  for(const id of ['title','content','hint','analysis']){
++   const host=document.getElementById(id);if(!host)continue;
++   if(host.hidden){if(id==='hint')host.replaceChildren();continue;}
++   const leaves=[...host.querySelectorAll('.focusBlock')].filter(n=>!n.hidden&&getComputedStyle(n).display!=='none'&&!n.querySelector('.focusBlock'));
++   if(leaves.length)for(const leaf of leaves)text(leaf,leaf.textContent,tasks);
++   else if(!host.querySelector('.tvOptionGrid'))text(host,host.textContent,tasks);
++  }
++  context=Object.freeze({status:'IMPLEMENTED',profileId:'algebra',role,lessonActivation:state.lessonActivation||'',index:state.index,stateVersion:state.stateVersion||0,kind:kinds.includes(screen.algebra?.kind)?screen.algebra.kind:null,stage:root.dataset.algebraStage,revealed:revealed.count,total:revealed.total,stepStates:Object.freeze(revealed.states)});
++  const run=async()=>{
++   if(!alive(lesson,state,root,version))return;
++   try{
++    const math=tasks.length?await loadMath():null;
++    for(const item of tasks){
++     if(!alive(lesson,state,root,version))return;
++     const rendered=await math.tex2svgPromise(item.tex,{display:item.display});
++     if(!alive(lesson,state,root,version)||!item.math.isConnected)return;
++     if(rendered.querySelector('[data-mml-node="merror"]')){warn('TEX_RENDER_ERROR');item.math.dataset.mathError='true';continue;}
++     rendered.setAttribute('aria-hidden','true');item.math.append(rendered);item.math.dataset.rendered='true';
++    }
++   }catch(_){if(alive(lesson,state,root,version))warn('MATHJAX_UNAVAILABLE_OR_INVALID_SOURCE');}
++   if(!alive(lesson,state,root,version))return;
++   root.dataset.algebraMathReady='true';
++   requestAnimationFrame(()=>{if(alive(lesson,state,root,version)){if(typeof fitText==='function')fitText();if(typeof fitFigure==='function')fitFigure();}});
++  };
++  queue=queue.catch(()=>{}).then(run);currentJob=queue;
++ }
++ function cleanup(){
++  epoch++;context=null;document.getElementById('answer')?.classList.remove('algebraProofFlow');
++  const badge=document.getElementById('activityBadge');if(badge)delete badge.dataset.algebraLabel;
++  const root=document.getElementById('screen');root?.classList.remove('algebraProfile');if(root){delete root.dataset.algebraStage;delete root.dataset.algebraMathReady;}
++ }
++ WebLiveProfiles.registerAdapter('algebra',{presentation});
++ WebLiveProfiles.subscribe('algebra',{onDispose:cleanup});
++ return Object.freeze({version:1,status:'IMPLEMENTED',stages,kinds,getState:()=>context,whenReady:()=>currentJob,getDiagnostics:()=>Object.freeze(diagnostics.slice())});
++})();

@@ -1,0 +1,194 @@
+{
+  "id": "ALGEBRA_PHASE5_REPRESENTATIVE_TEST",
+  "title": "Algebra Phase5 — TEST ONLY / NOT SGK",
+  "subject": "Đại số — dữ liệu kiểm thử",
+  "subject_engine": "algebra",
+  "fixturePurpose": "Synthetic interface/regression fixture; not textbook/curriculum or classroom validation",
+  "screens": [
+    {
+      "id": "A5_EXPR",
+      "title": "Biểu thức đại số — interface test",
+      "type": "PRACTICE",
+      "content": "Quan sát \\((x+2)^2\\), \\(x^3\\) và \\(\\sqrt{9}\\).",
+      "steps": [
+        "\\((x+2)^2=x^2+4x+4\\)"
+      ],
+      "hint": "HINT_ONLY_A5_EXPR: Quan sát biểu thức đã cho.",
+      "algebra": {
+        "kind": "EXPRESSION",
+        "stage": "PROBLEM"
+      }
+    },
+    {
+      "id": "A5_FRAC",
+      "title": "Phân số — interface test",
+      "type": "PRACTICE",
+      "content": "Hiển thị phân số \\(\\dfrac{x+1}{x-1}\\).",
+      "steps": [
+        "\\(\\dfrac{x+1}{x-1}=1+\\dfrac{2}{x-1}\\)"
+      ],
+      "hint": "HINT_ONLY_A5_FRAC: Quan sát biểu thức đã cho.",
+      "algebra": {
+        "kind": "FRACTION",
+        "stage": "OBSERVE"
+      }
+    },
+    {
+      "id": "A5_TRANSFORM",
+      "title": "Biến đổi từng bước — interface test",
+      "type": "PRACTICE",
+      "content": "Giải \\(2(x+3)=10\\).",
+      "steps": [
+        "\\(2x+6=10\\)",
+        "\\(2x=10-6\\)",
+        "\\(2x=4\\)",
+        "FUTURE_STEP_4_ONLY: \\(x=2\\)"
+      ],
+      "hint": "HINT_ONLY_A5_TRANSFORM: Quan sát biểu thức đã cho.",
+      "algebra": {
+        "kind": "TRANSFORMATION",
+        "stage": "TRANSFORM",
+        "transformations": [
+          {
+            "original": "\\(2(x+3)=10\\)",
+            "reason": "Phân phối."
+          },
+          {
+            "reason": "Trừ 6 ở hai vế."
+          },
+          {
+            "reason": "Tính hiệu."
+          },
+          {
+            "reason": "Chia hai vế cho 2.",
+            "result": "\\(x=2\\)"
+          }
+        ]
+      },
+      "conclusion": "FINAL_CONCLUSION_ONLY: \\(x=2\\)"
+    },
+    {
+      "id": "A5_EQ",
+      "title": "Phương trình — interface test",
+      "type": "PRACTICE",
+      "content": "Giải \\(3x-6=0\\).",
+      "steps": [
+        "\\(3x=6\\)",
+        "\\(x=2\\)"
+      ],
+      "hint": "HINT_ONLY_A5_EQ: Quan sát biểu thức đã cho.",
+      "algebra": {
+        "kind": "EQUATION",
+        "stage": "REMARK"
+      }
+    },
+    {
+      "id": "A5_INEQ",
+      "title": "Bất phương trình — interface test",
+      "type": "PRACTICE",
+      "content": "Giải \\(-2x<4\\).",
+      "steps": [
+        "\\(\\dfrac{-2x}{-2}>\\dfrac{4}{-2}\\)",
+        "\\(x>-2\\)"
+      ],
+      "hint": "HINT_ONLY_A5_INEQ: Quan sát biểu thức đã cho.",
+      "algebra": {
+        "kind": "INEQUALITY",
+        "stage": "EXPLAIN",
+        "transformations": [
+          {
+            "reason": "Chia hai vế cho số âm: đổi chiều bất đẳng thức."
+          }
+        ]
+      }
+    },
+    {
+      "id": "A5_SYSTEM",
+      "title": "Hệ phương trình — interface test",
+      "type": "PRACTICE",
+      "content": "\\[\\begin{cases}x+y=3\\\\x-y=1\\end{cases}\\]",
+      "steps": [
+        "\\(2x=4\\)",
+        "\\(x=2\\)",
+        "\\(y=1\\)"
+      ],
+      "hint": "HINT_ONLY_A5_SYSTEM: Quan sát biểu thức đã cho.",
+      "algebra": {
+        "kind": "SYSTEM",
+        "stage": "CONCLUDE"
+      },
+      "conclusion": "\\((x,y)=(2,1)\\)"
+    },
+    {
+      "id": "A5_ERROR",
+      "title": "Đối chiếu lỗi — interface test",
+      "type": "PRACTICE",
+      "content": "Bài làm cần kiểm tra: \\((x+2)^2=x^2+4\\).",
+      "steps": [
+        "Đối chiếu bước khai triển."
+      ],
+      "hint": "HINT_ONLY_A5_ERROR: Quan sát biểu thức đã cho.",
+      "algebra": {
+        "kind": "ERROR_COMPARISON",
+        "stage": "OBSERVE",
+        "errorComparisons": [
+          {
+            "student": "\\((x+2)^2=x^2+4\\)",
+            "correct": "CORRECT_SOLUTION_ONLY: \\((x+2)^2=x^2+4x+4\\)",
+            "explanation": "Thiếu hạng tử \\(4x\\)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "A5_PRACTICE",
+      "title": "Luyện tập — interface test",
+      "type": "PRACTICE",
+      "content": "Tính \\(\\dfrac{1}{2}+\\dfrac{1}{3}\\).",
+      "steps": [
+        "\\(\\dfrac{3+2}{6}\\)",
+        "\\(\\dfrac{5}{6}\\)"
+      ],
+      "hint": "HINT_ONLY_A5_PRACTICE: Quan sát biểu thức đã cho.",
+      "algebra": {
+        "kind": "TRANSFORMATION",
+        "stage": "PRACTICE"
+      }
+    },
+    {
+      "id": "A5_APPLY",
+      "title": "Vận dụng — interface test",
+      "type": "PRACTICE",
+      "content": "Tính \\(\\sqrt{9}+2^3\\).",
+      "steps": [
+        "\\(3+8=11\\)"
+      ],
+      "hint": "HINT_ONLY_A5_APPLY: Quan sát biểu thức đã cho.",
+      "algebra": {
+        "kind": "EXPRESSION",
+        "stage": "APPLY"
+      }
+    },
+    {
+      "id": "A5_MCQ",
+      "title": "MCQ dọc — interface test",
+      "type": "QUICK_CHECK",
+      "content": "Chọn một biểu thức.",
+      "steps": [
+        "Đáp án fixture: A."
+      ],
+      "hint": "HINT_ONLY_A5_MCQ: Quan sát biểu thức đã cho.",
+      "algebra": {
+        "kind": "EXPRESSION",
+        "stage": "PRACTICE"
+      },
+      "options": [
+        "\\(\\dfrac{1}{2}\\)",
+        "\\(x^2+2x+1\\)",
+        "\\(\\sqrt{16}\\)",
+        "\\(x+1=2\\)"
+      ],
+      "instruction": "Chọn một phương án và giải thích."
+    }
+  ]
+}

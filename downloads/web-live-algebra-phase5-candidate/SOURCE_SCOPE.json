@@ -1,0 +1,25 @@
+{
+  "result": "PASS",
+  "frozenGeometryCandidateFiles": 1227,
+  "frozenGeometryMutated": false,
+  "workingPayloadFiles": 1233,
+  "changedFiles": [
+    "WEB_LIVE/tv-layout-algebra.js"
+  ],
+  "addedFiles": [
+    "ALGEBRA_PHASE5_TEST_PACKAGES/ALGEBRA_PROFILE_REPRESENTATIVE_TEST.json",
+    "ALGEBRA_PHASE5_TEST_PACKAGES/README.md",
+    "WEB_LIVE/algebra-profile.css",
+    "WEB_LIVE/vendor/mathjax-3.2.2/LICENSE",
+    "WEB_LIVE/vendor/mathjax-3.2.2/package.json",
+    "WEB_LIVE/vendor/mathjax-3.2.2/tex-svg-full.js"
+  ],
+  "removedFiles": [],
+  "frozenGeometryProfileCSSContractFixturesMutated": false,
+  "informaticsProfileMutated": false,
+  "coreMutated": false,
+  "existingAlgebraLayoutPrefixUnchanged": true,
+  "sourceScopeViolation": false,
+  "productionModified": false,
+  "allNewCSSSelectorsScopedToExplicitAlgebra": true
+}

@@ -1,0 +1,100 @@
+{
+  "result": "PASS",
+  "files": [
+    {
+      "name": "ALGEBRA_PHASE5_IMPLEMENTATION_REPORT.md",
+      "sha256": "33444ba68f1839daf9c9569802602f5dd77c8a115cb70c359a52cc5129fd89db",
+      "bytes": 6901
+    },
+    {
+      "name": "ALGEBRA_PHASE5_REGRESSION_REPORT.md",
+      "sha256": "77dad9b7fa28cb51e788c0d98b84bd186bff33e176cffe61a83e1d6603db2b35",
+      "bytes": 3920
+    },
+    {
+      "name": "ALGEBRA_PHASE5_RISK_REGISTER.md",
+      "sha256": "27b2e90d1acbe8a631e6ce254cbeca12d626006cfc1e277b17a8837e37d9e004",
+      "bytes": 4123
+    },
+    {
+      "name": "ALGEBRA_PHASE5_RUNTIME.patch",
+      "sha256": "a32c7c1c3dfa26027b375dfd8455e83ebc5f97b2f793920e9af9f6df2478fb70",
+      "bytes": 10507
+    },
+    {
+      "name": "ALGEBRA_PHASE5_TEST_EVIDENCE.md",
+      "sha256": "1ba7a116b33cbf5901e18136e5524ac14892137778d610a439c66c30e25f7fd6",
+      "bytes": 6163
+    },
+    {
+      "name": "ALGEBRA_PHASE5_VALIDATION_EVIDENCE.zip",
+      "sha256": "5247ef5c9b3fd2fecca0d036bbb9191e37e3685d55d8e75b1bd38763f1f0d87e",
+      "bytes": 9489055
+    },
+    {
+      "name": "ALGEBRA_PROFILE_CONTRACT.md",
+      "sha256": "a681a0846e49e26c426c4c88bf4d70a2882a6a0f9a1496bff108d3a1ea7dfad7",
+      "bytes": 7337
+    },
+    {
+      "name": "ALGEBRA_PROFILE_REPRESENTATIVE_TEST.json",
+      "sha256": "341a4ed6b1ab861b9a9700f744e7228d5cba10ca9e0822b4dfd7d34470a34b5e",
+      "bytes": 5503
+    },
+    {
+      "name": "CLOUD_DRAFT_STATUS.json",
+      "sha256": "4386bd90251a000387176c481f902ce6ac70ff7d8d367bd2232060a3e7183580",
+      "bytes": 200
+    },
+    {
+      "name": "FINAL_STATUS.txt",
+      "sha256": "0e2a98e943f042913f28a37abd626af5b409eccf7b86c7adbbabfec9d5ceda9e",
+      "bytes": 989
+    },
+    {
+      "name": "FREEZE_GEOMETRY_PHASE4.json",
+      "sha256": "4c438fa9ca34b059a1ed825ea20dd97f3d4b03d7694d7e6d69e95203b9455ee1",
+      "bytes": 543
+    },
+    {
+      "name": "PACKAGED_ALGEBRA_SMOKE.json",
+      "sha256": "43161f7dead4b767a8119addebf62e9fe3639612d3cb01e5cac360f13349ef03",
+      "bytes": 2543
+    },
+    {
+      "name": "PACKAGE_IDENTITY.json",
+      "sha256": "1d1c57a549de06ab12db5c555c4d2cf9b8180412a158de5e4320c93c6c0ed2c2",
+      "bytes": 558
+    },
+    {
+      "name": "PHASE5_PAYLOAD_MANIFEST.json",
+      "sha256": "264bf87215b44ed9223f5cbb52b7cddcfd70853cbbaca1bd88c1e7cdf40f68e4",
+      "bytes": 151116
+    },
+    {
+      "name": "PREPACKAGE_GATE.json",
+      "sha256": "88fc3dde32dbd1c1ac9157316a3dff212ea840ee837add59ee0bc615b12d5346",
+      "bytes": 762
+    },
+    {
+      "name": "README.md",
+      "sha256": "2c3828b0b0b4865fa50572f0cd202f27ea3fbb7fc535c7bc48c6f246cca8014d",
+      "bytes": 2317
+    },
+    {
+      "name": "REGRESSION_SUMMARY.json",
+      "sha256": "d35a9e3b5bd7ae663868ea1ec08db1e429dae705dbdf560b3ea173979532373e",
+      "bytes": 1992
+    },
+    {
+      "name": "SOURCE_SCOPE.json",
+      "sha256": "b4b352dd36d6e3f7bc2a1e9263fd6aa9058efedf03f9981d69d7fed1670b1c11",
+      "bytes": 827
+    },
+    {
+      "name": "WEB_LIVE_ALGEBRA_PHASE5_CANDIDATE.zip",
+      "sha256": "575b466dc839d54c6ad91327bc5a7454ece42cbacfd69ae916eca4aa1bcaf01d",
+      "bytes": 50064903
+    }
+  ]
+}

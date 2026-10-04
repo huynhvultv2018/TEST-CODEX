@@ -1,0 +1,64 @@
+{
+  "result": "PASS",
+  "reference": "WEB_LIVE_GEOMETRY_PHASE4_CANDIDATE",
+  "referenceSHA256": "9974d9fb4d4e4db023846c0ee42258b3fd193acfe37bd63b8fe6c7d2ee5f9b8e",
+  "freshRun": true,
+  "browser": "151.0.7922.173",
+  "legacyRuntimeRegression": "PASS",
+  "geometryProfileRegression": "PASS",
+  "informaticsProfileIsolation": "PASS",
+  "pairedRealPackages": [
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip",
+      "screens": 41,
+      "states": 82
+    },
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN6_W05_LIVE_RC3_PED1.zip",
+      "screens": 32,
+      "states": 64
+    },
+    {
+      "package": "RC3_PED1_TEST_PACKAGES/TIN8_W04_LIVE_RC3_PED1.zip",
+      "screens": 29,
+      "states": 58
+    },
+    {
+      "package": "WEB_LIVE/HINH_HOC_8_T04_T07_LIVE_TEST.zip",
+      "screens": 34,
+      "states": 68
+    },
+    {
+      "package": "WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip",
+      "screens": 35,
+      "states": 70
+    }
+  ],
+  "realScreensPerRuntime": 171,
+  "realStatesPerRuntime": 342,
+  "pairedLegacyMetricsPerRuntime": 44,
+  "legacyAssertionsPerRuntime": 15,
+  "pairedGeometryChecksPerRuntime": 14,
+  "pairedGeometryVisualsPerRuntime": 23,
+  "geometryScreensPerRuntime": 35,
+  "geometryStatesPerRuntime": 70,
+  "geometryActivationNormalization": "Only independently generated lessonActivation IDs are normalized; native Teacher/Preview/TV equality checked within each run",
+  "geometryVisualMetricsIdentical": true,
+  "geometryImageHashesIdentical": true,
+  "geometryScopesIdentical": true,
+  "isolationAndNegativeCases": 14,
+  "profileTransitionAndAsyncRaceCases": 8,
+  "demoScreens": 4,
+  "demoStates": 8,
+  "zeroOverflow": true,
+  "zeroExceptions": true,
+  "zeroExternalRequests": true,
+  "lessonSourcesUnchanged": true,
+  "knownGeometryFindingsUnchanged": [
+    "G4-F02 OPEN_DEFERRED P3",
+    "G4-F04 OPEN_DEFERRED P3",
+    "G4-F05 VALIDATION_PENDING"
+  ],
+  "realFileValidation": "NOT_RUN_BY_GV_DECISION",
+  "realClassroomTrial": "UNRUN"
+}
