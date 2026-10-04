@@ -1,0 +1,496 @@
+{
+  "result": "COMPLETE",
+  "browser": "151.0.7922.173",
+  "sourceScope": "Existing G4-F01 auxiliary fixture; not uploaded Tiết09/10 real files",
+  "newRealFileTest": "UNRUN_INPUT_TRANSFER_BLOCKED",
+  "physicalTV": "UNRUN",
+  "cases": [
+    {
+      "index": 5,
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "overflow": false,
+      "fonts": [
+        {
+          "text": "ABCD là hình bình hành.\nAH, CK ⟂ BD.",
+          "computedFontPx": 50.88,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatementText",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatement",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "AHCK là hình bình hành.",
+          "computedFontPx": 50.88,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatementText",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatement",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "overflow": false,
+      "fonts": [
+        {
+          "text": "Cần chứng minh AH ∥ CK và AH = CK.",
+          "computedFontPx": 40.32,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep previous focusBlock",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane tight",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "AH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+          "computedFontPx": 40.32,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep previous focusBlock",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane tight",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "∆AHD ≅ ∆CKB ⇒ AH = CK.",
+          "computedFontPx": 40.32,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep previous focusBlock",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane tight",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "AH ∥ CK và AH = CK ⇒ AHCK là hình bình hành.",
+          "computedFontPx": 40.32,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep current focusBlock",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane tight",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "overflow": false,
+      "fonts": [
+        {
+          "text": "∆AHD ≅ ∆CKB ⇒ AH = CK.",
+          "computedFontPx": 40.32,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "proofStep current focusBlock",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "answer",
+              "className": "reveal answer hasSteps",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "viewport": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1
+      },
+      "overflow": false,
+      "fonts": [
+        {
+          "text": "ABCD là hình bình hành.\nAH, CK ⟂ BD.",
+          "computedFontPx": 52,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatementText",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatement",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "AHCK là hình bình hành.",
+          "computedFontPx": 52,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatementText",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatement",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "viewport": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1
+      },
+      "overflow": false,
+      "fonts": [
+        {
+          "text": "Cần chứng minh AH ∥ CK và AH = CK.",
+          "computedFontPx": 42,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep previous focusBlock",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "AH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+          "computedFontPx": 42,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep previous focusBlock",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "∆AHD ≅ ∆CKB ⇒ AH = CK.",
+          "computedFontPx": 42,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep previous focusBlock",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "AH ∥ CK và AH = CK ⇒ AHCK là hình bình hành.",
+          "computedFontPx": 42,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep current focusBlock",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "viewport": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1
+      },
+      "overflow": false,
+      "fonts": [
+        {
+          "text": "∆AHD ≅ ∆CKB ⇒ AH = CK.",
+          "computedFontPx": 42,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "proofStep current focusBlock",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "answer",
+              "className": "reveal answer hasSteps",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

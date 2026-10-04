@@ -1,0 +1,28 @@
+{
+  "completedSourceAudit": true,
+  "combinedRealFileValidationComplete": false,
+  "inputAccessBlocked": true,
+  "realCaseCount": 0,
+  "candidateMutated": false,
+  "newFeatureImplemented": false,
+  "patchImplemented": false,
+  "productionModified": false,
+  "auxiliaryScreens": 35,
+  "auxiliaryNativeChecks": 16,
+  "auxiliaryPass": 14,
+  "auxiliaryFail": 2,
+  "auxiliaryViewportCases": 24,
+  "g4f01Regression": "PASS",
+  "freshGlobalRegression": "PASS",
+  "realFilesRead": 0,
+  "realFileScopesEverReplacedWithAuxiliary": false,
+  "evaluatedAtUTC": "2026-10-04T14:40:35.906247+00:00",
+  "countRules": {
+    "P0_P1_P2_P3": "Confirmed source/auxiliary technical findings plus measured CSS readability risk only; G4-F05 historical P2 validation gap excluded from active technical severity counts. No finding is declared solved by that exclusion.",
+    "owners": "Confirmed current owners: Core1, GeometryProfile1, CSS/UI1 (not a separate final owner-count field). New SOẠN/packager/LIVE/assets unassessed; zero means none proven, not validated fault-free.",
+    "patchable": 2,
+    "deferred": 0,
+    "validationPending": "F02 real repro + F03 real repro + F04 physical/new-real acceptance + F05 provenance/producer + INPUT_ACCESS =5 distinct audit items. All four finding matrix recommendations VALIDATION_PENDING.",
+    "blockingRisk": "Current demonstrated P0/P1 application blockers only =0. One separate external input access blocker prevents completion."
+  }
+}

@@ -1,0 +1,115 @@
+[
+  {
+    "FINDING_ID": "G4-F02",
+    "CLASSIFICATION": "P3",
+    "KIND": "TECHNICAL",
+    "AFFECTED_COMPONENT": "Teacher navigation authoritative zoom/pan state",
+    "TEST_STEP": "Auxiliary approved fixture: index9→zoom1.15→index10 same VD2; separately index10→zoom1.15→index11 LT2",
+    "EXPECTED_BEHAVIOR": "Classroom: retain zoom for same authored geometry context; new scene may reset. Existing runtime contract instead resets every screen.",
+    "ACTUAL_BEHAVIOR": "Both transitions reset1.15→1. Same figure/base/annotation persist. TV receives authoritative zoom1.",
+    "REPRODUCIBLE": "YES — source/auxiliary; uploaded real files UNRUN",
+    "ROOT_CAUSE_CONFIRMED": "YES",
+    "ROOT_CAUSE": "teacher.js:39 go() updates i and unconditionally calls resetView(); teacher.js:10 resets zoom=1 and pan={x:0,y:0}. state():37 serializes those values; tv.js:25 consumes lastState.zoom. No figure/scene zoom store.",
+    "OWNER": "WEB_LIVE_CORE",
+    "AFFECTED_FILES": [
+      "WEB_LIVE/teacher.js"
+    ],
+    "CLASSROOM_IMPACT": "Teacher must repeat zoom while navigating the same figure. Actual impact on Tiết09/10 not yet tested.",
+    "MINIMAL_PATCH_POSSIBLE": "YES — proposal only",
+    "CORE_CHANGE_REQUIRED": "YES — existing navigation owner; no supported profile state override hook",
+    "RECOMMENDED_PATCH_SCOPE": "Small optional Geometry policy at go/resetView using existing nonempty authored sceneId plus lesson activation/source identity; preserve only zoom/pan on identical context. Retain all other reset behavior and legacy/algebra/informatics semantics. No schema or command redesign.",
+    "RECOMMENDATION": "VALIDATION_PENDING",
+    "REPRODUCED_REAL_FILE": "UNRUN_INPUT_TRANSFER_BLOCKED",
+    "EVIDENCE": [
+      "CLASSROOM_VALIDATION.json#/stateTests",
+      "SOURCE_AUDIT_EVIDENCE.json",
+      "CAPTURES/ZOOM_PROOF.png"
+    ]
+  },
+  {
+    "FINDING_ID": "G4-F03",
+    "CLASSIFICATION": "P2",
+    "KIND": "TECHNICAL",
+    "AFFECTED_COMPONENT": "Geometry proof Focus visibility",
+    "TEST_STEP": "Auxiliary fixture index9: disclose proof1 and proof2, enable Focus and focus previously disclosed step1",
+    "EXPECTED_BEHAVIOR": "Current focused step emphasized; other disclosed steps remain visible but de-emphasized; undisclosed steps hidden.",
+    "ACTUAL_BEHAVIOR": "answerStep stays2; step1 visible, step2 display:none despite opacity.52. Matching step1 objects work.",
+    "REPRODUCIBLE": "YES — source/auxiliary; uploaded real files UNRUN",
+    "ROOT_CAUSE_CONFIRMED": "YES",
+    "ROOT_CAUSE": "geometry-profile.css:7 hides previous proof blocks unless focused; :8 hides all nonfocused answer blocks during Geometry Focus. classroom.css:12 already dims to.52 but display:none overrides visibility. Core tv.js:101–104 slices to disclosed proof before rendering.",
+    "OWNER": "GEOMETRY_PROFILE",
+    "AFFECTED_FILES": [
+      "WEB_LIVE/geometry-profile.css"
+    ],
+    "CLASSROOM_IMPACT": "Students cannot simultaneously see already disclosed proof context. Actual Tiết09/10 proof structure unverified.",
+    "MINIMAL_PATCH_POSSIBLE": "YES — proposal only",
+    "CORE_CHANGE_REQUIRED": "NO",
+    "RECOMMENDED_PATCH_SCOPE": "Only the two Geometry scoped hiding rules; keep disclosed blocks visible with dimming. Preserve Core reveal slice and valid Focus/object selection. Future steps remain absent; verify long real proof fit before acceptance.",
+    "RECOMMENDATION": "VALIDATION_PENDING",
+    "REPRODUCED_REAL_FILE": "UNRUN_INPUT_TRANSFER_BLOCKED",
+    "EVIDENCE": [
+      "CLASSROOM_VALIDATION.json#/focus",
+      "CAPTURES/FOCUS_PROOF_1.png",
+      "SOURCE_AUDIT_EVIDENCE.json"
+    ]
+  },
+  {
+    "FINDING_ID": "G4-F04",
+    "CLASSIFICATION": "P3",
+    "KIND": "CONTROLLED_READABILITY_RISK",
+    "AFFECTED_COMPONENT": "Shared subject TV typography caps at4K DPR1",
+    "TEST_STEP": "Auxiliary authored GT/KL/analysis/proof at1920×1080 and3840×2160; read actual computed styles and active CSS declarations without altering them",
+    "EXPECTED_BEHAVIOR": "Text size should support the target physical TV/scaling/distance. That physical threshold is unmeasured.",
+    "ACTUAL_BEHAVIOR": "At4K GT/KL52px; analysis/proof42px, no overflow; inline font size empty. Equivalent at1080 height is26/21px.",
+    "REPRODUCIBLE": "YES — CSS cap measurement on auxiliary; physical/new real files UNRUN",
+    "ROOT_CAUSE_CONFIRMED": "YES — font cap source only; physical readability impact unconfirmed",
+    "ROOT_CAUSE": "tv-ui.css:181 defines --tv-main-size:clamp(32px,2.65vw,52px); :185 applies it to subject content; :186 caps subject reveal at42px. Subject selectors override earlier general high-resolution rules by specificity/source order. CSSOM/computed ancestors confirm52/42 without inline fit reduction.",
+    "OWNER": "CSS/UI",
+    "AFFECTED_FILES": [
+      "WEB_LIVE/tv-ui.css"
+    ],
+    "CLASSROOM_IMPACT": "Potential small relative text on physical4K display; last-row readability not proven.",
+    "MINIMAL_PATCH_POSSIBLE": "UNCONFIRMED — target acceptance threshold missing",
+    "CORE_CHANGE_REQUIRED": "NO for a later justified CSS-only correction",
+    "RECOMMENDED_PATCH_SCOPE": "First test exact TV/resolution/Windows scaling/distance with real lesson; only then propose a narrowly scoped typography correction. Do not change shared caps across subjects to force finding count0.",
+    "RECOMMENDATION": "VALIDATION_PENDING",
+    "REPRODUCED_REAL_FILE": "UNRUN_INPUT_TRANSFER_BLOCKED",
+    "EVIDENCE": [
+      "TYPOGRAPHY_ROOT_CAUSE.json",
+      "TYPOGRAPHY_CAUSAL_EVIDENCE.json",
+      "CAPTURES/TV_3840x2160_S10_60.png",
+      "SOURCE_AUDIT_EVIDENCE.json"
+    ]
+  },
+  {
+    "FINDING_ID": "G4-F05",
+    "CLASSIFICATION": "P2 — HISTORICAL VALIDATION_GAP",
+    "KIND": "VALIDATION_PENDING",
+    "AFFECTED_COMPONENT": "Real SOẠN_TRƯỚC→PREP_PACKET/packager→LIVE provenance and completeness",
+    "TEST_STEP": "Inventory all four uploads and attempt authorized transfers; compare earlier source/enrichment evidence separately",
+    "EXPECTED_BEHAVIOR": "Prove pairing by grade/week/lesson/topic; trace every real source activity to LIVE/runtime; run producer only if artifacts suffice.",
+    "ACTUAL_BEHAVIOR": "All four transfers fail at32MiB limit. No uploaded content/hash/pairing/producer artifact can be verified. Earlier auxiliary source selects Legacy and Geometry enrichment has representative authored links; those facts do not prove a fault in the new packets.",
+    "REPRODUCIBLE": "Input transfer blocker YES; new packet/producer defect UNKNOWN",
+    "ROOT_CAUSE_CONFIRMED": "NO",
+    "ROOT_CAUSE": "No root cause for a SOẠN_TRƯỚC/packager/LIVE defect established. Transfer limit is an external access blocker, not evidence of data or engine error.",
+    "OWNER": "UNKNOWN",
+    "AFFECTED_FILES": [
+      "HINH8_W05_TIET09_WEB_LIVE_PREP_PACKET_REVIEW.zip [file_00000000b9b4820990f0cb11472b53e1] — unread",
+      "HINH8_W05_TIET10_WEB_LIVE_PREP_PACKET_REVIEW.zip [file_00000000990c8206bb06d0f22d27b1c4] — unread",
+      "HINH8_W05_TIET09_WEB_LIVE_PREP_PACKET_REVIEW.zip [file_000000004aa4820988936ad6445aa522] — unread",
+      "HINH8_W05_TIET10_WEB_LIVE_PREP_PACKET_REVIEW.zip [file_00000000d8ec82098a57b98c09947b32] — unread"
+    ],
+    "CLASSROOM_IMPACT": "Cannot certify content/timing/no-teach-ahead/figures/answers/full workflow for Tiết09/10.",
+    "MINIMAL_PATCH_POSSIBLE": "UNKNOWN",
+    "CORE_CHANGE_REQUIRED": "UNKNOWN — no engine change justified by unread packets",
+    "RECOMMENDED_PATCH_SCOPE": "None yet. Obtain original bytes, verify SHA/CRC and pairing, inspect source/producer/live artifacts, trace and classify proven differences before proposing a data or engine patch.",
+    "RECOMMENDATION": "VALIDATION_PENDING",
+    "REPRODUCED_REAL_FILE": "UNRUN_INPUT_TRANSFER_BLOCKED",
+    "EVIDENCE": [
+      "INPUT_INVENTORY.json",
+      "CLASSROOM_VALIDATION.json#/originalImport",
+      "CLASSROOM_VALIDATION.json#/proofCoverage",
+      "SOURCE_AUDIT_EVIDENCE.json"
+    ]
+  }
+]

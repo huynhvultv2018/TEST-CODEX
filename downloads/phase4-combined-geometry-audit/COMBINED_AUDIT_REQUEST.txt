@@ -1,0 +1,1135 @@
+# PHASE 4 — COMBINED VALIDATION
+## REAL SOẠN_TRƯỚC + REAL WEB LIVE
+## + G4-F02–F05 ROOT-CAUSE AUDIT
+## AUDIT ONLY — NO PATCH
+
+==================================================
+0. CĂN CỨ
+==================================================
+
+Source candidate:
+
+```text
+WEB_LIVE_GEOMETRY_PHASE3_CANDIDATE
+```
+
+SHA256:
+
+```text
+8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c
+```
+
+Kết quả Phase 4 hiện tại:
+
+```text
+PHASE3_CANDIDATE_MUTATED = NO
+
+G4_F01_TARGETED_TEST = PASS
+G4_F01_STATUS =
+TARGETED_PASS_PENDING_FULL_PHASE4_PASS
+
+GEOMETRY_FOCUS_REAL_LESSON =
+FAIL — G4-F03
+
+FIGURE_ZOOM_REAL_LESSON =
+FAIL — G4-F02
+
+P0_COUNT = 0
+P1_COUNT = 0
+P2_COUNT = 2
+P3_COUNT = 2
+
+BLOCKING_RISK_COUNT = 0
+
+PHASE4_STATUS = NOT_PASS
+```
+
+==================================================
+1. MỤC TIÊU VÒNG NÀY
+==================================================
+
+Thực hiện đồng thời:
+
+```text
+A. AUDIT G4-F02
+B. AUDIT G4-F03
+C. AUDIT G4-F04
+D. AUDIT G4-F05
+
++
+
+E. VALIDATE REAL SOẠN_TRƯỚC
+F. VALIDATE REAL WEB LIVE
+G. TRACE SOẠN_TRƯỚC → LIVE → RUNTIME
+H. KIỂM CHỨNG G4-F02/F03 TRÊN FILE THẬT
+```
+
+Không tách thành hai vòng nếu không có trở ngại kỹ thuật.
+
+==================================================
+2. NGUYÊN TẮC BẤT BIẾN
+==================================================
+
+Vòng này:
+
+```text
+AUDIT ONLY
+VALIDATION ONLY
+```
+
+TUYỆT ĐỐI KHÔNG:
+
+```text
+PATCH CORE
+PATCH GEOMETRY_PROFILE
+PATCH SOẠN_TRƯỚC
+PATCH PACKAGER
+PATCH LIVE PACKAGE
+
+REFACTOR
+SCHEMA REDESIGN
+FEATURE IMPLEMENTATION
+PRODUCTION
+```
+
+Không sửa dữ liệu chỉ để test PASS.
+
+Nếu phát hiện lỗi:
+
+```text
+OBSERVE
+→ REPRODUCE
+→ TRACE
+→ CLASSIFY
+→ ROOT CAUSE
+→ EVIDENCE
+→ MINIMAL PATCH PROPOSAL
+```
+
+Sau đó DỪNG.
+
+==================================================
+3. KHÓA PHASE 3 CANDIDATE
+==================================================
+
+Trước audit:
+
+```text
+PHASE3_CANDIDATE_SHA256_BEFORE =
+8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c
+```
+
+Sau audit phải:
+
+```text
+PHASE3_CANDIDATE_SHA256_AFTER =
+8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c
+
+PHASE3_CANDIDATE_MUTATED = NO
+```
+
+Nếu candidate bị thay đổi:
+
+```text
+STOP
+STATUS = INVALID_VALIDATION_RUN
+```
+
+==================================================
+4. INPUT THỰC TẾ
+==================================================
+
+Tôi cung cấp các file:
+
+```text
+SOẠN_TRƯỚC HÌNH HỌC THỰC TẾ
+
++
+
+WEB LIVE HÌNH HỌC THỰC TẾ
+```
+
+Codex phải tự inventory trước.
+
+Lập bảng:
+
+```text
+FILE
+TYPE
+GRADE
+WEEK
+LESSON
+TOPIC
+HASH
+PAIRING
+```
+
+==================================================
+5. GHÉP CẶP
+==================================================
+
+Ghép:
+
+```text
+SOẠN_TRƯỚC
+↔
+WEB LIVE
+```
+
+chỉ khi chứng minh được cùng:
+
+```text
+GRADE
+WEEK
+LESSON
+TOPIC
+```
+
+Mỗi cặp tạo:
+
+```text
+REAL_CASE_01
+REAL_CASE_02
+REAL_CASE_03
+...
+```
+
+Nếu không đủ bằng chứng:
+
+```text
+PAIRING_STATUS = UNCONFIRMED
+```
+
+Không đoán.
+
+==================================================
+6. SOURCE OF TRUTH
+==================================================
+
+Đối với nội dung và tiến trình sư phạm:
+
+```text
+SOẠN_TRƯỚC
+=
+PEDAGOGICAL SOURCE OF TRUTH
+```
+
+WEB LIVE là đối tượng cần kiểm chứng.
+
+Không sửa SOẠN_TRƯỚC để làm LIVE PASS.
+
+==================================================
+7. TRACE TOÀN BỘ TIẾT
+==================================================
+
+Với mỗi REAL_CASE:
+
+đi từ:
+
+```text
+SCREEN 1
+```
+
+đến:
+
+```text
+FINAL SCREEN
+```
+
+Không chỉ kiểm sample screen.
+
+Tạo trace cho từng màn:
+
+```text
+SCREEN_INDEX
+
+PEDAGOGICAL_ACTIVITY
+
+EXPECTED_CONTENT
+
+LIVE_CONTENT
+
+EXPECTED_FIGURE
+
+LIVE_FIGURE
+
+RUNTIME_FIGURE
+
+FIGURE_ID
+
+SCENE_START
+
+SCENE_END
+
+FOCUS_STATE
+
+ZOOM_STATE
+
+PROOF_STATE
+
+ANSWER_STATE
+
+RESULT
+```
+
+==================================================
+8. PEDAGOGICAL SEQUENCE
+==================================================
+
+Đối chiếu LIVE với SOẠN_TRƯỚC.
+
+Khi applicable, kiểm tra:
+
+```text
+KIỂM TRA BÀI CŨ
+→ DẪN VÀO BÀI
+→ HÌNH THÀNH KIẾN THỨC
+→ QUAN SÁT
+→ SUY NGHĨ
+→ DỰ ĐOÁN
+→ TRAO ĐỔI
+→ PHÁT HIỆN
+→ GV CHUẨN HÓA
+→ KIỂM TRA HIỂU
+→ LUYỆN TẬP
+→ VẬN DỤNG
+→ CHỐT KIẾN THỨC
+```
+
+Không bắt buộc hoạt động không có trong SOẠN_TRƯỚC.
+
+==================================================
+9. NO_TEACH_AHEAD
+==================================================
+
+Kiểm tra:
+
+```text
+LIVE
+```
+
+không hiển thị kiến thức, đáp án hoặc phương pháp trước thời điểm được quy định trong SOẠN_TRƯỚC.
+
+Giữ:
+
+```text
+NO_TEACH_AHEAD
+```
+
+==================================================
+10. FIGURE TRACE — CRITICAL
+==================================================
+
+Với mọi màn có liên quan đến hình:
+
+```text
+EXPECTED_FIGURE
+↔
+LIVE PACKAGE FIGURE
+↔
+RUNTIME FIGURE
+```
+
+Phát hiện:
+
+```text
+WRONG FIGURE
+MISSING FIGURE
+STALE FIGURE
+EARLY FIGURE
+FIGURE CONTEXT LEAK
+RESET TOO EARLY
+PERSIST TOO LONG
+```
+
+==================================================
+11. SCENE / FIGURE BOUNDARY
+==================================================
+
+Sau G4-F01, kiểm tra đặc biệt:
+
+```text
+sceneStart
+sceneEnd
+figureId
+current geometry context
+```
+
+Ở mọi lần:
+
+```text
+EXERCISE A
+→ EXERCISE B
+```
+
+hoặc:
+
+```text
+FIGURE A
+→ FIGURE B
+```
+
+Phải xác minh context không leak.
+
+==================================================
+12. G4-F01 REGRESSION
+==================================================
+
+Giữ fixture patched làm regression phụ:
+
+```text
+HINH8_VD2_GEOMETRY_PROFILE_TEST_G4F01_PATCHED.zip
+```
+
+Không dùng fixture này thay cho real-file validation.
+
+Xác minh lại:
+
+```text
+SCREEN 20 → TT2_H333.png
+SCREEN 23 → VD3_H334.png
+SCREEN 26 → LT3_Hinh.png
+SCREEN 29 → VDU_H327.png
+```
+
+Nếu PASS:
+
+```text
+G4_F01_REGRESSION = PASS
+```
+
+Nhưng chỉ đóng G4-F01 sau khi full Phase 4 đủ điều kiện.
+
+==================================================
+13. PERSISTENT GEOMETRY
+==================================================
+
+Dựa vào SOẠN_TRƯỚC xác định hình nào cần tồn tại.
+
+Kiểm:
+
+```text
+SAME GEOMETRY CONTEXT
+→ PRESERVE FIGURE
+```
+
+và:
+
+```text
+NEW GEOMETRY CONTEXT
+→ RELEASE / CHANGE FIGURE
+```
+
+Không mặc định toàn bộ hình phải persistent.
+
+==================================================
+14. GT/KL
+==================================================
+
+Đối chiếu:
+
+```text
+SOẠN_TRƯỚC GT/KL
+↔
+LIVE GT/KL
+↔
+TV RUNTIME
+```
+
+Kiểm tra:
+
+```text
+CONTENT
+TIMING
+READABILITY
+LAYOUT
+FIGURE INTERFERENCE
+```
+
+==================================================
+15. ANALYSIS / PROOF FLOW
+==================================================
+
+Đối chiếu:
+
+```text
+SOẠN_TRƯỚC
+↔
+ANALYSIS
+↔
+PROOF
+↔
+RUNTIME
+```
+
+Kiểm:
+
+```text
+PROOF ORDER
+REVEAL ORDER
+CURRENT STEP
+PREVIOUS STEPS
+CONCLUSION
+```
+
+==================================================
+16. PROOF ↔ FIGURE LINK
+==================================================
+
+Với từng bước chứng minh:
+
+```text
+PROOF STEP
+↔
+EXPECTED GEOMETRY OBJECT
+↔
+RUNTIME HIGHLIGHT
+```
+
+Phân loại:
+
+```text
+PASS
+MISSING
+WRONG
+UNSUPPORTED
+```
+
+Không tự tạo mapping để làm PASS.
+
+==================================================
+17. G4-F02 — ZOOM AUDIT + REAL FILE TEST
+==================================================
+
+Finding hiện có:
+
+```text
+G4-F02
+chuyển màn cùng hình reset zoom
+```
+
+Trước tiên audit ownership:
+
+```text
+SCREEN STATE
+FIGURE STATE
+SCENE STATE
+GEOMETRY_PROFILE
+CORE
+DOM/RENDER
+CSS/UI
+OTHER
+```
+
+Sau đó tái hiện trên REAL FILE:
+
+```text
+SCREEN A
+→ FIGURE X
+→ ZOOM
+→ NEXT SCREEN
+→ SAME FIGURE X
+```
+
+và:
+
+```text
+FIGURE X
+→ ZOOM
+→ NEXT SCREEN
+→ NEW FIGURE Y
+```
+
+Đánh giá classroom expectation:
+
+```text
+SAME FIGURE CONTEXT
+→ ZOOM SHOULD NORMALLY PERSIST
+
+NEW FIGURE / NEW SCENE
+→ ZOOM MAY RESET
+```
+
+Nhưng phải đối chiếu contract hiện hữu.
+
+Không tự thay contract.
+
+Trả:
+
+```text
+G4_F02_REPRODUCED_ON_REAL_FILE =
+G4_F02_ROOT_CAUSE_CONFIRMED =
+G4_F02_OWNER =
+G4_F02_CORE_CHANGE_REQUIRED =
+G4_F02_MINIMAL_PATCH_POSSIBLE =
+```
+
+==================================================
+18. G4-F03 — FOCUS AUDIT + REAL FILE TEST
+==================================================
+
+Finding hiện có:
+
+```text
+G4-F03
+Focus ẩn bước chứng minh đã mở khác
+```
+
+Audit:
+
+```text
+PROOF REVEAL STATE
+↔
+FOCUS STATE
+```
+
+Kiểm tra trên REAL FILE.
+
+Expected classroom behavior cần đánh giá:
+
+```text
+CURRENT STEP
+= STRONGLY EMPHASIZED
+
+PREVIOUSLY REVEALED STEPS
+= VISIBLE BUT DE-EMPHASIZED
+
+UNREVEALED STEPS
+= HIDDEN
+```
+
+Focus không được phá proof context.
+
+Xác định ownership:
+
+```text
+CORE
+GEOMETRY_PROFILE
+CSS/UI
+STATE
+LESSON_PACKAGE
+OTHER
+```
+
+Trả:
+
+```text
+G4_F03_REPRODUCED_ON_REAL_FILE =
+G4_F03_ROOT_CAUSE_CONFIRMED =
+G4_F03_OWNER =
+G4_F03_CORE_CHANGE_REQUIRED =
+G4_F03_MINIMAL_PATCH_POSSIBLE =
+```
+
+==================================================
+19. G4-F04 — FULL AUDIT
+==================================================
+
+Trích xuất đầy đủ:
+
+```text
+FINDING_ID
+CLASSIFICATION
+AFFECTED_COMPONENT
+TEST_STEP
+EXPECTED_BEHAVIOR
+ACTUAL_BEHAVIOR
+REPRODUCIBLE
+ROOT_CAUSE_CONFIRMED
+ROOT_CAUSE
+OWNER
+AFFECTED_FILES
+CLASSROOM_IMPACT
+MINIMAL_PATCH_POSSIBLE
+RECOMMENDED_PATCH_SCOPE
+```
+
+Sau đó kiểm tra finding trên REAL FILE nếu applicable.
+
+Trả:
+
+```text
+G4_F04_REPRODUCED_ON_REAL_FILE =
+```
+
+==================================================
+20. G4-F05 — FULL AUDIT
+==================================================
+
+Thực hiện tương tự G4-F04.
+
+Trả:
+
+```text
+G4_F05_REPRODUCED_ON_REAL_FILE =
+```
+
+==================================================
+21. FOCUS / ZOOM / ANNOTATION
+==================================================
+
+Ngoài targeted F02/F03, kiểm toàn bài:
+
+```text
+GEOMETRY FOCUS
+FIGURE ZOOM
+ANNOTATION
+UNDO
+REDO
+ERASE
+CLEAR ANNOTATION
+```
+
+Không được làm mất base figure.
+
+==================================================
+22. LAYOUT
+==================================================
+
+Kiểm:
+
+```text
+70/30
+60/40
+FIGURE FULLSCREEN
+```
+
+trên các REAL FILE.
+
+Không chỉ fixture.
+
+==================================================
+23. ANSWER / HINT / REVEAL
+==================================================
+
+Đối chiếu:
+
+```text
+QUESTION
+→ STUDENT THINKING
+→ HINT
+→ ANSWER
+→ GV STANDARDIZATION
+```
+
+Phát hiện:
+
+```text
+ANSWER LEAK
+HINT LEAK
+PROOF LEAK
+```
+
+==================================================
+24. CONTENT COMPLETENESS
+==================================================
+
+Phát hiện:
+
+```text
+MISSING CONTENT
+DUPLICATED CONTENT
+OUT OF ORDER
+WRONG FIGURE
+WRONG GT/KL
+WRONG PROOF STEP
+WRONG ANSWER
+WRONG SCREEN
+```
+
+==================================================
+25. OWNERSHIP — BẮT BUỘC
+==================================================
+
+Mọi finding phải được phân loại:
+
+```text
+SOẠN_TRƯỚC
+
+PACKAGER / PREP_PACKET
+
+LIVE LESSON PACKAGE
+
+GEOMETRY_PROFILE
+
+WEB_LIVE_CORE
+
+ASSET
+
+CSS/UI
+
+TEST_HARNESS
+
+EXPECTED_BEHAVIOR_MISMATCH
+
+UNKNOWN
+```
+
+Không sửa engine để che lỗi dữ liệu.
+
+==================================================
+26. SEVERITY
+==================================================
+
+Dùng:
+
+```text
+P0 =
+không thể sử dụng / crash / mất bài
+
+P1 =
+sai nội dung, sai hình hoặc ảnh hưởng nghiêm trọng đến tiết dạy
+
+P2 =
+bất tiện đáng kể nhưng vẫn có thể dạy
+
+P3 =
+cosmetic / minor usability
+```
+
+==================================================
+27. PREP → LIVE FLOW
+==================================================
+
+Nếu các file cung cấp đủ để kiểm tra producer/packager:
+
+kiểm trực tiếp:
+
+```text
+SOẠN_TRƯỚC
+→ PREP_PACKET / PACKAGER
+→ WEB LIVE
+```
+
+Nếu không đủ artifact để chạy producer:
+
+giữ:
+
+```text
+PREP_TO_LIVE_FLOW = PARTIAL
+```
+
+Không giả PASS.
+
+==================================================
+28. TV THỰC TẾ
+==================================================
+
+Nếu môi trường Codex không có TV lớp học thực:
+
+không được kết luận:
+
+```text
+TV_REAL_CLASSROOM = PASS
+```
+
+Chỉ được kết luận các phần có bằng chứng như:
+
+```text
+VIEWPORT_SIMULATION
+LAYOUT
+CONTRAST
+FIT
+```
+
+Và giữ:
+
+```text
+TV_REAL_CLASSROOM = UNRUN
+```
+
+==================================================
+29. CLASSROOM FLOW
+==================================================
+
+Có thể đánh giá:
+
+```text
+RUNTIME_CLASSROOM_FLOW
+```
+
+qua toàn bộ screen sequence.
+
+Nhưng nếu chưa dạy thử thực tế:
+
+```text
+REAL_CLASSROOM_TRIAL = UNRUN
+```
+
+Không giả PASS.
+
+==================================================
+30. GLOBAL REGRESSION
+==================================================
+
+Sau audit/validation chạy:
+
+```text
+LEGACY_RUNTIME_REGRESSION
+ALGEBRA_PROFILE_ISOLATION
+INFORMATICS_PROFILE_ISOLATION
+```
+
+Không sửa bất cứ thành phần nào.
+
+==================================================
+31. PATCH DECISION MATRIX
+==================================================
+
+Tạo bảng:
+
+```text
+FINDING
+SEVERITY
+REPRODUCED_REAL_FILE
+ROOT_CAUSE
+OWNER
+CLASSROOM_IMPACT
+MINIMAL_PATCH
+CORE_CHANGE_REQUIRED
+RECOMMENDATION
+```
+
+Recommendation chỉ được là:
+
+```text
+PATCH_NEXT
+DEFER
+VALIDATION_PENDING
+NO_PATCH_REQUIRED
+```
+
+Không thực hiện patch.
+
+==================================================
+32. PATCH PRIORITY
+==================================================
+
+Ưu tiên đề xuất:
+
+```text
+P0
+→ P1
+→ P2 ảnh hưởng trực tiếp classroom
+→ P3
+```
+
+Không sửa P3 chỉ để đưa finding count về 0.
+
+==================================================
+33. OUTPUT FILES
+==================================================
+
+Tạo:
+
+```text
+GEOMETRY_PHASE4_COMBINED_AUDIT_REPORT.md
+
+GEOMETRY_REAL_FILE_VALIDATION_REPORT.md
+
+GEOMETRY_REAL_FILE_FIGURE_TRACE.md
+
+GEOMETRY_REAL_FILE_PEDAGOGY_TRACE.md
+
+GEOMETRY_REAL_FILE_FINDINGS.md
+
+G4_F02_ROOT_CAUSE_REPORT.md
+
+G4_F03_ROOT_CAUSE_REPORT.md
+
+G4_F04_FINDING_REPORT.md
+
+G4_F05_FINDING_REPORT.md
+
+GEOMETRY_PHASE4_PATCH_DECISION_MATRIX.md
+
+GEOMETRY_PHASE4_MINIMAL_PATCH_PROPOSAL.md
+```
+
+Không tạo candidate mới.
+
+==================================================
+34. PASS / NOT PASS
+==================================================
+
+Không ép Phase 4 PASS chỉ vì:
+
+```text
+P0 = 0
+P1 = 0
+```
+
+Phải phân biệt:
+
+```text
+TECHNICAL_FINDINGS
+```
+
+với:
+
+```text
+VALIDATION_PENDING
+```
+
+Nếu còn lỗi kỹ thuật cần patch:
+
+```text
+PHASE4_STATUS = NOT_PASS
+```
+
+Nếu kỹ thuật đạt nhưng chỉ còn:
+
+```text
+TV_REAL_CLASSROOM = UNRUN
+REAL_CLASSROOM_TRIAL = UNRUN
+```
+
+thì báo rõ:
+
+```text
+PHASE4_TECHNICAL_STATUS = PASS
+
+PHASE4_CLASSROOM_ACCEPTANCE =
+PENDING
+```
+
+Không trộn hai trạng thái.
+
+==================================================
+35. FINAL REPORT
+==================================================
+
+Trả đúng block:
+
+```text
+PHASE3_CANDIDATE_SHA256_BEFORE =
+PHASE3_CANDIDATE_SHA256_AFTER =
+PHASE3_CANDIDATE_MUTATED =
+
+REAL_CASE_COUNT =
+
+CASE_01_PAIRING =
+CASE_01_FULL_LESSON_TRACE =
+CASE_01_RESULT =
+
+CASE_02_PAIRING =
+CASE_02_FULL_LESSON_TRACE =
+CASE_02_RESULT =
+
+CASE_03_PAIRING =
+CASE_03_FULL_LESSON_TRACE =
+CASE_03_RESULT =
+
+PEDAGOGICAL_SEQUENCE =
+FIGURE_TRACE =
+SCENE_FIGURE_BOUNDARY =
+PERSISTENT_GEOMETRY =
+GT_KL_TRACE =
+ANALYSIS_PROOF_TRACE =
+PROOF_FIGURE_LINK =
+FOCUS =
+ZOOM =
+ANNOTATION =
+ANSWER_HINT_REVEAL =
+NO_TEACH_AHEAD =
+
+G4_F01_REGRESSION =
+
+G4_F02_CLASSIFICATION =
+G4_F02_REPRODUCED_ON_REAL_FILE =
+G4_F02_ROOT_CAUSE_CONFIRMED =
+G4_F02_OWNER =
+G4_F02_CORE_CHANGE_REQUIRED =
+G4_F02_MINIMAL_PATCH_POSSIBLE =
+
+G4_F03_CLASSIFICATION =
+G4_F03_REPRODUCED_ON_REAL_FILE =
+G4_F03_ROOT_CAUSE_CONFIRMED =
+G4_F03_OWNER =
+G4_F03_CORE_CHANGE_REQUIRED =
+G4_F03_MINIMAL_PATCH_POSSIBLE =
+
+G4_F04_CLASSIFICATION =
+G4_F04_REPRODUCED_ON_REAL_FILE =
+G4_F04_ROOT_CAUSE_CONFIRMED =
+G4_F04_OWNER =
+G4_F04_RECOMMENDATION =
+
+G4_F05_CLASSIFICATION =
+G4_F05_REPRODUCED_ON_REAL_FILE =
+G4_F05_ROOT_CAUSE_CONFIRMED =
+G4_F05_OWNER =
+G4_F05_RECOMMENDATION =
+
+SOAN_TRUOC_FINDING_COUNT =
+PACKAGER_FINDING_COUNT =
+LIVE_PACKAGE_FINDING_COUNT =
+GEOMETRY_PROFILE_FINDING_COUNT =
+CORE_FINDING_COUNT =
+ASSET_FINDING_COUNT =
+
+P0_COUNT =
+P1_COUNT =
+P2_COUNT =
+P3_COUNT =
+
+PATCHABLE_FINDING_COUNT =
+DEFERRED_FINDING_COUNT =
+VALIDATION_PENDING_COUNT =
+BLOCKING_RISK_COUNT =
+
+PREP_TO_LIVE_FLOW =
+TV_VIEWPORT_VALIDATION =
+TV_REAL_CLASSROOM =
+RUNTIME_CLASSROOM_FLOW =
+REAL_CLASSROOM_TRIAL =
+
+LEGACY_RUNTIME_REGRESSION =
+ALGEBRA_PROFILE_ISOLATION =
+INFORMATICS_PROFILE_ISOLATION =
+
+SOURCE_SCOPE_VIOLATION =
+PRODUCTION_MODIFIED =
+
+PHASE4_TECHNICAL_STATUS =
+PHASE4_CLASSROOM_ACCEPTANCE =
+PHASE4_STATUS =
+
+RECOMMENDED_NEXT_ACTION =
+```
+
+==================================================
+36. STOP
+==================================================
+
+Sau khi hoàn tất:
+
+```text
+REAL FILE VALIDATION
++
+G4-F02–F05 ROOT CAUSE AUDIT
++
+REGRESSION
++
+PATCH DECISION MATRIX
++
+FINAL REPORT
+```
+
+DỪNG.
+
+KHÔNG PATCH.
+
+KHÔNG tạo Phase 3 candidate mới.
+
+KHÔNG sửa Core.
+
+KHÔNG sửa Geometry Profile.
+
+KHÔNG sửa SOẠN_TRƯỚC.
+
+KHÔNG sửa LIVE package.
+
+KHÔNG Production.
+
+Chờ GV phê duyệt.

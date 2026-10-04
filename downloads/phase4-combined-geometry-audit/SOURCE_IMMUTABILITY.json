@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "candidateSHA256Before": "8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c",
+  "candidateSHA256After": "8817889abb9e98e9e3c60e191be510215e02030d309c2aacaaad1e1f663dd23c",
+  "candidateMutated": false,
+  "fileCount": 1227,
+  "sourceManifestEqual": true,
+  "sourceScopeViolation": false,
+  "productionModified": false
+}

@@ -1,0 +1,158 @@
+{
+  "sourceCandidateUnchanged": true,
+  "snapshots": [
+    {
+      "path": "WEB_LIVE/teacher.js",
+      "sha256": "1cb5d0e50daf359c70907389fa598a24aa70457e13fe398c8a7d71c5ad5301a1",
+      "lines": [
+        {
+          "number": 1,
+          "text": ""
+        },
+        {
+          "number": 10,
+          "text": "function resetView(){let s=lesson?.screens?.[i],img=!!currentImage(),analysis=img&&(isAnalysisScreen(s)||!!currentAnalysisDiagram());showHint=false;hintLevel=0;knowledgeCloseVisible=false;answerMode='hidden';answerStep=0;analysisStep=0;zoom=1;pan={x:0,y:0};pointer=null;viewMode=analysis?'split':img&&['split','figure','text'].includes(s.layout)?s.layout:img?'split':'text'}"
+        },
+        {
+          "number": 37,
+          "text": "function state(){let s=lesson.screens[i];return{type:'state',lessonId:currentLessonId,lessonSourceKey:lesson._runtimeSourceKey||'',lessonActivation,stateVersion:++stateVersion,sceneId:resolveScreenVisuals(lesson,i)?.sceneId||'',lesson:{subject:lesson.subject,week:lesson.week,period:lesson.period,title:lesson.title},index:i,total:lesson.screens.length,pedagogy:livePedagogyState(lesson,hintLevel,knowledgeCloseVisible),showHint,answerMode,answerStep,analysisStep,viewMode,zoom,pan,pointer,board:boardController?.summary()||null,cover:coverController?.summary()||null,smart:smartController?.summary()||null,classroom:classroomController?.state()||null,screenLite:{title:s?.title||''}}}"
+        },
+        {
+          "number": 39,
+          "text": "function go(n){if(!lesson)return;window.ttsUI?.cancel();i=Math.max(0,Math.min(lesson.screens.length-1,n));resetView();boardController?.screenChanged();coverController?.screenChanged();smartController?.screenChanged();classroomController?.screenChanged();render();sync()}"
+        },
+        {
+          "number": 43,
+          "text": "function revealStep(){if(!lesson)return;let n=liveSteps(lesson.screens[i]).length;if(!n)return;answerMode='steps';answerStep=Math.min(n,answerStep+1||1);render();sync()}"
+        },
+        {
+          "number": 48,
+          "text": "function zoomBy(d){if(!lesson||!currentImage())return;zoom=Math.max(.7,Math.min(2,Math.round((zoom+d)*100)/100));applyZoom();renderButtons();sync()}"
+        }
+      ]
+    },
+    {
+      "path": "WEB_LIVE/tv.js",
+      "sha256": "3f4db123ba25f3c73c4f9d239040252870eadc84d5ca57d649bff0ee2e69c987",
+      "lines": [
+        {
+          "number": 25,
+          "text": "  z=Math.max(.7,Math.min(2,lastState.zoom||1)),px=lastState.pan?.x||0,py=lastState.pan?.y||0;"
+        },
+        {
+          "number": 54,
+          "text": "function renderStepCards(node,items,whole,kind,focus=null){"
+        },
+        {
+          "number": 68,
+          "text": "  const step=document.createElement('div');step.className=(kind==='analysis'?'analysisStep ':'proofStep ')+(index===items.length-1?'current':'previous');paintMathNode(step,value);Classroom.step(step,kind==='analysis'?'analysis':'answer',index,focus);children.push(step);"
+        },
+        {
+          "number": 94,
+          "text": " if(!analysis.hidden)renderStepCards(analysis,steps.slice(0,d.analysisStep),analysis.textContent,'analysis',classroom.focus);"
+        },
+        {
+          "number": 101,
+          "text": " if(d.answerMode==='steps'&&at){"
+        },
+        {
+          "number": 102,
+          "text": "  let proof=liveSteps(s).slice(0,d.answerStep||0),conclusion=normalizeLiveText(s.conclusion||'','answer');"
+        },
+        {
+          "number": 103,
+          "text": "  if(conclusion&&proof.join('\\n')!==at)proof.push(conclusion);"
+        },
+        {
+          "number": 104,
+          "text": "  renderStepCards(answer,proof,at,'proof',classroom.focus);"
+        }
+      ]
+    },
+    {
+      "path": "WEB_LIVE/core-profiles.js",
+      "sha256": "ba77af2743bd4a811f2e6a95934f57a6fd8eb9b9a2e49197bf969c03a8554584",
+      "lines": [
+        {
+          "number": 4,
+          "text": " 'use strict';"
+        },
+        {
+          "number": 41,
+          "text": "   index:Number.isInteger(state.index)?state.index:0,stateVersion:Number.isFinite(state.stateVersion)?state.stateVersion:0});"
+        },
+        {
+          "number": 58,
+          "text": "  if(current.lessonId!==String(state?.lessonId||'')||current.lessonActivation!==String(state?.lessonActivation||'')||currentStateSourceKey!==String(state?.lessonSourceKey||'')||current.index!==state?.index||current.stateVersion!==(state?.stateVersion||0))return false;"
+        },
+        {
+          "number": 65,
+          "text": "  for(const [name,fn] of Object.entries(hooks)){"
+        },
+        {
+          "number": 66,
+          "text": "   if(!hookNames.includes(name)||typeof fn!=='function')throw new TypeError('Unknown hook or non-function');"
+        },
+        {
+          "number": 67,
+          "text": "   copy[name]=fn;"
+        },
+        {
+          "number": 75,
+          "text": "  if(!Object.prototype.hasOwnProperty.call(profiles,profileId)||adapters.has(profileId))throw new TypeError('Unknown or duplicate adapter');"
+        }
+      ]
+    },
+    {
+      "path": "WEB_LIVE/geometry-profile.css",
+      "sha256": "1f1b0b5e05e47adefa4eb176a445c34e924e80e8d0d9694676a1df9d211cebc4",
+      "lines": [
+        {
+          "number": 7,
+          "text": ".geometryProfile[data-geometry-answer-mode=\"steps\"] #answer .proofStep.previous:not(.isFocused){display:none}"
+        },
+        {
+          "number": 8,
+          "text": ".geometryProfile[data-geometry-focus-region=\"answer\"] #answer .focusBlock:not(.isFocused){display:none}"
+        }
+      ]
+    },
+    {
+      "path": "WEB_LIVE/classroom.css",
+      "sha256": "92d2c01acda2433c71c4cef1cb6a35f09fa1eb43c22f80626f16d1bcbbcd932b",
+      "lines": [
+        {
+          "number": 12,
+          "text": ".hasFocus .focusBlock:not(.isFocused){opacity:.52}"
+        },
+        {
+          "number": 13,
+          "text": ".hasFocus .focusBlock.isFocused{opacity:1;background:rgba(112,183,239,.22);border-left-color:#9cdbff}"
+        }
+      ]
+    },
+    {
+      "path": "WEB_LIVE/tv-ui.css",
+      "sha256": "815fbe93c550a0f9ebcad42b92a062db7a8e55c1218aea1449c25e2d35a0330b",
+      "lines": [
+        {
+          "number": 76,
+          "text": "@media(min-width:2560px){.title,.screen.text .title{font-size:clamp(52px,3.2vw,96px)}.content,.screen.text .content{font-size:clamp(48px,2.7vw,88px)}.reveal{font-size:clamp(46px,2.45vw,80px)}.screen.fontBoost .content{font-size:clamp(54px,3vw,102px)}.screen.fontBoost .reveal{font-size:clamp(50px,2.7vw,92px)}}"
+        },
+        {
+          "number": 181,
+          "text": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]){width:100%;grid-template-rows:minmax(0,1fr)!important;gap:var(--tv-gap);--tv-main-size:clamp(32px,2.65vw,52px)}"
+        },
+        {
+          "number": 185,
+          "text": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .content{width:100%;max-width:none;margin:0;font-size:var(--tv-main-size);line-height:1.32;white-space:pre-line}"
+        },
+        {
+          "number": 186,
+          "text": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .reveal{width:100%;max-width:none;margin:0;box-sizing:border-box;font-size:clamp(28px,2.1vw,42px);line-height:1.3;background:var(--tv-board);border:1px solid var(--tv-border);color:var(--tv-ink);padding:.5em .65em}"
+        }
+      ]
+    }
+  ],
+  "noRuntimeMonkeypatchOrCSSOverride": true
+}

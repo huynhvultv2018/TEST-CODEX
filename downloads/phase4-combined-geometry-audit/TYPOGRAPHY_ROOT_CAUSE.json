@@ -1,0 +1,1497 @@
+{
+  "result": "COMPLETE",
+  "browser": "151.0.7922.173",
+  "sourceScope": "Existing G4-F01 auxiliary fixture; not uploaded Tiết09/10 real files",
+  "newRealFileTest": "UNRUN_INPUT_TRANSFER_BLOCKED",
+  "physicalTV": "UNRUN",
+  "cases": [
+    {
+      "index": 5,
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "overflow": false,
+      "fonts": [
+        {
+          "text": "ABCD là hình bình hành.\nAH, CK ⟂ BD.",
+          "computedFontPx": 50.88,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatementText",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatement",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "content",
+              "className": "content",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".content",
+                  "fontSize": "clamp(28px, 2.3vw, 46px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".content",
+                  "fontSize": "clamp(34px, 2.7vw, 52px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .content",
+                  "fontSize": "var(--tv-main-size)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode=\"GEOMETRY\"] .content",
+                  "fontSize": "clamp(30px, 2.25vw, 44px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"MEDIUM\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(40px,3.4vw,66px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "AHCK là hình bình hành.",
+          "computedFontPx": 50.88,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatementText",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatement",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "content",
+              "className": "content",
+              "computedFont": "50.88px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".content",
+                  "fontSize": "clamp(28px, 2.3vw, 46px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".content",
+                  "fontSize": "clamp(34px, 2.7vw, 52px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .content",
+                  "fontSize": "var(--tv-main-size)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode=\"GEOMETRY\"] .content",
+                  "fontSize": "clamp(30px, 2.25vw, 44px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"MEDIUM\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(40px,3.4vw,66px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "overflow": false,
+      "fonts": [
+        {
+          "text": "Cần chứng minh AH ∥ CK và AH = CK.",
+          "computedFontPx": 40.32,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep previous focusBlock",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(26px, 2vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(32px, 2.45vw, 48px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .reveal",
+                  "fontSize": "clamp(28px, 2.1vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane tight",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split analysis geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(34px,2.8vw,54px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"LONG\"], .screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"EXTRA_LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(30px,2.25vw,44px)",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "MAIN",
+              "id": "",
+              "className": "stage",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "tvRoot",
+              "className": "tv",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "AH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+          "computedFontPx": 40.32,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep previous focusBlock",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(26px, 2vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(32px, 2.45vw, 48px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .reveal",
+                  "fontSize": "clamp(28px, 2.1vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane tight",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split analysis geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(34px,2.8vw,54px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"LONG\"], .screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"EXTRA_LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(30px,2.25vw,44px)",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "MAIN",
+              "id": "",
+              "className": "stage",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "tvRoot",
+              "className": "tv",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "∆AHD ≅ ∆CKB ⇒ AH = CK.",
+          "computedFontPx": 40.32,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep previous focusBlock",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(26px, 2vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(32px, 2.45vw, 48px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .reveal",
+                  "fontSize": "clamp(28px, 2.1vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane tight",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split analysis geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(34px,2.8vw,54px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"LONG\"], .screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"EXTRA_LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(30px,2.25vw,44px)",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "MAIN",
+              "id": "",
+              "className": "stage",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "tvRoot",
+              "className": "tv",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "AH ∥ CK và AH = CK ⇒ AHCK là hình bình hành.",
+          "computedFontPx": 40.32,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep current focusBlock",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(26px, 2vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(32px, 2.45vw, 48px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .reveal",
+                  "fontSize": "clamp(28px, 2.1vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane tight",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split analysis geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(34px,2.8vw,54px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"LONG\"], .screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"EXTRA_LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(30px,2.25vw,44px)",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "MAIN",
+              "id": "",
+              "className": "stage",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "tvRoot",
+              "className": "tv",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "overflow": false,
+      "fonts": [
+        {
+          "text": "∆AHD ≅ ∆CKB ⇒ AH = CK.",
+          "computedFontPx": 40.32,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "proofStep current focusBlock",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "answer",
+              "className": "reveal answer hasSteps",
+              "computedFont": "40.32px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(26px, 2vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(32px, 2.45vw, 48px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .reveal",
+                  "fontSize": "clamp(28px, 2.1vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split analysis geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(34px,2.8vw,54px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"LONG\"], .screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"EXTRA_LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(30px,2.25vw,44px)",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "MAIN",
+              "id": "",
+              "className": "stage",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "tvRoot",
+              "className": "tv",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "viewport": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1
+      },
+      "overflow": false,
+      "fonts": [
+        {
+          "text": "ABCD là hình bình hành.\nAH, CK ⟂ BD.",
+          "computedFontPx": 52,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatementText",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatement",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "content",
+              "className": "content",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".content",
+                  "fontSize": "clamp(28px, 2.3vw, 46px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".content",
+                  "fontSize": "clamp(34px, 2.7vw, 52px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".content, .screen.text .content",
+                  "fontSize": "clamp(48px, 2.7vw, 88px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .content",
+                  "fontSize": "var(--tv-main-size)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode=\"GEOMETRY\"] .content",
+                  "fontSize": "clamp(30px, 2.25vw, 44px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"MEDIUM\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(40px,3.4vw,66px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "AHCK là hình bình hành.",
+          "computedFontPx": 52,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatementText",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "geometryStatement",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "content",
+              "className": "content",
+              "computedFont": "52px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".content",
+                  "fontSize": "clamp(28px, 2.3vw, 46px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".content",
+                  "fontSize": "clamp(34px, 2.7vw, 52px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".content, .screen.text .content",
+                  "fontSize": "clamp(48px, 2.7vw, 88px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .content",
+                  "fontSize": "var(--tv-main-size)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode=\"GEOMETRY\"] .content",
+                  "fontSize": "clamp(30px, 2.25vw, 44px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"MEDIUM\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(40px,3.4vw,66px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "viewport": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1
+      },
+      "overflow": false,
+      "fonts": [
+        {
+          "text": "Cần chứng minh AH ∥ CK và AH = CK.",
+          "computedFontPx": 42,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep previous focusBlock",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(26px, 2vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(32px, 2.45vw, 48px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(46px, 2.45vw, 80px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .reveal",
+                  "fontSize": "clamp(28px, 2.1vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split analysis geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(34px,2.8vw,54px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"LONG\"], .screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"EXTRA_LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(30px,2.25vw,44px)",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "MAIN",
+              "id": "",
+              "className": "stage",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "tvRoot",
+              "className": "tv",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "AH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+          "computedFontPx": 42,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep previous focusBlock",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(26px, 2vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(32px, 2.45vw, 48px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(46px, 2.45vw, 80px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .reveal",
+                  "fontSize": "clamp(28px, 2.1vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split analysis geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(34px,2.8vw,54px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"LONG\"], .screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"EXTRA_LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(30px,2.25vw,44px)",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "MAIN",
+              "id": "",
+              "className": "stage",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "tvRoot",
+              "className": "tv",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "∆AHD ≅ ∆CKB ⇒ AH = CK.",
+          "computedFontPx": 42,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep previous focusBlock",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(26px, 2vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(32px, 2.45vw, 48px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(46px, 2.45vw, 80px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .reveal",
+                  "fontSize": "clamp(28px, 2.1vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split analysis geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(34px,2.8vw,54px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"LONG\"], .screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"EXTRA_LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(30px,2.25vw,44px)",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "MAIN",
+              "id": "",
+              "className": "stage",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "tvRoot",
+              "className": "tv",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        },
+        {
+          "text": "AH ∥ CK và AH = CK ⇒ AHCK là hình bình hành.",
+          "computedFontPx": 42,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "analysisStep current focusBlock",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "analysis",
+              "className": "reveal analysisReveal hasSteps",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(26px, 2vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(32px, 2.45vw, 48px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(46px, 2.45vw, 80px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .reveal",
+                  "fontSize": "clamp(28px, 2.1vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split analysis geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(34px,2.8vw,54px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"LONG\"], .screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"EXTRA_LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(30px,2.25vw,44px)",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "MAIN",
+              "id": "",
+              "className": "stage",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "tvRoot",
+              "className": "tv",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "viewport": {
+        "width": 3840,
+        "height": 2160,
+        "dpr": 1
+      },
+      "overflow": false,
+      "fonts": [
+        {
+          "text": "∆AHD ≅ ∆CKB ⇒ AH = CK.",
+          "computedFontPx": 42,
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "className": "proofStep current focusBlock",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "answer",
+              "className": "reveal answer hasSteps",
+              "computedFont": "42px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(26px, 2vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(32px, 2.45vw, 48px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".reveal",
+                  "fontSize": "clamp(46px, 2.45vw, 80px)",
+                  "tvMainSize": "",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .reveal",
+                  "fontSize": "clamp(28px, 2.1vw, 42px)",
+                  "tvMainSize": "",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "SECTION",
+              "id": "",
+              "className": "textPane",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "screen",
+              "className": "screen split analysis geometryProfile",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": [
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-text-length=\"LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(34px,2.8vw,54px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(32px,2.65vw,52px)",
+                  "important": ""
+                },
+                {
+                  "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+                  "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"LONG\"], .screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"EXTRA_LONG\"]",
+                  "fontSize": "",
+                  "tvMainSize": "clamp(30px,2.25vw,44px)",
+                  "important": ""
+                }
+              ]
+            },
+            {
+              "tag": "MAIN",
+              "id": "",
+              "className": "stage",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            },
+            {
+              "tag": "DIV",
+              "id": "tvRoot",
+              "className": "tv",
+              "computedFont": "16px",
+              "inlineFont": "",
+              "matchedFontDeclarations": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

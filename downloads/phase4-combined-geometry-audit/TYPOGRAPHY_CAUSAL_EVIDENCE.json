@@ -1,0 +1,119 @@
+{
+  "result": "PASS",
+  "fontCapSourceConfirmed": true,
+  "classroomReadabilityConfirmed": false,
+  "newRealFilesTested": false,
+  "findings": [
+    {
+      "index": 5,
+      "id": "content",
+      "computedFont": "52px",
+      "inlineFont": "",
+      "rules": [
+        {
+          "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+          "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .content",
+          "fontSize": "var(--tv-main-size)",
+          "tvMainSize": "",
+          "important": ""
+        },
+        {
+          "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+          "selector": ".screen[data-subject-mode=\"GEOMETRY\"] .content",
+          "fontSize": "clamp(30px, 2.25vw, 44px)",
+          "tvMainSize": "",
+          "important": ""
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "id": "screen",
+      "computedFont": "16px",
+      "inlineFont": "",
+      "rules": [
+        {
+          "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+          "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+          "fontSize": "",
+          "tvMainSize": "clamp(32px,2.65vw,52px)",
+          "important": ""
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "id": "analysis",
+      "computedFont": "42px",
+      "inlineFont": "",
+      "rules": [
+        {
+          "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+          "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .reveal",
+          "fontSize": "clamp(28px, 2.1vw, 42px)",
+          "tvMainSize": "",
+          "important": ""
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "id": "screen",
+      "computedFont": "16px",
+      "inlineFont": "",
+      "rules": [
+        {
+          "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+          "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+          "fontSize": "",
+          "tvMainSize": "clamp(32px,2.65vw,52px)",
+          "important": ""
+        },
+        {
+          "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+          "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"LONG\"], .screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"EXTRA_LONG\"]",
+          "fontSize": "",
+          "tvMainSize": "clamp(30px,2.25vw,44px)",
+          "important": ""
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "id": "answer",
+      "computedFont": "42px",
+      "inlineFont": "",
+      "rules": [
+        {
+          "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+          "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"]) .reveal",
+          "fontSize": "clamp(28px, 2.1vw, 42px)",
+          "tvMainSize": "",
+          "important": ""
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "id": "screen",
+      "computedFont": "16px",
+      "inlineFont": "",
+      "rules": [
+        {
+          "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+          "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])",
+          "fontSize": "",
+          "tvMainSize": "clamp(32px,2.65vw,52px)",
+          "important": ""
+        },
+        {
+          "url": "http://127.0.0.1:8773/WEB_LIVE/tv-ui.css",
+          "selector": ".screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"LONG\"], .screen[data-subject-mode]:not([data-subject-mode=\"GENERIC\"])[data-text-length=\"EXTRA_LONG\"]",
+          "fontSize": "",
+          "tvMainSize": "clamp(30px,2.25vw,44px)",
+          "important": ""
+        }
+      ]
+    }
+  ]
+}

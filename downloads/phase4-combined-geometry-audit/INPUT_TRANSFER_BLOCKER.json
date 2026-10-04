@@ -1,0 +1,14 @@
+{
+  "id": "G4-INPUT-01",
+  "kind": "EXTERNAL_INPUT_ACCESS_BLOCKER",
+  "owner": "TEST_HARNESS / authorized file transfer tool",
+  "classification": "OTHER — not an application P0/P1",
+  "rootCauseConfirmed": true,
+  "rootCause": "download_file maximum32MiB; all four user file IDs returned file exceeds the executor transfer limit of32MiB",
+  "contentsRead": false,
+  "exactSizeAndHashUnavailable": true,
+  "pairingsCreated": 0,
+  "duplicatesAssumed": false,
+  "remedy": "User provides exact original ZIP direct-download/GitHub URL or parts below32MiB; hash/CRC required before validation.",
+  "enginePatchRequired": false
+}
