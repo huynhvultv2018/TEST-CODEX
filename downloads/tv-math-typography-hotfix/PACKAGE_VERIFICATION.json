@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "archive": "WEB_LIVE_TV_MATH_TYPOGRAPHY_STRUCTURED_CONTENT_CANDIDATE.zip",
+  "sha256": "cbe405d7732e509a0d171837f39f301a324f12b319211dd6db0f81ec3b486bda",
+  "bytes": 23243795,
+  "entries": 614,
+  "CRC": "PASS",
+  "extractionAndInternalSHA256": "PASS",
+  "extractedNativeSmoke": "PASS",
+  "productionReady": "NO",
+  "windowsActualLessonRetestRequired": true
+}
