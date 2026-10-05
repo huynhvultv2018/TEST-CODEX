@@ -1,0 +1,15 @@
+{
+  "sourceCandidate": "WEB_LIVE_SUBJECT_LOADER_PHASE11_CANDIDATE",
+  "sha256Before": "1a04b5e9ae52068e9bf7d194b0767f233e0aecab3a17dd490ff2606178005954",
+  "sourceZip": "/workspace/output/web-live-subject-loader-phase11-candidate/WEB_LIVE_SUBJECT_LOADER_PHASE11_CANDIDATE.zip",
+  "workingRoot": "/workspace/phase12-lesson-library/working/WEB_LIVE_LESSON_LIBRARY_PHASE12_WORKING_COPY",
+  "fileCount": 1241,
+  "sourceCandidateStatus": "FROZEN",
+  "P11_F01": {
+    "classification": "P2",
+    "status": "OPEN_DEFERRED",
+    "capacityLimitRemoved": false,
+    "previousReportAlias": "P11-R01"
+  },
+  "sha256After": "1a04b5e9ae52068e9bf7d194b0767f233e0aecab3a17dd490ff2606178005954"
+}

@@ -1,0 +1,25 @@
+{
+  "result": "PASS",
+  "fileCount": 1241,
+  "changedFiles": [
+    "WEB_LIVE/subject-loader.css",
+    "WEB_LIVE/subject-loader.js"
+  ],
+  "unchangedFiles": 1239,
+  "addedFiles": [],
+  "removedFiles": [],
+  "frozenPhase11PayloadUnchanged": true,
+  "coreMutated": false,
+  "profilesMutated": false,
+  "productionModified": false,
+  "unchangedLoaderSegments": {
+    "quick-access": {
+      "byteExact": true,
+      "sha256": "65cc7facf65ebe8f693a219b510917fc322e9c81f3eb481b3c2b729b73bd44ca"
+    },
+    "validation-staging-transaction-quota": {
+      "byteExact": true,
+      "sha256": "a3e195800331dadb1e9a6e3a434463510ed79f8e9030857d2c543848e7ec1b9a"
+    }
+  }
+}

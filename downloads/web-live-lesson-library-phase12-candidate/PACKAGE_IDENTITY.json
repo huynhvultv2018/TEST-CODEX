@@ -1,0 +1,11 @@
+{
+  "candidate": "WEB_LIVE_LESSON_LIBRARY_PHASE12_CANDIDATE",
+  "sha256": "329dca2256104ef5d9ccca18a2dad2e9c921324260f31249b165683128a2d5e9",
+  "bytes": 50171510,
+  "files": 1241,
+  "wrapperRoot": "WEB_LIVE_LESSON_LIBRARY_PHASE12_CANDIDATE",
+  "zipCRC": "PASS",
+  "freshExtractionManifest": "PASS",
+  "phase11SHA256": "1a04b5e9ae52068e9bf7d194b0767f233e0aecab3a17dd490ff2606178005954",
+  "historicalDocumentsInsidePayload": "Inherited historical reports/checksums are unchanged; external Phase12 reports and manifest are authoritative for this candidate."
+}

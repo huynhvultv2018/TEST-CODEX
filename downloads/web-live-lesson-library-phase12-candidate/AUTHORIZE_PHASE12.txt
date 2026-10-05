@@ -1,0 +1,681 @@
+# APPROVE & FREEZE PHASE 11
+# DEFER P2 STORAGE CAPACITY
+# AUTHORIZE PHASE 12 — LESSON LIBRARY FILTER
+# MÔN → LỚP → TUẦN → TIẾT
+
+==================================================
+1. APPROVE PHASE 11
+==================================================
+
+Phê duyệt:
+
+```text
+PHASE11_CANDIDATE =
+WEB_LIVE_SUBJECT_LOADER_PHASE11_CANDIDATE
+
+PHASE11_CANDIDATE_SHA256 =
+1a04b5e9ae52068e9bf7d194b0767f233e0aecab3a17dd490ff2606178005954
+
+PHASE11_STATUS = PASS
+PHASE11_CANDIDATE_STATUS = FROZEN
+```
+
+Không sửa candidate này.
+
+Không Production.
+
+==================================================
+2. STORAGE P2 DECISION
+==================================================
+
+Ghi nhận:
+
+```text
+P11-F01 = LOCALSTORAGE_STORAGE_CAPACITY
+
+CLASSIFICATION = P2
+
+STATUS = OPEN_DEFERRED
+```
+
+Lý do:
+
+```text
+LOCALSTORAGE_QUOTA_GUARD = PASS
+CURRENT_LESSON_PRESERVATION = PASS
+RECENT_LARGE_PAYLOAD_STORAGE = NO
+RUNTIME_CRASH = NO
+```
+
+Nhưng:
+
+```text
+LOCALSTORAGE_CAPACITY_LIMIT_REMOVED = NO
+```
+
+Không tuyên bố P2 đã FIXED.
+
+==================================================
+3. STORAGE SCOPE LOCK
+==================================================
+
+Phase 12 KHÔNG:
+
+```text
+MIGRATE TO INDEXEDDB
+INCREASE BROWSER QUOTA
+DELETE USER PACKAGES
+REWRITE STORAGE ARCHITECTURE
+REFACTOR CACHE SYSTEM
+```
+
+Giữ quota guard Phase 11.
+
+==================================================
+4. PHASE 12 OBJECTIVE
+==================================================
+
+Nâng cấp Loader để GV tìm/nạp bài theo:
+
+```text
+MÔN
+ ↓
+LỚP
+ ↓
+TUẦN
+ ↓
+TIẾT
+ ↓
+BÀI
+```
+
+Mục tiêu:
+
+```text
+FAST CLASSROOM ACCESS
+LOW CLICK COUNT
+CLEAR LESSON IDENTIFICATION
+NO WRONG-LESSON LOAD
+```
+
+==================================================
+5. SUBJECT LEVEL
+==================================================
+
+Giữ:
+
+```text
+HÌNH HỌC
+ĐẠI SỐ
+TIN HỌC
+LEGACY
+```
+
+Mapping giữ nguyên Phase 9/11.
+
+Không sửa Profile Resolver.
+
+==================================================
+6. GRADE LEVEL
+==================================================
+
+Nếu metadata có `grade`:
+
+hiển thị:
+
+```text
+LỚP 6
+LỚP 7
+LỚP 8
+LỚP 9
+```
+
+Không suy đoán lớp từ nội dung.
+
+Không suy đoán từ tên file nếu metadata chính thức đã có.
+
+==================================================
+7. WEEK LEVEL
+==================================================
+
+Nếu metadata có `week`:
+
+lọc:
+
+```text
+TUẦN 1
+TUẦN 2
+TUẦN 3
+...
+```
+
+Sắp xếp theo số tuần.
+
+Không sắp xếp lexical kiểu:
+
+```text
+1
+10
+11
+2
+3
+```
+
+==================================================
+8. PERIOD LEVEL
+==================================================
+
+Nếu metadata có `period`:
+
+lọc/sắp xếp theo tiết.
+
+Ví dụ:
+
+```text
+TUẦN 5
+
+TIẾT 9
+TIẾT 10
+```
+
+==================================================
+9. LESSON TITLE
+==================================================
+
+Sau khi lọc:
+
+hiển thị:
+
+```text
+TÊN BÀI
+```
+
+kèm metadata gọn:
+
+```text
+MÔN
+LỚP
+TUẦN
+TIẾT
+```
+
+==================================================
+10. MISSING METADATA
+==================================================
+
+Bài thiếu:
+
+```text
+grade
+week
+period
+```
+
+KHÔNG được loại khỏi thư viện.
+
+Đưa vào nhóm:
+
+```text
+CHƯA ĐỦ THÔNG TIN
+```
+
+hoặc equivalent rõ ràng.
+
+Không crash.
+
+Không tự bịa metadata.
+
+==================================================
+11. METADATA SOURCE OF TRUTH
+==================================================
+
+Ưu tiên metadata chính thức của lesson/package.
+
+Cấm heuristic từ:
+
+```text
+LESSON CONTENT
+QUESTION TEXT
+PEDAGOGICAL CONTENT
+```
+
+Nếu cần fallback tên file cho DISPLAY ONLY:
+
+phải ghi rõ:
+
+```text
+DISPLAY_FALLBACK_ONLY
+```
+
+Không được dùng fallback đó để thay đổi `subject_engine`.
+
+==================================================
+12. FILTER BEHAVIOR
+==================================================
+
+Filter phải hoạt động dạng thu hẹp:
+
+```text
+SUBJECT
+→ GRADE OPTIONS
+→ WEEK OPTIONS
+→ PERIOD OPTIONS
+→ LESSON LIST
+```
+
+Mỗi cấp chỉ hiển thị lựa chọn có dữ liệu thực tế.
+
+Không tạo lựa chọn rỗng không cần thiết.
+
+==================================================
+13. FILTER RESET
+==================================================
+
+Khi đổi môn:
+
+reset:
+
+```text
+GRADE FILTER
+WEEK FILTER
+PERIOD FILTER
+```
+
+nhưng:
+
+```text
+CURRENT LOADED LESSON
+```
+
+vẫn được giữ cho đến khi bài mới LOAD SUCCESS.
+
+==================================================
+14. TRANSACTIONAL LOAD MUST REMAIN
+==================================================
+
+Bắt buộc:
+
+```text
+SELECT LESSON
+→ VALIDATE
+→ LOAD
+→ COMMIT
+```
+
+Nếu FAIL:
+
+```text
+CURRENT LESSON PRESERVED
+```
+
+Không được vì filter mà phá transactional load.
+
+==================================================
+15. RECENT LESSONS INTEGRATION
+==================================================
+
+Giữ Phase 11:
+
+```text
+RECENT_LESSON_LIMIT = 5
+```
+
+Recent lessons vẫn phải hoạt động.
+
+Không duplicate hai hệ thống loader riêng biệt.
+
+Khi chọn Recent:
+
+vẫn đi qua:
+
+```text
+VALIDATION
+→ PROFILE ROUTING
+→ TRANSACTIONAL LOAD
+```
+
+==================================================
+16. REMEMBER LAST SUBJECT
+==================================================
+
+Giữ:
+
+```text
+REMEMBER_LAST_SUBJECT = PASS
+```
+
+Khi mở lại WEB LIVE:
+
+có thể chọn sẵn môn gần nhất.
+
+Không tự nạp bài nếu GV chưa yêu cầu.
+
+==================================================
+17. CLASSROOM UI
+==================================================
+
+Ưu tiên giao diện gọn:
+
+```text
+[MÔN]
+[LỚP]
+[TUẦN]
+[TIẾT]
+
+DANH SÁCH BÀI
+```
+
+Không tạo nhiều modal nối tiếp nếu có thể tránh.
+
+Không redesign toàn bộ WEB LIVE.
+
+==================================================
+18. CLICK COUNT TARGET
+==================================================
+
+Phase 10 ghi nhận:
+
+```text
+CURRENT_NORMAL_LOAD_CLICK_COUNT = 8
+```
+
+Mục tiêu Phase 12:
+
+```text
+COMMON LIBRARY LOAD
+<= 5 meaningful interactions
+```
+
+nếu có thể đạt mà không bỏ safeguard.
+
+Không giảm click bằng cách bỏ validation.
+
+==================================================
+19. LARGE LIBRARY TEST
+==================================================
+
+Tạo synthetic library đủ lớn để test:
+
+```text
+4 SUBJECT GROUPS
+
+GRADES 6–9
+
+MULTIPLE WEEKS
+
+MULTIPLE PERIODS
+
+MULTIPLE LESSONS
+```
+
+Fixture chỉ dùng kiểm thử.
+
+Không coi là dữ liệu SGK.
+
+==================================================
+20. SORTING TEST
+==================================================
+
+Bắt buộc kiểm:
+
+```text
+GRADE_SORT = PASS
+WEEK_NUMERIC_SORT = PASS
+PERIOD_NUMERIC_SORT = PASS
+LESSON_LIST_STABILITY = PASS
+```
+
+==================================================
+21. MISSING METADATA TEST
+==================================================
+
+Test package thiếu:
+
+```text
+grade
+week
+period
+```
+
+Yêu cầu:
+
+```text
+PACKAGE_VISIBLE = YES
+NO_CRASH = YES
+NO_FALSE_METADATA = YES
+```
+
+==================================================
+22. EXISTING SAFEGUARDS
+==================================================
+
+Bắt buộc giữ:
+
+```text
+SUBJECT_METADATA_VALIDATION = PASS
+SUBJECT_MISMATCH_BLOCK = PASS
+INVALID_PACKAGE_SAFETY = PASS
+TRANSACTIONAL_LOAD = PASS
+CURRENT_LESSON_PRESERVATION = PASS
+PROFILE_STATE_RESET = PASS
+LOCALSTORAGE_QUOTA_GUARD = PASS
+```
+
+==================================================
+23. PROFILE REGRESSION
+==================================================
+
+Bắt buộc:
+
+```text
+GEOMETRY_LOAD = PASS
+ALGEBRA_LOAD = PASS
+INFORMATICS_LOAD = PASS
+LEGACY_LOAD = PASS
+
+LEGACY_RUNTIME_REGRESSION = PASS
+GEOMETRY_PROFILE_REGRESSION = PASS
+ALGEBRA_PROFILE_REGRESSION = PASS
+INFORMATICS_PROFILE_REGRESSION = PASS
+
+NO_TEACH_AHEAD_GLOBAL = PASS
+```
+
+==================================================
+24. CHANGE SCOPE
+==================================================
+
+Ưu tiên:
+
+```text
+SUBJECT LOADER ONLY
+```
+
+Không sửa:
+
+```text
+WEB_LIVE_CORE
+GEOMETRY_PROFILE
+ALGEBRA_PROFILE
+INFORMATICS_PROFILE
+```
+
+Nếu cần sửa Core/Profile:
+
+```text
+STOP
+```
+
+và báo GV.
+
+==================================================
+25. STORAGE REGRESSION
+==================================================
+
+Đặc biệt kiểm Phase 12 không làm P11-F01 xấu hơn.
+
+Bắt buộc:
+
+```text
+FILTER_METADATA_STORAGE =
+SMALL / BOUNDED
+
+LARGE_ASSET_DUPLICATION =
+NO
+
+PACKAGE_PAYLOAD_DUPLICATION =
+NO
+
+QUOTA_GUARD =
+PASS
+```
+
+==================================================
+26. PHYSICAL STATUS
+==================================================
+
+Giữ đúng:
+
+```text
+WINDOWS_PHYSICAL_RUNTIME = UNRUN
+PHYSICAL_TV_VALIDATION = UNRUN
+REAL_CLASSROOM_TRIAL = UNRUN
+```
+
+Không chuyển cloud test thành physical PASS.
+
+==================================================
+27. CANDIDATE
+==================================================
+
+Nếu PASS:
+
+tạo:
+
+```text
+WEB_LIVE_LESSON_LIBRARY_PHASE12_CANDIDATE
+```
+
+Tính SHA256.
+
+Không overwrite Phase 11.
+
+Không Production.
+
+==================================================
+28. REQUIRED REPORTS
+==================================================
+
+Tạo:
+
+```text
+LESSON_LIBRARY_PHASE12_IMPLEMENTATION_REPORT.md
+
+LESSON_LIBRARY_PHASE12_CONTRACT.md
+
+LESSON_LIBRARY_PHASE12_TEST_EVIDENCE.md
+
+LESSON_LIBRARY_PHASE12_REGRESSION_REPORT.md
+
+LESSON_LIBRARY_PHASE12_RISK_REGISTER.md
+```
+
+==================================================
+29. FINAL BLOCK
+==================================================
+
+Trả:
+
+```text
+PHASE11_SHA256_BEFORE =
+PHASE11_SHA256_AFTER =
+PHASE11_CANDIDATE_MUTATED =
+
+LESSON_LIBRARY_FILTER =
+
+SUBJECT_FILTER =
+GRADE_FILTER =
+WEEK_FILTER =
+PERIOD_FILTER =
+
+LESSON_LIST =
+MISSING_METADATA_HANDLING =
+
+GRADE_SORT =
+WEEK_NUMERIC_SORT =
+PERIOD_NUMERIC_SORT =
+
+RECENT_LESSONS =
+REMEMBER_LAST_SUBJECT =
+
+COMMON_LIBRARY_LOAD_INTERACTION_COUNT =
+
+SUBJECT_METADATA_VALIDATION =
+SUBJECT_MISMATCH_BLOCK =
+TRANSACTIONAL_LOAD =
+CURRENT_LESSON_PRESERVATION =
+PROFILE_STATE_RESET =
+
+LOCALSTORAGE_QUOTA_GUARD =
+P11_F01_STATUS =
+STORAGE_REGRESSION =
+
+GEOMETRY_LOAD =
+ALGEBRA_LOAD =
+INFORMATICS_LOAD =
+LEGACY_LOAD =
+
+LEGACY_RUNTIME_REGRESSION =
+GEOMETRY_PROFILE_REGRESSION =
+ALGEBRA_PROFILE_REGRESSION =
+INFORMATICS_PROFILE_REGRESSION =
+NO_TEACH_AHEAD_GLOBAL =
+
+CORE_CHANGE_REQUIRED =
+WEB_LIVE_CORE_MUTATED =
+GEOMETRY_PROFILE_MUTATED =
+ALGEBRA_PROFILE_MUTATED =
+INFORMATICS_PROFILE_MUTATED =
+
+WINDOWS_PHYSICAL_RUNTIME =
+PHYSICAL_TV_VALIDATION =
+REAL_CLASSROOM_TRIAL =
+
+P0_COUNT =
+P1_COUNT =
+P2_COUNT =
+P3_COUNT =
+
+SOURCE_SCOPE_VIOLATION =
+PRODUCTION_MODIFIED =
+
+PHASE12_CANDIDATE =
+PHASE12_CANDIDATE_SHA256 =
+
+PHASE12_STATUS =
+RECOMMENDED_NEXT_ACTION =
+```
+
+==================================================
+30. STOP
+==================================================
+
+Sau:
+
+```text
+IMPLEMENT
+→ TARGETED TEST
+→ LARGE LIBRARY TEST
+→ STORAGE REGRESSION
+→ PROFILE REGRESSION
+→ CANDIDATE
+→ REPORT
+```
+
+STOP.
+
+Không Production.
+
+Không sửa P11-F01 ngoài quota guard hiện tại.
+
+Chờ GV phê duyệt.

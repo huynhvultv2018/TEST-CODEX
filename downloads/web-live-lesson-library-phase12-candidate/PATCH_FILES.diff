@@ -1,0 +1,157 @@
+--- Phase11/WEB_LIVE/subject-loader.css
++++ Phase12/WEB_LIVE/subject-loader.css
+@@ -15,3 +15,15 @@
+ .quickRecentItem{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid #33455d}
+ .quickRecentItem>div{min-width:0;overflow-wrap:break-word}
+ .quickRecentItem button{flex-shrink:0}
++#libraryFilters{display:flex;flex-wrap:wrap;gap:12px;margin:8px 0}
++#libraryFilters label{display:flex;align-items:center;gap:8px;font-weight:700}
++#libraryFilters select{max-width:220px;padding:8px;font:inherit;background:#101e32;color:#eef4ff;border:1px solid #536a88;border-radius:8px}
++.libraryLesson>div:first-child{min-width:0;overflow-wrap:break-word}
++.libraryMissingNote{font-size:13px;color:#ffe0a3}
++#libraryIncomplete{margin-top:12px;padding-top:8px;border-top:1px solid #536a88}
++#libraryIncomplete h3{font-size:15px;margin:6px 0;color:#ffe0a3}
++#library{max-height:190px;overflow-y:auto;overscroll-behavior:contain}
++.libraryDialogHeader{display:flex;align-items:center;justify-content:space-between;gap:12px}
++.libraryDialogHeader h1{margin:12px 0;font-size:26px}
++.libraryDialogHeader button{flex-shrink:0}
++.importbox{overflow-anchor:none}
+--- Phase11/WEB_LIVE/subject-loader.js
++++ Phase12/WEB_LIVE/subject-loader.js
+@@ -74,6 +74,91 @@
+   }catch(_){warnStorage('Bài đã nạp thành công, nhưng không lưu được môn đã nhớ/bài gần đây. Lần mở sau có thể không có cập nhật này.');}
+  }
+  const label=id=>subjects.find(s=>s.id===id)?.name||id;
++ // Saved-library discovery only: three in-memory values, no storage/cache writes.
++ const filterState={grade:'',week:'',period:''},filterControls={};
++ const filterNames={grade:'LỚP',week:'TUẦN',period:'TIẾT'},missingValue='missing';
++ const collator=new Intl.Collator('vi',{numeric:true,sensitivity:'base'});
++ const filterPanel=document.createElement('div');filterPanel.id='libraryFilters';
++ for(const key of Object.keys(filterState)){
++  const field=document.createElement('label');field.textContent=filterNames[key];
++  const control=document.createElement('select');control.id='lesson'+key[0].toUpperCase()+key.slice(1);control.setAttribute('aria-label','Lọc '+filterNames[key].toLowerCase());
++  field.append(control);filterPanel.append(field);filterControls[key]=control;
++  control.addEventListener('change',()=>{
++   filterState[key]=control.value;
++   if(key==='grade'){filterState.week='';filterState.period='';}else if(key==='week')filterState.period='';
++   // A changed discovery scope invalidates any staged choice, not the current lesson.
++   clear();renderLibrary();
++  });
++ }
++ select.closest('label').after(filterPanel);
++ const filterHelp=document.createElement('p');filterHelp.className='small';filterHelp.textContent='Lọc bài đã lưu (không bắt buộc). Bài thiếu thông tin có nhóm riêng.';filterPanel.after(filterHelp);
++ // Keep the existing single dialog; put discovery and confirmation in view.
++ const libraryBlock=$('library').parentElement,dialogHeading=select.closest('.importbox').querySelector('h1');
++ filterHelp.after(preview,button,error,libraryBlock);
++ libraryBlock.querySelector('h2').textContent='2. DANH SÁCH BÀI ĐÃ LƯU';
++ const packageHeading=[...select.closest('.importbox').querySelectorAll('.subjectStep')].find(node=>node.textContent.includes('2. CHỌN FILE'));
++ if(packageHeading)packageHeading.textContent='HOẶC NHẬP FILE / ZIP BÀI HỌC';
++ if(dialogHeading){const dialogHeader=document.createElement('div');dialogHeader.className='libraryDialogHeader';dialogHeading.before(dialogHeader);dialogHeader.append(dialogHeading,$('closeBtn'));}
++ const filterStatus=document.createElement('p');filterStatus.id='libraryFilterStatus';filterStatus.className='small';filterStatus.setAttribute('aria-live','polite');$('library').before(filterStatus);
++ function resetFilters(){for(const key of Object.keys(filterState))filterState[key]='';}
++ function libraryValue(raw){
++  if(typeof raw!=='number'&&typeof raw!=='string')return null;
++  const text=String(raw).trim();if(!text||text.length>128||/^data:/iu.test(text))return null;
++  const numeric=typeof raw==='number'||/^[+-]?\d+(?:\.\d+)?$/u.test(text)?Number(text):null;
++  if(numeric!==null&&!Number.isFinite(numeric))return null;
++  return {key:numeric!==null?'n:'+String(numeric):'s:'+JSON.stringify(text),text:numeric!==null?String(numeric):text,numeric};
++ }
++ function compareValues(a,b){
++  if(!a||!b)return a?-1:b?1:0;
++  if(a.numeric!==null&&b.numeric!==null)return a.numeric-b.numeric;
++  if(a.numeric!==null||b.numeric!==null)return a.numeric!==null?-1:1;
++  return collator.compare(a.text,b.text)||a.key.localeCompare(b.key);
++ }
++ function descriptor(entry,x){
++  const available=!!x&&typeof x==='object'&&!Array.isArray(x);
++  let profile=null,invalid=!available;
++  if(available)try{profile=engine(x);}catch(_){invalid=true;}
++  const metadata=available?x:{};
++  const title=scalar(metadata.title,512),catalogTitle=scalar(entry.title,512);
++  return {id:entry.id,available,invalid,profile,title:title!==undefined&&title!==''?String(title)+(typeof metadata.title==='string'&&metadata.title.length>512?'…':''):catalogTitle??'Bài chưa có tên',subject:scalar(metadata.subject,160),className:scalar(metadata.class,32),
++   values:Object.fromEntries(Object.keys(filterState).map(key=>[key,libraryValue(metadata[key])]))};
++ }
++ function matchField(row,key,strict=false){
++  const selected=filterState[key],value=row.values[key];
++  if(!selected)return true;
++  if(selected===missingValue)return value===null;
++  return value?value.key===selected:!strict;
++ }
++ function matches(row,keys=Object.keys(filterState),strict=false){return keys.every(key=>matchField(row,key,strict));}
++ function populateFilter(key,rows){
++  const control=filterControls[key],values=new Map();let hasMissing=false;
++  for(const row of rows){const value=row.values[key];if(value)values.set(value.key,value);else hasMissing=true;}
++  const choices=[...values.values()].sort(compareValues),selected=filterState[key];
++  control.replaceChildren();const all=document.createElement('option');all.value='';all.textContent='Tất cả';control.append(all);
++  for(const value of choices){const option=document.createElement('option');option.value=value.key;option.textContent=filterNames[key]+' '+value.text;control.append(option);}
++  if(hasMissing){const unknown=document.createElement('option');unknown.value=missingValue;unknown.textContent='CHƯA ĐỦ THÔNG TIN';control.append(unknown);}
++  filterState[key]=selected&&(values.has(selected)||selected===missingValue&&hasMissing)?selected:'';control.value=filterState[key];
++  control.disabled=!select.value||!rows.length;
++ }
++ function compareLessons(a,b){
++  for(const key of Object.keys(filterState)){const order=compareValues(a.values[key],b.values[key]);if(order)return order;}
++  return collator.compare(String(a.title),String(b.title))||(String(a.id)<String(b.id)?-1:String(a.id)>String(b.id)?1:0);
++ }
++ function appendLibraryRow(parent,entry){
++  const row=document.createElement('div');row.className='item libraryLesson';row.dataset.lessonId=String(entry.id);
++  const text=document.createElement('div'),title=document.createElement('b');title.textContent=String(entry.title);text.append(title);
++  const context=document.createElement('div');context.className='small';
++  const parts=[entry.subject!==undefined&&entry.subject!==''?entry.subject:label(entry.profile)||'Môn chưa xác định'];
++  if(entry.profile==='legacy'&&entry.subject!==undefined)parts.push('LEGACY');
++  for(const key of Object.keys(filterState))if(entry.values[key])parts.push(filterNames[key]+' '+entry.values[key].text);
++  if(!entry.values.grade&&entry.className!==undefined)parts.push('Nhóm lớp '+entry.className);
++  context.textContent=parts.join(' · ');text.append(context);
++  if(entry.distinguish){const reference=document.createElement('div');reference.className='small libraryReference';reference.textContent='Mã bài: '+String(entry.id);text.append(reference);}
++  const missing=Object.keys(filterState).filter(key=>!entry.values[key]);
++  if(missing.length||entry.invalid){const note=document.createElement('div');note.className='libraryMissingNote';note.textContent=entry.invalid?'Dữ liệu bài chưa hợp lệ; cần kiểm tra trước khi nạp.':'Chưa đủ thông tin: '+missing.map(key=>filterNames[key]).join(', ');text.append(note);}
++  const actions=document.createElement('div'),open=document.createElement('button');open.type='button';open.textContent=entry.available?'CHỌN BÀI':'Không đọc được bài';open.disabled=!entry.available;open.addEventListener('click',()=>openSaved(entry.id));
++  const remove=document.createElement('button');remove.type='button';remove.textContent='XÓA';remove.addEventListener('click',()=>removeSaved(entry.id));actions.append(open,remove);row.append(text,actions);parent.append(row);
++ }
+  function indicate(){const id=WebLiveProfiles.resolve(lesson).profileId;indicator.textContent=id==='legacy'?'LEGACY':subjects.find(s=>s.id===id)?.label||id;indicator.hidden=false;}
+  function engine(x){
+   if(!Object.hasOwn(x,'subject_engine'))return 'legacy';
+@@ -205,16 +290,37 @@
+  renderLibrary=function(){
+   renderRecent();
+   const library=$('library');library.replaceChildren();
+-  const entries=getLibrary().filter(entry=>{const x=getLesson(entry.id);if(!x)return false;try{return !select.value||engine(x)===select.value;}catch(_){return true;}});
+-  if(!entries.length){const p=document.createElement('p');p.className='muted';p.textContent='Chưa có bài đã lưu cho môn này.';library.append(p);return;}
+-  for(const entry of entries){const row=document.createElement('div');row.className='item';const title=document.createElement('b');title.textContent=entry.title;const actions=document.createElement('div');
+-   const open=document.createElement('button');open.type='button';open.textContent='CHỌN BÀI';open.addEventListener('click',()=>openSaved(entry.id));
+-   const remove=document.createElement('button');remove.type='button';remove.textContent='XÓA';remove.addEventListener('click',()=>removeSaved(entry.id));actions.append(open,remove);row.append(title,actions);library.append(row);
++  const saved=getLibrary(),entries=[],seen=new Set();
++  if(Array.isArray(saved))for(const entry of saved){
++   if(!entry||!['string','number'].includes(typeof entry.id)||seen.has(String(entry.id)))continue;
++   seen.add(String(entry.id));const row=descriptor(entry,getLesson(entry.id));
++   if(!select.value||row.invalid||row.profile===select.value)entries.push(row);
++  }
++  populateFilter('grade',select.value?entries:[]);
++  const gradeRows=entries.filter(row=>matches(row,['grade']));populateFilter('week',select.value?gradeRows:[]);
++  const weekRows=gradeRows.filter(row=>matches(row,['week']));populateFilter('period',select.value?weekRows:[]);
++  const selected=weekRows.filter(row=>matches(row,['period'])).sort(compareLessons);
++  const identityKey=row=>JSON.stringify([row.profile,row.title,...Object.values(row.values).map(value=>value?.key??null)]),duplicates=new Map();
++  for(const row of selected){const key=identityKey(row);duplicates.set(key,(duplicates.get(key)||0)+1);}
++  for(const row of selected)row.distinguish=duplicates.get(identityKey(row))>1;
++  const complete=selected.filter(row=>!row.invalid&&Object.values(row.values).every(Boolean)),incomplete=selected.filter(row=>row.invalid||Object.values(row.values).some(value=>!value));
++  filterStatus.textContent=complete.length+' bài khớp · '+incomplete.length+' bài chưa đủ thông tin';
++  if(!selected.length){const p=document.createElement('p');p.className='muted';p.textContent=entries.length?'Không có bài khớp bộ lọc. Chọn Tất cả để xem lại thư viện.':'Chưa có bài đã lưu cho môn này.';library.append(p);return;}
++  for(const row of complete)appendLibraryRow(library,row);
++  if(incomplete.length){const group=document.createElement('section');group.id='libraryIncomplete';const heading=document.createElement('h3');heading.textContent='CHƯA ĐỦ THÔNG TIN';group.append(heading);
++   const help=document.createElement('p');help.className='small';help.textContent='Thông tin còn thiếu chưa xác nhận được bộ lọc. Kiểm tra preview trước khi nạp.';group.append(help);
++   for(const row of incomplete)appendLibraryRow(group,row);library.append(group);
+   }
+  };
+- openSaved=function(id){const x=getLesson(id);if(x)stage(async()=>({lesson:JSON.parse(JSON.stringify(x)),sourceKey:x._runtimeSourceKey}));};
++ openSaved=function(id){
++  const x=getLesson(id);
++  if(!x){clear();error.textContent='Không tìm thấy bài đã lưu. Bài hiện tại được giữ nguyên.';renderLibrary();return;}
++  // Recent can name a lesson outside the discovery filters; never relabel it.
++  if(!matches(descriptor({id},x),Object.keys(filterState),true)){resetFilters();renderLibrary();}
++  stage(async()=>({lesson:JSON.parse(JSON.stringify(x)),sourceKey:x._runtimeSourceKey}));
++ };
+  loadSample=function(){stage(async()=>({lesson:JSON.parse(JSON.stringify(sample))}));};
+- select.addEventListener('change',()=>{if(busy)clear();refresh();renderLibrary();});
++ select.addEventListener('change',()=>{resetFilters();if(busy)clear();refresh();renderLibrary();});
+  button.addEventListener('click',commit);
+  for(const [id,type] of [['jsonfile','json'],['zipfile','zip']])$(id).onchange=event=>{const file=event.target.files[0];event.target.value='';if(!file)return;stage(async()=>type==='zip'?prepareLessonZip(file):{lesson:JSON.parse(await file.text())});};
+  globalThis.WebLiveSubjectLoader=Object.freeze({subjects,validate,engine,version:1,recentLimit});
