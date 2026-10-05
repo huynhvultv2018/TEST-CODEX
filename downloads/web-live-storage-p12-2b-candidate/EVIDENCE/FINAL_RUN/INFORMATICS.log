@@ -1,0 +1,27 @@
+ACTIVE_LEARNING_FLOW: nine optional authored stages, no standardization before native reveal
+Absent activity metadata stays absent; no generated pedagogical chain
+INSTRUCTION_RENDERING: task/instruction/action/self-check only at authored step gates
+DEMO_RENDERING: native instruction steps/image/UI reference, demo note only Teacher; no launcher
+PRACTICE_RENDERING + SAMPLE_PRODUCT_CONTROL: Full Answer alone never reveals sample or comparison
+STUDENT_PRODUCT: expected and supplied student product remain distinct
+CHECKPOINT_CONTROL: reveal checkpoint → GV confirmation → independent sample reveal
+Sample + comparison + checkpoint + all three disclosed practice steps fit three TV viewports
+Independent sample Hide removes sample and comparison from DOM
+Hide Answer resets checkpoint/sample, no stale reveal on later step
+CODE_RENDERING + CODE_HIGHLIGHT: exact authored line breaks, future3 absent, current line2
+CODE_RENDERING: four-space indentation and code bytes preserved
+INFORMATICS_FOCUS: code-step native Focus, previous visible/dim, exact clear restoration
+Task/instruction/checkpoint focusStep maps to native answer Focus without hiding prior activity
+Checkpoint Focus does not confirm checkpoint or reveal sample
+Native Task Focus highlights authored task without changing disclosure
+Algorithm-step Focus emphasizes authored linked rows; previous rows stay visible and clear preserves state
+ALGORITHM_RENDERING: input/process/output/sequence/branch/loop authored gates
+TABLE_RENDERING: semantic header/row relationships, source cells preserved, no avoidable overflow
+MEDIA_RENDERING: local image/video playback/animated GIF/screenshot/diagram; original aspect ratio, no obstruction
+HINT_CONTROL: native hint is independent, hide removes source from TV DOM
+ANSWER_CONTROL: native full/hide respects sample and teacher-note separation
+21 fixture screens × hidden/full × 3 TV viewports: 126 cases fit; no sample/note leak
+MCQ remains four vertical full-width options; instruction separate
+Profile-local disclosure syncs native Preview/TV and authorized same-activation reload
+NO_TEACH_AHEAD: source memory unchanged, no generated code/pedagogy, hidden content absent, no runtime exceptions/external requests
+{"result":"PASS","checks":26,"captures":6}

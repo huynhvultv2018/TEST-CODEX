@@ -1,0 +1,982 @@
+# APPROVE P12.2B
+# INDEXEDDB LESSON STORAGE IMPLEMENTATION
+# COPY → VERIFY → COMMIT
+# NO AUTOMATIC LOCALSTORAGE CLEANUP
+# MINIMAL CORE STORAGE BRIDGE ONLY
+# NO PRODUCTION
+
+==================================================
+0. APPROVAL BASIS
+==================================================
+
+P12.2A đã hoàn tất:
+
+```text id="p122b-audit"
+P12_2A_STATUS =
+COMPLETE_AUDIT_DESIGN_ONLY
+
+INDEXEDDB_MIGRATION_FEASIBLE = YES
+
+LOCALSTORAGE_CAPACITY_REAL_USE =
+INSUFFICIENT / CONFIRMED_ON_WINDOWS
+
+LARGEST_STORAGE_CLASS =
+FULL LESSON JSON + INLINE IMAGE/BASE64
+
+BASE64_STORAGE_FOUND = YES
+
+INLINE_IMAGE_SHARE =
+96.42% OF MEASURED JSON
+
+LARGE_ASSET_DUPLICATION =
+YES / APPROX 3.470378x
+```
+
+Phê duyệt triển khai P12.2B có kiểm soát.
+
+==================================================
+1. SOURCE OF TRUTH
+==================================================
+
+Nguồn runtime:
+
+```text id="p122b-source"
+WEB_LIVE_LESSON_LIBRARY_P12_1_CANDIDATE
+
+SHA256 =
+39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49
+```
+
+P12.2A chỉ là audit/design.
+
+Không dùng report package làm runtime source.
+
+==================================================
+2. SOURCE FREEZE
+==================================================
+
+Bắt buộc:
+
+```text id="p122b-freeze"
+P12_1_SHA256_BEFORE =
+39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49
+
+P12_1_SHA256_AFTER =
+39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49
+
+P12_1_CANDIDATE_MUTATED = NO
+```
+
+Tạo working copy riêng.
+
+==================================================
+3. P11-F01
+==================================================
+
+Giữ:
+
+```text id="p122b-finding"
+P11-F01
+
+SEVERITY = P2
+
+STATUS =
+OPEN_CONFIRMED_ON_WINDOWS
+```
+
+Không đánh dấu FIXED cho đến Windows retest.
+
+==================================================
+4. PRIMARY OBJECTIVE
+==================================================
+
+Chuyển persistent lesson payload lớn khỏi:
+
+```text id="p122b-old"
+localStorage
+```
+
+sang:
+
+```text id="p122b-new"
+IndexedDB
+```
+
+để loại bỏ nút thắt localStorage đối với thư viện bài có nhiều ảnh.
+
+==================================================
+5. STORAGE RESPONSIBILITY
+==================================================
+
+Target:
+
+```text id="p122b-responsibility"
+localStorage
+→ preferences nhỏ
+→ last subject
+→ recent metadata/reference nhỏ
+→ migration markers nhỏ
+
+IndexedDB
+→ full lesson payload
+→ large JSON
+→ images/assets
+→ Blob/ArrayBuffer where appropriate
+```
+
+Không duplicate full payload ở cả hai backend trong trạng thái ổn định mới.
+
+==================================================
+6. STORAGE ADAPTER
+==================================================
+
+Tạo abstraction rõ ràng.
+
+Ví dụ:
+
+```text id="p122b-adapter"
+saveLesson()
+getLesson()
+listLessons()
+deleteLesson()
+saveMetadata()
+getMetadata()
+getStorageHealth()
+migrateLegacyLesson()
+```
+
+Tên implementation có thể khác.
+
+Loader không được rải trực tiếp IndexedDB logic khắp source.
+
+==================================================
+7. OWNER
+==================================================
+
+Ưu tiên:
+
+```text id="p122b-owner"
+SUBJECT LOADER STORAGE MODULE
+```
+
+Cho phép:
+
+```text id="p122b-core"
+MINIMAL CORE STORAGE BRIDGE
+```
+
+chỉ nếu P12.2A đã chứng minh cần thiết.
+
+==================================================
+8. CORE CHANGE LIMIT
+==================================================
+
+Core change chỉ được phục vụ:
+
+```text id="p122b-core-scope"
+ASYNC STORAGE READ
+
+ASYNC STORAGE WRITE
+
+BOOTSTRAP STORAGE READY
+
+LESSON PAYLOAD RETRIEVAL
+```
+
+CẤM:
+
+```text id="p122b-core-forbid"
+CORE REFACTOR
+
+NAVIGATION CHANGE
+
+RENDERER CHANGE
+
+PROFILE RESOLVER CHANGE
+
+TV LAYOUT CHANGE
+
+PEDAGOGY CHANGE
+```
+
+==================================================
+9. PROFILE LOCK
+==================================================
+
+Không sửa:
+
+```text id="p122b-profile-lock"
+GEOMETRY_PROFILE
+ALGEBRA_PROFILE
+INFORMATICS_PROFILE
+```
+
+Bắt buộc:
+
+```text id="p122b-profile-target"
+PROFILE_CHANGE_REQUIRED = NO
+```
+
+==================================================
+10. INDEXEDDB DATABASE
+==================================================
+
+Implement schema dựa trên P12.2A.
+
+Bắt buộc có:
+
+```text id="p122b-db"
+DATABASE VERSION
+
+LESSON IDENTITY
+
+LESSON RECORD
+
+METADATA / INDEX
+
+ASSET OWNERSHIP OR REFERENCES
+
+MIGRATION STATUS
+```
+
+Không tạo schema phức tạp hơn mức cần thiết.
+
+==================================================
+11. LESSON IDENTITY
+==================================================
+
+Reuse identity hiện có nếu an toàn.
+
+Không chỉ dựa vào filename.
+
+Bắt buộc kiểm:
+
+```text id="p122b-id"
+DUPLICATE IMPORT
+
+SAME LESSON REIMPORT
+
+LESSON UPDATE
+
+DELETE
+```
+
+==================================================
+12. LARGE IMAGE HANDLING
+==================================================
+
+Không lưu ảnh lớn dưới dạng Base64 trong localStorage.
+
+Nếu source/package cung cấp inline Base64:
+
+cho phép decode thành:
+
+```text id="p122b-blob"
+Blob
+or
+ArrayBuffer
+```
+
+để lưu IndexedDB nếu implementation phù hợp.
+
+Không thay đổi nội dung hình.
+
+==================================================
+13. ASSET DEDUPLICATION
+==================================================
+
+Nếu P12.2A design đủ an toàn:
+
+cho phép deduplicate asset bằng stable hash/reference.
+
+Nhưng:
+
+```text id="p122b-dedup-rule"
+DATA CORRECTNESS > STORAGE SAVING
+```
+
+Nếu dedup làm tăng complexity/risk đáng kể:
+
+defer dedup nâng cao.
+
+Không để dedup trở thành blocker cho migration cơ bản.
+
+==================================================
+14. MIGRATION POLICY
+==================================================
+
+P12.2B chỉ được:
+
+```text id="p122b-migration"
+COPY
+→ VERIFY
+→ COMMIT
+```
+
+KHÔNG:
+
+```text id="p122b-cleanup"
+AUTOMATIC CLEANUP
+```
+
+==================================================
+15. CRITICAL CLEANUP LOCK
+==================================================
+
+Trong P12.2B:
+
+```text id="p122b-cleanup-lock"
+DELETE OLD LESSON PAYLOAD FROM LOCALSTORAGE = FORBIDDEN
+```
+
+Sau migration thành công:
+
+old payload vẫn tồn tại tạm thời để rollback.
+
+Cleanup chỉ được xem xét trong:
+
+```text id="p122b-p122c"
+P12.2C
+```
+
+sau Windows physical retest.
+
+==================================================
+16. MIGRATION JOURNAL
+==================================================
+
+Bắt buộc có journal nhỏ:
+
+```text id="p122b-journal"
+MIGRATION_VERSION
+
+LESSON_ID
+
+SOURCE_PRESENT
+
+TARGET_WRITTEN
+
+TARGET_VERIFIED
+
+COMMITTED
+
+CLEANUP_PENDING
+```
+
+==================================================
+17. VERIFY BEFORE COMMIT
+==================================================
+
+Sau write IndexedDB:
+
+bắt buộc read-back.
+
+Kiểm:
+
+```text id="p122b-verify"
+LESSON ID
+
+PAYLOAD INTEGRITY
+
+REQUIRED METADATA
+
+ASSET COUNT
+
+HASH / SIZE / EQUIVALENT INTEGRITY
+```
+
+Chỉ sau verify PASS:
+
+```text id="p122b-commit"
+COMMITTED = YES
+```
+
+==================================================
+18. READ PREFERENCE AFTER COMMIT
+==================================================
+
+Sau lesson migration đã COMMIT:
+
+runtime ưu tiên:
+
+```text id="p122b-read"
+IndexedDB
+```
+
+Nếu IndexedDB record không đọc được:
+
+fallback có kiểm soát tới old localStorage payload nếu còn hợp lệ.
+
+==================================================
+19. FALLBACK
+==================================================
+
+Bắt buộc:
+
+```text id="p122b-fallback"
+INDEXEDDB READ FAIL
+→ TRY VERIFIED LEGACY LOCALSTORAGE COPY
+→ PRESERVE CURRENT LESSON
+→ SHOW WARNING
+```
+
+Không silent corruption.
+
+==================================================
+20. NEW LESSON IMPORT
+==================================================
+
+Bài mới sau P12.2B:
+
+```text id="p122b-new-import"
+IMPORT
+→ VALIDATE
+→ WRITE INDEXEDDB
+→ VERIFY
+→ COMMIT
+→ ADD LIBRARY INDEX
+```
+
+Không ghi full lesson payload mới vào localStorage.
+
+==================================================
+21. TRANSACTIONAL LOAD
+==================================================
+
+Giữ:
+
+```text id="p122b-transaction"
+CURRENT LESSON
+→ SELECT NEW LESSON
+→ READ
+→ VALIDATE
+→ RESOLVE SUBJECT
+→ RESOLVE ENGINE
+→ LOAD
+→ COMMIT
+```
+
+Nếu fail:
+
+```text id="p122b-preserve"
+CURRENT LESSON PRESERVED
+```
+
+==================================================
+22. STORAGE FAILURE
+==================================================
+
+Xử lý:
+
+```text id="p122b-errors"
+INDEXEDDB OPEN FAILURE
+
+INDEXEDDB BLOCKED
+
+TRANSACTION ABORT
+
+WRITE FAILURE
+
+READ FAILURE
+
+CORRUPTED RECORD
+
+MIGRATION INTERRUPTION
+
+BROWSER CLOSE DURING MIGRATION
+```
+
+Bắt buộc:
+
+```text id="p122b-no-crash"
+NO CRASH
+NO FALSE SUCCESS
+NO CURRENT LESSON LOSS
+```
+
+==================================================
+23. IDEMPOTENT MIGRATION
+==================================================
+
+Migration phải chạy lại an toàn.
+
+Ví dụ:
+
+```text id="p122b-idempotent"
+TARGET_VERIFIED = YES
+→ DO NOT DUPLICATE
+
+TARGET_PARTIAL
+→ RESUME / REWRITE SAFELY
+
+COMMITTED = YES
+→ DO NOT MIGRATE AGAIN
+```
+
+==================================================
+24. DO NOT CLEAR LOCALSTORAGE
+==================================================
+
+Cấm tuyệt đối:
+
+```text id="p122b-clear"
+localStorage.clear()
+```
+
+Không xóa key không thuộc WEB LIVE.
+
+Không xóa payload legacy trong P12.2B.
+
+==================================================
+25. LIBRARY FUNCTIONALITY
+==================================================
+
+Bắt buộc giữ:
+
+```text id="p122b-library"
+SUBJECT_FILTER = PASS
+
+GRADE_FILTER = PASS
+
+WEEK_FILTER = PASS
+
+PERIOD_FILTER = PASS
+
+LESSON_LIST = PASS
+
+RECENT_LESSONS = PASS
+
+REMEMBER_LAST_SUBJECT = PASS
+```
+
+==================================================
+26. P12.1 COMPATIBILITY
+==================================================
+
+Bắt buộc giữ:
+
+```text id="p122b-p121"
+LESSON_SUBJECT_SEPARATED_FROM_ENGINE = PASS
+
+LEGACY_INFORMATICS_SUBJECT_RESOLUTION = PASS
+
+LEGACY_ENGINE_PRESERVED = PASS
+
+NO_ENGINE_INFERENCE = PASS
+
+TRUE_SUBJECT_MISMATCH_BLOCK = PASS
+
+AMBIGUOUS_METADATA_BLOCK = PASS
+```
+
+==================================================
+27. PROFILE REGRESSION
+==================================================
+
+Bắt buộc:
+
+```text id="p122b-regression"
+GEOMETRY_LOAD = PASS
+
+ALGEBRA_LOAD = PASS
+
+INFORMATICS_LOAD = PASS
+
+LEGACY_LOAD = PASS
+
+LEGACY_RUNTIME_REGRESSION = PASS
+
+GEOMETRY_PROFILE_REGRESSION = PASS
+
+ALGEBRA_PROFILE_REGRESSION = PASS
+
+INFORMATICS_PROFILE_REGRESSION = PASS
+
+NO_TEACH_AHEAD_GLOBAL = PASS
+```
+
+==================================================
+28. MIGRATION TESTS
+==================================================
+
+Bắt buộc:
+
+```text id="p122b-tests1"
+EMPTY_DATABASE = PASS
+
+FIRST_LESSON_SAVE = PASS
+
+MULTIPLE_LESSON_SAVE = PASS
+
+LEGACY_LESSON_MIGRATION = PASS
+
+MIGRATION_READBACK_VERIFY = PASS
+
+MIGRATION_COMMIT = PASS
+
+MIGRATION_IDEMPOTENT = PASS
+
+MIGRATION_INTERRUPTION_RECOVERY = PASS
+
+MIGRATION_WRITE_FAILURE = PASS
+
+MIGRATION_READ_FAILURE = PASS
+```
+
+==================================================
+29. STORAGE TESTS
+==================================================
+
+Bắt buộc:
+
+```text id="p122b-tests2"
+LARGE_IMAGE_LESSON = PASS
+
+MULTIPLE_LARGE_IMAGE_LESSONS = PASS
+
+BASE64_NOT_STORED_IN_LOCALSTORAGE_FOR_NEW_IMPORT = PASS
+
+FULL_LESSON_NOT_STORED_IN_LOCALSTORAGE_FOR_NEW_IMPORT = PASS
+
+INDEXEDDB_REOPEN = PASS
+
+DELETE_INDEXEDDB_LESSON = PASS
+
+RECENT_REFERENCE_AFTER_DELETE = SAFE
+```
+
+==================================================
+30. SCALE TEST
+==================================================
+
+Test synthetic:
+
+```text id="p122b-scale"
+10 LESSONS
+50 LESSONS
+100 LESSONS
+250 LESSONS
+```
+
+Ghi:
+
+```text id="p122b-scale-result"
+SAVE RESULT
+
+LIST RESULT
+
+FILTER RESULT
+
+REOPEN RESULT
+
+STORAGE ERROR COUNT
+
+APPROX STORAGE USE
+```
+
+Không tuyên bố unlimited.
+
+==================================================
+31. OLD PAYLOAD CAPACITY ISSUE
+==================================================
+
+Vì P12.2B chưa cleanup old localStorage payload:
+
+migration trên máy đã full quota có thể cần đọc dữ liệu cũ nhưng không được ghi thêm payload lớn vào localStorage.
+
+Không tạo temporary localStorage copy.
+
+==================================================
+32. SPECIAL WINDOWS SCENARIO
+==================================================
+
+Chuẩn bị test cho đúng trường hợp GV:
+
+```text id="p122b-realcase"
+EXISTING LOCALSTORAGE NEAR/FULL
+
+MULTIPLE SAVED LESSONS
+
+IMAGE-HEAVY PACKAGES
+
+CURRENT LESSON ACTIVE
+```
+
+Sau migration:
+
+phải có khả năng nạp một lesson mới vào IndexedDB mà không cần thêm full payload vào localStorage.
+
+==================================================
+33. STORAGE HEALTH UI
+==================================================
+
+Chỉ UI tối thiểu nếu cần:
+
+```text id="p122b-health"
+Đang chuyển thư viện...
+
+Đã chuyển thư viện an toàn.
+
+Không thể mở bộ nhớ bài học.
+
+Dữ liệu cũ vẫn được giữ nguyên.
+```
+
+Không redesign Loader.
+
+==================================================
+34. WINDOWS RETEST KIT
+==================================================
+
+Tạo hướng dẫn cực ngắn để GV kiểm:
+
+```text id="p122b-windows-kit"
+1. BACKUP
+2. START P12.2B
+3. MIGRATE
+4. VERIFY OLD LESSONS
+5. IMPORT NEW IMAGE-HEAVY LESSON
+6. REOPEN
+7. CLOSE/RESTART WEB LIVE
+8. REOPEN AGAIN
+```
+
+Không yêu cầu GV tự xóa localStorage.
+
+==================================================
+35. CLEANUP STATUS
+==================================================
+
+Final report bắt buộc:
+
+```text id="p122b-cleanup-status"
+LOCALSTORAGE_LEGACY_CLEANUP =
+NOT_RUN_BY_DESIGN
+
+CLEANUP_APPROVAL =
+NOT_GRANTED
+
+P12_2C_REQUIRED_BEFORE_CLEANUP =
+YES
+```
+
+==================================================
+36. P11-F01 STATUS
+==================================================
+
+Cloud implementation PASS không được tự đổi P11-F01 thành FIXED.
+
+Sau P12.2B cloud:
+
+```text id="p122b-f01status"
+P11_F01_STATUS =
+PATCHED_AWAITING_WINDOWS_RETEST
+```
+
+Chỉ Windows test mới quyết định FIXED.
+
+==================================================
+37. CORE CHANGE REPORTING
+==================================================
+
+Vì P12.2A xác định Core bridge cần thiết:
+
+ghi rõ từng file Core thay đổi.
+
+Với mỗi file:
+
+```text id="p122b-core-report"
+FILE =
+LINES / FUNCTIONS =
+WHY REQUIRED =
+STORAGE-ONLY =
+BEHAVIOR OUTSIDE STORAGE CHANGED =
+```
+
+Nếu Core change lan sang renderer/navigation/profile behavior:
+
+```text id="p122b-stop-core"
+STOP
+```
+
+==================================================
+38. CANDIDATE
+==================================================
+
+Nếu technical gates PASS:
+
+tạo:
+
+```text id="p122b-candidate"
+WEB_LIVE_STORAGE_P12_2B_CANDIDATE
+```
+
+Tính SHA256.
+
+Không overwrite P12.1.
+
+Không Production.
+
+==================================================
+39. REQUIRED REPORTS
+==================================================
+
+Tạo:
+
+```text id="p122b-reports"
+P12_2B_IMPLEMENTATION_REPORT.md
+
+P12_2B_STORAGE_CONTRACT.md
+
+P12_2B_MIGRATION_TEST_EVIDENCE.md
+
+P12_2B_SCALE_TEST_REPORT.md
+
+P12_2B_REGRESSION_REPORT.md
+
+P12_2B_RISK_REGISTER.md
+
+P12_2B_WINDOWS_RETEST_GUIDE_VI.md
+```
+
+==================================================
+40. PASS GATE
+==================================================
+
+Chỉ technical PASS nếu:
+
+```text id="p122b-pass"
+P0_COUNT = 0
+
+P1_COUNT = 0
+
+DATA_LOSS_TEST = PASS
+
+MIGRATION_VERIFY = PASS
+
+ROLLBACK_FALLBACK = PASS
+
+PROFILE_CHANGE_REQUIRED = NO
+
+SOURCE_SCOPE_VIOLATION = NO
+
+PRODUCTION_MODIFIED = NO
+```
+
+P2/P3 nếu còn phải ghi rõ.
+
+==================================================
+41. FINAL BLOCK
+==================================================
+
+Trả:
+
+```text id="p122b-final"
+P12_1_SHA256_BEFORE =
+P12_1_SHA256_AFTER =
+P12_1_CANDIDATE_MUTATED =
+
+P11_F01_STATUS =
+
+INDEXEDDB_STORAGE =
+STORAGE_ADAPTER =
+CORE_STORAGE_BRIDGE =
+
+LOCALSTORAGE_SMALL_DATA_ONLY =
+NEW_FULL_LESSON_IN_LOCALSTORAGE =
+NEW_BASE64_ASSET_IN_LOCALSTORAGE =
+
+LEGACY_MIGRATION =
+MIGRATION_VERIFY =
+MIGRATION_COMMIT =
+MIGRATION_IDEMPOTENT =
+MIGRATION_INTERRUPTION_RECOVERY =
+
+OLD_LOCALSTORAGE_PAYLOAD_PRESERVED =
+LOCALSTORAGE_LEGACY_CLEANUP =
+CLEANUP_APPROVAL =
+
+INDEXEDDB_READ_FALLBACK =
+CURRENT_LESSON_PRESERVATION =
+
+SUBJECT_FILTER =
+GRADE_FILTER =
+WEEK_FILTER =
+PERIOD_FILTER =
+RECENT_LESSONS =
+REMEMBER_LAST_SUBJECT =
+
+LESSON_SUBJECT_SEPARATED_FROM_ENGINE =
+LEGACY_ENGINE_PRESERVED =
+TRUE_SUBJECT_MISMATCH_BLOCK =
+
+GEOMETRY_LOAD =
+ALGEBRA_LOAD =
+INFORMATICS_LOAD =
+LEGACY_LOAD =
+
+LEGACY_RUNTIME_REGRESSION =
+GEOMETRY_PROFILE_REGRESSION =
+ALGEBRA_PROFILE_REGRESSION =
+INFORMATICS_PROFILE_REGRESSION =
+NO_TEACH_AHEAD_GLOBAL =
+
+SCALE_10 =
+SCALE_50 =
+SCALE_100 =
+SCALE_250 =
+
+CORE_CHANGE_REQUIRED =
+CORE_FILES_CHANGED =
+PROFILE_CHANGE_REQUIRED =
+PROFILE_FILES_CHANGED =
+
+P12_2B_WINDOWS_RETEST =
+PHYSICAL_TV_VALIDATION =
+REAL_CLASSROOM_TRIAL =
+
+P0_COUNT =
+P1_COUNT =
+P2_COUNT =
+P3_COUNT =
+
+SOURCE_SCOPE_VIOLATION =
+PRODUCTION_MODIFIED =
+
+P12_2B_CANDIDATE =
+P12_2B_CANDIDATE_SHA256 =
+
+P12_2B_STATUS =
+RECOMMENDED_NEXT_ACTION =
+```
+
+==================================================
+42. STOP
+==================================================
+
+Sau:
+
+```text id="p122b-stop"
+IMPLEMENT STORAGE ADAPTER
+→ IMPLEMENT MINIMAL CORE BRIDGE
+→ COPY
+→ VERIFY
+→ COMMIT
+→ FAILURE TESTS
+→ SCALE TEST
+→ REGRESSION
+→ PACKAGE
+→ REPORT
+```
+
+STOP.
+
+KHÔNG CLEANUP OLD LOCALSTORAGE PAYLOAD.
+
+KHÔNG P12.2C.
+
+KHÔNG PHASE 13.
+
+KHÔNG PRODUCTION.
+
+Chờ GV kiểm thử P12.2B trên Windows.

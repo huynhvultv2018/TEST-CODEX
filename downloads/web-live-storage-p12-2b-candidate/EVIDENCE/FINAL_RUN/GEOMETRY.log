@@ -1,0 +1,14 @@
+Real package load: base figure + authored GT/KL, no automatic answer/object highlight
+Persistent base figure and annotation scope across GT/KL → analysis → proof → conclusion
+Authored analysis diagram progressive disclosure and analysis-object links
+Proof step 1 → step 2 changes segment/angle → triangle highlights; future proof absent before reveal
+Existing Focus click selects a disclosed earlier proof step and its authored objects
+Reused zoom, 70/30, 60/40, figure fullscreen and return preserve proof/highlight state
+Annotation persists on same figure; undo/redo/clear touch teacher strokes only
+Teacher reset reuses native zoom/focus reset and preserves base figure/current proof
+Conclusion retains base figure; explicit new-figure/reset separates scene and annotations
+All 35 enriched real Geometry screens × 2 states fit; imported lesson remains byte-equivalent in memory
+Point/segment/angle/triangle/circle plus line/ray/label/mark render authored coordinates only
+Explicit Geometry profile keeps vertical full-width MCQ with separate instructions at four TV sizes
+TV refresh restores persistent figure, current proof and related object highlights from existing state
+Zero browser runtime errors; no Geometry teacher controls on TV

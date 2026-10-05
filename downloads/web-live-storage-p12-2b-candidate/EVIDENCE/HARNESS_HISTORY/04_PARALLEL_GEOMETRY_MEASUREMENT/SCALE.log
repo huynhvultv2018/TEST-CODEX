@@ -1,0 +1,12 @@
+{"side":32,"count":10,"result":"PASS","rawBytes":32011,"usage":78790,"reopened":10}
+{"side":32,"count":50,"result":"PASS","rawBytes":160150,"usage":244060,"reopened":50}
+{"side":32,"count":100,"result":"PASS","rawBytes":320351,"usage":435589,"reopened":100}
+{"side":32,"count":250,"result":"PASS","rawBytes":800799,"usage":2138008,"reopened":250}
+{"side":96,"count":10,"result":"PASS","rawBytes":274705,"usage":327323,"reopened":10}
+{"side":96,"count":50,"result":"PASS","rawBytes":1373295,"usage":1449041,"reopened":50}
+{"side":96,"count":100,"result":"PASS","rawBytes":2746704,"usage":4652828,"reopened":100}
+{"side":96,"count":250,"result":"PASS","rawBytes":6866645,"usage":7325066,"reopened":250}
+{"side":192,"count":10,"result":"PASS","rawBytes":1039784,"usage":1104036,"reopened":10}
+{"side":192,"count":50,"result":"PASS","rawBytes":5199061,"usage":5327058,"reopened":50}
+{"side":192,"count":100,"result":"PASS","rawBytes":10398097,"usage":10626113,"reopened":100}
+{"side":192,"count":250,"result":"PASS","rawBytes":25995050,"usage":26480736,"reopened":250}

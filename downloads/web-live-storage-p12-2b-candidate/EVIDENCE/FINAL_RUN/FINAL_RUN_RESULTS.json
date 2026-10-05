@@ -1,0 +1,63 @@
+{
+  "result": "PASS",
+  "testedRuntimeUnchanged": true,
+  "suites": [
+    {
+      "suite": "P121_TARGETED",
+      "exitCode": 0,
+      "seconds": 27.88,
+      "result": "PASS"
+    },
+    {
+      "suite": "STORAGE",
+      "exitCode": 0,
+      "seconds": 44.34,
+      "result": "PASS"
+    },
+    {
+      "suite": "EXTENDED",
+      "exitCode": 0,
+      "seconds": 20.97,
+      "result": "PASS"
+    },
+    {
+      "suite": "SCALE",
+      "exitCode": 0,
+      "seconds": 162.38,
+      "result": "PASS"
+    },
+    {
+      "suite": "LIBRARY",
+      "exitCode": 0,
+      "seconds": 24.27,
+      "result": "PASS"
+    },
+    {
+      "suite": "GEOMETRY",
+      "exitCode": 0,
+      "seconds": 65.52,
+      "result": "PASS"
+    },
+    {
+      "suite": "ALGEBRA",
+      "exitCode": 0,
+      "seconds": 26.02,
+      "result": "PASS"
+    },
+    {
+      "suite": "INFORMATICS",
+      "exitCode": 0,
+      "seconds": 84.7,
+      "result": "PASS"
+    },
+    {
+      "suite": "LEGACY_MULTI_ENGINE",
+      "exitCode": 0,
+      "seconds": 175.12,
+      "result": "PASS"
+    }
+  ],
+  "windows": "UNRUN",
+  "physicalTV": "UNRUN",
+  "classroom": "UNRUN"
+}

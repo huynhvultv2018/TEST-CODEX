@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "mode": "DISPOSABLE_CONTEXT_NATIVE_START_FAILURE_INJECTION",
+  "beforeResume": {
+    "id": "SNAP_OLD",
+    "index": 1,
+    "answerStep": 1,
+    "activation": "a9d85d89-7220-452f-b9a0-27ce7e366540"
+  },
+  "afterFailure": {
+    "id": "SNAP_OLD",
+    "index": 1,
+    "answerStep": 1,
+    "activation": "a9d85d89-7220-452f-b9a0-27ce7e366540"
+  },
+  "errors": []
+}

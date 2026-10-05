@@ -1,0 +1,1 @@
+Initial parallel run failed full-width check where rows and grid were collected in separate browser calls. Other checks passed. Replaced measurement with a single same-frame DOM snapshot after fonts.ready, retaining exact <1px width and vertical-row assertions. Runtime/profile/CSS not changed for this harness correction. Subsequent final run determines acceptance.

@@ -1,0 +1,266 @@
+--- P12.1/WEB_LIVE/common.js
++++ P12.2B/WEB_LIVE/common.js
+@@ -2,8 +2,8 @@
+ let bc=null;try{bc=new BroadcastChannel(CH)}catch(_){}
+ function send(x){try{bc?.postMessage(x)}catch(_){}}
+ function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+-function readState(){try{return JSON.parse(localStorage.getItem(STATE_KEY)||'null')}catch(_){return null}}
+-function storeState(x){try{localStorage.setItem(STATE_KEY,JSON.stringify(x))}catch(_){}}
++function readState(){const saved=globalThis.WebLiveSubjectStorage?.readSession();if(saved)return saved;try{return JSON.parse(localStorage.getItem(STATE_KEY)||'null')}catch(_){return null}}
++function storeState(x){try{localStorage.setItem(STATE_KEY,JSON.stringify(x))}catch(_){}globalThis.WebLiveSubjectStorage?.saveSession(x);}
+ 
+ // A scene keeps the most recent figure; lesson.json remains unchanged.
+ function legacySceneKey(s){
+--- P12.1/WEB_LIVE/pedagogy-teacher.js
++++ P12.2B/WEB_LIVE/pedagogy-teacher.js
+@@ -48,10 +48,11 @@
+ pedagogyController=new PedagogyTeacher();
+ /* Restore only an accepted RC3 lesson/source at its saved index. A task opens
+  * with all disclosures hidden again. Do not resume apps or pending tools. */
+-function restorePedagogySession(){
++async function restorePedagogySession(){
+  if(lesson)return;
++ await WebLiveSubjectStorage.ready;if(lesson)return;
+  const saved=readState();if(!saved?.lessonId||!Number.isInteger(saved.index))return;
+- const x=getLesson(saved.lessonId);
++ let x;try{x=await WebLiveSubjectStorage.readLesson(saved.lessonId);}catch(_){return;}if(lesson)return;
+  if(!x||!valid(x)||x.id!==saved.lessonId||(x._runtimeSourceKey||'')!==(saved.lessonSourceKey||'')||saved.index<0||saved.index>=x.screens.length)return;
+  start(x,{index:saved.index,clock:saved.classroom?.clock});
+ }
+--- P12.1/WEB_LIVE/subject-loader.js
++++ P12.2B/WEB_LIVE/subject-loader.js
+@@ -54,7 +54,7 @@
+   recentList.replaceChildren();
+   if(!quick.recent.length){const empty=document.createElement('p');empty.className='muted';empty.textContent='Chưa có bài đã nạp thành công.';recentList.append(empty);return;}
+   for(const entry of quick.recent){
+-   const cached=getLesson(entry.id),metadata=cached||entry,row=document.createElement('div');row.className='quickRecentItem';
++   const cached=WebLiveSubjectStorage.getMetadata(entry.id),metadata=cached||entry,row=document.createElement('div');row.className='quickRecentItem';
+    const text=document.createElement('div'),title=document.createElement('b');title.textContent=String(metadata.title||entry.title||'Bài đã lưu');text.append(title);
+    const context=document.createElement('div');context.className='small';
+    const fields=[metadata.subject,metadata.grade??metadata.class,metadata.week,metadata.period];
+@@ -278,31 +278,22 @@
+   for(const {object,fields} of s.controllers){for(const key of Object.keys(object))if(!Object.hasOwn(fields,key))delete object[key];Object.assign(object,fields);}
+   if(lesson){rebuildSceneIndex(lesson);populateJump();render();sync();indicate();}else indicator.hidden=true;
+  }
+- function commit(){
+-  refresh();if(button.disabled||!pending)return;
+-  const prepared=pending,old=runtime();let storage,copy,step='storage';
+-  try{
+-   storage=new Map(Object.keys(localStorage).map(key=>[key,localStorage.getItem(key)]));
++ async function commit(){
++  refresh();if(button.disabled||!pending||busy)return;
++  const prepared=pending,ticket=revision;let copy,old=null,saved=false;
++  busy=true;button.disabled=true;
++  try{
+    copy=JSON.parse(JSON.stringify(prepared.lesson));
+-   // saveLesson must succeed before native start can replace the active lesson.
+-   saveLesson(copy,prepared.sourceKey);step='preflight';renderLibrary();step='start';start(copy);clear();
++   await saveLesson(copy,prepared.sourceKey);saved=true;
++   if(ticket!==revision){renderLibrary();warnStorage('Bài đã lưu, nhưng lựa chọn đã thay đổi; bài đang dạy được giữ nguyên.');return;}
++   renderLibrary();old=runtime();start(copy);clear();rememberSuccess(copy);
+   }catch(e){
+-   let rollbackFailed=false;
+-   // Remove only this failed transaction's new writes, never evict saved user data.
+-   if(storage){
+-    for(const key of ['lesson:'+copy?.id,'webLiveLibrary',STATE_KEY])try{if(!storage.has(key)&&localStorage.getItem(key)!==null)localStorage.removeItem(key);}catch(_){rollbackFailed=true;}
+-    for(const [key,value] of storage)try{if(localStorage.getItem(key)!==value)localStorage.setItem(key,value);}catch(_){rollbackFailed=true;}
+-   }
+-   try{if(lesson!==old.lesson||lessonActivation!==old.lessonActivation)restore(old);}catch(_){rollbackFailed=true;}
+-   $('importer').style.display='flex';
+-   error.dataset.valid='false';
+-   const quota=e?.name==='QuotaExceededError'||e?.code===22||e?.code===1014;
+-   error.textContent='Không nạp được bài; bài hiện tại được giữ nguyên. '+(quota?'Không đủ dung lượng lưu bài.':e.message);button.disabled=true;
+-   if(step==='storage'||rollbackFailed)warnStorage(rollbackFailed?'Không lưu được bài và không thể khôi phục đầy đủ dữ liệu lưu. Bài đang dạy vẫn được giữ trong phiên này; kiểm tra thư viện trước khi tải lại trang.':quota?'Không đủ dung lượng lưu bài. Bài đang dạy được giữ nguyên. Bạn có thể xóa một bài đã lưu không còn cần rồi thử lại.':'Không ghi được dữ liệu lưu bài. Bài đang dạy được giữ nguyên; hãy kiểm tra quyền lưu của trình duyệt rồi thử lại.');
+-   return;
+-  }
+-  // Optional quick-access writes are outside the essential lesson transaction.
+-  rememberSuccess(copy);
++   if(ticket!==revision&&!old)return;
++   let rollbackFailed=false;if(old&&(lesson!==old.lesson||lessonActivation!==old.lessonActivation))try{restore(old);}catch(_){rollbackFailed=true;}
++   $('importer').style.display='flex';error.dataset.valid='false';
++   pending=null;const message=rollbackFailed?'Chưa khôi phục đầy đủ trạng thái hiển thị; dữ liệu lưu vẫn được giữ nguyên.':saved?'Bài đã lưu nhưng chưa nạp được; bài hiện tại được giữ nguyên.':'Không nạp được bài; bài hiện tại được giữ nguyên.';error.textContent=message+' '+e.message;
++   warnStorage(message);
++  }finally{if(ticket===revision){busy=false;refresh();}}
+  }
+  const nativeStart=start;
+  start=function(...args){const value=nativeStart(...args);indicate();return value;};
+@@ -314,7 +305,7 @@
+   const saved=getLibrary(),entries=[],seen=new Set();
+   if(Array.isArray(saved))for(const entry of saved){
+    if(!entry||!['string','number'].includes(typeof entry.id)||seen.has(String(entry.id)))continue;
+-   seen.add(String(entry.id));const row=descriptor(entry,getLesson(entry.id));
++   seen.add(String(entry.id));const row=descriptor(entry,WebLiveSubjectStorage.getMetadata(entry.id));
+    if(!select.value||row.invalid||row.subjectId===select.value)entries.push(row);
+   }
+   populateFilter('grade',select.value?entries:[]);
+@@ -334,13 +325,30 @@
+   }
+  };
+  openSaved=function(id){
+-  const x=getLesson(id);
+-  if(!x){clear();error.textContent='Không tìm thấy bài đã lưu. Bài hiện tại được giữ nguyên.';renderLibrary();return;}
+-  // Recent can name a lesson outside the discovery filters; never relabel it.
+-  if(!matches(descriptor({id},x),Object.keys(filterState),true)){resetFilters();renderLibrary();}
+-  stage(async()=>({lesson:JSON.parse(JSON.stringify(x)),sourceKey:x._runtimeSourceKey}));
++  const ticket=revision+1;return stage(async()=>{
++   const x=await WebLiveSubjectStorage.readLesson(id);
++   if(!x)throw Error('Không tìm thấy bài đã lưu. Bài hiện tại được giữ nguyên.');
++   if(ticket===revision&&!matches(descriptor({id},x),Object.keys(filterState),true)){resetFilters();renderLibrary();}
++   return {lesson:x,sourceKey:x._runtimeSourceKey};
++  });
++ };
++ removeSaved=async function(id){
++  if(!confirm('Xóa bài này khỏi thư viện IndexedDB? Bản localStorage cũ vẫn giữ nguyên.'))return;
++  try{await deleteLesson(id);clear();renderLibrary();renderRecent();}catch(e){warnStorage(e.message);}
+  };
+  loadSample=function(){stage(async()=>({lesson:JSON.parse(JSON.stringify(sample))}));};
++ WebLiveSubjectStorage.setValidator(validate);
++ WebLiveSubjectStorage.setMigrationValidator(async x=>{validate(x);await assets({lesson:x});});
++ const migrateButton=document.createElement('button');migrateButton.type='button';migrateButton.id='migrateLegacyStorage';migrateButton.textContent='CHUYỂN THƯ VIỆN CŨ AN TOÀN';libraryBlock.before(migrateButton);
++ migrateButton.addEventListener('click',async()=>{
++  if(busy)return;migrateButton.disabled=true;busy=true;button.disabled=true;
++  try{await WebLiveSubjectStorage.migrateLegacyStorage();renderLibrary();}catch(e){warnStorage('Chuyển thư viện chưa hoàn tất. Dữ liệu cũ vẫn được giữ nguyên. '+e.message);}
++  finally{busy=false;migrateButton.disabled=false;refresh();}
++ });
++ addEventListener('webLiveStorageHealth',e=>warnStorage(e.detail.message));
++ addEventListener('webLiveStorageChanged',()=>renderLibrary());
++ WebLiveSubjectStorage.ready.then(()=>{renderLibrary();const h=WebLiveSubjectStorage.getStorageHealth();if(h.message)warnStorage(h.message);});
++
+  select.addEventListener('change',()=>{resetFilters();if(busy)clear();refresh();renderLibrary();});
+  button.addEventListener('click',commit);
+  for(const [id,type] of [['jsonfile','json'],['zipfile','zip']])$(id).onchange=event=>{const file=event.target.files[0];event.target.value='';if(!file)return;stage(async()=>type==='zip'?prepareLessonZip(file):{lesson:JSON.parse(await file.text())});};
+--- P12.1/WEB_LIVE/teacher.html
++++ P12.2B/WEB_LIVE/teacher.html
+@@ -239,7 +239,7 @@
+       <p id="error" role="alert"></p><div class="library"><h2>📚 Thư viện tiết dạy</h2><div id="library"></div></div>
+     </div>
+   </div>
+-  <script src="common.js"></script><script src="core-profiles.js"></script><script src="geometry-profile.js"></script><script src="pedagogy.js"></script><script src="math-atomic.js"></script><script src="classroom.js"></script><script src="zip.js"></script><script src="draw-board.js"></script><script src="cover-layer.js"></script><script src="smart-geometry.js"></script><script src="draw-board-teacher.js"></script><script src="cover-teacher.js"></script><script src="smart-geometry-teacher.js"></script><script src="teacher.js"></script><script src="classroom-teacher.js"></script><script src="ui-teacher.js"></script><script src="demo-teacher.js"></script><script src="pedagogy-teacher.js"></script>
++  <script src="common.js"></script><script src="core-profiles.js"></script><script src="geometry-profile.js"></script><script src="pedagogy.js"></script><script src="math-atomic.js"></script><script src="classroom.js"></script><script src="zip.js"></script><script src="subject-storage.js"></script><script src="draw-board.js"></script><script src="cover-layer.js"></script><script src="smart-geometry.js"></script><script src="draw-board-teacher.js"></script><script src="cover-teacher.js"></script><script src="smart-geometry-teacher.js"></script><script src="teacher.js"></script><script src="classroom-teacher.js"></script><script src="ui-teacher.js"></script><script src="demo-teacher.js"></script><script src="pedagogy-teacher.js"></script>
+   <script src="math-speech.js"></script><script src="tts-controller.js"></script><script src="tts-presentation.js"></script><script src="tts-teacher.js"></script>
+   <script src="cockpit.js"></script>
+   <script src="subject-loader.js"></script>
+--- P12.1/WEB_LIVE/teacher.js
++++ P12.2B/WEB_LIVE/teacher.js
+@@ -20,9 +20,9 @@
+  hideImporter();populateJump();render();sync();
+ }
+ function populateJump(){let j=$('jump');j.innerHTML=lesson.screens.map((s,n)=>`<option value="${n}">${n+1}. ${esc(s.title||s.type||'Màn hình')}</option>`).join('');j.value=i}
+-$('jsonfile').onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let x=validateLesson(JSON.parse(r.result));let missing=x.screens.flatMap(s=>[['image','imageData'],['geometryImage','geometryImageData'],['analysisImage','analysisImageData'],['analysisDiagram','analysisDiagramData']].filter(([a,b])=>{let path=assetPath(s[a]);return path&&!s[b]&&!s[a]?.imageData&&!s[a]?.data&&!path.startsWith('data:image/')}).map(([a])=>assetPath(s[a])));if(missing.length)throw Error('Ảnh cần nhập bằng LIVE.zip: '+[...new Set(missing)].join(', '));saveLesson(x);$('error').textContent='';renderLibrary();start(x)}catch(err){$('error').textContent='Không đọc được lesson.json: '+err.message}};r.onerror=()=>{$('error').textContent='Không đọc được tệp JSON'};r.readAsText(f,'utf-8');e.target.value=''};
++$('jsonfile').onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=async()=>{try{let x=validateLesson(JSON.parse(r.result));let missing=x.screens.flatMap(s=>[['image','imageData'],['geometryImage','geometryImageData'],['analysisImage','analysisImageData'],['analysisDiagram','analysisDiagramData']].filter(([a,b])=>{let path=assetPath(s[a]);return path&&!s[b]&&!s[a]?.imageData&&!s[a]?.data&&!path.startsWith('data:image/')}).map(([a])=>assetPath(s[a])));if(missing.length)throw Error('Ảnh cần nhập bằng LIVE.zip: '+[...new Set(missing)].join(', '));await saveLesson(x);$('error').textContent='';renderLibrary();start(x)}catch(err){$('error').textContent='Không đọc được lesson.json: '+err.message}};r.onerror=()=>{$('error').textContent='Không đọc được tệp JSON'};r.readAsText(f,'utf-8');e.target.value=''};
+ $('zipfile').onchange=async e=>{let f=e.target.files[0];if(!f)return;try{$('error').textContent='Đang nhập gói…';let x=await importZip(f);$('error').textContent='';renderLibrary();start(x)}catch(err){$('error').textContent='Không nhập được ZIP: '+err.message}e.target.value=''};
+-function loadSample(){saveLesson(sample);renderLibrary();start(sample)}
++async function loadSample(){await saveLesson(sample);renderLibrary();start(sample)}
+ function render(){if(!lesson)return;globalThis.WebLiveProfiles?.observe('teacher',lesson,{lessonId:currentLessonId,lessonActivation,lessonSourceKey:lesson._runtimeSourceKey||'',index:i,stateVersion});let s=lesson.screens[i],resolved=currentImage(),diagram=currentAnalysisDiagram(),img=!!resolved,analysis=img&&(isAnalysisScreen(s)||!!diagram),steps=liveAnalysisSteps(s);if(analysis&&viewMode==='text')viewMode='split';$('kind').textContent=s.type||'LIVE';$('screenNo').textContent=`${i+1}/${lesson.screens.length}`;$('lessonTitle').textContent=lesson.title||'';paintMath('title',normalizeLiveText(s.title||'','title'));paintMath('content',normalizeLiveText(livePedagogyContent(lesson,s,knowledgeCloseVisible),'prose'));$('content').hidden=livePedagogyIsClose(lesson,s)&&!knowledgeCloseVisible;paintMath('hint',normalizeLiveText(s.hint||'','hint')||'—');paintMath('answer',liveAnswerText(s,'full')||'—');paintMath('analysisBox',liveAnalysisText(s,steps.length)||'—');$('analysisSection').hidden=!steps.length;$('analysisBtn').hidden=!steps.length;$('note').textContent=s.teacherNote||s.note||'—';$('progress').textContent=`${lesson.subject||''} • Tuần ${lesson.week??'-'} • Tiết ${lesson.period??'-'}`;$('jump').value=i;let ns=lesson.screens[i+1];$('nextBox').textContent=ns?`${i+2}. ${normalizeLiveText(ns.title||ns.type||'Màn hình tiếp theo','title')}`:'Hết tiết';
+  let scr=$('screen'),fp=$('figurePane'),p=$('pic');scr.className='screen '+(img?'hasImage':'textOnly')+(img&&viewMode!=='split'?' '+viewMode:'')+(analysis?' analysis':'');fp.hidden=!img;$('geometryTools').style.display=img?'block':'none';$('imageStatus').hidden=true;if(img){if(p.src!==resolved.imageData){p.onload=applyZoom;p.onerror=()=>{$('imageStatus').hidden=false;$('imageStatus').textContent='Không đọc được ảnh: '+(resolved.image||'ảnh nhúng')};p.src=resolved.imageData}requestAnimationFrame(applyZoom)}else{p.removeAttribute('src')}
+  let af=$('analysisFigure'),ap=$('analysisPic');af.hidden=!diagram||!!steps.length;if(diagram&&!steps.length){if(ap.src!==diagram.imageData)ap.src=diagram.imageData}else ap.removeAttribute('src');
+@@ -51,7 +51,7 @@
+ function openTV(){tvWindow=window.open('tv.html','WEB_LIVE_TV','width=1280,height=720');setTimeout(sync,350);setTimeout(sync,900);tvWindow?.focus()}
+ function showImporter(){window.ttsUI?.cancel('Đã dừng để chọn bài.');$('importer').style.display='flex';renderLibrary()}function hideImporter(){$('importer').style.display='none'}
+ function renderLibrary(){let lib=getLibrary(),el=$('library');if(!lib.length){el.innerHTML='<p class="muted">Chưa có tiết dạy đã lưu.</p>';return}el.innerHTML=lib.map(x=>`<div class="item"><div><b>${esc(x.title)}</b><div class="small">${esc(x.subject)} • Tuần ${esc(x.week)} • Tiết ${esc(x.period)}</div></div><div><button onclick="openSaved('${jsq(x.id)}')">MỞ</button> <button onclick="removeSaved('${jsq(x.id)}')">XÓA</button></div></div>`).join('')}
+-function jsq(v){return String(v).replace(/\\/g,'\\\\').replace(/'/g,"\\'")}function openSaved(id){let x=getLesson(id);if(x)start(x)}function removeSaved(id){if(confirm('Xóa bài này khỏi thư viện cục bộ?')){deleteLesson(id);renderLibrary()}}
++function jsq(v){return String(v).replace(/\\/g,'\\\\').replace(/'/g,"\\'")}async function openSaved(id){try{const x=await WebLiveSubjectStorage.readLesson(id);if(x)start(x)}catch(e){$('error').textContent=e.message}}async function removeSaved(id){if(confirm('Xóa bài này khỏi thư viện IndexedDB? Bản localStorage cũ vẫn giữ nguyên.'))try{await deleteLesson(id);renderLibrary()}catch(e){$('error').textContent=e.message}}
+ function onPeer(d,source){if(d?.type==='classroomToggleFigure'&&lesson&&d.lessonId===currentLessonId&&d.lessonActivation===lessonActivation){classroomController?.toggleFigure();return}if(d?.type==='ready'){sync();return}if(d?.type==='needDrawBoard'&&lesson&&d.lessonId===currentLessonId){boardController?.snapshot(d.scope,source);return}if(d?.type==='needCoverLayer'&&lesson&&d.lessonId===currentLessonId){coverController?.snapshot(d.scope,source);return}if(d?.type==='needSmartGeometry'&&lesson&&d.lessonId===currentLessonId){smartController?.snapshot(d.scope,source);return}if(d?.type==='needLesson'&&lesson&&d.lessonId===currentLessonId&&(!d.lessonActivation||d.lessonActivation===lessonActivation)){let response={type:'lesson',lesson,lessonActivation};if(source?.postMessage)source.postMessage(response,'*');else send(response)}}
+ if(bc)bc.onmessage=e=>onPeer(e.data);window.addEventListener('message',e=>onPeer(e.data,e.source));
+ document.addEventListener('keydown',e=>{if(['INPUT','SELECT','TEXTAREA'].includes(document.activeElement.tagName))return;if(e.key==='ArrowRight')next();else if(e.key==='ArrowLeft')prev();else if(e.key.toLowerCase()==='g')toggleHint();else if(e.key.toLowerCase()==='a')toggleAnswer();else if(e.key.toLowerCase()==='s')revealStep();else if(e.key.toLowerCase()==='f')setMode('figure');else if(e.key.toLowerCase()==='t')setMode('text');else if(e.key.toLowerCase()==='d')setMode('split');else if(e.key==='+'||e.key==='=')zoomBy(.15);else if(e.key==='-')zoomBy(-.15)});
+--- P12.1/WEB_LIVE/tv.html
++++ P12.2B/WEB_LIVE/tv.html
+@@ -51,6 +51,6 @@
+     </main>
+     <div class="foot"><span id="progress"></span><div id="bar" class="bar"></div></div>
+   </div>
+-  <script src="common.js"></script><script src="core-profiles.js"></script><script src="geometry-profile.js"></script><script src="pedagogy.js"></script><script src="math-atomic.js"></script><script src="classroom.js"></script><script src="draw-board.js"></script><script src="cover-layer.js"></script><script src="smart-geometry.js"></script><script src="draw-board-tv.js"></script><script src="cover-tv.js"></script><script src="smart-geometry-tv.js"></script><script src="tv-layout.js"></script><script src="tv-layout-computer.js"></script><script src="tv-layout-algebra.js"></script><script src="tv-layout-geometry.js"></script><script src="tv-content.js"></script><script src="tv-layout-model.js"></script><script src="tts-presentation.js"></script><script src="tts-tv.js"></script><script src="tv.js"></script>
++  <script src="common.js"></script><script src="core-profiles.js"></script><script src="geometry-profile.js"></script><script src="pedagogy.js"></script><script src="math-atomic.js"></script><script src="classroom.js"></script><script src="draw-board.js"></script><script src="cover-layer.js"></script><script src="smart-geometry.js"></script><script src="draw-board-tv.js"></script><script src="cover-tv.js"></script><script src="smart-geometry-tv.js"></script><script src="tv-layout.js"></script><script src="tv-layout-computer.js"></script><script src="tv-layout-algebra.js"></script><script src="tv-layout-geometry.js"></script><script src="tv-content.js"></script><script src="tv-layout-model.js"></script><script src="tts-presentation.js"></script><script src="tts-tv.js"></script><script src="subject-storage.js"></script><script src="tv.js"></script>
+ </body>
+ </html>
+--- P12.1/WEB_LIVE/tv.js
++++ P12.2B/WEB_LIVE/tv.js
+@@ -5,13 +5,24 @@
+ const $=id=>document.getElementById(id);
+ const wait=$('wait'),screenEl=$('screen'),meta=$('meta'),title=$('title'),content=$('content'),analysis=$('analysis'),analysisFigure=$('analysisFigure'),analysisPic=$('analysisPic'),hint=$('hint'),answer=$('answer'),figurePane=$('figurePane'),figureInner=$('figureInner'),pic=$('pic'),pointer=$('pointer'),progress=$('progress'),bar=$('bar');
+ let cachedLesson=null,cachedActivation='',lastState=null,boardViewer=null,coverViewer=null,smartViewer=null;
++const pendingLessonReads=new Set();
++// Storage-only fallback notice, outside the cognitive panel; no layout/renderer change.
++const storageNotice=document.createElement('div');storageNotice.id='tvStorageWarning';storageNotice.setAttribute('role','status');storageNotice.hidden=true;
++storageNotice.style.cssText='position:fixed;bottom:8px;left:16px;z-index:30;font-size:16px;background:#172033;color:#fff;padding:4px 8px;max-width:80vw';document.body.append(storageNotice);
++function storageReadNotice(id){const h=WebLiveSubjectStorage.getStorageHealth();storageNotice.hidden=h.lessonId!==id||!h.message.includes('Đang dùng bản bài cũ');storageNotice.textContent=storageNotice.hidden?'':'⚠ Đang dùng bản bài cũ đã kiểm tra.';}
++
+ function getLesson(id,activation='',sourceKey=''){
+  if(cachedLesson?.id===id&&cachedActivation===activation&&(!sourceKey||cachedLesson._runtimeSourceKey===sourceKey))return cachedLesson;
+- try{
+-  const found=JSON.parse(localStorage.getItem('lesson:'+id));
+-  if(!found||sourceKey&&found._runtimeSourceKey!==sourceKey)return null;
+-  cachedLesson=found;cachedActivation=activation;rebuildSceneIndex(found);return found;
+- }catch(_){return null}
++ const token=JSON.stringify([id,activation,sourceKey]);
++ if(!pendingLessonReads.has(token)){
++  pendingLessonReads.add(token);
++  WebLiveSubjectStorage.ready.then(()=>WebLiveSubjectStorage.readLesson(id)).then(found=>{
++   if(!found||sourceKey&&found._runtimeSourceKey!==sourceKey)return;
++   if(lastState?.lessonId!==id||(lastState.lessonActivation||'')!==activation||(lastState.lessonSourceKey||'')!==sourceKey)return;
++   cachedLesson=found;cachedActivation=activation;rebuildSceneIndex(found);storageReadNotice(id);applyState(lastState);
++  }).catch(()=>{}).finally(()=>pendingLessonReads.delete(token));
++ }
++ return null;
+ }
+ function resolveScreen(d){let active=getLesson(d.lessonId,d.lessonActivation||'',d.lessonSourceKey||'');return active?.screens?.[d.index]||null}
+ function answerText(d,s){return liveAnswerText(s,d.answerMode,d.answerStep||0)}
+@@ -135,7 +146,7 @@
+  globalThis.WebLiveProfiles?.present(embeddedPreview?'preview':'tv',active,d,screenEl);
+  requestAnimationFrame(()=>{fitText();TTSTVPresentation.refresh(d);globalThis.WebLiveProfiles?.tvRendered(d);});
+ }
+-function receive(d){if(d?.type==='smartGeometry'){smartViewer?.refresh(d);return}if(d?.type==='smartSnapshot'){smartViewer?.snapshot(d);return}if(d?.type==='coverLayer'){coverViewer?.refresh(d);return}if(d?.type==='coverSnapshot'){coverViewer?.snapshot(d);return}if(d?.type==='drawBoardPreview'){boardViewer?.transient(d);smartViewer?.fit();return}if(d?.type==='drawBoardPreviewEnd'){boardViewer?.endTransient(d);smartViewer?.fit();return}if(d?.type==='drawBoard'){boardViewer?.refresh(d);smartViewer?.fit();return}if(d?.type==='drawBoardSnapshot'){boardViewer?.snapshot(d);smartViewer?.fit();return}if(d?.type==='lesson'&&d.lesson){if(!lastState||d.lesson.id!==lastState.lessonId||d.lessonActivation!==lastState.lessonActivation||lastState.lessonSourceKey&&d.lesson._runtimeSourceKey!==lastState.lessonSourceKey)return;cachedLesson=d.lesson;cachedActivation=d.lessonActivation||'';rebuildSceneIndex(d.lesson);try{localStorage.setItem('lesson:'+d.lesson.id,JSON.stringify(d.lesson))}catch(_){}applyState(lastState)}else applyState(d)}
++function receive(d){if(d?.type==='state'&&d.lessonId!==cachedLesson?.id)storageNotice.hidden=true;if(d?.type==='smartGeometry'){smartViewer?.refresh(d);return}if(d?.type==='smartSnapshot'){smartViewer?.snapshot(d);return}if(d?.type==='coverLayer'){coverViewer?.refresh(d);return}if(d?.type==='coverSnapshot'){coverViewer?.snapshot(d);return}if(d?.type==='drawBoardPreview'){boardViewer?.transient(d);smartViewer?.fit();return}if(d?.type==='drawBoardPreviewEnd'){boardViewer?.endTransient(d);smartViewer?.fit();return}if(d?.type==='drawBoard'){boardViewer?.refresh(d);smartViewer?.fit();return}if(d?.type==='drawBoardSnapshot'){boardViewer?.snapshot(d);smartViewer?.fit();return}if(d?.type==='lesson'&&d.lesson){if(!lastState||d.lesson.id!==lastState.lessonId||d.lessonActivation!==lastState.lessonActivation||lastState.lessonSourceKey&&d.lesson._runtimeSourceKey!==lastState.lessonSourceKey)return;cachedLesson=d.lesson;cachedActivation=d.lessonActivation||'';rebuildSceneIndex(d.lesson);/* Peer lesson is RAM only; persistent storage belongs to Loader adapter. */applyState(lastState)}else applyState(d)}
+ function updateClassroomClock(){const el=$('classroomClock'),label=Classroom.clockText(lastState?.classroom?.clock);el.hidden=!label;if(label)el.textContent=label}
+ let chromeTimeout=0;
+ function revealChrome(e){if(e.clientY>90&&e.clientY<(window.innerHeight||1080)-85)return;const root=$('tvRoot');root.classList.add('chromeVisible');clearTimeout(chromeTimeout);chromeTimeout=setTimeout(()=>root.classList.remove('chromeVisible'),2500)}
+@@ -158,3 +169,6 @@
+ }
+ reportPresence();setInterval(()=>reportPresence(),1500);
+ window.addEventListener('pagehide',()=>reportPresence(true));
++
++// Re-read durable session only after storage bootstrap has completed.
++WebLiveSubjectStorage.ready.then(()=>receive(readState()));
+--- P12.1/WEB_LIVE/zip.js
++++ P12.2B/WEB_LIVE/zip.js
+@@ -29,28 +29,15 @@
+  return out;
+ }
+ function txt(u){return new TextDecoder('utf-8',{fatal:true}).decode(u)}
+-function getLibrary(){try{return JSON.parse(localStorage.getItem('webLiveLibrary')||'[]')}catch(_){return[]}}
+-function getLesson(id){try{return JSON.parse(localStorage.getItem('lesson:'+id))}catch(_){return null}}
++function getLibrary(){return globalThis.WebLiveSubjectStorage?.listLessons()||[]}
++function getLesson(id){return globalThis.WebLiveSubjectStorage?.peekLesson(id)||null}
+ function fingerprint(bytes){
+  let h=0xcbf29ce484222325n;for(const b of bytes)h=BigInt.asUintN(64,(h^BigInt(b))*0x100000001b3n);
+  return h.toString(16).padStart(16,'0');
+ }
+ function assetPath(value){return typeof value==='string'?value:(value&&typeof value==='object'?(value.path||value.src||value.image||''):'')}
+-function saveLesson(x,sourceKey){
+- const key=sourceKey||'json:'+fingerprint(new TextEncoder().encode(JSON.stringify(x)));
+- const original=String(x.id||x.packageId||`${x.subject||'BAI'}_${x.week||0}_${x.period||0}`);
+- let id=original,prior=getLesson(id);
+- if(prior&&prior._runtimeSourceKey!==key){
+-  const same=JSON.stringify(prior.screens)===JSON.stringify(x.screens)&&prior.title===x.title&&prior.subject===x.subject;
+-  if(!same)id=original+'~'+key.replace(/[^a-zA-Z0-9]/g,'').slice(-16);
+- }
+- x._runtimeSourceKey=key;
+- let lib=getLibrary();
+- x.id=id;let k=lib.findIndex(v=>v.id===id),meta={id,subject:x.subject||'',week:x.week??'',period:x.period??'',title:x.title||'Bài chưa đặt tên',savedAt:new Date().toISOString()};
+- if(k>=0)lib[k]=meta;else lib.unshift(meta);
+- localStorage.setItem('lesson:'+id,JSON.stringify(x));localStorage.setItem('webLiveLibrary',JSON.stringify(lib));return id;
+-}
+-function deleteLesson(id){localStorage.removeItem('lesson:'+id);localStorage.setItem('webLiveLibrary',JSON.stringify(getLibrary().filter(x=>x.id!==id)))}
++async function saveLesson(x,sourceKey){if(!globalThis.WebLiveSubjectStorage)throw Error('Không thể mở bộ nhớ bài học.');await WebLiveSubjectStorage.ready;return WebLiveSubjectStorage.saveLesson(x,sourceKey)}
++async function deleteLesson(id){if(!globalThis.WebLiveSubjectStorage)throw Error('Không thể mở bộ nhớ bài học.');await WebLiveSubjectStorage.ready;return WebLiveSubjectStorage.deleteLesson(id)}
+ function validateLesson(x){if(!x||!Array.isArray(x.screens)||!x.screens.length)throw Error('lesson.json thiếu screens[] hoặc không có màn hình');return x}
+ async function prepareLessonZip(file){
+  const bytes=new Uint8Array(await file.arrayBuffer()),sourceKey='zip:'+fingerprint(bytes);
+@@ -76,6 +63,6 @@
+ }
+ 
+ // Keep the existing import API for internal/backward-compatible callers.
+-async function importZip(file){const prepared=await prepareLessonZip(file);saveLesson(prepared.lesson,prepared.sourceKey);return prepared.lesson;}
++async function importZip(file){const prepared=await prepareLessonZip(file);await saveLesson(prepared.lesson,prepared.sourceKey);return prepared.lesson;}
+ 
+ function zipCRC32(bytes){let crc=0xffffffff;for(const byte of bytes){crc^=byte;for(let bit=0;bit<8;bit++)crc=(crc>>>1)^((crc&1)?0xedb88320:0);}return (crc^0xffffffff)>>>0;}

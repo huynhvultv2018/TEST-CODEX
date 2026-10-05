@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WEB LIVE TV LAYOUT RC4 CANDIDATE — TV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="draw-board.css">
+  <link rel="stylesheet" href="smart-geometry.css">
+  <link rel="stylesheet" href="classroom.css">
+  <link rel="stylesheet" href="tv-ui.css">
+  <link rel="stylesheet" href="tts-highlight.css">
+  <link rel="stylesheet" href="cognitive-tv.css">
+  <link rel="stylesheet" href="geometry-profile.css">
+</head>
+<body>
+  <div class="tv" id="tvRoot">
+    <button type="button" class="tvFull" onclick="full()" title="Toàn màn hình TV" aria-label="Bật hoặc tắt toàn màn hình TV">⛶</button>
+    <div class="top" hidden><div class="meta" id="meta"></div></div>
+    <div class="tvInfoBar" aria-label="Thông tin bài học"><span id="tvInfoContext"></span><span id="classroomClock" class="classroomClock" hidden></span><span id="tvStage" class="tvStage"></span><span id="tvInfoProgress"></span></div>
+    <main class="stage">
+      <div id="wait" class="wait">Đang chờ bài học từ giáo viên…</div>
+      <div id="screen" class="screen text" hidden>
+        <header id="taskHeader" class="taskHeader" hidden><h1 id="sectionTitle"></h1><div id="activityTitle"></div></header>
+        <section id="figurePane" class="figurePane" aria-label="Hình học của bài toán">
+          <div class="figureViewport">
+            <div id="figureInner" class="figureInner">
+              <img id="pic" alt="Hình học của bài toán">
+              <svg id="coverLayer" class="coverSvg" aria-label="Vùng che trên hình"></svg>
+              <svg id="smartLayer" class="smartSvg" aria-label="Ký hiệu hình học"></svg>
+              <svg id="drawOverlay" class="drawSvg" aria-label="Hình vẽ trực tiếp"></svg>
+              <svg id="classroomHighlight" class="classroomHighlight" aria-label="Nhấn mạnh hình học"></svg>
+              <div id="pointer" class="pointer" hidden></div>
+            </div>
+          </div>
+          <div id="resourceCaption" class="resourceCaption" hidden></div>
+        </section>
+        <section id="situationPane" class="situationPane" hidden><div class="taskLabel">Tình huống</div><div id="situationText" class="content"></div></section>
+        <section class="textPane">
+          <div id="activityBadge" class="activityBadge" hidden></div>
+          <div id="taskLabel" class="taskLabel" hidden><span aria-hidden="true">?</span><span id="taskLabelText">Câu hỏi trọng tâm</span><span id="taskPart"></span></div>
+          <h1 class="title" id="title"></h1>
+          <div class="content" id="content"></div><div class="content" id="knowledgeWait" hidden>Chờ giáo viên chốt kiến thức.</div>
+          <div class="reveal hint" id="hint" hidden></div>
+          <div class="reveal analysisReveal" id="analysis" hidden></div>
+          <div id="analysisFigure" class="analysisFigure" hidden><img id="analysisPic" alt="Sơ đồ phân tích"></div>
+          <div class="reveal answer" id="answer" hidden></div>
+        </section>
+      </div>
+      <div id="whiteBoardPane" class="whiteBoardPane" hidden><svg id="drawWhite" class="drawSvg" aria-label="Bảng vẽ"></svg></div>
+    </main>
+    <div class="foot"><span id="progress"></span><div id="bar" class="bar"></div></div>
+  </div>
+  <script src="common.js"></script><script src="core-profiles.js"></script><script src="geometry-profile.js"></script><script src="pedagogy.js"></script><script src="math-atomic.js"></script><script src="classroom.js"></script><script src="draw-board.js"></script><script src="cover-layer.js"></script><script src="smart-geometry.js"></script><script src="draw-board-tv.js"></script><script src="cover-tv.js"></script><script src="smart-geometry-tv.js"></script><script src="tv-layout.js"></script><script src="tv-layout-computer.js"></script><script src="tv-layout-algebra.js"></script><script src="tv-layout-geometry.js"></script><script src="tv-content.js"></script><script src="tv-layout-model.js"></script><script src="tts-presentation.js"></script><script src="tts-tv.js"></script><script src="subject-storage.js"></script><script src="tv.js"></script>
+</body>
+</html>

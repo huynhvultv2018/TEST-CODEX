@@ -1,0 +1,261 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "MATHJAX_RENDERING + EXPRESSION_RENDERING: local SVG powers/root/polynomial",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "Hidden hint source and answer absent from TV DOM",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "FRACTION_RENDERING: numerator above denominator with visible bar",
+      "result": "PASS",
+      "evidence": {
+        "children": [
+          {
+            "y": 558.828125,
+            "height": 45.487060546875
+          },
+          {
+            "y": 641.653564453125,
+            "height": 41.16943359375
+          }
+        ],
+        "bars": 1
+      }
+    },
+    {
+      "name": "HINT_CONTROL: native toggle reveals/hides only hint, no answer",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "STEP_REVEAL + STEP_HIGHLIGHT: native 1→2→3, current/completed/disclosure states; future4 absent",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "ALGEBRA_FOCUS: previous visible/dim, current strong, exact clear restoration and preserved native state",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "Earlier-step Focus changes emphasis only; native current step remains current",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "Previous Step/Hide Answer remove later proof and all concealed metadata",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "ANSWER_CONTROL + authored original/transformation/reason/result: full only on native command",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "EQUATION_RENDERING: native equation and disclosed transformation rendered SVG",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "INEQUALITY_RENDERING: authored inequality direction and reason preserved",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "SYSTEM_RENDERING: brace, two separate equation rows, not flattened",
+      "result": "PASS",
+      "evidence": {
+        "rows": [
+          {
+            "y": 561.2540283203125,
+            "height": 52.9117431640625
+          },
+          {
+            "y": 634.1749267578125,
+            "height": 52.9725341796875
+          }
+        ],
+        "equations": 2
+      }
+    },
+    {
+      "name": "ERROR_COMPARISON: authored student/correct/rule only after associated step reveal",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "No student error or correction invented on a lesson without error-comparison data",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "All eight optional authored pedagogical stages; ten-screen questions fit three TV viewports",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "Algebra MCQ preserves four full-width vertical options, one rendered formula per option and separate instruction",
+      "result": "PASS",
+      "evidence": [
+        {
+          "x": 53.390625,
+          "y": 232.40625,
+          "width": 1173.21875,
+          "right": 1226.609375,
+          "overflow": false
+        },
+        {
+          "x": 53.390625,
+          "y": 353.6875,
+          "width": 1173.21875,
+          "right": 1226.609375,
+          "overflow": false
+        },
+        {
+          "x": 53.390625,
+          "y": 439.90625,
+          "width": 1173.21875,
+          "right": 1226.609375,
+          "overflow": false
+        },
+        {
+          "x": 53.390625,
+          "y": 528.359375,
+          "width": 1173.21875,
+          "right": 1226.609375,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "name": "Disclosed transformation/inequality/system/error-comparison fit 12 TV viewport cases",
+      "result": "PASS",
+      "evidence": [
+        {
+          "index": 2,
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 2,
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 2,
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 4,
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 4,
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 4,
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 5,
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 5,
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 5,
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 6,
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 6,
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "index": 6,
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        }
+      ]
+    },
+    {
+      "name": "Local MathJax continues after network disabled once assets are loaded",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "Native Teacher controls and embedded student preview share TV MathJax/disclosure",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "NO_TEACH_AHEAD: source memory unchanged, no generated methods, no future/answer/hint leak, no external runtime requests/errors",
+      "result": "PASS",
+      "evidence": {}
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "captures": [
+    "EXPRESSION_POWERS_ROOT.png",
+    "FRACTION_STACKED.png",
+    "FOCUS_STEP3_PREVIOUS_VISIBLE.png",
+    "EQUATION_STEP1.png",
+    "INEQUALITY.png",
+    "SYSTEM_TWO_ROWS.png",
+    "ERROR_COMPARISON.png",
+    "MCQ_VERTICAL_MATHJAX.png"
+  ],
+  "fixture": "Synthetic interface fixture only; not SGK or classroom validation",
+  "browser": "151.0.7922.173",
+  "mathjaxVersion": "3.2.2",
+  "nativeWindows": "UNRUN",
+  "realClassroomTrial": "UNRUN",
+  "coreChangeRequired": false
+}

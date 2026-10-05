@@ -1,0 +1,1215 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "ACTIVE_LEARNING_FLOW: nine optional authored stages, no standardization before native reveal",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "Absent activity metadata stays absent; no generated pedagogical chain",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "INSTRUCTION_RENDERING: task/instruction/action/self-check only at authored step gates",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "DEMO_RENDERING: native instruction steps/image/UI reference, demo note only Teacher; no launcher",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "PRACTICE_RENDERING + SAMPLE_PRODUCT_CONTROL: Full Answer alone never reveals sample or comparison",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "STUDENT_PRODUCT: expected and supplied student product remain distinct",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "CHECKPOINT_CONTROL: reveal checkpoint → GV confirmation → independent sample reveal",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "Sample + comparison + checkpoint + all three disclosed practice steps fit three TV viewports",
+      "result": "PASS",
+      "evidence": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        }
+      ]
+    },
+    {
+      "name": "Independent sample Hide removes sample and comparison from DOM",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "Hide Answer resets checkpoint/sample, no stale reveal on later step",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "CODE_RENDERING + CODE_HIGHLIGHT: exact authored line breaks, future3 absent, current line2",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "CODE_RENDERING: four-space indentation and code bytes preserved",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "INFORMATICS_FOCUS: code-step native Focus, previous visible/dim, exact clear restoration",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "Task/instruction/checkpoint focusStep maps to native answer Focus without hiding prior activity",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "Checkpoint Focus does not confirm checkpoint or reveal sample",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "Native Task Focus highlights authored task without changing disclosure",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "Algorithm-step Focus emphasizes authored linked rows; previous rows stay visible and clear preserves state",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "ALGORITHM_RENDERING: input/process/output/sequence/branch/loop authored gates",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "TABLE_RENDERING: semantic header/row relationships, source cells preserved, no avoidable overflow",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "MEDIA_RENDERING: local image/video playback/animated GIF/screenshot/diagram; original aspect ratio, no obstruction",
+      "result": "PASS",
+      "evidence": [
+        {
+          "id": "DEMO",
+          "w": 640,
+          "h": 360,
+          "displayRatio": 1.7777088823438227,
+          "naturalRatio": 1.7777777777777777
+        },
+        {
+          "id": "MEDIA_VIDEO",
+          "w": 320,
+          "h": 180,
+          "autoplay": false,
+          "controls": true,
+          "currentTime": 0.067451
+        },
+        {
+          "id": "MEDIA_ANIMATION",
+          "w": 160,
+          "h": 90,
+          "displayRatio": 1.7777777777777777,
+          "naturalRatio": 1.7777777777777777
+        },
+        {
+          "id": "MEDIA_SCREENSHOT",
+          "w": 640,
+          "h": 360,
+          "displayRatio": 1.7777088823438227,
+          "naturalRatio": 1.7777777777777777
+        },
+        {
+          "id": "MEDIA_DIAGRAM",
+          "w": 640,
+          "h": 360,
+          "displayRatio": 1.7777088823438227,
+          "naturalRatio": 1.7777777777777777
+        }
+      ]
+    },
+    {
+      "name": "HINT_CONTROL: native hint is independent, hide removes source from TV DOM",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "ANSWER_CONTROL: native full/hide respects sample and teacher-note separation",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "21 fixture screens × hidden/full × 3 TV viewports: 126 cases fit; no sample/note leak",
+      "result": "PASS",
+      "evidence": [
+        {
+          "screen": "FLOW_0",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_0",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_0",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_0",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_0",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_0",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_1",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_1",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_1",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_1",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_1",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_1",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_2",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_2",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_2",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_2",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_2",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_2",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_3",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_3",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_3",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_3",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_3",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_3",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_4",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_4",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_4",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_4",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_4",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_4",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_5",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_5",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_5",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_5",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_5",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_5",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_6",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_6",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_6",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_6",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_6",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_6",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_7",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_7",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_7",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_7",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_7",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_7",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_8",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_8",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_8",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_8",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_8",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "FLOW_8",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "DEMO",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "DEMO",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "DEMO",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "DEMO",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "DEMO",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "DEMO",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "PRACTICE",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "PRACTICE",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "PRACTICE",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "PRACTICE",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "PRACTICE",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "PRACTICE",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "CODE",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "CODE",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "CODE",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "CODE",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "CODE",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "CODE",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "ALGORITHM",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "ALGORITHM",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "ALGORITHM",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "ALGORITHM",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "ALGORITHM",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "ALGORITHM",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "TABLE",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "TABLE",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "TABLE",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "TABLE",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "TABLE",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "TABLE",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_VIDEO",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_VIDEO",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_VIDEO",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_VIDEO",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_VIDEO",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_VIDEO",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_ANIMATION",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_ANIMATION",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_ANIMATION",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_ANIMATION",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_ANIMATION",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_ANIMATION",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_SCREENSHOT",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_SCREENSHOT",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_SCREENSHOT",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_SCREENSHOT",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_SCREENSHOT",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_SCREENSHOT",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_DIAGRAM",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_DIAGRAM",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_DIAGRAM",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_DIAGRAM",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_DIAGRAM",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MEDIA_DIAGRAM",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "INSTRUCTION",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "INSTRUCTION",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "INSTRUCTION",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "INSTRUCTION",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "INSTRUCTION",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "INSTRUCTION",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "NO_METADATA",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "NO_METADATA",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "NO_METADATA",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "NO_METADATA",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "NO_METADATA",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "NO_METADATA",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MCQ",
+          "mode": "hidden",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MCQ",
+          "mode": "hidden",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MCQ",
+          "mode": "hidden",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MCQ",
+          "mode": "full",
+          "width": 1920,
+          "height": 1080,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MCQ",
+          "mode": "full",
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "horizontal": false
+        },
+        {
+          "screen": "MCQ",
+          "mode": "full",
+          "width": 1280,
+          "height": 720,
+          "overflow": false,
+          "horizontal": false
+        }
+      ]
+    },
+    {
+      "name": "MCQ remains four vertical full-width options; instruction separate",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "Profile-local disclosure syncs native Preview/TV and authorized same-activation reload",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "NO_TEACH_AHEAD: source memory unchanged, no generated code/pedagogy, hidden content absent, no runtime exceptions/external requests",
+      "result": "PASS",
+      "evidence": {}
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "captures": [
+    "DEMO_IMAGE.png",
+    "PRACTICE_SAMPLE_COMPARE.png",
+    "CODE_FOCUS3_PREVIOUS_VISIBLE.png",
+    "ALGORITHM.png",
+    "TABLE.png",
+    "MCQ_VERTICAL.png"
+  ],
+  "fixture": "Synthetic interface fixture only; not SGK or classroom validation",
+  "browser": "151.0.7922.173",
+  "nativeWindows": "UNRUN",
+  "realClassroomTrial": "UNRUN",
+  "coreChangeRequired": false
+}

@@ -1,0 +1,32 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "ORIGINAL_LAUNCHER_HTTP_HANDLER_HEALTH",
+      "result": "PASS"
+    },
+    {
+      "name": "NEW_ADAPTER_EXACT_BYTES_SERVED_BY_UNMODIFIED_NATIVE_HANDLER",
+      "result": "PASS"
+    },
+    {
+      "name": "REAL_EXISTING_ZIP_LOAD_THROUGH_NATIVE_HTTP",
+      "result": "PASS"
+    },
+    {
+      "name": "IDB_COMMITTED_LESSON_RETRIEVAL_NO_FULL_LOCALSTORAGE",
+      "result": "PASS"
+    },
+    {
+      "name": "STANDALONE_TV_ASYNC_IDB_RETRIEVAL",
+      "result": "PASS"
+    },
+    {
+      "name": "TEACHER_REOPEN_DURABLE_SESSION",
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "windows": "UNRUN",
+  "physicalTV": "UNRUN"
+}

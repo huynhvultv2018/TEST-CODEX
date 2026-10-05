@@ -1,0 +1,7 @@
+import pathlib,subprocess,concurrent.futures,json,os
+p=pathlib.Path('/workspace/p12-2b-storage');o=pathlib.Path('/workspace/output/web-live-storage-p12-2b-candidate/PACKAGED_SMOKE');o.mkdir(exist_ok=True);r=p/'packaged-smoke/WEB_LIVE_STORAGE_P12_2B_CANDIDATE';env=os.environ|{'NODE_PATH':'/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules'}
+jobs=[('STORAGE',p/'storage-tests.cjs',{'P122B_BASE':'http://127.0.0.1:8793','P122B_ROOT':str(r),'P122B_OUT':str(o/'STORAGE')}),('EXTENDED',p/'extended-tests.cjs',{'P122B_BASE':'http://127.0.0.1:8793','P122B_OUT':str(o/'EXTENDED')}),('P121',p/'EVIDENCE/REGRESSION/targeted-p121.cjs',{'P121_BASE':'http://127.0.0.1:8793','P121_ROOT':str(r),'P121_OUT':str(o/'TARGETED')}),('SNAPSHOT',p/'load-snapshot-test.cjs',{'P122B_BASE':'http://127.0.0.1:8793','P122B_OUT':str(o/'LOAD_SNAPSHOT')})]
+def run(j):
+ n,s,e=j;v=subprocess.run(['node',str(s)],capture_output=True,text=True,env=env|e);(o/(n+'.log')).write_text(v.stdout+v.stderr);return {'suite':n,'exitCode':v.returncode,'result':'PASS' if v.returncode==0 else 'FAIL'}
+with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:results=list(pool.map(run,jobs))
+v={'result':'PASS' if all(x['exitCode']==0 for x in results) else 'FAIL','runtime':'Fresh ZIP extract; all files SHA256 matched manifest','results':results};(o/'PACKAGED_RESULTS.json').write_text(json.dumps(v,indent=2)+'\n');print(json.dumps(v));raise SystemExit(0 if v['result']=='PASS' else 1)

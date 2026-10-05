@@ -1,0 +1,1469 @@
+{
+  "browser": "151.0.7922.173",
+  "checks": [
+    {
+      "name": "Real package load: base figure + authored GT/KL, no automatic answer/object highlight",
+      "result": "PASS"
+    },
+    {
+      "name": "Persistent base figure and annotation scope across GT/KL → analysis → proof → conclusion",
+      "result": "PASS"
+    },
+    {
+      "name": "Authored analysis diagram progressive disclosure and analysis-object links",
+      "result": "PASS"
+    },
+    {
+      "name": "Proof step 1 → step 2 changes segment/angle → triangle highlights; future proof absent before reveal",
+      "result": "PASS"
+    },
+    {
+      "name": "Existing Focus click selects a disclosed earlier proof step and its authored objects",
+      "result": "PASS"
+    },
+    {
+      "name": "Reused zoom, 70/30, 60/40, figure fullscreen and return preserve proof/highlight state",
+      "result": "PASS"
+    },
+    {
+      "name": "Annotation persists on same figure; undo/redo/clear touch teacher strokes only",
+      "result": "PASS"
+    },
+    {
+      "name": "Teacher reset reuses native zoom/focus reset and preserves base figure/current proof",
+      "result": "PASS"
+    },
+    {
+      "name": "Conclusion retains base figure; explicit new-figure/reset separates scene and annotations",
+      "result": "PASS"
+    },
+    {
+      "name": "All 35 enriched real Geometry screens × 2 states fit; imported lesson remains byte-equivalent in memory",
+      "result": "PASS"
+    },
+    {
+      "name": "Point/segment/angle/triangle/circle plus line/ray/label/mark render authored coordinates only",
+      "result": "PASS"
+    },
+    {
+      "name": "Explicit Geometry profile keeps vertical full-width MCQ with separate instructions at four TV sizes",
+      "result": "PASS"
+    },
+    {
+      "name": "TV refresh restores persistent figure, current proof and related object highlights from existing state",
+      "result": "PASS"
+    },
+    {
+      "name": "Zero browser runtime errors; no Geometry teacher controls on TV",
+      "result": "PASS"
+    }
+  ],
+  "visual": [
+    {
+      "name": "GEOMETRY_GT_KL",
+      "index": 5,
+      "figure": "VD2",
+      "stage": "QUESTION",
+      "ids": [],
+      "answer": "",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "2ad531a7-d675-4f1e-a6ca-4ce7c4d4e7f9",
+        "figureId": "VD2",
+        "region": null,
+        "step": -1,
+        "highlightIds": [],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 714.71875,
+      "panelWidth": 476.5,
+      "contentFont": 33.92,
+      "answerFont": 28
+    },
+    {
+      "name": "GEOMETRY_ANALYSIS_1",
+      "index": 7,
+      "figure": "VD2",
+      "stage": "PROOF",
+      "ids": [
+        "AH",
+        "CK"
+      ],
+      "answer": "",
+      "analysis": "Cần chứng minh AH ∥ CK và AH = CK.",
+      "geometry": {
+        "lessonActivation": "2ad531a7-d675-4f1e-a6ca-4ce7c4d4e7f9",
+        "figureId": "VD2",
+        "region": "analysis",
+        "step": 0,
+        "highlightIds": [
+          "AH",
+          "CK"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 714.71875,
+      "panelWidth": 476.5,
+      "contentFont": 33.92,
+      "answerFont": 28
+    },
+    {
+      "name": "GEOMETRY_ANALYSIS_2",
+      "index": 7,
+      "figure": "VD2",
+      "stage": "PROOF",
+      "ids": [
+        "AH",
+        "BD",
+        "CK"
+      ],
+      "answer": "",
+      "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "geometry": {
+        "lessonActivation": "2ad531a7-d675-4f1e-a6ca-4ce7c4d4e7f9",
+        "figureId": "VD2",
+        "region": "analysis",
+        "step": 1,
+        "highlightIds": [
+          "AH",
+          "CK",
+          "BD"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 714.71875,
+      "panelWidth": 476.5,
+      "contentFont": 30,
+      "answerFont": 28
+    },
+    {
+      "name": "GEOMETRY_PROOF_1",
+      "index": 9,
+      "figure": "VD2",
+      "stage": "PROOF",
+      "ids": [
+        "AD",
+        "CB",
+        "angle_ADH",
+        "angle_CBK"
+      ],
+      "answer": "AD = CB, góc D₁ = góc B₁.",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "2ad531a7-d675-4f1e-a6ca-4ce7c4d4e7f9",
+        "figureId": "VD2",
+        "region": "answer",
+        "step": 0,
+        "highlightIds": [
+          "AD",
+          "CB",
+          "angle_ADH",
+          "angle_CBK"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 714.71875,
+      "panelWidth": 476.5,
+      "contentFont": 33.92,
+      "answerFont": 28
+    },
+    {
+      "name": "GEOMETRY_PROOF_2",
+      "index": 9,
+      "figure": "VD2",
+      "stage": "PROOF",
+      "ids": [
+        "AH",
+        "CK",
+        "triangle_AHD",
+        "triangle_CKB"
+      ],
+      "answer": "AD = CB, góc D₁ = góc B₁.\n∆AHD ≅ ∆CKB ⇒ AH = CK.",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "2ad531a7-d675-4f1e-a6ca-4ce7c4d4e7f9",
+        "figureId": "VD2",
+        "region": "answer",
+        "step": 1,
+        "highlightIds": [
+          "triangle_AHD",
+          "triangle_CKB",
+          "AH",
+          "CK"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 714.71875,
+      "panelWidth": 476.5,
+      "contentFont": 30,
+      "answerFont": 28
+    },
+    {
+      "name": "GEOMETRY_CONCLUSION",
+      "index": 10,
+      "figure": "VD2",
+      "stage": "PROOF",
+      "ids": [
+        "AH",
+        "AK",
+        "CK",
+        "HC"
+      ],
+      "answer": "AHCK là hình bình hành.",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "2ad531a7-d675-4f1e-a6ca-4ce7c4d4e7f9",
+        "figureId": "VD2",
+        "region": "answer",
+        "step": 0,
+        "highlightIds": [
+          "AH",
+          "CK",
+          "HC",
+          "AK"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 714.71875,
+      "panelWidth": 476.5,
+      "contentFont": 33.92,
+      "answerFont": 28
+    },
+    {
+      "name": "GEOMETRY_OBJECT_MODEL",
+      "index": 5,
+      "figure": "VD2",
+      "stage": "QUESTION",
+      "ids": [
+        "A",
+        "AH",
+        "angle_ADH",
+        "circle_H",
+        "label_H",
+        "line_BD",
+        "mark_K",
+        "ray_AH",
+        "triangle_AHD"
+      ],
+      "answer": "",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "0fc4fc60-6080-4335-901e-41f9b8dbdd86",
+        "figureId": "VD2",
+        "region": null,
+        "step": -1,
+        "highlightIds": [
+          "A",
+          "AH",
+          "angle_ADH",
+          "triangle_AHD",
+          "circle_H",
+          "line_BD",
+          "ray_AH",
+          "label_H",
+          "mark_K"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 714.71875,
+      "panelWidth": 476.5,
+      "contentFont": 33.92,
+      "answerFont": 28
+    },
+    {
+      "name": "GT_KL_1920x1080",
+      "index": 5,
+      "figure": "VD2",
+      "stage": "QUESTION",
+      "ids": [
+        "A",
+        "AH",
+        "angle_ADH",
+        "circle_H",
+        "label_H",
+        "line_BD",
+        "mark_K",
+        "ray_AH",
+        "triangle_AHD"
+      ],
+      "answer": "",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "0fc4fc60-6080-4335-901e-41f9b8dbdd86",
+        "figureId": "VD2",
+        "region": null,
+        "step": -1,
+        "highlightIds": [
+          "A",
+          "AH",
+          "angle_ADH",
+          "triangle_AHD",
+          "circle_H",
+          "line_BD",
+          "ray_AH",
+          "label_H",
+          "mark_K"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 1252.03125,
+      "panelWidth": 536.578125,
+      "contentFont": 50.88,
+      "answerFont": 40.32
+    },
+    {
+      "name": "ANALYSIS_1920x1080",
+      "index": 7,
+      "figure": "VD2",
+      "stage": "PROOF",
+      "ids": [
+        "AH",
+        "BD",
+        "CK"
+      ],
+      "answer": "",
+      "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "geometry": {
+        "lessonActivation": "0fc4fc60-6080-4335-901e-41f9b8dbdd86",
+        "figureId": "VD2",
+        "region": "analysis",
+        "step": 1,
+        "highlightIds": [
+          "AH",
+          "CK",
+          "BD"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 1252.03125,
+      "panelWidth": 536.578125,
+      "contentFont": 43.2,
+      "answerFont": 40.32
+    },
+    {
+      "name": "PROOF_1920x1080",
+      "index": 9,
+      "figure": "VD2",
+      "stage": "PROOF",
+      "ids": [
+        "AH",
+        "CK",
+        "triangle_AHD",
+        "triangle_CKB"
+      ],
+      "answer": "AD = CB, góc D₁ = góc B₁.\n∆AHD ≅ ∆CKB ⇒ AH = CK.",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "0fc4fc60-6080-4335-901e-41f9b8dbdd86",
+        "figureId": "VD2",
+        "region": "answer",
+        "step": 1,
+        "highlightIds": [
+          "triangle_AHD",
+          "triangle_CKB",
+          "AH",
+          "CK"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 1252.03125,
+      "panelWidth": 536.578125,
+      "contentFont": 43.2,
+      "answerFont": 40.32
+    },
+    {
+      "name": "GT_KL_1600x900",
+      "index": 5,
+      "figure": "VD2",
+      "stage": "QUESTION",
+      "ids": [
+        "A",
+        "AH",
+        "angle_ADH",
+        "circle_H",
+        "label_H",
+        "line_BD",
+        "mark_K",
+        "ray_AH",
+        "triangle_AHD"
+      ],
+      "answer": "",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "0fc4fc60-6080-4335-901e-41f9b8dbdd86",
+        "figureId": "VD2",
+        "region": null,
+        "step": -1,
+        "highlightIds": [
+          "A",
+          "AH",
+          "angle_ADH",
+          "triangle_AHD",
+          "circle_H",
+          "line_BD",
+          "ray_AH",
+          "label_H",
+          "mark_K"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 1043.34375,
+      "panelWidth": 447.140625,
+      "contentFont": 42.4,
+      "answerFont": 33.6
+    },
+    {
+      "name": "ANALYSIS_1600x900",
+      "index": 7,
+      "figure": "VD2",
+      "stage": "PROOF",
+      "ids": [
+        "AH",
+        "BD",
+        "CK"
+      ],
+      "answer": "",
+      "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "geometry": {
+        "lessonActivation": "0fc4fc60-6080-4335-901e-41f9b8dbdd86",
+        "figureId": "VD2",
+        "region": "analysis",
+        "step": 1,
+        "highlightIds": [
+          "AH",
+          "CK",
+          "BD"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 1043.34375,
+      "panelWidth": 447.140625,
+      "contentFont": 36,
+      "answerFont": 33.6
+    },
+    {
+      "name": "PROOF_1600x900",
+      "index": 9,
+      "figure": "VD2",
+      "stage": "PROOF",
+      "ids": [
+        "AH",
+        "CK",
+        "triangle_AHD",
+        "triangle_CKB"
+      ],
+      "answer": "AD = CB, góc D₁ = góc B₁.\n∆AHD ≅ ∆CKB ⇒ AH = CK.",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "0fc4fc60-6080-4335-901e-41f9b8dbdd86",
+        "figureId": "VD2",
+        "region": "answer",
+        "step": 1,
+        "highlightIds": [
+          "triangle_AHD",
+          "triangle_CKB",
+          "AH",
+          "CK"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 1043.34375,
+      "panelWidth": 447.140625,
+      "contentFont": 36,
+      "answerFont": 33.6
+    },
+    {
+      "name": "GT_KL_1366x768",
+      "index": 5,
+      "figure": "VD2",
+      "stage": "QUESTION",
+      "ids": [
+        "A",
+        "AH",
+        "angle_ADH",
+        "circle_H",
+        "label_H",
+        "line_BD",
+        "mark_K",
+        "ray_AH",
+        "triangle_AHD"
+      ],
+      "answer": "",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "0fc4fc60-6080-4335-901e-41f9b8dbdd86",
+        "figureId": "VD2",
+        "region": null,
+        "step": -1,
+        "highlightIds": [
+          "A",
+          "AH",
+          "angle_ADH",
+          "triangle_AHD",
+          "circle_H",
+          "line_BD",
+          "ray_AH",
+          "label_H",
+          "mark_K"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 890.4375,
+      "panelWidth": 381.609375,
+      "contentFont": 36.199,
+      "answerFont": 28.686
+    },
+    {
+      "name": "ANALYSIS_1366x768",
+      "index": 7,
+      "figure": "VD2",
+      "stage": "PROOF",
+      "ids": [
+        "AH",
+        "BD",
+        "CK"
+      ],
+      "answer": "",
+      "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "geometry": {
+        "lessonActivation": "0fc4fc60-6080-4335-901e-41f9b8dbdd86",
+        "figureId": "VD2",
+        "region": "analysis",
+        "step": 1,
+        "highlightIds": [
+          "AH",
+          "CK",
+          "BD"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 890.4375,
+      "panelWidth": 381.609375,
+      "contentFont": 30.735,
+      "answerFont": 28.686
+    },
+    {
+      "name": "PROOF_1366x768",
+      "index": 9,
+      "figure": "VD2",
+      "stage": "PROOF",
+      "ids": [
+        "AH",
+        "CK",
+        "triangle_AHD",
+        "triangle_CKB"
+      ],
+      "answer": "AD = CB, góc D₁ = góc B₁.\n∆AHD ≅ ∆CKB ⇒ AH = CK.",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "0fc4fc60-6080-4335-901e-41f9b8dbdd86",
+        "figureId": "VD2",
+        "region": "answer",
+        "step": 1,
+        "highlightIds": [
+          "triangle_AHD",
+          "triangle_CKB",
+          "AH",
+          "CK"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 890.4375,
+      "panelWidth": 381.609375,
+      "contentFont": 30.735,
+      "answerFont": 28.686
+    },
+    {
+      "name": "GT_KL_1280x720",
+      "index": 5,
+      "figure": "VD2",
+      "stage": "QUESTION",
+      "ids": [
+        "A",
+        "AH",
+        "angle_ADH",
+        "circle_H",
+        "label_H",
+        "line_BD",
+        "mark_K",
+        "ray_AH",
+        "triangle_AHD"
+      ],
+      "answer": "",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "0fc4fc60-6080-4335-901e-41f9b8dbdd86",
+        "figureId": "VD2",
+        "region": null,
+        "step": -1,
+        "highlightIds": [
+          "A",
+          "AH",
+          "angle_ADH",
+          "triangle_AHD",
+          "circle_H",
+          "line_BD",
+          "ray_AH",
+          "label_H",
+          "mark_K"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 833.84375,
+      "panelWidth": 357.375,
+      "contentFont": 33.92,
+      "answerFont": 28
+    },
+    {
+      "name": "ANALYSIS_1280x720",
+      "index": 7,
+      "figure": "VD2",
+      "stage": "PROOF",
+      "ids": [
+        "AH",
+        "BD",
+        "CK"
+      ],
+      "answer": "",
+      "analysis": "Cần chứng minh AH ∥ CK và AH = CK.\n↓\nAH ⟂ BD, CK ⟂ BD ⇒ AH ∥ CK.",
+      "geometry": {
+        "lessonActivation": "0fc4fc60-6080-4335-901e-41f9b8dbdd86",
+        "figureId": "VD2",
+        "region": "analysis",
+        "step": 1,
+        "highlightIds": [
+          "AH",
+          "CK",
+          "BD"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 833.84375,
+      "panelWidth": 357.375,
+      "contentFont": 30,
+      "answerFont": 28
+    },
+    {
+      "name": "PROOF_1280x720",
+      "index": 9,
+      "figure": "VD2",
+      "stage": "PROOF",
+      "ids": [
+        "AH",
+        "CK",
+        "triangle_AHD",
+        "triangle_CKB"
+      ],
+      "answer": "AD = CB, góc D₁ = góc B₁.\n∆AHD ≅ ∆CKB ⇒ AH = CK.",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "0fc4fc60-6080-4335-901e-41f9b8dbdd86",
+        "figureId": "VD2",
+        "region": "answer",
+        "step": 1,
+        "highlightIds": [
+          "triangle_AHD",
+          "triangle_CKB",
+          "AH",
+          "CK"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 833.84375,
+      "panelWidth": 357.375,
+      "contentFont": 30,
+      "answerFont": 28
+    },
+    {
+      "name": "GEOMETRY_MCQ_1920x1080",
+      "index": 5,
+      "figure": "VD2",
+      "stage": "QUICK_CHECK",
+      "ids": [
+        "A",
+        "AH",
+        "angle_ADH",
+        "circle_H",
+        "label_H",
+        "line_BD",
+        "mark_K",
+        "ray_AH",
+        "triangle_AHD"
+      ],
+      "answer": "",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "c61fe901-18ad-41a5-ad1c-19d0d84a3f67",
+        "figureId": "VD2",
+        "region": null,
+        "step": -1,
+        "highlightIds": [
+          "A",
+          "AH",
+          "angle_ADH",
+          "triangle_AHD",
+          "circle_H",
+          "line_BD",
+          "ray_AH",
+          "label_H",
+          "mark_K"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 1073.171875,
+      "panelWidth": 715.4375,
+      "contentFont": 50.88,
+      "answerFont": 40.32
+    },
+    {
+      "name": "GEOMETRY_MCQ_1600x900",
+      "index": 5,
+      "figure": "VD2",
+      "stage": "QUICK_CHECK",
+      "ids": [
+        "A",
+        "AH",
+        "angle_ADH",
+        "circle_H",
+        "label_H",
+        "line_BD",
+        "mark_K",
+        "ray_AH",
+        "triangle_AHD"
+      ],
+      "answer": "",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "c61fe901-18ad-41a5-ad1c-19d0d84a3f67",
+        "figureId": "VD2",
+        "region": null,
+        "step": -1,
+        "highlightIds": [
+          "A",
+          "AH",
+          "angle_ADH",
+          "triangle_AHD",
+          "circle_H",
+          "line_BD",
+          "ray_AH",
+          "label_H",
+          "mark_K"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 894.296875,
+      "panelWidth": 596.203125,
+      "contentFont": 42.4,
+      "answerFont": 33.6
+    },
+    {
+      "name": "GEOMETRY_MCQ_1366x768",
+      "index": 5,
+      "figure": "VD2",
+      "stage": "QUICK_CHECK",
+      "ids": [
+        "A",
+        "AH",
+        "angle_ADH",
+        "circle_H",
+        "label_H",
+        "line_BD",
+        "mark_K",
+        "ray_AH",
+        "triangle_AHD"
+      ],
+      "answer": "",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "c61fe901-18ad-41a5-ad1c-19d0d84a3f67",
+        "figureId": "VD2",
+        "region": null,
+        "step": -1,
+        "highlightIds": [
+          "A",
+          "AH",
+          "angle_ADH",
+          "triangle_AHD",
+          "circle_H",
+          "line_BD",
+          "ray_AH",
+          "label_H",
+          "mark_K"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 763.234375,
+      "panelWidth": 508.828125,
+      "contentFont": 36.199,
+      "answerFont": 28.686
+    },
+    {
+      "name": "GEOMETRY_MCQ_1280x720",
+      "index": 5,
+      "figure": "VD2",
+      "stage": "QUICK_CHECK",
+      "ids": [
+        "A",
+        "AH",
+        "angle_ADH",
+        "circle_H",
+        "label_H",
+        "line_BD",
+        "mark_K",
+        "ray_AH",
+        "triangle_AHD"
+      ],
+      "answer": "",
+      "analysis": "",
+      "geometry": {
+        "lessonActivation": "c61fe901-18ad-41a5-ad1c-19d0d84a3f67",
+        "figureId": "VD2",
+        "region": null,
+        "step": -1,
+        "highlightIds": [
+          "A",
+          "AH",
+          "angle_ADH",
+          "triangle_AHD",
+          "circle_H",
+          "line_BD",
+          "ray_AH",
+          "label_H",
+          "mark_K"
+        ],
+        "sceneId": "geometry:VD2"
+      },
+      "overlayScope": "overlay:scene:VD2:5",
+      "geometryClass": true,
+      "imageSha256": "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+      "overflow": false,
+      "horizontal": false,
+      "figureWidth": 714.71875,
+      "panelWidth": 476.5,
+      "contentFont": 33.92,
+      "answerFont": 28
+    }
+  ],
+  "errors": [],
+  "realPackageScreens": 35,
+  "realStates": [
+    {
+      "index": 0,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 0,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 1,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 1,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 2,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 2,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 3,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 3,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 4,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 4,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 5,
+      "answerMode": "hidden",
+      "figureId": "VD2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 5,
+      "answerMode": "full",
+      "figureId": "VD2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 6,
+      "answerMode": "hidden",
+      "figureId": "VD2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 6,
+      "answerMode": "full",
+      "figureId": "VD2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 7,
+      "answerMode": "hidden",
+      "figureId": "VD2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 7,
+      "answerMode": "full",
+      "figureId": "VD2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 8,
+      "answerMode": "hidden",
+      "figureId": "VD2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 8,
+      "answerMode": "full",
+      "figureId": "VD2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 9,
+      "answerMode": "hidden",
+      "figureId": "VD2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 9,
+      "answerMode": "full",
+      "figureId": "VD2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 10,
+      "answerMode": "hidden",
+      "figureId": "VD2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 10,
+      "answerMode": "full",
+      "figureId": "VD2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 11,
+      "answerMode": "hidden",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 11,
+      "answerMode": "full",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 12,
+      "answerMode": "hidden",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 12,
+      "answerMode": "full",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 13,
+      "answerMode": "hidden",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 13,
+      "answerMode": "full",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 14,
+      "answerMode": "hidden",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 14,
+      "answerMode": "full",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 15,
+      "answerMode": "hidden",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 15,
+      "answerMode": "full",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 16,
+      "answerMode": "hidden",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 16,
+      "answerMode": "full",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 17,
+      "answerMode": "hidden",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 17,
+      "answerMode": "full",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 18,
+      "answerMode": "hidden",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 18,
+      "answerMode": "full",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 19,
+      "answerMode": "hidden",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 19,
+      "answerMode": "full",
+      "figureId": "LT2",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 20,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 20,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 21,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 21,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 22,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 22,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 23,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 23,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 24,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 24,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 25,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 25,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 26,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 26,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 27,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 27,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 28,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 28,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 29,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 29,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 30,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 30,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 31,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 31,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 32,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 32,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 33,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 33,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 34,
+      "answerMode": "hidden",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    },
+    {
+      "index": 34,
+      "answerMode": "full",
+      "figureId": "",
+      "overflow": false,
+      "horizontal": false
+    }
+  ],
+  "persistentImageHashes": [
+    "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+    "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+    "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+    "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+    "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda",
+    "96440d121fe41ea7d4e089e970cff6fe58cfc4bd9ab2a4dd23907ab151fbbeda"
+  ],
+  "persistentScopes": [
+    "overlay:scene:VD2:5",
+    "overlay:scene:VD2:5",
+    "overlay:scene:VD2:5",
+    "overlay:scene:VD2:5",
+    "overlay:scene:VD2:5",
+    "overlay:scene:VD2:5"
+  ],
+  "sourceUnchanged": true,
+  "nativeWindowsAudio": "UNRUN"
+}

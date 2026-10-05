@@ -1,0 +1,14 @@
+{
+  "result": "FAIL",
+  "mode": "DISPOSABLE_CONTEXT_NATIVE_START_FAILURE_INJECTION",
+  "beforeResume": {
+    "id": "SNAP_OLD",
+    "index": 1,
+    "answerStep": 1,
+    "activation": "99b4aebe-a89d-4903-9bcc-484fc5a40ee6"
+  },
+  "error": {
+    "message": "page.waitForFunction: Timeout 30000ms exceeded.",
+    "stack": "page.waitForFunction: Timeout 30000ms exceeded.\n    at /workspace/p12-2b-storage/load-snapshot-test.cjs:9:293"
+  }
+}

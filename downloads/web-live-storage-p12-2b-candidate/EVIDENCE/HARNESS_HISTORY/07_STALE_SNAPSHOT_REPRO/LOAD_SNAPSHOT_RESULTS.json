@@ -1,0 +1,21 @@
+{
+  "result": "FAIL",
+  "mode": "DISPOSABLE_CONTEXT_NATIVE_START_FAILURE_INJECTION",
+  "beforeResume": {
+    "id": "SNAP_OLD",
+    "index": 1,
+    "answerStep": 1,
+    "activation": "822ce527-160d-4784-ac1c-71e141c72763"
+  },
+  "afterFailure": {
+    "id": "SNAP_OLD",
+    "index": 0,
+    "answerStep": 0,
+    "activation": "822ce527-160d-4784-ac1c-71e141c72763"
+  },
+  "errors": [],
+  "error": {
+    "message": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n    activation: '822ce527-160d-4784-ac1c-71e141c72763',\n+   answerStep: 0,\n-   answerStep: 1,\n    id: 'SNAP_OLD',\n+   index: 0\n-   index: 1\n  }\n",
+    "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n    activation: '822ce527-160d-4784-ac1c-71e141c72763',\n+   answerStep: 0,\n-   answerStep: 1,\n    id: 'SNAP_OLD',\n+   index: 0\n-   index: 1\n  }\n\n    at /workspace/p12-2b-storage/load-snapshot-test.cjs:9:597"
+  }
+}

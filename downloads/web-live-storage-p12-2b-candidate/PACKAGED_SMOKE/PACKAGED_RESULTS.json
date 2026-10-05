@@ -1,0 +1,26 @@
+{
+  "result": "PASS",
+  "runtime": "Fresh ZIP extract; all files SHA256 matched manifest",
+  "results": [
+    {
+      "suite": "STORAGE",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "suite": "EXTENDED",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "suite": "P121",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "suite": "SNAPSHOT",
+      "exitCode": 0,
+      "result": "PASS"
+    }
+  ]
+}

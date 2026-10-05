@@ -1,0 +1,193 @@
+{
+  "mode": "REAL_CHROMIUM_INDEXEDDB_WITH_DISPOSABLE_ORIGINS",
+  "checks": [
+    {
+      "name": "EMPTY_DATABASE",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "FIRST_LESSON_SAVE_READBACK_COMMIT",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "MULTIPLE_LESSON_SAVE",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "SAME_LESSON_DUPLICATE_IMPORT",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "LESSON_UPDATE_EXISTING_ID_CONFLICT_POLICY",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "INDEXEDDB_REOPEN",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "DELETE_INDEXEDDB_LESSON_RECENT_REFERENCE_SAFE",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "EXISTING_LOCALSTORAGE_NEAR_FULL_NATIVE_QUOTA",
+      "result": "PASS",
+      "detail": {
+        "hit": true,
+        "characters": 5242880
+      }
+    },
+    {
+      "name": "LEGACY_LESSON_MIGRATION_READBACK_VERIFY_COMMIT_OLD_PRESERVED",
+      "result": "PASS",
+      "detail": {
+        "lessons": 2,
+        "assets": 2,
+        "journal": [
+          {
+            "id": "OLD_SMALL",
+            "MIGRATION_VERSION": 1,
+            "LESSON_ID": "OLD_SMALL",
+            "SOURCE_PRESENT": true,
+            "TARGET_WRITTEN": true,
+            "TARGET_VERIFIED": true,
+            "COMMITTED": true,
+            "CLEANUP_PENDING": true,
+            "sourceHash": "e84e743b594071a0df54fee3652e6b5e1f3e2d6801f4bf8e9bce7bb11f6da0f9",
+            "payloadHash": "e84e743b594071a0df54fee3652e6b5e1f3e2d6801f4bf8e9bce7bb11f6da0f9",
+            "sourceCount": 1,
+            "targetCount": 1,
+            "verifyResult": "PASS",
+            "deleted": false
+          },
+          {
+            "id": "TIN6_T04_P04_SGK_RC3_PED1",
+            "MIGRATION_VERSION": 1,
+            "LESSON_ID": "TIN6_T04_P04_SGK_RC3_PED1",
+            "SOURCE_PRESENT": true,
+            "TARGET_WRITTEN": true,
+            "TARGET_VERIFIED": true,
+            "COMMITTED": true,
+            "CLEANUP_PENDING": true,
+            "sourceHash": "a46c3aa8bb6eadfd83053ea11753483ead04f9bbf5d19e9821e7ea66e7468dae",
+            "payloadHash": "a46c3aa8bb6eadfd83053ea11753483ead04f9bbf5d19e9821e7ea66e7468dae",
+            "sourceCount": 1,
+            "targetCount": 1,
+            "verifyResult": "PASS",
+            "deleted": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "MIGRATION_IDEMPOTENT",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "LARGE_IMAGE_MULTIPLE_LARGE_LESSONS_DEDUP_NO_NEW_FULL_PAYLOAD_OR_BASE64_IN_LOCALSTORAGE",
+      "result": "PASS",
+      "detail": {
+        "assets": 2,
+        "oldSnapshotUnchanged": true
+      }
+    },
+    {
+      "name": "FULL_QUOTA_SESSION_REOPEN_USES_INDEXEDDB_STORAGE_BRIDGE",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "TV_STANDALONE_REOPEN_NO_LOCALSTORAGE_BACKWRITE",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "INDEXEDDB_CORRUPTED_RECORD_VERIFIED_LEGACY_FALLBACK",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "TV_VISIBLE_VERIFIED_LEGACY_FALLBACK_WARNING",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "INDEXEDDB_READ_FAILURE_VERIFIED_LEGACY_FALLBACK",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "CORRUPTED_TARGET_AND_LEGACY_FAIL_NO_CURRENT_LESSON_LOSS",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "NEW_LESSON_CORRUPTION_NO_SILENT_FALLBACK",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "MIGRATION_WRITE_QUOTA_FAILURE_OLD_CURRENT_PRESERVED",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "NEW_IMPORT_WRITE_FAILURE_NO_FALSE_SUCCESS",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "MIGRATION_READ_FAILURE_NO_COMMIT",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "TARGET_PARTIAL_REWRITE_WITHOUT_DUPLICATE_STAGE",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "TRANSACTION_ABORT_DATA_LOSS_TEST",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "DELETE_MIGRATED_IDB_LESSON_TOMBSTONE_OLD_COPY_RETAINED",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "BROWSER_CLOSE_DURING_MIGRATION_INTERRUPTION_RECOVERY",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "INDEXEDDB_OPEN_FAILURE_CONTROLLED_LEGACY_FALLBACK_NO_FALSE_SAVE",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "INDEXEDDB_BLOCKED_TIMEOUT_NO_CRASH",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "ZERO_UNHANDLED_BROWSER_ERRORS",
+      "result": "PASS",
+      "detail": {}
+    }
+  ],
+  "errors": [],
+  "windows": "UNRUN",
+  "cleanup": "NOT_RUN_BY_DESIGN",
+  "browser": "151.0.7922.173",
+  "result": "PASS"
+}

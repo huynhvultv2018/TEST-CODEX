@@ -1,0 +1,72 @@
+{
+  "checks": [
+    {
+      "name": "LEGACY_WITHOUT_SOURCEKEY_LOSSLESS_MIGRATION",
+      "result": "PASS",
+      "data": {}
+    },
+    {
+      "name": "SAME_ID_METADATA_UPDATE_NO_DUPLICATE_OLD_RETAINED",
+      "result": "PASS",
+      "data": {}
+    },
+    {
+      "name": "UPDATED_LESSON_REJECTS_STALE_LEGACY_FALLBACK",
+      "result": "PASS",
+      "data": {}
+    },
+    {
+      "name": "SHARED_ASSET_DELETE_OWNERSHIP_SAFE_AND_FINAL_ZERO_REFERENCE_DELETE",
+      "result": "PASS",
+      "data": {}
+    },
+    {
+      "name": "COMMIT_WRITE_FAILURE_ABORT_NO_FALSE_COMMIT_NO_PAGEERROR",
+      "result": "PASS",
+      "data": {}
+    },
+    {
+      "name": "READBACK_HASH_MISMATCH_PREVENTS_COMMIT",
+      "result": "PASS",
+      "data": {}
+    },
+    {
+      "name": "FAILURE_RETRY_IDEMPOTENT_TARGET_REWRITE",
+      "result": "PASS",
+      "data": {}
+    },
+    {
+      "name": "CORRUPT_SOURCE_NO_FALSE_LIBRARY_MIGRATION_SUCCESS_FOREIGN_PRESERVED",
+      "result": "PASS",
+      "data": {}
+    },
+    {
+      "name": "CORRUPT_LIBRARY_INDEX_BLOCKS_MIGRATION_NO_SILENT_OMISSION",
+      "result": "PASS",
+      "data": {}
+    },
+    {
+      "name": "ASYNC_SELECTION_CHANGE_PRESERVES_CURRENT_NO_LATE_START",
+      "result": "PASS",
+      "data": {}
+    },
+    {
+      "name": "CROSS_TAB_LIBRARY_METADATA_REFRESH_SAVE_DELETE",
+      "result": "PASS",
+      "data": {}
+    },
+    {
+      "name": "SAVED_REFERENCE_SUBJECT_MISMATCH_BLOCK_PRESERVED",
+      "result": "PASS",
+      "data": {}
+    },
+    {
+      "name": "UNSUPPORTED_SCHEMA_NO_DOWNGRADE_OR_DELETE_DATABASE",
+      "result": "PASS",
+      "data": {}
+    }
+  ],
+  "errors": [],
+  "result": "PASS",
+  "syntheticOnly": true
+}

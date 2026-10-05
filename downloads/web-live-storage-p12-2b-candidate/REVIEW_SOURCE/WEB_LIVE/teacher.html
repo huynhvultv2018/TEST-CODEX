@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <script src="runtime-config.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WEB LIVE RC2 — Teacher Cockpit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="draw-board.css">
+  <link rel="stylesheet" href="smart-geometry.css">
+  <link rel="stylesheet" href="classroom.css">
+  <link rel="stylesheet" href="teacher-ui.css">
+  <link rel="stylesheet" href="tts-ui.css">
+  <link rel="stylesheet" href="cockpit.css">
+  <link rel="stylesheet" href="geometry-profile.css">
+  <link rel="stylesheet" href="subject-loader.css">
+</head>
+<body>
+  <header class="top teacherTop">
+    <div class="brandBlock">
+      <div class="brand">WEB LIVE</div>
+      <div class="lessonMeta"><strong id="lessonTitle">Chưa mở bài</strong><span id="progress">Chọn bài học để bắt đầu</span></div>
+      <span id="cockpitStage" class="stageChip">QUESTION</span><span id="tvConnection" class="connection" role="status">TV ○ Chưa kết nối</span><span id="demoBadge" class="stageChip" hidden>DEMO</span><span id="screenNo" class="screenNo" aria-label="Số màn">— / —</span>
+    </div>
+    <div class="topActions">
+      <button type="button" class="primary" onclick="openTV()" title="Mở cửa sổ trình chiếu trên TV">📺 MỞ TV</button>
+      <button type="button" id="teacherFullBtn" onclick="toggleTeacherFull()" title="Bật hoặc tắt toàn màn hình trên máy giáo viên">⛶ TOÀN MÀN HÌNH</button>
+    </div>
+  </header>
+  <div class="layout">
+    <main class="panel preview" aria-label="Xem trước bài học">
+      <div class="previewHead"><span>XEM TRƯỚC MÀN HÌNH TV</span><span class="chip" id="kind">LIVE</span></div>
+      <div class="livePreview" id="livePreview"><div id="previewViewport"><iframe id="studentPreview" src="tv.html?preview=1" title="TV Preview — nội dung học sinh đang thấy"></iframe></div></div>
+      <details id="annotationEditor"><summary>Chú thích / Focus trên hình và nội dung <span>· chỉ GV</span></summary><div class="editorHeading">Bề mặt thao tác công cụ · TV Preview phía trên cập nhật theo thao tác</div>
+      <div class="previewStage">
+        <div id="screen" class="screen textOnly">
+          <div id="figurePane" class="figurePane clickable" hidden>
+            <div id="figureInner" class="figureInner">
+              <img id="pic" draggable="false" alt="Hình học của bài toán">
+              <svg id="coverLayer" class="coverSvg" aria-label="Lớp che dữ liệu trên hình"></svg>
+              <svg id="smartLayer" class="smartSvg" aria-label="Ký hiệu hình học"></svg>
+              <svg id="drawOverlay" class="drawSvg" aria-label="Bảng vẽ trên hình"></svg>
+              <svg id="classroomHighlight" class="classroomHighlight" aria-label="Nhấn mạnh hình học tạm thời"></svg>
+              <div id="pointer" class="pointer" hidden></div>
+            </div>
+          </div>
+          <section class="textPane">
+            <h1 class="title" id="title"></h1>
+            <div class="content" id="content"></div><div id="previewKnowledgeWait" class="content" hidden>Chờ giáo viên chốt kiến thức.</div>
+            <div id="previewHint" class="previewReveal previewHint" hidden></div>
+            <div id="previewAnalysis" class="previewReveal previewAnalysis" hidden></div>
+            <div id="analysisFigure" class="analysisFigure" hidden><img id="analysisPic" alt="Sơ đồ phân tích"></div>
+            <div id="previewAnswer" class="previewReveal previewAnswer" hidden></div>
+          </section>
+        </div>
+        <div id="whiteBoardPane" class="whiteBoardPane" hidden><svg id="drawWhite" class="drawSvg" aria-label="Bảng trắng"></svg></div>
+      </div>
+      </details>
+    </main>
+    <aside class="panel side" aria-label="Điều khiển bài học">
+      <div class="stickyControls">
+        <div class="sideHeader"><span>🎓 DẠY HỌC</span><button type="button" id="compactBtn" class="compactBtn" onclick="toggleCompactUI()" aria-pressed="false" title="Thu gọn hoặc mở rộng bảng công cụ">☷ THU GỌN</button></div>
+        <div class="nextAction"><div class="sectionTitle">HÀNH ĐỘNG TIẾP THEO</div><button id="nextActionBtn" type="button" class="primary" onclick="runNextAction()" disabled>CHỌN BÀI HỌC</button><p id="nextActionReason">GV quyết định thời điểm chuyển bước.</p></div>
+        <div class="controls primaryControls">
+          <button type="button" onclick="prev()" title="Màn trước · phím ←">◀ TRƯỚC</button>
+          <button type="button" onclick="next()" title="Màn tiếp theo · phím →">TIẾP ▶</button>
+          <button type="button" class="hintb" id="hintBtn" onclick="toggleHint()" title="Bật hoặc tắt gợi ý · phím G">💡 GỢI Ý</button>
+          <button type="button" class="ansb" id="ansBtn" onclick="toggleAnswer()" title="Bật hoặc tắt đáp án · phím A">✓ ĐÁP ÁN</button>
+        </div>
+        <div class="controls teachingDisclosure"><button type="button" id="hint2Btn" onclick="setPedagogyHintLevel(2)" hidden>💡 GỢI Ý 2</button><button type="button" id="hideHintsBtn" onclick="setPedagogyHintLevel(0)" hidden>ẨN GỢI Ý</button><button type="button" id="closeKnowledgeBtn" onclick="toggleKnowledgeClose()" hidden>CHỐT KIẾN THỨC</button></div>
+
+      </div>
+      <div class="sideBody">
+        <section class="teachingExtras" aria-label="Dạy học">
+          <label class="sectionTitle" for="jump">CHỌN MÀN</label>
+          <select id="jump" class="jump" onchange="jumpTo(this.value)"></select>
+        <section class="lessonSteps" aria-label="Suy luận từng bước">
+          <div class="sectionTitle">BƯỚC GIẢI</div>
+          <div class="controls stepsControls">
+            <button type="button" id="analysisBtn" onclick="revealAnalysis()" hidden title="Hiện thêm một bước phân tích">▶ PHÂN TÍCH +</button>
+            <button type="button" onclick="previousStep()" title="Ẩn bớt một bước chứng minh">◀ BƯỚC −</button>
+            <button type="button" onclick="revealStep()" title="Hiện thêm một bước chứng minh · phím S">BƯỚC + ▶</button>
+            <button type="button" onclick="hideAnswer()" title="Ẩn lời giải đang hiển thị">ẨN LỜI GIẢI</button>
+          </div>
+        </section>
+        <section id="demoSection" class="demoSection" aria-label="Demo trực tiếp" hidden>
+          <div class="sectionTitle">📐 DEMO TRỰC TIẾP</div>
+          <strong id="demoTitle"></strong>
+          <p id="demoInstruction"></p>
+          <div id="launcherStatus" class="demoStatus" role="status">Launcher: ○ CHƯA CHẠY</div>
+          <div id="demoAppStatus" class="demoStatus"></div>
+          <div id="demoHandoffStatus" class="demoStatus" role="status">SẴN SÀNG</div>
+          <button type="button" id="demoRetry" onclick="demoController.refresh()">KIỂM TRA LẠI</button>
+          <button type="button" id="demoOpenBtn" class="primary demoOpen" onclick="demoController.launch()">▶ DEMO TRỰC TIẾP</button>
+          <button type="button" id="demoMoveRetry" class="demoAction" onclick="demoController.retryPresent()" hidden>THỬ CHUYỂN LẠI</button>
+          <button type="button" id="demoReturnBtn" class="demoAction" onclick="demoController.returnToWeb()" hidden>↩ TRỞ LẠI WEB LIVE</button>
+          <div id="demoMessage" class="demoMessage" role="alert"></div>
+        </section>
+        <details class="teacherNotes" open><summary>02 · HƯỚNG DẪN GV</summary>
+        <section id="pedagogySection" class="lessonInfo" hidden aria-label="Hướng dẫn sư phạm cho giáo viên">
+          <div class="sectionTitle">TIẾN TRÌNH DẠY HỌC</div><strong id="pedagogyMeta"></strong><p id="pedagogyPolicy" class="small"></p>
+          <details><summary>Gợi mở và phản hồi — chỉ GV</summary><div class="label">Hướng dẫn sư phạm</div><div id="pedagogyGuidanceText" class="box"></div><div class="label">Teacher Probe</div><div id="teacherProbe" class="box"></div><div class="label">Phản hồi dự kiến</div><div id="expectedResponse" class="box"></div><div class="label">Lỗi thường gặp</div><div id="commonError" class="box"></div></details>
+          <div id="resourceGuide" hidden><div class="label">HS dùng tài nguyên tại</div><div id="resourceLocation" class="box"></div><div class="label">Phần cần quan sát — dùng Focus/Cover/Highlight hiện có theo GV</div><div id="resourceFocus" class="box"></div></div>
+          <details id="offlineGuide" hidden><summary>Internet / phương án lớp học — chỉ GV</summary><p id="onlineStatus"></p><div class="label">Fallback đã cung cấp</div><div id="offlineFallback" class="box"></div><div class="label">Cảnh báo</div><div id="offlineWarning" class="box"></div></details>
+          <details id="knowledgePreview" hidden><summary>Chốt kiến thức — GV xem trước</summary><div id="knowledgeText" class="box"></div></details>
+          <details><summary>Tiến trình và nguồn</summary><div id="pedagogyFlow" class="small"></div><div id="pedagogyTrace" class="small"></div></details>
+        </section>
+        <section class="lessonInfo" aria-label="Thông tin cho giáo viên">
+
+          <div class="label">Màn tiếp theo</div><div id="nextBox" class="nextBox">—</div>
+          <div class="peekGrid"><div><div class="label">Gợi ý cho GV</div><div class="box" id="hint">—</div></div>
+          <div><div class="label">Đáp án / chứng minh</div><div class="box" id="answer">—</div></div></div>
+          <div id="analysisSection" hidden><div class="label">Sơ đồ phân tích (GV xem trước)</div><div class="box" id="analysisBox">—</div></div>
+          <div class="label">Ghi chú GV</div><div class="box noteBox" id="note">—</div>
+          <div class="label">Trạng thái ảnh</div><div class="box" id="imageStatus" hidden></div>
+        </section>
+        </details>
+        <button type="button" class="jump" onclick="showImporter()" title="Nạp gói LIVE.zip hoặc đổi bài">📚 THƯ VIỆN / NHẬP BÀI</button>
+        </section>
+        <details class="controlGroup" id="ttsGroup" open>
+          <summary>🔊 GIỌNG ĐỌC</summary>
+          <div class="ttsActions"><button type="button" id="ttsMain" class="primary">🔊 ĐỌC</button><button type="button" id="ttsStop" disabled>⏹ DỪNG</button><button type="button" id="ttsReplay" aria-label="Đọc lại phần hiện tại" title="Đọc lại phần hiện tại">↻</button></div>
+          <label class="ttsField" for="ttsBlock">Phần đọc<select id="ttsBlock"><option value="screen">Màn đang hiển thị</option></select></label>
+          <div class="ttsSettingsRow">
+            <label class="ttsField" for="ttsVoice">Giọng Việt<select id="ttsVoice"><option value="">Chưa có giọng Việt</option></select></label>
+            <label class="ttsField" for="ttsRate">Tốc độ<select id="ttsRate"><option value="0.75">0.75×</option><option value="0.85">0.85×</option><option value="0.95" selected>0.95×</option><option value="1">1.00×</option><option value="1.1">1.10×</option><option value="1.2">1.20×</option></select></label>
+          </div>
+          <p id="ttsStatus" class="ttsStatus" role="status" aria-live="polite"></p>
+          <details class="ttsAdvanced"><summary>Tùy chọn giọng đọc</summary>
+            <label class="ttsField" for="ttsGenderPreference">Ưu tiên<select id="ttsGenderPreference"><option value="male">Giọng Nam</option><option value="female">Giọng Nữ</option><option value="any">Giọng Việt bất kỳ</option></select></label>
+            <label class="ttsField" for="ttsKnownGender">Giới tính giọng đã chọn — GV xác nhận<select id="ttsKnownGender"><option value="unknown">Chưa xác định</option><option value="male">Nam</option><option value="female">Nữ</option></select></label>
+            <label><input type="checkbox" id="ttsHighlight" checked> Highlight phần đang đọc</label>
+            <label class="ttsField" for="ttsVolume">Âm lượng<input type="range" id="ttsVolume" min="0" max="1" step="0.1" value="1"></label>
+            <p class="ttsOutputNote">Âm thanh theo thiết bị phát mặc định của máy GV. Chọn loa hoặc TV trong cài đặt âm thanh Windows.</p>
+          </details>
+          <p id="ttsSource" class="ttsOutputNote"></p>
+        </details>
+        <details class="controlGroup" id="displayToolsGroup"><summary>🛠 HIỂN THỊ & CÔNG CỤ</summary>
+        <button type="button" id="clearPointerTop" class="pointerQuick" onclick="clearPointer()" title="Xóa vòng tròn đỏ trên hình · Esc khi không vẽ dở">⌖ XÓA ĐIỂM CHỈ</button>
+        <section class="section projection" id="geometryTools" aria-label="Trình chiếu và phóng hình">
+          <div class="sectionTitle">TRÌNH CHIẾU</div>
+          <div class="triple">
+            <button type="button" id="splitBtn" class="mini" onclick="setMode('split')" title="Hình và nội dung cạnh nhau · phím D">HÌNH + CHỮ</button>
+            <button type="button" id="figureBtn" class="mini" onclick="setMode('figure')" title="Phóng hình học · phím F">PHÓNG HÌNH</button>
+            <button type="button" id="textBtn" class="mini" onclick="setMode('text')" title="Phóng chữ · phím T; không dùng ở màn phân tích">PHÓNG CHỮ</button>
+          </div>
+          <div class="label">Phóng hình</div>
+          <div class="triple zoomControls">
+            <button type="button" class="mini" onclick="zoomBy(-.15)" title="Giảm phóng hình · phím −">−</button>
+            <div id="zoomLabel" class="zoomLabel">100%</div>
+            <button type="button" class="mini" onclick="zoomBy(.15)" title="Tăng phóng hình · phím +">+</button>
+          </div>
+          <button type="button" class="resetZoom" onclick="resetZoom()" title="Đặt phóng hình và vị trí về mặc định">↺ VỀ 100%</button>
+        </section>
+        <section class="section classroomTools" aria-label="Điều khiển TV lớp học">
+          <div class="sectionTitle">📺 TV LỚP HỌC</div>
+          <div class="classroomGrid">
+            <button type="button" id="layout70" onclick="classroomController.setLayout('70')">70 / 30</button>
+            <button type="button" id="layout60" onclick="classroomController.setLayout('60')">60 / 40</button>
+            <button type="button" id="layoutFull" onclick="classroomController.toggleFigure()">HÌNH TOÀN MÀN</button>
+            <button type="button" id="fontBoost" onclick="classroomController.toggleFont()">PHÓNG CHỮ</button>
+            <button type="button" id="focusMode" onclick="classroomController.toggleFocus()">TẬP TRUNG</button>
+            <button type="button" onclick="classroomController.clearFocus()">XÓA TẬP TRUNG</button>
+            <button type="button" id="highlightSegment" onclick="classroomController.setTool('segment')">✨ NHẤN ĐOẠN</button>
+            <button type="button" id="highlightTriangle" onclick="classroomController.setTool('triangle')">△ NHẤN TAM GIÁC</button>
+            <button type="button" id="highlightPoint" onclick="classroomController.setTool('point')">● NHẤN ĐIỂM</button>
+            <button type="button" onclick="classroomController.clearHighlights()">XÓA NHẤN MẠNH</button>
+          </div>
+          <p id="classroomStatus" class="classroomStatus">Chọn chế độ trình bày cho TV.</p>
+          <div class="classroomClockControls">
+            <label>Đồng hồ <select id="clockMode" onchange="classroomController.setClockMode(this.value)"><option value="off">TẮT</option><option value="clock">GIỜ HIỆN TẠI</option><option value="timer">GIỜ TIẾT HỌC</option></select></label>
+            <label>Thời lượng <select id="clockDuration" onchange="classroomController.setDuration(Number(this.value))"><option value="45">45 phút</option><option value="90">90 phút</option></select></label>
+            <div class="classroomGrid"><button type="button" onclick="classroomController.startTimer()">BẮT ĐẦU</button><button type="button" onclick="classroomController.pauseTimer()">TẠM DỪNG</button><button type="button" onclick="classroomController.resetTimer()">ĐẶT LẠI</button><strong id="clockPreview">—</strong></div>
+          </div>
+        </section>
+        <section class="section advancedTools" aria-label="Công cụ nâng cao">
+          <div class="sectionTitle">CÔNG CỤ NÂNG CAO</div>
+          <div class="toolGroup">
+            <button type="button" id="drawOpenBtn" class="groupToggle" onclick="boardController.toggle()" aria-controls="drawControls" aria-expanded="false" title="Mở hoặc đóng bảng vẽ">✏ VẼ HÌNH <span class="chevron" aria-hidden="true">⌄</span></button>
+            <div class="drawControls groupBody" id="drawControls" hidden>
+              <div class="drawModes"><button type="button" id="drawWhiteBtn" data-board-mode="whiteboard" title="Vẽ trên bảng trắng">BẢNG TRẮNG</button><button type="button" id="drawOverlayBtn" data-board-mode="overlay" title="Vẽ lên hình đang trình chiếu">TRÊN HÌNH LIVE</button></div>
+              <div class="drawTools">
+                <button type="button" data-board-tool="move" title="Kéo điểm hoặc nhãn · phím X">✥ DI CHUYỂN</button>
+                <button type="button" data-board-tool="point" title="Tạo điểm · phím V">• ĐIỂM</button>
+                <button type="button" data-board-tool="segment" title="Nối hai điểm thành đoạn · phím L">━ ĐOẠN</button>
+                <button type="button" data-board-tool="line" title="Vẽ đường thẳng qua hai điểm · phím R">↔ ĐƯỜNG</button>
+                <button type="button" data-board-tool="circle" title="Vẽ đường tròn tâm và bán kính · phím C">○ ĐƯỜNG TRÒN</button>
+                <button type="button" data-board-tool="label" title="Gắn hoặc sửa nhãn điểm · phím N">A NHÃN</button>
+                <button type="button" data-board-tool="marker" title="Đánh dấu tự do · phím M">✎ MARKER</button>
+                <button type="button" data-board-tool="eraser" title="Xóa một đối tượng vẽ · phím E">⌫ XÓA</button>
+              </div>
+              <div class="drawHistory"><button type="button" id="drawUndo" onclick="boardController.undo()" title="Hoàn tác thao tác vẽ · Ctrl+Z">↶ UNDO</button><button type="button" id="drawRedo" onclick="boardController.redo()" title="Làm lại thao tác vẽ · Ctrl+Y">↷ REDO</button><button type="button" id="drawClear" class="danger" onclick="boardController.clear()" title="Xóa mọi nét vẽ sau khi xác nhận">🗑 XÓA TOÀN BỘ</button><button type="button" onclick="boardController.close()" title="Đóng bảng vẽ">ĐÓNG</button></div>
+              <div class="drawStatus" id="drawStatus"></div>
+              <div class="tip">Kéo chấm để dời điểm; kéo chữ để dời nhãn. Esc hủy thao tác dở.</div>
+            </div>
+          </div>
+          <div class="toolGroup">
+            <button type="button" id="coverOpenBtn" class="groupToggle" onclick="coverController.toggle()" aria-controls="coverControls" aria-expanded="false" title="Mở hoặc đóng lớp che dữ liệu trên hình">▧ CHE DỮ LIỆU <span class="chevron" aria-hidden="true">⌄</span></button>
+            <div class="coverControls groupBody" id="coverControls" hidden>
+              <div class="coverTools"><button type="button" data-cover-tool="rect" title="Kéo để che một vùng chữ nhật">▭ CHE Ô</button><button type="button" data-cover-tool="path" title="Tô che tự do">🖌 CHE TỰ DO</button><button type="button" data-cover-tool="erase" title="Click vùng che để khôi phục">↺ KHÔI PHỤC</button></div>
+              <div class="coverHistory"><button type="button" id="coverUndo" onclick="coverController.undo()" title="Hoàn tác vùng che">↶ UNDO CHE</button><button type="button" id="coverRedo" onclick="coverController.redo()" title="Làm lại vùng che">↷ REDO CHE</button><button type="button" id="coverClear" class="danger" onclick="coverController.clear()" title="Xóa mọi vùng che sau khi xác nhận">🗑 XÓA TẤT CẢ CHE</button><button type="button" onclick="coverController.close()" title="Đóng công cụ che">ĐÓNG</button></div>
+              <div class="coverStatus" id="coverStatus"></div><div class="tip">Lớp phủ che không sửa ảnh gốc.</div>
+            </div>
+          </div>
+          <div class="toolGroup">
+            <button type="button" id="smartOpenBtn" class="groupToggle" onclick="smartController.toggle()" aria-controls="smartControls" aria-expanded="false" title="Mở hoặc đóng ký hiệu hình học">◇ KÝ HIỆU HÌNH HỌC <span class="chevron" aria-hidden="true">⌄</span></button>
+            <div class="smartControls groupBody" id="smartControls" hidden>
+              <div class="smartTools">
+                <button type="button" data-smart-tool="select" title="Chọn ký hiệu">✥ CHỌN</button><button type="button" data-smart-tool="erase" title="Xóa ký hiệu bằng click">⌫ XÓA</button>
+                <button type="button" data-smart-tool="parallel" title="Đánh dấu hai đường song song">∥ SONG SONG</button><button type="button" data-smart-tool="perpendicular" title="Đánh dấu hai đường vuông góc">⊥ VUÔNG GÓC</button>
+                <button type="button" data-smart-tool="equalSegment" title="Đánh dấu nhóm cạnh bằng nhau">= CẠNH BẰNG</button><button type="button" data-smart-tool="angle" title="Đánh dấu góc">∠ GÓC</button>
+                <button type="button" data-smart-tool="equalAngle" title="Đánh dấu hai góc bằng nhau">∠= GÓC BẰNG</button><button type="button" data-smart-tool="midpoint" title="Đánh dấu trung điểm">● TRUNG ĐIỂM</button>
+              </div>
+              <div class="smartHistory"><button type="button" id="smartFinish" onclick="smartController.finishGroup()" title="Ghi nhóm cạnh bằng nhau">✓ GHI NHÓM CẠNH</button><button type="button" id="smartUndo" onclick="smartController.undo()" title="Hoàn tác ký hiệu">↶ UNDO</button><button type="button" id="smartRedo" onclick="smartController.redo()" title="Làm lại ký hiệu">↷ REDO</button><button type="button" id="smartDelete" onclick="smartController.deleteSelected()" title="Xóa ký hiệu đã chọn">⌫ XÓA ĐÃ CHỌN</button><button type="button" onclick="smartController.close()" title="Đóng ký hiệu">ĐÓNG</button></div>
+              <div class="smartStatus" id="smartStatus"></div><div class="tip">Chọn cạnh Draw Board hoặc hai đầu đường trên hình. Esc hủy lựa chọn dở.</div>
+            </div>
+          </div>
+          <details class="toolGroup pointerGroup" id="pointerGroup"><summary title="Hướng dẫn dùng điểm chỉ đỏ">⌖ ĐIỂM CHỈ <span class="chevron" aria-hidden="true">⌄</span></summary><div class="groupBody"><p>SHIFT + CLICK lên hình để đặt điểm chỉ đỏ.</p><button type="button" onclick="clearPointer()" title="Xóa điểm chỉ đỏ đang hiển thị">⌖ XÓA ĐIỂM CHỈ</button></div></details>
+        </section>
+        <div class="section utilityActions"><button type="button" onclick="sync()" title="Gửi lại trạng thái hiện tại tới TV">↻ ĐỒNG BỘ TV</button></div>
+        </details>
+      </div>
+    </aside>
+  </div>
+  <div class="import" id="importer">
+    <div class="panel importbox">
+      <h1>WEB LIVE · Nạp bài theo môn</h1>
+      <p class="muted">Chọn môn, chọn gói bài học, kiểm tra thông tin rồi bấm NẠP BÀI.</p>
+      <label class="subjectChoice" for="lessonSubject">1. CHỌN MÔN <select id="lessonSubject" aria-label="Chọn môn"><option value="">— Chọn môn —</option></select></label>
+      <p class="subjectStep">2. CHỌN FILE / ZIP BÀI HỌC</p>
+      <div class="actions">
+        <label><input type="file" id="zipfile" accept=".zip,application/zip" hidden><button type="button" class="primary" onclick="zipfile.click()">📦 NHẬP LIVE.ZIP</button></label>
+        <label><input type="file" id="jsonfile" accept=".json,application/json" hidden><button type="button" onclick="jsonfile.click()">📄 NHẬP LESSON.JSON</button></label>
+        <button type="button" onclick="loadSample()">🧪 BÀI MẪU / LEGACY</button>
+        <button type="button" onclick="hideImporter()" id="closeBtn">ĐÓNG</button>
+      </div>
+      <section id="subjectPreview" aria-live="polite" hidden></section>
+      <button type="button" id="subjectLoadBtn" class="primary" disabled>4. NẠP BÀI</button>
+      <p id="error" role="alert"></p><div class="library"><h2>📚 Thư viện tiết dạy</h2><div id="library"></div></div>
+    </div>
+  </div>
+  <script src="common.js"></script><script src="core-profiles.js"></script><script src="geometry-profile.js"></script><script src="pedagogy.js"></script><script src="math-atomic.js"></script><script src="classroom.js"></script><script src="zip.js"></script><script src="subject-storage.js"></script><script src="draw-board.js"></script><script src="cover-layer.js"></script><script src="smart-geometry.js"></script><script src="draw-board-teacher.js"></script><script src="cover-teacher.js"></script><script src="smart-geometry-teacher.js"></script><script src="teacher.js"></script><script src="classroom-teacher.js"></script><script src="ui-teacher.js"></script><script src="demo-teacher.js"></script><script src="pedagogy-teacher.js"></script>
+  <script src="math-speech.js"></script><script src="tts-controller.js"></script><script src="tts-presentation.js"></script><script src="tts-teacher.js"></script>
+  <script src="cockpit.js"></script>
+  <script src="subject-loader.js"></script>
+</body>
+</html>

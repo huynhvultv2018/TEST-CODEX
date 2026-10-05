@@ -1,0 +1,57 @@
+{
+  "mode": "REAL_CHROMIUM_INDEXEDDB_WITH_DISPOSABLE_ORIGINS",
+  "checks": [
+    {
+      "name": "EMPTY_DATABASE",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "FIRST_LESSON_SAVE_READBACK_COMMIT",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "MULTIPLE_LESSON_SAVE",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "SAME_LESSON_DUPLICATE_IMPORT",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "LESSON_UPDATE_EXISTING_ID_CONFLICT_POLICY",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "INDEXEDDB_REOPEN",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "DELETE_INDEXEDDB_LESSON_RECENT_REFERENCE_SAFE",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "EXISTING_LOCALSTORAGE_NEAR_FULL_NATIVE_QUOTA",
+      "result": "PASS",
+      "detail": {
+        "hit": true,
+        "characters": 5242880
+      }
+    }
+  ],
+  "errors": [],
+  "windows": "UNRUN",
+  "cleanup": "NOT_RUN_BY_DESIGN",
+  "browser": "151.0.7922.173",
+  "result": "FAIL",
+  "error": {
+    "message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#migrateLegacyStorage')\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" id=\"migrateLegacyStorage\">CHUYỂN THƯ VIỆN CŨ AN TOÀN</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    55 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+    "stack": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#migrateLegacyStorage')\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" id=\"migrateLegacyStorage\">CHUYỂN THƯ VIỆN CŨ AN TOÀN</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    55 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at /workspace/p12-2b-storage/storage-tests.cjs:27:74"
+  }
+}

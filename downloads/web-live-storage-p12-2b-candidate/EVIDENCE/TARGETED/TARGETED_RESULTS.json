@@ -1,0 +1,197 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "LESSON_SUBJECT_SEPARATED_FROM_ENGINE",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "LEGACY_INFORMATICS_SUBJECT_RESOLUTION",
+      "result": "PASS",
+      "evidence": {
+        "resolution": {
+          "id": "informatics",
+          "engine": "legacy",
+          "known": true,
+          "source": "EXPLICIT_SUBJECT_METADATA"
+        }
+      }
+    },
+    {
+      "name": "PREVIEW_NEVER_AUTO_COMMITS",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "PREVIEW_AND_LOADER_LABELS_SEPARATE_SUBJECT_RUNTIME",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "LEGACY_INFORMATICS_LOAD",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "LEGACY_ENGINE_PRESERVED",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "NO_ENGINE_INFERENCE",
+      "result": "PASS",
+      "evidence": {
+        "runtime": "legacy",
+        "subjectEnginePropertyAbsent": true,
+        "contentUnchanged": true
+      }
+    },
+    {
+      "name": "RECENT_STORES_ACTUAL_ENGINE_REMEMBERS_RESOLVED_SUBJECT",
+      "result": "PASS",
+      "evidence": {
+        "lastSubject": "informatics",
+        "recentEngine": "legacy"
+      }
+    },
+    {
+      "name": "LEGACY_NO_TEACH_AHEAD_TEACHER_NOTE_ABSENT",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "LEGACY_INFORMATICS_FILTER_VISIBILITY",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "LEGACY_INFORMATICS_GRADE_FILTER",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "LEGACY_INFORMATICS_WEEK_FILTER",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "LEGACY_INFORMATICS_PERIOD_FILTER",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "FILTER_AND_SUBJECT_CHANGE_CURRENT_TEACHER_TV_PRESERVED",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "TRUE_SUBJECT_MISMATCH_BLOCK",
+      "result": "PASS",
+      "evidence": {
+        "message": "Môn đã chọn: Tin học\nMôn của bài: Đại số\nChế độ chạy: Đại số\n\nGói bài không khớp môn đã chọn."
+      }
+    },
+    {
+      "name": "TRUE_LEGACY_SUBJECT_MISMATCH_BLOCK",
+      "result": "PASS",
+      "evidence": {
+        "cases": 6
+      }
+    },
+    {
+      "name": "AMBIGUOUS_METADATA_BLOCK",
+      "result": "PASS",
+      "evidence": {
+        "cases": 6
+      }
+    },
+    {
+      "name": "CURRENT_LESSON_PRESERVATION",
+      "result": "PASS",
+      "evidence": {
+        "teacher": true,
+        "tv": true,
+        "storage": true
+      }
+    },
+    {
+      "name": "INVALID_ENGINE_VALIDATION_UNWEAKENED",
+      "result": "PASS",
+      "evidence": {
+        "cases": 5
+      }
+    },
+    {
+      "name": "INVALID_PACKAGE_SAFETY",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "CROSS_SUBJECT_LEGACY_CLASSIFICATION_AND_ENGINE_PRESERVATION",
+      "result": "PASS",
+      "evidence": {
+        "variants": 15,
+        "subjects": [
+          "geometry",
+          "algebra",
+          "informatics"
+        ],
+        "engines": [
+          "MISSING",
+          "legacy",
+          "default"
+        ]
+      }
+    },
+    {
+      "name": "MODERN_EXPLICIT_ENGINE_ROUTING_UNCHANGED",
+      "result": "PASS",
+      "evidence": {
+        "profiles": 3
+      }
+    },
+    {
+      "name": "UNKNOWN_LEGACY_BUCKET_NO_CONTENT_FILENAME_OR_TITLE_GUESS",
+      "result": "PASS",
+      "evidence": {
+        "cases": 7
+      }
+    },
+    {
+      "name": "KNOWN_LEGACY_SUBJECT_MISSING_GWP_VISIBLE_NO_INFERRED_GRADE_FROM_TIN6",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "UNCHANGED_REAL_EXISTING_TIN6_W05_ZIP_ALLOWED_WITH_LEGACY_RUNTIME",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "RECENT_SHARED_PIPELINE_DEDUP_CAP_AND_REMEMBER_AFTER_RELOAD",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "NO_QUICK_STORAGE_MIGRATION_OR_REWRITE_ON_READ",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "ZERO_BROWSER_ERRORS_EXTERNAL_REQUESTS",
+      "result": "PASS",
+      "evidence": {}
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "captures": [
+    "FINDING_AFTER_PREVIEW.png"
+  ],
+  "windowsFinding": "YES (GV_REPORTED)",
+  "windowsRetest": "UNRUN",
+  "physicalTV": "UNRUN",
+  "realClassroom": "UNRUN",
+  "browser": "151.0.7922.173"
+}

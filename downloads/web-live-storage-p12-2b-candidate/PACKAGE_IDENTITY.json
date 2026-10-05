@@ -1,0 +1,15 @@
+{
+  "candidate": "WEB_LIVE_STORAGE_P12_2B_CANDIDATE.zip",
+  "sha256": "5f6c9676bfba0c3d0f1e7955df706a6f0935c8669ef148664bb4207d92e0db44",
+  "bytes": 50255031,
+  "fileCount": 1278,
+  "zipCRC": "PASS",
+  "freshExtractAllFilesSHA256": "PASS",
+  "runtimeMatchesTechnicalGate": true,
+  "P121SHA256Before": "39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49",
+  "P121SHA256After": "39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49",
+  "productionModified": false,
+  "windows": "UNRUN",
+  "physicalTV": "UNRUN",
+  "classroom": "UNRUN"
+}

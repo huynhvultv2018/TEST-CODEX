@@ -1,0 +1,1 @@
+Initial inherited harness used http://127.0.0.1:8778 despite provided env var. net::ERR_EMPTY_RESPONSE. Corrected test-only base binding to 8791; runtime unchanged for this correction. Corrected run: 26 checks PASS.

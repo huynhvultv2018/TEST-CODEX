@@ -1,0 +1,298 @@
+{
+  "result": "PASS",
+  "syntheticOnly": true,
+  "windows": "UNRUN",
+  "runs": [
+    {
+      "count": 10,
+      "imageSide": 32,
+      "saveResult": "PASS",
+      "listResult": "PASS",
+      "filterResult": "PASS",
+      "reopenResult": "PASS",
+      "storageErrorCount": 0,
+      "rawAssetBytes": 32011,
+      "serializedUTF8Bytes": 131645,
+      "saveMs": 944.7999999970198,
+      "listMs": 0.10000000894069672,
+      "reopenMs": 398.69999998807907,
+      "approxStorageUse": {
+        "quota": 6442529736,
+        "usage": 78792,
+        "usageDetails": {
+          "indexedDB": 78792
+        }
+      },
+      "localStorageKeys": [],
+      "reopenedCount": 10,
+      "result": "PASS"
+    },
+    {
+      "count": 50,
+      "imageSide": 32,
+      "saveResult": "PASS",
+      "listResult": "PASS",
+      "filterResult": "PASS",
+      "reopenResult": "PASS",
+      "storageErrorCount": 0,
+      "rawAssetBytes": 160150,
+      "serializedUTF8Bytes": 658810,
+      "saveMs": 3218.1999999582767,
+      "listMs": 0.3999999910593033,
+      "reopenMs": 187.09999999403954,
+      "approxStorageUse": {
+        "quota": 7516436841,
+        "usage": 244073,
+        "usageDetails": {
+          "indexedDB": 244073
+        }
+      },
+      "localStorageKeys": [],
+      "reopenedCount": 50,
+      "result": "PASS"
+    },
+    {
+      "count": 100,
+      "imageSide": 32,
+      "saveResult": "PASS",
+      "listResult": "PASS",
+      "filterResult": "PASS",
+      "reopenResult": "PASS",
+      "storageErrorCount": 0,
+      "rawAssetBytes": 320351,
+      "serializedUTF8Bytes": 1317916,
+      "saveMs": 2824.999999985099,
+      "listMs": 0.20000000298023224,
+      "reopenMs": 541.0999999940395,
+      "approxStorageUse": {
+        "quota": 7516628322,
+        "usage": 435554,
+        "usageDetails": {
+          "indexedDB": 435554
+        }
+      },
+      "localStorageKeys": [],
+      "reopenedCount": 100,
+      "result": "PASS"
+    },
+    {
+      "count": 250,
+      "imageSide": 32,
+      "saveResult": "PASS",
+      "listResult": "PASS",
+      "filterResult": "PASS",
+      "reopenResult": "PASS",
+      "storageErrorCount": 0,
+      "rawAssetBytes": 800799,
+      "serializedUTF8Bytes": 3295155,
+      "saveMs": 16372.200000047684,
+      "listMs": 0.5,
+      "reopenMs": 969.0999999940395,
+      "approxStorageUse": {
+        "quota": 7518330752,
+        "usage": 2137984,
+        "usageDetails": {
+          "indexedDB": 2137984
+        }
+      },
+      "localStorageKeys": [],
+      "reopenedCount": 250,
+      "result": "PASS"
+    },
+    {
+      "count": 10,
+      "imageSide": 96,
+      "saveResult": "PASS",
+      "listResult": "PASS",
+      "filterResult": "PASS",
+      "reopenResult": "PASS",
+      "storageErrorCount": 0,
+      "rawAssetBytes": 274705,
+      "serializedUTF8Bytes": 1102421,
+      "saveMs": 608.2999999821186,
+      "listMs": 0,
+      "reopenMs": 83.29999999701977,
+      "approxStorageUse": {
+        "quota": 6442778266,
+        "usage": 327322,
+        "usageDetails": {
+          "indexedDB": 327322
+        }
+      },
+      "localStorageKeys": [],
+      "reopenedCount": 10,
+      "result": "PASS"
+    },
+    {
+      "count": 50,
+      "imageSide": 96,
+      "saveResult": "PASS",
+      "listResult": "PASS",
+      "filterResult": "PASS",
+      "reopenResult": "PASS",
+      "storageErrorCount": 0,
+      "rawAssetBytes": 1373295,
+      "serializedUTF8Bytes": 5511430,
+      "saveMs": 2827.6999999582767,
+      "listMs": 0.09999999403953552,
+      "reopenMs": 399.30000001192093,
+      "approxStorageUse": {
+        "quota": 6443909624,
+        "usage": 1458680,
+        "usageDetails": {
+          "indexedDB": 1458680
+        }
+      },
+      "localStorageKeys": [],
+      "reopenedCount": 50,
+      "result": "PASS"
+    },
+    {
+      "count": 100,
+      "imageSide": 96,
+      "saveResult": "PASS",
+      "listResult": "PASS",
+      "filterResult": "PASS",
+      "reopenResult": "PASS",
+      "storageErrorCount": 0,
+      "rawAssetBytes": 2746704,
+      "serializedUTF8Bytes": 11023360,
+      "saveMs": 7745.399999946356,
+      "listMs": 0.10000000894069672,
+      "reopenMs": 639.6000000089407,
+      "approxStorageUse": {
+        "quota": 7519078607,
+        "usage": 2885839,
+        "usageDetails": {
+          "indexedDB": 2885839
+        }
+      },
+      "localStorageKeys": [],
+      "reopenedCount": 100,
+      "result": "PASS"
+    },
+    {
+      "count": 250,
+      "imageSide": 96,
+      "saveResult": "PASS",
+      "listResult": "PASS",
+      "filterResult": "PASS",
+      "reopenResult": "PASS",
+      "storageErrorCount": 0,
+      "rawAssetBytes": 6866645,
+      "serializedUTF8Bytes": 27558579,
+      "saveMs": 23497.20000001788,
+      "listMs": 1.3999999910593033,
+      "reopenMs": 4212.20000000298,
+      "approxStorageUse": {
+        "quota": 6449683132,
+        "usage": 7232188,
+        "usageDetails": {
+          "indexedDB": 7232188
+        }
+      },
+      "localStorageKeys": [],
+      "reopenedCount": 250,
+      "result": "PASS"
+    },
+    {
+      "count": 10,
+      "imageSide": 192,
+      "saveResult": "PASS",
+      "listResult": "PASS",
+      "filterResult": "PASS",
+      "reopenResult": "PASS",
+      "storageErrorCount": 0,
+      "rawAssetBytes": 1039784,
+      "serializedUTF8Bytes": 4162755,
+      "saveMs": 2165.199999988079,
+      "listMs": 0.10000000894069672,
+      "reopenMs": 315.90000000596046,
+      "approxStorageUse": {
+        "quota": 6443554983,
+        "usage": 1104039,
+        "usageDetails": {
+          "indexedDB": 1104039
+        }
+      },
+      "localStorageKeys": [],
+      "reopenedCount": 10,
+      "result": "PASS"
+    },
+    {
+      "count": 50,
+      "imageSide": 192,
+      "saveResult": "PASS",
+      "listResult": "PASS",
+      "filterResult": "PASS",
+      "reopenResult": "PASS",
+      "storageErrorCount": 0,
+      "rawAssetBytes": 5199061,
+      "serializedUTF8Bytes": 20814516,
+      "saveMs": 6332.799999892712,
+      "listMs": 0.20000000298023224,
+      "reopenMs": 1911.2000000029802,
+      "approxStorageUse": {
+        "quota": 7521519841,
+        "usage": 5327073,
+        "usageDetails": {
+          "indexedDB": 5327073
+        }
+      },
+      "localStorageKeys": [],
+      "reopenedCount": 50,
+      "result": "PASS"
+    },
+    {
+      "count": 100,
+      "imageSide": 192,
+      "saveResult": "PASS",
+      "listResult": "PASS",
+      "filterResult": "PASS",
+      "reopenResult": "PASS",
+      "storageErrorCount": 0,
+      "rawAssetBytes": 10398097,
+      "serializedUTF8Bytes": 41629016,
+      "saveMs": 12108.199999988079,
+      "listMs": 0.19999998807907104,
+      "reopenMs": 1896,
+      "approxStorageUse": {
+        "quota": 6453077038,
+        "usage": 10626094,
+        "usageDetails": {
+          "indexedDB": 10626094
+        }
+      },
+      "localStorageKeys": [],
+      "reopenedCount": 100,
+      "result": "PASS"
+    },
+    {
+      "count": 250,
+      "imageSide": 192,
+      "saveResult": "PASS",
+      "listResult": "PASS",
+      "filterResult": "PASS",
+      "reopenResult": "PASS",
+      "storageErrorCount": 0,
+      "rawAssetBytes": 25995050,
+      "serializedUTF8Bytes": 104072449,
+      "saveMs": 34103.599999949336,
+      "listMs": 0.5,
+      "reopenMs": 5049.9000000059605,
+      "approxStorageUse": {
+        "quota": 7542673559,
+        "usage": 26480791,
+        "usageDetails": {
+          "indexedDB": 26480791
+        }
+      },
+      "localStorageKeys": [],
+      "reopenedCount": 250,
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "capacityUnlimited": false,
+  "browser": "151.0.7922.173"
+}

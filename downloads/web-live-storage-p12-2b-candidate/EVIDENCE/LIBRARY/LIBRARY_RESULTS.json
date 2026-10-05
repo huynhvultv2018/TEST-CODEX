@@ -1,0 +1,178 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "EMPTY_LIBRARY_NO_PHANTOM_CHOICES",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "GRADE_SORT",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "WEEK_NUMERIC_SORT",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "PERIOD_NUMERIC_SORT",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "SUBJECT_FILTER_FOUR_METADATA_GROUPS",
+      "result": "PASS",
+      "evidence": {
+        "each": 165,
+        "total": 660,
+        "legacyAbsentEngine": true
+      }
+    },
+    {
+      "name": "GRADE_WEEK_PERIOD_NARROWING",
+      "result": "PASS",
+      "evidence": {
+        "complete": 2,
+        "incomplete": 5
+      }
+    },
+    {
+      "name": "MISSING_METADATA_VISIBLE_NO_FALSE_FIELDS",
+      "result": "PASS",
+      "evidence": {
+        "profiles": 4,
+        "missingPerProfile": 5,
+        "classNotInferredAsGrade": true
+      }
+    },
+    {
+      "name": "UNKNOWN_BUCKET_NARROWS_ONLY_ACTUAL_MISSING_FIELDS",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "UPSTREAM_CHANGE_RESETS_DESCENDANTS",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "LESSON_LIST_STABILITY_AND_DUPLICATE_TITLE_IDENTIFICATION",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "METADATA_SOURCE_OF_TRUTH_NO_CONTENT_FILENAME_HEURISTICS",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "SUBJECT_CHANGE_RESETS_FILTERS_PRESERVES_CURRENT_TEACHER_TV",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "FILTER_METADATA_STORAGE_ZERO_WRITES_NO_PACKAGE_DUPLICATION",
+      "result": "PASS",
+      "evidence": {
+        "writes": 0,
+        "persistentIndexKeys": 0,
+        "inMemoryStateValues": 3
+      }
+    },
+    {
+      "name": "FILTER_CHANGE_INVALIDATES_PENDING_CHOICE_NOT_CURRENT_LESSON",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "MISSING_REFERENCE_CLEARS_STALE_PENDING_LOAD",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "RECENT_OUTSIDE_FILTERS_REUSES_STAGE_VALIDATION_AND_NATIVE_RESET",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "COMMON_LIBRARY_LOAD_WITHIN_FIVE_MEANINGFUL_INTERACTIONS",
+      "result": "PASS",
+      "evidence": {
+        "scenario": "Common saved-library load, remembered current subject, System initially collapsed, one grade filter",
+        "meaningfulInteractions": 5,
+        "observedAutomationActions": [
+          "open System group",
+          "open existing Loader",
+          "choose Grade8",
+          "choose lesson",
+          "explicit validated LOAD"
+        ],
+        "modeledMouseClicks": 6,
+        "fileBrowserSteps": 0,
+        "modalCount": 1,
+        "windowsPhysical": "UNRUN",
+        "qualification": "Native dropdown selectOption models one meaningful selection but normally two mouse clicks. No manual navigation/scroll needed for this fixture first row; arbitrary row search/reading not timed."
+      }
+    },
+    {
+      "name": "RELOAD_REMEMBERS_SUBJECT_RESETS_FILTERS_PRESERVES_NATIVE_ACCEPTED_SESSION_RESTORE",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "REMEMBERED_SUBJECT_WITHOUT_NATIVE_SESSION_DOES_NOT_AUTO_LOAD",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "OLD_PACKAGE_ALL_FIELDS_MISSING_VISIBLE_LOADABLE_WITHOUT_FALSE_METADATA",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "ZERO_RUNTIME_ERRORS_EXTERNAL_REQUESTS",
+      "result": "PASS",
+      "evidence": {}
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "captures": [
+    "LIBRARY_FILTERS_1920.png",
+    "LIBRARY_FILTERS_1366.png",
+    "LIBRARY_FILTERS_1280.png",
+    "LIBRARY_VALIDATED_PREVIEW.png"
+  ],
+  "performance": [
+    {
+      "operation": "select subject / render large library",
+      "elapsedMs": 466,
+      "libraryCount": 660
+    }
+  ],
+  "interactions": [
+    {
+      "scenario": "Common saved-library load, remembered current subject, System initially collapsed, one grade filter",
+      "meaningfulInteractions": 5,
+      "observedAutomationActions": [
+        "open System group",
+        "open existing Loader",
+        "choose Grade8",
+        "choose lesson",
+        "explicit validated LOAD"
+      ],
+      "modeledMouseClicks": 6,
+      "fileBrowserSteps": 0,
+      "modalCount": 1,
+      "windowsPhysical": "UNRUN",
+      "qualification": "Native dropdown selectOption models one meaningful selection but normally two mouse clicks. No manual navigation/scroll needed for this fixture first row; arbitrary row search/reading not timed."
+    }
+  ],
+  "syntheticOnly": true,
+  "windowsPhysical": "UNRUN",
+  "physicalTV": "UNRUN",
+  "realClassroom": "UNRUN",
+  "browser": "151.0.7922.173"
+}

@@ -1,0 +1,86 @@
+{
+  "result": "FAIL",
+  "checks": [
+    {
+      "name": "EMPTY_LIBRARY_NO_PHANTOM_CHOICES",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "GRADE_SORT",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "WEEK_NUMERIC_SORT",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "PERIOD_NUMERIC_SORT",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "SUBJECT_FILTER_FOUR_METADATA_GROUPS",
+      "result": "PASS",
+      "evidence": {
+        "each": 165,
+        "total": 660,
+        "legacyAbsentEngine": true
+      }
+    },
+    {
+      "name": "GRADE_WEEK_PERIOD_NARROWING",
+      "result": "PASS",
+      "evidence": {
+        "complete": 2,
+        "incomplete": 5
+      }
+    },
+    {
+      "name": "MISSING_METADATA_VISIBLE_NO_FALSE_FIELDS",
+      "result": "PASS",
+      "evidence": {
+        "profiles": 4,
+        "missingPerProfile": 5,
+        "classNotInferredAsGrade": true
+      }
+    },
+    {
+      "name": "UNKNOWN_BUCKET_NARROWS_ONLY_ACTUAL_MISSING_FIELDS",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "UPSTREAM_CHANGE_RESETS_DESCENDANTS",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "LESSON_LIST_STABILITY_AND_DUPLICATE_TITLE_IDENTIFICATION",
+      "result": "PASS",
+      "evidence": {}
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "captures": [],
+  "performance": [
+    {
+      "operation": "select subject / render large library",
+      "elapsedMs": 473,
+      "libraryCount": 660
+    }
+  ],
+  "interactions": [],
+  "syntheticOnly": true,
+  "windowsPhysical": "UNRUN",
+  "physicalTV": "UNRUN",
+  "realClassroom": "UNRUN",
+  "browser": "151.0.7922.173",
+  "error": {
+    "message": "page.evaluate: TypeError: Cannot set properties of null (setting 'grade')\n    at eval (eval at evaluate (:311:30), <anonymous>:1:256)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+    "stack": "page.evaluate: TypeError: Cannot set properties of null (setting 'grade')\n    at eval (eval at evaluate (:311:30), <anonymous>:1:256)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /workspace/p12-2b-storage/EVIDENCE/REGRESSION/library-tests.cjs:32:10"
+  }
+}

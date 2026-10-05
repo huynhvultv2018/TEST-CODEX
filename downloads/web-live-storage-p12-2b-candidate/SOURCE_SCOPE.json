@@ -1,0 +1,81 @@
+{
+  "sourceZipSHA256Before": "39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49",
+  "sourceZipSHA256After": "39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49",
+  "sourceFrozenFileCount": 1241,
+  "sourceFrozenMutated": false,
+  "changedPayloadFiles": [
+    "WEB_LIVE/common.js",
+    "WEB_LIVE/pedagogy-teacher.js",
+    "WEB_LIVE/subject-loader.js",
+    "WEB_LIVE/teacher.html",
+    "WEB_LIVE/teacher.js",
+    "WEB_LIVE/tv.html",
+    "WEB_LIVE/tv.js",
+    "WEB_LIVE/zip.js"
+  ],
+  "addedPayloadFiles": [
+    "WEB_LIVE/subject-storage.js"
+  ],
+  "coreFilesChanged": [
+    "WEB_LIVE/common.js",
+    "WEB_LIVE/pedagogy-teacher.js",
+    "WEB_LIVE/teacher.html",
+    "WEB_LIVE/teacher.js",
+    "WEB_LIVE/tv.html",
+    "WEB_LIVE/tv.js",
+    "WEB_LIVE/zip.js"
+  ],
+  "profileFilesChanged": [],
+  "cssFilesChanged": [],
+  "profileResolverChanged": false,
+  "launcherChanged": false,
+  "userPackagesChanged": false,
+  "coreOutsideStorageFunctionsChecks": [
+    {
+      "file": "teacher.js",
+      "functionOrBlock": "function start(",
+      "byteExactUnchanged": true
+    },
+    {
+      "file": "teacher.js",
+      "functionOrBlock": "function render(){",
+      "byteExactUnchanged": true
+    },
+    {
+      "file": "teacher.js",
+      "functionOrBlock": "function go(n){",
+      "byteExactUnchanged": true
+    },
+    {
+      "file": "teacher.js",
+      "functionOrBlock": "function state(){",
+      "byteExactUnchanged": true
+    },
+    {
+      "file": "common.js",
+      "functionOrBlock": "// A scene keeps",
+      "byteExactUnchanged": true
+    },
+    {
+      "file": "tv.js",
+      "functionOrBlock": "function applyState(d){",
+      "byteExactUnchanged": true
+    },
+    {
+      "file": "zip.js",
+      "functionOrBlock": "async function unzipFile(",
+      "byteExactUnchanged": true
+    },
+    {
+      "file": "zip.js",
+      "functionOrBlock": "async function prepareLessonZip(",
+      "byteExactUnchanged": true
+    }
+  ],
+  "unmodifiedOriginalPayloadFiles": 1233,
+  "sourceScopeViolation": false,
+  "productionModified": false,
+  "localStorageLegacyCleanup": "NOT_RUN_BY_DESIGN",
+  "cleanupApproval": "NOT_GRANTED",
+  "P12_2CRequiredBeforeCleanup": true
+}

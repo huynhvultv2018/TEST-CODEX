@@ -1,0 +1,1 @@
+Inherited P12.1 test asserted profile immediately after reload. P12.2B retrieval is asynchronous. Copy retains all 28 assertions and waits for exact accepted lesson id + expected profile after each reload. Original suite and runtime unchanged.

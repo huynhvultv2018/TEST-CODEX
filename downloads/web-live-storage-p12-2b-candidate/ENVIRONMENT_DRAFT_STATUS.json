@@ -1,0 +1,13 @@
+{
+  "status": "saved",
+  "fieldsChanged": [
+    "start_skill"
+  ],
+  "requires_publish": true,
+  "published": false,
+  "freshTaskRestorationVerified": false,
+  "installScriptChanged": false,
+  "repositoriesChanged": false,
+  "networkChanged": false,
+  "secretRequirementsChanged": false
+}
