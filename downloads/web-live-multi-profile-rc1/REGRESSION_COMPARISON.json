@@ -1,0 +1,30 @@
+{
+  "GEOMETRY": {
+    "result": "PASS",
+    "reference": "FROZEN_GEOMETRY/GEOMETRY_RUNTIME/geometry-runtime.json",
+    "phase7": "PHASE7/GEOMETRY_RUNTIME/geometry-runtime.json",
+    "normalization": "Per-import lessonActivation UUID only (all 23 records); native intra-run parity still asserted.",
+    "checks": 14
+  },
+  "ALGEBRA": {
+    "result": "PASS",
+    "reference": "FROZEN_ALGEBRA/ALGEBRA_TARGETED.json",
+    "phase7": "PHASE7/ALGEBRA_TARGETED.json",
+    "normalization": "NONE",
+    "checks": 20
+  },
+  "INFORMATICS": {
+    "result": "PASS",
+    "reference": "FROZEN_INFORMATICS/INFORMATICS_TARGETED.json",
+    "phase7": "PHASE7/INFORMATICS/INFORMATICS_TARGETED.json",
+    "normalization": "Video currentTime only; both runs independently asserted manual playback >0. All dimensions, controls and autoplay constraints remain exact.",
+    "checks": 26
+  },
+  "LEGACY": {
+    "result": "PASS",
+    "reference": "FROZEN_INFORMATICS/ENGINES/results.json",
+    "phase7": "PHASE7/ENGINES/results.json",
+    "normalization": "NONE",
+    "checks": 15
+  }
+}

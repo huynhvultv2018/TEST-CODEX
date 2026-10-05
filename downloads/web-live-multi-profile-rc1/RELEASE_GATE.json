@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "prepackageGate": "PASS",
+  "packagedIntegration": "PASS",
+  "packagedAssets": "PASS",
+  "assets": 58,
+  "files": 1239,
+  "runtimeErrors": 0,
+  "externalRuntimeRequests": 0,
+  "frozenReferencesMutated": false,
+  "productionModified": false,
+  "newPhase7OpenFindings": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 0,
+    "P3": 0
+  }
+}

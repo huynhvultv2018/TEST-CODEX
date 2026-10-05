@@ -1,0 +1,12 @@
+{
+  "name": "WEB_LIVE_MULTI_PROFILE_RC1",
+  "kind": "RELEASE_CANDIDATE",
+  "zip": "/workspace/output/web-live-multi-profile-rc1/WEB_LIVE_MULTI_PROFILE_RC1.zip",
+  "sha256": "d09db03f88c065d1167030fa5bd45f6467fc464c31d7a228003a20ac28769fc5",
+  "bytes": 50124103,
+  "files": 1239,
+  "crc": "PASS",
+  "freshExtractionByteEquality": "PASS",
+  "applicationChangesFromPhase6": 0,
+  "production": false
+}

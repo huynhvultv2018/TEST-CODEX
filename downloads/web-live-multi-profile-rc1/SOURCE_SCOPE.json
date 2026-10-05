@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "files": 1239,
+  "changed": [],
+  "added": [],
+  "removed": [],
+  "applicationPatched": false,
+  "frozenReferencesMutated": false,
+  "productionModified": false
+}

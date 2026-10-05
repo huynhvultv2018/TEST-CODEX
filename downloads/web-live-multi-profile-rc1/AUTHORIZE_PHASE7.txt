@@ -1,0 +1,673 @@
+# APPROVE & FREEZE PHASE 6
+# PHASE 7 — WEB LIVE MULTI-PROFILE INTEGRATION / RELEASE CANDIDATE
+
+Tôi phê duyệt kết quả kỹ thuật:
+
+```text id="6xif86"
+PHASE6_STATUS = PASS
+```
+
+Không Production.
+
+Bắt đầu Phase 7 chỉ để:
+
+```text id="n0ihrv"
+INTEGRATION
+VALIDATION
+REGRESSION
+RELEASE-CANDIDATE PREPARATION
+```
+
+Không phát triển thêm chức năng.
+
+==================================================
+1. FREEZE INFORMATICS PHASE 6
+==================================================
+
+Đóng băng:
+
+```text id="uw3y7c"
+PHASE6_CANDIDATE =
+WEB_LIVE_INFORMATICS_PHASE6_CANDIDATE
+
+PHASE6_CANDIDATE_SHA256 =
+d67c062b5bd7b431e92918698c3c47b04e71c783cfeeaa8a20f20e909e12ea5e
+
+PHASE6_CANDIDATE_STATUS = FROZEN
+```
+
+Bắt buộc:
+
+```text id="xj39yb"
+PHASE6_CANDIDATE_MUTATED = NO
+```
+
+==================================================
+2. FROZEN REFERENCES
+==================================================
+
+Geometry:
+
+```text id="54jzvc"
+GEOMETRY_PHASE4_CANDIDATE =
+WEB_LIVE_GEOMETRY_PHASE4_CANDIDATE
+
+SHA256 =
+9974d9fb4d4e4db023846c0ee42258b3fd193acfe37bd63b8fe6c7d2ee5f9b8e
+```
+
+Algebra:
+
+```text id="cf6e3x"
+ALGEBRA_PHASE5_CANDIDATE =
+WEB_LIVE_ALGEBRA_PHASE5_CANDIDATE
+
+SHA256 =
+575b466dc839d54c6ad91327bc5a7454ece42cbacfd69ae916eca4aa1bcaf01d
+```
+
+Informatics:
+
+```text id="n1c2g4"
+INFORMATICS_PHASE6_CANDIDATE =
+WEB_LIVE_INFORMATICS_PHASE6_CANDIDATE
+
+SHA256 =
+d67c062b5bd7b431e92918698c3c47b04e71c783cfeeaa8a20f20e909e12ea5e
+```
+
+Không sửa ba frozen references.
+
+==================================================
+3. KNOWN ACCEPTED OPEN ITEMS
+==================================================
+
+Giữ nguyên:
+
+```text id="h9xv8f"
+G4-F02 = OPEN_DEFERRED
+G4-F03 = FIXED
+G4-F04 = OPEN_DEFERRED
+G4-F05 = VALIDATION_PENDING
+
+REAL_FILE_VALIDATION =
+NOT_RUN_BY_GV_DECISION
+
+REAL_CLASSROOM_TRIAL =
+UNRUN
+```
+
+Không biến các mục này thành PASS.
+
+Không patch chúng trong Phase 7.
+
+==================================================
+4. PHASE 7 OBJECTIVE
+==================================================
+
+Kiểm chứng kiến trúc tích hợp cuối:
+
+```text id="v2h8da"
+WEB_LIVE_CORE
+        │
+        ├── LEGACY_PROFILE
+        ├── GEOMETRY_PROFILE
+        ├── ALGEBRA_PROFILE
+        └── INFORMATICS_PROFILE
+```
+
+Mục tiêu:
+
+```text id="drpp16"
+ONE CORE
+
+MULTIPLE PROFILES
+
+CORRECT ROUTING
+
+PROFILE ISOLATION
+
+STATE ISOLATION
+
+DATA ISOLATION
+
+BACKWARD COMPATIBILITY
+
+NO CROSS-PROFILE LEAK
+
+STABLE RUNTIME
+```
+
+==================================================
+5. NO FEATURE DEVELOPMENT
+==================================================
+
+Cấm:
+
+```text id="5k37nm"
+NEW FEATURE
+UI REDESIGN
+SCHEMA REDESIGN
+CORE REFACTOR
+PROFILE REFACTOR
+PEDAGOGICAL CHANGE
+PERFORMANCE REWRITE
+```
+
+Phase 7 là validation/integration phase.
+
+==================================================
+6. PROFILE RESOLVER
+==================================================
+
+Kiểm:
+
+```text id="y02ptg"
+subject_engine = geometry
+→ GEOMETRY_PROFILE
+
+subject_engine = algebra
+→ ALGEBRA_PROFILE
+
+subject_engine = informatics
+→ INFORMATICS_PROFILE
+
+missing subject_engine
+→ LEGACY / DEFAULT
+```
+
+Kiểm thêm:
+
+```text id="bcv71o"
+UNKNOWN subject_engine
+
+INVALID subject_engine
+
+EMPTY subject_engine
+
+MALFORMED metadata
+```
+
+Không crash runtime.
+
+==================================================
+7. PROFILE SWITCHING
+==================================================
+
+Test liên tục:
+
+```text id="h2g4p0"
+LEGACY
+→ GEOMETRY
+→ ALGEBRA
+→ INFORMATICS
+→ LEGACY
+```
+
+và:
+
+```text id="z7c5kv"
+GEOMETRY
+→ ALGEBRA
+→ GEOMETRY
+
+ALGEBRA
+→ INFORMATICS
+→ ALGEBRA
+
+INFORMATICS
+→ GEOMETRY
+→ INFORMATICS
+```
+
+==================================================
+8. STATE ISOLATION
+==================================================
+
+Đặc biệt kiểm không rò state giữa profile.
+
+Geometry state:
+
+```text id="my8pqe"
+FIGURE
+ANNOTATION
+PROOF REVEAL
+GEOMETRY FOCUS
+LAYOUT
+ZOOM
+```
+
+Algebra state:
+
+```text id="8dch0e"
+STEP REVEAL
+STEP HIGHLIGHT
+MATH FOCUS
+HINT
+ANSWER
+```
+
+Informatics state:
+
+```text id="n9u2ex"
+ACTIVITY
+CODE HIGHLIGHT
+CHECKPOINT
+FOCUS
+HINT
+ANSWER
+SAMPLE PRODUCT
+```
+
+Sau profile switch:
+
+không được có state của profile trước xuất hiện sai trong profile sau.
+
+==================================================
+9. UI / CSS ISOLATION
+==================================================
+
+Kiểm:
+
+```text id="u81wmy"
+GEOMETRY CSS
+→ NOT LEAK INTO ALGEBRA / INFORMATICS
+
+ALGEBRA CSS
+→ NOT LEAK INTO GEOMETRY / INFORMATICS
+
+INFORMATICS CSS
+→ NOT LEAK INTO GEOMETRY / ALGEBRA
+```
+
+Đặc biệt kiểm Focus behavior của cả ba profile.
+
+==================================================
+10. REVEAL ISOLATION
+==================================================
+
+Kiểm độc lập:
+
+```text id="wnp93h"
+HINT
+ANSWER
+PROOF STEP
+ALGEBRA STEP
+SAMPLE PRODUCT
+TEACHER NOTE
+```
+
+Không cross-reveal.
+
+Không state collision.
+
+==================================================
+11. LEGACY COMPATIBILITY
+==================================================
+
+Các lesson cũ không có:
+
+```text id="ln1e0w"
+subject_engine
+```
+
+phải tiếp tục hoạt động bằng:
+
+```text id="25h47q"
+legacy/default
+```
+
+Không yêu cầu migrate lesson cũ để chạy được.
+
+==================================================
+12. INVALID DATA SAFETY
+==================================================
+
+Test:
+
+```text id="uhpg72"
+MISSING FIELD
+UNKNOWN PROFILE
+INVALID PROFILE
+EMPTY SCREEN
+MISSING OPTIONAL MEDIA
+INVALID OPTIONAL METADATA
+MISSING OPTIONAL PROFILE DATA
+```
+
+Yêu cầu:
+
+```text id="kk6ivb"
+NO RUNTIME CRASH
+NO PROFILE CROSS-LEAK
+CONTROLLED FALLBACK
+```
+
+==================================================
+13. TV LAYOUT INTEGRATION
+==================================================
+
+Kiểm toàn bộ profile với các viewport representative.
+
+Bao gồm:
+
+```text id="7a6c0f"
+16:9
+
+1366×768
+1920×1080
+
+TV-equivalent viewport
+```
+
+Kiểm:
+
+```text id="37ueaf"
+TEXT FIT
+MATH FIT
+FIGURE FIT
+CODE FIT
+TABLE FIT
+MEDIA FIT
+OVERFLOW
+CONTROL VISIBILITY
+```
+
+Không tuyên bố:
+
+```text id="wq7vhs"
+PHYSICAL TV PASS
+```
+
+nếu chưa chạy trên TV vật lý.
+
+==================================================
+14. CROSS-PROFILE STRESS TEST
+==================================================
+
+Thực hiện chu kỳ chuyển profile lặp lại.
+
+Ví dụ:
+
+```text id="lhn93g"
+LEGACY
+→ GEOMETRY
+→ ALGEBRA
+→ INFORMATICS
+→ GEOMETRY
+→ LEGACY
+```
+
+lặp nhiều vòng.
+
+Theo dõi:
+
+```text id="c6wh3e"
+STATE LEAK
+DOM LEAK
+EVENT LISTENER DUPLICATION
+CSS LEAK
+MEMORY/RESOURCE GROWTH
+RUNTIME ERROR
+```
+
+Không yêu cầu benchmark production-grade nếu test harness hiện tại không hỗ trợ.
+
+==================================================
+15. FROZEN PROFILE REGRESSION
+==================================================
+
+Bắt buộc:
+
+```text id="pfdclw"
+GEOMETRY_PROFILE_REGRESSION = PASS
+
+ALGEBRA_PROFILE_REGRESSION = PASS
+
+INFORMATICS_PROFILE_REGRESSION = PASS
+
+LEGACY_RUNTIME_REGRESSION = PASS
+```
+
+==================================================
+16. NO_TEACH_AHEAD GLOBAL CHECK
+==================================================
+
+Kiểm cả:
+
+```text id="5k1s2d"
+GEOMETRY
+ALGEBRA
+INFORMATICS
+```
+
+Bắt buộc:
+
+```text id="pcywra"
+NO_TEACH_AHEAD_GLOBAL = PASS
+```
+
+WEB LIVE không tự sinh nội dung sư phạm.
+
+==================================================
+17. SOURCE INTEGRITY
+==================================================
+
+Trước và sau Phase 7 tính lại SHA256 của ba frozen candidate.
+
+Bắt buộc:
+
+```text id="xphw77"
+GEOMETRY_PHASE4_MUTATED = NO
+
+ALGEBRA_PHASE5_MUTATED = NO
+
+INFORMATICS_PHASE6_MUTATED = NO
+```
+
+==================================================
+18. RELEASE CANDIDATE POLICY
+==================================================
+
+Nếu toàn bộ integration PASS:
+
+tạo:
+
+```text id="9byl5e"
+WEB_LIVE_MULTI_PROFILE_RC1
+```
+
+Đây là:
+
+```text id="pc8kh7"
+RELEASE CANDIDATE
+```
+
+không phải Production.
+
+Không ghi đè các candidate frozen.
+
+Tính SHA256 cho RC1.
+
+==================================================
+19. PATCH POLICY
+==================================================
+
+Nếu phát hiện lỗi:
+
+```text id="09lrxb"
+RECORD
+→ REPRODUCE
+→ CLASSIFY
+→ ROOT CAUSE
+→ OWNER
+→ SEVERITY
+→ EVIDENCE
+```
+
+Không tự patch.
+
+Nếu:
+
+```text id="ppjmqo"
+P0 > 0
+OR
+P1 > 0
+```
+
+thì:
+
+```text id="n53u4a"
+PHASE7_STATUS = NOT_PASS
+```
+
+và không tạo RC1.
+
+P2/P3:
+
+ghi đầy đủ và chờ GV review trước patch/defer.
+
+==================================================
+20. WINDOWS / PHYSICAL TV
+==================================================
+
+Ghi rõ:
+
+```text id="2gqaqa"
+WINDOWS_PHYSICAL_RUNTIME =
+UNRUN nếu chưa chạy
+
+PHYSICAL_TV_VALIDATION =
+UNRUN nếu chưa chạy
+
+REAL_CLASSROOM_TRIAL =
+UNRUN
+```
+
+Không giả lập các mục này thành PASS.
+
+==================================================
+21. ENVIRONMENT SETTINGS
+==================================================
+
+Hướng dẫn khởi động môi trường hiện đang:
+
+```text id="rht3ek"
+DRAFT
+```
+
+Không tự coi là đã áp dụng.
+
+Ghi:
+
+```text id="5rsjll"
+ENVIRONMENT_STARTUP_INSTRUCTIONS =
+DRAFT_PENDING_SAVE_PUBLISH
+```
+
+Không thay đổi Environment Settings nếu không có phê duyệt riêng.
+
+==================================================
+22. REQUIRED REPORTS
+==================================================
+
+Tạo:
+
+```text id="72yy47"
+MULTI_PROFILE_PHASE7_INTEGRATION_REPORT.md
+
+MULTI_PROFILE_PHASE7_TEST_EVIDENCE.md
+
+MULTI_PROFILE_PHASE7_REGRESSION_REPORT.md
+
+MULTI_PROFILE_PHASE7_RISK_REGISTER.md
+
+MULTI_PROFILE_RC1_MANIFEST.md
+```
+
+==================================================
+23. FINAL BLOCK
+==================================================
+
+Trả:
+
+```text id="25rx46"
+GEOMETRY_PHASE4_SHA256_BEFORE =
+GEOMETRY_PHASE4_SHA256_AFTER =
+GEOMETRY_PHASE4_MUTATED =
+
+ALGEBRA_PHASE5_SHA256_BEFORE =
+ALGEBRA_PHASE5_SHA256_AFTER =
+ALGEBRA_PHASE5_MUTATED =
+
+INFORMATICS_PHASE6_SHA256_BEFORE =
+INFORMATICS_PHASE6_SHA256_AFTER =
+INFORMATICS_PHASE6_MUTATED =
+
+PROFILE_RESOLVER =
+PROFILE_SWITCHING =
+STATE_ISOLATION =
+CSS_ISOLATION =
+REVEAL_ISOLATION =
+
+LEGACY_COMPATIBILITY =
+INVALID_DATA_SAFETY =
+
+GEOMETRY_PROFILE_REGRESSION =
+ALGEBRA_PROFILE_REGRESSION =
+INFORMATICS_PROFILE_REGRESSION =
+LEGACY_RUNTIME_REGRESSION =
+
+NO_TEACH_AHEAD_GLOBAL =
+
+TV_LAYOUT_INTEGRATION =
+CROSS_PROFILE_STRESS_TEST =
+
+G4_F02_STATUS =
+G4_F03_STATUS =
+G4_F04_STATUS =
+G4_F05_STATUS =
+
+REAL_FILE_VALIDATION =
+WINDOWS_PHYSICAL_RUNTIME =
+PHYSICAL_TV_VALIDATION =
+REAL_CLASSROOM_TRIAL =
+
+ENVIRONMENT_STARTUP_INSTRUCTIONS =
+
+P0_COUNT =
+P1_COUNT =
+P2_COUNT =
+P3_COUNT =
+
+SOURCE_SCOPE_VIOLATION =
+PRODUCTION_MODIFIED =
+
+RC1_CREATED =
+RC1_NAME =
+RC1_SHA256 =
+
+PHASE7_STATUS =
+RECOMMENDED_NEXT_ACTION =
+```
+
+==================================================
+24. STOP
+==================================================
+
+Sau:
+
+```text id="c6d8g9"
+INTEGRATION
+→ REGRESSION
+→ RC VALIDATION
+→ REPORT
+```
+
+STOP.
+
+Không Production.
+
+Không patch tự động.
+
+Chờ GV phê duyệt.

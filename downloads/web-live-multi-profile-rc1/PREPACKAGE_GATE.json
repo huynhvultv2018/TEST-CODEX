@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "integration": "PASS",
+  "regression": {
+    "GEOMETRY": "PASS",
+    "ALGEBRA": "PASS",
+    "INFORMATICS": "PASS",
+    "LEGACY": "PASS"
+  },
+  "scope": "PASS",
+  "frozenIntegrity": "PASS",
+  "environmentSettingsUnchanged": true,
+  "phase7OpenFindings": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 0,
+    "P3": 0
+  },
+  "knownAcceptedGeometryItemsExcludedFromNewFindingCounts": true
+}

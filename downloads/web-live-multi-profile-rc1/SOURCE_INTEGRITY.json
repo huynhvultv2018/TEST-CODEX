@@ -1,0 +1,32 @@
+{
+  "GEOMETRY": {
+    "phase": 4,
+    "status": "FROZEN",
+    "sha256Before": "9974d9fb4d4e4db023846c0ee42258b3fd193acfe37bd63b8fe6c7d2ee5f9b8e",
+    "zip": "/workspace/output/web-live-geometry-phase4-candidate/WEB_LIVE_GEOMETRY_PHASE4_CANDIDATE.zip",
+    "root": "/workspace/phase4-g4f03-patch/packaged-smoke/WEB_LIVE_GEOMETRY_PHASE4_CANDIDATE",
+    "files": 1227,
+    "sha256After": "9974d9fb4d4e4db023846c0ee42258b3fd193acfe37bd63b8fe6c7d2ee5f9b8e",
+    "mutated": false
+  },
+  "ALGEBRA": {
+    "phase": 5,
+    "status": "FROZEN",
+    "sha256Before": "575b466dc839d54c6ad91327bc5a7454ece42cbacfd69ae916eca4aa1bcaf01d",
+    "zip": "/workspace/output/web-live-algebra-phase5-candidate/WEB_LIVE_ALGEBRA_PHASE5_CANDIDATE.zip",
+    "root": "/workspace/phase5-algebra-profile/packaged-smoke/WEB_LIVE_ALGEBRA_PHASE5_CANDIDATE",
+    "files": 1233,
+    "sha256After": "575b466dc839d54c6ad91327bc5a7454ece42cbacfd69ae916eca4aa1bcaf01d",
+    "mutated": false
+  },
+  "INFORMATICS": {
+    "phase": 6,
+    "status": "FROZEN",
+    "sha256Before": "d67c062b5bd7b431e92918698c3c47b04e71c783cfeeaa8a20f20e909e12ea5e",
+    "zip": "/workspace/output/web-live-informatics-phase6-candidate/WEB_LIVE_INFORMATICS_PHASE6_CANDIDATE.zip",
+    "root": "/workspace/phase6-informatics-profile/packaged-smoke/WEB_LIVE_INFORMATICS_PHASE6_CANDIDATE",
+    "files": 1239,
+    "sha256After": "d67c062b5bd7b431e92918698c3c47b04e71c783cfeeaa8a20f20e909e12ea5e",
+    "mutated": false
+  }
+}
