@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "targetedChecks": 15,
+  "packagedTargetedChecks": 15,
+  "servedAssets": 60,
+  "fourProfileRegression": "PASS",
+  "sourceScope": "PASS",
+  "rc1Immutable": true,
+  "coreChangeRequired": false,
+  "productionModified": false,
+  "phase8PhysicalAcceptance": "PENDING_UNRUN"
+}

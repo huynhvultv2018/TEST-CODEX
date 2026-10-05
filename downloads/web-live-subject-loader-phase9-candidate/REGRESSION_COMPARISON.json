@@ -1,0 +1,30 @@
+{
+  "GEOMETRY": {
+    "result": "PASS",
+    "reference": "REGRESSION/RC1/GEOMETRY_RUNTIME/geometry-runtime.json",
+    "phase9": "REGRESSION/PHASE9/GEOMETRY_RUNTIME/geometry-runtime.json",
+    "checks": 14,
+    "normalization": "lessonActivation per-import UUID only; intra-run parity remains exact"
+  },
+  "ALGEBRA": {
+    "result": "PASS",
+    "reference": "REGRESSION/RC1/ALGEBRA_TARGETED.json",
+    "phase9": "REGRESSION/PHASE9/ALGEBRA_TARGETED.json",
+    "checks": 20,
+    "normalization": "NONE"
+  },
+  "INFORMATICS": {
+    "result": "PASS",
+    "reference": "REGRESSION/RC1/INFORMATICS/INFORMATICS_TARGETED.json",
+    "phase9": "REGRESSION/PHASE9/INFORMATICS/INFORMATICS_TARGETED.json",
+    "checks": 26,
+    "normalization": "Manual video playback currentTime only; both independent playback assertions >0 remain"
+  },
+  "LEGACY": {
+    "result": "PASS",
+    "reference": "REGRESSION/RC1/ENGINES/results.json",
+    "phase9": "REGRESSION/PHASE9/ENGINES/results.json",
+    "checks": 15,
+    "normalization": "NONE"
+  }
+}

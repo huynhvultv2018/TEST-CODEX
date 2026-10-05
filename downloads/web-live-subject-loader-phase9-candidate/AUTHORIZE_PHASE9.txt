@@ -1,0 +1,559 @@
+# PHASE 9 — SUBJECT-AWARE LESSON LOADER
+# NÂNG CẤP CHỨC NĂNG NẠP BÀI THEO MÔN
+
+Nguồn kế thừa:
+
+```text id="s9base"
+WEB_LIVE_MULTI_PROFILE_RC1
+
+SHA256 =
+d09db03f88c065d1167030fa5bd45f6467fc464c31d7a228003a20ac28769fc5
+```
+
+==================================================
+1. NGUYÊN TẮC
+==================================================
+
+Kế thừa RC1.
+
+Không sửa trực tiếp RC1.
+
+Không overwrite RC1.
+
+Không Production.
+
+Tạo working copy riêng cho Phase 9.
+
+Không refactor ngoài phạm vi.
+
+Không sửa:
+
+```text id="s9freeze"
+GEOMETRY_PROFILE
+ALGEBRA_PROFILE
+INFORMATICS_PROFILE
+LESSON PEDAGOGY
+PPCT
+SGK
+SBT
+```
+
+==================================================
+2. MỤC TIÊU
+==================================================
+
+Nâng cấp chức năng:
+
+```text id="s9goal"
+NẠP BÀI
+```
+
+thành:
+
+```text id="s9flow"
+NẠP BÀI
+   ↓
+CHỌN MÔN
+   ↓
+CHỌN GÓI BÀI HỌC
+   ↓
+KIỂM TRA METADATA
+   ↓
+XÁC ĐỊNH PROFILE
+   ↓
+NẠP BÀI
+```
+
+==================================================
+3. DANH SÁCH MÔN
+==================================================
+
+Giao diện cho GV chọn:
+
+```text id="s9subjects"
+HÌNH HỌC
+
+ĐẠI SỐ
+
+TIN HỌC
+
+BÀI CŨ / LEGACY
+```
+
+Thiết kế sao cho sau này có thể mở rộng thêm môn mà không phải viết lại Loader.
+
+==================================================
+4. SUBJECT MAPPING
+==================================================
+
+Mapping bắt buộc:
+
+```text id="s9map"
+HÌNH HỌC
+→ subject_engine = geometry
+
+ĐẠI SỐ
+→ subject_engine = algebra
+
+TIN HỌC
+→ subject_engine = informatics
+
+BÀI CŨ / LEGACY
+→ subject_engine missing
+   OR legacy/default
+```
+
+==================================================
+5. KHÔNG SUY ĐOÁN MÔN
+==================================================
+
+Cấm xác định môn bằng:
+
+```text id="s9noinfer"
+TÊN FILE
+TỪ KHÓA TRONG BÀI
+NỘI DUNG CÂU HỎI
+TÊN THƯ MỤC
+HEURISTIC
+```
+
+Nguồn xác định chính thức:
+
+```text id="s9truth"
+LESSON METADATA
+```
+
+==================================================
+6. LOAD VALIDATION
+==================================================
+
+Ví dụ GV chọn:
+
+```text id="s9example1"
+HÌNH HỌC
+```
+
+nhưng gói bài khai báo:
+
+```text id="s9example2"
+subject_engine = algebra
+```
+
+thì:
+
+```text id="s9mismatch"
+KHÔNG NẠP NGAY
+```
+
+Hiển thị cảnh báo rõ:
+
+```text id="s9warning"
+Môn đã chọn: Hình học
+Môn của bài: Đại số
+
+Gói bài không khớp môn đã chọn.
+```
+
+Không crash.
+
+==================================================
+7. VALID MATCH
+==================================================
+
+Nếu:
+
+```text id="s9valid"
+GV chọn Hình học
++
+subject_engine = geometry
+```
+
+thì:
+
+```text id="s9load"
+VALIDATION = PASS
+→ LOAD
+→ GEOMETRY_PROFILE
+```
+
+Tương tự cho Algebra và Informatics.
+
+==================================================
+8. LEGACY COMPATIBILITY
+==================================================
+
+Bài cũ không có:
+
+```text id="s9legacymeta"
+subject_engine
+```
+
+không được làm hỏng.
+
+Nếu GV chọn:
+
+```text id="s9legacy"
+BÀI CŨ / LEGACY
+```
+
+thì Loader sử dụng:
+
+```text id="s9legacyprofile"
+legacy/default
+```
+
+==================================================
+9. UI
+==================================================
+
+Thiết kế màn hình nạp bài đơn giản cho GV.
+
+Ưu tiên:
+
+```text id="s9ui"
+1. CHỌN MÔN
+
+2. CHỌN FILE / ZIP BÀI HỌC
+
+3. HIỂN THỊ THÔNG TIN BÀI
+
+4. NẠP BÀI
+```
+
+Thông tin preview tối thiểu:
+
+```text id="s9preview"
+MÔN
+
+LỚP
+
+TUẦN
+
+TIẾT
+
+TÊN BÀI
+
+SUBJECT ENGINE
+```
+
+chỉ hiển thị trường có trong metadata.
+
+==================================================
+10. SUBJECT VISUAL INDICATOR
+==================================================
+
+Sau khi nạp thành công, giao diện GV phải hiển thị rõ profile hiện hành:
+
+```text id="s9indicator"
+HÌNH HỌC
+
+ĐẠI SỐ
+
+TIN HỌC
+
+LEGACY
+```
+
+Không cần redesign toàn bộ giao diện.
+
+Chỉ thêm indicator nhỏ, dễ nhận biết.
+
+==================================================
+11. INVALID PACKAGE
+==================================================
+
+Kiểm:
+
+```text id="s9invalid"
+ZIP HỎNG
+
+THIẾU lesson.json
+
+JSON KHÔNG HỢP LỆ
+
+subject_engine KHÔNG HỢP LỆ
+
+PROFILE KHÔNG HỖ TRỢ
+
+THIẾU FILE BẮT BUỘC
+
+ASSET KHÔNG TỒN TẠI
+```
+
+Yêu cầu:
+
+```text id="s9safe"
+NO CRASH
+
+NO PARTIAL LOAD
+
+OLD LESSON STATE PRESERVED
+```
+
+==================================================
+12. TRANSACTIONAL LOAD
+==================================================
+
+Đây là yêu cầu quan trọng.
+
+Không xóa bài hiện tại trước khi bài mới validation PASS.
+
+Flow:
+
+```text id="s9transaction"
+CURRENT LESSON
+      ↓
+SELECT NEW PACKAGE
+      ↓
+VALIDATE
+      ↓
+IF FAIL
+→ KEEP CURRENT LESSON
+
+IF PASS
+→ COMMIT NEW LESSON
+```
+
+==================================================
+13. PROFILE STATE RESET
+==================================================
+
+Khi nạp bài mới thành công:
+
+reset đúng state của bài trước.
+
+Ví dụ:
+
+```text id="s9reset"
+GEOMETRY
+→ ALGEBRA
+```
+
+không được giữ:
+
+```text id="s9nostate"
+OLD FIGURE STATE
+OLD PROOF STATE
+OLD ANNOTATION
+OLD FOCUS
+OLD ANSWER
+OLD HINT
+```
+
+Tương tự cho tất cả profile.
+
+==================================================
+14. KHÔNG THAY ĐỔI PROFILE ENGINE
+==================================================
+
+Loader chỉ:
+
+```text id="s9responsibility"
+SELECT
+VALIDATE
+ROUTE
+LOAD
+```
+
+Không sửa behavior của:
+
+```text id="s9profiles"
+GEOMETRY_PROFILE
+ALGEBRA_PROFILE
+INFORMATICS_PROFILE
+LEGACY_PROFILE
+```
+
+==================================================
+15. TARGETED TESTS
+==================================================
+
+Kiểm tối thiểu:
+
+```text id="s9tests"
+GEOMETRY → GEOMETRY = PASS
+
+ALGEBRA → ALGEBRA = PASS
+
+INFORMATICS → INFORMATICS = PASS
+
+LEGACY → LEGACY = PASS
+
+GEOMETRY → ALGEBRA PACKAGE = BLOCKED
+
+ALGEBRA → INFORMATICS PACKAGE = BLOCKED
+
+INFORMATICS → GEOMETRY PACKAGE = BLOCKED
+
+INVALID ZIP = BLOCKED
+
+INVALID JSON = BLOCKED
+
+UNKNOWN subject_engine = BLOCKED
+
+FAILED LOAD PRESERVES CURRENT LESSON = PASS
+```
+
+==================================================
+16. PROFILE SWITCH TEST
+==================================================
+
+Kiểm:
+
+```text id="s9switch"
+GEOMETRY
+→ ALGEBRA
+→ INFORMATICS
+→ LEGACY
+→ GEOMETRY
+```
+
+Bắt buộc:
+
+```text id="s9isolation"
+CORRECT PROFILE = PASS
+STATE RESET = PASS
+NO CSS LEAK = PASS
+NO REVEAL LEAK = PASS
+```
+
+==================================================
+17. REGRESSION
+==================================================
+
+Bắt buộc:
+
+```text id="s9reg"
+LEGACY_RUNTIME_REGRESSION = PASS
+
+GEOMETRY_PROFILE_REGRESSION = PASS
+
+ALGEBRA_PROFILE_REGRESSION = PASS
+
+INFORMATICS_PROFILE_REGRESSION = PASS
+
+NO_TEACH_AHEAD_GLOBAL = PASS
+```
+
+==================================================
+18. RC1 INTEGRITY
+==================================================
+
+Xác minh:
+
+```text id="s9rc1"
+RC1_SHA256_BEFORE =
+d09db03f88c065d1167030fa5bd45f6467fc464c31d7a228003a20ac28769fc5
+
+RC1_SHA256_AFTER =
+d09db03f88c065d1167030fa5bd45f6467fc464c31d7a228003a20ac28769fc5
+
+RC1_MUTATED = NO
+```
+
+==================================================
+19. CANDIDATE
+==================================================
+
+Nếu PASS:
+
+tạo:
+
+```text id="s9candidate"
+WEB_LIVE_SUBJECT_LOADER_PHASE9_CANDIDATE
+```
+
+Tính SHA256.
+
+Không Production.
+
+==================================================
+20. REQUIRED REPORTS
+==================================================
+
+Tạo:
+
+```text id="s9reports"
+SUBJECT_LOADER_PHASE9_IMPLEMENTATION_REPORT.md
+
+SUBJECT_LOADER_CONTRACT.md
+
+SUBJECT_LOADER_PHASE9_TEST_EVIDENCE.md
+
+SUBJECT_LOADER_PHASE9_REGRESSION_REPORT.md
+
+SUBJECT_LOADER_PHASE9_RISK_REGISTER.md
+```
+
+==================================================
+21. FINAL BLOCK
+==================================================
+
+Trả:
+
+```text id="s9final"
+RC1_SHA256_BEFORE =
+RC1_SHA256_AFTER =
+RC1_MUTATED =
+
+SUBJECT_LOADER =
+
+GEOMETRY_LOAD =
+ALGEBRA_LOAD =
+INFORMATICS_LOAD =
+LEGACY_LOAD =
+
+SUBJECT_METADATA_VALIDATION =
+SUBJECT_MISMATCH_BLOCK =
+INVALID_PACKAGE_SAFETY =
+TRANSACTIONAL_LOAD =
+CURRENT_LESSON_PRESERVATION =
+PROFILE_STATE_RESET =
+SUBJECT_INDICATOR =
+
+LEGACY_RUNTIME_REGRESSION =
+GEOMETRY_PROFILE_REGRESSION =
+ALGEBRA_PROFILE_REGRESSION =
+INFORMATICS_PROFILE_REGRESSION =
+NO_TEACH_AHEAD_GLOBAL =
+
+CORE_CHANGE_REQUIRED =
+WEB_LIVE_CORE_MUTATED =
+
+P0_COUNT =
+P1_COUNT =
+P2_COUNT =
+P3_COUNT =
+
+SOURCE_SCOPE_VIOLATION =
+PRODUCTION_MODIFIED =
+
+PHASE9_CANDIDATE =
+PHASE9_CANDIDATE_SHA256 =
+
+PHASE9_STATUS =
+RECOMMENDED_NEXT_ACTION =
+```
+
+==================================================
+22. STOP
+==================================================
+
+Sau:
+
+```text id="s9stop"
+AUDIT
+→ IMPLEMENT SUBJECT LOADER
+→ TARGETED TEST
+→ REGRESSION
+→ CANDIDATE
+→ REPORT
+```
+
+STOP.
+
+Không Production.
+
+Không tiếp tục Phase 10.
+
+Chờ GV phê duyệt.

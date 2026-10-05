@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "targetedChecks": 15,
+  "regression": {
+    "GEOMETRY": "PASS",
+    "ALGEBRA": "PASS",
+    "INFORMATICS": "PASS",
+    "LEGACY": "PASS"
+  },
+  "noTeachAhead": "PASS",
+  "sourceScope": "PASS",
+  "rc1Integrity": "PASS",
+  "openPhase9Findings": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 0,
+    "P3": 0
+  }
+}

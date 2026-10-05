@@ -1,0 +1,32 @@
+{
+  "result": "PASS",
+  "changed": [
+    "WEB_LIVE/teacher.html",
+    "WEB_LIVE/zip.js"
+  ],
+  "added": [
+    "WEB_LIVE/subject-loader.css",
+    "WEB_LIVE/subject-loader.js"
+  ],
+  "removed": [],
+  "unchangedInheritedFiles": 1237,
+  "candidateFiles": 1241,
+  "protectedFilesUnchanged": [
+    "WEB_LIVE/core-profiles.js",
+    "WEB_LIVE/common.js",
+    "WEB_LIVE/teacher.js",
+    "WEB_LIVE/tv.html",
+    "WEB_LIVE/geometry-profile.js",
+    "WEB_LIVE/geometry-profile.css",
+    "WEB_LIVE/tv-layout-geometry.js",
+    "WEB_LIVE/tv-layout-algebra.js",
+    "WEB_LIVE/algebra-profile.css",
+    "WEB_LIVE/tv-layout-computer.js",
+    "WEB_LIVE/informatics-profile.css"
+  ],
+  "coreChangeRequired": false,
+  "webLiveCoreMutated": false,
+  "profileEnginesMutated": false,
+  "lessonPedagogyMutated": false,
+  "productionModified": false
+}
