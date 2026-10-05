@@ -1,0 +1,57 @@
+{
+  "result": "PASS",
+  "workingGates": {
+    "targeted": {
+      "result": "PASS",
+      "groups": 28
+    },
+    "library": {
+      "result": "PASS",
+      "groups": 21
+    },
+    "quickAccess": {
+      "result": "PASS",
+      "groups": 16
+    },
+    "safeguards": {
+      "result": "PASS",
+      "groups": 15
+    }
+  },
+  "profileRegression": {
+    "GEOMETRY": {
+      "result": "PASS",
+      "checks": 14,
+      "reference": "Phase12/REGRESSION/GEOMETRY_RUNTIME/geometry-runtime.json",
+      "p12_1": "REGRESSION/GEOMETRY_RUNTIME/geometry-runtime.json",
+      "comparison": "SEMANTIC_JSON_EQUAL",
+      "normalization": "Only random per-run lessonActivation UUID; within-run identity exact"
+    },
+    "ALGEBRA": {
+      "result": "PASS",
+      "checks": 20,
+      "reference": "Phase12/REGRESSION/ALGEBRA_TARGETED.json",
+      "p12_1": "REGRESSION/ALGEBRA_TARGETED.json",
+      "comparison": "SEMANTIC_JSON_EQUAL",
+      "normalization": "NONE"
+    },
+    "INFORMATICS": {
+      "result": "PASS",
+      "checks": 26,
+      "reference": "Phase12/REGRESSION/INFORMATICS/INFORMATICS_TARGETED.json",
+      "p12_1": "REGRESSION/INFORMATICS/INFORMATICS_TARGETED.json",
+      "comparison": "SEMANTIC_JSON_EQUAL",
+      "normalization": "Only manual video currentTime; playback >0 assertions executed"
+    },
+    "LEGACY": {
+      "result": "PASS",
+      "checks": 15,
+      "reference": "Phase12/REGRESSION/ENGINES/results.json",
+      "p12_1": "REGRESSION/ENGINES/results.json",
+      "comparison": "SEMANTIC_JSON_EQUAL",
+      "normalization": "NONE"
+    }
+  },
+  "sourceScope": "PASS",
+  "beforeRootCause": "CONFIRMED"
+}

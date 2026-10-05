@@ -1,0 +1,77 @@
+{
+  "result": "PASS",
+  "fileCount": 1241,
+  "changedFiles": [
+    "WEB_LIVE/subject-loader.js"
+  ],
+  "unchangedFiles": 1240,
+  "addedFiles": [],
+  "removedFiles": [],
+  "frozenPhase12PayloadUnchanged": true,
+  "cssUnchanged": true,
+  "coreMutated": false,
+  "profilesMutated": false,
+  "productionModified": false,
+  "unchangedLoaderFunctions": {
+    "engine": {
+      "byteExact": true,
+      "sha256": "a36aea8ab718412cb636e275fbe48abc9a21f09c0683981aa3e749bfe2d2cf2f"
+    },
+    "recentEntry": {
+      "byteExact": true,
+      "sha256": "0e8f7ca699e95f3bc8ab8db2b245eef0648f3e79309ac0f4cf3d5fa5be73ba74"
+    },
+    "readQuick": {
+      "byteExact": true,
+      "sha256": "02049101e68fd568bd81e644a27624c03eaf4c4b1aaaffa6a4e6e76ae98f11ab"
+    },
+    "libraryValue": {
+      "byteExact": true,
+      "sha256": "5fe8d95975790c61672eb0f7da8a81dcbcbc904f5229a947c47da6414c61d8f1"
+    },
+    "compareValues": {
+      "byteExact": true,
+      "sha256": "7f8589cdce1d05be3d38d10e29d8a9becc0ac70d8408a2f9c08a7678862d6f3e"
+    },
+    "matchField": {
+      "byteExact": true,
+      "sha256": "fb8dba68eeb894cc5f4e58336430f86dfffe44694b9b8f7f5ef72247b12eb5f8"
+    },
+    "matches": {
+      "byteExact": true,
+      "sha256": "e7d0ea48a0914dadafc06d1e4996799f9b2edb34e48b58f2a1a88732bb0c9276"
+    },
+    "populateFilter": {
+      "byteExact": true,
+      "sha256": "8c60060c7b65d5d872c758962de0e17f86aa73d218ec90db58e4ec0568810be3"
+    },
+    "compareLessons": {
+      "byteExact": true,
+      "sha256": "710e1454b46c70e9b8517d1b5ab15e999bf186c3289c514a9cc135bd8b79223c"
+    },
+    "clear": {
+      "byteExact": true,
+      "sha256": "b26812ef7bd9cb68f9e3ccdc00693e33830e74cc51fee8c0e148d1729c92b183"
+    },
+    "cloneControllers": {
+      "byteExact": true,
+      "sha256": "f3caa910c0ff9f127494e94a515a553cd3eeaff935fd44c1ff83adee2e367dfc"
+    },
+    "runtime": {
+      "byteExact": true,
+      "sha256": "6a06276f98d841f1d648ca1945b79cc149180db520cff37abe006ad29e123be0"
+    },
+    "restore": {
+      "byteExact": true,
+      "sha256": "b3faee7d71fa79ffa478bb8872109e3c1011b336bade558e10e772091b8170b3"
+    },
+    "commit": {
+      "byteExact": true,
+      "sha256": "6bc65ae5cc2c46dc0fe77332cec83b9b215f65e383452e03e5500774c643263b"
+    },
+    "assets-stage-runtime-essential-transaction-quota": {
+      "byteExact": true,
+      "sha256": "a6d8a9aa83ab9780efc64052f691077adb4312951a31cb413ca3f7da4fc401b8"
+    }
+  }
+}

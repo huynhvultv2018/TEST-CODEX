@@ -1,0 +1,65 @@
+{
+  "result": "PASS",
+  "cloudTechnicalOnly": true,
+  "beforeReproduced": "YES",
+  "rootCauseConfirmed": "YES",
+  "groups": {
+    "workingTargeted": {
+      "result": "PASS",
+      "groups": 28,
+      "evidence": "TARGETED/TARGETED_RESULTS.json"
+    },
+    "workingLibrary": {
+      "result": "PASS",
+      "groups": 21,
+      "evidence": "LIBRARY/LIBRARY_RESULTS.json"
+    },
+    "workingQuick": {
+      "result": "PASS",
+      "groups": 16,
+      "evidence": "QUICK/QUICK_ACCESS_RESULTS.json"
+    },
+    "workingSafeguards": {
+      "result": "PASS",
+      "groups": 15,
+      "evidence": "SAFEGUARDS/TARGETED_RESULTS.json"
+    },
+    "packagedTargeted": {
+      "result": "PASS",
+      "groups": 28,
+      "evidence": "PACKAGED_TARGETED/TARGETED_RESULTS.json"
+    },
+    "packagedLibrary": {
+      "result": "PASS",
+      "groups": 21,
+      "evidence": "PACKAGED_LIBRARY/LIBRARY_RESULTS.json"
+    },
+    "packagedQuick": {
+      "result": "PASS",
+      "groups": 16,
+      "evidence": "PACKAGED_QUICK/QUICK_ACCESS_RESULTS.json"
+    },
+    "packagedSafeguards": {
+      "result": "PASS",
+      "groups": 15,
+      "evidence": "PACKAGED_SAFEGUARDS/TARGETED_RESULTS.json"
+    }
+  },
+  "profileRegressionGroups": 75,
+  "exactHTTPAssets": 60,
+  "zipCRC": "PASS",
+  "payloadManifest": "PASS",
+  "sourceScope": "PASS",
+  "P12_F01": "TECHNICAL_FIX_VERIFIED_WINDOWS_RETEST_PENDING",
+  "P11_F01": "P2 OPEN_DEFERRED",
+  "capacityLimitRemoved": false,
+  "newP0": 0,
+  "newP1": 0,
+  "newP2": 0,
+  "newP3": 0,
+  "carriedOpenP2": 1,
+  "P12_F01_windowsFinding": "YES (GV_REPORTED)",
+  "windowsRetest": "UNRUN",
+  "physicalTV": "UNRUN",
+  "realClassroom": "UNRUN"
+}

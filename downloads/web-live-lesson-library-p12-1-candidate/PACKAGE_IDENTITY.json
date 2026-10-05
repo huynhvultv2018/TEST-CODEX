@@ -1,0 +1,11 @@
+{
+  "candidate": "WEB_LIVE_LESSON_LIBRARY_P12_1_CANDIDATE",
+  "sha256": "39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49",
+  "bytes": 50167370,
+  "files": 1241,
+  "wrapperRoot": "WEB_LIVE_LESSON_LIBRARY_P12_1_CANDIDATE",
+  "zipCRC": "PASS",
+  "freshExtractionManifest": "PASS",
+  "phase12SHA256": "329dca2256104ef5d9ccca18a2dad2e9c921324260f31249b165683128a2d5e9",
+  "historicalDocumentsInsidePayload": "Inherited documents/checksums unchanged; external P12.1 reports/manifest identify this candidate."
+}

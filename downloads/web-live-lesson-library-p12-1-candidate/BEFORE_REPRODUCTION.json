@@ -1,0 +1,32 @@
+{
+  "result": "REPRODUCED",
+  "rootCauseConfirmed": true,
+  "rootCause": "refresh compares selected subject to validate() return value, which is runtime engine; missing subject_engine returns legacy regardless of explicit subject=Tin học 6; library and quick access also use engine as subject",
+  "sourceRoot": "/workspace/phase12-lesson-library/packaged-smoke/WEB_LIVE_LESSON_LIBRARY_PHASE12_CANDIDATE",
+  "sourceLoaderSHA256": "d9f0c32cf477e34567ccc9f65c6b1142135bc89d48c06c088dc0726775a16948",
+  "cases": [
+    {
+      "name": "synthetic finding-equivalent",
+      "id": "P12_F01_EQUIVALENT",
+      "selectedSubject": "informatics",
+      "resolvedEngine": "legacy",
+      "beforeResult": "BLOCKED",
+      "message": "Môn đã chọn: Tin học\nMôn của bài: Legacy\n\nGói bài không khớp môn đã chọn.",
+      "preview": "3. THÔNG TIN BÀIMônTin học 6Lớp6Tuần5Tiết5Tên bàiBài 3. THÔNG TIN TRONG MÁY TÍNH",
+      "currentLesson": null
+    },
+    {
+      "name": "existing unchanged TIN6 W05 ZIP",
+      "id": "TIN6_T05_P05_SGK_RC3_PED1",
+      "selectedSubject": "informatics",
+      "resolvedEngine": "legacy",
+      "beforeResult": "BLOCKED",
+      "message": "Môn đã chọn: Tin học\nMôn của bài: Legacy\n\nGói bài không khớp môn đã chọn.",
+      "preview": "3. THÔNG TIN BÀIMônTin học 6Lớp6Tuần5Tiết5Tên bàiBài 3. THÔNG TIN TRONG MÁY TÍNH",
+      "currentLesson": null
+    }
+  ],
+  "errors": [],
+  "windowsFinding": "YES (GV-reported, not independently executed in cloud)",
+  "postPatchWindows": "UNRUN"
+}

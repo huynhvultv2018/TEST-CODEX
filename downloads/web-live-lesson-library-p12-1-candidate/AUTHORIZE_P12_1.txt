@@ -1,0 +1,823 @@
+# APPROVE HOTFIX P12.1 ONLY
+# WEB LIVE LESSON LIBRARY
+# LEGACY SUBJECT COMPATIBILITY
+# PRESERVE PHASE 12 — NO CORE/PROFILE PATCH — NO PRODUCTION
+
+Căn cứ kiểm thử vật lý Windows của:
+
+```text id="p121base"
+WEB_LIVE_LESSON_LIBRARY_PHASE12_CANDIDATE
+
+SHA256 =
+329dca2256104ef5d9ccca18a2dad2e9c921324260f31249b165683128a2d5e9
+```
+
+Phát hiện thực tế:
+
+```text id="p121finding"
+PHASE12_PHYSICAL_FINDING = P12-F01
+
+ENVIRONMENT = WINDOWS PHYSICAL
+
+PACKAGE METADATA READABLE:
+Môn = Tin học 6
+Lớp = 6
+Tuần = 5
+Tiết = 5
+Tên bài = Bài 3. THÔNG TIN TRONG MÁY TÍNH
+
+LOADER RESULT:
+Môn đã chọn = Tin học
+Môn của bài = Legacy
+
+RESULT =
+PACKAGE BLOCKED BY SUBJECT MISMATCH
+```
+
+==================================================
+1. CLASSIFICATION
+==================================================
+
+Phân loại:
+
+```text id="p121class"
+P12-F01
+
+SEVERITY = P2
+
+OWNER = SUBJECT LOADER COMPATIBILITY LAYER
+
+CORE FAILURE = NO
+PROFILE FAILURE = NO
+PACKAGE CONTENT FAILURE = NO
+```
+
+Không sửa package nguồn để né lỗi.
+
+==================================================
+2. ROOT CAUSE TO VERIFY
+==================================================
+
+Kiểm chứng giả thuyết:
+
+```text id="p121root"
+LEGACY PACKAGE
+HAS SUBJECT-RELATED METADATA
+
+BUT
+
+subject_engine IS MISSING
+OR
+subject_engine RESOLVES TO legacy/default
+```
+
+Loader hiện đang đồng nhất:
+
+```text id="p121badmodel"
+SUBJECT == PROFILE ENGINE
+```
+
+dẫn đến:
+
+```text id="p121badresult"
+Tin học package
++
+legacy/default engine
+=
+SUBJECT MISMATCH
+```
+
+Phải kiểm chứng bằng source/runtime.
+
+Không tự kết luận nếu evidence khác.
+
+==================================================
+3. DESIGN RULE
+==================================================
+
+Sau hotfix phải tách:
+
+```text id="p121model"
+LESSON SUBJECT
+
+và
+
+RUNTIME PROFILE ENGINE
+```
+
+thành hai khái niệm độc lập.
+
+Ví dụ hợp lệ:
+
+```text id="p121example"
+LESSON SUBJECT = informatics
+
+RUNTIME PROFILE ENGINE = legacy/default
+```
+
+Điều này KHÔNG có nghĩa:
+
+```text id="p121forbid1"
+subject_engine = informatics
+```
+
+Không được tự ghi/ép engine mới vào package Legacy.
+
+==================================================
+4. SUBJECT RESOLUTION
+==================================================
+
+Tạo/điều chỉnh Loader-local subject resolution.
+
+Ưu tiên nguồn rõ ràng theo thứ tự:
+
+```text id="p121subjectsource"
+1. EXPLICIT SUBJECT METADATA
+2. STRUCTURED EXISTING LESSON METADATA
+3. SAFE LEGACY SUBJECT COMPATIBILITY MAPPING
+```
+
+Không dùng nội dung sư phạm để đoán.
+
+==================================================
+5. SAFE LEGACY SUBJECT MAPPING
+==================================================
+
+Cho phép nhận diện subject của package Legacy nếu metadata hiện có biểu thị rõ môn.
+
+Ví dụ:
+
+```text id="p121map"
+Tin học
+Tin học 6
+Tin học 8
+→ SUBJECT = informatics
+```
+
+Nếu hệ thống hiện có metadata tương đương rõ ràng cho:
+
+```text id="p121subjects"
+Hình học
+Đại số
+Tin học
+```
+
+thì có thể mapping tương ứng.
+
+Nhưng mapping chỉ dùng để:
+
+```text id="p121mapuse"
+CLASSIFY SUBJECT
+FILTER LIBRARY
+DISPLAY METADATA
+CHECK SUBJECT SELECTION
+```
+
+Không dùng để thay đổi runtime engine.
+
+==================================================
+6. ABSOLUTE ENGINE RULE
+==================================================
+
+Nếu package:
+
+```text id="p121legacyengine"
+subject_engine MISSING
+```
+
+thì runtime vẫn:
+
+```text id="p121legacyruntime"
+legacy/default
+```
+
+trừ khi hợp đồng hiện tại có explicit engine hợp lệ.
+
+CẤM:
+
+```text id="p121noengineinfer"
+Tin học 6
+→ force subject_engine = informatics
+```
+
+CẤM:
+
+```text id="p121noengineinfer2"
+Hình học 8
+→ force subject_engine = geometry
+```
+
+CẤM:
+
+```text id="p121noengineinfer3"
+Đại số 8
+→ force subject_engine = algebra
+```
+
+Subject inference KHÔNG được trở thành engine inference.
+
+==================================================
+7. NEW PACKAGE BEHAVIOR
+==================================================
+
+Package mới có explicit:
+
+```text id="p121newpkg"
+subject_engine = informatics
+```
+
+vẫn giữ nguyên behavior hiện tại.
+
+Tương tự:
+
+```text id="p121engines"
+geometry
+algebra
+informatics
+```
+
+Không làm yếu validation Phase 9.
+
+==================================================
+8. TRUE MISMATCH MUST STILL BLOCK
+==================================================
+
+Ví dụ:
+
+```text id="p121mismatch"
+GV chọn = Tin học
+
+PACKAGE SUBJECT = Đại số
+
+PACKAGE ENGINE = algebra
+```
+
+phải:
+
+```text id="p121blocked"
+BLOCK
+```
+
+Tương tự mọi mismatch thực sự.
+
+Không được sửa hotfix bằng cách disable:
+
+```text id="p121safeguard"
+SUBJECT_MISMATCH_BLOCK
+```
+
+==================================================
+9. LEGACY SUBJECT MATCH
+==================================================
+
+Ví dụ:
+
+```text id="p121legacypass"
+GV chọn = Tin học
+
+PACKAGE SUBJECT = Tin học
+
+PACKAGE ENGINE = legacy/default
+```
+
+phải:
+
+```text id="p121allow"
+SUBJECT MATCH = PASS
+RUNTIME ENGINE = legacy/default
+LOAD = ALLOWED
+```
+
+Đây là behavior chính cần đạt.
+
+==================================================
+10. LIBRARY FILTER INTEGRATION
+==================================================
+
+Legacy package có:
+
+```text id="p121metadata"
+Subject = Tin học
+Grade = 6
+Week = 5
+Period = 5
+```
+
+phải xuất hiện trong:
+
+```text id="p121filter"
+TIN HỌC
+→ LỚP 6
+→ TUẦN 5
+→ TIẾT 5
+```
+
+mà không yêu cầu sửa package gốc.
+
+==================================================
+11. MISSING METADATA
+==================================================
+
+Nếu package Legacy không đủ thông tin để xác định subject an toàn:
+
+```text id="p121unknown"
+DO NOT GUESS
+```
+
+Đưa vào:
+
+```text id="p121missing"
+CHƯA ĐỦ THÔNG TIN
+```
+
+hoặc Legacy compatibility bucket hiện có.
+
+Không tự gán môn.
+
+==================================================
+12. AMBIGUOUS METADATA
+==================================================
+
+Nếu metadata mâu thuẫn, ví dụ:
+
+```text id="p121ambiguous"
+subject = Tin học
+
+nhưng
+
+explicit subject_engine = algebra
+```
+
+KHÔNG tự sửa.
+
+Phải:
+
+```text id="p121ambiguousaction"
+BLOCK
+SHOW CLEAR WARNING
+PRESERVE CURRENT LESSON
+```
+
+==================================================
+13. PREVIEW UI
+==================================================
+
+Preview phải phân biệt rõ nếu cần:
+
+```text id="p121preview"
+Môn: Tin học
+Engine: Legacy
+Lớp: 6
+Tuần: 5
+Tiết: 5
+Tên bài: ...
+```
+
+Không hiển thị:
+
+```text id="p121wronglabel"
+Môn của bài: Legacy
+```
+
+vì `Legacy` là engine/compatibility mode, không phải tên môn.
+
+==================================================
+14. LABEL CORRECTION
+==================================================
+
+Audit toàn bộ Loader UI.
+
+Nếu hiện tại dùng cùng một biến cho:
+
+```text id="p121labelproblem"
+MÔN CỦA BÀI
+```
+
+và:
+
+```text id="p121engineproblem"
+ENGINE
+```
+
+phải tách đúng.
+
+Ví dụ:
+
+```text id="p121labels"
+Môn của bài: Tin học
+
+Chế độ chạy: Legacy
+```
+
+hoặc equivalent rõ ràng.
+
+==================================================
+15. TRANSACTIONAL SAFETY
+==================================================
+
+Giữ tuyệt đối:
+
+```text id="p121transaction"
+SELECT
+→ VALIDATE SUBJECT
+→ VALIDATE PACKAGE
+→ RESOLVE ENGINE
+→ LOAD
+→ COMMIT
+```
+
+Nếu bất kỳ bước nào FAIL:
+
+```text id="p121fail"
+CURRENT LESSON PRESERVED
+```
+
+==================================================
+16. PHASE 11 FEATURES
+==================================================
+
+Bắt buộc giữ:
+
+```text id="p121p11"
+REMEMBER_LAST_SUBJECT = PASS
+
+RECENT_LESSONS = PASS
+
+RECENT_LESSON_LIMIT = 5
+
+RECENT_DEDUPLICATION = PASS
+
+LOCALSTORAGE_QUOTA_GUARD = PASS
+```
+
+==================================================
+17. PHASE 12 FILTERS
+==================================================
+
+Bắt buộc giữ:
+
+```text id="p121p12"
+SUBJECT_FILTER = PASS
+GRADE_FILTER = PASS
+WEEK_FILTER = PASS
+PERIOD_FILTER = PASS
+
+GRADE_SORT = PASS
+WEEK_NUMERIC_SORT = PASS
+PERIOD_NUMERIC_SORT = PASS
+```
+
+==================================================
+18. TARGETED TEST — REPRODUCTION
+==================================================
+
+Tạo fixture tương đương đúng finding Windows:
+
+```text id="p121fixture"
+Subject = Tin học 6
+Grade = 6
+Week = 5
+Period = 5
+Title = Bài 3. THÔNG TIN TRONG MÁY TÍNH
+
+subject_engine = MISSING
+```
+
+Trước patch phải tái hiện:
+
+```text id="p121reproduce"
+SELECTED SUBJECT = informatics
+RESOLVED ENGINE = legacy/default
+OLD RESULT = BLOCKED
+```
+
+Nếu không reproduce được:
+
+```text id="p121stoprepro"
+STOP
+REPORT ROOT-CAUSE MISMATCH
+```
+
+Không patch mù.
+
+==================================================
+19. TARGETED TEST — AFTER PATCH
+==================================================
+
+Sau patch bắt buộc:
+
+```text id="p121tests"
+LEGACY_INFORMATICS_SUBJECT_RESOLUTION = PASS
+
+LEGACY_INFORMATICS_FILTER_VISIBILITY = PASS
+
+LEGACY_INFORMATICS_GRADE_FILTER = PASS
+
+LEGACY_INFORMATICS_WEEK_FILTER = PASS
+
+LEGACY_INFORMATICS_PERIOD_FILTER = PASS
+
+LEGACY_INFORMATICS_LOAD = PASS
+
+LEGACY_ENGINE_PRESERVED = PASS
+
+NO_ENGINE_INFERENCE = PASS
+
+TRUE_SUBJECT_MISMATCH_BLOCK = PASS
+
+AMBIGUOUS_METADATA_BLOCK = PASS
+
+CURRENT_LESSON_PRESERVATION = PASS
+```
+
+==================================================
+20. CROSS-SUBJECT LEGACY TEST
+==================================================
+
+Nếu metadata hiện có hỗ trợ rõ ràng, kiểm thêm:
+
+```text id="p121cross"
+LEGACY_GEOMETRY_SUBJECT_CLASSIFICATION
+
+LEGACY_ALGEBRA_SUBJECT_CLASSIFICATION
+
+LEGACY_INFORMATICS_SUBJECT_CLASSIFICATION
+```
+
+Nhưng:
+
+```text id="p121crossrule"
+ENGINE MUST REMAIN legacy/default
+```
+
+Không ép profile mới.
+
+==================================================
+21. MODERN PACKAGE REGRESSION
+==================================================
+
+Kiểm package explicit engine:
+
+```text id="p121modern"
+geometry → geometry
+algebra → algebra
+informatics → informatics
+```
+
+Bắt buộc không thay đổi behavior.
+
+==================================================
+22. STORAGE FINDING
+==================================================
+
+Giữ nguyên:
+
+```text id="p121storage"
+P11-F01 =
+P2 OPEN_DEFERRED
+```
+
+Không sửa storage architecture trong hotfix này.
+
+Bắt buộc:
+
+```text id="p121quotaguard"
+LOCALSTORAGE_QUOTA_GUARD = PASS
+```
+
+==================================================
+23. CHANGE SCOPE
+==================================================
+
+Ưu tiên tuyệt đối:
+
+```text id="p121scope"
+SUBJECT LOADER ONLY
+```
+
+Cho phép sửa tối thiểu:
+
+```text id="p121allowed"
+subject-loader.js
+subject-loader.css
+```
+
+và test/report tooling cần thiết.
+
+Không sửa:
+
+```text id="p121frozen"
+WEB_LIVE_CORE
+GEOMETRY_PROFILE
+ALGEBRA_PROFILE
+INFORMATICS_PROFILE
+PPCT
+SGK
+SBT
+LESSON SOURCE PACKAGES
+```
+
+Nếu bắt buộc sửa Core/Profile:
+
+```text id="p121stop"
+STOP
+REPORT DEPENDENCY
+```
+
+==================================================
+24. PHASE 12 INTEGRITY
+==================================================
+
+Trước và sau hotfix xác minh source frozen:
+
+```text id="p121integrity"
+PHASE12_SHA256_BEFORE =
+329dca2256104ef5d9ccca18a2dad2e9c921324260f31249b165683128a2d5e9
+
+PHASE12_SHA256_AFTER =
+329dca2256104ef5d9ccca18a2dad2e9c921324260f31249b165683128a2d5e9
+
+PHASE12_CANDIDATE_MUTATED = NO
+```
+
+==================================================
+25. REGRESSION
+==================================================
+
+Bắt buộc:
+
+```text id="p121regression"
+GEOMETRY_LOAD = PASS
+ALGEBRA_LOAD = PASS
+INFORMATICS_LOAD = PASS
+LEGACY_LOAD = PASS
+
+SUBJECT_METADATA_VALIDATION = PASS
+TRUE_SUBJECT_MISMATCH_BLOCK = PASS
+INVALID_PACKAGE_SAFETY = PASS
+TRANSACTIONAL_LOAD = PASS
+CURRENT_LESSON_PRESERVATION = PASS
+PROFILE_STATE_RESET = PASS
+
+RECENT_LESSONS = PASS
+REMEMBER_LAST_SUBJECT = PASS
+
+LEGACY_RUNTIME_REGRESSION = PASS
+GEOMETRY_PROFILE_REGRESSION = PASS
+ALGEBRA_PROFILE_REGRESSION = PASS
+INFORMATICS_PROFILE_REGRESSION = PASS
+
+NO_TEACH_AHEAD_GLOBAL = PASS
+```
+
+==================================================
+26. PHYSICAL EVIDENCE STATUS
+==================================================
+
+Ghi nhận:
+
+```text id="p121physical"
+P12-F01_REPRODUCED_ON_WINDOWS = YES
+```
+
+Nhưng sau patch:
+
+```text id="p121physicalafter"
+P12_1_WINDOWS_RETEST = UNRUN
+PHYSICAL_TV_VALIDATION = UNRUN
+REAL_CLASSROOM_TRIAL = UNRUN
+```
+
+Cloud test không được tự đổi thành Windows PASS.
+
+==================================================
+27. HOTFIX CANDIDATE
+==================================================
+
+Nếu tất cả technical gates PASS:
+
+tạo:
+
+```text id="p121candidate"
+WEB_LIVE_LESSON_LIBRARY_P12_1_CANDIDATE
+```
+
+Tính SHA256.
+
+Không overwrite Phase 12.
+
+Không Production.
+
+==================================================
+28. REQUIRED REPORTS
+==================================================
+
+Tạo:
+
+```text id="p121reports"
+P12_1_ROOT_CAUSE_REPORT.md
+
+P12_1_LEGACY_SUBJECT_COMPATIBILITY_CONTRACT.md
+
+P12_1_TEST_EVIDENCE.md
+
+P12_1_REGRESSION_REPORT.md
+
+P12_1_RISK_REGISTER.md
+```
+
+==================================================
+29. FINAL BLOCK
+==================================================
+
+Trả:
+
+```text id="p121final"
+PHASE12_SHA256_BEFORE =
+PHASE12_SHA256_AFTER =
+PHASE12_CANDIDATE_MUTATED =
+
+P12_F01_REPRODUCED =
+P12_F01_ROOT_CAUSE =
+
+LESSON_SUBJECT_SEPARATED_FROM_ENGINE =
+
+LEGACY_INFORMATICS_SUBJECT_RESOLUTION =
+LEGACY_INFORMATICS_FILTER_VISIBILITY =
+LEGACY_INFORMATICS_LOAD =
+LEGACY_ENGINE_PRESERVED =
+NO_ENGINE_INFERENCE =
+
+TRUE_SUBJECT_MISMATCH_BLOCK =
+AMBIGUOUS_METADATA_BLOCK =
+CURRENT_LESSON_PRESERVATION =
+
+SUBJECT_FILTER =
+GRADE_FILTER =
+WEEK_FILTER =
+PERIOD_FILTER =
+
+RECENT_LESSONS =
+REMEMBER_LAST_SUBJECT =
+LOCALSTORAGE_QUOTA_GUARD =
+P11_F01_STATUS =
+
+GEOMETRY_LOAD =
+ALGEBRA_LOAD =
+INFORMATICS_LOAD =
+LEGACY_LOAD =
+
+LEGACY_RUNTIME_REGRESSION =
+GEOMETRY_PROFILE_REGRESSION =
+ALGEBRA_PROFILE_REGRESSION =
+INFORMATICS_PROFILE_REGRESSION =
+NO_TEACH_AHEAD_GLOBAL =
+
+CORE_CHANGE_REQUIRED =
+WEB_LIVE_CORE_MUTATED =
+GEOMETRY_PROFILE_MUTATED =
+ALGEBRA_PROFILE_MUTATED =
+INFORMATICS_PROFILE_MUTATED =
+
+P12_1_WINDOWS_RETEST =
+PHYSICAL_TV_VALIDATION =
+REAL_CLASSROOM_TRIAL =
+
+P0_COUNT =
+P1_COUNT =
+P2_COUNT =
+P3_COUNT =
+
+SOURCE_SCOPE_VIOLATION =
+PRODUCTION_MODIFIED =
+
+P12_1_CANDIDATE =
+P12_1_CANDIDATE_SHA256 =
+
+P12_1_STATUS =
+RECOMMENDED_NEXT_ACTION =
+```
+
+==================================================
+30. STOP
+==================================================
+
+Sau:
+
+```text id="p121stop2"
+REPRODUCE
+→ ROOT CAUSE
+→ MINIMAL PATCH
+→ TARGETED TEST
+→ REGRESSION
+→ PACKAGE CANDIDATE
+→ REPORT
+```
+
+STOP.
+
+Không Phase 13.
+
+Không Production.
+
+Chờ GV kiểm thử lại trên Windows.

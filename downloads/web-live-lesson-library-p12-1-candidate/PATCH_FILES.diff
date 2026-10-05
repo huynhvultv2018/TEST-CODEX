@@ -1,0 +1,141 @@
+--- Phase12/WEB_LIVE/subject-loader.js
++++ P12.1/WEB_LIVE/subject-loader.js
+@@ -59,7 +59,8 @@
+    const context=document.createElement('div');context.className='small';
+    const fields=[metadata.subject,metadata.grade??metadata.class,metadata.week,metadata.period];
+    const labels=['','Lớp ','Tuần ','Tiết '];
+-   context.textContent=fields.map((v,n)=>v==null||v===''?'':labels[n]+String(v)).filter(Boolean).join(' · ');text.append(context);
++   let mode;try{mode=label(engine(cached||{subject_engine:entry.subjectEngine}));}catch(_){mode='chưa hợp lệ';}
++   context.textContent=[...fields.map((v,n)=>v==null||v===''?'':labels[n]+String(v)).filter(Boolean),'Chế độ chạy: '+mode].join(' · ');text.append(context);
+    const opened=document.createElement('div');opened.className='small';opened.textContent='Mở gần nhất: '+new Date(entry.lastOpened).toLocaleString('vi-VN');text.append(opened);
+    const choose=document.createElement('button');choose.type='button';choose.textContent=cached?'CHỌN BÀI':'Bài không còn trong thư viện';choose.disabled=!cached;
+    choose.addEventListener('click',()=>openSaved(entry.id));row.append(text,choose);recentList.append(row);
+@@ -68,7 +69,7 @@
+  function rememberSuccess(x){
+   try{
+    const entry=recentEntry(x,x.id,new Date().toISOString());
+-   const next={version:1,lastSubject:entry.subjectEngine,recent:[entry,...quick.recent.filter(item=>item.id!==entry.id)].slice(0,recentLimit)};
++   const next={version:1,lastSubject:subjectIdentity(x).id,recent:[entry,...quick.recent.filter(item=>item.id!==entry.id)].slice(0,recentLimit)};
+    const raw=JSON.stringify(next);if(raw.length>quickSizeLimit)throw Error('Dữ liệu quá lớn');
+    localStorage.setItem(quickKey,raw);quick=next;warnStorage('');renderRemembered();renderRecent();
+   }catch(_){warnStorage('Bài đã nạp thành công, nhưng không lưu được môn đã nhớ/bài gần đây. Lần mở sau có thể không có cập nhật này.');}
+@@ -116,11 +117,11 @@
+  }
+  function descriptor(entry,x){
+   const available=!!x&&typeof x==='object'&&!Array.isArray(x);
+-  let profile=null,invalid=!available;
+-  if(available)try{profile=engine(x);}catch(_){invalid=true;}
++  let profile=null,subjectId=null,subjectKnown=false,invalid=!available;
++  if(available)try{const resolved=subjectIdentity(x);profile=resolved.engine;subjectId=resolved.id;subjectKnown=resolved.known;}catch(_){invalid=true;}
+   const metadata=available?x:{};
+   const title=scalar(metadata.title,512),catalogTitle=scalar(entry.title,512);
+-  return {id:entry.id,available,invalid,profile,title:title!==undefined&&title!==''?String(title)+(typeof metadata.title==='string'&&metadata.title.length>512?'…':''):catalogTitle??'Bài chưa có tên',subject:scalar(metadata.subject,160),className:scalar(metadata.class,32),
++  return {id:entry.id,available,invalid,profile,subjectId,subjectKnown,title:title!==undefined&&title!==''?String(title)+(typeof metadata.title==='string'&&metadata.title.length>512?'…':''):catalogTitle??'Bài chưa có tên',subject:scalar(metadata.subject,160),className:scalar(metadata.class,32),
+    values:Object.fromEntries(Object.keys(filterState).map(key=>[key,libraryValue(metadata[key])]))};
+  }
+  function matchField(row,key,strict=false){
+@@ -148,18 +149,19 @@
+   const row=document.createElement('div');row.className='item libraryLesson';row.dataset.lessonId=String(entry.id);
+   const text=document.createElement('div'),title=document.createElement('b');title.textContent=String(entry.title);text.append(title);
+   const context=document.createElement('div');context.className='small';
+-  const parts=[entry.subject!==undefined&&entry.subject!==''?entry.subject:label(entry.profile)||'Môn chưa xác định'];
+-  if(entry.profile==='legacy'&&entry.subject!==undefined)parts.push('LEGACY');
++  const parts=[entry.subject!==undefined&&entry.subject!==''?entry.subject:entry.subjectKnown?label(entry.subjectId):'Môn chưa xác định'];
++  if(!entry.subjectKnown&&entry.subject!==undefined)parts.push('Môn chưa xác định');
++  parts.push('Chế độ chạy: '+(entry.profile?label(entry.profile):'chưa hợp lệ'));
+   for(const key of Object.keys(filterState))if(entry.values[key])parts.push(filterNames[key]+' '+entry.values[key].text);
+   if(!entry.values.grade&&entry.className!==undefined)parts.push('Nhóm lớp '+entry.className);
+   context.textContent=parts.join(' · ');text.append(context);
+   if(entry.distinguish){const reference=document.createElement('div');reference.className='small libraryReference';reference.textContent='Mã bài: '+String(entry.id);text.append(reference);}
+   const missing=Object.keys(filterState).filter(key=>!entry.values[key]);
+-  if(missing.length||entry.invalid){const note=document.createElement('div');note.className='libraryMissingNote';note.textContent=entry.invalid?'Dữ liệu bài chưa hợp lệ; cần kiểm tra trước khi nạp.':'Chưa đủ thông tin: '+missing.map(key=>filterNames[key]).join(', ');text.append(note);}
++  if(missing.length||!entry.subjectKnown||entry.invalid){const note=document.createElement('div');note.className='libraryMissingNote';note.textContent=entry.invalid?'Dữ liệu bài chưa hợp lệ; cần kiểm tra trước khi nạp.':'Chưa đủ thông tin: '+[...(!entry.subjectKnown?['MÔN']:[]),...missing.map(key=>filterNames[key])].join(', ');text.append(note);}
+   const actions=document.createElement('div'),open=document.createElement('button');open.type='button';open.textContent=entry.available?'CHỌN BÀI':'Không đọc được bài';open.disabled=!entry.available;open.addEventListener('click',()=>openSaved(entry.id));
+   const remove=document.createElement('button');remove.type='button';remove.textContent='XÓA';remove.addEventListener('click',()=>removeSaved(entry.id));actions.append(open,remove);row.append(text,actions);parent.append(row);
+  }
+- function indicate(){const id=WebLiveProfiles.resolve(lesson).profileId;indicator.textContent=id==='legacy'?'LEGACY':subjects.find(s=>s.id===id)?.label||id;indicator.hidden=false;}
++ function indicate(){const id=WebLiveProfiles.resolve(lesson).profileId;let resolved;try{resolved=subjectIdentity(lesson);}catch(_){}indicator.textContent=(resolved?.known?label(resolved.id).toLocaleUpperCase('vi'):'MÔN CHƯA XÁC ĐỊNH')+' · CHẾ ĐỘ CHẠY: '+label(id).toLocaleUpperCase('vi');indicator.hidden=false;}
+  function engine(x){
+   if(!Object.hasOwn(x,'subject_engine'))return 'legacy';
+   if(typeof x.subject_engine!=='string'||!x.subject_engine.trim())throw Error('subject_engine không hợp lệ.');
+@@ -168,6 +170,21 @@
+   if(!subjects.some(s=>s.id===id))throw Error('Profile không được hỗ trợ: '+x.subject_engine);
+   return id;
+  }
++ // Loader-only identity. Existing packages use the top-level subject field;
++ // do not invent nested keys or infer from titles, filenames or lesson content.
++ function mappedSubject(value){
++  if(typeof value!=='string'||value.length>160)return null;
++  const text=value.normalize('NFKC').trim().toLocaleLowerCase('vi').replace(/\s+/gu,' ');
++  if(['geometry','algebra','informatics'].includes(text))return text;
++  const match=/^(hình học|đại số|tin học)(?: (?:lớp )?[6-9])?$/u.exec(text);
++  return match?({'hình học':'geometry','đại số':'algebra','tin học':'informatics'})[match[1]]:null;
++ }
++ function subjectIdentity(x){
++  const runtimeEngine=engine(x),explicit=mappedSubject(x.subject);
++  if(explicit&&runtimeEngine!=='legacy'&&explicit!==runtimeEngine)
++   throw Error('Metadata môn mâu thuẫn.\nMôn của bài: '+label(explicit)+'\nChế độ chạy: '+label(runtimeEngine)+'\n\nKhông tự sửa môn hoặc engine; bài hiện tại được giữ nguyên.');
++  return {id:explicit||runtimeEngine,engine:runtimeEngine,known:!!explicit||runtimeEngine!=='legacy',source:explicit?'EXPLICIT_SUBJECT_METADATA':runtimeEngine==='legacy'?'UNKNOWN_LEGACY_BUCKET':'EXPLICIT_ENGINE_COMPATIBILITY'};
++ }
+  function validate(x){
+   validateLesson(x);
+   if(x.screens.some(s=>!s||typeof s!=='object'||Array.isArray(s)))throw Error('Màn hình trong screens[] không hợp lệ.');
+@@ -175,16 +192,20 @@
+    if(Object.hasOwn(x,key)&&x[key]!=null&&!['string','number'].includes(typeof x[key]))throw Error('Metadata '+key+' không hợp lệ.');
+   const id=engine(x);
+   if(WebLiveProfiles.resolve(x).profileId!==id)throw Error('Profile của bài không khớp bộ định tuyến.');
++  subjectIdentity(x);
+   return id;
+  }
+  function showMetadata(x){
+   preview.replaceChildren();preview.hidden=false;
+   const heading=document.createElement('h2');heading.className='subjectStep';heading.textContent='3. THÔNG TIN BÀI';preview.append(heading);
+   const dl=document.createElement('dl');
+-  for(const [title,keys] of [['Môn',['subject']],['Lớp',['grade','class']],['Tuần',['week']],['Tiết',['period']],['Tên bài',['title']],['Subject engine',['subject_engine']]]){
++  for(const [title,keys] of [['Môn',['subject']],['Lớp',['grade','class']],['Tuần',['week']],['Tiết',['period']],['Tên bài',['title']]]){
+    const key=keys.find(k=>Object.hasOwn(x,k)&&x[k]!=null&&['string','number'].includes(typeof x[k]));
+    if(!key)continue;const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=title;dd.textContent=String(x[key]);dl.append(dt,dd);
+   }
++  const modeTitle=document.createElement('dt'),modeValue=document.createElement('dd');modeTitle.textContent='Chế độ chạy';
++  try{modeValue.textContent=label(engine(x))+(Object.hasOwn(x,'subject_engine')?'':' (subject_engine không có)');}catch(_){modeValue.textContent='Không hợp lệ';}
++  dl.append(modeTitle,modeValue);
+   preview.append(dl);
+  }
+  function refresh(){
+@@ -192,9 +213,9 @@
+   button.disabled=true;
+   if(!pending)return;
+   try{
+-   const id=validate(pending.lesson);
++   validate(pending.lesson);const resolved=subjectIdentity(pending.lesson);
+    if(!select.value)throw Error('Hãy chọn môn trước khi nạp bài.');
+-   if(select.value!==id)throw Error('Môn đã chọn: '+label(select.value)+'\nMôn của bài: '+label(id)+'\n\nGói bài không khớp môn đã chọn.');
++   if(select.value!==resolved.id)throw Error('Môn đã chọn: '+(select.value==='legacy'?'Nhóm tương thích Legacy':label(select.value))+'\nMôn của bài: '+(resolved.known?label(resolved.id):'Chưa đủ thông tin')+'\nChế độ chạy: '+label(resolved.engine)+'\n\nGói bài không khớp môn đã chọn.');
+    error.textContent='Thông tin hợp lệ. Bấm NẠP BÀI để mở bài.';error.dataset.valid='true';button.disabled=busy;
+   }catch(e){error.textContent=e.message;}
+  }
+@@ -294,13 +315,13 @@
+   if(Array.isArray(saved))for(const entry of saved){
+    if(!entry||!['string','number'].includes(typeof entry.id)||seen.has(String(entry.id)))continue;
+    seen.add(String(entry.id));const row=descriptor(entry,getLesson(entry.id));
+-   if(!select.value||row.invalid||row.profile===select.value)entries.push(row);
++   if(!select.value||row.invalid||row.subjectId===select.value)entries.push(row);
+   }
+   populateFilter('grade',select.value?entries:[]);
+   const gradeRows=entries.filter(row=>matches(row,['grade']));populateFilter('week',select.value?gradeRows:[]);
+   const weekRows=gradeRows.filter(row=>matches(row,['week']));populateFilter('period',select.value?weekRows:[]);
+   const selected=weekRows.filter(row=>matches(row,['period'])).sort(compareLessons);
+-  const identityKey=row=>JSON.stringify([row.profile,row.title,...Object.values(row.values).map(value=>value?.key??null)]),duplicates=new Map();
++  const identityKey=row=>JSON.stringify([row.subjectId,row.profile,row.title,...Object.values(row.values).map(value=>value?.key??null)]),duplicates=new Map();
+   for(const row of selected){const key=identityKey(row);duplicates.set(key,(duplicates.get(key)||0)+1);}
+   for(const row of selected)row.distinguish=duplicates.get(identityKey(row))>1;
+   const complete=selected.filter(row=>!row.invalid&&Object.values(row.values).every(Boolean)),incomplete=selected.filter(row=>row.invalid||Object.values(row.values).some(value=>!value));
+@@ -323,7 +344,7 @@
+  select.addEventListener('change',()=>{resetFilters();if(busy)clear();refresh();renderLibrary();});
+  button.addEventListener('click',commit);
+  for(const [id,type] of [['jsonfile','json'],['zipfile','zip']])$(id).onchange=event=>{const file=event.target.files[0];event.target.value='';if(!file)return;stage(async()=>type==='zip'?prepareLessonZip(file):{lesson:JSON.parse(await file.text())});};
+- globalThis.WebLiveSubjectLoader=Object.freeze({subjects,validate,engine,version:1,recentLimit});
++ globalThis.WebLiveSubjectLoader=Object.freeze({subjects,validate,engine,resolveSubject:subjectIdentity,version:1,recentLimit});
+  readQuick();renderRemembered();
+  renderLibrary();
+ })();

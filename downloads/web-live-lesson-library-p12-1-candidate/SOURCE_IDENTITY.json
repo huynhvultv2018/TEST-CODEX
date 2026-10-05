@@ -1,0 +1,14 @@
+{
+  "sourceCandidate": "WEB_LIVE_LESSON_LIBRARY_PHASE12_CANDIDATE",
+  "sourceZip": "/workspace/output/web-live-lesson-library-phase12-candidate/WEB_LIVE_LESSON_LIBRARY_PHASE12_CANDIDATE.zip",
+  "sha256Before": "329dca2256104ef5d9ccca18a2dad2e9c921324260f31249b165683128a2d5e9",
+  "workingRoot": "/workspace/p12-1-legacy-subject/working/WEB_LIVE_LESSON_LIBRARY_P12_1_WORKING_COPY",
+  "fileCount": 1241,
+  "sourceCandidateStatus": "FROZEN",
+  "P12_F01": {
+    "classification": "P2",
+    "owner": "SUBJECT LOADER COMPATIBILITY",
+    "windowsFinding": "GV_REPORTED"
+  },
+  "sha256After": "329dca2256104ef5d9ccca18a2dad2e9c921324260f31249b165683128a2d5e9"
+}
