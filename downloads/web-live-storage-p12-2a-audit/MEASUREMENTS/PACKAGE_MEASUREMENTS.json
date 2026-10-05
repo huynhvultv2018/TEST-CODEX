@@ -1,0 +1,1479 @@
+[
+  {
+    "id": "ALGEBRA_PHASE5_REPRESENTATIVE_TEST",
+    "runtimeSourceKey": "json:e0760e4d7185d6e8",
+    "title": "Algebra Phase5 — TEST ONLY / NOT SGK",
+    "subject": "Đại số — dữ liệu kiểm thử",
+    "engine": "algebra",
+    "serialized": {
+      "jsCharacters": 3701,
+      "utf8Bytes": 3952,
+      "utf16ApproxBytes": 7402
+    },
+    "metadataSerialized": {
+      "jsCharacters": 306,
+      "utf8Bytes": 323,
+      "utf16ApproxBytes": 612
+    },
+    "jsonWithoutDataURIs": {
+      "jsCharacters": 3701,
+      "utf8Bytes": 3952,
+      "utf16ApproxBytes": 7402
+    },
+    "assetIncrementalJSONUtf8Bytes": 0,
+    "textLeafBytes": {
+      "htmlUtf8Bytes": 0,
+      "plainUtf8Bytes": 2452
+    },
+    "assets": [],
+    "assetReferences": [],
+    "assetOccurrenceCount": 0,
+    "uniqueAssetCount": 0,
+    "decodedAssetOccurrenceBytes": 0,
+    "uniqueDecodedAssetBytes": 0,
+    "encodedAssetCharacters": 0,
+    "base64Characters": 0,
+    "base64ExpansionRatio": null,
+    "decodedDuplicateRatio": null,
+    "sourceFile": "ALGEBRA_PHASE5_TEST_PACKAGES/ALGEBRA_PROFILE_REPRESENTATIVE_TEST.json",
+    "sourceFileBytes": 5503,
+    "sourceFileSHA256": "341a4ed6b1ab861b9a9700f744e7228d5cba10ca9e0822b4dfd7d34470a34b5e",
+    "runtimeProfile": "algebra"
+  },
+  {
+    "id": "INFORMATICS_PHASE6_REPRESENTATIVE_TEST",
+    "runtimeSourceKey": "json:d2853fd5a92297c1",
+    "title": "Informatics Phase6 — TEST ONLY / NOT SGK",
+    "subject": "Tin học — dữ liệu kiểm thử",
+    "engine": "informatics",
+    "serialized": {
+      "jsCharacters": 10006,
+      "utf8Bytes": 10635,
+      "utf16ApproxBytes": 20012
+    },
+    "metadataSerialized": {
+      "jsCharacters": 307,
+      "utf8Bytes": 321,
+      "utf16ApproxBytes": 614
+    },
+    "jsonWithoutDataURIs": {
+      "jsCharacters": 10006,
+      "utf8Bytes": 10635,
+      "utf16ApproxBytes": 20012
+    },
+    "assetIncrementalJSONUtf8Bytes": 0,
+    "textLeafBytes": {
+      "htmlUtf8Bytes": 0,
+      "plainUtf8Bytes": 5804
+    },
+    "assets": [],
+    "assetReferences": [
+      {
+        "path": "screens.9.informatics.blocks.1.src",
+        "reference": "informatics-test-media/demo.svg",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.14.informatics.blocks.0.src",
+        "reference": "informatics-test-media/demo.webm",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.15.informatics.blocks.0.src",
+        "reference": "informatics-test-media/demo.gif",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.16.informatics.blocks.0.src",
+        "reference": "informatics-test-media/demo.svg",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.17.informatics.blocks.0.src",
+        "reference": "informatics-test-media/demo.svg",
+        "storedBinaryBytes": 0
+      }
+    ],
+    "assetOccurrenceCount": 0,
+    "uniqueAssetCount": 0,
+    "decodedAssetOccurrenceBytes": 0,
+    "uniqueDecodedAssetBytes": 0,
+    "encodedAssetCharacters": 0,
+    "base64Characters": 0,
+    "base64ExpansionRatio": null,
+    "decodedDuplicateRatio": null,
+    "sourceFile": "INFORMATICS_PHASE6_TEST_PACKAGES/INFORMATICS_PROFILE_REPRESENTATIVE_TEST.json",
+    "sourceFileBytes": 16785,
+    "sourceFileSHA256": "1cea2a731505a0114e8759247bfb78e19d0e2cfc9416d2a8bedbd0c14bb24cb0",
+    "runtimeProfile": "informatics"
+  },
+  {
+    "id": "TIN6_T04_P04_SGK_RC3_PED1",
+    "runtimeSourceKey": "zip:d1bf816687220d2c",
+    "title": "Bài 2. XỬ LÍ THÔNG TIN",
+    "subject": "Tin học 6",
+    "engine": "MISSING → legacy",
+    "serialized": {
+      "jsCharacters": 1848357,
+      "utf8Bytes": 1856946,
+      "utf16ApproxBytes": 3696714
+    },
+    "metadataSerialized": {
+      "jsCharacters": 5566,
+      "utf8Bytes": 5956,
+      "utf16ApproxBytes": 11132
+    },
+    "jsonWithoutDataURIs": {
+      "jsCharacters": 68733,
+      "utf8Bytes": 77322,
+      "utf16ApproxBytes": 137466
+    },
+    "assetIncrementalJSONUtf8Bytes": 1779624,
+    "textLeafBytes": {
+      "htmlUtf8Bytes": 0,
+      "plainUtf8Bytes": 42026
+    },
+    "assets": [
+      {
+        "path": "screens.12.imageData",
+        "mime": "image/png",
+        "sha256": "99dbc82804ae73569174607e656de03316a6198294918c9842af110fa117e3bc",
+        "decodedBytes": 94710,
+        "encodedCharacters": 126302,
+        "base64Characters": 126280
+      },
+      {
+        "path": "screens.12.geometryImageData",
+        "mime": "image/png",
+        "sha256": "99dbc82804ae73569174607e656de03316a6198294918c9842af110fa117e3bc",
+        "decodedBytes": 94710,
+        "encodedCharacters": 126302,
+        "base64Characters": 126280
+      },
+      {
+        "path": "screens.15.imageData",
+        "mime": "image/png",
+        "sha256": "d1cb13d6597e94af96565c7c97c767bdcbc0c21fecca0bc8e8d9f4249b89ba85",
+        "decodedBytes": 95424,
+        "encodedCharacters": 127254,
+        "base64Characters": 127232
+      },
+      {
+        "path": "screens.15.geometryImageData",
+        "mime": "image/png",
+        "sha256": "d1cb13d6597e94af96565c7c97c767bdcbc0c21fecca0bc8e8d9f4249b89ba85",
+        "decodedBytes": 95424,
+        "encodedCharacters": 127254,
+        "base64Characters": 127232
+      },
+      {
+        "path": "screens.17.imageData",
+        "mime": "image/png",
+        "sha256": "d1cb13d6597e94af96565c7c97c767bdcbc0c21fecca0bc8e8d9f4249b89ba85",
+        "decodedBytes": 95424,
+        "encodedCharacters": 127254,
+        "base64Characters": 127232
+      },
+      {
+        "path": "screens.17.geometryImageData",
+        "mime": "image/png",
+        "sha256": "d1cb13d6597e94af96565c7c97c767bdcbc0c21fecca0bc8e8d9f4249b89ba85",
+        "decodedBytes": 95424,
+        "encodedCharacters": 127254,
+        "base64Characters": 127232
+      },
+      {
+        "path": "screens.18.imageData",
+        "mime": "image/png",
+        "sha256": "d1cb13d6597e94af96565c7c97c767bdcbc0c21fecca0bc8e8d9f4249b89ba85",
+        "decodedBytes": 95424,
+        "encodedCharacters": 127254,
+        "base64Characters": 127232
+      },
+      {
+        "path": "screens.18.geometryImageData",
+        "mime": "image/png",
+        "sha256": "d1cb13d6597e94af96565c7c97c767bdcbc0c21fecca0bc8e8d9f4249b89ba85",
+        "decodedBytes": 95424,
+        "encodedCharacters": 127254,
+        "base64Characters": 127232
+      },
+      {
+        "path": "screens.19.imageData",
+        "mime": "image/png",
+        "sha256": "d1cb13d6597e94af96565c7c97c767bdcbc0c21fecca0bc8e8d9f4249b89ba85",
+        "decodedBytes": 95424,
+        "encodedCharacters": 127254,
+        "base64Characters": 127232
+      },
+      {
+        "path": "screens.19.geometryImageData",
+        "mime": "image/png",
+        "sha256": "d1cb13d6597e94af96565c7c97c767bdcbc0c21fecca0bc8e8d9f4249b89ba85",
+        "decodedBytes": 95424,
+        "encodedCharacters": 127254,
+        "base64Characters": 127232
+      },
+      {
+        "path": "screens.20.imageData",
+        "mime": "image/png",
+        "sha256": "d1cb13d6597e94af96565c7c97c767bdcbc0c21fecca0bc8e8d9f4249b89ba85",
+        "decodedBytes": 95424,
+        "encodedCharacters": 127254,
+        "base64Characters": 127232
+      },
+      {
+        "path": "screens.20.geometryImageData",
+        "mime": "image/png",
+        "sha256": "d1cb13d6597e94af96565c7c97c767bdcbc0c21fecca0bc8e8d9f4249b89ba85",
+        "decodedBytes": 95424,
+        "encodedCharacters": 127254,
+        "base64Characters": 127232
+      },
+      {
+        "path": "screens.21.imageData",
+        "mime": "image/png",
+        "sha256": "d1cb13d6597e94af96565c7c97c767bdcbc0c21fecca0bc8e8d9f4249b89ba85",
+        "decodedBytes": 95424,
+        "encodedCharacters": 127254,
+        "base64Characters": 127232
+      },
+      {
+        "path": "screens.21.geometryImageData",
+        "mime": "image/png",
+        "sha256": "d1cb13d6597e94af96565c7c97c767bdcbc0c21fecca0bc8e8d9f4249b89ba85",
+        "decodedBytes": 95424,
+        "encodedCharacters": 127254,
+        "base64Characters": 127232
+      }
+    ],
+    "assetReferences": [
+      {
+        "path": "screens.12.image",
+        "reference": "images/tin6_w04_h12.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.12.geometryImage",
+        "reference": "images/tin6_w04_h12.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.15.image",
+        "reference": "images/tin6_w04_hd2.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.15.geometryImage",
+        "reference": "images/tin6_w04_hd2.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.17.image",
+        "reference": "images/tin6_w04_hd2.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.17.geometryImage",
+        "reference": "images/tin6_w04_hd2.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.18.image",
+        "reference": "images/tin6_w04_hd2.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.18.geometryImage",
+        "reference": "images/tin6_w04_hd2.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.19.image",
+        "reference": "images/tin6_w04_hd2.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.19.geometryImage",
+        "reference": "images/tin6_w04_hd2.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.20.image",
+        "reference": "images/tin6_w04_hd2.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.20.geometryImage",
+        "reference": "images/tin6_w04_hd2.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.21.image",
+        "reference": "images/tin6_w04_hd2.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.21.geometryImage",
+        "reference": "images/tin6_w04_hd2.png",
+        "storedBinaryBytes": 0
+      }
+    ],
+    "assetOccurrenceCount": 14,
+    "uniqueAssetCount": 2,
+    "decodedAssetOccurrenceBytes": 1334508,
+    "uniqueDecodedAssetBytes": 190134,
+    "encodedAssetCharacters": 1779652,
+    "base64Characters": 1779344,
+    "base64ExpansionRatio": 1.3333333333333333,
+    "decodedDuplicateRatio": 7.018776231499889,
+    "sourceFile": "RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip",
+    "sourceFileBytes": 291676,
+    "sourceFileSHA256": "edd4e374b812f109194c06100b36c0090dd81818aa995f6656cc02d5acb24cdf",
+    "runtimeProfile": "legacy",
+    "archive": {
+      "manifest.json": 323,
+      "lesson.json": 100753,
+      "images/tin6_w04_h12.png": 94710,
+      "images/tin6_w04_hd2.png": 95424
+    }
+  },
+  {
+    "id": "TIN6_T05_P05_SGK_RC3_PED1",
+    "runtimeSourceKey": "zip:c676afe9ac4e09f8",
+    "title": "Bài 3. THÔNG TIN TRONG MÁY TÍNH",
+    "subject": "Tin học 6",
+    "engine": "MISSING → legacy",
+    "serialized": {
+      "jsCharacters": 2012622,
+      "utf8Bytes": 2020067,
+      "utf16ApproxBytes": 4025244
+    },
+    "metadataSerialized": {
+      "jsCharacters": 7477,
+      "utf8Bytes": 7968,
+      "utf16ApproxBytes": 14954
+    },
+    "jsonWithoutDataURIs": {
+      "jsCharacters": 59894,
+      "utf8Bytes": 67339,
+      "utf16ApproxBytes": 119788
+    },
+    "assetIncrementalJSONUtf8Bytes": 1952728,
+    "textLeafBytes": {
+      "htmlUtf8Bytes": 0,
+      "plainUtf8Bytes": 37940
+    },
+    "assets": [
+      {
+        "path": "screens.3.imageData",
+        "mime": "image/png",
+        "sha256": "ed9ce2414c005727fc6e06b318155e5b38c37083431cde15a55ebf5621a4e3fe",
+        "decodedBytes": 48198,
+        "encodedCharacters": 64286,
+        "base64Characters": 64264
+      },
+      {
+        "path": "screens.3.geometryImageData",
+        "mime": "image/png",
+        "sha256": "ed9ce2414c005727fc6e06b318155e5b38c37083431cde15a55ebf5621a4e3fe",
+        "decodedBytes": 48198,
+        "encodedCharacters": 64286,
+        "base64Characters": 64264
+      },
+      {
+        "path": "screens.14.imageData",
+        "mime": "image/png",
+        "sha256": "f93d6f6e32055b5ed73b829068441a27aff413d41d237552620b8390b1f816da",
+        "decodedBytes": 33770,
+        "encodedCharacters": 45050,
+        "base64Characters": 45028
+      },
+      {
+        "path": "screens.14.geometryImageData",
+        "mime": "image/png",
+        "sha256": "f93d6f6e32055b5ed73b829068441a27aff413d41d237552620b8390b1f816da",
+        "decodedBytes": 33770,
+        "encodedCharacters": 45050,
+        "base64Characters": 45028
+      },
+      {
+        "path": "screens.17.imageData",
+        "mime": "image/png",
+        "sha256": "b7b245db7450416bb21e74a1e33d59e28916b3c973610af2596bc2d0a351a1af",
+        "decodedBytes": 278687,
+        "encodedCharacters": 371606,
+        "base64Characters": 371584
+      },
+      {
+        "path": "screens.17.geometryImageData",
+        "mime": "image/png",
+        "sha256": "b7b245db7450416bb21e74a1e33d59e28916b3c973610af2596bc2d0a351a1af",
+        "decodedBytes": 278687,
+        "encodedCharacters": 371606,
+        "base64Characters": 371584
+      },
+      {
+        "path": "screens.18.imageData",
+        "mime": "image/png",
+        "sha256": "b7b245db7450416bb21e74a1e33d59e28916b3c973610af2596bc2d0a351a1af",
+        "decodedBytes": 278687,
+        "encodedCharacters": 371606,
+        "base64Characters": 371584
+      },
+      {
+        "path": "screens.18.geometryImageData",
+        "mime": "image/png",
+        "sha256": "b7b245db7450416bb21e74a1e33d59e28916b3c973610af2596bc2d0a351a1af",
+        "decodedBytes": 278687,
+        "encodedCharacters": 371606,
+        "base64Characters": 371584
+      },
+      {
+        "path": "screens.20.imageData",
+        "mime": "image/png",
+        "sha256": "5340962200e2ce41053a475bb21a4e12d1a5a54404fb08e37c1d70482335acc1",
+        "decodedBytes": 24937,
+        "encodedCharacters": 33274,
+        "base64Characters": 33252
+      },
+      {
+        "path": "screens.20.geometryImageData",
+        "mime": "image/png",
+        "sha256": "5340962200e2ce41053a475bb21a4e12d1a5a54404fb08e37c1d70482335acc1",
+        "decodedBytes": 24937,
+        "encodedCharacters": 33274,
+        "base64Characters": 33252
+      },
+      {
+        "path": "screens.23.imageData",
+        "mime": "image/png",
+        "sha256": "0c815d181c01730535e6b3b88314034f24b1ad8b3695b77fd4ecce189479da40",
+        "decodedBytes": 22621,
+        "encodedCharacters": 30186,
+        "base64Characters": 30164
+      },
+      {
+        "path": "screens.23.geometryImageData",
+        "mime": "image/png",
+        "sha256": "0c815d181c01730535e6b3b88314034f24b1ad8b3695b77fd4ecce189479da40",
+        "decodedBytes": 22621,
+        "encodedCharacters": 30186,
+        "base64Characters": 30164
+      },
+      {
+        "path": "screens.24.imageData",
+        "mime": "image/png",
+        "sha256": "0c815d181c01730535e6b3b88314034f24b1ad8b3695b77fd4ecce189479da40",
+        "decodedBytes": 22621,
+        "encodedCharacters": 30186,
+        "base64Characters": 30164
+      },
+      {
+        "path": "screens.24.geometryImageData",
+        "mime": "image/png",
+        "sha256": "0c815d181c01730535e6b3b88314034f24b1ad8b3695b77fd4ecce189479da40",
+        "decodedBytes": 22621,
+        "encodedCharacters": 30186,
+        "base64Characters": 30164
+      },
+      {
+        "path": "screens.25.imageData",
+        "mime": "image/png",
+        "sha256": "0c815d181c01730535e6b3b88314034f24b1ad8b3695b77fd4ecce189479da40",
+        "decodedBytes": 22621,
+        "encodedCharacters": 30186,
+        "base64Characters": 30164
+      },
+      {
+        "path": "screens.25.geometryImageData",
+        "mime": "image/png",
+        "sha256": "0c815d181c01730535e6b3b88314034f24b1ad8b3695b77fd4ecce189479da40",
+        "decodedBytes": 22621,
+        "encodedCharacters": 30186,
+        "base64Characters": 30164
+      }
+    ],
+    "assetReferences": [
+      {
+        "path": "screens.3.image",
+        "reference": "images/tin6_b3_h13_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.3.geometryImage",
+        "reference": "images/tin6_b3_h13_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.14.image",
+        "reference": "images/tin6_b3_b12_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.14.geometryImage",
+        "reference": "images/tin6_b3_b12_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.17.image",
+        "reference": "images/tin6_b3_h14_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.17.geometryImage",
+        "reference": "images/tin6_b3_h14_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.18.image",
+        "reference": "images/tin6_b3_h14_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.18.geometryImage",
+        "reference": "images/tin6_b3_h14_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.20.image",
+        "reference": "images/tin6_b3_h15_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.20.geometryImage",
+        "reference": "images/tin6_b3_h15_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.23.image",
+        "reference": "images/tin6_b3_h16_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.23.geometryImage",
+        "reference": "images/tin6_b3_h16_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.24.image",
+        "reference": "images/tin6_b3_h16_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.24.geometryImage",
+        "reference": "images/tin6_b3_h16_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.25.image",
+        "reference": "images/tin6_b3_h16_w05.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.25.geometryImage",
+        "reference": "images/tin6_b3_h16_w05.png",
+        "storedBinaryBytes": 0
+      }
+    ],
+    "assetOccurrenceCount": 16,
+    "uniqueAssetCount": 5,
+    "decodedAssetOccurrenceBytes": 1464284,
+    "uniqueDecodedAssetBytes": 408213,
+    "encodedAssetCharacters": 1952760,
+    "base64Characters": 1952408,
+    "base64ExpansionRatio": 1.3333533658771113,
+    "decodedDuplicateRatio": 3.5870587168953465,
+    "sourceFile": "RC3_PED1_TEST_PACKAGES/TIN6_W05_LIVE_RC3_PED1.zip",
+    "sourceFileBytes": 496796,
+    "sourceFileSHA256": "f46afb4ddeb51c764b4d88ad409802c1bac6bc3b66c96878edd5e388799dc31d",
+    "runtimeProfile": "legacy",
+    "archive": {
+      "manifest.json": 331,
+      "lesson.json": 87390,
+      "images/tin6_b3_h13_w05.png": 48198,
+      "images/tin6_b3_b12_w05.png": 33770,
+      "images/tin6_b3_h14_w05.png": 278687,
+      "images/tin6_b3_h15_w05.png": 24937,
+      "images/tin6_b3_h16_w05.png": 22621
+    }
+  },
+  {
+    "id": "TIN8_T04_P04_SGK_RC3_PED1",
+    "runtimeSourceKey": "zip:8dc106d5d46d64cc",
+    "title": "Bài 2. THÔNG TIN TRONG MÔI TRƯỜNG SỐ",
+    "subject": "Tin học 8",
+    "engine": "MISSING → legacy",
+    "serialized": {
+      "jsCharacters": 306186,
+      "utf8Bytes": 313281,
+      "utf16ApproxBytes": 612372
+    },
+    "metadataSerialized": {
+      "jsCharacters": 7894,
+      "utf8Bytes": 8506,
+      "utf16ApproxBytes": 15788
+    },
+    "jsonWithoutDataURIs": {
+      "jsCharacters": 53850,
+      "utf8Bytes": 60945,
+      "utf16ApproxBytes": 107700
+    },
+    "assetIncrementalJSONUtf8Bytes": 252336,
+    "textLeafBytes": {
+      "htmlUtf8Bytes": 0,
+      "plainUtf8Bytes": 34313
+    },
+    "assets": [
+      {
+        "path": "screens.3.imageData",
+        "mime": "image/png",
+        "sha256": "5fa94f39621c84a39ace9fff289a003898892470303a0548e755d9db2ed5779b",
+        "decodedBytes": 31527,
+        "encodedCharacters": 42058,
+        "base64Characters": 42036
+      },
+      {
+        "path": "screens.3.geometryImageData",
+        "mime": "image/png",
+        "sha256": "5fa94f39621c84a39ace9fff289a003898892470303a0548e755d9db2ed5779b",
+        "decodedBytes": 31527,
+        "encodedCharacters": 42058,
+        "base64Characters": 42036
+      },
+      {
+        "path": "screens.5.imageData",
+        "mime": "image/png",
+        "sha256": "5fa94f39621c84a39ace9fff289a003898892470303a0548e755d9db2ed5779b",
+        "decodedBytes": 31527,
+        "encodedCharacters": 42058,
+        "base64Characters": 42036
+      },
+      {
+        "path": "screens.5.geometryImageData",
+        "mime": "image/png",
+        "sha256": "5fa94f39621c84a39ace9fff289a003898892470303a0548e755d9db2ed5779b",
+        "decodedBytes": 31527,
+        "encodedCharacters": 42058,
+        "base64Characters": 42036
+      },
+      {
+        "path": "screens.7.imageData",
+        "mime": "image/png",
+        "sha256": "5fa94f39621c84a39ace9fff289a003898892470303a0548e755d9db2ed5779b",
+        "decodedBytes": 31527,
+        "encodedCharacters": 42058,
+        "base64Characters": 42036
+      },
+      {
+        "path": "screens.7.geometryImageData",
+        "mime": "image/png",
+        "sha256": "5fa94f39621c84a39ace9fff289a003898892470303a0548e755d9db2ed5779b",
+        "decodedBytes": 31527,
+        "encodedCharacters": 42058,
+        "base64Characters": 42036
+      }
+    ],
+    "assetReferences": [
+      {
+        "path": "screens.3.image",
+        "reference": "images/tin8_b2_h23_w04.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.3.geometryImage",
+        "reference": "images/tin8_b2_h23_w04.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.5.image",
+        "reference": "images/tin8_b2_h23_w04.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.5.geometryImage",
+        "reference": "images/tin8_b2_h23_w04.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.7.image",
+        "reference": "images/tin8_b2_h23_w04.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.7.geometryImage",
+        "reference": "images/tin8_b2_h23_w04.png",
+        "storedBinaryBytes": 0
+      }
+    ],
+    "assetOccurrenceCount": 6,
+    "uniqueAssetCount": 1,
+    "decodedAssetOccurrenceBytes": 189162,
+    "uniqueDecodedAssetBytes": 31527,
+    "encodedAssetCharacters": 252348,
+    "base64Characters": 252216,
+    "base64ExpansionRatio": 1.3333333333333333,
+    "decodedDuplicateRatio": 6,
+    "sourceFile": "RC3_PED1_TEST_PACKAGES/TIN8_W04_LIVE_RC3_PED1.zip",
+    "sourceFileBytes": 111827,
+    "sourceFileSHA256": "aa2ddc25a4123f77740e24c97e0ed2db8dbc14e297d1b030c3c8a78d1771b884",
+    "runtimeProfile": "legacy",
+    "archive": {
+      "manifest.json": 340,
+      "lesson.json": 79610,
+      "images/tin8_b2_h23_w04.png": 31527
+    }
+  },
+  {
+    "id": "HINH8_T04_T07_B12_M2_V03",
+    "runtimeSourceKey": "zip:a0981c7a158fc379",
+    "title": "Bài 12. Hình bình hành — Dấu hiệu nhận biết",
+    "subject": "Hình học 8",
+    "engine": "MISSING → legacy",
+    "serialized": {
+      "jsCharacters": 1439425,
+      "utf8Bytes": 1441998,
+      "utf16ApproxBytes": 2878850
+    },
+    "metadataSerialized": {
+      "jsCharacters": 222,
+      "utf8Bytes": 239,
+      "utf16ApproxBytes": 444
+    },
+    "jsonWithoutDataURIs": {
+      "jsCharacters": 13849,
+      "utf8Bytes": 16422,
+      "utf16ApproxBytes": 27698
+    },
+    "assetIncrementalJSONUtf8Bytes": 1425576,
+    "textLeafBytes": {
+      "htmlUtf8Bytes": 0,
+      "plainUtf8Bytes": 12042
+    },
+    "assets": [
+      {
+        "path": "screens.5.imageData",
+        "mime": "image/png",
+        "sha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+        "decodedBytes": 33884,
+        "encodedCharacters": 45202,
+        "base64Characters": 45180
+      },
+      {
+        "path": "screens.7.imageData",
+        "mime": "image/png",
+        "sha256": "8893d8409463c7430d1921c750dd51787ef5710182f824c6c45587678d520220",
+        "decodedBytes": 40570,
+        "encodedCharacters": 54118,
+        "base64Characters": 54096
+      },
+      {
+        "path": "screens.8.imageData",
+        "mime": "image/png",
+        "sha256": "02de3cc261351173536dfa9fdf3cebb52101e99b6df873467d20165089b40346",
+        "decodedBytes": 55957,
+        "encodedCharacters": 74634,
+        "base64Characters": 74612
+      },
+      {
+        "path": "screens.10.imageData",
+        "mime": "image/png",
+        "sha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "decodedBytes": 49336,
+        "encodedCharacters": 65806,
+        "base64Characters": 65784
+      },
+      {
+        "path": "screens.11.imageData",
+        "mime": "image/png",
+        "sha256": "cd2c05cff16a181e5e35fc1750914f2e63d0dbe9c2d9ebcfe774e414a5d26cbb",
+        "decodedBytes": 55683,
+        "encodedCharacters": 74266,
+        "base64Characters": 74244
+      },
+      {
+        "path": "screens.13.imageData",
+        "mime": "image/png",
+        "sha256": "39f6ec26e7571be1b813e651db60132eafd8cc90ba288b59ebf2e094521a97df",
+        "decodedBytes": 70220,
+        "encodedCharacters": 93650,
+        "base64Characters": 93628
+      },
+      {
+        "path": "screens.15.imageData",
+        "mime": "image/png",
+        "sha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "decodedBytes": 49336,
+        "encodedCharacters": 65806,
+        "base64Characters": 65784
+      },
+      {
+        "path": "screens.16.imageData",
+        "mime": "image/png",
+        "sha256": "1030152fedb18dd9786c3dae07d81550d7487e81386348d5bee8420c9673494f",
+        "decodedBytes": 62128,
+        "encodedCharacters": 82862,
+        "base64Characters": 82840
+      },
+      {
+        "path": "screens.17.imageData",
+        "mime": "image/png",
+        "sha256": "d04ca4afeaacd75cdafae181d91483881d398fa2dfa4dc5411d5eea8693e92b3",
+        "decodedBytes": 54318,
+        "encodedCharacters": 72446,
+        "base64Characters": 72424
+      },
+      {
+        "path": "screens.19.imageData",
+        "mime": "image/png",
+        "sha256": "b59beaa64e5521a2d5fa46a15c6caf9172e0e52beadd5831f645a4e613cb5cb7",
+        "decodedBytes": 47505,
+        "encodedCharacters": 63362,
+        "base64Characters": 63340
+      },
+      {
+        "path": "screens.22.imageData",
+        "mime": "image/png",
+        "sha256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62",
+        "decodedBytes": 86217,
+        "encodedCharacters": 114978,
+        "base64Characters": 114956
+      },
+      {
+        "path": "screens.23.imageData",
+        "mime": "image/png",
+        "sha256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62",
+        "decodedBytes": 86217,
+        "encodedCharacters": 114978,
+        "base64Characters": 114956
+      },
+      {
+        "path": "screens.24.imageData",
+        "mime": "image/png",
+        "sha256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62",
+        "decodedBytes": 86217,
+        "encodedCharacters": 114978,
+        "base64Characters": 114956
+      },
+      {
+        "path": "screens.25.imageData",
+        "mime": "image/png",
+        "sha256": "df741e56c51d49a3055189d4342a97e60cb753baf211a34b52d4f41c89bd5740",
+        "decodedBytes": 47335,
+        "encodedCharacters": 63138,
+        "base64Characters": 63116
+      },
+      {
+        "path": "screens.26.imageData",
+        "mime": "image/png",
+        "sha256": "61ad82678b701849a8f7e34c91a6fed5a59fe214462445492b5a7f78a49834fc",
+        "decodedBytes": 74817,
+        "encodedCharacters": 99778,
+        "base64Characters": 99756
+      },
+      {
+        "path": "screens.28.imageData",
+        "mime": "image/png",
+        "sha256": "12e1f76365535da45ecebf10ad3306b499b7e008f10b411faafa0d57ecbfd81d",
+        "decodedBytes": 33677,
+        "encodedCharacters": 44926,
+        "base64Characters": 44904
+      },
+      {
+        "path": "screens.29.imageData",
+        "mime": "image/png",
+        "sha256": "ae6fdb5745b9df8408868ee7817952dd9cca9e35d6ffb4e2df5c1faa5b31087a",
+        "decodedBytes": 73046,
+        "encodedCharacters": 97418,
+        "base64Characters": 97396
+      },
+      {
+        "path": "screens.31.imageData",
+        "mime": "image/png",
+        "sha256": "4e63e045edfb19c4b44d58f70a5d4d815233c5d969bc079fc677de7de8403e64",
+        "decodedBytes": 62431,
+        "encodedCharacters": 83266,
+        "base64Characters": 83244
+      }
+    ],
+    "assetReferences": [
+      {
+        "path": "screens.0.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.1.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.2.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.3.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.4.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.5.image",
+        "reference": "images/VD2_H331.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.6.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.7.image",
+        "reference": "images/VD2_song_song.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.8.image",
+        "reference": "images/VD2_bang_nhau.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.9.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.10.image",
+        "reference": "images/LT2_H332.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.11.image",
+        "reference": "images/LT2A_can.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.12.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.13.image",
+        "reference": "images/LT2A_bang_nhau.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.14.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.15.image",
+        "reference": "images/LT2_H332.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.16.image",
+        "reference": "images/LT2B_song_song.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.17.image",
+        "reference": "images/LT2B_bang_nhau.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.18.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.19.image",
+        "reference": "images/TT2_H333.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.20.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.21.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.22.image",
+        "reference": "images/VD3_H334.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.23.image",
+        "reference": "images/VD3_H334.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.24.image",
+        "reference": "images/VD3_H334.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.25.image",
+        "reference": "images/LT3_Hinh.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.26.image",
+        "reference": "images/LT3_duong_cheo.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.27.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.28.image",
+        "reference": "images/VDU_H327.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.29.image",
+        "reference": "images/VDU_dung.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.30.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.31.image",
+        "reference": "images/VDU_ket_luan.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.32.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.33.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      }
+    ],
+    "assetOccurrenceCount": 18,
+    "uniqueAssetCount": 15,
+    "decodedAssetOccurrenceBytes": 1068894,
+    "uniqueDecodedAssetBytes": 847124,
+    "encodedAssetCharacters": 1425612,
+    "base64Characters": 1425216,
+    "base64ExpansionRatio": 1.3333557864484225,
+    "decodedDuplicateRatio": 1.261791662141552,
+    "sourceFile": "WEB_LIVE/HINH_HOC_8_T04_T07_LIVE_TEST.zip",
+    "sourceFileBytes": 717876,
+    "sourceFileSHA256": "8e51fd9719039af0f4f0e4547668a9343cd6c6db022dbb6c2047a51d1de61ddb",
+    "runtimeProfile": "legacy",
+    "archive": {
+      "manifest.json": 329,
+      "lesson.json": 18898,
+      "images/LT2A_bang_nhau.png": 70220,
+      "images/LT2A_can.png": 55683,
+      "images/LT2B_bang_nhau.png": 54318,
+      "images/LT2B_song_song.png": 62128,
+      "images/LT2_H332.png": 49336,
+      "images/LT3_Hinh.png": 47335,
+      "images/LT3_duong_cheo.png": 74817,
+      "images/TT2_H333.png": 47505,
+      "images/VD2_H331.png": 33884,
+      "images/VD2_bang_nhau.png": 55957,
+      "images/VD2_song_song.png": 40570,
+      "images/VD3_H334.png": 86217,
+      "images/VDU_H327.png": 33677,
+      "images/VDU_dung.png": 73046,
+      "images/VDU_ket_luan.png": 62431
+    }
+  },
+  {
+    "id": "HINH8_T04_T07_DUAL_VISUAL_TEST_V045",
+    "runtimeSourceKey": "zip:c0d4cacf05a6c918",
+    "title": "Bài 12. Hình bình hành — Dấu hiệu nhận biết",
+    "subject": "Hình học 8",
+    "engine": "MISSING → legacy",
+    "serialized": {
+      "jsCharacters": 1440172,
+      "utf8Bytes": 1442845,
+      "utf16ApproxBytes": 2880344
+    },
+    "metadataSerialized": {
+      "jsCharacters": 244,
+      "utf8Bytes": 261,
+      "utf16ApproxBytes": 488
+    },
+    "jsonWithoutDataURIs": {
+      "jsCharacters": 14596,
+      "utf8Bytes": 17269,
+      "utf16ApproxBytes": 29192
+    },
+    "assetIncrementalJSONUtf8Bytes": 1425576,
+    "textLeafBytes": {
+      "htmlUtf8Bytes": 0,
+      "plainUtf8Bytes": 12563
+    },
+    "assets": [
+      {
+        "path": "screens.5.imageData",
+        "mime": "image/png",
+        "sha256": "916b4205de3be0b0d446f1a775469128167ff47d617d00aa5719eb8aa8b86fbd",
+        "decodedBytes": 33884,
+        "encodedCharacters": 45202,
+        "base64Characters": 45180
+      },
+      {
+        "path": "screens.8.analysisDiagramData",
+        "mime": "image/png",
+        "sha256": "8893d8409463c7430d1921c750dd51787ef5710182f824c6c45587678d520220",
+        "decodedBytes": 40570,
+        "encodedCharacters": 54118,
+        "base64Characters": 54096
+      },
+      {
+        "path": "screens.9.analysisDiagramData",
+        "mime": "image/png",
+        "sha256": "02de3cc261351173536dfa9fdf3cebb52101e99b6df873467d20165089b40346",
+        "decodedBytes": 55957,
+        "encodedCharacters": 74634,
+        "base64Characters": 74612
+      },
+      {
+        "path": "screens.11.imageData",
+        "mime": "image/png",
+        "sha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "decodedBytes": 49336,
+        "encodedCharacters": 65806,
+        "base64Characters": 65784
+      },
+      {
+        "path": "screens.12.imageData",
+        "mime": "image/png",
+        "sha256": "cd2c05cff16a181e5e35fc1750914f2e63d0dbe9c2d9ebcfe774e414a5d26cbb",
+        "decodedBytes": 55683,
+        "encodedCharacters": 74266,
+        "base64Characters": 74244
+      },
+      {
+        "path": "screens.14.imageData",
+        "mime": "image/png",
+        "sha256": "39f6ec26e7571be1b813e651db60132eafd8cc90ba288b59ebf2e094521a97df",
+        "decodedBytes": 70220,
+        "encodedCharacters": 93650,
+        "base64Characters": 93628
+      },
+      {
+        "path": "screens.16.imageData",
+        "mime": "image/png",
+        "sha256": "f2dabdd956f7499d913e222756f161243799c295747768188f8bb073076c75b4",
+        "decodedBytes": 49336,
+        "encodedCharacters": 65806,
+        "base64Characters": 65784
+      },
+      {
+        "path": "screens.17.imageData",
+        "mime": "image/png",
+        "sha256": "1030152fedb18dd9786c3dae07d81550d7487e81386348d5bee8420c9673494f",
+        "decodedBytes": 62128,
+        "encodedCharacters": 82862,
+        "base64Characters": 82840
+      },
+      {
+        "path": "screens.18.imageData",
+        "mime": "image/png",
+        "sha256": "d04ca4afeaacd75cdafae181d91483881d398fa2dfa4dc5411d5eea8693e92b3",
+        "decodedBytes": 54318,
+        "encodedCharacters": 72446,
+        "base64Characters": 72424
+      },
+      {
+        "path": "screens.20.imageData",
+        "mime": "image/png",
+        "sha256": "b59beaa64e5521a2d5fa46a15c6caf9172e0e52beadd5831f645a4e613cb5cb7",
+        "decodedBytes": 47505,
+        "encodedCharacters": 63362,
+        "base64Characters": 63340
+      },
+      {
+        "path": "screens.23.imageData",
+        "mime": "image/png",
+        "sha256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62",
+        "decodedBytes": 86217,
+        "encodedCharacters": 114978,
+        "base64Characters": 114956
+      },
+      {
+        "path": "screens.24.imageData",
+        "mime": "image/png",
+        "sha256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62",
+        "decodedBytes": 86217,
+        "encodedCharacters": 114978,
+        "base64Characters": 114956
+      },
+      {
+        "path": "screens.25.imageData",
+        "mime": "image/png",
+        "sha256": "56f16f50c03069ebf19780f42704eaf216b01f4915f1499eb49aa3193a073c62",
+        "decodedBytes": 86217,
+        "encodedCharacters": 114978,
+        "base64Characters": 114956
+      },
+      {
+        "path": "screens.26.imageData",
+        "mime": "image/png",
+        "sha256": "df741e56c51d49a3055189d4342a97e60cb753baf211a34b52d4f41c89bd5740",
+        "decodedBytes": 47335,
+        "encodedCharacters": 63138,
+        "base64Characters": 63116
+      },
+      {
+        "path": "screens.27.imageData",
+        "mime": "image/png",
+        "sha256": "61ad82678b701849a8f7e34c91a6fed5a59fe214462445492b5a7f78a49834fc",
+        "decodedBytes": 74817,
+        "encodedCharacters": 99778,
+        "base64Characters": 99756
+      },
+      {
+        "path": "screens.29.imageData",
+        "mime": "image/png",
+        "sha256": "12e1f76365535da45ecebf10ad3306b499b7e008f10b411faafa0d57ecbfd81d",
+        "decodedBytes": 33677,
+        "encodedCharacters": 44926,
+        "base64Characters": 44904
+      },
+      {
+        "path": "screens.30.imageData",
+        "mime": "image/png",
+        "sha256": "ae6fdb5745b9df8408868ee7817952dd9cca9e35d6ffb4e2df5c1faa5b31087a",
+        "decodedBytes": 73046,
+        "encodedCharacters": 97418,
+        "base64Characters": 97396
+      },
+      {
+        "path": "screens.32.imageData",
+        "mime": "image/png",
+        "sha256": "4e63e045edfb19c4b44d58f70a5d4d815233c5d969bc079fc677de7de8403e64",
+        "decodedBytes": 62431,
+        "encodedCharacters": 83266,
+        "base64Characters": 83244
+      }
+    ],
+    "assetReferences": [
+      {
+        "path": "screens.0.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.1.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.2.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.3.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.4.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.5.image",
+        "reference": "images/VD2_H331.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.6.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.8.analysisDiagram",
+        "reference": "images/VD2_song_song.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.9.analysisDiagram",
+        "reference": "images/VD2_bang_nhau.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.10.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.11.image",
+        "reference": "images/LT2_H332.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.12.image",
+        "reference": "images/LT2A_can.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.13.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.14.image",
+        "reference": "images/LT2A_bang_nhau.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.15.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.16.image",
+        "reference": "images/LT2_H332.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.17.image",
+        "reference": "images/LT2B_song_song.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.18.image",
+        "reference": "images/LT2B_bang_nhau.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.19.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.20.image",
+        "reference": "images/TT2_H333.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.21.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.22.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.23.image",
+        "reference": "images/VD3_H334.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.24.image",
+        "reference": "images/VD3_H334.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.25.image",
+        "reference": "images/VD3_H334.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.26.image",
+        "reference": "images/LT3_Hinh.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.27.image",
+        "reference": "images/LT3_duong_cheo.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.28.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.29.image",
+        "reference": "images/VDU_H327.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.30.image",
+        "reference": "images/VDU_dung.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.31.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.32.image",
+        "reference": "images/VDU_ket_luan.png",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.33.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      },
+      {
+        "path": "screens.34.image",
+        "reference": "",
+        "storedBinaryBytes": 0
+      }
+    ],
+    "assetOccurrenceCount": 18,
+    "uniqueAssetCount": 15,
+    "decodedAssetOccurrenceBytes": 1068894,
+    "uniqueDecodedAssetBytes": 847124,
+    "encodedAssetCharacters": 1425612,
+    "base64Characters": 1425216,
+    "base64ExpansionRatio": 1.3333557864484225,
+    "decodedDuplicateRatio": 1.261791662141552,
+    "sourceFile": "WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip",
+    "sourceFileBytes": 717920,
+    "sourceFileSHA256": "86f95e57641647c3441f615cd6f5e3437c0e509afc2d13e030781ce9a23cf033",
+    "runtimeProfile": "legacy",
+    "archive": {
+      "manifest.json": 324,
+      "lesson.json": 19937,
+      "images/LT2A_bang_nhau.png": 70220,
+      "images/LT2A_can.png": 55683,
+      "images/LT2B_bang_nhau.png": 54318,
+      "images/LT2B_song_song.png": 62128,
+      "images/LT2_H332.png": 49336,
+      "images/LT3_Hinh.png": 47335,
+      "images/LT3_duong_cheo.png": 74817,
+      "images/TT2_H333.png": 47505,
+      "images/VD2_H331.png": 33884,
+      "images/VD2_bang_nhau.png": 55957,
+      "images/VD2_song_song.png": 40570,
+      "images/VD3_H334.png": 86217,
+      "images/VDU_H327.png": 33677,
+      "images/VDU_dung.png": 73046,
+      "images/VDU_ket_luan.png": 62431
+    }
+  }
+]

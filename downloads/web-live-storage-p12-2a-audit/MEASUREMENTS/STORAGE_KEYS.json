@@ -1,0 +1,106 @@
+[
+  {
+    "key": "foreign:AUDIT_ONLY_SENTINEL",
+    "jsCharacters": 13,
+    "utf8Bytes": 13,
+    "utf16ApproxBytes": 26,
+    "recognizedWebLive": false,
+    "dataURICount": 0
+  },
+  {
+    "key": "lesson:ALGEBRA_PHASE5_REPRESENTATIVE_TEST",
+    "jsCharacters": 3701,
+    "utf8Bytes": 3952,
+    "utf16ApproxBytes": 7402,
+    "recognizedWebLive": true,
+    "dataURICount": 0
+  },
+  {
+    "key": "webLiveLibrary",
+    "jsCharacters": 1197,
+    "utf8Bytes": 1285,
+    "utf16ApproxBytes": 2394,
+    "recognizedWebLive": true,
+    "dataURICount": 0
+  },
+  {
+    "key": "webLiveStateV042",
+    "jsCharacters": 955,
+    "utf8Bytes": 975,
+    "utf16ApproxBytes": 1910,
+    "recognizedWebLive": true,
+    "dataURICount": 0
+  },
+  {
+    "key": "webLiveSubjectLoaderQuickAccessPhase11",
+    "jsCharacters": 1050,
+    "utf8Bytes": 1107,
+    "utf16ApproxBytes": 2100,
+    "recognizedWebLive": true,
+    "dataURICount": 0
+  },
+  {
+    "key": "WEB_LIVE_TTS_REGISTRY_V1",
+    "jsCharacters": 414,
+    "utf8Bytes": 433,
+    "utf16ApproxBytes": 828,
+    "recognizedWebLive": true,
+    "dataURICount": 0
+  },
+  {
+    "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+    "jsCharacters": 323,
+    "utf8Bytes": 323,
+    "utf16ApproxBytes": 646,
+    "recognizedWebLive": true,
+    "dataURICount": 0
+  },
+  {
+    "key": "lesson:INFORMATICS_PHASE6_REPRESENTATIVE_TEST",
+    "jsCharacters": 10006,
+    "utf8Bytes": 10635,
+    "utf16ApproxBytes": 20012,
+    "recognizedWebLive": true,
+    "dataURICount": 0
+  },
+  {
+    "key": "lesson:TIN6_T04_P04_SGK_RC3_PED1",
+    "jsCharacters": 1848357,
+    "utf8Bytes": 1856946,
+    "utf16ApproxBytes": 3696714,
+    "recognizedWebLive": true,
+    "dataURICount": 14
+  },
+  {
+    "key": "lesson:TIN6_T05_P05_SGK_RC3_PED1",
+    "jsCharacters": 2012622,
+    "utf8Bytes": 2020067,
+    "utf16ApproxBytes": 4025244,
+    "recognizedWebLive": true,
+    "dataURICount": 16
+  },
+  {
+    "key": "lesson:TIN8_T04_P04_SGK_RC3_PED1",
+    "jsCharacters": 306186,
+    "utf8Bytes": 313281,
+    "utf16ApproxBytes": 612372,
+    "recognizedWebLive": true,
+    "dataURICount": 6
+  },
+  {
+    "key": "lesson:HINH8_T04_T07_B12_M2_V03",
+    "jsCharacters": 1439425,
+    "utf8Bytes": 1441998,
+    "utf16ApproxBytes": 2878850,
+    "recognizedWebLive": true,
+    "dataURICount": 18
+  },
+  {
+    "key": "lesson:HINH8_T04_T07_DUAL_VISUAL_TEST_V045",
+    "jsCharacters": 1440172,
+    "utf8Bytes": 1442845,
+    "utf16ApproxBytes": 2880344,
+    "recognizedWebLive": true,
+    "dataURICount": 18
+  }
+]

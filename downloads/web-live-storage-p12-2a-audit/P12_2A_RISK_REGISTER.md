@@ -1,0 +1,24 @@
+# P12.2A — Risk register
+
+Statuses distinguish observed finding, source-confirmed mechanism, proposed-design prerequisite, and unrun failure risk. No speculative root cause is marked Windows confirmed; no patch was made.
+
+| ID | Severity / evidence | Risk / impact | Proposed mitigation / scope / closure evidence |
+| --- | --- | --- | --- |
+| P11-F01 | P2; OPEN_CONFIRMED_ON_WINDOWS, GV report + prior native cloud quota | Real library full lesson load blocked; current guard preserves active lesson but teacher cannot switch/save requested lesson | Loader-owned IDB+Core storage bridge after approval; native Windows capacity/reopen/delete tests before FIXED |
+| A01 | Design prerequisite; source tv.js:11/138 + pedagogy-teacher.js:54/58 | Pure Loader migration breaks TV/read startup or reintroduces full LS payload via TV backwrite | Explicitly authorize narrow Core bootstrap/storage hooks; no profile/Core patch in P12.2A |
+| A02 | Blocking design decision; platform store atomicity | Literal all old LS keys preserved after every cleanup failure cannot coexist with cleanup | Gate deletion pending GV approval of CLEANUP_PENDING verified-target recovery or retain originals; no false safe guarantee |
+| A03 | Source-confirmed risk; Loader:285/294; concurrency UNRUN | Broad all-origin snapshot rollback may clobber concurrent nonowned/tab updates | Owner-specific journal/revision writes in future; test foreign sentinel+concurrent writer, no blind restore/clear |
+| A04 | Source mechanism verified +72 measured occurrences | Base64 duplication multiplies capacity and RAM; JSON near2MB per measured fixture | Raw Blob dedup plus lossless RAM hydration; verify all fields/bindings, measure memory; no content alteration |
+| A05 | Source-confirmed delete order zip.js:53; failure UNRUN | Payload deletion before index write not atomic, dangling index/annotation keys | Future DB transaction lesson/index/refcounts; initial annotations retained with disclosed orphan risk, no broad deletion |
+| A06 | Source identity code zip.js:39–50 | FNV fingerprint not collision-proof; recompression/same id replacement may differ | Reuse canonical id/sourceKey; add SHA/revision verification, preserve existing conflict semantics; test altered/recompressed duplicates |
+| A07 | Browser limitation / no capacity test of IDB | IDB quota, private mode, disk pressure, eviction, staging double-space can still fail | Estimate/persist optional; safe abort, no delete-first; external backup required; capacity/failure tests |
+| A08 | Source tv-layout-computer.js:34–44 | blob URLs/media conversion would fail current profile contract | Initial static/local video refs + exact image dataURI RAM; separate media design/profile approval for future video Blob |
+| A09 | Unknown Windows inventory/failed key | Cannot name exact Windows offending key or total Windows data | State UNKNOWN; retain diagnostic vs native/user evidence labels, capture real write trace only with future consent |
+| A10 | Proposed asynchronous adapter | Late read/save race may replace current lesson or restore stale state | Stage/activation/source tokens and writer generation lock; await txn.complete before native start; race tests |
+| A11 | Unknown/corrupt/old schema source risk, UNRUN | Silent normalization/quarantine deletion may lose valuable content | Strict ownership, no automatic deletion of unknown; original raw preserved, rejectedCount prevents full migration success |
+| A12 | Proposed dedup risk, UNRUN | Incorrect refcount deletes image shared by another lesson | Atomic unique-per-lesson refs, compare hash/length/bindings and recompute checks; delete/replacement failure tests |
+| A13 | Source vectors/TTS/checkpoints may accumulate | Initial migration does not make every retained LS key permanently small | Preserve profile isolation; size warnings/design later, no false all-quota-eliminated claim |
+| A14 | Origin/browser operational constraint | Different Windows port/protocol creates separate LS/DB; eviction removes both | Stable origin, explicit verified export/restore design later; no implicit cross-origin migration |
+| A15 | Scope restriction / acceptance incomplete | Mistaking audit PASS for runtime/physical pass or candidate promotion | P12.2A complete only; no new runtime ZIP/Production; P12.1 partial Windows positive, TV/classroom UNRUN, STOP |
+
+Root cause of Windows exact failed write/asset is NOT_CONFIRMED. Confirmed storage architecture bulk lesson JSON/base64 writes explains susceptibility; operation-specific causal attribution requires Windows trace. P11-F01 is not FIXED. Risks A03/A05 are code-path risks, not newly reproduced classroom defects. Core/profiles/packages/source remained frozen. Decisions to approve P12.2B: adapter/Core scope, cleanup failure contract, compatible rollback/backup path; defer any media-profile change. No implementation authorization assumed.

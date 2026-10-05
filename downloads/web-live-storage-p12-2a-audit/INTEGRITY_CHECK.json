@@ -1,0 +1,20 @@
+{
+  "sha256Before": "39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49",
+  "sha256After": "39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49",
+  "candidateMutated": false,
+  "fileCountBefore": 1241,
+  "fileCountAfter": 1241,
+  "added": [],
+  "removed": [],
+  "changed": [],
+  "zipCRCResult": "PASS",
+  "zipFileCount": 1241,
+  "productionModified": false,
+  "sourceScopeViolation": false,
+  "corePatched": false,
+  "profilesPatched": false,
+  "indexedDBImplemented": false,
+  "dataMigrated": false,
+  "dataDeleted": false,
+  "localStorageCleared": false
+}

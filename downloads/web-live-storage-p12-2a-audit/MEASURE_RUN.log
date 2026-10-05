@@ -1,0 +1,30 @@
+MEASURED ALGEBRA_PHASE5_REPRESENTATIVE_TEST 3952 0 0
+MEASURED INFORMATICS_PHASE6_REPRESENTATIVE_TEST 10635 0 0
+MEASURED TIN6_T04_P04_SGK_RC3_PED1 1856946 14 2
+MEASURED TIN6_T05_P05_SGK_RC3_PED1 2020067 16 5
+MEASURED TIN8_T04_P04_SGK_RC3_PED1 313281 6 1
+MEASURED HINH8_T04_T07_B12_M2_V03 1441998 18 15
+MEASURED HINH8_T04_T07_DUAL_VISUAL_TEST_V045 1442845 18 15
+{
+  "result": "PASS_AUDIT_MEASUREMENT",
+  "browser": "151.0.7922.173",
+  "mode": "RAM_STORAGE_DOUBLE_ONLY_NO_PERSISTENT_APP_WRITES",
+  "packages": 7,
+  "localStorageKeyCountModeled": 13,
+  "webLiveKeyCountModeled": 12,
+  "unknownModelSentinels": 1,
+  "nativeLocalStorageKeyCount": 0,
+  "windowsKeyCount": "UNKNOWN_NOT_PROVIDED",
+  "totalSerializedCharacters": 7064823,
+  "totalUTF8Bytes": 7094262,
+  "totalUTF16ApproxBytes": 14129646,
+  "packageUTF8Bytes": 7089724,
+  "assetOccurrenceDecodedBytes": 5125742,
+  "globalUniqueAssetDecodedBytes": 1476998,
+  "globalAssetDuplicationRatio": 3.470378429760907,
+  "sourceRuntimeModified": false,
+  "nativeStorageWrites": 0,
+  "nativeStorageRemoves": 0,
+  "clearCalls": 0,
+  "indexedDBAccess": 0
+}

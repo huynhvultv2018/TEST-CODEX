@@ -1,0 +1,221 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "REMEMBER_SUBJECT_AFTER_SUCCESS",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "RECENT_LESSON_ADD",
+      "result": "PASS",
+      "evidence": {
+        "metadata": {
+          "id": "P11_ALGEBRA",
+          "subjectEngine": "algebra",
+          "lastOpened": "2026-10-05T09:15:33.972Z",
+          "title": "Bài thử <script>window.BAD=1</script>",
+          "subject": "Đại số kiểm thử",
+          "grade": 8,
+          "week": 0,
+          "period": 9
+        }
+      }
+    },
+    {
+      "name": "RESTORE_LAST_SUBJECT_AFTER_RELOAD",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "DO_NOT_REMEMBER_SUBJECT_AFTER_FAILURE",
+      "result": "PASS",
+      "evidence": {
+        "mismatch": true,
+        "invalidJson": true,
+        "cancel": true
+      }
+    },
+    {
+      "name": "RECENT_LESSON_DEDUPLICATION",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "RECENT_LESSON_LIMIT",
+      "result": "PASS",
+      "evidence": {
+        "limit": 5,
+        "successfulLoads": 9
+      }
+    },
+    {
+      "name": "RECENT_LESSON_ORDER",
+      "result": "PASS",
+      "evidence": {
+        "ids": [
+          "P11_LEGACY_6",
+          "P11_LEGACY_5",
+          "P11_LEGACY_4",
+          "P11_LEGACY_3",
+          "P11_LEGACY_2"
+        ]
+      }
+    },
+    {
+      "name": "RECENT_REOPEN_VALIDATION",
+      "result": "PASS",
+      "evidence": {
+        "staged": true,
+        "explicitCommit": true,
+        "mismatchBlocked": true,
+        "tamperedEngineBlocked": true
+      }
+    },
+    {
+      "name": "RECENT_FAILED_LOAD_NOT_ADDED",
+      "result": "PASS",
+      "evidence": {
+        "faults": [
+          {
+            "failure": "lesson",
+            "result": "PASS",
+            "currentLessonPreserved": true,
+            "quickUnchanged": true
+          },
+          {
+            "failure": "library",
+            "result": "PASS",
+            "currentLessonPreserved": true,
+            "quickUnchanged": true
+          },
+          {
+            "failure": "snapshot",
+            "result": "PASS",
+            "currentLessonPreserved": true,
+            "quickUnchanged": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "QUOTA_FAILURE_NO_CRASH",
+      "result": "PASS",
+      "evidence": {}
+    },
+    {
+      "name": "QUOTA_FAILURE_CURRENT_LESSON_PRESERVED",
+      "result": "PASS",
+      "evidence": {
+        "teacherAndTV": true,
+        "partialWriteRollback": true,
+        "storageReadDenial": true
+      }
+    },
+    {
+      "name": "OPTIONAL_QUICK_ACCESS_FAILURE_DOES_NOT_CORRUPT_SUCCESS",
+      "result": "PASS",
+      "evidence": {
+        "faults": [
+          {
+            "failure": "optional-QuotaExceededError",
+            "result": "PASS",
+            "loadSucceeded": true,
+            "warningVisibleAfterModalClosed": true
+          },
+          {
+            "failure": "optional-SecurityError",
+            "result": "PASS",
+            "loadSucceeded": true,
+            "warningVisibleAfterModalClosed": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "INVALID_STORED_SUBJECT_FALLBACK",
+      "result": "PASS",
+      "evidence": {
+        "cases": 7,
+        "optionalReadDenial": true
+      }
+    },
+    {
+      "name": "RECENT_DOES_NOT_STORE_LARGE_PAYLOAD",
+      "result": "PASS",
+      "evidence": {
+        "serializedCharacters": 996,
+        "limit": 8192,
+        "recentCap": 5,
+        "allowedEntryFields": [
+          "id",
+          "subjectEngine",
+          "lastOpened",
+          "title",
+          "subject",
+          "grade",
+          "class",
+          "week",
+          "period"
+        ]
+      }
+    },
+    {
+      "name": "ACTUAL_QUOTA_REPRODUCER_PRESERVED_CURRENT_AND_UNKNOWN_DATA",
+      "result": "PASS",
+      "evidence": {
+        "warning": "Không đủ dung lượng lưu bài. Bài đang dạy được giữ nguyên. Bạn có thể xóa một bài đã lưu không còn cần rồi thử lại.",
+        "storedCharacters": 4745643
+      }
+    },
+    {
+      "name": "ZERO_PAGE_ERRORS_AND_EXTERNAL_REQUESTS",
+      "result": "PASS",
+      "evidence": {}
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "captures": [
+    "OPTIONAL_WRITE_QuotaExceededError.png",
+    "OPTIONAL_WRITE_SecurityError.png",
+    "QUICK_ACCESS_GEOMETRY_PREVIEW.png",
+    "ACTUAL_CHROMIUM_QUOTA_PRESERVATION.png"
+  ],
+  "faults": [
+    {
+      "failure": "lesson",
+      "result": "PASS",
+      "currentLessonPreserved": true,
+      "quickUnchanged": true
+    },
+    {
+      "failure": "library",
+      "result": "PASS",
+      "currentLessonPreserved": true,
+      "quickUnchanged": true
+    },
+    {
+      "failure": "snapshot",
+      "result": "PASS",
+      "currentLessonPreserved": true,
+      "quickUnchanged": true
+    },
+    {
+      "failure": "optional-QuotaExceededError",
+      "result": "PASS",
+      "loadSucceeded": true,
+      "warningVisibleAfterModalClosed": true
+    },
+    {
+      "failure": "optional-SecurityError",
+      "result": "PASS",
+      "loadSucceeded": true,
+      "warningVisibleAfterModalClosed": true
+    }
+  ],
+  "physicalWindows": "UNRUN",
+  "physicalTV": "UNRUN",
+  "realClassroom": "UNRUN",
+  "browser": "151.0.7922.173"
+}

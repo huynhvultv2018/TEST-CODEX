@@ -1,0 +1,535 @@
+{
+  "mode": "DIAGNOSTIC_RAM_ONLY_NOT_NATIVE_BROWSER_QUOTA",
+  "quota": {
+    "key": "lesson:TIN6_T04_P04_SGK_RC3_PED1",
+    "characters": 1848357,
+    "operation": "setItem",
+    "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:15)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+    "result": "QuotaExceededError (diagnostic injection)"
+  },
+  "warning": "Không đủ dung lượng lưu bài. Bài đang dạy được giữ nguyên. Bạn có thể xóa một bài đã lưu không còn cần rồi thử lại.",
+  "currentLessonPreserved": true,
+  "allRAMValuesPreserved": true,
+  "identicalReimportNoNewKeys": true,
+  "events": [
+    {
+      "key": "foreign:AUDIT_ONLY_SENTINEL",
+      "characters": 13,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:20)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "lesson:ALGEBRA_PHASE5_REPRESENTATIVE_TEST",
+      "characters": 3701,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:15)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveLibrary",
+      "characters": 189,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:68)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveStateV042",
+      "characters": 986,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at storeState (http://127.0.0.1:8790/WEB_LIVE/common.js:6:41)\n    at sync (http://127.0.0.1:8790/WEB_LIVE/teacher.js:38:121)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:20:41)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveSubjectLoaderQuickAccessPhase11",
+      "characters": 243,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at rememberSuccess (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:74:17)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:305:3)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 431,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 431,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 322,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at showImporter (http://127.0.0.1:8790/WEB_LIVE/teacher.js:52:39)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:5)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 322,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:129:89)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "lesson:INFORMATICS_PHASE6_REPRESENTATIVE_TEST",
+      "characters": 10006,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:15)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveLibrary",
+      "characters": 386,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:68)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 322,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:12:16)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveStateV042",
+      "characters": 987,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at storeState (http://127.0.0.1:8790/WEB_LIVE/common.js:6:41)\n    at sync (http://127.0.0.1:8790/WEB_LIVE/teacher.js:38:121)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:20:41)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveSubjectLoaderQuickAccessPhase11",
+      "characters": 455,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at rememberSuccess (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:74:17)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:305:3)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 409,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 409,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 326,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at showImporter (http://127.0.0.1:8790/WEB_LIVE/teacher.js:52:39)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:5)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 326,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:129:89)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "lesson:TIN6_T04_P04_SGK_RC3_PED1",
+      "characters": 1848357,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:15)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveLibrary",
+      "characters": 533,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:68)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 326,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:12:16)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveStateV042",
+      "characters": 1020,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at storeState (http://127.0.0.1:8790/WEB_LIVE/common.js:6:41)\n    at sync (http://127.0.0.1:8790/WEB_LIVE/teacher.js:38:121)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:20:41)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveSubjectLoaderQuickAccessPhase11",
+      "characters": 640,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at rememberSuccess (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:74:17)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:305:3)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 416,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 416,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 312,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at showImporter (http://127.0.0.1:8790/WEB_LIVE/teacher.js:52:39)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:5)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 312,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:129:89)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "lesson:TIN6_T05_P05_SGK_RC3_PED1",
+      "characters": 2012622,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:15)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveLibrary",
+      "characters": 689,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:68)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 312,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:12:16)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveStateV042",
+      "characters": 1029,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at storeState (http://127.0.0.1:8790/WEB_LIVE/common.js:6:41)\n    at sync (http://127.0.0.1:8790/WEB_LIVE/teacher.js:38:121)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:20:41)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveSubjectLoaderQuickAccessPhase11",
+      "characters": 834,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at rememberSuccess (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:74:17)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:305:3)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 417,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 417,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 313,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at showImporter (http://127.0.0.1:8790/WEB_LIVE/teacher.js:52:39)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:5)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 313,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:129:89)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "lesson:TIN8_T04_P04_SGK_RC3_PED1",
+      "characters": 306186,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:15)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveLibrary",
+      "characters": 850,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:68)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 313,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:12:16)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveStateV042",
+      "characters": 1034,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at storeState (http://127.0.0.1:8790/WEB_LIVE/common.js:6:41)\n    at sync (http://127.0.0.1:8790/WEB_LIVE/teacher.js:38:121)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:20:41)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveSubjectLoaderQuickAccessPhase11",
+      "characters": 1033,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at rememberSuccess (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:74:17)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:305:3)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 410,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 410,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 313,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at showImporter (http://127.0.0.1:8790/WEB_LIVE/teacher.js:52:39)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:5)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 313,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:129:89)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "lesson:HINH8_T04_T07_B12_M2_V03",
+      "characters": 1439425,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:15)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveLibrary",
+      "characters": 1018,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:68)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 313,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:12:16)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveStateV042",
+      "characters": 944,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at storeState (http://127.0.0.1:8790/WEB_LIVE/common.js:6:41)\n    at sync (http://127.0.0.1:8790/WEB_LIVE/teacher.js:38:121)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:20:41)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveSubjectLoaderQuickAccessPhase11",
+      "characters": 1041,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at rememberSuccess (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:74:17)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:305:3)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 403,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 403,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 312,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at showImporter (http://127.0.0.1:8790/WEB_LIVE/teacher.js:52:39)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:5)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 312,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:129:89)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "lesson:HINH8_T04_T07_DUAL_VISUAL_TEST_V045",
+      "characters": 1440172,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:15)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveLibrary",
+      "characters": 1197,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:68)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 312,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:12:16)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveStateV042",
+      "characters": 955,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at storeState (http://127.0.0.1:8790/WEB_LIVE/common.js:6:41)\n    at sync (http://127.0.0.1:8790/WEB_LIVE/teacher.js:38:121)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:20:41)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveSubjectLoaderQuickAccessPhase11",
+      "characters": 1050,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at rememberSuccess (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:74:17)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:305:3)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 414,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 414,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 323,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at showImporter (http://127.0.0.1:8790/WEB_LIVE/teacher.js:52:39)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:5)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 323,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:129:89)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "lesson:HINH8_T04_T07_DUAL_VISUAL_TEST_V045",
+      "characters": 1440172,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:15)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveLibrary",
+      "characters": 1197,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:68)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 323,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:12:16)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveStateV042",
+      "characters": 955,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at storeState (http://127.0.0.1:8790/WEB_LIVE/common.js:6:41)\n    at sync (http://127.0.0.1:8790/WEB_LIVE/teacher.js:38:121)\n    at start (http://127.0.0.1:8790/WEB_LIVE/teacher.js:20:41)\n    at start (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:308:38)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:86)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "webLiveSubjectLoaderQuickAccessPhase11",
+      "characters": 1050,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at rememberSuccess (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:74:17)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:305:3)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 414,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_REGISTRY_V1",
+      "characters": 414,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at Object.refresh (http://127.0.0.1:8790/WEB_LIVE/tts-tv.js:28:19)\n    at http://127.0.0.1:8790/WEB_LIVE/tv.js:136:57",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 323,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at Object.cancel (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:132:65)\n    at showImporter (http://127.0.0.1:8790/WEB_LIVE/teacher.js:52:39)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:5)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "WEB_LIVE_TTS_PRESENTATION_V1",
+      "characters": 323,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at Object.publish (http://127.0.0.1:8790/WEB_LIVE/tts-presentation.js:13:20)\n    at TTSController.publishHighlight [as onHighlight] (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:26:19)\n    at TTSController._highlight (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:54:30)\n    at TTSController.stop (http://127.0.0.1:8790/WEB_LIVE/tts-controller.js:73:230)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:8790/WEB_LIVE/tts-teacher.js:129:89)",
+      "result": "RAM_WRITE_ONLY"
+    },
+    {
+      "key": "lesson:TIN6_T04_P04_SGK_RC3_PED1",
+      "characters": 1848357,
+      "operation": "setItem",
+      "stack": "Error\n    at Proxy.setItem (<anonymous>:2:582)\n    at saveLesson (http://127.0.0.1:8790/WEB_LIVE/zip.js:51:15)\n    at HTMLButtonElement.commit (http://127.0.0.1:8790/WEB_LIVE/subject-loader.js:288:4)",
+      "result": "QuotaExceededError (diagnostic injection)"
+    }
+  ],
+  "control": {
+    "failLesson": false,
+    "clearAttempts": 0,
+    "removeAttempts": 0,
+    "dbAttempts": 0,
+    "modelOnly": true
+  },
+  "nativeKeyCount": 0
+}

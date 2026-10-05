@@ -1,0 +1,739 @@
+{
+  "mode": "READ_ONLY_LEXICAL_CALL_SCAN_AND_MANUAL_SOURCE_TRACE",
+  "filesScanned": 40,
+  "calls": [
+    {
+      "file": "common.js",
+      "line": 5,
+      "column": 44,
+      "receiver": "localStorage",
+      "operation": "getItem",
+      "snippet": "localStorage.getItem(STATE_KEY)||'null')}catch(_){return null}}",
+      "vendor": false
+    },
+    {
+      "file": "common.js",
+      "line": 6,
+      "column": 28,
+      "receiver": "localStorage",
+      "operation": "setItem",
+      "snippet": "localStorage.setItem(STATE_KEY,JSON.stringify(x))}catch(_){}}",
+      "vendor": false
+    },
+    {
+      "file": "cover-layer.js",
+      "line": 10,
+      "column": 26,
+      "receiver": "localStorage",
+      "operation": "getItem",
+      "snippet": "localStorage.getItem(storageKey(lessonId,scene))||'null');",
+      "vendor": false
+    },
+    {
+      "file": "cover-layer.js",
+      "line": 17,
+      "column": 7,
+      "receiver": "localStorage",
+      "operation": "setItem",
+      "snippet": "localStorage.setItem(storageKey(lessonId,scene),JSON.stringify(record));return true}catch(_){return false}",
+      "vendor": false
+    },
+    {
+      "file": "draw-board.js",
+      "line": 30,
+      "column": 23,
+      "receiver": "localStorage",
+      "operation": "getItem",
+      "snippet": "localStorage.getItem(storageKey(lessonId,scope))||'null');",
+      "vendor": false
+    },
+    {
+      "file": "draw-board.js",
+      "line": 36,
+      "column": 7,
+      "receiver": "localStorage",
+      "operation": "setItem",
+      "snippet": "localStorage.setItem(storageKey(lessonId,scope),JSON.stringify(record));return true}catch(_){return false}",
+      "vendor": false
+    },
+    {
+      "file": "smart-geometry.js",
+      "line": 11,
+      "column": 23,
+      "receiver": "localStorage",
+      "operation": "getItem",
+      "snippet": "localStorage.getItem(storageKey(lessonId,scene))||'null');",
+      "vendor": false
+    },
+    {
+      "file": "smart-geometry.js",
+      "line": 16,
+      "column": 44,
+      "receiver": "localStorage",
+      "operation": "setItem",
+      "snippet": "localStorage.setItem(storageKey(lessonId,scene),JSON.stringify(record));return true}catch(_){return false}}",
+      "vendor": false
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 38,
+      "column": 14,
+      "receiver": "localStorage",
+      "operation": "getItem",
+      "snippet": "localStorage.getItem(quickKey);if(raw===null)return;",
+      "vendor": false
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 74,
+      "column": 4,
+      "receiver": "localStorage",
+      "operation": "setItem",
+      "snippet": "localStorage.setItem(quickKey,raw);quick=next;warnStorage('');renderRemembered();renderRecent();",
+      "vendor": false
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 285,
+      "column": 60,
+      "receiver": "localStorage",
+      "operation": "getItem",
+      "snippet": "localStorage.getItem(key)]));",
+      "vendor": false
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 293,
+      "column": 96,
+      "receiver": "localStorage",
+      "operation": "getItem",
+      "snippet": "localStorage.getItem(key)!==null)localStorage.removeItem(key);}catch(_){rollbackFailed=true;}",
+      "vendor": false
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 293,
+      "column": 129,
+      "receiver": "localStorage",
+      "operation": "removeItem",
+      "snippet": "localStorage.removeItem(key);}catch(_){rollbackFailed=true;}",
+      "vendor": false
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 294,
+      "column": 45,
+      "receiver": "localStorage",
+      "operation": "getItem",
+      "snippet": "localStorage.getItem(key)!==value)localStorage.setItem(key,value);}catch(_){rollbackFailed=true;}",
+      "vendor": false
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 294,
+      "column": 79,
+      "receiver": "localStorage",
+      "operation": "setItem",
+      "snippet": "localStorage.setItem(key,value);}catch(_){rollbackFailed=true;}",
+      "vendor": false
+    },
+    {
+      "file": "tts-controller.js",
+      "line": 22,
+      "column": 34,
+      "receiver": "this.storage",
+      "operation": "getItem",
+      "snippet": "this.storage?.getItem(SETTINGS_KEY)||'{}')||{}}catch(_){}",
+      "vendor": false
+    },
+    {
+      "file": "tts-controller.js",
+      "line": 26,
+      "column": 15,
+      "receiver": "this.storage",
+      "operation": "setItem",
+      "snippet": "this.storage?.setItem(SETTINGS_KEY,JSON.stringify(this.settings))}catch(_){}}",
+      "vendor": false
+    },
+    {
+      "file": "tts-controller.js",
+      "line": 56,
+      "column": 34,
+      "receiver": "this.storage",
+      "operation": "getItem",
+      "snippet": "this.storage?.getItem(OWNER_KEY)||'null')}catch(_){return null}}",
+      "vendor": false
+    },
+    {
+      "file": "tts-controller.js",
+      "line": 63,
+      "column": 9,
+      "receiver": "this.storage",
+      "operation": "setItem",
+      "snippet": "this.storage.setItem(OWNER_KEY,JSON.stringify({owner:this.ownerId,expiresAt:Date.now()+20000}))}catch(_){return false}",
+      "vendor": false
+    },
+    {
+      "file": "tts-controller.js",
+      "line": 69,
+      "column": 153,
+      "receiver": "this.storage",
+      "operation": "removeItem",
+      "snippet": "this.storage?.removeItem(OWNER_KEY)}catch(_){}this.ownsSpeech=false}",
+      "vendor": false
+    },
+    {
+      "file": "tts-presentation.js",
+      "line": 13,
+      "column": 7,
+      "receiver": "localStorage",
+      "operation": "setItem",
+      "snippet": "localStorage.setItem(keys[data.type],JSON.stringify(data))}catch(_){}",
+      "vendor": false
+    },
+    {
+      "file": "tv-layout-computer.js",
+      "line": 25,
+      "column": 44,
+      "receiver": "localStorage",
+      "operation": "getItem",
+      "snippet": "localStorage.getItem(key)||'{}');return{checkpoint:x.checkpoint===true,sample:x.sample===true};}catch(_){return{checkpoint:false,sample:false};}}",
+      "vendor": false
+    },
+    {
+      "file": "tv-layout-computer.js",
+      "line": 26,
+      "column": 32,
+      "receiver": "localStorage",
+      "operation": "setItem",
+      "snippet": "localStorage.setItem(key,JSON.stringify(value));}catch(_){warn('PROFILE_STORAGE_UNAVAILABLE');return false;}channel?.postMessage({key});refresh(key);return true;}",
+      "vendor": false
+    },
+    {
+      "file": "tv-layout-computer.js",
+      "line": 117,
+      "column": 83,
+      "receiver": "localStorage",
+      "operation": "removeItem",
+      "snippet": "localStorage.removeItem(key);}catch(_){warn('PROFILE_STORAGE_UNAVAILABLE');}}local={checkpoint:false,sample:false};}",
+      "vendor": false
+    },
+    {
+      "file": "tv.js",
+      "line": 11,
+      "column": 26,
+      "receiver": "localStorage",
+      "operation": "getItem",
+      "snippet": "localStorage.getItem('lesson:'+id));",
+      "vendor": false
+    },
+    {
+      "file": "tv.js",
+      "line": 138,
+      "column": 915,
+      "receiver": "localStorage",
+      "operation": "setItem",
+      "snippet": "localStorage.setItem('lesson:'+d.lesson.id,JSON.stringify(d.lesson))}catch(_){}applyState(lastState)}else applyState(d)}",
+      "vendor": false
+    },
+    {
+      "file": "vendor/mathjax-3.2.2/tex-svg-full.js",
+      "line": 1,
+      "column": 1777173,
+      "receiver": "localStorage",
+      "operation": "getItem",
+      "snippet": "localStorage.getItem(t.MENU_STORAGE);if(!e)return;Object.assign(this.settings,JSON.parse(e)),this.setA11y(this.settings)}catch(t){console.log(\"MathJax localStorage error: \"+t.message)}},t.prototype.saveUserSettings=function(){var e,r,n={};t",
+      "vendor": true
+    },
+    {
+      "file": "vendor/mathjax-3.2.2/tex-svg-full.js",
+      "line": 1,
+      "column": 1777693,
+      "receiver": "localStorage",
+      "operation": "setItem",
+      "snippet": "localStorage.setItem(t.MENU_STORAGE,JSON.stringify(n)):localStorage.removeItem(t.MENU_STORAGE)}catch(t){console.log(\"MathJax localStorage error: \"+t.message)}},t.prototype.setA11y=function(t){L._.a11y&&L._.a11y.explorer&&L._.a11y.explorer_t",
+      "vendor": true
+    },
+    {
+      "file": "vendor/mathjax-3.2.2/tex-svg-full.js",
+      "line": 1,
+      "column": 1777748,
+      "receiver": "localStorage",
+      "operation": "removeItem",
+      "snippet": "localStorage.removeItem(t.MENU_STORAGE)}catch(t){console.log(\"MathJax localStorage error: \"+t.message)}},t.prototype.setA11y=function(t){L._.a11y&&L._.a11y.explorer&&L._.a11y.explorer_ts.setA11yOptions(this.document,t)},t.prototype.getA11y=",
+      "vendor": true
+    },
+    {
+      "file": "zip.js",
+      "line": 32,
+      "column": 45,
+      "receiver": "localStorage",
+      "operation": "getItem",
+      "snippet": "localStorage.getItem('webLiveLibrary')||'[]')}catch(_){return[]}}",
+      "vendor": false
+    },
+    {
+      "file": "zip.js",
+      "line": 33,
+      "column": 46,
+      "receiver": "localStorage",
+      "operation": "getItem",
+      "snippet": "localStorage.getItem('lesson:'+id))}catch(_){return null}}",
+      "vendor": false
+    },
+    {
+      "file": "zip.js",
+      "line": 51,
+      "column": 2,
+      "receiver": "localStorage",
+      "operation": "setItem",
+      "snippet": "localStorage.setItem('lesson:'+id,JSON.stringify(x));localStorage.setItem('webLiveLibrary',JSON.stringify(lib));return id;",
+      "vendor": false
+    },
+    {
+      "file": "zip.js",
+      "line": 51,
+      "column": 55,
+      "receiver": "localStorage",
+      "operation": "setItem",
+      "snippet": "localStorage.setItem('webLiveLibrary',JSON.stringify(lib));return id;",
+      "vendor": false
+    },
+    {
+      "file": "zip.js",
+      "line": 53,
+      "column": 27,
+      "receiver": "localStorage",
+      "operation": "removeItem",
+      "snippet": "localStorage.removeItem('lesson:'+id);localStorage.setItem('webLiveLibrary',JSON.stringify(getLibrary().filter(x=>x.id!==id)))}",
+      "vendor": false
+    },
+    {
+      "file": "zip.js",
+      "line": 53,
+      "column": 65,
+      "receiver": "localStorage",
+      "operation": "setItem",
+      "snippet": "localStorage.setItem('webLiveLibrary',JSON.stringify(getLibrary().filter(x=>x.id!==id)))}",
+      "vendor": false
+    }
+  ],
+  "counts": {
+    "getItem": 15,
+    "setItem": 15,
+    "removeItem": 5,
+    "clear": 0
+  },
+  "storageReferences": [
+    {
+      "file": "common.js",
+      "line": 5,
+      "token": "localStorage",
+      "offset": 331,
+      "snippet": "[c]))}"
+    },
+    {
+      "file": "common.js",
+      "line": 6,
+      "token": "localStorage",
+      "offset": 422,
+      "snippet": "catch(_){return null}}"
+    },
+    {
+      "file": "cover-layer.js",
+      "line": 10,
+      "token": "localStorage",
+      "offset": 573,
+      "snippet": "(lessonId,scene){"
+    },
+    {
+      "file": "cover-layer.js",
+      "line": 17,
+      "token": "localStorage",
+      "offset": 939,
+      "snippet": ""
+    },
+    {
+      "file": "draw-board.js",
+      "line": 30,
+      "token": "localStorage",
+      "offset": 1505,
+      "snippet": "ead(lessonId,scope){"
+    },
+    {
+      "file": "draw-board.js",
+      "line": 36,
+      "token": "localStorage",
+      "offset": 1815,
+      "snippet": ""
+    },
+    {
+      "file": "smart-geometry.js",
+      "line": 11,
+      "token": "localStorage",
+      "offset": 682,
+      "snippet": "ead(lessonId,scene){"
+    },
+    {
+      "file": "smart-geometry.js",
+      "line": 16,
+      "token": "localStorage",
+      "offset": 1004,
+      "snippet": "]};"
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 38,
+      "token": "localStorage",
+      "offset": 2832,
+      "snippet": "l:'';}"
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 74,
+      "token": "localStorage",
+      "offset": 5849,
+      "snippet": "quickSizeLimit)throw Error('Dữ liệu quá lớn');"
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 285,
+      "token": "localStorage",
+      "offset": 22520,
+      "snippet": "='storage';"
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 285,
+      "token": "localStorage",
+      "offset": 22548,
+      "snippet": "e=new Map(Object.keys(localStorage).map(key=>[key,localStorage.getItem(key)]));"
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 293,
+      "token": "localStorage",
+      "offset": 23056,
+      "snippet": "LiveLibrary',STATE_KEY])try{if(!storage.has(key)&&localStorage.getItem(key)!==null)localStorage.removeItem(key);}catch(_){rollbackFailed=true;}"
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 293,
+      "token": "localStorage",
+      "offset": 23089,
+      "snippet": "torage.has(key)&&localStorage.getItem(key)!==null)localStorage.removeItem(key);}catch(_){rollbackFailed=true;}"
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 294,
+      "token": "localStorage",
+      "offset": 23194,
+      "snippet": "rue;}"
+    },
+    {
+      "file": "subject-loader.js",
+      "line": 294,
+      "token": "localStorage",
+      "offset": 23228,
+      "snippet": " storage)try{if(localStorage.getItem(key)!==value)localStorage.setItem(key,value);}catch(_){rollbackFailed=true;}"
+    },
+    {
+      "file": "tts-controller.js",
+      "line": 10,
+      "token": "localStorage",
+      "offset": 711,
+      "snippet": "age=options.storage;try{this.storage??=globalThis.localStorage}catch(_){}"
+    },
+    {
+      "file": "tts-presentation.js",
+      "line": 13,
+      "token": "localStorage",
+      "offset": 1095,
+      "snippet": "in==='null'?'*':location.origin)}catch(_){}"
+    },
+    {
+      "file": "tv-layout-computer.js",
+      "line": 25,
+      "token": "localStorage",
+      "offset": 2572,
+      "snippet": "ex]);}"
+    },
+    {
+      "file": "tv-layout-computer.js",
+      "line": 26,
+      "token": "localStorage",
+      "offset": 2749,
+      "snippet": "e,sample:false};}}"
+    },
+    {
+      "file": "tv-layout-computer.js",
+      "line": 117,
+      "token": "localStorage",
+      "offset": 12811,
+      "snippet": "pointStep){if(local.checkpoint||local.sample){try{localStorage.removeItem(key);}catch(_){warn('PROFILE_STORAGE_UNAVAILABLE');}}local={checkpoint:false,sample:false};}"
+    },
+    {
+      "file": "tv.js",
+      "line": 11,
+      "token": "localStorage",
+      "offset": 1023,
+      "snippet": "turn cachedLesson;"
+    },
+    {
+      "file": "tv.js",
+      "line": 138,
+      "token": "localStorage",
+      "offset": 10961,
+      "snippet": "sonActivation||'';rebuildSceneIndex(d.lesson);try{localStorage.setItem('lesson:'+d.lesson.id,JSON.stringify(d.lesson))}catch(_){}applyState(lastState)}else applyState(d)}"
+    },
+    {
+      "file": "vendor/mathjax-3.2.2/tex-svg-full.js",
+      "line": 1,
+      "token": "localStorage",
+      "offset": 1768114,
+      "snippet": "p><b>Preferences</b>: MathJax uses your browser's localStorage database\",\" to save the preferences set via this menu locally in your browser.  These\",\" are not used to trac"
+    },
+    {
+      "file": "vendor/mathjax-3.2.2/tex-svg-full.js",
+      "line": 1,
+      "token": "localStorage",
+      "offset": 1777172,
+      "snippet": ".prototype.mergeUserSettings=function(){try{var e=localStorage.getItem(t.MENU_STORAGE);if(!e)return;Object.assign(this.settings,JSON.parse(e)),this.setA11y(this.settings)}c"
+    },
+    {
+      "file": "vendor/mathjax-3.2.2/tex-svg-full.js",
+      "line": 1,
+      "token": "localStorage",
+      "offset": 1777323,
+      "snippet": "A11y(this.settings)}catch(t){console.log(\"MathJax localStorage error: \"+t.message)}},t.prototype.saveUserSettings=function(){var e,r,n={};try{for(var i=o(Object.keys(this.s"
+    },
+    {
+      "file": "vendor/mathjax-3.2.2/tex-svg-full.js",
+      "line": 1,
+      "token": "localStorage",
+      "offset": 1777692,
+      "snippet": "lly{if(e)throw e.error}}try{Object.keys(n).length?localStorage.setItem(t.MENU_STORAGE,JSON.stringify(n)):localStorage.removeItem(t.MENU_STORAGE)}catch(t){console.log(\"MathJ"
+    },
+    {
+      "file": "vendor/mathjax-3.2.2/tex-svg-full.js",
+      "line": 1,
+      "token": "localStorage",
+      "offset": 1777747,
+      "snippet": "Storage.setItem(t.MENU_STORAGE,JSON.stringify(n)):localStorage.removeItem(t.MENU_STORAGE)}catch(t){console.log(\"MathJax localStorage error: \"+t.message)}},t.prototype.setA1"
+    },
+    {
+      "file": "vendor/mathjax-3.2.2/tex-svg-full.js",
+      "line": 1,
+      "token": "localStorage",
+      "offset": 1777817,
+      "snippet": "tem(t.MENU_STORAGE)}catch(t){console.log(\"MathJax localStorage error: \"+t.message)}},t.prototype.setA11y=function(t){L._.a11y&&L._.a11y.explorer&&L._.a11y.explorer_ts.setA1"
+    },
+    {
+      "file": "zip.js",
+      "line": 32,
+      "token": "localStorage",
+      "offset": 2184,
+      "snippet": "e(u)}"
+    },
+    {
+      "file": "zip.js",
+      "line": 33,
+      "token": "localStorage",
+      "offset": 2295,
+      "snippet": "[]}}"
+    },
+    {
+      "file": "zip.js",
+      "line": 51,
+      "token": "localStorage",
+      "offset": 3433,
+      "snippet": ")};"
+    },
+    {
+      "file": "zip.js",
+      "line": 51,
+      "token": "localStorage",
+      "offset": 3486,
+      "snippet": "alStorage.setItem('lesson:'+id,JSON.stringify(x));localStorage.setItem('webLiveLibrary',JSON.stringify(lib));return id;"
+    },
+    {
+      "file": "zip.js",
+      "line": 53,
+      "token": "localStorage",
+      "offset": 3584,
+      "snippet": "gify(lib));return id;"
+    },
+    {
+      "file": "zip.js",
+      "line": 53,
+      "token": "localStorage",
+      "offset": 3622,
+      "snippet": "eLesson(id){localStorage.removeItem('lesson:'+id);localStorage.setItem('webLiveLibrary',JSON.stringify(getLibrary().filter(x=>x.id!==id)))}"
+    }
+  ],
+  "files": [
+    {
+      "file": "classroom-teacher.js",
+      "sha256": "e7051ecea88d985060a592d4a424f7d3dd59625301bf6d8d17653a05cf66d1c6"
+    },
+    {
+      "file": "classroom.js",
+      "sha256": "8c0f7697c637bc68ba4a750db8167244f99265f68e859f8c0991b1cee1853616"
+    },
+    {
+      "file": "cockpit.js",
+      "sha256": "28066c75e0308ec38904f5ad2c00404e7da1f733f7c954f1ac7554d932dce66d"
+    },
+    {
+      "file": "common.js",
+      "sha256": "24b7ca82671df3e1d887b1bec0f4787c08ea759ea106590ab943844ea1ffab03"
+    },
+    {
+      "file": "core-profiles.js",
+      "sha256": "ba77af2743bd4a811f2e6a95934f57a6fd8eb9b9a2e49197bf969c03a8554584"
+    },
+    {
+      "file": "cover-layer.js",
+      "sha256": "0f4aed78e4381067ca88d1afa221cc663f0f09d9d5ea9ab3bc72f6b098de7a86"
+    },
+    {
+      "file": "cover-teacher.js",
+      "sha256": "7329cf77827ac24a5896abf680495cba20c4000fddbdf2f4b7736196bc1f7195"
+    },
+    {
+      "file": "cover-tv.js",
+      "sha256": "766b7db84833ba14a9343e76b174ebc8679ae932ef5be52596f43c091c090286"
+    },
+    {
+      "file": "demo-teacher.js",
+      "sha256": "9afa9c9a1e5f848f9f8ec1ea3d48c44e200e994d1fc307566ff4669de9d95554"
+    },
+    {
+      "file": "draw-board-teacher.js",
+      "sha256": "aa957978dfa209b87320038742f7b96fa79b150a7669f687389f86eb86fdb65d"
+    },
+    {
+      "file": "draw-board-tv.js",
+      "sha256": "6a8245d603f54aa6aaa23c9ea69b4dd7d53e07a0188a5a758ca11e5a5268c662"
+    },
+    {
+      "file": "draw-board.js",
+      "sha256": "4e9c0415d8e77c53de0f68bd305516182ff4b08d3caeeb4b0855f9dcd595f1f8"
+    },
+    {
+      "file": "geometry-profile.js",
+      "sha256": "e705d85027880f0d29448c3c11adc6ed805306d746266a777988ff33cbe854d9"
+    },
+    {
+      "file": "index.html",
+      "sha256": "8df0265dfd82796f237bfa4efa80a1f994880e0bfe3f09e6303088c40c05777f"
+    },
+    {
+      "file": "math-atomic.js",
+      "sha256": "489797cf6186f912f4cf2f14b21062bb6b352eb3ee18bc997afd2428512343bf"
+    },
+    {
+      "file": "math-speech.js",
+      "sha256": "11c9d049285130746d828df3bec6b1f49f0e972126a5a79e691d05dc8f9649f9"
+    },
+    {
+      "file": "pedagogy-teacher.js",
+      "sha256": "d3cb0f7d844a8750c589491aad99b8e21c535c0ed6053ea48a01e34a80ff0ad3"
+    },
+    {
+      "file": "pedagogy.js",
+      "sha256": "60609c3907017ff7ee17fbef9451ce33170d1eae7f08837cb2b63741bae59a2b"
+    },
+    {
+      "file": "runtime-config.js",
+      "sha256": "80df818cd17106dc0cc53ed583021377104988e81bdbb15d29a308ee5570a70c"
+    },
+    {
+      "file": "smart-geometry-teacher.js",
+      "sha256": "c63bb2788382242cf2c0388908661c858c997adfe97b436099687de07e303dfb"
+    },
+    {
+      "file": "smart-geometry-tv.js",
+      "sha256": "293ff6624edc91a00bb84a4d9f3926d18f5f9259577f574e89803248d7af3ff7"
+    },
+    {
+      "file": "smart-geometry.js",
+      "sha256": "515f712f7a9ddedb21b651b80482b58418bda410ab92fa51195c581a863c1861"
+    },
+    {
+      "file": "subject-loader.js",
+      "sha256": "239f2d953462f918835668be0c77b16c6e954ec33ed6fbf96f9a672a0b3b65b6"
+    },
+    {
+      "file": "teacher.html",
+      "sha256": "c7b2ec7f4cf4ac4f56342f7a48bd1e1f5797cdb2c028121920158f869c31a240"
+    },
+    {
+      "file": "teacher.js",
+      "sha256": "1cb5d0e50daf359c70907389fa598a24aa70457e13fe398c8a7d71c5ad5301a1"
+    },
+    {
+      "file": "tts-controller.js",
+      "sha256": "e9872faba0f7d43dfa391e5c8e03fc9ea35a78f4caea2c67cc5c32a013313c94"
+    },
+    {
+      "file": "tts-presentation.js",
+      "sha256": "146727a9ebd669005d8d416e837a0ad9b3ed536f4495f812fbdf440be649254b"
+    },
+    {
+      "file": "tts-teacher.js",
+      "sha256": "a8a5dc928cfe538c1d5a0819fb0dd18feceb39d6318addfbfb17c2daa5abf7aa"
+    },
+    {
+      "file": "tts-tv.js",
+      "sha256": "62a53feabb5b48e681829c363bd93dbb8297367ba843bfa29469439200ffbe75"
+    },
+    {
+      "file": "tv-content.js",
+      "sha256": "23f097f30b3fc585670b34cdf02ce9cc46758f0a2c3943b9858ab30d15d8aa4a"
+    },
+    {
+      "file": "tv-layout-algebra.js",
+      "sha256": "0ec7fb660ef31ff7540ba258495ee5da7cb373f668b7e2ecfd44e9175c2ab146"
+    },
+    {
+      "file": "tv-layout-computer.js",
+      "sha256": "4914a55b955e5b4cc78979abef3fd79d89e5bdc566b62f77e63d2fe59eefee28"
+    },
+    {
+      "file": "tv-layout-geometry.js",
+      "sha256": "8f20cab87b7812e5cf8fe8203827d21b08ada686b154b3872ad8680d30655202"
+    },
+    {
+      "file": "tv-layout-model.js",
+      "sha256": "a0dcfcc703e52317cdd64a13e3bfbe2c448efcb11871764a45cec2b9d5f29fd8"
+    },
+    {
+      "file": "tv-layout.js",
+      "sha256": "87058f4f06ca825642d881bd56fc426917f4021e7716567ac35140ccb9765437"
+    },
+    {
+      "file": "tv.html",
+      "sha256": "45f119d0161c08fd7c7711ed7ac6886e948bf91a188a3221850bd81c7b89582f"
+    },
+    {
+      "file": "tv.js",
+      "sha256": "3f4db123ba25f3c73c4f9d239040252870eadc84d5ca57d649bff0ee2e69c987"
+    },
+    {
+      "file": "ui-teacher.js",
+      "sha256": "80aaa2052d686acb036d05a95530239f6c81165c757cf580774411bc6424c597"
+    },
+    {
+      "file": "vendor/mathjax-3.2.2/tex-svg-full.js",
+      "sha256": "a4354ff94fd868aea0cc6eaaa79a57fda0588646fc46ee3700a349ee0a11cbe6"
+    },
+    {
+      "file": "zip.js",
+      "sha256": "b4237a1395a6423804e62833f51c61b6255fd07f0b96bcd0f68757a2edee3ffe"
+    }
+  ],
+  "clearFound": false,
+  "indexedDBFound": false,
+  "aliasNote": "TTSController this.storage defaults to globalThis.localStorage; other storage variable in Loader is transaction Map, not an alias. Vendor MathJax calls included. Domain Model.clear is not localStorage.clear."
+}

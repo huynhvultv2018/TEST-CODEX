@@ -1,0 +1,16 @@
+{
+  "draftRevisionBefore": 12,
+  "draftRevisionAfter": 12,
+  "draftUnchanged": true,
+  "installChanged": false,
+  "startSkillChanged": false,
+  "configurationSaved": false,
+  "published": false,
+  "toolsAvailable": [
+    "Python 3",
+    "Node",
+    "Playwright",
+    "Chromium 151.0.7922.173"
+  ],
+  "requiredAdditionalSetup": "NONE"
+}

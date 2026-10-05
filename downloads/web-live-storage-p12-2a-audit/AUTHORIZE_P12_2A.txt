@@ -1,0 +1,939 @@
+# AUTHORIZE HOTFIX P12.2A — AUDIT/DESIGN ONLY
+# WEB LIVE STORAGE CAPACITY
+# WINDOWS-CONFIRMED LOCALSTORAGE QUOTA FAILURE
+# NO STORAGE MIGRATION YET
+# NO PRODUCTION
+
+==================================================
+0. SOURCE OF TRUTH
+==================================================
+
+Nguồn duy nhất:
+
+```text id="p122source"
+WEB_LIVE_LESSON_LIBRARY_P12_1_CANDIDATE
+
+SHA256 =
+39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49
+```
+
+P12.1 phải giữ FROZEN.
+
+Không sửa trực tiếp candidate.
+
+==================================================
+1. PHYSICAL EVIDENCE
+==================================================
+
+GV đã kiểm thử trên Windows thật.
+
+Quan sát:
+
+```text id="p122physical"
+P12-F01 LEGACY SUBJECT COMPATIBILITY =
+PHYSICAL EVIDENCE POSITIVE
+
+LESSON SUBJECT =
+CORRECTLY SEPARATED FROM ENGINE
+
+LEGACY SUBJECT DISPLAY =
+WORKING
+```
+
+Đồng thời xuất hiện:
+
+```text id="p122quota"
+Không đủ dung lượng lưu bài.
+Bài đang dạy được giữ nguyên.
+```
+
+Toast:
+
+```text id="p122toast"
+Không đủ dung lượng lưu bài.
+Bài đang dạy được giữ nguyên.
+Bạn có thể xóa một bài đã lưu không còn cần rồi thử lại.
+```
+
+==================================================
+2. STORAGE FINDING RECLASSIFICATION
+==================================================
+
+Finding kế thừa:
+
+```text id="p122finding"
+P11-F01
+```
+
+Cập nhật:
+
+```text id="p122findingstatus"
+SEVERITY = P2
+
+PREVIOUS_STATUS = OPEN_DEFERRED
+
+NEW_STATUS =
+OPEN_CONFIRMED_ON_WINDOWS
+```
+
+Phân biệt rõ:
+
+```text id="p122guard"
+LOCALSTORAGE_QUOTA_GUARD = PASS
+```
+
+nhưng:
+
+```text id="p122capacity"
+STORAGE_CAPACITY_FOR_REAL_LIBRARY_USE =
+INSUFFICIENT / CONFIRMED_ON_WINDOWS
+```
+
+Không đánh dấu FIXED.
+
+==================================================
+3. PHASE MODE
+==================================================
+
+P12.2A chỉ:
+
+```text id="p122mode"
+AUDIT
+MEASURE
+TRACE
+DESIGN
+PROPOSE
+REPORT
+```
+
+CẤM:
+
+```text id="p122forbidden"
+IMPLEMENT INDEXEDDB
+MIGRATE DATA
+DELETE DATA
+CLEAR LOCALSTORAGE
+MODIFY USER PACKAGES
+PATCH PRODUCTION
+PATCH CORE
+PATCH PROFILES
+```
+
+Không tạo production candidate.
+
+==================================================
+4. PRIMARY OBJECTIVE
+==================================================
+
+Xác định chính xác:
+
+```text id="p122objective"
+WHAT IS STORED IN LOCALSTORAGE
+
+WHICH KEYS BELONG TO WEB LIVE
+
+WHAT EACH KEY STORES
+
+HOW LARGE EACH DATA CLASS IS
+
+WHICH DATA IS ESSENTIAL
+
+WHICH DATA IS OPTIONAL
+
+WHICH DATA IS RECREATABLE
+
+WHICH DATA CONTAINS LARGE ASSETS
+```
+
+==================================================
+5. STORAGE INVENTORY
+==================================================
+
+Audit tất cả thao tác:
+
+```text id="p122inventory"
+localStorage.getItem
+localStorage.setItem
+localStorage.removeItem
+localStorage.clear
+```
+
+trong WEB LIVE source.
+
+Lập bảng:
+
+```text id="p122table"
+KEY
+
+OWNER
+
+PURPOSE
+
+DATA TYPE
+
+APPROX SIZE
+
+READ PATH
+
+WRITE PATH
+
+DELETE PATH
+
+ESSENTIAL / OPTIONAL
+
+MIGRATION CANDIDATE
+```
+
+==================================================
+6. NO BLIND CLEAR
+==================================================
+
+Đặc biệt kiểm tra xem source có:
+
+```text id="p122clear"
+localStorage.clear()
+```
+
+hay cơ chế tương đương hay không.
+
+Nếu có:
+
+phân loại risk.
+
+Không thực thi.
+
+WEB LIVE sau này không được xóa dữ liệu không thuộc namespace của nó.
+
+==================================================
+7. MEASURE PACKAGE STORAGE
+==================================================
+
+Xác định một bài được lưu hiện tại chiếm bao nhiêu.
+
+Phân tách:
+
+```text id="p122package"
+LESSON METADATA
+
+LESSON JSON
+
+HTML/TEXT
+
+IMAGE
+
+BASE64 IMAGE
+
+MEDIA
+
+ZIP CONTENT
+
+OTHER ASSETS
+```
+
+Đặc biệt xác định:
+
+```text id="p122large"
+WHETHER IMAGE / BASE64 / PACKAGE PAYLOAD
+IS BEING DUPLICATED IN LOCALSTORAGE
+```
+
+==================================================
+8. DUPLICATION AUDIT
+==================================================
+
+Kiểm:
+
+```text id="p122dup"
+SAME PACKAGE STORED MULTIPLE TIMES?
+
+RECENT LESSON DUPLICATES PACKAGE?
+
+LIBRARY DUPLICATES PACKAGE?
+
+CURRENT LESSON DUPLICATES PACKAGE?
+
+ASSET DUPLICATION?
+
+BASE64 EXPANSION?
+```
+
+Tính/ước lượng amplification ratio nếu có thể.
+
+==================================================
+9. QUOTA FAILURE PATH
+==================================================
+
+Trace chính xác:
+
+```text id="p122failure"
+IMPORT PACKAGE
+→ PARSE
+→ VALIDATE
+→ STORE
+→ QUOTA EXCEEDED
+→ GUARD
+→ CURRENT LESSON PRESERVED
+```
+
+Xác định operation nào gây:
+
+```text id="p122error"
+QuotaExceededError
+```
+
+==================================================
+10. DATA CLASSIFICATION
+==================================================
+
+Phân loại storage thành tối thiểu:
+
+```text id="p122classes"
+A. SETTINGS
+
+B. LAST SUBJECT
+
+C. RECENT LESSON METADATA
+
+D. LIBRARY INDEX / METADATA
+
+E. FULL LESSON PACKAGE
+
+F. IMAGE / MEDIA / ASSETS
+
+G. CURRENT SESSION STATE
+
+H. LEGACY UNKNOWN DATA
+```
+
+==================================================
+11. TARGET STORAGE ARCHITECTURE
+==================================================
+
+Thiết kế đề xuất:
+
+```text id="p122target"
+LOCALSTORAGE
+→ SMALL SETTINGS / SMALL REFERENCES ONLY
+
+INDEXEDDB
+→ LESSON PACKAGES
+→ LARGE JSON
+→ IMAGES
+→ MEDIA
+→ LARGE ASSETS
+```
+
+Nhưng đây chỉ là DESIGN.
+
+Không implement trong P12.2A.
+
+==================================================
+12. TARGET RULE
+==================================================
+
+Ưu tiên:
+
+```text id="p122rule"
+localStorage =
+small synchronous preferences/index hints only
+
+IndexedDB =
+persistent lesson library payload
+```
+
+Không lưu full package hai nơi sau migration hoàn tất.
+
+==================================================
+13. DATABASE DESIGN
+==================================================
+
+Đề xuất IndexedDB schema tối thiểu.
+
+Ví dụ cần đánh giá:
+
+```text id="p122db"
+DB NAME =
+WEB_LIVE_DB
+
+OBJECT STORE =
+lessons
+
+OBJECT STORE =
+assets
+
+OBJECT STORE =
+metadata
+```
+
+Không mặc định schema trên là đúng.
+
+Codex phải đề xuất schema dựa trên source thực tế.
+
+==================================================
+14. LESSON IDENTITY
+==================================================
+
+Xác định khóa ổn định cho lesson.
+
+Không dựa đơn thuần vào:
+
+```text id="p122badid"
+FILE NAME
+```
+
+Đánh giá:
+
+```text id="p122identity"
+EXISTING LESSON ID
+PACKAGE ID
+CONTENT HASH
+METADATA ID
+```
+
+Ưu tiên reuse identity hiện có nếu an toàn.
+
+==================================================
+15. MIGRATION DESIGN
+==================================================
+
+Thiết kế:
+
+```text id="p122migration"
+OLD LOCALSTORAGE LIBRARY
+        ↓
+READ
+        ↓
+VALIDATE
+        ↓
+WRITE INDEXEDDB
+        ↓
+VERIFY
+        ↓
+MARK MIGRATED
+        ↓
+ONLY THEN REMOVE OLD WEB-LIVE PAYLOAD
+```
+
+==================================================
+16. ABSOLUTE MIGRATION SAFETY
+==================================================
+
+CẤM flow:
+
+```text id="p122badmigration"
+DELETE OLD
+→ WRITE NEW
+```
+
+Bắt buộc:
+
+```text id="p122safemigration"
+COPY
+→ VERIFY
+→ COMMIT
+→ CLEANUP
+```
+
+Nếu bất kỳ bước nào FAIL:
+
+```text id="p122rollback"
+OLD DATA REMAINS
+CURRENT LESSON REMAINS
+MIGRATION = NOT COMMITTED
+```
+
+==================================================
+17. ROLLBACK DESIGN
+==================================================
+
+Phải thiết kế rollback.
+
+Tối thiểu:
+
+```text id="p122rollbackdesign"
+MIGRATION VERSION
+
+MIGRATION STATUS
+
+SOURCE COUNT
+
+TARGET COUNT
+
+VERIFY RESULT
+
+ROLLBACK PATH
+```
+
+Không migration một chiều không kiểm chứng.
+
+==================================================
+18. PARTIAL MIGRATION
+==================================================
+
+Thiết kế xử lý:
+
+```text id="p122partial"
+BROWSER CLOSED DURING MIGRATION
+
+POWER LOSS
+
+INDEXEDDB WRITE FAILURE
+
+QUOTA FAILURE
+
+CORRUPTED LESSON
+
+DUPLICATE LESSON
+
+OLD SCHEMA
+
+UNKNOWN LEGACY DATA
+```
+
+==================================================
+19. INDEXEDDB FAILURE
+==================================================
+
+Thiết kế behavior khi IndexedDB:
+
+```text id="p122idbfail"
+UNAVAILABLE
+
+BLOCKED
+
+OPEN FAILURE
+
+TRANSACTION FAILURE
+
+WRITE FAILURE
+
+READ FAILURE
+```
+
+Không crash.
+
+Không làm mất bài đang dạy.
+
+==================================================
+20. STORAGE CAPACITY
+==================================================
+
+Không tuyên bố IndexedDB là unlimited.
+
+Báo cáo rõ:
+
+```text id="p122capacitytruth"
+INDEXEDDB ALSO HAS BROWSER STORAGE LIMITS
+```
+
+Nhưng đánh giá liệu nó phù hợp hơn localStorage cho:
+
+```text id="p122capacitytarget"
+LARGE LESSON LIBRARY
+BLOBS
+IMAGES
+MEDIA
+STRUCTURED LESSON DATA
+```
+
+==================================================
+21. IMAGE STORAGE
+==================================================
+
+Đánh giá đặc biệt hình học.
+
+Không khuyến nghị base64 trong localStorage nếu có thể dùng:
+
+```text id="p122blob"
+Blob
+ArrayBuffer
+structured IndexedDB record
+```
+
+Phân tích tradeoff.
+
+==================================================
+22. VIDEO / LARGE MEDIA
+==================================================
+
+Nếu package có video/media lớn:
+
+đánh giá có nên:
+
+```text id="p122media"
+STORE IN INDEXEDDB
+```
+
+hay chỉ:
+
+```text id="p122mediaref"
+STORE REFERENCE / FILE PATH / URL
+```
+
+tùy kiến trúc thực tế.
+
+Không tự thay đổi.
+
+==================================================
+23. SUBJECT LOADER CONTRACT
+==================================================
+
+Storage migration sau này không được thay đổi:
+
+```text id="p122loadercontract"
+SUBJECT FILTER
+
+GRADE FILTER
+
+WEEK FILTER
+
+PERIOD FILTER
+
+RECENT LESSONS
+
+REMEMBER LAST SUBJECT
+
+SUBJECT METADATA VALIDATION
+
+SUBJECT MISMATCH BLOCK
+
+TRANSACTIONAL LOAD
+
+CURRENT LESSON PRESERVATION
+
+PROFILE STATE RESET
+```
+
+==================================================
+24. PROFILE ISOLATION
+==================================================
+
+Storage layer không được làm thay đổi:
+
+```text id="p122profiles"
+GEOMETRY_PROFILE
+ALGEBRA_PROFILE
+INFORMATICS_PROFILE
+LEGACY_RUNTIME
+```
+
+==================================================
+25. CORE BOUNDARY
+==================================================
+
+Audit xem IndexedDB abstraction có thể nằm:
+
+```text id="p122storageowner"
+SUBJECT LOADER STORAGE MODULE
+```
+
+hay cần Core.
+
+Ưu tiên:
+
+```text id="p122preferred"
+LOADER-LOCAL STORAGE ADAPTER
+```
+
+Nếu Core change thực sự cần thiết:
+
+chỉ báo cáo.
+
+Không implement.
+
+==================================================
+26. PROPOSE STORAGE ADAPTER
+==================================================
+
+Thiết kế interface tối thiểu, ví dụ:
+
+```text id="p122adapter"
+saveLesson()
+
+getLesson()
+
+listLessons()
+
+deleteLesson()
+
+saveMetadata()
+
+getMetadata()
+
+migrateLegacyStorage()
+
+getStorageHealth()
+```
+
+Tên chính xác có thể khác.
+
+Mục tiêu là tách Loader khỏi backend storage.
+
+==================================================
+27. DELETE SEMANTICS
+==================================================
+
+Thiết kế:
+
+```text id="p122delete"
+DELETE LESSON
+```
+
+phải xóa đúng:
+
+```text id="p122deleteitems"
+LESSON RECORD
+OWNED ASSETS
+OWNED INDEX ENTRY
+```
+
+nhưng không xóa asset đang được lesson khác dùng nếu có sharing/deduplication.
+
+==================================================
+28. STORAGE HEALTH
+==================================================
+
+Đề xuất cơ chế hiển thị tối thiểu:
+
+```text id="p122health"
+STORAGE AVAILABLE
+
+STORAGE WARNING
+
+MIGRATION REQUIRED
+
+MIGRATION FAILED
+
+DATABASE UNAVAILABLE
+```
+
+Không cần UI redesign.
+
+==================================================
+29. TEST PLAN FOR P12.2B
+==================================================
+
+Viết trước test plan cho phase implement sau.
+
+Bắt buộc bao gồm:
+
+```text id="p122tests"
+EMPTY DATABASE
+
+FIRST LESSON SAVE
+
+MULTIPLE LESSON SAVE
+
+LARGE IMAGE LESSON
+
+MULTIPLE LARGE IMAGE LESSONS
+
+REOPEN LESSON
+
+DELETE LESSON
+
+RECENT LESSON
+
+FILTER LIBRARY
+
+LEGACY PACKAGE
+
+MODERN PROFILE PACKAGE
+
+MIGRATION SUCCESS
+
+MIGRATION INTERRUPTION
+
+MIGRATION FAILURE
+
+INDEXEDDB FAILURE
+
+DUPLICATE LESSON
+
+CORRUPTED RECORD
+
+CURRENT LESSON PRESERVATION
+
+ROLLBACK
+```
+
+==================================================
+30. SCALE TEST PLAN
+==================================================
+
+Đề xuất synthetic scale tests:
+
+```text id="p122scale"
+10 LESSONS
+50 LESSONS
+100 LESSONS
+250 LESSONS
+```
+
+với asset sizes khác nhau.
+
+Không cần chạy physical test trong P12.2A.
+
+==================================================
+31. WINDOWS STATUS
+==================================================
+
+Ghi chính xác:
+
+```text id="p122windows"
+P11_F01_WINDOWS_REPRODUCED = YES
+
+P12_1_WINDOWS_RETEST =
+PARTIAL_POSITIVE_EVIDENCE
+```
+
+Lý do:
+
+P12.1 đã hiển thị đúng subject/Legacy separation,
+
+nhưng full lesson load bị storage quota chặn.
+
+Không tuyên bố:
+
+```text id="p122notyet"
+P12_F01_WINDOWS_FULL_PASS
+```
+
+cho đến khi storage không còn chặn test.
+
+==================================================
+32. PHYSICAL TV
+==================================================
+
+Giữ:
+
+```text id="p122tv"
+PHYSICAL_TV_VALIDATION = UNRUN
+
+REAL_CLASSROOM_TRIAL = UNRUN
+```
+
+==================================================
+33. SOURCE INTEGRITY
+==================================================
+
+Bắt buộc:
+
+```text id="p122integrity"
+P12_1_SHA256_BEFORE =
+39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49
+
+P12_1_SHA256_AFTER =
+39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49
+
+P12_1_CANDIDATE_MUTATED = NO
+```
+
+==================================================
+34. REQUIRED REPORTS
+==================================================
+
+Tạo:
+
+```text id="p122reports"
+P12_2A_STORAGE_AUDIT_REPORT.md
+
+P12_2A_LOCALSTORAGE_INVENTORY.md
+
+P12_2A_INDEXEDDB_ARCHITECTURE_PROPOSAL.md
+
+P12_2A_MIGRATION_AND_ROLLBACK_DESIGN.md
+
+P12_2A_IMPLEMENTATION_TEST_PLAN.md
+
+P12_2A_RISK_REGISTER.md
+```
+
+==================================================
+35. NO CANDIDATE
+==================================================
+
+P12.2A là audit/design.
+
+Không tạo runtime candidate mới.
+
+Không ZIP Production.
+
+Không thay source runtime.
+
+==================================================
+36. FINAL BLOCK
+==================================================
+
+Trả:
+
+```text id="p122final"
+P12_1_SHA256_BEFORE =
+P12_1_SHA256_AFTER =
+P12_1_CANDIDATE_MUTATED =
+
+P11_F01_STATUS =
+P11_F01_WINDOWS_REPRODUCED =
+
+LOCALSTORAGE_QUOTA_GUARD =
+LOCALSTORAGE_CAPACITY_REAL_USE =
+
+LOCALSTORAGE_KEY_COUNT =
+WEB_LIVE_STORAGE_KEY_COUNT =
+
+LARGEST_STORAGE_CLASS =
+LARGE_ASSET_DUPLICATION =
+BASE64_STORAGE_FOUND =
+
+QUOTA_FAILURE_WRITE_PATH =
+
+INDEXEDDB_MIGRATION_FEASIBLE =
+RECOMMENDED_STORAGE_ARCHITECTURE =
+
+LOADER_LOCAL_STORAGE_ADAPTER_FEASIBLE =
+CORE_CHANGE_REQUIRED =
+PROFILE_CHANGE_REQUIRED =
+
+MIGRATION_DESIGN =
+VERIFY_BEFORE_DELETE =
+ROLLBACK_DESIGN =
+PARTIAL_MIGRATION_RECOVERY =
+
+P12_1_WINDOWS_RETEST =
+PHYSICAL_TV_VALIDATION =
+REAL_CLASSROOM_TRIAL =
+
+SOURCE_SCOPE_VIOLATION =
+PRODUCTION_MODIFIED =
+
+P12_2A_STATUS =
+RECOMMENDED_NEXT_ACTION =
+```
+
+==================================================
+37. STOP
+==================================================
+
+Sau:
+
+```text id="p122stop"
+AUDIT
+→ MEASURE
+→ TRACE
+→ DESIGN
+→ MIGRATION PLAN
+→ TEST PLAN
+→ REPORT
+```
+
+STOP.
+
+KHÔNG IMPLEMENT INDEXEDDB.
+
+KHÔNG PATCH STORAGE.
+
+KHÔNG PHASE 13.
+
+KHÔNG PRODUCTION.
+
+Chờ GV phê duyệt P12.2B.

@@ -1,0 +1,42 @@
+P12_1_SHA256_BEFORE = 39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49
+P12_1_SHA256_AFTER = 39c0955f1c4a9371187dff791b5eeb1e4a9041335cfc235b577ac14c14c94a49
+P12_1_CANDIDATE_MUTATED = NO
+
+P11_F01_STATUS = OPEN_CONFIRMED_ON_WINDOWS (P2; NOT FIXED)
+P11_F01_WINDOWS_REPRODUCED = YES (GV reported)
+
+LOCALSTORAGE_QUOTA_GUARD = PASS
+LOCALSTORAGE_CAPACITY_REAL_USE = INSUFFICIENT / CONFIRMED_ON_WINDOWS
+
+LOCALSTORAGE_KEY_COUNT = 13 (RAM diagnostic snapshot; Windows actual UNKNOWN)
+WEB_LIVE_STORAGE_KEY_COUNT = 12 (7 lesson + 5 fixed keys in RAM; 12 owned key families in source)
+
+LARGEST_STORAGE_CLASS = E/F — full lesson JSON with inline image/base64 assets
+LARGE_ASSET_DUPLICATION = YES (decoded occurrences / global unique bytes = 3.470378x)
+BASE64_STORAGE_FOUND = YES
+
+QUOTA_FAILURE_WRITE_PATH = subject-loader.js:288 -> zip.js:51 -> setItem(lesson:<id>) in RAM diagnostic injection; Windows exact failed key UNKNOWN
+
+INDEXEDDB_MIGRATION_FEASIBLE = YES, subject to Core bridge and cleanup/recovery contract approval; NOT IMPLEMENTED
+RECOMMENDED_STORAGE_ARCHITECTURE = localStorage small prefs/refs; IndexedDB lesson bodies + deduplicated raw image assets; same runtime image dataURI hydrated only in RAM; existing local media references preserved
+
+LOADER_LOCAL_STORAGE_ADAPTER_FEASIBLE = YES as storage owner; pure Loader-only end-to-end migration with frozen Core = NO
+CORE_CHANGE_REQUIRED = YES (bounded bootstrap/read-write storage bridge; design only)
+PROFILE_CHANGE_REQUIRED = NO (recommended initial scope)
+
+MIGRATION_DESIGN = COPY -> VERIFY -> COMMIT -> CLEANUP; proposed, cleanup gated for GV approval
+VERIFY_BEFORE_DELETE = YES (mandatory in proposal; no deletion performed)
+ROLLBACK_DESIGN = Old LS unchanged before cleanup; verified DB/compatible generation recovery after cleanup; full frozen-P12.1 LS restore not guaranteed
+PARTIAL_MIGRATION_RECOVERY = Versioned journal + hashes/counts/readback + idempotent resume; CLEANUP_PENDING after partial cleanup failure (proposal only)
+
+P12_1_WINDOWS_RETEST = PARTIAL_POSITIVE_EVIDENCE
+PHYSICAL_TV_VALIDATION = UNRUN
+REAL_CLASSROOM_TRIAL = UNRUN
+
+SOURCE_SCOPE_VIOLATION = NO
+PRODUCTION_MODIFIED = NO
+
+P12_2A_STATUS = COMPLETE_AUDIT_DESIGN_ONLY / AWAITING_P12_2B_APPROVAL
+RECOMMENDED_NEXT_ACTION = GV review six reports and explicitly approve P12.2B Core storage bridge + cleanup/rollback contract before implementation
+
+STOP

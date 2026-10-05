@@ -1,0 +1,23 @@
+{
+  "result": "PASS_AUDIT_MEASUREMENT",
+  "browser": "151.0.7922.173",
+  "mode": "RAM_STORAGE_DOUBLE_ONLY_NO_PERSISTENT_APP_WRITES",
+  "packages": 7,
+  "localStorageKeyCountModeled": 13,
+  "webLiveKeyCountModeled": 12,
+  "unknownModelSentinels": 1,
+  "nativeLocalStorageKeyCount": 0,
+  "windowsKeyCount": "UNKNOWN_NOT_PROVIDED",
+  "totalSerializedCharacters": 7064823,
+  "totalUTF8Bytes": 7094262,
+  "totalUTF16ApproxBytes": 14129646,
+  "packageUTF8Bytes": 7089724,
+  "assetOccurrenceDecodedBytes": 5125742,
+  "globalUniqueAssetDecodedBytes": 1476998,
+  "globalAssetDuplicationRatio": 3.470378429760907,
+  "sourceRuntimeModified": false,
+  "nativeStorageWrites": 0,
+  "nativeStorageRemoves": 0,
+  "clearCalls": 0,
+  "indexedDBAccess": 0
+}

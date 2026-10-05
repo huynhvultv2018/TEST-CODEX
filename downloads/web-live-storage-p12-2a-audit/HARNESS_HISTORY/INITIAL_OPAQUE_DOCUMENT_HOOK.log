@@ -1,0 +1,23 @@
+MEASURED ALGEBRA_PHASE5_REPRESENTATIVE_TEST 3952 0 0
+MEASURED INFORMATICS_PHASE6_REPRESENTATIVE_TEST 10635 0 0
+MEASURED TIN6_T04_P04_SGK_RC3_PED1 1856946 14 2
+MEASURED TIN6_T05_P05_SGK_RC3_PED1 2020067 16 5
+MEASURED TIN8_T04_P04_SGK_RC3_PED1 313281 6 1
+MEASURED HINH8_T04_T07_B12_M2_V03 1441998 18 15
+MEASURED HINH8_T04_T07_DUAL_VISUAL_TEST_V045 1442845 18 15
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   "Failed to read the 'localStorage' property from 'Window': Access is denied for this document."
++ ]
+- []
+
+    at /workspace/p12-2a-storage-audit/measure-trace.cjs:18:330 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [Array],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
