@@ -1,0 +1,10 @@
+locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: '📚 THƯ VIỆN / NHẬP BÀI', exact: true })[22m
+
+    at /workspace/phase10-subject-loader-usability-audit/audit-runtime.cjs:20:73 {
+  log: [
+    "  - waiting for getByRole('button', { name: '📚 THƯ VIỆN / NHẬP BÀI', exact: true })"
+  ],
+  name: 'TimeoutError'
+}

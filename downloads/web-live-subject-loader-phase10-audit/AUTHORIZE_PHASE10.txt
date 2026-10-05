@@ -1,0 +1,458 @@
+# FREEZE PHASE 9
+# PHASE 10 — SUBJECT LOADER CLASSROOM USABILITY AUDIT ONLY
+
+Tôi phê duyệt:
+
+```text
+PHASE9_STATUS = PASS
+
+PHASE9_CANDIDATE =
+WEB_LIVE_SUBJECT_LOADER_PHASE9_CANDIDATE
+
+PHASE9_CANDIDATE_SHA256 =
+32afaf838e2bd598fe1a5a6180105f82d2ceefd2312ec58b993081e91fd0f5d1
+```
+
+==================================================
+1. FREEZE
+==================================================
+
+Đóng băng Phase 9.
+
+Bắt buộc:
+
+```text
+PHASE9_CANDIDATE_STATUS = FROZEN
+PHASE9_CANDIDATE_MUTATED = NO
+```
+
+Không sửa candidate.
+
+Không Production.
+
+==================================================
+2. PHASE 10 MODE
+==================================================
+
+Thực hiện:
+
+```text
+AUDIT ONLY
+```
+
+Không implement.
+
+Không patch.
+
+Không refactor.
+
+Không redesign.
+
+Không tạo candidate mới.
+
+==================================================
+3. OBJECTIVE
+==================================================
+
+Đánh giá chức năng:
+
+```text
+NẠP BÀI THEO MÔN
+```
+
+từ góc nhìn GV đang đứng lớp.
+
+Mục tiêu:
+
+```text
+FAST
+CLEAR
+LOW-CLICK
+LOW-ERROR
+TV/PC FRIENDLY
+```
+
+==================================================
+4. CURRENT FLOW
+==================================================
+
+Audit flow hiện tại:
+
+```text
+NẠP BÀI
+→ CHỌN MÔN
+→ CHỌN PACKAGE
+→ PREVIEW
+→ VALIDATE
+→ LOAD
+```
+
+Xác định số thao tác/click cần thiết trong trường hợp bình thường.
+
+Không sửa flow.
+
+==================================================
+5. AUDIT SUBJECT SELECTION
+==================================================
+
+Đánh giá:
+
+```text
+HÌNH HỌC
+ĐẠI SỐ
+TIN HỌC
+LEGACY
+```
+
+Kiểm:
+
+```text
+SUBJECT VISIBILITY
+SUBJECT SELECTION CLARITY
+ACTIVE SUBJECT INDICATOR
+ACCIDENTAL SUBJECT CHANGE RISK
+```
+
+==================================================
+6. AUDIT LESSON PREVIEW
+==================================================
+
+Đánh giá preview:
+
+```text
+MÔN
+LỚP
+TUẦN
+TIẾT
+TÊN BÀI
+SUBJECT ENGINE
+```
+
+Xác định thông tin nào:
+
+```text
+ESSENTIAL
+USEFUL
+REDUNDANT
+MISSING
+```
+
+==================================================
+7. AUDIT CLASSROOM SPEED
+==================================================
+
+Đánh giá tình huống:
+
+```text
+GV ĐANG DẠY
+→ CẦN ĐỔI BÀI
+→ NẠP BÀI TIẾP THEO
+```
+
+Xác định:
+
+```text
+CLICK_COUNT
+DECISION_COUNT
+DIALOG_COUNT
+FILE_BROWSER_STEPS
+```
+
+Mục tiêu audit:
+
+```text
+CAN THIS BE SAFELY SHORTENED?
+```
+
+Không implement.
+
+==================================================
+8. AUDIT POSSIBLE IMPROVEMENTS
+==================================================
+
+Đánh giá riêng từng khả năng:
+
+```text
+A. REMEMBER LAST SUBJECT
+
+B. RECENT LESSONS
+
+C. FILTER LESSONS BY SUBJECT
+
+D. CLASS / WEEK / PERIOD FILTER
+
+E. ONE-CLICK REOPEN LAST LESSON
+
+F. NEXT LESSON SHORTCUT
+
+G. FAVORITE LESSON FOLDERS
+
+H. DRAG-AND-DROP PACKAGE
+
+I. SUBJECT-SPECIFIC LOAD BUTTONS
+
+J. LOAD CONFIRMATION ONLY WHEN NECESSARY
+```
+
+Với mỗi mục trả:
+
+```text
+CLASSROOM_VALUE =
+IMPLEMENTATION_COMPLEXITY =
+CORE_IMPACT =
+PROFILE_IMPACT =
+BACKWARD_COMPATIBILITY_RISK =
+RECOMMENDATION =
+```
+
+Recommendation chỉ dùng:
+
+```text
+HIGH_PRIORITY
+MEDIUM_PRIORITY
+LOW_PRIORITY
+REJECT
+```
+
+==================================================
+9. DO NOT OVERBUILD
+==================================================
+
+Không mặc định rằng tất cả A–J đều cần triển khai.
+
+Ưu tiên:
+
+```text
+MINIMUM CHANGE
+MAXIMUM CLASSROOM BENEFIT
+```
+
+==================================================
+10. SAFETY REQUIREMENTS
+==================================================
+
+Không được đề xuất loại bỏ:
+
+```text
+SUBJECT_METADATA_VALIDATION
+SUBJECT_MISMATCH_BLOCK
+TRANSACTIONAL_LOAD
+CURRENT_LESSON_PRESERVATION
+PROFILE_STATE_RESET
+```
+
+Đây là các safeguard bắt buộc.
+
+==================================================
+11. FILE ORGANIZATION AUDIT
+==================================================
+
+Đánh giá khả năng tổ chức bài theo:
+
+```text
+MÔN
+→ LỚP
+→ TUẦN
+→ TIẾT
+```
+
+Ví dụ:
+
+```text
+HÌNH HỌC
+   └── LỚP 8
+       └── TUẦN 5
+           ├── TIẾT 9
+           └── TIẾT 10
+```
+
+và:
+
+```text
+TIN HỌC
+   └── LỚP 6
+       └── TUẦN 5
+```
+
+Chỉ audit.
+
+Không tự thay cấu trúc package.
+
+==================================================
+12. PACKAGE METADATA AUDIT
+==================================================
+
+Xác định metadata hiện tại có đủ để hỗ trợ:
+
+```text
+SUBJECT
+GRADE
+WEEK
+PERIOD
+LESSON TITLE
+SUBJECT ENGINE
+```
+
+hay không.
+
+Nếu thiếu:
+
+ghi:
+
+```text
+METADATA_GAP
+```
+
+Không sửa schema.
+
+==================================================
+13. COMPATIBILITY
+==================================================
+
+Mọi đề xuất phải bảo toàn:
+
+```text
+LEGACY
+GEOMETRY
+ALGEBRA
+INFORMATICS
+```
+
+và:
+
+```text
+OLD LESSON PACKAGE COMPATIBILITY
+```
+
+==================================================
+14. CORE POLICY
+==================================================
+
+Phân loại mỗi đề xuất:
+
+```text
+LOADER_LOCAL
+CORE_CHANGE_REQUIRED
+PROFILE_CHANGE_REQUIRED
+PACKAGE_CHANGE_REQUIRED
+```
+
+Ưu tiên:
+
+```text
+LOADER_LOCAL
+```
+
+==================================================
+15. WINDOWS REALITY
+==================================================
+
+Ghi rõ:
+
+```text
+WINDOWS_PHYSICAL_RUNTIME = UNRUN
+PHYSICAL_TV_VALIDATION = UNRUN
+```
+
+Không tuyên bố usability vật lý PASS.
+
+Đây là audit dựa trên runtime/test evidence hiện có.
+
+==================================================
+16. REQUIRED REPORT
+==================================================
+
+Tạo:
+
+```text
+SUBJECT_LOADER_PHASE10_USABILITY_AUDIT.md
+SUBJECT_LOADER_PHASE10_PRIORITY_MATRIX.md
+SUBJECT_LOADER_PHASE10_MINIMAL_PATCH_PROPOSAL.md
+```
+
+`MINIMAL_PATCH_PROPOSAL` chỉ là đề xuất.
+
+Không patch.
+
+==================================================
+17. FINAL RECOMMENDATION
+==================================================
+
+Chọn tối đa:
+
+```text
+TOP_3_RECOMMENDED_IMPROVEMENTS
+```
+
+Không vượt quá 3.
+
+Với từng improvement ghi:
+
+```text
+CLASSROOM_BENEFIT =
+SCOPE =
+FILES_EXPECTED_TO_CHANGE =
+CORE_CHANGE_REQUIRED =
+PROFILE_CHANGE_REQUIRED =
+RISK =
+```
+
+==================================================
+18. FINAL BLOCK
+==================================================
+
+Trả:
+
+```text
+PHASE9_CANDIDATE =
+PHASE9_SHA256_BEFORE =
+PHASE9_SHA256_AFTER =
+PHASE9_CANDIDATE_MUTATED =
+
+CURRENT_LOADER_USABILITY =
+CURRENT_NORMAL_LOAD_CLICK_COUNT =
+
+METADATA_SUFFICIENCY =
+METADATA_GAP_COUNT =
+
+TOP_PRIORITY_01 =
+TOP_PRIORITY_02 =
+TOP_PRIORITY_03 =
+
+CORE_CHANGE_REQUIRED =
+PROFILE_CHANGE_REQUIRED =
+
+LEGACY_COMPATIBILITY_RISK =
+
+WINDOWS_PHYSICAL_RUNTIME =
+PHYSICAL_TV_VALIDATION =
+
+SOURCE_SCOPE_VIOLATION =
+PRODUCTION_MODIFIED =
+
+PHASE10_STATUS =
+RECOMMENDED_NEXT_ACTION =
+```
+
+==================================================
+19. STOP
+==================================================
+
+Sau:
+
+```text
+AUDIT
+→ PRIORITIZE
+→ PROPOSE
+→ REPORT
+```
+
+STOP.
+
+Không implement.
+
+Không patch.
+
+Không Production.
+
+Chờ GV phê duyệt.

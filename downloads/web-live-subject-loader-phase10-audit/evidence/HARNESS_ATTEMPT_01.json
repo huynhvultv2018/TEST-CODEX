@@ -1,0 +1,44 @@
+{
+  "mode": "AUDIT_ONLY",
+  "result": "AUDIT_HARNESS_FAILED",
+  "observations": [
+    {
+      "name": "Four subject choices visible in native dropdown; startup has no remembered preference",
+      "evidence": {
+        "options": [
+          "— Chọn môn —",
+          "HÌNH HỌC",
+          "ĐẠI SỐ",
+          "TIN HỌC",
+          "BÀI CŨ / LEGACY"
+        ],
+        "initialSelection": ""
+      }
+    },
+    {
+      "name": "Sparse synthetic Algebra preview",
+      "evidence": {
+        "fields": [
+          "Môn",
+          "Tên bài",
+          "Subject engine"
+        ],
+        "validationReadyMs": 30
+      }
+    }
+  ],
+  "flows": [],
+  "layouts": [],
+  "errors": [],
+  "external": [],
+  "captures": [
+    "PREVIEW_ALGEBRA_MISSING_FIELDS.png"
+  ],
+  "windowsPhysical": "UNRUN",
+  "physicalTV": "UNRUN",
+  "browser": "151.0.7922.173",
+  "error": {
+    "message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '📚 THƯ VIỆN / NHẬP BÀI', exact: true })\u001b[22m\n",
+    "stack": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '📚 THƯ VIỆN / NHẬP BÀI', exact: true })\u001b[22m\n\n    at /workspace/phase10-subject-loader-usability-audit/audit-runtime.cjs:20:73"
+  }
+}

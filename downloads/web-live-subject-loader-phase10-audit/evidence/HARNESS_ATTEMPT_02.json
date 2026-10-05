@@ -1,0 +1,256 @@
+{
+  "mode": "AUDIT_ONLY",
+  "result": "AUDIT_HARNESS_FAILED",
+  "observations": [
+    {
+      "name": "Four subject choices visible in native dropdown; startup has no remembered preference",
+      "evidence": {
+        "options": [
+          "— Chọn môn —",
+          "HÌNH HỌC",
+          "ĐẠI SỐ",
+          "TIN HỌC",
+          "BÀI CŨ / LEGACY"
+        ],
+        "initialSelection": ""
+      }
+    },
+    {
+      "name": "Sparse synthetic Algebra preview",
+      "evidence": {
+        "fields": [
+          "Môn",
+          "Tên bài",
+          "Subject engine"
+        ],
+        "validationReadyMs": 25
+      }
+    },
+    {
+      "name": "Loader entry is inside a collapsed System details group after startup/load",
+      "evidence": {
+        "systemInitiallyOpen": false,
+        "libraryButtonVisible": false
+      }
+    },
+    {
+      "name": "Selected subject already survives modal close/open in the same page",
+      "evidence": {
+        "selection": "algebra",
+        "activeIndicator": "ĐẠI SỐ"
+      }
+    },
+    {
+      "name": "Pending subject/package preview stays Teacher-only; TV retains current disclosed lesson",
+      "evidence": {
+        "old": {
+          "activation": "08f60df2-7f20-4b9d-814c-77294d68e51b",
+          "index": 2,
+          "answerStep": 1,
+          "profile": "algebra",
+          "body": "\n        Biến đổi từng bước — interface test\n        \n          \n            \n              \n              \n              \n              \n              \n              \n            \n          \n          \n        \n        Tình huống\n        \n          BIẾN ĐỔI\n          ?Đáp án\n          Biến đổi từng bước — interface test\n          Giải \\(2(x + 3) = 10\\).Chờ giáo viên chốt kiến thức.\n          \n          \n          \n          Biểu thức gốc\\(2(x+3)=10\\)\\(2x+6=10\\)Quy tắc / Giải thíchPhân phối.\n        \n      "
+        },
+        "unchanged": true,
+        "activeIndicatorBeforeCommit": "ĐẠI SỐ",
+        "stagedSubject": "informatics"
+      }
+    },
+    {
+      "name": "Canceled subject selection persists independently of actual active profile",
+      "evidence": {
+        "selected": "algebra",
+        "activeIndicator": "TIN HỌC",
+        "oldLessonStillActive": "informatics"
+      }
+    },
+    {
+      "name": "Saved list is filtered by actual engine; open does update savedAt but does not move existing library entry",
+      "evidence": {
+        "selected": "algebra",
+        "libraryOrder": [
+          {
+            "id": "INFORMATICS_PHASE6_REPRESENTATIVE_TEST",
+            "savedAt": "2026-10-05T04:59:48.828Z"
+          },
+          {
+            "id": "ALGEBRA_PHASE5_REPRESENTATIVE_TEST",
+            "savedAt": "2026-10-05T04:59:49.209Z"
+          }
+        ],
+        "visibleLibraryTitle": "Algebra Phase5 — TEST ONLY / NOT SGK"
+      }
+    },
+    {
+      "name": "Old Tin6 package has subject Tin học6 but Legacy engine fallback; mismatch is safe yet needs teacher interpretation",
+      "evidence": {
+        "preview": "3. THÔNG TIN BÀIMônTin học 6Lớp6Tuần4Tiết4Tên bàiBài 2. XỬ LÍ THÔNG TIN",
+        "warning": "Môn đã chọn: Tin học\nMôn của bài: Legacy\n\nGói bài không khớp môn đã chọn.",
+        "loadDisabled": true
+      }
+    },
+    {
+      "name": "Saved library rows expose title only; two real bundled variants share the same visible title",
+      "evidence": {
+        "titles": [
+          "Bài 12. Hình bình hành — Dấu hiệu nhận biết",
+          "Bài 12. Hình bình hành — Dấu hiệu nhận biết",
+          "Bài 2. XỬ LÍ THÔNG TIN"
+        ],
+        "duplicateTitles": [
+          "Bài 12. Hình bình hành — Dấu hiệu nhận biết"
+        ]
+      }
+    },
+    {
+      "name": "Complete existing Geometry metadata preview",
+      "evidence": {
+        "fields": [
+          "Môn",
+          "Lớp",
+          "Tuần",
+          "Tiết",
+          "Tên bài",
+          "Subject engine"
+        ],
+        "validationReadyMs": 376
+      }
+    }
+  ],
+  "flows": [
+    {
+      "scenario": "Teaching: new file, different subject",
+      "observedAutomationActions": 4,
+      "modeledAppMouseClicks": 5,
+      "modeledPickerClicks": 2,
+      "modeledTotalClicks": 7,
+      "decisionCount": 3,
+      "applicationModalCount": 1,
+      "nativePickerCount": 1,
+      "fileBrowserSteps": "select file + Open, plus navigation if needed",
+      "validationReadyMs": 59,
+      "note": "selectOption = one automation action but normally dropdown-open + option-select = two mouse clicks. Native Windows picker, navigation and human reading time were not exercised."
+    },
+    {
+      "scenario": "Teaching: saved lesson, same currently selected subject",
+      "modeledAppMouseClicks": 3,
+      "modeledTotalClicks": 3,
+      "decisionCount": 2,
+      "applicationModalCount": 1,
+      "nativePickerCount": 0,
+      "fileBrowserSteps": 0
+    },
+    {
+      "scenario": "Teaching: saved lesson, different subject",
+      "modeledAppMouseClicks": 5,
+      "modeledTotalClicks": 5,
+      "decisionCount": 3,
+      "applicationModalCount": 1,
+      "nativePickerCount": 0,
+      "fileBrowserSteps": 0
+    },
+    {
+      "scenario": "Teaching: new file, same selected subject",
+      "modeledAppMouseClicks": 3,
+      "modeledPickerClicks": 2,
+      "modeledTotalClicks": 5,
+      "decisionCount": 2,
+      "applicationModalCount": 1,
+      "nativePickerCount": 1,
+      "fileBrowserSteps": "select file + Open, plus navigation if needed"
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "panel": {
+        "top": 186.5,
+        "bottom": 893.5,
+        "clientHeight": 705,
+        "scrollHeight": 705
+      },
+      "subject": {
+        "top": 311.3125,
+        "bottom": 352.3125,
+        "insidePanel": true
+      },
+      "load": {
+        "top": 691.5,
+        "bottom": 732.6875,
+        "insidePanel": true
+      },
+      "library": {
+        "top": 834.5,
+        "bottom": 852.5,
+        "insidePanel": true
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "panel": {
+        "top": 30.71875,
+        "bottom": 737.265625,
+        "clientHeight": 705,
+        "scrollHeight": 705
+      },
+      "subject": {
+        "top": 155.53125,
+        "bottom": 196.53125,
+        "insidePanel": true
+      },
+      "load": {
+        "top": 535.71875,
+        "bottom": 576.90625,
+        "insidePanel": true
+      },
+      "library": {
+        "top": 678.71875,
+        "bottom": 696.71875,
+        "insidePanel": true
+      }
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "panel": {
+        "top": 28.796875,
+        "bottom": 691.1875,
+        "clientHeight": 660,
+        "scrollHeight": 705
+      },
+      "subject": {
+        "top": 153.609375,
+        "bottom": 194.609375,
+        "insidePanel": true
+      },
+      "load": {
+        "top": 533.796875,
+        "bottom": 574.984375,
+        "insidePanel": true
+      },
+      "library": {
+        "top": 676.796875,
+        "bottom": 694.796875,
+        "insidePanel": false
+      }
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "captures": [
+    "PREVIEW_ALGEBRA_MISSING_FIELDS.png",
+    "LEGACY_METADATA_MISMATCH.png",
+    "LIBRARY_DUPLICATE_TITLES.png",
+    "GEOMETRY_PREVIEW_1920.png",
+    "GEOMETRY_PREVIEW_1366.png",
+    "GEOMETRY_PREVIEW_1280.png"
+  ],
+  "windowsPhysical": "UNRUN",
+  "physicalTV": "UNRUN",
+  "browser": "151.0.7922.173",
+  "error": {
+    "message": "page.waitForFunction: Timeout 30000ms exceeded.",
+    "stack": "page.waitForFunction: Timeout 30000ms exceeded.\n    at load (/workspace/phase10-subject-loader-usability-audit/audit-runtime.cjs:14:75)\n    at async /workspace/phase10-subject-loader-usability-audit/audit-runtime.cjs:41:51"
+  }
+}

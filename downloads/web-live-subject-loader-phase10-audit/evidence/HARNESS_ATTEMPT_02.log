@@ -1,0 +1,6 @@
+page.waitForFunction: Timeout 30000ms exceeded.
+    at load (/workspace/phase10-subject-loader-usability-audit/audit-runtime.cjs:14:75)
+    at async /workspace/phase10-subject-loader-usability-audit/audit-runtime.cjs:41:51 {
+  log: [],
+  name: 'TimeoutError'
+}

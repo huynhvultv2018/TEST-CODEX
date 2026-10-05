@@ -1,0 +1,171 @@
+{
+  "scope": "Eight representative sources: five old bundled ZIPs, two synthetic profile JSONs, one unchanged approved external Geometry fixture. Not production lesson census.",
+  "records": [
+    {
+      "source": "RC3_PED1_TEST_PACKAGES/TIN6_W04_LIVE_RC3_PED1.zip",
+      "sha256": "edd4e374b812f109194c06100b36c0090dd81818aa995f6656cc02d5acb24cdf",
+      "lessonMetadata": {
+        "subject": "Tin học 6",
+        "grade": 6,
+        "week": 4,
+        "period": 4,
+        "title": "Bài 2. XỬ LÍ THÔNG TIN"
+      },
+      "manifestMetadata": {
+        "subject": "Tin học",
+        "grade": 6,
+        "week": 4,
+        "period": 4,
+        "title": "Bài 2. XỬ LÍ THÔNG TIN"
+      },
+      "profileByMetadata": "legacy",
+      "loaderMissingFields": [],
+      "intentionalLegacyMissingEngine": true
+    },
+    {
+      "source": "RC3_PED1_TEST_PACKAGES/TIN6_W05_LIVE_RC3_PED1.zip",
+      "sha256": "f46afb4ddeb51c764b4d88ad409802c1bac6bc3b66c96878edd5e388799dc31d",
+      "lessonMetadata": {
+        "subject": "Tin học 6",
+        "grade": 6,
+        "week": 5,
+        "period": 5,
+        "title": "Bài 3. THÔNG TIN TRONG MÁY TÍNH"
+      },
+      "manifestMetadata": {
+        "subject": "Tin học",
+        "grade": 6,
+        "week": 5,
+        "period": 5,
+        "title": "Bài 3. THÔNG TIN TRONG MÁY TÍNH"
+      },
+      "profileByMetadata": "legacy",
+      "loaderMissingFields": [],
+      "intentionalLegacyMissingEngine": true
+    },
+    {
+      "source": "RC3_PED1_TEST_PACKAGES/TIN8_W04_LIVE_RC3_PED1.zip",
+      "sha256": "aa2ddc25a4123f77740e24c97e0ed2db8dbc14e297d1b030c3c8a78d1771b884",
+      "lessonMetadata": {
+        "subject": "Tin học 8",
+        "grade": 8,
+        "week": 4,
+        "period": 4,
+        "title": "Bài 2. THÔNG TIN TRONG MÔI TRƯỜNG SỐ"
+      },
+      "manifestMetadata": {
+        "subject": "Tin học",
+        "grade": 8,
+        "week": 4,
+        "period": 4,
+        "title": "Bài 2. THÔNG TIN TRONG MÔI TRƯỜNG SỐ"
+      },
+      "profileByMetadata": "legacy",
+      "loaderMissingFields": [],
+      "intentionalLegacyMissingEngine": true
+    },
+    {
+      "source": "WEB_LIVE/HINH_HOC_8_T04_T07_LIVE_TEST.zip",
+      "sha256": "8e51fd9719039af0f4f0e4547668a9343cd6c6db022dbb6c2047a51d1de61ddb",
+      "lessonMetadata": {
+        "subject": "Hình học 8",
+        "grade": 8,
+        "week": 4,
+        "period": 7,
+        "title": "Bài 12. Hình bình hành — Dấu hiệu nhận biết"
+      },
+      "manifestMetadata": {
+        "subject": "Hình học",
+        "grade": 8,
+        "week": 4,
+        "period": 7,
+        "title": "Bài 12. Hình bình hành — Dấu hiệu nhận biết"
+      },
+      "profileByMetadata": "legacy",
+      "loaderMissingFields": [],
+      "intentionalLegacyMissingEngine": true
+    },
+    {
+      "source": "WEB_LIVE/HINH_HOC_8_T04_T07_DUAL_VISUAL_TEST.zip",
+      "sha256": "86f95e57641647c3441f615cd6f5e3437c0e509afc2d13e030781ce9a23cf033",
+      "lessonMetadata": {
+        "subject": "Hình học 8",
+        "grade": 8,
+        "week": 4,
+        "period": 7,
+        "title": "Bài 12. Hình bình hành — Dấu hiệu nhận biết"
+      },
+      "manifestMetadata": {
+        "subject": "Hình học",
+        "grade": 8,
+        "week": 4,
+        "period": 7,
+        "title": "Gói thử hai loại hình — Ví dụ 2"
+      },
+      "profileByMetadata": "legacy",
+      "loaderMissingFields": [],
+      "intentionalLegacyMissingEngine": true
+    },
+    {
+      "source": "ALGEBRA_PHASE5_TEST_PACKAGES/ALGEBRA_PROFILE_REPRESENTATIVE_TEST.json",
+      "sha256": "341a4ed6b1ab861b9a9700f744e7228d5cba10ca9e0822b4dfd7d34470a34b5e",
+      "lessonMetadata": {
+        "subject": "Đại số — dữ liệu kiểm thử",
+        "title": "Algebra Phase5 — TEST ONLY / NOT SGK",
+        "subject_engine": "algebra"
+      },
+      "manifestMetadata": {},
+      "profileByMetadata": "algebra",
+      "loaderMissingFields": [
+        "grade",
+        "week",
+        "period"
+      ],
+      "intentionalLegacyMissingEngine": false
+    },
+    {
+      "source": "INFORMATICS_PHASE6_TEST_PACKAGES/INFORMATICS_PROFILE_REPRESENTATIVE_TEST.json",
+      "sha256": "1cea2a731505a0114e8759247bfb78e19d0e2cfc9416d2a8bedbd0c14bb24cb0",
+      "lessonMetadata": {
+        "subject": "Tin học — dữ liệu kiểm thử",
+        "title": "Informatics Phase6 — TEST ONLY / NOT SGK",
+        "subject_engine": "informatics"
+      },
+      "manifestMetadata": {},
+      "profileByMetadata": "informatics",
+      "loaderMissingFields": [
+        "grade",
+        "week",
+        "period"
+      ],
+      "intentionalLegacyMissingEngine": false
+    },
+    {
+      "source": "/workspace/g4-f01-fixture-revalidation/HINH8_VD2_GEOMETRY_PROFILE_TEST_G4F01_PATCHED.zip",
+      "sha256": "4488b1997e416fa634a577900af76fff1dbf17de1eb4bd62eee3a772df7bcab8",
+      "lessonMetadata": {
+        "subject": "Hình học 8",
+        "grade": 8,
+        "week": 4,
+        "period": 7,
+        "title": "Bài 12. Hình bình hành — Dấu hiệu nhận biết",
+        "subject_engine": "geometry"
+      },
+      "manifestMetadata": {
+        "subject": "Hình học",
+        "grade": 8,
+        "week": 4,
+        "period": 7,
+        "title": "Gói thử hai loại hình — Ví dụ 2"
+      },
+      "profileByMetadata": "geometry",
+      "loaderMissingFields": [],
+      "intentionalLegacyMissingEngine": false
+    }
+  ],
+  "missingDistinctFieldCategories": [
+    "grade",
+    "period",
+    "week"
+  ]
+}

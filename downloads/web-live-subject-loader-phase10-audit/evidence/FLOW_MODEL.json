@@ -1,0 +1,66 @@
+{
+  "basis": "Modeled desktop mouse clicks; not a Windows observation. Native picker assumes file visible, select file + Open. Folder navigation, scrolling and human reading add actions/time.",
+  "rawRuntimeFlowQualification": "RUNTIME_AUDIT.json flow counts assume System group already expanded; its observation proves the group defaults collapsed.",
+  "scenarios": [
+    {
+      "scenario": "Đang dạy, gói mới, đổi môn, HỆ THỐNG mặc định đóng",
+      "clickCount": 8,
+      "appClicks": 6,
+      "pickerClicks": 2,
+      "decisionCount": 3,
+      "dialogCount": 2,
+      "fileBrowserSteps": "2 + folder navigation"
+    },
+    {
+      "scenario": "Đang dạy, gói mới, đổi môn, HỆ THỐNG đã mở",
+      "clickCount": 7,
+      "appClicks": 5,
+      "pickerClicks": 2,
+      "decisionCount": 3,
+      "dialogCount": 2,
+      "fileBrowserSteps": "2 + folder navigation"
+    },
+    {
+      "scenario": "Gói mới, cùng môn đã chọn, HỆ THỐNG đã mở",
+      "clickCount": 5,
+      "appClicks": 3,
+      "pickerClicks": 2,
+      "decisionCount": 2,
+      "dialogCount": 2,
+      "fileBrowserSteps": "2 + folder navigation"
+    },
+    {
+      "scenario": "Bài đã lưu, cùng môn đã chọn, HỆ THỐNG đã mở",
+      "clickCount": 3,
+      "appClicks": 3,
+      "pickerClicks": 0,
+      "decisionCount": 2,
+      "dialogCount": 1,
+      "fileBrowserSteps": 0
+    },
+    {
+      "scenario": "Bài đã lưu, đổi môn, HỆ THỐNG đã mở",
+      "clickCount": 5,
+      "appClicks": 5,
+      "pickerClicks": 0,
+      "decisionCount": 3,
+      "dialogCount": 1,
+      "fileBrowserSteps": 0
+    },
+    {
+      "scenario": "Khởi động, importer tự mở, gói mới, chọn môn",
+      "clickCount": 6,
+      "appClicks": 4,
+      "pickerClicks": 2,
+      "decisionCount": 3,
+      "dialogCount": 2,
+      "fileBrowserSteps": "2 + folder navigation"
+    }
+  ],
+  "decisionDefinition": "Môn (nếu cần đổi/chọn), gói/bài, quyết định nạp sau khi đọc preview. Validate tự chạy, không có click validate riêng.",
+  "dialogDefinition": "Một importer của ứng dụng; thêm một native file picker nếu lấy file mới. Không có confirmation dialog thứ ba.",
+  "systemGroupSurcharge": "Thêm 1 click nếu HỆ THỐNG đóng, trừ startup importer tự mở.",
+  "mismatchCorrection": "Với package đã stage hợp lệ nhưng sai môn, chọn môn phù hợp thêm 2 click mô hình; không cần mở lại file picker. Không bypass mismatch.",
+  "windowsPhysicalRuntime": "UNRUN",
+  "physicalTVValidation": "UNRUN"
+}
