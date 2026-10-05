@@ -1,0 +1,15 @@
+{
+  "name": "WEB_LIVE_MULTI_PROFILE_RC1",
+  "status": "FROZEN",
+  "sha256Before": "d09db03f88c065d1167030fa5bd45f6467fc464c31d7a228003a20ac28769fc5",
+  "sha256AfterPreparation": "d09db03f88c065d1167030fa5bd45f6467fc464c31d7a228003a20ac28769fc5",
+  "mutated": false,
+  "crc": "PASS",
+  "freshExtractionFiles": 1239,
+  "freshExtractionMatchesApprovedRC1": true,
+  "physicalBeforeAfterVerification": "UNRUN",
+  "executor": "Linux",
+  "windowsDeviceAccessible": false,
+  "physicalTvAccessible": false,
+  "applicationExecutedInPhase8": false
+}

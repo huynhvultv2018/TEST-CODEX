@@ -1,0 +1,39 @@
+PHASE8 — HUONG DAN NGHIEM THU TREN WINDOWS + TV THUC
+
+Chỉ chạy RC1 đã đóng băng, không sửa mã/nội dung/fixture, không build EXE mới. Bộ hồ sơ này chưa có kết quả nghiệm thu vật lý.
+
+1. Tải RC1 từ link Phase7 cố định:
+https://raw.githubusercontent.com/huynhvultv2018/TEST-CODEX/8c160b4248e517f9c910416e9451c9801f7573ba/downloads/web-live-multi-profile-rc1/WEB_LIVE_MULTI_PROFILE_RC1.zip
+
+2. Trong PowerShell Windows, vào thư mục chứa ZIP; kiểm tra:
+Get-FileHash -LiteralPath '.\WEB_LIVE_MULTI_PROFILE_RC1.zip' -Algorithm SHA256
+Phải bằng d09db03f88c065d1167030fa5bd45f6467fc464c31d7a228003a20ac28769fc5. Nếu khác: STOP, giữ bằng chứng, không kiểm thử gói sai.
+Giải nén vào thư mục test mới chưa tồn tại:
+Expand-Archive -LiteralPath '.\WEB_LIVE_MULTI_PROFILE_RC1.zip' -DestinationPath '.\PHASE8_RC1_TEST'
+Không ghi đè bản đang dùng. Giữ ZIP gốc. Lưu hồ sơ và ảnh/log ngoài thư mục RC1.
+
+3. Ghi thông tin vào PHASE8_DEVICE_AND_EVIDENCE_FORM.json: Windows/build, Chrome, Python, TV/model/kích thước, kết nối, Extend/Duplicate, độ phân giải đầu ra, Windows scaling, overscan/chế độ ảnh, khoảng cách GV và HS xa nhất, ánh sáng phòng. Không chỉ ghi độ phân giải cửa sổ browser.
+
+4. Chạy START_WEB_LIVE.bat có sẵn tại thư mục gốc RC1 trên Windows. Launcher hiện có yêu cầu Python3.10+ và sẽ tìm Chrome; ghi đúng browser thực tế. Không build hay sửa launcher. Chụp/ghi màn hình console khởi động, giữ lỗi nếu có. Đóng bản WEB LIVE cũ theo thao tác của GV trước khi chạy nếu nó đang dùng cổng; không tự coi fallback là startup PASS.
+Mở DevTools Console, bật Preserve log để thu lỗi; Network ghi asset lỗi/404/font/MathJax/media. Đóng DevTools khi đánh giá bố cục TV ở cấu hình dạy thật.
+
+5. Teacher: dùng NHẬP LIVE.ZIP cho gói có ảnh; NHẬP LESSON.JSON cho JSON nhỏ. Dùng nút MỞ TV có sẵn, chuyển cửa sổ TV sang màn hình TV thật, fullscreen. Teacher vẫn ở máy GV nếu cấu hình Extend. Kiểm cả màn hình lẫn bàn phím/điều khiển thực tế. Không dùng evaluate/DevTools để ép state nhằm thay thao tác GV.
+
+6. Fixture chính xác:
+Legacy: RC1\RC3_PED1_TEST_PACKAGES\TIN6_W04_LIVE_RC3_PED1.zip (không subject_engine). Import ZIP, ghi lesson/screen thực tế.
+Geometry: fixtures\HINH8_VD2_GEOMETRY_PROFILE_TEST_G4F01_PATCHED.zip từ bộ hồ sơ này. G4-F01 fixture đã được phê duyệt trước, giữ nguyên; nhập ZIP bên ngoài RC1. Dùng GT/KL → analysis → proof → conclusion để thử hình nền/annotation/proof highlight/Focus; thử70/30,60/40 và figure fullscreen. Không sửa fixture gốc bên trong RC1.
+Algebra: RC1\ALGEBRA_PHASE5_TEST_PACKAGES\ALGEBRA_PROFILE_REPRESENTATIVE_TEST.json. Màn1 expression,2 fraction,3 transformation/Focus,4 equation,5 inequality,6 system,7 error comparison,10 MCQ dọc. Hint khi answer ẩn; kiểm riêng Answer/Hint vì native answer-priority không hiển thị hint cùng answer. Hiện từng bước, Focus bước đã hiện; bước tương lai không xuất hiện.
+Informatics: RC1\INFORMATICS_PHASE6_TEST_PACKAGES\INFORMATICS_PROFILE_REPRESENTATIVE_TEST.json. Màn10 DEMO,11 PRACTICE,12 CODE,13 ALGORITHM,14 TABLE,15–18 MEDIA,19 INSTRUCTION,21 MCQ. Media test assets đã có trong RC1. PRACTICE: hiện đến checkpoint bước2 → XÁC NHẬN CHECKPOINT → HIỆN SẢN PHẨM MẪU. Full Answer một mình không được mở mẫu. CODE giữ dòng/thụt đầu dòng; Focus bước3 giữ các dòng đã hiện nhưng dim, không lộ dòng tương lai. Media video phải do GV chủ động phát; ghi âm thanh nếu đánh giá.
+Fixture chỉ kiểm giao diện/runtime, không chứng nhận lesson thật/SGK hay mở lại yêu cầu ZIP >32MiB đã được miễn.
+
+7. Chạy ít nhất3chu kỳ, không reload Teacher/TV giữa các Profile:
+LEGACY → GEOMETRY → ALGEBRA → INFORMATICS → LEGACY
+Trước mỗi lần chuyển: thử hint/answer/reveal/Focus; Geometry thêm zoom/layout/annotation; Informatics checkpoint/sample. Kiểm Profile kế tiếp không nhận CSS/state/reveal/control của Profile trước. Geometry annotation chỉ được phục hồi trong scene Geometry của chính nó. Ghi đủ5tiêu chí/cycle trong CSV, kèm ảnh/video chuyển Profile.
+
+8. Đánh giá mọi hàng CSV. Runtime dùng PASS/FAIL/NOT_APPLICABLE (NA phải có lý do thực tế); readability/operability dùng PASS/MARGINAL/FAIL. UNRUN chỉ là chưa kiểm, không biến thành NA. Đọc từ vị trí GV và vị trí HS xa nhất; Algebra cần đánh giá cả hai vị trí. MCQ là các hàng option dọc độc lập full width, không wrap ký tự/clip biểu thức/instruction lọt vào option. Kiểm title/question/instruction/answer/hint/math/code/table/figure-label/GT-KL/proof-step, media/controls/fullscreen/scaling/line breaks/overflow.
+
+9. MARGINAL/FAIL: giữ ảnh/video TV thật, screen-id, thao tác, cấu hình và khoảng cách. Không patch. Lỗi: RECORD → REPRODUCE → CLASSIFY → EVIDENCE → OWNER → SEVERITY. Không suy đoán root cause. G4-F02/F04/F05 nếu thấy chỉ ghi nhận, không xử lý. Không cần dạy cả tiết thật; REAL_CLASSROOM_TRIAL vẫn UNRUN nếu chưa dạy.
+
+10. Sau kiểm thử chạy lại Get-FileHash cho chính ZIP RC1 ban đầu. Phải vẫn bằng SHA trên. Gửi CSV đã điền, metadata, SHA trước/sau và ảnh/video/log lỗi về cuộc trò chuyện. Không cần gửi lại ZIP RC1 50MB hoặc các lesson >32MiB.
+
+STOP. Chờ GV phê duyệt; không patch/Production/Publish Environment Settings.

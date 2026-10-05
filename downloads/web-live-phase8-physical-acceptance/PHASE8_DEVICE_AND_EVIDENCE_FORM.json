@@ -1,0 +1,33 @@
+{
+  "testedAt": "",
+  "tester": "",
+  "windowsVersionBuild": "",
+  "chromeVersion": "",
+  "pythonVersion": "",
+  "rc1ZipPath": "",
+  "rc1ZipSha256Before": "",
+  "rc1ZipSha256After": "",
+  "testExtractionPath": "",
+  "tvMakeModel": "",
+  "tvSizeInches": "",
+  "connectionMode": "",
+  "windowsDisplayMode": "",
+  "outputResolution": "",
+  "windowsScalingPercent": "",
+  "tvPictureModeOverscan": "",
+  "teacherDistanceMeters": "",
+  "farStudentDistanceMeters": "",
+  "roomLighting": "",
+  "consoleLogFile": "",
+  "startupLogFile": "",
+  "physicalPhotosOrVideo": [],
+  "geometryFixtureId": "",
+  "algebraFixtureId": "",
+  "informaticsFixtureId": "",
+  "legacyFixtureId": "",
+  "knownGeometryItemsObserved": {
+    "G4-F02": "UNRUN",
+    "G4-F04": "UNRUN",
+    "G4-F05": "UNRUN"
+  }
+}
