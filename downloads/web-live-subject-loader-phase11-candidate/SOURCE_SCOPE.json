@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "changedFiles": [
+    "WEB_LIVE/subject-loader.css",
+    "WEB_LIVE/subject-loader.js"
+  ],
+  "addedFiles": [],
+  "removedFiles": [],
+  "unchangedFiles": 1239,
+  "files": 1241,
+  "allCoreProfileTVZipTeacherLessonAssetsUnchanged": true,
+  "coreChangeRequired": false,
+  "webLiveCoreMutated": false,
+  "geometryProfileMutated": false,
+  "algebraProfileMutated": false,
+  "informaticsProfileMutated": false,
+  "sourceScopeViolation": false,
+  "productionModified": false,
+  "phase9Sha256Before": "32afaf838e2bd598fe1a5a6180105f82d2ceefd2312ec58b993081e91fd0f5d1",
+  "phase9Sha256After": "32afaf838e2bd598fe1a5a6180105f82d2ceefd2312ec58b993081e91fd0f5d1",
+  "phase9Mutated": false,
+  "phase9All1241FrozenSourceFilesUnchanged": true
+}

@@ -1,0 +1,34 @@
+{
+  "GEOMETRY": {
+    "result": "PASS",
+    "reference": "Phase9/REGRESSION/PHASE9/GEOMETRY_RUNTIME/geometry-runtime.json",
+    "phase11": "REGRESSION/GEOMETRY_RUNTIME/geometry-runtime.json",
+    "checks": 14,
+    "comparison": "SEMANTIC_JSON_EQUAL",
+    "normalization": "Only per-load lessonActivation UUID; within-run Teacher/TV/preview parity remains exact"
+  },
+  "ALGEBRA": {
+    "result": "PASS",
+    "reference": "Phase9/REGRESSION/PHASE9/ALGEBRA_TARGETED.json",
+    "phase11": "REGRESSION/ALGEBRA_TARGETED.json",
+    "checks": 20,
+    "comparison": "SEMANTIC_JSON_EQUAL",
+    "normalization": "NONE"
+  },
+  "INFORMATICS": {
+    "result": "PASS",
+    "reference": "Phase9/REGRESSION/PHASE9/INFORMATICS/INFORMATICS_TARGETED.json",
+    "phase11": "REGRESSION/INFORMATICS/INFORMATICS_TARGETED.json",
+    "checks": 26,
+    "comparison": "SEMANTIC_JSON_EQUAL",
+    "normalization": "Only manual video playback currentTime; both playback >0 assertions executed"
+  },
+  "LEGACY": {
+    "result": "PASS",
+    "reference": "Phase9/REGRESSION/PHASE9/ENGINES/results.json",
+    "phase11": "REGRESSION/ENGINES/results.json",
+    "checks": 15,
+    "comparison": "SEMANTIC_JSON_EQUAL",
+    "normalization": "NONE"
+  }
+}

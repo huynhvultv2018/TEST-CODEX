@@ -1,0 +1,9 @@
+{
+  "source": "WEB_LIVE_SUBJECT_LOADER_PHASE9_CANDIDATE",
+  "sha256Before": "32afaf838e2bd598fe1a5a6180105f82d2ceefd2312ec58b993081e91fd0f5d1",
+  "sourceZip": "/workspace/output/web-live-subject-loader-phase9-candidate/WEB_LIVE_SUBJECT_LOADER_PHASE9_CANDIDATE.zip",
+  "workingRoot": "/workspace/phase11-subject-loader/working/WEB_LIVE_SUBJECT_LOADER_PHASE11_WORKING_COPY",
+  "fileCount": 1241,
+  "sourceFrozen": true,
+  "phase10UsedAsSource": false
+}

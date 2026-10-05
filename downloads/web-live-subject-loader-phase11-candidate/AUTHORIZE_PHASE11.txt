@@ -1,0 +1,608 @@
+# APPROVE PHASE 11
+# SUBJECT LOADER CLASSROOM QUICK-ACCESS PATCH
+# RECENT LESSONS + REMEMBER LAST SUBJECT + STORAGE QUOTA GUARD
+
+Nguồn duy nhất:
+
+```text id="p11source"
+WEB_LIVE_SUBJECT_LOADER_PHASE9_CANDIDATE
+
+SHA256 =
+32afaf838e2bd598fe1a5a6180105f82d2ceefd2312ec58b993081e91fd0f5d1
+```
+
+Phase 10 chỉ là audit.
+
+Không dùng Phase 10 làm source candidate.
+
+==================================================
+1. FREEZE SOURCE
+==================================================
+
+Xác minh trước patch:
+
+```text id="p11hash"
+PHASE9_SHA256_BEFORE =
+32afaf838e2bd598fe1a5a6180105f82d2ceefd2312ec58b993081e91fd0f5d1
+```
+
+Không sửa trực tiếp Phase 9.
+
+Tạo working copy riêng.
+
+==================================================
+2. SCOPE
+==================================================
+
+Chỉ triển khai:
+
+```text id="p11scope"
+A. REMEMBER LAST SUCCESSFUL SUBJECT
+
+B. RECENT LESSONS
+
+C. LOCALSTORAGE QUOTA GUARD
+```
+
+Không triển khai:
+
+```text id="p11noscope"
+CLASS/WEEK/PERIOD FILTER
+
+FAVORITES
+
+NEXT LESSON
+
+DRAG AND DROP
+
+LIBRARY REDESIGN
+
+STORAGE ARCHITECTURE MIGRATION
+```
+
+==================================================
+3. REMEMBER LAST SUBJECT
+==================================================
+
+Chỉ ghi nhớ môn sau khi:
+
+```text id="p11subjectcommit"
+PACKAGE VALIDATION = PASS
+AND
+LESSON LOAD = SUCCESS
+```
+
+Không ghi nhớ môn chỉ vì GV click chọn.
+
+Sau reload WEB LIVE:
+
+khôi phục môn đã nạp thành công gần nhất.
+
+Các giá trị hợp lệ:
+
+```text id="p11subjects"
+geometry
+algebra
+informatics
+legacy
+```
+
+Nếu dữ liệu lưu:
+
+```text id="p11badsubject"
+MISSING
+INVALID
+CORRUPTED
+```
+
+thì fallback an toàn.
+
+Không crash.
+
+==================================================
+4. RECENT LESSONS
+==================================================
+
+Thêm khu vực:
+
+```text id="p11recent"
+BÀI GẦN ĐÂY
+```
+
+Mỗi entry chỉ lưu metadata tối thiểu cần thiết.
+
+Ưu tiên:
+
+```text id="p11recentmeta"
+LESSON TITLE
+SUBJECT
+GRADE
+WEEK
+PERIOD
+LAST OPENED
+```
+
+nếu các trường tồn tại.
+
+Không duplicate toàn bộ package vào danh sách Recent nếu không cần thiết.
+
+==================================================
+5. RECENT LESSON LIMIT
+==================================================
+
+Danh sách phải có giới hạn cứng.
+
+Không cho tăng vô hạn.
+
+Codex audit implementation hiện tại và chọn giới hạn nhỏ hợp lý.
+
+Ưu tiên:
+
+```text id="p11limit"
+5–10 RECENT LESSONS
+```
+
+Không vượt quá 10 nếu không có lý do kỹ thuật rõ ràng.
+
+==================================================
+6. RECENT UPDATE POLICY
+==================================================
+
+Chỉ thêm/update Recent sau:
+
+```text id="p11recentcommit"
+VALIDATE PASS
+→ LOAD SUCCESS
+→ COMMIT
+```
+
+Nếu load FAIL:
+
+```text id="p11recentfail"
+DO NOT ADD TO RECENT
+DO NOT CHANGE LAST SUBJECT
+DO NOT REMOVE CURRENT LESSON
+```
+
+==================================================
+7. DUPLICATE HANDLING
+==================================================
+
+Nếu cùng một lesson được mở lại:
+
+```text id="p11dedupe"
+DO NOT CREATE DUPLICATE ENTRY
+```
+
+Đưa lesson đó lên đầu danh sách và cập nhật `LAST OPENED`.
+
+==================================================
+8. RECENT LESSON REOPEN
+==================================================
+
+Nếu kiến trúc hiện tại cho phép reopen an toàn từ dữ liệu đã có:
+
+cho phép:
+
+```text id="p11reopen"
+BÀI GẦN ĐÂY
+→ SELECT
+→ VALIDATE
+→ LOAD
+```
+
+Bắt buộc đi qua cùng validation pipeline của Subject Loader.
+
+Không bypass:
+
+```text id="p11nobypass"
+SUBJECT_METADATA_VALIDATION
+SUBJECT_MISMATCH_BLOCK
+TRANSACTIONAL_LOAD
+PROFILE_STATE_RESET
+```
+
+==================================================
+9. STORAGE FINDING
+==================================================
+
+Phase 10 phát hiện:
+
+```text id="p11storagefinding"
+LOCALSTORAGE QUOTA
+CAN BE EXHAUSTED
+BY ACCUMULATED LARGE IMAGE PACKAGES
+```
+
+Không redesign storage trong Phase 11.
+
+Không migrate sang IndexedDB hoặc storage architecture mới trong Phase 11.
+
+==================================================
+10. STORAGE QUOTA GUARD
+==================================================
+
+Bổ sung xử lý có kiểm soát cho:
+
+```text id="p11quota"
+QuotaExceededError
+STORAGE WRITE FAILURE
+CORRUPTED OPTIONAL QUICK-ACCESS DATA
+```
+
+Yêu cầu:
+
+```text id="p11quotareq"
+NO CRASH
+
+CURRENT LESSON PRESERVED
+
+LESSON LOAD RESULT NOT CORRUPTED
+
+CLEAR USER-FACING WARNING
+
+OPTIONAL QUICK-ACCESS FAILURE
+MUST NOT DESTROY VALID CURRENT LESSON
+```
+
+==================================================
+11. DO NOT STORE LARGE PAYLOAD IN RECENT
+==================================================
+
+Recent lessons không được làm quota xấu thêm bằng cách lưu:
+
+```text id="p11nolarge"
+IMAGE BINARY
+BASE64 IMAGE
+VIDEO
+FULL ZIP
+FULL LESSON PACKAGE
+LARGE ASSET PAYLOAD
+```
+
+Recent ưu tiên metadata/reference tối thiểu.
+
+==================================================
+12. STORAGE OWNERSHIP AUDIT
+==================================================
+
+Trong quá trình implement, xác định rõ:
+
+```text id="p11storageaudit"
+WHAT CURRENTLY USES LOCALSTORAGE
+
+WHICH DATA IS LARGE
+
+WHICH DATA IS ESSENTIAL
+
+WHICH DATA IS OPTIONAL
+
+WHICH DATA CAN BE SAFELY EVICTED
+```
+
+Nhưng:
+
+```text id="p11nostoragepatch"
+NO STORAGE ARCHITECTURE REFACTOR
+```
+
+==================================================
+13. EVICTION POLICY
+==================================================
+
+Chỉ được tự động xóa dữ liệu thuộc:
+
+```text id="p11evict"
+RECENT LESSON METADATA
+OPTIONAL QUICK-ACCESS CACHE
+```
+
+nếu implementation Phase 11 tự tạo ra chúng.
+
+Không tự xóa:
+
+```text id="p11noevict"
+CURRENT LESSON
+USER LESSON PACKAGE
+ESSENTIAL LESSON STATE
+UNKNOWN LEGACY DATA
+```
+
+==================================================
+14. UI
+==================================================
+
+Không redesign Subject Loader.
+
+Chỉ bổ sung tối thiểu:
+
+```text id="p11ui"
+MÔN ĐÃ NHỚ
+
+BÀI GẦN ĐÂY
+
+STORAGE WARNING
+```
+
+Giữ loader gọn.
+
+==================================================
+15. EXISTING SAFEGUARDS
+==================================================
+
+Bắt buộc giữ PASS:
+
+```text id="p11safeguards"
+SUBJECT_METADATA_VALIDATION
+
+SUBJECT_MISMATCH_BLOCK
+
+INVALID_PACKAGE_SAFETY
+
+TRANSACTIONAL_LOAD
+
+CURRENT_LESSON_PRESERVATION
+
+PROFILE_STATE_RESET
+```
+
+==================================================
+16. TARGETED TEST
+==================================================
+
+Kiểm:
+
+```text id="p11tests"
+REMEMBER_SUBJECT_AFTER_SUCCESS = PASS
+
+DO_NOT_REMEMBER_SUBJECT_AFTER_FAILURE = PASS
+
+RESTORE_LAST_SUBJECT_AFTER_RELOAD = PASS
+
+INVALID_STORED_SUBJECT_FALLBACK = PASS
+
+RECENT_LESSON_ADD = PASS
+
+RECENT_LESSON_DEDUPLICATION = PASS
+
+RECENT_LESSON_LIMIT = PASS
+
+RECENT_LESSON_ORDER = PASS
+
+RECENT_FAILED_LOAD_NOT_ADDED = PASS
+
+RECENT_REOPEN_VALIDATION = PASS
+
+QUOTA_FAILURE_NO_CRASH = PASS
+
+QUOTA_FAILURE_CURRENT_LESSON_PRESERVED = PASS
+
+RECENT_DOES_NOT_STORE_LARGE_PAYLOAD = PASS
+```
+
+==================================================
+17. REGRESSION
+==================================================
+
+Bắt buộc:
+
+```text id="p11reg"
+GEOMETRY_LOAD = PASS
+
+ALGEBRA_LOAD = PASS
+
+INFORMATICS_LOAD = PASS
+
+LEGACY_LOAD = PASS
+
+SUBJECT_MISMATCH_BLOCK = PASS
+
+TRANSACTIONAL_LOAD = PASS
+
+PROFILE_STATE_RESET = PASS
+
+LEGACY_RUNTIME_REGRESSION = PASS
+
+GEOMETRY_PROFILE_REGRESSION = PASS
+
+ALGEBRA_PROFILE_REGRESSION = PASS
+
+INFORMATICS_PROFILE_REGRESSION = PASS
+
+NO_TEACH_AHEAD_GLOBAL = PASS
+```
+
+==================================================
+18. CORE / PROFILE POLICY
+==================================================
+
+Mục tiêu:
+
+```text id="p11policy"
+LOADER-LOCAL PATCH
+```
+
+Bắt buộc ưu tiên:
+
+```text id="p11core"
+WEB_LIVE_CORE_MUTATED = NO
+
+GEOMETRY_PROFILE_MUTATED = NO
+
+ALGEBRA_PROFILE_MUTATED = NO
+
+INFORMATICS_PROFILE_MUTATED = NO
+```
+
+Nếu không thể đạt mà cần sửa Core/Profile:
+
+```text id="p11stop"
+STOP
+```
+
+Báo dependency.
+
+Không mở rộng scope.
+
+==================================================
+19. PHYSICAL STATUS
+==================================================
+
+Giữ đúng:
+
+```text id="p11physical"
+WINDOWS_PHYSICAL_RUNTIME = UNRUN
+
+PHYSICAL_TV_VALIDATION = UNRUN
+
+REAL_CLASSROOM_TRIAL = UNRUN
+```
+
+Không chuyển cloud test thành physical PASS.
+
+==================================================
+20. CANDIDATE
+==================================================
+
+Nếu toàn bộ gate PASS:
+
+tạo:
+
+```text id="p11candidate"
+WEB_LIVE_SUBJECT_LOADER_PHASE11_CANDIDATE
+```
+
+Tính SHA256.
+
+Không overwrite Phase 9.
+
+Không Production.
+
+==================================================
+21. REQUIRED REPORTS
+==================================================
+
+Tạo:
+
+```text id="p11reports"
+SUBJECT_LOADER_PHASE11_IMPLEMENTATION_REPORT.md
+
+SUBJECT_LOADER_PHASE11_STORAGE_AUDIT.md
+
+SUBJECT_LOADER_PHASE11_TEST_EVIDENCE.md
+
+SUBJECT_LOADER_PHASE11_REGRESSION_REPORT.md
+
+SUBJECT_LOADER_PHASE11_RISK_REGISTER.md
+```
+
+==================================================
+22. PASS GATE
+==================================================
+
+Chỉ PASS nếu:
+
+```text id="p11pass"
+P0_COUNT = 0
+P1_COUNT = 0
+
+CORE_CHANGE_REQUIRED = NO
+
+WEB_LIVE_CORE_MUTATED = NO
+
+GEOMETRY_PROFILE_MUTATED = NO
+ALGEBRA_PROFILE_MUTATED = NO
+INFORMATICS_PROFILE_MUTATED = NO
+
+SOURCE_SCOPE_VIOLATION = NO
+PRODUCTION_MODIFIED = NO
+```
+
+Nếu còn P2/P3:
+
+ghi rõ và chờ GV review.
+
+==================================================
+23. FINAL BLOCK
+==================================================
+
+Trả:
+
+```text id="p11final"
+PHASE9_SHA256_BEFORE =
+PHASE9_SHA256_AFTER =
+PHASE9_CANDIDATE_MUTATED =
+
+REMEMBER_LAST_SUBJECT =
+RECENT_LESSONS =
+RECENT_LESSON_LIMIT =
+RECENT_DEDUPLICATION =
+RECENT_REOPEN =
+
+LOCALSTORAGE_QUOTA_GUARD =
+LARGE_PAYLOAD_STORED_IN_RECENT =
+
+SUBJECT_METADATA_VALIDATION =
+SUBJECT_MISMATCH_BLOCK =
+TRANSACTIONAL_LOAD =
+CURRENT_LESSON_PRESERVATION =
+PROFILE_STATE_RESET =
+
+GEOMETRY_LOAD =
+ALGEBRA_LOAD =
+INFORMATICS_LOAD =
+LEGACY_LOAD =
+
+LEGACY_RUNTIME_REGRESSION =
+GEOMETRY_PROFILE_REGRESSION =
+ALGEBRA_PROFILE_REGRESSION =
+INFORMATICS_PROFILE_REGRESSION =
+NO_TEACH_AHEAD_GLOBAL =
+
+CORE_CHANGE_REQUIRED =
+WEB_LIVE_CORE_MUTATED =
+GEOMETRY_PROFILE_MUTATED =
+ALGEBRA_PROFILE_MUTATED =
+INFORMATICS_PROFILE_MUTATED =
+
+WINDOWS_PHYSICAL_RUNTIME =
+PHYSICAL_TV_VALIDATION =
+REAL_CLASSROOM_TRIAL =
+
+P0_COUNT =
+P1_COUNT =
+P2_COUNT =
+P3_COUNT =
+
+SOURCE_SCOPE_VIOLATION =
+PRODUCTION_MODIFIED =
+
+PHASE11_CANDIDATE =
+PHASE11_CANDIDATE_SHA256 =
+
+PHASE11_STATUS =
+RECOMMENDED_NEXT_ACTION =
+```
+
+==================================================
+24. STOP
+==================================================
+
+Sau:
+
+```text id="p11stop2"
+IMPLEMENT
+→ TARGETED TEST
+→ STORAGE FAILURE TEST
+→ REGRESSION
+→ CANDIDATE
+→ REPORT
+```
+
+STOP.
+
+Không triển khai Filter lớp/tuần/tiết.
+
+Không Production.
+
+Chờ GV phê duyệt.

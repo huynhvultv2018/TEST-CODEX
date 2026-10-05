@@ -1,0 +1,135 @@
+--- Phase9/WEB_LIVE/subject-loader.css
++++ Phase11/WEB_LIVE/subject-loader.css
+@@ -9,3 +9,9 @@
+ .subjectStep{font-size:16px;font-weight:700;margin:12px 0}
+ #importer #error{white-space:pre-line}
+ #importer #error[data-valid="true"]{color:#b6e2c3}
++#rememberedSubject{font-size:13px;font-weight:400;color:#b6e2c3}
++#subjectStorageWarning{position:fixed;right:16px;bottom:16px;z-index:1000;max-width:min(520px,calc(100vw - 32px));margin:0;padding:10px;background:#101e32;border:1px solid #e3b85e;border-radius:8px;color:#ffe0a3;white-space:pre-line;pointer-events:none}
++.quickRecentList{max-height:180px;overflow-y:auto}
++.quickRecentItem{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid #33455d}
++.quickRecentItem>div{min-width:0;overflow-wrap:break-word}
++.quickRecentItem button{flex-shrink:0}
+--- Phase9/WEB_LIVE/subject-loader.js
++++ Phase11/WEB_LIVE/subject-loader.js
+@@ -12,6 +12,67 @@
+  for(const subject of subjects){const option=document.createElement('option');option.value=subject.id;option.textContent=subject.label;select.append(option);}
+  const indicator=document.createElement('span');indicator.id='subjectIndicator';indicator.setAttribute('role','status');indicator.hidden=true;
+  $('lessonTitle').after(indicator);
++ // Optional, bounded references only. This namespace never owns lesson storage.
++ const quickKey='webLiveSubjectLoaderQuickAccessPhase11',recentLimit=5,quickSizeLimit=8192;
++ let quick={version:1,lastSubject:null,recent:[]};
++ const remembered=document.createElement('span');remembered.id='rememberedSubject';remembered.hidden=true;
++ select.closest('label').append(remembered);
++ const storageWarning=document.createElement('p');storageWarning.id='subjectStorageWarning';storageWarning.setAttribute('role','status');storageWarning.hidden=true;document.body.append(storageWarning);
++ const recentPanel=document.createElement('section');recentPanel.id='recentLessons';
++ const recentHeading=document.createElement('h2');recentHeading.className='subjectStep';recentHeading.textContent='BÀI GẦN ĐÂY';
++ const recentList=document.createElement('div');recentList.className='quickRecentList';recentPanel.append(recentHeading,recentList);$('library').parentElement.before(recentPanel);
++ function warnStorage(message){storageWarning.textContent=message;storageWarning.hidden=!message;}
++ const validSubject=id=>subjects.some(s=>s.id===id);
++ const scalar=(value,max)=>typeof value==='number'&&Number.isFinite(value)?value:typeof value==='string'&&!/^data:/iu.test(value)?value.slice(0,max):undefined;
++ function recentEntry(x,id,lastOpened){
++  if(typeof id!=='string'||!id||id.length>512||/^data:/iu.test(id))throw Error('Không thể ghi nhận mã bài vào truy cập nhanh.');
++  const entry={id,subjectEngine:engine(x),lastOpened};
++  for(const [key,max] of [['title',160],['subject',80],['grade',32],['class',32],['week',32],['period',32]]){
++   const value=scalar(x[key],max);if(value!==undefined)entry[key]=value;
++  }
++  return entry;
++ }
++ function renderRemembered(){remembered.hidden=!quick.lastSubject;remembered.textContent=quick.lastSubject?'MÔN ĐÃ NHỚ: '+subjects.find(s=>s.id===quick.lastSubject).label:'';}
++ function readQuick(){
++  try{
++   const raw=localStorage.getItem(quickKey);if(raw===null)return;
++   if(raw.length>quickSizeLimit)throw Error('Dữ liệu quá lớn');
++   const value=JSON.parse(raw);
++   if(!value||value.version!==1||!Array.isArray(value.recent)||value.recent.length>recentLimit)throw Error('Dữ liệu không hợp lệ');
++   if(value.lastSubject!==null&&!validSubject(value.lastSubject))throw Error('Môn không hợp lệ');
++   const entries=[],seen=new Set();
++   for(const item of value.recent){
++    if(!item||!validSubject(item.subjectEngine)||typeof item.lastOpened!=='string'||!/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z$/u.test(item.lastOpened)||!Number.isFinite(Date.parse(item.lastOpened)))throw Error('Bài gần đây không hợp lệ');
++    const entry=recentEntry({...item,subject_engine:item.subjectEngine},item.id,item.lastOpened);
++    if(!seen.has(entry.id)){seen.add(entry.id);entries.push(entry);}
++   }
++   quick={version:1,lastSubject:value.lastSubject,recent:entries.sort((a,b)=>b.lastOpened.localeCompare(a.lastOpened))};
++   if(quick.lastSubject)select.value=quick.lastSubject;
++  }catch(_){warnStorage('Không đọc được thông tin môn đã nhớ/bài gần đây. Bạn vẫn có thể chọn môn và nạp bài như bình thường.');}
++ }
++ function renderRecent(){
++  recentList.replaceChildren();
++  if(!quick.recent.length){const empty=document.createElement('p');empty.className='muted';empty.textContent='Chưa có bài đã nạp thành công.';recentList.append(empty);return;}
++  for(const entry of quick.recent){
++   const cached=getLesson(entry.id),metadata=cached||entry,row=document.createElement('div');row.className='quickRecentItem';
++   const text=document.createElement('div'),title=document.createElement('b');title.textContent=String(metadata.title||entry.title||'Bài đã lưu');text.append(title);
++   const context=document.createElement('div');context.className='small';
++   const fields=[metadata.subject,metadata.grade??metadata.class,metadata.week,metadata.period];
++   const labels=['','Lớp ','Tuần ','Tiết '];
++   context.textContent=fields.map((v,n)=>v==null||v===''?'':labels[n]+String(v)).filter(Boolean).join(' · ');text.append(context);
++   const opened=document.createElement('div');opened.className='small';opened.textContent='Mở gần nhất: '+new Date(entry.lastOpened).toLocaleString('vi-VN');text.append(opened);
++   const choose=document.createElement('button');choose.type='button';choose.textContent=cached?'CHỌN BÀI':'Bài không còn trong thư viện';choose.disabled=!cached;
++   choose.addEventListener('click',()=>openSaved(entry.id));row.append(text,choose);recentList.append(row);
++  }
++ }
++ function rememberSuccess(x){
++  try{
++   const entry=recentEntry(x,x.id,new Date().toISOString());
++   const next={version:1,lastSubject:entry.subjectEngine,recent:[entry,...quick.recent.filter(item=>item.id!==entry.id)].slice(0,recentLimit)};
++   const raw=JSON.stringify(next);if(raw.length>quickSizeLimit)throw Error('Dữ liệu quá lớn');
++   localStorage.setItem(quickKey,raw);quick=next;warnStorage('');renderRemembered();renderRecent();
++  }catch(_){warnStorage('Bài đã nạp thành công, nhưng không lưu được môn đã nhớ/bài gần đây. Lần mở sau có thể không có cập nhật này.');}
++ }
+  const label=id=>subjects.find(s=>s.id===id)?.name||id;
+  function indicate(){const id=WebLiveProfiles.resolve(lesson).profileId;indicator.textContent=id==='legacy'?'LEGACY':subjects.find(s=>s.id===id)?.label||id;indicator.hidden=false;}
+  function engine(x){
+@@ -113,25 +174,36 @@
+  }
+  function commit(){
+   refresh();if(button.disabled||!pending)return;
+-  const prepared=pending,old=runtime();let storage;
++  const prepared=pending,old=runtime();let storage,copy,step='storage';
+   try{
+    storage=new Map(Object.keys(localStorage).map(key=>[key,localStorage.getItem(key)]));
+-   const copy=JSON.parse(JSON.stringify(prepared.lesson));
++   copy=JSON.parse(JSON.stringify(prepared.lesson));
+    // saveLesson must succeed before native start can replace the active lesson.
+-   saveLesson(copy,prepared.sourceKey);renderLibrary();start(copy);clear();
++   saveLesson(copy,prepared.sourceKey);step='preflight';renderLibrary();step='start';start(copy);clear();
+   }catch(e){
+-   if(storage){for(const key of Object.keys(localStorage))if(!storage.has(key))localStorage.removeItem(key);for(const [key,value] of storage)if(localStorage.getItem(key)!==value)localStorage.setItem(key,value);}
+-   if(lesson!==old.lesson||lessonActivation!==old.lessonActivation)restore(old);
++   let rollbackFailed=false;
++   // Remove only this failed transaction's new writes, never evict saved user data.
++   if(storage){
++    for(const key of ['lesson:'+copy?.id,'webLiveLibrary',STATE_KEY])try{if(!storage.has(key)&&localStorage.getItem(key)!==null)localStorage.removeItem(key);}catch(_){rollbackFailed=true;}
++    for(const [key,value] of storage)try{if(localStorage.getItem(key)!==value)localStorage.setItem(key,value);}catch(_){rollbackFailed=true;}
++   }
++   try{if(lesson!==old.lesson||lessonActivation!==old.lessonActivation)restore(old);}catch(_){rollbackFailed=true;}
+    $('importer').style.display='flex';
+    error.dataset.valid='false';
+-   error.textContent='Không nạp được bài; bài hiện tại được giữ nguyên. '+e.message;button.disabled=true;
+-  }
++   const quota=e?.name==='QuotaExceededError'||e?.code===22||e?.code===1014;
++   error.textContent='Không nạp được bài; bài hiện tại được giữ nguyên. '+(quota?'Không đủ dung lượng lưu bài.':e.message);button.disabled=true;
++   if(step==='storage'||rollbackFailed)warnStorage(rollbackFailed?'Không lưu được bài và không thể khôi phục đầy đủ dữ liệu lưu. Bài đang dạy vẫn được giữ trong phiên này; kiểm tra thư viện trước khi tải lại trang.':quota?'Không đủ dung lượng lưu bài. Bài đang dạy được giữ nguyên. Bạn có thể xóa một bài đã lưu không còn cần rồi thử lại.':'Không ghi được dữ liệu lưu bài. Bài đang dạy được giữ nguyên; hãy kiểm tra quyền lưu của trình duyệt rồi thử lại.');
++   return;
++  }
++  // Optional quick-access writes are outside the essential lesson transaction.
++  rememberSuccess(copy);
+  }
+  const nativeStart=start;
+  start=function(...args){const value=nativeStart(...args);indicate();return value;};
+  const nativeHide=hideImporter;
+  hideImporter=function(){clear();nativeHide();};
+  renderLibrary=function(){
++  renderRecent();
+   const library=$('library');library.replaceChildren();
+   const entries=getLibrary().filter(entry=>{const x=getLesson(entry.id);if(!x)return false;try{return !select.value||engine(x)===select.value;}catch(_){return true;}});
+   if(!entries.length){const p=document.createElement('p');p.className='muted';p.textContent='Chưa có bài đã lưu cho môn này.';library.append(p);return;}
+@@ -145,6 +217,7 @@
+  select.addEventListener('change',()=>{if(busy)clear();refresh();renderLibrary();});
+  button.addEventListener('click',commit);
+  for(const [id,type] of [['jsonfile','json'],['zipfile','zip']])$(id).onchange=event=>{const file=event.target.files[0];event.target.value='';if(!file)return;stage(async()=>type==='zip'?prepareLessonZip(file):{lesson:JSON.parse(await file.text())});};
+- globalThis.WebLiveSubjectLoader=Object.freeze({subjects,validate,engine,version:1});
++ globalThis.WebLiveSubjectLoader=Object.freeze({subjects,validate,engine,version:1,recentLimit});
++ readQuick();renderRemembered();
+  renderLibrary();
+ })();
